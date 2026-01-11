@@ -1,6 +1,7 @@
 site_name: DET / DETai — Knowledge Core
 site_url: ""
 use_directory_urls: true
+docs_dir: knowledge_core/docs
 
 theme:
   name: material

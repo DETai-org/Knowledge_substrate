@@ -1,26 +1,23 @@
 import os
+from pathlib import Path
 from typing import Optional
 
 import psycopg
 from fastapi import FastAPI, HTTPException
+from dotenv import load_dotenv
 from pydantic import BaseModel
 
 app = FastAPI(title="DETai Core API", version="0.2.0")
+
+BASE_DIR = Path(__file__).resolve().parents[2]  # detai-core/
+env_path = BASE_DIR / ".env"
+
+load_dotenv(dotenv_path=env_path)
 
 def get_db_url() -> str:
     url = os.getenv("DATABASE_URL")
     if url:
         return url
-
-    env_path = "/srv/detai-core/.env"
-    with open(env_path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith("#") or "=" not in line:
-                continue
-            k, v = line.split("=", 1)
-            if k.strip() == "DATABASE_URL":
-                return v.strip()
 
     raise RuntimeError("DATABASE_URL not found")
 

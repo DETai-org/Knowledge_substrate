@@ -4,7 +4,8 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - "docs/**"
+      - "knowledge_core/docs/**"
+      - "knowledge_core/README.md"
       - "mkdocs.yml"
       - ".github/workflows/docs.yml"
 
