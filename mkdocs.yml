@@ -24,6 +24,12 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
 
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/lang-switcher.js
+
 exclude_docs: |
   publications/Research_Publication/**
   publications/STORYTELLING/**
