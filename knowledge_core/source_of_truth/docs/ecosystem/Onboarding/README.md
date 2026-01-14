@@ -1,4 +1,4 @@
-# Onboarding Framework
+# Onboarding
 
 Рамки для входа в экосистему.
 

@@ -108,7 +108,7 @@ Knowledge_substrate
 │   │   │   │   │   ├── Knowledge_Substrate
 │   │   │   │   │   │   └── README.md
 │   │   │   │   │   └── README.md
-│   │   │   │   ├── Onboarding_Framework
+│   │   │   │   ├── Onboarding
 │   │   │   │   │   ├── onboarding
 │   │   │   │   │   │   ├── 00-pre-onboarding
 │   │   │   │   │   │   │   ├── how-to-read.md
