@@ -1,6 +1,6 @@
 
 # Postgres / Cloud SQL: publications_schema
-(Операционное хранилище / Operational Store)
+Это наш Query SoT (Operational / Операционное хранилище / Operational Store)
 
 ## Что это такое (по-человечески)
 Postgres в этой архитектуре — это **машинная версия мира**: здесь лежат документы в структурированном виде, связи, таксоны, а также embeddings.  
