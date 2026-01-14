@@ -15,7 +15,6 @@ theme:
 
 plugins:
   - search
-  - awesome-pages
 
 markdown_extensions:
   - admonition
@@ -28,3 +27,72 @@ exclude_docs: |
   publications/Research_Publication/**
   publications/STORYTELLING/**
   publications/blogs/**
+
+nav:
+  - Добро пожаловать: index.md
+  - Ecosystem:
+      - Обзор: ecosystem/index.md
+      - DET:
+          - ecosystem/DET/index.md
+          - Методологии:
+              - "ecosystem/DET/Методологии/mission.md"
+              - "ecosystem/DET/Методологии/principles.md"
+              - "ecosystem/DET/Методологии/glossary.md"
+      - DETai:
+          - ecosystem/DETai/index.md
+          - Экосистема: ecosystem/DETai/ecosystem-map.md
+          - Проекты:
+              - ecosystem/DETai/Проекты/index.md
+              - Эшелоны:
+                  - ecosystem/DETai/Проекты/Эшелоны/echelon-1/index.md
+                  - ecosystem/DETai/Проекты/Эшелоны/echelon-1/francis-galton.md
+                  - ecosystem/DETai/Проекты/Эшелоны/echelon-2/index.md
+                  - ecosystem/DETai/Проекты/Эшелоны/echelon-3/index.md
+          - Предпроекты:
+              - ecosystem/DETai/Предпроекты/index.md
+              - Thought Canvas:
+                  - ecosystem/DETai/Предпроекты/thought-canvas/index.md
+                  - ecosystem/DETai/Предпроекты/thought-canvas/philosophical-foundation.md
+                  - ecosystem/DETai/Предпроекты/thought-canvas/storage-format.md
+                  - ecosystem/DETai/Предпроекты/thought-canvas/technology.md
+          - U.L.I. — Улей:
+              - "ecosystem/DETai/U.L.I. — Улей/index.md"
+              - Технические стандарты:
+                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/index.md"
+                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/versioning.md"
+                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/policy-layer.md"
+                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/mosaic-approach.md"
+                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/telegram-bots-standard.md"
+              - Логика и инфраструктура:
+                  - "ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/index.md"
+                  - "ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/repo-logic.md"
+              - Философия и установки:
+                  - "ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/index.md"
+                  - "ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/bee-roles.md"
+              - Описание векторов:
+                  - "ecosystem/DETai/U.L.I. — Улей/Описание_векторов/vectors.md"
+              - Хронология версий:
+                  - "ecosystem/DETai/U.L.I. — Улей/Хронология_версий/versions-chronology.md"
+      - Infrastructure:
+          - ecosystem/Infrastructure/README.md
+          - Knowledge Substrate: ecosystem/Infrastructure/Knowledge_Substrate/README.md
+          - Infrastructure Principles: ecosystem/Infrastructure/Infrastructure_Principles.md
+      - Onboarding Framework:
+          - ecosystem/Onboarding_Framework/onboarding/index.md
+          - Pre-Onboarding:
+              - ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/uli.md
+              - ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/how-to-read.md
+          - Презентации: "ecosystem/Onboarding_Framework/Презентации/README.md"
+      - Tools:
+          - ecosystem/Tools/README.md
+          - ClickUp: ecosystem/Tools/ClickUp/README.md
+          - Codex: ecosystem/Tools/Codex/README.md
+          - GitHub: ecosystem/Tools/GitHub/README.md
+          - Obsidian: ecosystem/Tools/Obsidian/README.md
+          - Make Сценарии: "ecosystem/Tools/Make_Сценарии/README.md"
+          - Боты Telegram: "ecosystem/Tools/Боты_Telegram/README.md"
+  - Публикации:
+      - publications/index.md
+  - English:
+      - en/index.md
+      - Ecosystem: en/ecosystem/index.md
