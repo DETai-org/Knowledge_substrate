@@ -1,9 +1,2 @@
-title: Экосистема
-nav:
-  - index.md
-  - DET
-  - DETai
-  - Onboarding_Framework
-  - Tools
-  - Infrastructure
+hide:
   - en
