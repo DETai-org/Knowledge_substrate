@@ -15,6 +15,13 @@ theme:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        ecosystem/Onboarding_Framework/onboarding/index.md: ecosystem/Onboarding/onboarding/index.md
+        ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/uli.md: ecosystem/Onboarding/onboarding/00-pre-onboarding/uli.md
+        ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/how-to-read.md: ecosystem/Onboarding/onboarding/00-pre-onboarding/how-to-read.md
+        ecosystem/Onboarding_Framework/README.md: ecosystem/Onboarding/README.md
+        ecosystem/Onboarding_Framework/Презентации/README.md: ecosystem/Onboarding/Презентации/README.md
 
 markdown_extensions:
   - admonition
@@ -29,7 +36,6 @@ exclude_docs: |
   publications/blogs/**
 
 nav:
-  - Добро пожаловать: index.md
   - Ecosystem:
       - Обзор: ecosystem/index.md
       - DET:
@@ -77,12 +83,12 @@ nav:
           - ecosystem/Infrastructure/README.md
           - Knowledge Substrate: ecosystem/Infrastructure/Knowledge_Substrate/README.md
           - Infrastructure Principles: ecosystem/Infrastructure/Infrastructure_Principles.md
-      - Onboarding Framework:
-          - ecosystem/Onboarding_Framework/onboarding/index.md
+      - Onboarding:
+          - ecosystem/Onboarding/onboarding/index.md
           - Pre-Onboarding:
-              - ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/uli.md
-              - ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/how-to-read.md
-          - Презентации: "ecosystem/Onboarding_Framework/Презентации/README.md"
+              - ecosystem/Onboarding/onboarding/00-pre-onboarding/uli.md
+              - ecosystem/Onboarding/onboarding/00-pre-onboarding/how-to-read.md
+          - Презентации: "ecosystem/Onboarding/Презентации/README.md"
       - Tools:
           - ecosystem/Tools/README.md
           - ClickUp: ecosystem/Tools/ClickUp/README.md
@@ -91,6 +97,7 @@ nav:
           - Obsidian: ecosystem/Tools/Obsidian/README.md
           - Make Сценарии: "ecosystem/Tools/Make_Сценарии/README.md"
           - Боты Telegram: "ecosystem/Tools/Боты_Telegram/README.md"
+  - Onboarding: https://detai-org.github.io/Knowledge_substrate/ecosystem/Onboarding_Framework/onboarding/
   - Публикации:
       - publications/index.md
   - English:
