@@ -24,11 +24,13 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
 
-extra_css:
-  - assets/stylesheets/extra.css
-
-extra_javascript:
-  - assets/javascripts/lang-switcher.js
+nav:
+  - Добро пожаловать: index.md
+  - Ecosystem: ecosystem/
+  - Публикации: publications/
+  - Language:
+      - Русский: index.md
+      - English: ecosystem/en/index.md
 
 exclude_docs: |
   publications/Research_Publication/**
