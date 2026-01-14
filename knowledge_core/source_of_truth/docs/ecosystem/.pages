@@ -1,4 +1,7 @@
 nav:
   - index.md
-hide:
-  - en
+  - DET/
+  - DETai/
+  - Infrastructure/
+  - Onboarding_Framework/
+  - Tools/
