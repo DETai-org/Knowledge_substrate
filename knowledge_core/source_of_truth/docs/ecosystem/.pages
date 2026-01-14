@@ -1,9 +1,9 @@
 title: Экосистема
 nav:
   - index.md
-  - DET/
-  - DETai/
-  - Onboarding_Framework/
-  - Tools/
-  - Infrastructure/
-  - en/
+  - DET/index.md
+  - DETai/index.md
+  - Onboarding_Framework/README.md
+  - Tools/README.md
+  - Infrastructure/README.md
+  - en/index.md
