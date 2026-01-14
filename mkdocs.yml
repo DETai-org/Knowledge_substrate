@@ -24,14 +24,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
 
-nav:
-  - Добро пожаловать: index.md
-  - Ecosystem: ecosystem/
-  - Публикации: publications/
-  - Language:
-      - Русский: index.md
-      - English: ecosystem/en/index.md
-
 exclude_docs: |
   publications/Research_Publication/**
   publications/STORYTELLING/**
