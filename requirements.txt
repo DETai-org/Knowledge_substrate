@@ -5,5 +5,3 @@ pymdown-extensions
 # Опциональные зависимости для будущих задач документации:
 # mkdocs-mermaid2-plugin
 # mkdocs-git-revision-date-localized-plugin
-
-mkdocs-redirects
