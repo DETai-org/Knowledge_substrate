@@ -21,66 +21,93 @@ markdown_extensions:
   - pymdownx.details
 
 nav:
-  - Главная: ecosystem/index.md
-  - Публикации: publications/index.md
-
-  - Onboarding:
-      - ecosystem/Onboarding_Framework/onboarding/index.md
-      - Pre-Onboarding:
-          - ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/uli.md
-          - ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/how-to-read.md
-
-  - DET:
-      - ecosystem/DET/index.md
-      - Методологии:
-          - ecosystem/DET/Методологии/mission.md
-          - ecosystem/DET/Методологии/glossary.md
-          - ecosystem/DET/Методологии/principles.md
-
-  - DETai:
-      - ecosystem/DETai/index.md
-      - Ecosystem Map: ecosystem/DETai/ecosystem-map.md
-      - Projects:
-          - ecosystem/DETai/Проекты/index.md
-          - Echelon 1:
-              - ecosystem/DETai/Проекты/Эшелоны/echelon-1/index.md
-              - Francis Galton: ecosystem/DETai/Проекты/Эшелоны/echelon-1/francis-galton.md
-          - Echelon 2:
-              - ecosystem/DETai/Проекты/Эшелоны/echelon-2/index.md
-          - Echelon 3:
-              - ecosystem/DETai/Проекты/Эшелоны/echelon-3/index.md
-      - Preprojects:
-          - ecosystem/DETai/Предпроекты/index.md
-          - Thought Canvas:
-              - ecosystem/DETai/Предпроекты/thought-canvas/index.md
-
-  - U.L.I:
-      - ecosystem/DETai/U.L.I. — Улей/index.md
-      - Technical Standards:
-          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/index.md
-          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/versioning.md
-          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/policy-layer.md
-          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/mosaic-approach.md
-          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/telegram-bots-standard.md
-      - Logic & Infrastructure:
-          - ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/index.md
-          - ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/repo-logic.md
-      - Philosophy:
-          - ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/index.md
-          - ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/bee-roles.md
-      - Vectors:
-          - ecosystem/DETai/U.L.I. — Улей/Описание_векторов/vectors.md
-      - Versions Chronology:
-          - ecosystem/DETai/U.L.I. — Улей/Хронология_версий/versions-chronology.md
-
-  - English (EN):
-      - ecosystem/en/index.md
-      - Onboarding:
-          - ecosystem/en/onboarding/index.md
-          - Pre-Onboarding:
-              - ecosystem/en/onboarding/00-pre-onboarding/uli.md
-              - ecosystem/en/onboarding/00-pre-onboarding/how-to-read.md
+  - docs:
+      - Главная: ecosystem/index.md
+      - DET:
+          - ecosystem/DET/index.md
+          - Методологии:
+              - ecosystem/DET/Методологии/README.md
+              - ecosystem/DET/Методологии/mission.md
+              - ecosystem/DET/Методологии/glossary.md
+              - ecosystem/DET/Методологии/principles.md
       - DETai:
-          - Projects:
-              - Echelon 1:
-                  - ecosystem/en/detai/projects/echelon-1/francis-galton.md
+          - ecosystem/DETai/index.md
+          - U.L.I. — Улей:
+              - ecosystem/DETai/U.L.I. — Улей/index.md
+              - Технические_стандарты:
+                  - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/index.md
+                  - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/versioning.md
+                  - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/policy-layer.md
+                  - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/mosaic-approach.md
+                  - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/telegram-bots-standard.md
+              - Логика_и_инфраструктура:
+                  - ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/index.md
+                  - ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/repo-logic.md
+              - Философия_и_установки:
+                  - ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/index.md
+                  - ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/bee-roles.md
+              - Описание_векторов:
+                  - ecosystem/DETai/U.L.I. — Улей/Описание_векторов/vectors.md
+              - Хронология_версий:
+                  - ecosystem/DETai/U.L.I. — Улей/Хронология_версий/versions-chronology.md
+          - Предпроекты:
+              - ecosystem/DETai/Предпроекты/index.md
+              - Thought Canvas:
+                  - ecosystem/DETai/Предпроекты/thought-canvas/index.md
+                  - ecosystem/DETai/Предпроекты/thought-canvas/philosophical-foundation.md
+                  - ecosystem/DETai/Предпроекты/thought-canvas/technology.md
+                  - ecosystem/DETai/Предпроекты/thought-canvas/storage-format.md
+          - Проекты:
+              - ecosystem/DETai/Проекты/index.md
+              - Эшелоны:
+                  - ecosystem/DETai/Проекты/Эшелоны/README.md
+                  - Эшелон 1:
+                      - ecosystem/DETai/Проекты/Эшелоны/echelon-1/index.md
+                      - Francis Galton: ecosystem/DETai/Проекты/Эшелоны/echelon-1/francis-galton.md
+                  - Эшелон 2:
+                      - ecosystem/DETai/Проекты/Эшелоны/echelon-2/index.md
+                  - Эшелон 3:
+                      - ecosystem/DETai/Проекты/Эшелоны/echelon-3/index.md
+      - STORYTELLING:
+          - publications/STORYTELLING/README.md
+          - Cycles: publications/STORYTELLING/Cycles/README.md
+          - Categories: publications/STORYTELLING/Categories/README.md
+          - Psychology: publications/STORYTELLING/Psychology/README.md
+      - blogs:
+          - publications/blogs/README.md
+          - detai_site_blog: publications/blogs/detai_site_blog/README.md
+          - personal_site_blog: publications/blogs/personal_site_blog/README.md
+      - Research_Publication:
+          - publications/Research_Publication/README.md
+          - articles: publications/Research_Publication/articles/README.md
+          - dissertations: publications/Research_Publication/dissertations/README.md
+          - theses: publications/Research_Publication/theses/README.md
+      - Onboarding_Framework:
+          - ecosystem/Onboarding_Framework/README.md
+          - onboarding: ecosystem/Onboarding_Framework/onboarding/index.md
+          - Презентации: ecosystem/Onboarding_Framework/Презентации/README.md
+      - Tools:
+          - ecosystem/Tools/README.md
+          - ClickUp: ecosystem/Tools/ClickUp/README.md
+          - Боты_Telegram: ecosystem/Tools/Боты_Telegram/README.md
+          - Codex: ecosystem/Tools/Codex/README.md
+          - GitHub: ecosystem/Tools/GitHub/README.md
+          - Obsidian: ecosystem/Tools/Obsidian/README.md
+          - Make_Сценарии: ecosystem/Tools/Make_Сценарии/README.md
+      - Infrastructure:
+          - ecosystem/Infrastructure/README.md
+          - index: ecosystem/Infrastructure/index/README.md
+          - Knowledge_Substrate: ecosystem/Infrastructure/Knowledge_Substrate/README.md
+          - Infrastructure_Principles: ecosystem/Infrastructure/Infrastructure_Principles/README.md
+      - Публикации: publications/index.md
+      - English (EN):
+          - ecosystem/en/index.md
+          - Onboarding:
+              - ecosystem/en/onboarding/index.md
+              - Pre-Onboarding:
+                  - ecosystem/en/onboarding/00-pre-onboarding/uli.md
+                  - ecosystem/en/onboarding/00-pre-onboarding/how-to-read.md
+          - DETai:
+              - Projects:
+                  - Echelon 1:
+                      - ecosystem/en/detai/projects/echelon-1/francis-galton.md
