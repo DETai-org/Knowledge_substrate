@@ -1,7 +1,7 @@
 nav:
   - index.md
-  - DET/
-  - DETai/
-  - Infrastructure/
-  - Onboarding_Framework/
-  - Tools/
+  - DET
+  - DETai
+  - Infrastructure
+  - Onboarding_Framework
+  - Tools
