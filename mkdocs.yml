@@ -1,7 +1,7 @@
 site_name: DET / DETai — Knowledge Core
 site_url: ""
 use_directory_urls: true
-docs_dir: knowledge_core/docs
+docs_dir: knowledge_core/source_of_truth/docs
 
 theme:
   name: material
@@ -21,63 +21,66 @@ markdown_extensions:
   - pymdownx.details
 
 nav:
-  - Главная: index.md
+  - Главная: ecosystem/index.md
+  - Публикации: publications/index.md
 
   - Onboarding:
-      - onboarding/index.md
+      - ecosystem/Onboarding_Framework/onboarding/index.md
       - Pre-Onboarding:
-          - onboarding/00-pre-onboarding/uli.md
-          - onboarding/00-pre-onboarding/how-to-read.md
+          - ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/uli.md
+          - ecosystem/Onboarding_Framework/onboarding/00-pre-onboarding/how-to-read.md
 
   - DET:
-      - det/index.md
-      - Placeholders:
-          - det/placeholders/mission.md
-          - det/placeholders/glossary.md
-          - det/placeholders/principles.md
+      - ecosystem/DET/index.md
+      - Методологии:
+          - ecosystem/DET/Методологии/mission.md
+          - ecosystem/DET/Методологии/glossary.md
+          - ecosystem/DET/Методологии/principles.md
 
   - DETai:
-      - detai/index.md
-      - Ecosystem Map: detai/ecosystem-map.md
+      - ecosystem/DETai/index.md
+      - Ecosystem Map: ecosystem/DETai/ecosystem-map.md
       - Projects:
-          - detai/projects/index.md
+          - ecosystem/DETai/Проекты/index.md
           - Echelon 1:
-              - detai/projects/echelon-1/index.md
-              - Francis Galton: detai/projects/echelon-1/francis-galton.md
+              - ecosystem/DETai/Проекты/Эшелоны/echelon-1/index.md
+              - Francis Galton: ecosystem/DETai/Проекты/Эшелоны/echelon-1/francis-galton.md
           - Echelon 2:
-              - detai/projects/echelon-2/index.md
+              - ecosystem/DETai/Проекты/Эшелоны/echelon-2/index.md
           - Echelon 3:
-              - detai/projects/echelon-3/index.md
+              - ecosystem/DETai/Проекты/Эшелоны/echelon-3/index.md
       - Preprojects:
-          - detai/preprojects/index.md
+          - ecosystem/DETai/Предпроекты/index.md
           - Thought Canvas:
-              - detai/preprojects/thought-canvas/index.md
+              - ecosystem/DETai/Предпроекты/thought-canvas/index.md
 
   - U.L.I:
-      - uli/index.md
+      - ecosystem/DETai/U.L.I. — Улей/index.md
       - Technical Standards:
-          - uli/technical-standards/index.md
-          - uli/technical-standards/versioning.md
-          - uli/technical-standards/policy-layer.md
-          - uli/technical-standards/mosaic-approach.md
-          - uli/technical-standards/telegram-bots-standard.md
+          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/index.md
+          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/versioning.md
+          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/policy-layer.md
+          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/mosaic-approach.md
+          - ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/telegram-bots-standard.md
       - Logic & Infrastructure:
-          - uli/logic-and-infra/index.md
-          - uli/logic-and-infra/repo-logic.md
+          - ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/index.md
+          - ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/repo-logic.md
       - Philosophy:
-          - uli/philosophy/index.md
-          - uli/philosophy/bee-roles.md
-          - uli/philosophy/vectors.md
-          - uli/philosophy/versions-chronology.md
+          - ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/index.md
+          - ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/bee-roles.md
+      - Vectors:
+          - ecosystem/DETai/U.L.I. — Улей/Описание_векторов/vectors.md
+      - Versions Chronology:
+          - ecosystem/DETai/U.L.I. — Улей/Хронология_версий/versions-chronology.md
 
   - English (EN):
-      - en/index.md
+      - ecosystem/en/index.md
       - Onboarding:
-          - en/onboarding/index.md
+          - ecosystem/en/onboarding/index.md
           - Pre-Onboarding:
-              - en/onboarding/00-pre-onboarding/uli.md
-              - en/onboarding/00-pre-onboarding/how-to-read.md
+              - ecosystem/en/onboarding/00-pre-onboarding/uli.md
+              - ecosystem/en/onboarding/00-pre-onboarding/how-to-read.md
       - DETai:
           - Projects:
               - Echelon 1:
-                  - en/detai/projects/echelon-1/francis-galton.md
+                  - ecosystem/en/detai/projects/echelon-1/francis-galton.md
