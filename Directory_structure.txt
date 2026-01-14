@@ -1,0 +1,175 @@
+Общее количество папок: 70
+Общее количество файлов: 101
+
+Knowledge_substrate
+├── .github
+│   └── workflows
+│       └── docs.yml
+├── detai-core
+│   ├── api
+│   │   └── app
+│   │       ├── __pycache__
+│   │       │   └── main.cpython-310.pyc
+│   │       └── main.py
+│   ├── workspace
+│   │   └── db
+│   │       ├── migrations
+│   │       │   ├── 0001_ledger.sql
+│   │       │   └── 0002_knowledge_core.sql
+│   │       └── apply_migrations.sh
+│   └── .env.example
+├── knowledge_core
+│   ├── ingest_pipeline
+│   │   └── README.md
+│   ├── operational_store
+│   │   └── README.md
+│   ├── source_of_truth
+│   │   ├── controlled_vocabularies
+│   │   │   ├── ecosystem
+│   │   │   │   └── README.md
+│   │   │   └── publications
+│   │   │       ├── categories.json
+│   │   │       ├── keywords.json
+│   │   │       └── rubrics.json
+│   │   ├── docs
+│   │   │   ├── ecosystem
+│   │   │   │   ├── DET
+│   │   │   │   │   ├── Методологии
+│   │   │   │   │   │   ├── glossary.md
+│   │   │   │   │   │   ├── mission.md
+│   │   │   │   │   │   ├── principles.md
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── index.md
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── DETai
+│   │   │   │   │   ├── U.L.I. — Улей
+│   │   │   │   │   │   ├── Логика_и_инфраструктура
+│   │   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   │   └── repo-logic.md
+│   │   │   │   │   │   ├── Описание_векторов
+│   │   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   │   └── vectors.md
+│   │   │   │   │   │   ├── Технические_стандарты
+│   │   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   │   ├── mosaic-approach.md
+│   │   │   │   │   │   │   ├── policy-layer.md
+│   │   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   │   ├── telegram-bots-standard.md
+│   │   │   │   │   │   │   └── versioning.md
+│   │   │   │   │   │   ├── Философия_и_установки
+│   │   │   │   │   │   │   ├── bee-roles.md
+│   │   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   │   └── README.md
+│   │   │   │   │   │   ├── Хронология_версий
+│   │   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   │   └── versions-chronology.md
+│   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Предпроекты
+│   │   │   │   │   │   ├── thought-canvas
+│   │   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   │   ├── philosophical-foundation.md
+│   │   │   │   │   │   │   ├── storage-format.md
+│   │   │   │   │   │   │   └── technology.md
+│   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Проекты
+│   │   │   │   │   │   ├── Эшелоны
+│   │   │   │   │   │   │   ├── echelon-1
+│   │   │   │   │   │   │   │   ├── francis-galton.md
+│   │   │   │   │   │   │   │   └── index.md
+│   │   │   │   │   │   │   ├── echelon-2
+│   │   │   │   │   │   │   │   └── index.md
+│   │   │   │   │   │   │   ├── echelon-3
+│   │   │   │   │   │   │   │   └── index.md
+│   │   │   │   │   │   │   └── README.md
+│   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── ecosystem-map.md
+│   │   │   │   │   ├── index.md
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── en
+│   │   │   │   │   ├── detai
+│   │   │   │   │   │   └── projects
+│   │   │   │   │   │       └── echelon-1
+│   │   │   │   │   │           └── francis-galton.md
+│   │   │   │   │   ├── onboarding
+│   │   │   │   │   │   ├── 00-pre-onboarding
+│   │   │   │   │   │   │   ├── how-to-read.md
+│   │   │   │   │   │   │   └── uli.md
+│   │   │   │   │   │   └── index.md
+│   │   │   │   │   └── index.md
+│   │   │   │   ├── Infrastructure
+│   │   │   │   │   ├── index
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Infrastructure_Principles
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Knowledge_Substrate
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── Onboarding_Framework
+│   │   │   │   │   ├── onboarding
+│   │   │   │   │   │   ├── 00-pre-onboarding
+│   │   │   │   │   │   │   ├── how-to-read.md
+│   │   │   │   │   │   │   └── uli.md
+│   │   │   │   │   │   └── index.md
+│   │   │   │   │   ├── Презентации
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── Tools
+│   │   │   │   │   ├── ClickUp
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Codex
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── GitHub
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Make_Сценарии
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Obsidian
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Боты_Telegram
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── index.md
+│   │   │   │   └── README.md
+│   │   │   └── publications
+│   │   │       ├── blogs
+│   │   │       │   ├── detai_site_blog
+│   │   │       │   │   └── README.md
+│   │   │       │   ├── personal_site_blog
+│   │   │       │   │   └── README.md
+│   │   │       │   └── README.md
+│   │   │       ├── Research_Publication
+│   │   │       │   ├── articles
+│   │   │       │   │   └── README.md
+│   │   │       │   ├── dissertations
+│   │   │       │   │   └── README.md
+│   │   │       │   ├── theses
+│   │   │       │   │   └── README.md
+│   │   │       │   └── README.md
+│   │   │       ├── STORYTELLING
+│   │   │       │   ├── Categories
+│   │   │       │   │   └── README.md
+│   │   │       │   ├── Cycles
+│   │   │       │   │   └── README.md
+│   │   │       │   ├── Psychology
+│   │   │       │   │   └── README.md
+│   │   │       │   └── README.md
+│   │   │       ├── index.md
+│   │   │       └── README.md
+│   │   ├── schemas
+│   │   │   ├── ecosystem_schema.md
+│   │   │   └── publications_schema.md
+│   │   └── README.md
+│   └── README.md
+├── scripts
+│   └── check.sh
+├── uli_core
+│   ├── config.py
+│   ├── config.toml
+│   ├── Directory_structure.txt
+│   └── README.md
+├── .gitignore
+├── mkdocs.yml
+└── README.md
