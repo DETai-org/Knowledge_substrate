@@ -1,5 +1,5 @@
 site_name: DET / DETai — Knowledge Core
-site_url: ""
+site_url: "https://detai-org.github.io/Knowledge_substrate/"
 use_directory_urls: true
 docs_dir: knowledge_core/source_of_truth/docs
 
