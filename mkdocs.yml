@@ -24,7 +24,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
 
-exclude_docs:
-  - publications/Research_Publication/**
-  - publications/STORYTELLING/**
-  - publications/blogs/**
+exclude_docs: |
+  publications/Research_Publication/**
+  publications/STORYTELLING/**
+  publications/blogs/**
