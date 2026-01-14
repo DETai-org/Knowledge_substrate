@@ -1,7 +1,8 @@
 .language-switcher {
   display: flex;
   align-items: center;
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
+  flex: 0 0 auto;
 }
 
 .language-switcher__menu {
@@ -11,16 +12,27 @@
 .language-switcher__summary {
   list-style: none;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font-weight: 600;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.35);
   color: var(--md-primary-bg-color);
   background: rgba(255, 255, 255, 0.15);
+  line-height: 1.2;
 }
 
 .language-switcher__summary::-webkit-details-marker {
   display: none;
+}
+
+.language-switcher__summary::after {
+  content: "▾";
+  font-size: 0.7rem;
+  opacity: 0.8;
 }
 
 .language-switcher__list {

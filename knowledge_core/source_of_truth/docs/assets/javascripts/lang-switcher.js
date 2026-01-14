@@ -27,7 +27,7 @@
   container.innerHTML = `
     <details class="language-switcher__menu">
       <summary class="language-switcher__summary" aria-label="Переключить язык сайта">
-        RU
+        Language
       </summary>
       <div class="language-switcher__list">
         <a class="language-switcher__link" href="${ruUrl}">Русский</a>
@@ -37,5 +37,10 @@
     </details>
   `;
 
-  header.appendChild(container);
+  const search = header.querySelector('.md-search');
+  if (search?.parentNode) {
+    search.parentNode.insertBefore(container, search.nextSibling);
+  } else {
+    header.appendChild(container);
+  }
 })();
