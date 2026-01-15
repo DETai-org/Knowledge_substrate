@@ -12,6 +12,21 @@
 - `controlled_vocabularies/` — канонические словари значений.
 - `schemas/` — контракты структуры данных.
 
+## Policies
+
+Политики — это канонические нормативные документы, которые закрепляют принципы устройства,
+роста и управления знаниями в Knowledge Core. Они задают правила для словарей, таксономии,
+структуры метаданных и безопасной индексации, чтобы Source of Truth оставался согласованным
+с производными системами (индекс, RAG, граф). В результате любые изменения в данных и схемах
+сверяются с этими правилами, а не обсуждаются «с нуля».
+
+Где искать политики:
+- Controlled vocabularies policy — `knowledge_core/source_of_truth/policies/controlled_vocabularies_policy.md`.
+- Rubrics & subrubrics policy — `knowledge_core/source_of_truth/policies/rubrics_and_subrubrics_policy.md`.
+- Keywords policy — `knowledge_core/source_of_truth/policies/keywords_policy.md`.
+- Document taxonomy policy — `knowledge_core/source_of_truth/policies/document_taxonomy_policy.md`.
+- Ingest & RAG hybrid model — `knowledge_core/ingest_pipeline/policies/ingest_and_rag_hybrid_model.md`.
+
 ## Правило
 
 Материалы тут являются **первичным источником знания** и используются как единый фундамент для:

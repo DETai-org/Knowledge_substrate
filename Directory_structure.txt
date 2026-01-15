@@ -1,5 +1,5 @@
-Общее количество папок: 70
-Общее количество файлов: 101
+Общее количество папок: 71
+Общее количество файлов: 102
 
 Knowledge_substrate
 ├── .github
@@ -20,6 +20,8 @@ Knowledge_substrate
 │   └── .env.example
 ├── knowledge_core
 │   ├── ingest_pipeline
+│   │   ├── policies
+│   │   │   └── ingest_and_rag_hybrid_model.md
 │   │   └── README.md
 │   ├── operational_store
 │   │   └── README.md
