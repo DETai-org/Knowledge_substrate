@@ -1,1 +1,40 @@
-[]
+{
+  "vocabulary": "keywords",
+  "version": "v0.1",
+  "policy": {
+    "generation_mode": "hybrid",
+    "description": "Keywords may be AI-generated at document creation time. New keywords are first added as candidates and later reviewed and promoted to approved status."
+  },
+  "items": [
+    {
+      "id": "keyword:ambivalence",
+      "type": "keyword",
+      "label": "Ambivalence",
+      "description": "The coexistence of opposing tendencies, feelings, or attitudes within the same subject.",
+      "status": "approved",
+      "origin": "manual",
+      "created_at": "2026-01",
+      "parent_id": null
+    },
+    {
+      "id": "keyword:inner-tension",
+      "type": "keyword",
+      "label": "Inner tension",
+      "description": "Experienced psychological tension arising from internal contradictions or conflicts.",
+      "status": "candidate",
+      "origin": "ai",
+      "created_at": "2026-01",
+      "parent_id": null
+    },
+    {
+      "id": "keyword:existential-choice",
+      "type": "keyword",
+      "label": "Existential choice",
+      "description": "Moments of decision where an individual confronts freedom, responsibility, and meaning.",
+      "status": "candidate",
+      "origin": "ai",
+      "created_at": "2026-01",
+      "parent_id": null
+    }
+  ]
+}
