@@ -55,7 +55,8 @@
     "id": "unique_identifier",
     "authors": ["Author1", "Author2"],
     "date_ymd": "2026-01-15",
-    "status": "publish"
+    "status": "publish",
+    "subtype": "article"
   },
   "descriptive": {
     "title": "Research paper title",
@@ -63,10 +64,10 @@
     "journal": "Journal name",
     "doi": "DOI link",
     "taxonomy": {
-      "rubric_ids": ["rubric:personality-types-and-existential-strategies"],
-      "category_ids": ["category:science-and-psychology", "category:ai"],
-      "keyword_ids": ["keyword:inner-tension", "keyword:existential-choice"],
-      "keywords_raw": ["machine learning", "psychology"]
+      "rubric_ids": [],
+      "category_ids": [],
+      "keyword_ids": [],
+      "keywords_raw": []
     },
     "content": "Research content"
   },
@@ -84,6 +85,17 @@
   }
 }
 ```
+
+### Подтип публикации (administrative.subtype)
+
+Допустимые значения:
+
+* `article` — статья, опубликованная в журнале, сборнике или на площадке.
+* `dissertation` — диссертация (полная научная работа).
+* `thesis` — тезисы/краткий доклад, обычно для конференций или сборников.
+
+Примечание: на текущем этапе **rubric_ids** и **category_ids** применяются к постам, но **не назначаются** научным публикациям.  
+В будущем возможно связать рубрики/категории постов с научными публикациями, но сейчас их роль выполняет только подтип.
 
 ---
 
