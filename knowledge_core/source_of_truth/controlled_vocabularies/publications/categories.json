@@ -11,7 +11,8 @@
       "label": "ТОП идеи",
       "description": "Key ideas that stand out as the most important and impactful.",
       "emoji": "❗️",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:unusual-style",
@@ -19,7 +20,8 @@
       "label": "Необычный стиль",
       "description": "Innovative and distinctive styles in the content presented.",
       "emoji": "✴️",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:science-and-psychology",
@@ -27,7 +29,8 @@
       "label": "Наука и психология",
       "description": "Content related to scientific research and psychological theories.",
       "emoji": "⚛️",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:psychotherapy",
@@ -35,7 +38,8 @@
       "label": "Психотерапия",
       "description": "Topics and discussions about psychotherapy practices and approaches.",
       "emoji": "🕎",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:humanistic-principles",
@@ -43,7 +47,8 @@
       "label": "Гуманистические принципы",
       "description": "Principles that focus on human values and potential.",
       "emoji": "⚜️",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:relationships-ideas",
@@ -51,7 +56,8 @@
       "label": "Идеи про отношения",
       "description": "Discussions and ideas on relationships, dynamics, and interpersonal connections.",
       "emoji": "💙",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:education-in-universities",
@@ -59,7 +65,8 @@
       "label": "Об образовании в университетах",
       "description": "Ideas and insights into the world of higher education and university systems.",
       "emoji": "🛐",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:moral-ethics",
@@ -67,7 +74,8 @@
       "label": "Мораль, этика",
       "description": "Topics around moral and ethical dilemmas in society and individual behavior.",
       "emoji": "Ⓜ️",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:about-me",
@@ -75,7 +83,8 @@
       "label": "Про меня",
       "description": "Content related to personal experience, identity, and self-reflection.",
       "emoji": "🙋‍♂️",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:transference",
@@ -83,7 +92,8 @@
       "label": "Перенос",
       "description": "Psychological concept related to the unconscious redirection of feelings from one person to another.",
       "emoji": "🚻",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:countertransference",
@@ -91,7 +101,8 @@
       "label": "Контрперенос",
       "description": "The therapist's emotional response to the patient's transference.",
       "emoji": "🚹",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:skills-techniques",
@@ -99,7 +110,8 @@
       "label": "Навыки, приемы, техники",
       "description": "Practical techniques and skills in various fields.",
       "emoji": "🪡",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:resistance-in-therapy",
@@ -107,7 +119,8 @@
       "label": "Сопротивление в терапии",
       "description": "The psychological resistance often encountered during therapeutic processes.",
       "emoji": "🆚",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:defense-mechanisms",
@@ -115,7 +128,8 @@
       "label": "Защитные механизмы",
       "description": "The unconscious processes used by the ego to protect itself from anxiety and emotional pain.",
       "emoji": "🛡",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:effectiveness",
@@ -123,7 +137,8 @@
       "label": "Эффективность",
       "description": "Measures and considerations of effectiveness in various contexts, especially in psychotherapy.",
       "emoji": "⛳️",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:overcoming",
@@ -131,7 +146,8 @@
       "label": "Преодоление",
       "description": "Themes related to overcoming obstacles, adversity, and challenges in life.",
       "emoji": "💪",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:shadow-and-light",
@@ -139,7 +155,8 @@
       "label": "Тень и Свет",
       "description": "Exploring the dualities and opposites in human experience, integrating both shadow and light.",
       "emoji": "🌓",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:patterns",
@@ -147,7 +164,8 @@
       "label": "Паттерны",
       "description": "Recurring patterns in behavior, thoughts, or events.",
       "emoji": "🔂",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:self-promotion-skills",
@@ -155,7 +173,8 @@
       "label": "Скилл самопиара",
       "description": "The art of self-promotion, branding, and positioning oneself effectively.",
       "emoji": "🤘",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:narcissism",
@@ -163,7 +182,8 @@
       "label": "Нарциссизм",
       "description": "Exploring narcissism, both as a personality trait and a broader social phenomenon.",
       "emoji": "🪞",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     },
     {
       "id": "category:ai",
@@ -171,7 +191,8 @@
       "label": "AI",
       "description": "Content related to Artificial Intelligence and its applications.",
       "emoji": "🤖",
-      "parent_id": null
+      "parent_id": null,
+      "lifecycle": "approved"
     }
   ]
 }

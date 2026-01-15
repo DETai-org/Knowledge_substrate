@@ -4,15 +4,18 @@
   "items": [
     {
       "id": "rubric:shadow-and-light",
-      "label": "Shadow and Light"
+      "label": "Shadow and Light",
+      "lifecycle": "approved"
     },
     {
       "id": "rubric:personality-types-and-existential-strategies",
-      "label": "Personality Types and Existential Strategies"
+      "label": "Personality Types and Existential Strategies",
+      "lifecycle": "approved"
     },
     {
       "id": "rubric:orientation-toward-overcoming",
-      "label": "Orientation Toward Overcoming"
+      "label": "Orientation Toward Overcoming",
+      "lifecycle": "approved"
     }
   ]
 }

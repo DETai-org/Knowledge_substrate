@@ -14,7 +14,7 @@
   "administrative": {
     "id": "unique_identifier",
     "authors": ["Author1", "Author2"],
-    "date_ym": "2026-01",
+    "date_ymd": "2026-01-15",
     "status": "publish"
   },
   "descriptive": {
@@ -22,9 +22,10 @@
     "preview": "Preview content for social media",
     "seoLead": "SEO description",
     "taxonomy": {
-      "rubrics": ["rubric:shadow-and-light", "Psychology"],
-      "categories": ["category:top-ideas", category:science-and-psychology"],
-      "keywords": ["SEO", "AI research"]
+      "rubric_ids": ["rubric:shadow-and-light"],
+      "category_ids": ["category:top-ideas", "category:science-and-psychology"],
+      "keyword_ids": ["keyword:ambivalence"],
+      "keywords_raw": ["SEO", "AI research"]
     },
     "content": "Full post content"
   },
@@ -53,7 +54,7 @@
   "administrative": {
     "id": "unique_identifier",
     "authors": ["Author1", "Author2"],
-    "date_ym": "2026-01",
+    "date_ymd": "2026-01-15",
     "status": "publish"
   },
   "descriptive": {
@@ -62,9 +63,10 @@
     "journal": "Journal name",
     "doi": "DOI link",
     "taxonomy": {
-      "rubrics": ["Science", "Psychology"],
-      "categories": ["AI research", "Behavioral science"],
-      "keywords": ["machine learning", "psychology"]
+      "rubric_ids": ["rubric:personality-types-and-existential-strategies"],
+      "category_ids": ["category:science-and-psychology", "category:ai"],
+      "keyword_ids": ["keyword:inner-tension", "keyword:existential-choice"],
+      "keywords_raw": ["machine learning", "psychology"]
     },
     "content": "Research content"
   },
@@ -93,14 +95,17 @@
   "administrative": {
     "id": "unique_identifier",
     "authors": ["Anton"],
-    "date_ym": "2026-01-01",
+    "date_ymd": "2026-01-01",
     "status": "publish"
   },
   "descriptive": {
     "title": "Quote title (optional)",
     "content": "Quoted text",
     "taxonomy": {
-      "categories": ["category:unusual-style", "Motivation"]
+      "rubric_ids": [],
+      "category_ids": ["category:unusual-style"],
+      "keyword_ids": [],
+      "keywords_raw": ["Motivation"]
     },
     "attribution": {
       "quote_author": "Author of the book (e.g., Nietzsche)"
@@ -202,9 +207,9 @@ _____
 
 ---
 
-## **date_ym**
+## **date_ymd**
 
-Дата публикации или фиксации документа в формате `YYYY-MM`, используемая для хронологии и сортировки.
+Дата публикации или фиксации документа в формате `YYYY-MM-DD`, используемая для хронологии и сортировки.
 
 ---
 
@@ -236,28 +241,51 @@ _____
 ## **taxonomy**
 
 Классификация документа по управляемым словарям (controlled vocabularies).  
-Документ **не хранит произвольные строки**, а ссылается на заранее определённые сущности.
+`rubric_ids`, `category_ids`, `keyword_ids` содержат только ссылки на словари,  
+а `keywords_raw` — единственный допустимый слой для свободных строк на время модерации.
 
 ---
 
-## **rubrics**
+## **rubric_ids**
 
 Верхнеуровневые тематические области, к которым относится документ  
-(берутся из контролируемого словаря `rubrics`).
+(берутся из контролируемого словаря `rubrics`, формат `rubric:*`).
 
 ---
 
-## **categories**
+## **category_ids**
 
 Более узкие тематические группы внутри рубрик, уточняющие фокус документа  
-(берутся из контролируемого словаря `categories`, привязанного к рубрикам).
+(берутся из контролируемого словаря `categories`, формат `category:*`).
 
 ---
 
-## **keywords**
+## **keyword_ids**
 
 Ключевые слова для дополнительной детализации и поиска  
-(берутся из контролируемого словаря `keywords`).
+(берутся из контролируемого словаря `keywords`, формат `keyword:*`).
+
+---
+
+## **keywords_raw**
+
+Свободные ключевые слова на период перехода, пока `keyword_ids` заполняется и проходит модерацию.
+
+---
+
+### Стратегия ключевых слов (переходный период)
+
+- Сначала все документы получают `keywords_raw`.
+- Затем ключевые слова постепенно сопоставляются с `keyword_ids`.
+- Кандидаты в словаре переводятся в `approved` после проверки.
+
+---
+
+### Статусы жизненного цикла словарей (lifecycle)
+
+- `candidate` — добавлено и ждёт проверки.
+- `approved` — проверено и доступно для использования.
+- `deprecated` — устарело и не рекомендуется к использованию.
 
 ---
 
