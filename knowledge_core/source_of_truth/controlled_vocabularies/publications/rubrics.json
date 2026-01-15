@@ -1,1 +1,18 @@
-[]
+{
+  "vocabulary": "rubrics",
+  "version": "v0.1",
+  "items": [
+    {
+      "id": "rubric:shadow-and-light",
+      "label": "Shadow and Light"
+    },
+    {
+      "id": "rubric:personality-types-and-existential-strategies",
+      "label": "Personality Types and Existential Strategies"
+    },
+    {
+      "id": "rubric:orientation-toward-overcoming",
+      "label": "Orientation Toward Overcoming"
+    }
+  ]
+}
