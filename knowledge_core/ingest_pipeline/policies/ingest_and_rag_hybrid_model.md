@@ -20,14 +20,26 @@ Markdown-файл содержит:
 - frontmatter (минимальная мета)
 - тело контента (чистый текст)
 
-Минимальная мета (ручная, стабильная):
-- `id`
-- `type`
-- `authors`
-- `date_ymd`
-- `status`
-- `taxonomy` (`rubric_ids`, `category_ids`, `keyword_ids`, `keywords_raw`)
-- (опционально для research_publication) `journal`, `doi` и т.п. если удобно вести вручную
+Минимальная мета (пример):
+```
+type: post
+id: eta-istoriya-pro-odnogo-cheloveka
+slug: eta-istoriya-pro-odnogo-cheloveka
+authors:
+  - Anton
+date_ymd: 2016-05-16
+status: publish
+title: "Эта история про одного человека"
+preview: "История о том, как желание добиться успеха проверяется на прочность."
+seoLead: "Притча о том, что настоящий успех приходит, когда ты хочешь его так же, как хочешь жить."
+taxonomy:
+  rubric_ids: ["rubric:orientation-toward-overcoming"]
+  category_ids: ["category:overcoming"]
+  keyword_ids: ["keyword:existential-choice"]
+  keywords_raw: ["успех", "преодоление", "мотивация"]
+```
+
+⚠️ Для type: research_publication и цитат другая МЕТА будет немного 
 
 ### В БД / индексе (тяжёлое и производное)
 Хранится и обновляется ingestion pipeline:
