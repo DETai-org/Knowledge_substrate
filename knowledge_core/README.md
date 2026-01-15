@@ -12,34 +12,6 @@
 - **mkdocs.yml** — конфигурация сайта
 - **.github/workflows/docs.yml** — автосборка и деплой
 
-## Быстрый старт (локально)
-
-> Требуется Python 3.11+
-
-```bash
-pip install mkdocs-material
-mkdocs serve
-```
-
-После запуска документация будет доступна по адресу `http://127.0.0.1:8000/`.
-
-## Деплой
-
-Деплой выполняется автоматически при пуше в ветку `main`, если изменялись:
-- `knowledge_core/source_of_truth/docs/**`
-- `mkdocs.yml`
-- `.github/workflows/docs.yml`
-
-## Автопроверка
-
-```bash
-./scripts/check.sh
-```
-
-Скрипт запускает:
-- `mkdocs build --clean`
-- `python -m compileall detai-core`
-
 ## Принципы ведения
 
 - **Markdown — канон знаний**: изменения обсуждаются и фиксируются в PR.
@@ -51,19 +23,6 @@ mkdocs serve
 - Навигация больше **не задаётся вручную** — она автогенерируется из структуры файлов.
 - Для раздела публикаций включены **исключения `exclude_docs`**.
 - Публикации остаются в Source of Truth, но **не публикуются в MkDocs** (кроме `docs/publications/index.md`).
-
-Пример фрагмента `mkdocs.yml`:
-
-```yaml
-plugins:
-  - search
-  - awesome-pages
-
-exclude_docs:
-  - publications/Research_Publication/**
-  - publications/STORYTELLING/**
-  - publications/blogs/**
-```
 
 ## Как добавлять материалы
 
