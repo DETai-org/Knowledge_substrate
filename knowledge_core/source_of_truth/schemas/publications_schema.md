@@ -16,7 +16,7 @@
     "authors": ["Author1", "Author2"],
     "date_ymd": "2026-01-15",
     "status": "publish",
-    "channels": ["detai_site_blog", "personal_site_blog"]
+    "channels": ["detai_site_blog"]
   },
   "descriptive": {
     "title": "Title of the post",
@@ -45,6 +45,9 @@
   }
 }
 ```
+
+Примечание: для документов типа **post** поле `administrative.channels` обязательно задаётся в исходных данных от пользователя,  
+и rubrics выбираются **только** из набора, соответствующего выбранному сайту (`detai_site_blog` или `personal_site_blog`).
 
 ---
 
@@ -313,6 +316,8 @@ _____
 Для **первого поста цикла** допускается маркер родительского поста через суффикс  
 `cycle_123:Post-announcement`.  
 Если пост **не входит** в цикл, поле **отсутствует** (пустые значения не используются).
+Цикл выбирается из словаря `controlled_vocabularies/cycle.json` и должен соответствовать `administrative.channels` поста.
+Циклы без привязки к сайту не используются до назначения.
 
 ---
 
