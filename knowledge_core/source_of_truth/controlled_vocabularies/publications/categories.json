@@ -2,7 +2,7 @@
   "vocabulary": "categories",
   "version": "v0.1",
   "policy": {
-    "description": "Categories are universal tags and filters, applicable to any document and any rubric. They are used for cross-cutting classification."
+    "description": "Категории — универсальные метки и фильтры для кросс-тематической классификации. Они применимы к любому документу и любой рубрике, помогают связывать материалы по общим темам и обеспечивают единый слой навигации."
   },
   "items": [
     {
