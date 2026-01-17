@@ -16,7 +16,7 @@
     "authors": ["Author1", "Author2"],
     "date_ymd": "2026-01-15",
     "status": "publish",
-    "channels": ["detai_site_blog", "personal_site_blog"]
+    "target_site": ["detai_site_blog", "personal_site_blog"]
   },
   "descriptive": {
     "title": "Title of the post",
