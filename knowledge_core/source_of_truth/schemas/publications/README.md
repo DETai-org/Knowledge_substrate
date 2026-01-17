@@ -11,7 +11,7 @@
 - **research_publication** — научные публикации (статьи, диссертации, тезисы);
 - **quote** — цитаты.
 
-Контракт схемы хранится в `research_publication/publications_schema.md`
+Контракт схемы хранится в `publications_schema.md`
 (в канонической формулировке, описывающей все типы документов).
 
 ## Структура раздела
@@ -23,6 +23,7 @@
   - подробные политики (`category_policies.md`, `keywords_policy.md`,
     `rubrics_and_subrubrics_policy.md`, `preview_policies.md`).
 - `research_publication/` — заглушка под документы и правила научных публикаций.
+- `publications_schema.md` — канонический контракт схемы публикаций.
 
 ## Связанные разделы
 
