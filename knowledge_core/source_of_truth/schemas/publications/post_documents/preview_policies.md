@@ -32,4 +32,4 @@
 
 6. **Использование эмодзи**:
 
-   * Превью должен содержать одну эмодзи которая олецетворяет категорию поста (из .../controlled_vocabularies/publications/categories.json)
+   * Превью должен содержать одну эмодзи которая олецетворяет категорию поста (из `schemas/publications/post_documents/categories.json`)

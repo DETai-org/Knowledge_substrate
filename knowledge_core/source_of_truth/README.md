@@ -21,10 +21,8 @@
 сверяются с этими правилами, а не обсуждаются «с нуля».
 
 Где искать политики:
-- Controlled vocabularies policy — `knowledge_core/source_of_truth/policies/controlled_vocabularies_policy.md`.
-- Rubrics & subrubrics policy — `knowledge_core/source_of_truth/policies/rubrics_and_subrubrics_policy.md`.
-- Keywords policy — `knowledge_core/source_of_truth/policies/keywords_policy.md`.
-- Document taxonomy policy — `knowledge_core/source_of_truth/policies/document_taxonomy_policy.md`.
+- Controlled vocabularies policy — `knowledge_core/source_of_truth/schemas/controlled_vocabularies_policy.md`.
+- Политики публикаций — `knowledge_core/source_of_truth/schemas/publications/post_documents/README.md`.
 - Ingest & RAG hybrid model — `knowledge_core/ingest_pipeline/policies/ingest_and_rag_hybrid_model.md`.
 
 ## Правило

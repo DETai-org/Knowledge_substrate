@@ -1,18 +1,18 @@
 # Controlled vocabularies (Source of Truth)
 
-Здесь находятся управляемые словари (реестры) для разных доменов:
-- publications/
+Здесь находятся управляемые словари (реестры) для разных доменов и общих сущностей:
 - ecosystem/
+- cycle.json (общий словарь тематических циклов)
 - ...
 
 ## Общая политика
 Все словари подчиняются общей политике:
-- ../policies/controlled_vocabularies_policy.md
+- ../schemas/controlled_vocabularies_policy.md
 
 ## Доменные особенности
 Отдельные домены могут иметь дополнительные поля, но базовые правила (id stability, lifecycle, deprecation) общие.
 
-controlled_vocabularies_policy.md — это надполитика для всех словарей (publications, ecosystem и любых будущих), даже если:
+controlled_vocabularies_policy.md — это надполитика для всех словарей (ecosystem, publications и любых будущих), даже если:
 
 у разных схем разные vocabularies,
 
