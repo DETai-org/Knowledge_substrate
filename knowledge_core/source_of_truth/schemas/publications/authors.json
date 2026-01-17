@@ -1,0 +1,12 @@
+{
+  "vocabulary": "authors",
+  "version": "v0.1",
+  "items": [
+    {
+      "id": "author:anton-kolhonen",
+      "display_name": "Anton Kolhonen",
+      "slug": "anton-kolhonen",
+      "type": "person"
+    }
+  ]
+}

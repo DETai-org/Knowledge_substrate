@@ -16,6 +16,7 @@
   - `categories.json`
   - `keywords.json`
   - `cycle.json`
+  - `../authors.json`
 
 - **Политики:**
   - `rubrics_and_subrubrics_policy.md`
@@ -98,7 +99,8 @@ knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/
 
 ### `authors`
 
-- Берётся из входных данных.
+- Список авторов берётся из `knowledge_core/source_of_truth/schemas/publications/authors.json`.
+- Если пользователь указывает автора в свободной форме (включая только имя без фамилии, в том числе на русском — например, «Антон»), сопоставь значение с `authors.json` и подставь каноническое имя автора из файла, если есть хотя бы частичное совпадение.
 - Если `authors` отсутствует → указать `authors: [none]` (не подставлять автоматически реального автора).
 
 ### `preview`
