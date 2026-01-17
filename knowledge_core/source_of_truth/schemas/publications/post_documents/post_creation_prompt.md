@@ -59,7 +59,9 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 
 ## 🧩 Taxonomy (правила заполнения)
 
-### `taxonomy.rubric_ids`
+Все поля таксономии находятся в `descriptive.taxonomy`.
+
+### `descriptive.taxonomy.rubric_ids`
 
 - Если `rubric_ids` **заданы пользователем**:
   - если переданы как ID → использовать после валидации по `rubrics.json`;
@@ -67,7 +69,7 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 - Если `rubric_ids` **не заданы** → определить рубрику по смыслу текста.
 - Подробнее: `rubrics_and_subrubrics_policy.md` + `rubrics.json`.
 
-### `taxonomy.category_ids`
+### `descriptive.taxonomy.category_ids`
 
 **Правило выбора (приоритет):**
 
@@ -77,7 +79,7 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 
 Подробнее: `category_policies.md` + `categories.json`.
 
-### `taxonomy.cycle_ids` (**0 или 1 элемент**)
+### `descriptive.taxonomy.cycle_ids` (**0 или 1 элемент**)
 
 - Если пользователь передал:
   - `cycle_id`, **или** название цикла (title), → сопоставить с `cycle.json`, допуская орфографические ошибки и вариации написания; выбрать наиболее вероятное совпадение по смыслу.
@@ -95,7 +97,7 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 
 Подробнее: `cycle_policies.md` + `cycle.json`. Если цикл размещается на **двух сайтах**, см. правила в `cycle_policies.md`.
 
-### `taxonomy.keyword_ids` + `taxonomy.keywords_raw`
+### `descriptive.taxonomy.keyword_ids` + `descriptive.taxonomy.keywords_raw`
 
 - `keywords_raw`:
   - сгенерировать список **сырых** ключевых слов или словосочетаний (2–3) по смыслу текста.
@@ -106,18 +108,18 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 - Если подходящих нет → `keyword_ids` **не добавлять**.
 - Подробнее: `keywords_policy.md` + `keywords.json`.
 
-### `authors`
+### `administrative.authors`
 
 - Список авторов берётся из `knowledge_core/source_of_truth/schemas/publications/authors.json`.
 - Если пользователь указывает автора в свободной форме (включая только имя без фамилии, в том числе на русском — например, «Антон»), сопоставь значение с `authors.json` и подставь каноническое имя автора из файла, если есть хотя бы частичное совпадение.
 - Если `authors` отсутствует → указать `authors: [none]` (не подставлять автоматически реального автора).
 
-### `preview`
+### `descriptive.preview`
 
 - Сгенерировать краткий лид: 1–2 предложения, без списков и без ссылок.
 - Подробнее: см. `preview_policies.md`.
 
-### SEO (`seoLead`)
+### SEO (`descriptive.seoLead`)
 
 **Обязательное поле.**
 1–2 предложения (≈ 90–160 символов), без кликбейта, с ключевой темой в начале.
@@ -129,15 +131,15 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 - не дублирует заголовок целиком;
 - без эмодзи и капслока.
 
-### `date_ymd`
+### `administrative.date_ymd`
 
 - Если дата не передана во входе: поставить **текущую дату** в формате `YYYY-MM-DD`.
 
-### `status`
+### `administrative.status`
 
 - Всегда `publish`.
 
-### `target_site`
+### `administrative.channels`
 
 - Может содержать **один или несколько** сайтов.
 - Если пользователь перечисляет сайты через запятую, или использует свободные формулировки/русский язык (например «detai», «ДЕТай», «персональный сайт») — сопоставь с допустимыми значениями `detai_site_blog` и `personal_site_blog`.
@@ -156,22 +158,29 @@ Frontmatter должен начинаться и заканчиваться `---
 ```yaml
 ---
 type: post
-id: <postId>
-authors:
-  - <AuthorName>
-date_ymd: <YYYY-MM-DD>
-status: publish
-target_site:
-  - detai_site_blog
-  - personal_site_blog
-title: "<title>"
-preview: "<preview>"
-seoLead: "<seoLead>"
-taxonomy:
-  rubric_ids: ["rubric:..."]
-  category_ids: ["category:..."]
-  cycle_ids: ["cycle:..."]        # добавлять только если цикл есть
-  keyword_ids: ["keyword:..."]    # добавлять только если есть совпадения
-  keywords_raw: ["..."]           # список сырых ключевых слов
+administrative:
+  id: <postId>
+  authors:
+    - <AuthorName>
+  date_ymd: <YYYY-MM-DD>
+  status: publish
+  channels:
+    - detai_site_blog
+    - personal_site_blog
+descriptive:
+  title: "<title>"
+  preview: "<preview>"
+  seoLead: "<seoLead>"
+  taxonomy:
+    rubric_ids: ["rubric:..."]
+    category_ids: ["category:..."]
+    cycle_ids: ["cycle:..."]        # добавлять только если цикл есть
+    keyword_ids: ["keyword:..."]    # добавлять только если есть совпадения
+    keywords_raw: ["..."]           # список сырых ключевых слов
+structural:
+  external_links: []                # добавлять при наличии
+  document_links: []                # добавлять при наличии
 ---
 ```
+
+Тело поста идёт **после** frontmatter и соответствует `descriptive.content`.
