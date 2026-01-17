@@ -1,35 +1,11 @@
 # Knowledge Substrate
 
-```mermaid
-flowchart TD
-    A["GitHub Repo: Markdown + Frontmatter\n(Источник истины контента / Content Source of Truth)"] --> B["Sync Trigger\n(Триггер синхронизации / Scheduler, Cron, Webhook)"]
-    B --> C["INGEST PIPELINE / ПАЙПЛАЙН ЗАГРУЗКИ"]
+Этот репозиторий описывает и хранит каноническую структуру знаний и данных экосистемы **DET / DETai**.
+Здесь находится исходная база знаний, а также пайплайны и операционные хранилища, которые формируют производные представления данных.
 
-    C --> C1["Parse / Парсинг\n(Markdown → structured data)"]
-    C --> C2["Validate / Валидация\n(IDs vs Controlled Vocabularies)"]
-    C --> C3["Upsert / Идемпотентная запись\n(Postgres)"]
-    C --> C4["Link building / Построение связей\n(document_links, external_links)"]
-    C --> C5["EMBEDDING SUBPIPELINE / ПОДПРОЦЕСС ВЕКТОРИЗАЦИИ"]
+## Навигация по уровням
 
-    C5 --> C51["Document Embeddings / Векторы документа\n(1 vector per doc)"]
-    C5 --> C52["Chunk Embeddings / Векторы чанков\n(N vectors per doc)"]
+- **knowledge_core/** — главный контур Knowledge Core с описанием стадий работы и их взаимосвязи.
+- **README в корне** — внешний обзор репозитория и ссылка на подробную схему в Knowledge Core.
 
-    C --> D["Postgres / Cloud SQL: publications_schema\n(Операционное хранилище / Operational Store)"]
-    D --> D1[documents]
-    D --> D2["taxons\n(rubrics/categories/keywords/subrubrics)"]
-    D --> D3["document_taxons\n(join table)"]
-    D --> D4[document_links / external_links]
-    D --> D5[embeddings_documents]
-    D --> D6[embeddings_chunks]
-
-    D --> E["API DOOR / API-ДВЕРЬ (FastAPI)\n(Сервис доступа / Query & Write Service)"]
-    E --> E1["Filter search / Фильтры\n(rubric/category/status/date)"]
-    E --> E2["Semantic search / Семантический поиск\n(vectors)"]
-    E --> E3["Graph queries / Графовые запросы\n(links)"]
-    E --> E4["Agent endpoints / Эндпоинты для агентов"]
-
-    E --> F[Clients / Потребители]
-    F --> F1["Website UI / Сайт\n(поиск, фильтры, граф)"]
-    F --> F2["Admin UI / Админка\n(ревью keywords candidates)"]
-    F --> F3["Agents / Агенты\n(RAG, рекомендации, кластеризация)"]
-```
+Для детальной схемы и архитектурной логики см. `knowledge_core/README.md`.
