@@ -16,6 +16,7 @@
   - `categories.json`
   - `keywords.json`
   - `cycle.json`
+  - `sizes.json`
   - `../authors.json`
 
 - **Политики:**
@@ -24,6 +25,7 @@
   - `keywords_policy.md`
   - `preview_policies.md`
   - `cycle_policies.md`
+  - `size_policies.md`
 
 ## 📃 Создание файла
 
@@ -119,6 +121,12 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 - Сгенерировать краткий лид: 1–2 предложения, без списков и без ссылок.
 - Подробнее: см. `preview_policies.md`.
 
+### `descriptive.size`
+
+- Значение берётся из `sizes.json`.
+- Выбор размера — по масштабу и структуре текста (см. `size_policies.md`).
+- Если пользователь **не указал размер**, выбрать его самостоятельно по этим правилам.
+
 ### SEO (`descriptive.seoLead`)
 
 **Обязательное поле.**
@@ -168,6 +176,7 @@ administrative:
     - detai_site_blog
     - personal_site_blog
 descriptive:
+  size: "<M|L|XL|XXL>"
   title: "<title>"
   preview: "<preview>"
   seoLead: "<seoLead>"
