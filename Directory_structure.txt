@@ -1,5 +1,5 @@
-Общее количество папок: 71
-Общее количество файлов: 102
+Общее количество папок: 76
+Общее количество файлов: 123
 
 Knowledge_substrate
 ├── .github
@@ -26,14 +26,10 @@ Knowledge_substrate
 │   ├── operational_store
 │   │   └── README.md
 │   ├── source_of_truth
-│   │   ├── controlled_vocabularies
-│   │   │   ├── ecosystem
-│   │   │   │   └── README.md
-│   │   │   └── publications
-│   │   │       ├── categories.json
-│   │   │       ├── keywords.json
-│   │   │       └── rubrics.json
 │   │   ├── docs
+│   │   │   ├── de
+│   │   │   │   └── ecosystem
+│   │   │   │       └── index.md
 │   │   │   ├── ecosystem
 │   │   │   │   ├── DET
 │   │   │   │   │   ├── Методологии
@@ -103,12 +99,9 @@ Knowledge_substrate
 │   │   │   │   │   │   └── index.md
 │   │   │   │   │   └── index.md
 │   │   │   │   ├── Infrastructure
-│   │   │   │   │   ├── index
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Infrastructure_Principles
-│   │   │   │   │   │   └── README.md
 │   │   │   │   │   ├── Knowledge_Substrate
 │   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Infrastructure_Principles.md
 │   │   │   │   │   └── README.md
 │   │   │   │   ├── Onboarding
 │   │   │   │   │   ├── onboarding
@@ -133,36 +126,65 @@ Knowledge_substrate
 │   │   │   │   │   ├── Боты_Telegram
 │   │   │   │   │   │   └── README.md
 │   │   │   │   │   └── README.md
+│   │   │   │   ├── .pages
 │   │   │   │   ├── index.md
 │   │   │   │   └── README.md
-│   │   │   └── publications
-│   │   │       ├── blogs
-│   │   │       │   ├── detai_site_blog
-│   │   │       │   │   └── README.md
-│   │   │       │   ├── personal_site_blog
-│   │   │       │   │   └── README.md
-│   │   │       │   └── README.md
-│   │   │       ├── Research_Publication
-│   │   │       │   ├── articles
-│   │   │       │   │   └── README.md
-│   │   │       │   ├── dissertations
-│   │   │       │   │   └── README.md
-│   │   │       │   ├── theses
-│   │   │       │   │   └── README.md
-│   │   │       │   └── README.md
-│   │   │       ├── STORYTELLING
-│   │   │       │   ├── Categories
-│   │   │       │   │   └── README.md
-│   │   │       │   ├── Cycles
-│   │   │       │   │   └── README.md
-│   │   │       │   ├── Psychology
-│   │   │       │   │   └── README.md
-│   │   │       │   └── README.md
-│   │   │       ├── index.md
-│   │   │       └── README.md
+│   │   │   ├── en
+│   │   │   │   ├── ecosystem
+│   │   │   │   │   └── index.md
+│   │   │   │   └── index.md
+│   │   │   ├── fi
+│   │   │   │   └── ecosystem
+│   │   │   │       └── index.md
+│   │   │   ├── publications
+│   │   │   │   ├── blogs
+│   │   │   │   │   ├── detai_site_blog
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── personal_site_blog
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── Research_Publication
+│   │   │   │   │   ├── articles
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── dissertations
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── theses
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── STORYTELLING
+│   │   │   │   │   ├── Categories
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Cycles
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── Psychology
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── .pages
+│   │   │   │   ├── index.md
+│   │   │   │   └── README.md
+│   │   │   ├── .pages
+│   │   │   ├── index.md
+│   │   │   └── README.md
 │   │   ├── schemas
-│   │   │   ├── ecosystem_schema.md
-│   │   │   └── publications_schema.md
+│   │   │   ├── ecosystem
+│   │   │   │   └── README.md
+│   │   │   ├── publications
+│   │   │   │   ├── post_documents
+│   │   │   │   │   ├── _indexes_min.md
+│   │   │   │   │   ├── categories.json
+│   │   │   │   │   ├── category_policies.md
+│   │   │   │   │   ├── cycle.json
+│   │   │   │   │   ├── keywords.json
+│   │   │   │   │   ├── keywords_policy.md
+│   │   │   │   │   ├── preview_policies.md
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── rubrics.json
+│   │   │   │   │   └── rubrics_and_subrubrics_policy.md
+│   │   │   │   ├── research_publication
+│   │   │   │   │   ├── publications_schema.md
+│   │   │   │   │   └── README.md
+│   │   │   │   └── README.md
+│   │   │   └── README.md
 │   │   └── README.md
 │   └── README.md
 ├── scripts
@@ -173,5 +195,9 @@ Knowledge_substrate
 │   ├── Directory_structure.txt
 │   └── README.md
 ├── .gitignore
+├── AGENTS.md
+├── Directory_structure.txt
 ├── mkdocs.yml
-└── README.md
+├── README.md
+├── requirements-docs.txt
+└── requirements.txt

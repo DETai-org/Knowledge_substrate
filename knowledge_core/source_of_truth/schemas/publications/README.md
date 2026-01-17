@@ -27,5 +27,5 @@
 ## Связанные разделы
 
 - Общие правила схем и словарей: `knowledge_core/source_of_truth/schemas/README.md`.
-- Тематические циклы (общий словарь): `knowledge_core/source_of_truth/controlled_vocabularies/cycle.json`.
+- Тематические циклы (канонический словарь для постов): `knowledge_core/source_of_truth/schemas/publications/post_documents/cycle.json`.
 - Ingest & RAG hybrid model: `knowledge_core/ingest_pipeline/policies/ingest_and_rag_hybrid_model.md`.
