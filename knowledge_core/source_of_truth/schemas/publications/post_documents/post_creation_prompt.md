@@ -45,6 +45,8 @@ knowledge_core/source_of_truth/docs/publications/blogs/detai_site_blog/
 knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 ```
 
+Если указано несколько сайтов и пользователь **не задал рубрику**, выбирай рубрику, которая **допустима для обоих сайтов** (общая рубрика). Список рубрик и правила см. в `rubrics.json` и `rubrics_and_subrubrics_policy.md`.
+
 Если пользователь оставляет поле пустым (например authors: без значения), это означает, что данные не переданы. В таком случае не подставлять это поле как фактическое значение, а действовать по правилам
 
 Название файла должно быть равно `<postId>.md`, где `postId` создаётся на основе заголовка.
@@ -91,7 +93,7 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 
 - должен быть создан новый цикл.
 
-Подробнее: `cycle_policies.md` + `cycle.json`.
+Подробнее: `cycle_policies.md` + `cycle.json`. Если цикл размещается на **двух сайтах**, см. правила в `cycle_policies.md`.
 
 ### `taxonomy.keyword_ids` + `taxonomy.keywords_raw`
 
