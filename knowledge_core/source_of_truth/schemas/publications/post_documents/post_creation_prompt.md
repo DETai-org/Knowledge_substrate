@@ -16,6 +16,7 @@
   - `categories.json`
   - `keywords.json`
   - `cycle.json`
+  - `../authors.json`
 
 - **Политики:**
   - `rubrics_and_subrubrics_policy.md`
@@ -36,6 +37,15 @@ knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/
 
 Пользователь может описать это не точно, например на русском языке: «персональный сайт», «DETai сайт» и т.д.
 Ты должен сам понять, к какому из двух сайтов это относится.
+
+Пользователь может указать **несколько** сайтов, например через запятую, в свободной форме и на русском (например: «detai», «ДЕТай», «персональный сайт»). В этом случае **нужно сохранить один и тот же файл** в **каждой** соответствующей папке:
+
+```
+knowledge_core/source_of_truth/docs/publications/blogs/detai_site_blog/
+knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
+```
+
+Если указано несколько сайтов и пользователь **не задал рубрику**, выбирай рубрику, которая **допустима для обоих сайтов** (общая рубрика). Список рубрик и правила см. в `rubrics.json` и `rubrics_and_subrubrics_policy.md`.
 
 Если пользователь оставляет поле пустым (например authors: без значения), это означает, что данные не переданы. В таком случае не подставлять это поле как фактическое значение, а действовать по правилам
 
@@ -83,7 +93,7 @@ knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/
 
 - должен быть создан новый цикл.
 
-Подробнее: `cycle_policies.md` + `cycle.json`.
+Подробнее: `cycle_policies.md` + `cycle.json`. Если цикл размещается на **двух сайтах**, см. правила в `cycle_policies.md`.
 
 ### `taxonomy.keyword_ids` + `taxonomy.keywords_raw`
 
@@ -98,7 +108,8 @@ knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/
 
 ### `authors`
 
-- Берётся из входных данных.
+- Список авторов берётся из `knowledge_core/source_of_truth/schemas/publications/authors.json`.
+- Если пользователь указывает автора в свободной форме (включая только имя без фамилии, в том числе на русском — например, «Антон»), сопоставь значение с `authors.json` и подставь каноническое имя автора из файла, если есть хотя бы частичное совпадение.
 - Если `authors` отсутствует → указать `authors: [none]` (не подставлять автоматически реального автора).
 
 ### `preview`
@@ -126,6 +137,12 @@ knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/
 
 - Всегда `publish`.
 
+### `target_site`
+
+- Может содержать **один или несколько** сайтов.
+- Если пользователь перечисляет сайты через запятую, или использует свободные формулировки/русский язык (например «detai», «ДЕТай», «персональный сайт») — сопоставь с допустимыми значениями `detai_site_blog` и `personal_site_blog`.
+- При нескольких сайтах сохраняй **один и тот же файл** в **каждой** папке `knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/`.
+
 ### `type`
 
 - Всегда `post`.
@@ -144,6 +161,9 @@ authors:
   - <AuthorName>
 date_ymd: <YYYY-MM-DD>
 status: publish
+target_site:
+  - detai_site_blog
+  - personal_site_blog
 title: "<title>"
 preview: "<preview>"
 seoLead: "<seoLead>"
