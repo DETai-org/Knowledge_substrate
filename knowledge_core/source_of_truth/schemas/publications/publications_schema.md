@@ -17,7 +17,7 @@
     "authors": ["Author1", "Author2"],
     "date_ymd": "2026-01-15",
     "status": "publish",
-    "target_site": ["detai_site_blog", "personal_site_blog"]
+    "channels": ["detai_site_blog", "personal_site_blog"]
   },
   "descriptive": {
     "title": "Title of the post",
@@ -47,7 +47,7 @@
 }
 ```
 
-`administrative.target_site` может содержать **один или несколько** сайтов. Если указано несколько, файл публикуется в каждой соответствующей папке `docs/publications/blogs/<TARGET_SITE>/`.
+`administrative.channels` может содержать **один или несколько** сайтов. Если указано несколько, файл публикуется в каждой соответствующей папке `docs/publications/blogs/<TARGET_SITE>/`.
 
 ---
 
