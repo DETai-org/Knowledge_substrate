@@ -1,5 +1,6 @@
 # Ecosystem vocabularies
 
-Пока здесь будут размещаться контролируемые словари для ecosystem_schema.
+Здесь будут размещаться контролируемые словари для домена ecosystem.
+Структура домена описывается в `knowledge_core/source_of_truth/schemas/ecosystem/`.
 
 (заглушка)

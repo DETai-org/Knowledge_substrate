@@ -20,12 +20,12 @@
   - `README.md` — краткая политика и сущности типа;
   - `categories.json`, `rubrics.json`, `keywords.json`, `cycle.json`;
   - `_indexes_min.md` — быстрый обзор сущностей;
-  - подробные политики (`document_taxonomy_policy.md`, `keywords_policy.md`,
+  - подробные политики (`category_policies.md`, `keywords_policy.md`,
     `rubrics_and_subrubrics_policy.md`, `preview_policies.md`).
 - `research_publication/` — заглушка под документы и правила научных публикаций.
 
 ## Связанные разделы
 
-- Общая политика controlled vocabularies: `knowledge_core/source_of_truth/schemas/controlled_vocabularies_policy.md`.
+- Общие правила схем и словарей: `knowledge_core/source_of_truth/schemas/README.md`.
 - Тематические циклы (общий словарь): `knowledge_core/source_of_truth/controlled_vocabularies/cycle.json`.
 - Ingest & RAG hybrid model: `knowledge_core/ingest_pipeline/policies/ingest_and_rag_hybrid_model.md`.
