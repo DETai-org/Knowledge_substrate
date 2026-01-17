@@ -90,6 +90,8 @@ nav:
           - Obsidian: ecosystem/Tools/Obsidian/README.md
           - Make Сценарии: "ecosystem/Tools/Make_Сценарии/README.md"
           - Боты Telegram: "ecosystem/Tools/Боты_Telegram/README.md"
+      - STORYTELLING:
+          - ecosystem/STORYTELLING/index.md
   - Onboarding: ecosystem/Onboarding/onboarding/index.md
   - Публикации:
       - publications/index.md
