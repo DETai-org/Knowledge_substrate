@@ -38,6 +38,13 @@ knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/
 Пользователь может описать это не точно, например на русском языке: «персональный сайт», «DETai сайт» и т.д.
 Ты должен сам понять, к какому из двух сайтов это относится.
 
+Пользователь может указать **несколько** сайтов, например через запятую, в свободной форме и на русском (например: «detai», «ДЕТай», «персональный сайт»). В этом случае **нужно сохранить один и тот же файл** в **каждой** соответствующей папке:
+
+```
+knowledge_core/source_of_truth/docs/publications/blogs/detai_site_blog/
+knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
+```
+
 Если пользователь оставляет поле пустым (например authors: без значения), это означает, что данные не переданы. В таком случае не подставлять это поле как фактическое значение, а действовать по правилам
 
 Название файла должно быть равно `<postId>.md`, где `postId` создаётся на основе заголовка.
@@ -128,6 +135,12 @@ knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/
 
 - Всегда `publish`.
 
+### `target_site`
+
+- Может содержать **один или несколько** сайтов.
+- Если пользователь перечисляет сайты через запятую, или использует свободные формулировки/русский язык (например «detai», «ДЕТай», «персональный сайт») — сопоставь с допустимыми значениями `detai_site_blog` и `personal_site_blog`.
+- При нескольких сайтах сохраняй **один и тот же файл** в **каждой** папке `knowledge_core/source_of_truth/docs/publications/blogs/<TARGET_SITE>/`.
+
 ### `type`
 
 - Всегда `post`.
@@ -146,6 +159,9 @@ authors:
   - <AuthorName>
 date_ymd: <YYYY-MM-DD>
 status: publish
+target_site:
+  - detai_site_blog
+  - personal_site_blog
 title: "<title>"
 preview: "<preview>"
 seoLead: "<seoLead>"
