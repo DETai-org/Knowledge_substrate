@@ -20,6 +20,7 @@
     "channels": ["detai_site_blog", "personal_site_blog"]
   },
   "descriptive": {
+    "size": "M",
     "title": "Title of the post",
     "preview": "Preview content for social media",
     "seoLead": "SEO description",

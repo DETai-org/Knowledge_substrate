@@ -1,0 +1,37 @@
+{
+  "vocabulary": "post_sizes",
+  "version": "v0.1",
+  "policy": {
+    "description": "Размер поста фиксирует ожидаемый масштаб текста и правила чанкинга. Политика описана в post_documents/size_policies.md."
+  },
+  "items": [
+    {
+      "id": "size:M",
+      "type": "descriptive_size",
+      "label": "M",
+      "description": "Короткий пост: 2–3 абзаца, часто как одна-две цитаты плюс авторская мысль.",
+      "lifecycle": "approved"
+    },
+    {
+      "id": "size:L",
+      "type": "descriptive_size",
+      "label": "L",
+      "description": "Стандартный пост с началом, серединой и завершением; цельная структура и полноценное раскрытие темы.",
+      "lifecycle": "approved"
+    },
+    {
+      "id": "size:XL",
+      "type": "descriptive_size",
+      "label": "XL",
+      "description": "Расширенный формат уровня главы книги: большой объём, много подтем и связок. Пока зарезервировано.",
+      "lifecycle": "approved"
+    },
+    {
+      "id": "size:XXL",
+      "type": "descriptive_size",
+      "label": "XXL",
+      "description": "Формат уровня книги или очень большого цикла. Пока зарезервировано.",
+      "lifecycle": "approved"
+    }
+  ]
+}
