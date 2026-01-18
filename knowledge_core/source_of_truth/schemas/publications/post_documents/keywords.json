@@ -3,7 +3,7 @@
   "version": "v0.1",
   "policy": {
     "generation_mode": "hybrid",
-    "description": "Keywords may be AI-generated at document creation time. New keywords are first added as candidates and later reviewed and promoted to the approved state."
+    "description": "Ключевые слова могут генерироваться AI во время создания документа. Новые ключевые слова сначала добавляются в качестве кандидатов, а затем проверяются и переводятся в статус одобренных."
   },
   "items": [
     {
