@@ -118,7 +118,7 @@ knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/
 
 ### `descriptive.preview`
 
-- Сгенерировать краткий лид: 1–2 предложения, без списков и без ссылок.
+- Создай грамотный и соответсвующий нашим правилам preview.
 - Подробнее: см. `preview_policies.md`.
 
 ### `descriptive.size`
