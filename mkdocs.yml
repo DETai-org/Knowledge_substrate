@@ -92,6 +92,9 @@ nav:
           - Боты Telegram: "ecosystem/Tools/Боты_Telegram/README.md"
       - STORYTELLING:
           - ecosystem/STORYTELLING/index.md
+          - Категории: ecosystem/STORYTELLING/Categories/README.md
+          - Циклы: ecosystem/STORYTELLING/Cycles/README.md
+          - Психология: ecosystem/STORYTELLING/Psychology/README.md
   - Onboarding: ecosystem/Onboarding/onboarding/index.md
   - Публикации:
       - publications/index.md
