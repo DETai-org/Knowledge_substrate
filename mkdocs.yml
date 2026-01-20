@@ -23,6 +23,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
 
+extra_css:
+  - stylesheets/extra.css
+
 exclude_docs: |
   publications/Research_Publication/**
   publications/STORYTELLING/**
@@ -40,13 +43,13 @@ nav:
       - DETai:
           - ecosystem/DETai/index.md
           - Экосистема: ecosystem/DETai/ecosystem-map.md
-          - Проекты:
-              - ecosystem/DETai/Проекты/index.md
+          - Projects:
+              - ecosystem/DETai/Projects/index.md
               - Эшелоны:
-                  - ecosystem/DETai/Проекты/Эшелоны/echelon-1/index.md
-                  - ecosystem/DETai/Проекты/Эшелоны/echelon-1/francis-galton.md
-                  - ecosystem/DETai/Проекты/Эшелоны/echelon-2/index.md
-                  - ecosystem/DETai/Проекты/Эшелоны/echelon-3/index.md
+                  - ecosystem/DETai/Projects/Эшелоны/echelon-1/index.md
+                  - ecosystem/DETai/Projects/Эшелоны/echelon-1/francis-galton.md
+                  - ecosystem/DETai/Projects/Эшелоны/echelon-2/index.md
+                  - ecosystem/DETai/Projects/Эшелоны/echelon-3/index.md
           - Предпроекты:
               - ecosystem/DETai/Предпроекты/index.md
               - Thought Canvas:
