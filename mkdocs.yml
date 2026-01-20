@@ -33,6 +33,7 @@ nav:
       - Обзор: ecosystem/index.md
       - DET:
           - ecosystem/DET/index.md
+          - Concept: ecosystem/DET/Concept/index.md
           - Методологии:
               - "ecosystem/DET/Методологии/mission.md"
               - "ecosystem/DET/Методологии/principles.md"
