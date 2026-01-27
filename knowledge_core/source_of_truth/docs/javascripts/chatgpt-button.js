@@ -1,7 +1,12 @@
 (function () {
   const BUTTON_CLASS = "chatgpt-action";
   const BUTTON_ID = "chatgpt-open-button";
-  const CHATGPT_URL = "https://chat.openai.com/";
+  const CHATGPT_URL = "https://chatgpt.com/";
+  const TOAST_CLASS = "chatgpt-toast";
+  const TOAST_DURATION_MS = 1600;
+  const OPEN_DELAY_MS = 250;
+
+  const isDesktopViewport = () => window.matchMedia("(min-width: 1024px)").matches;
 
   const getPromptTemplate = () => {
     if (typeof window.chatgptPromptTemplate === "string" && window.chatgptPromptTemplate.trim()) {
@@ -32,7 +37,41 @@
     document.body.removeChild(textarea);
   };
 
+  const getToast = () => document.querySelector(`.${TOAST_CLASS}`);
+
+  const createToast = () => {
+    const toast = document.createElement("div");
+    toast.className = TOAST_CLASS;
+    toast.setAttribute("role", "status");
+    toast.setAttribute("aria-live", "polite");
+    document.body.appendChild(toast);
+    return toast;
+  };
+
+  const showToast = (message) => {
+    const toast = getToast() || createToast();
+    toast.textContent = message;
+    toast.classList.add("is-visible");
+    window.setTimeout(() => {
+      toast.classList.remove("is-visible");
+    }, TOAST_DURATION_MS);
+  };
+
+  const buildChatGptUrl = (prompt) => `${CHATGPT_URL}?prompt=${encodeURIComponent(prompt)}`;
+
   const ensureButton = () => {
+    if (!isDesktopViewport()) {
+      const existing = document.getElementById(BUTTON_ID);
+      if (existing) {
+        existing.remove();
+      }
+      const toast = getToast();
+      if (toast) {
+        toast.remove();
+      }
+      return;
+    }
+
     const content = document.querySelector(".md-content__inner");
     if (!content) {
       return;
@@ -50,7 +89,7 @@
     const button = document.createElement("a");
     button.className = "md-button";
     button.textContent = "Open in ChatGPT";
-    button.href = CHATGPT_URL;
+    button.href = buildChatGptUrl(buildPrompt(window.location.href));
     button.target = "_blank";
     button.rel = "noopener";
 
@@ -70,6 +109,7 @@
       event.preventDefault();
       const url = window.location.href;
       const prompt = buildPrompt(url);
+      const chatGptUrl = buildChatGptUrl(prompt);
 
       try {
         await copyPrompt(prompt);
@@ -77,9 +117,13 @@
       } catch (error) {
         console.warn("Не удалось скопировать prompt в буфер обмена.", error);
         setFeedback("Copy failed", 1200);
+      } finally {
+        showToast("Prompt copied — paste in ChatGPT (Ctrl+V)");
       }
 
-      window.open(CHATGPT_URL, "_blank", "noopener");
+      window.setTimeout(() => {
+        window.open(chatGptUrl, "_blank", "noopener");
+      }, OPEN_DELAY_MS);
     });
 
     wrapper.appendChild(button);
