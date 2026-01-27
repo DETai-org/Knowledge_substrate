@@ -2,3 +2,23 @@
   color: var(--md-default-fg-color--light);
   font-size: 0.9em;
 }
+
+.chatgpt-action {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .chatgpt-action {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .md-content__button .chatgpt-action {
+    margin-bottom: 0;
+  }
+
+  .chatgpt-action .md-button {
+    font-size: 0.85rem;
+  }
+}

@@ -25,6 +25,9 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/chatgpt-prompt.js
+  - javascripts/chatgpt-button.js
 
 exclude_docs: |
   publications/Research_Publication/**
