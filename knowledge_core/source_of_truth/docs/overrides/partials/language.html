@@ -1,0 +1,27 @@
+{#-
+  Переопределение языка HTML на основе пути страницы.
+-#}
+{% set supported_languages = ["ru", "en", "de", "fi", "es"] %}
+{% set default_language = "ru" %}
+{% set source_path = "" %}
+{% if page and page.file and page.file.src_path %}
+  {% set source_path = page.file.src_path %}
+{% elif page and page.url %}
+  {% set source_path = page.url %}
+{% endif %}
+{% set first_segment = source_path.split('/') | first %}
+{% if first_segment in supported_languages %}
+  {% set page_language = first_segment %}
+{% else %}
+  {% set page_language = default_language %}
+{% endif %}
+
+{% import "partials/languages/" ~ config.theme.language ~ ".html" as lang %}
+{% import "partials/languages/en.html" as fallback %}
+{% macro t(key) %}
+  {% if key == "language" %}
+    {{ page_language }}
+  {% else %}
+    {{ lang.t(key) or fallback.t(key) or key }}
+  {% endif %}
+{% endmacro %}

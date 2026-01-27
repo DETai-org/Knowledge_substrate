@@ -12,30 +12,13 @@
     en: "Read <CURRENT_PAGE_URL> and answer questions about the content.",
   };
 
-  const getLanguageFromUrl = () => {
-    const path = window.location.pathname.toLowerCase();
-    if (path.includes("/ru/")) {
-      return "ru";
-    }
-    if (path.includes("/en/")) {
-      return "en";
-    }
-    return "";
-  };
-
   const getPageLanguage = () => {
     const langAttribute = document.documentElement.lang?.trim();
     if (langAttribute) {
       return langAttribute.split("-")[0].toLowerCase();
     }
-
-    const urlLanguage = getLanguageFromUrl();
-    if (urlLanguage) {
-      document.documentElement.lang = urlLanguage;
-      return urlLanguage;
-    }
-
-    return "en";
+    document.documentElement.lang = "ru";
+    return "ru";
   };
 
   const getPromptTemplates = () => {
