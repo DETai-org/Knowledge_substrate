@@ -177,8 +177,6 @@
       const chatGptUrl = buildChatGptUrl(prompt);
       button.href = chatGptUrl;
 
-      window.open(chatGptUrl, "_blank", "noopener");
-
       const toastMessages = getToastMessages();
 
       try {
@@ -190,6 +188,8 @@
         setFeedback("Copy failed", 1200);
         showToast(toastMessages.failure);
       }
+
+      window.open(chatGptUrl, "_blank", "noopener");
     });
 
     wrapper.appendChild(button);
