@@ -5,6 +5,7 @@ docs_dir: knowledge_core/source_of_truth/docs
 
 theme:
   name: material
+  custom_dir: knowledge_core/source_of_truth/docs/overrides
   features:
     - navigation.tabs
     - navigation.sections
