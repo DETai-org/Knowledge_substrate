@@ -4,15 +4,53 @@
   const CHATGPT_URL = "https://chatgpt.com/";
   const TOAST_CLASS = "chatgpt-toast";
   const TOAST_DURATION_MS = 1600;
-  const OPEN_DELAY_MS = 250;
 
   const isDesktopViewport = () => window.matchMedia("(min-width: 1024px)").matches;
 
-  const getPromptTemplate = () => {
-    if (typeof window.chatgptPromptTemplate === "string" && window.chatgptPromptTemplate.trim()) {
+  const DEFAULT_PROMPT_TEMPLATES = {
+    ru: "Прочитай <CURRENT_PAGE_URL> и отвечай на вопросы о содержимом.",
+    en: "Read <CURRENT_PAGE_URL> and answer questions about the content.",
+  };
+
+  const getLanguageFromUrl = () => {
+    const path = window.location.pathname.toLowerCase();
+    if (path.includes("/ru/")) {
+      return "ru";
+    }
+    if (path.includes("/en/")) {
+      return "en";
+    }
+    return "";
+  };
+
+  const getPageLanguage = () => {
+    const urlLanguage = getLanguageFromUrl();
+    const langAttribute = document.documentElement.lang?.trim();
+    if (urlLanguage && langAttribute?.split("-")[0].toLowerCase() !== urlLanguage) {
+      document.documentElement.lang = urlLanguage;
+    }
+
+    const normalizedLang = document.documentElement.lang?.trim();
+    if (normalizedLang) {
+      return normalizedLang.split("-")[0].toLowerCase();
+    }
+    return urlLanguage || "en";
+  };
+
+  const getPromptTemplates = () => {
+    if (window.chatgptPromptTemplate && typeof window.chatgptPromptTemplate === "object") {
       return window.chatgptPromptTemplate;
     }
-    return "Read <CURRENT_PAGE_URL> and answer questions about the content.";
+    if (typeof window.chatgptPromptTemplate === "string" && window.chatgptPromptTemplate.trim()) {
+      return { en: window.chatgptPromptTemplate };
+    }
+    return DEFAULT_PROMPT_TEMPLATES;
+  };
+
+  const getPromptTemplate = () => {
+    const templates = getPromptTemplates();
+    const language = getPageLanguage();
+    return templates[language] || templates.en || DEFAULT_PROMPT_TEMPLATES.en;
   };
 
   const buildPrompt = (url) => {
@@ -49,6 +87,9 @@
   };
 
   const showToast = (message) => {
+    if (!isDesktopViewport()) {
+      return;
+    }
     const toast = getToast() || createToast();
     toast.textContent = message;
     toast.classList.add("is-visible");
@@ -89,7 +130,7 @@
     const button = document.createElement("a");
     button.className = "md-button";
     button.textContent = "Open in ChatGPT";
-    button.href = buildChatGptUrl(buildPrompt(window.location.href));
+    button.href = CHATGPT_URL;
     button.target = "_blank";
     button.rel = "noopener";
 
@@ -105,25 +146,33 @@
       }, delay);
     };
 
+    const refreshButtonHref = () => {
+      const prompt = buildPrompt(window.location.href);
+      button.href = buildChatGptUrl(prompt);
+    };
+
+    ["mouseenter", "focus", "contextmenu"].forEach((eventName) => {
+      button.addEventListener(eventName, refreshButtonHref);
+    });
+
     button.addEventListener("click", async (event) => {
       event.preventDefault();
       const url = window.location.href;
       const prompt = buildPrompt(url);
       const chatGptUrl = buildChatGptUrl(prompt);
+      button.href = chatGptUrl;
+
+      window.open(chatGptUrl, "_blank", "noopener");
 
       try {
         await copyPrompt(prompt);
         setFeedback("Copied!", 1000);
+        showToast("Prompt copied — paste in ChatGPT (Ctrl+V)");
       } catch (error) {
         console.warn("Не удалось скопировать prompt в буфер обмена.", error);
         setFeedback("Copy failed", 1200);
-      } finally {
-        showToast("Prompt copied — paste in ChatGPT (Ctrl+V)");
+        showToast("Couldn’t copy — please copy manually");
       }
-
-      window.setTimeout(() => {
-        window.open(chatGptUrl, "_blank", "noopener");
-      }, OPEN_DELAY_MS);
     });
 
     wrapper.appendChild(button);

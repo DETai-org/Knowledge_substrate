@@ -5,6 +5,7 @@ docs_dir: knowledge_core/source_of_truth/docs
 
 theme:
   name: material
+  language: en
   features:
     - navigation.tabs
     - navigation.sections
