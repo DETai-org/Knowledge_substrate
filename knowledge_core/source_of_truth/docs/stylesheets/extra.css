@@ -2,3 +2,13 @@
   color: var(--md-default-fg-color--light);
   font-size: 0.9em;
 }
+
+.chatgpt-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.chatgpt-action .md-button {
+  font-size: 0.85rem;
+}
