@@ -4,11 +4,21 @@
 }
 
 .chatgpt-action {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
+  display: none;
 }
 
-.chatgpt-action .md-button {
-  font-size: 0.85rem;
+@media (min-width: 1024px) {
+  .chatgpt-action {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .md-content__button .chatgpt-action {
+    margin-bottom: 0;
+  }
+
+  .chatgpt-action .md-button {
+    font-size: 0.85rem;
+  }
 }
