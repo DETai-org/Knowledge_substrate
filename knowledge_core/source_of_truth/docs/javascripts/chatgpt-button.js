@@ -24,17 +24,18 @@
   };
 
   const getPageLanguage = () => {
-    const urlLanguage = getLanguageFromUrl();
     const langAttribute = document.documentElement.lang?.trim();
-    if (urlLanguage && langAttribute?.split("-")[0].toLowerCase() !== urlLanguage) {
-      document.documentElement.lang = urlLanguage;
+    if (langAttribute) {
+      return langAttribute.split("-")[0].toLowerCase();
     }
 
-    const normalizedLang = document.documentElement.lang?.trim();
-    if (normalizedLang) {
-      return normalizedLang.split("-")[0].toLowerCase();
+    const urlLanguage = getLanguageFromUrl();
+    if (urlLanguage) {
+      document.documentElement.lang = urlLanguage;
+      return urlLanguage;
     }
-    return urlLanguage || "en";
+
+    return "en";
   };
 
   const getPromptTemplates = () => {
@@ -84,6 +85,20 @@
     toast.setAttribute("aria-live", "polite");
     document.body.appendChild(toast);
     return toast;
+  };
+
+  const getToastMessages = () => {
+    const language = getPageLanguage();
+    if (language === "ru") {
+      return {
+        success: "Промпт скопирован — вставь в ChatGPT (Ctrl+V)",
+        failure: "Не удалось скопировать — скопируй вручную",
+      };
+    }
+    return {
+      success: "Prompt copied — paste in ChatGPT (Ctrl+V)",
+      failure: "Couldn’t copy — please copy manually",
+    };
   };
 
   const showToast = (message) => {
@@ -164,14 +179,16 @@
 
       window.open(chatGptUrl, "_blank", "noopener");
 
+      const toastMessages = getToastMessages();
+
       try {
         await copyPrompt(prompt);
         setFeedback("Copied!", 1000);
-        showToast("Prompt copied — paste in ChatGPT (Ctrl+V)");
+        showToast(toastMessages.success);
       } catch (error) {
         console.warn("Не удалось скопировать prompt в буфер обмена.", error);
         setFeedback("Copy failed", 1200);
-        showToast("Couldn’t copy — please copy manually");
+        showToast(toastMessages.failure);
       }
     });
 
