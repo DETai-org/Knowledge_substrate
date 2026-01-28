@@ -19,15 +19,15 @@
   };
 
   const getPageLanguage = () => {
-    const langAttribute = document.documentElement.lang?.trim();
-    if (langAttribute) {
-      return langAttribute.split("-")[0].toLowerCase();
-    }
-
     const urlLanguage = getLanguageFromUrl();
     if (urlLanguage) {
       document.documentElement.lang = urlLanguage;
       return urlLanguage;
+    }
+
+    const langAttribute = document.documentElement.lang?.trim();
+    if (langAttribute) {
+      return langAttribute.split("-")[0].toLowerCase();
     }
 
     return "en";
