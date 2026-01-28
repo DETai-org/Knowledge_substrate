@@ -2,4 +2,4 @@
 
 Coming soon. Please use the Russian version for now.
 
-[Zur russischen Version wechseln](/ecosystem/)
+[Zur russischen Version wechseln](/ru/ecosystem/)

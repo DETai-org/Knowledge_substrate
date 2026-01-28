@@ -12,7 +12,7 @@
 
 * Когда мы добавляем или обновляем страницу на RU, мы при необходимости создаём соответствующую страницу в нужном языке **с тем же относительным путём**.
 * Пример:
-  * RU: `docs/ecosystem/DET/index.md`
+  * RU: `docs/ru/ecosystem/DET/index.md`
   * EN: `docs/en/ecosystem/DET/index.md`
   * FI: `docs/fi/ecosystem/DET/index.md`
   * DE: `docs/de/ecosystem/DET/index.md`

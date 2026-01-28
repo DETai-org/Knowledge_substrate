@@ -2,4 +2,4 @@
 
 English version is coming soon. For now please use the Russian version.
 
-[Перейти к русской версии](../../ecosystem/index.md)
+[Перейти к русской версии](../../ru/ecosystem/index.md)
