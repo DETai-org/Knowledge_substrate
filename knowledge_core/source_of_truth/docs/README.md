@@ -1,18 +1,19 @@
 # Multilingual structure (Model A)
 
-Русская версия (RU) является **дефолтной** и живёт в корне `docs/`.
+Русская версия (RU) является основной и живёт в `docs/ru/`.
 
 Остальные языки — это **зеркала** структуры RU, размещённые в подпапках верхнего уровня:
 
 * `docs/en/…` — English
 * `docs/fi/…` — Suomi
 * `docs/de/…` — Deutsch
+* `docs/cn/…` — 中文
 
 ## Принцип “просто зеркалируем”
 
 * Когда мы добавляем или обновляем страницу на RU, мы при необходимости создаём соответствующую страницу в нужном языке **с тем же относительным путём**.
 * Пример:
-  * RU: `docs/ecosystem/DET/index.md`
+  * RU: `docs/ru/ecosystem/DET/index.md`
   * EN: `docs/en/ecosystem/DET/index.md`
   * FI: `docs/fi/ecosystem/DET/index.md`
   * DE: `docs/de/ecosystem/DET/index.md`

@@ -4,7 +4,7 @@
 
 На сайте `/det/concept` существует само описание (наша теория). Тут мы фиксируем **мета-структуру**: как эти смыслы собраны, связаны и как их правильно читать.
 
-См. также раздел [«Рубрики Storytelling»](https://detai-org.github.io/Knowledge_substrate/ecosystem/STORYTELLING/Rubrics/) — там собран понятный вход в рубрики и видно, как концепция раскладывается по рубрикам.
+См. также раздел [«Рубрики Storytelling»](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/STORYTELLING/Rubrics/) — там собран понятный вход в рубрики и видно, как концепция раскладывается по рубрикам.
 
 ---
 
@@ -34,7 +34,7 @@ Pillar page у нас = **постулат**: собранная, структу
 В DET только **три рубрики** отражают постулаты (три вектора одной концепции).
 Именно для них создаются отдельные страницы постулатов в `/det/concept/...`.
 
-Их краткие описания и связь с диалектической экзистенциальной терапией зафиксированы в [«Рубриках Storytelling»](https://detai-org.github.io/Knowledge_substrate/ecosystem/STORYTELLING/Rubrics/).
+Их краткие описания и связь с диалектической экзистенциальной терапией зафиксированы в [«Рубриках Storytelling»](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/STORYTELLING/Rubrics/).
 
 ---
 
@@ -48,4 +48,4 @@ Pillar page у нас = **постулат**: собранная, структу
 
 Если вы пишете текст в рамках одной из трёх рубрик и разделяете [нашу миссию](../mission.md), вы напрямую участвуете в развитии концептуального ядра DET.
 
-Для перехода к рубрикам используйте страницу [«Рубрики Storytelling»](https://detai-org.github.io/Knowledge_substrate/ecosystem/STORYTELLING/Rubrics/).
+Для перехода к рубрикам используйте страницу [«Рубрики Storytelling»](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/STORYTELLING/Rubrics/).

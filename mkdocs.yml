@@ -25,87 +25,89 @@ markdown_extensions:
   - pymdownx.details
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 extra_javascript:
-  - javascripts/chatgpt-prompt.js
-  - javascripts/chatgpt-button.js
+  - assets/javascripts/chatgpt-prompt.js
+  - assets/javascripts/chatgpt-button.js
 
 exclude_docs: |
-  publications/Research_Publication/**
-  publications/STORYTELLING/**
-  publications/blogs/**
+  **/publications/Research_Publication/**
+  **/publications/STORYTELLING/**
+  **/publications/blogs/**
 
 nav:
+  - Главная: ru/index.md
   - Ecosystem:
-      - Обзор: ecosystem/index.md
+      - Обзор: ru/ecosystem/index.md
       - DET:
-          - ecosystem/DET/index.md
-          - Concept: ecosystem/DET/Concept/index.md
-          - Миссия: ecosystem/DET/mission.md
-          - Принципы: ecosystem/DET/principles.md
-          - Глоссарий: ecosystem/DET/glossary.md
+          - ru/ecosystem/DET/index.md
+          - Concept: ru/ecosystem/DET/Concept/index.md
+          - Миссия: ru/ecosystem/DET/mission.md
+          - Принципы: ru/ecosystem/DET/principles.md
+          - Глоссарий: ru/ecosystem/DET/glossary.md
       - DETai:
-          - ecosystem/DETai/index.md
-          - Экосистема: ecosystem/DETai/ecosystem-map.md
+          - ru/ecosystem/DETai/index.md
+          - Экосистема: ru/ecosystem/DETai/ecosystem-map.md
           - Projects:
-              - ecosystem/DETai/Projects/index.md
+              - ru/ecosystem/DETai/Projects/index.md
               - Эшелоны:
-                  - ecosystem/DETai/Projects/Эшелоны/echelon-1/index.md
-                  - ecosystem/DETai/Projects/Эшелоны/echelon-1/francis-galton.md
-                  - ecosystem/DETai/Projects/Эшелоны/echelon-2/index.md
-                  - ecosystem/DETai/Projects/Эшелоны/echelon-3/index.md
+                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-1/index.md
+                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-1/francis-galton.md
+                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-2/index.md
+                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-3/index.md
           - Предпроекты:
-              - ecosystem/DETai/Предпроекты/index.md
+              - ru/ecosystem/DETai/Предпроекты/index.md
               - Thought Canvas:
-                  - ecosystem/DETai/Предпроекты/thought-canvas/index.md
-                  - ecosystem/DETai/Предпроекты/thought-canvas/philosophical-foundation.md
-                  - ecosystem/DETai/Предпроекты/thought-canvas/storage-format.md
-                  - ecosystem/DETai/Предпроекты/thought-canvas/technology.md
+                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/index.md
+                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/philosophical-foundation.md
+                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/storage-format.md
+                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/technology.md
           - U.L.I. — Улей:
-              - "ecosystem/DETai/U.L.I. — Улей/index.md"
+              - "ru/ecosystem/DETai/U.L.I. — Улей/index.md"
               - Технические стандарты:
-                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/index.md"
-                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/versioning.md"
-                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/policy-layer.md"
-                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/mosaic-approach.md"
-                  - "ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/telegram-bots-standard.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/index.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/versioning.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/policy-layer.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/mosaic-approach.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/telegram-bots-standard.md"
               - Логика и инфраструктура:
-                  - "ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/index.md"
-                  - "ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/repo-logic.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/index.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/repo-logic.md"
               - Философия и установки:
-                  - "ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/index.md"
-                  - "ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/bee-roles.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/index.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/bee-roles.md"
               - Описание векторов:
-                  - "ecosystem/DETai/U.L.I. — Улей/Описание_векторов/vectors.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Описание_векторов/vectors.md"
               - Хронология версий:
-                  - "ecosystem/DETai/U.L.I. — Улей/Хронология_версий/versions-chronology.md"
+                  - "ru/ecosystem/DETai/U.L.I. — Улей/Хронология_версий/versions-chronology.md"
       - Infrastructure:
-          - ecosystem/Infrastructure/README.md
-          - Knowledge Substrate: ecosystem/Infrastructure/Knowledge_Substrate/README.md
-          - Infrastructure Principles: ecosystem/Infrastructure/Infrastructure_Principles.md
+          - ru/ecosystem/Infrastructure/README.md
+          - Knowledge Substrate: ru/ecosystem/Infrastructure/Knowledge_Substrate/README.md
+          - Infrastructure Principles: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
       - Onboarding:
-          - ecosystem/Onboarding/onboarding/index.md
+          - ru/ecosystem/Onboarding/onboarding/index.md
           - Pre-Onboarding:
-              - ecosystem/Onboarding/onboarding/00-pre-onboarding/uli.md
-              - ecosystem/Onboarding/onboarding/00-pre-onboarding/how-to-read.md
-          - Презентации: "ecosystem/Onboarding/Презентации/README.md"
+              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/uli.md
+              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/how-to-read.md
+          - Презентации: "ru/ecosystem/Onboarding/Презентации/README.md"
       - Tools:
-          - ecosystem/Tools/README.md
-          - ClickUp: ecosystem/Tools/ClickUp/README.md
-          - Codex: ecosystem/Tools/Codex/README.md
-          - GitHub: ecosystem/Tools/GitHub/README.md
-          - Obsidian: ecosystem/Tools/Obsidian/README.md
-          - Make Сценарии: "ecosystem/Tools/Make_Сценарии/README.md"
-          - Боты Telegram: "ecosystem/Tools/Боты_Telegram/README.md"
+          - ru/ecosystem/Tools/README.md
+          - ClickUp: ru/ecosystem/Tools/ClickUp/README.md
+          - Codex: ru/ecosystem/Tools/Codex/README.md
+          - GitHub: ru/ecosystem/Tools/GitHub/README.md
+          - Obsidian: ru/ecosystem/Tools/Obsidian/README.md
+          - Make Сценарии: "ru/ecosystem/Tools/Make_Сценарии/README.md"
+          - Боты Telegram: "ru/ecosystem/Tools/Боты_Telegram/README.md"
       - STORYTELLING:
-          - ecosystem/STORYTELLING/index.md
-          - Категории: ecosystem/STORYTELLING/Categories/README.md
-          - Рубрики: ecosystem/STORYTELLING/Rubrics/README.md
-          - Циклы: ecosystem/STORYTELLING/Cycles/README.md
-          - Психология: ecosystem/STORYTELLING/Psychology/README.md
-  - Onboarding: ecosystem/Onboarding/onboarding/index.md
+          - ru/ecosystem/STORYTELLING/index.md
+          - Категории: ru/ecosystem/STORYTELLING/Categories/README.md
+          - Рубрики: ru/ecosystem/STORYTELLING/Rubrics/README.md
+          - Циклы: ru/ecosystem/STORYTELLING/Cycles/README.md
+          - Психология: ru/ecosystem/STORYTELLING/Psychology/README.md
+  - Onboarding: ru/ecosystem/Onboarding/onboarding/index.md
   - Публикации:
-      - publications/index.md
+      - ru/publications/index.md
   - English:
       - en/index.md
       - Ecosystem: en/ecosystem/index.md
+      - Publications: en/publications/index.md
