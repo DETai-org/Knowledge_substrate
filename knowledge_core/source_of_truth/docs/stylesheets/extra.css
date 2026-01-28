@@ -29,7 +29,7 @@
   transform: translateY(0);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 76.25em) {
   .chatgpt-action {
     display: flex;
     justify-content: flex-end;

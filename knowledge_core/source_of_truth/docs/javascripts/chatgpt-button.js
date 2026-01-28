@@ -4,8 +4,9 @@
   const CHATGPT_URL = "https://chatgpt.com/";
   const TOAST_CLASS = "chatgpt-toast";
   const TOAST_DURATION_MS = 1600;
+  const DESKTOP_QUERY = "(min-width: 76.25em)";
 
-  const isDesktopViewport = () => window.matchMedia("(min-width: 1024px)").matches;
+  const isDesktopViewport = () => window.matchMedia(DESKTOP_QUERY).matches;
 
   const DEFAULT_PROMPT_TEMPLATES = {
     ru: "Прочитай <CURRENT_PAGE_URL> и отвечай на вопросы о содержимом.",
