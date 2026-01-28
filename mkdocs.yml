@@ -29,7 +29,6 @@ extra_css:
 extra_javascript:
   - javascripts/chatgpt-prompt.js
   - javascripts/chatgpt-button.js
-  - javascripts/drawer-reset.js
 
 exclude_docs: |
   publications/Research_Publication/**
