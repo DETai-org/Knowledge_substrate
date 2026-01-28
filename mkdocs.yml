@@ -5,6 +5,7 @@ docs_dir: knowledge_core/source_of_truth/docs
 
 theme:
   name: material
+  custom_dir: knowledge_core/source_of_truth/overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -25,6 +26,9 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/chatgpt-prompt.js
+  - javascripts/chatgpt-button.js
 
 exclude_docs: |
   publications/Research_Publication/**
