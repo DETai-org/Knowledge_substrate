@@ -10,7 +10,7 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'knowledge_core/source_of_truth/docs/publications/blogs/README.md'  # Исключаем README.md из синхронизации
+      - 'docs/publications/blogs/README.md'  # Исключаем README.md в целевом репозитории сайтеи
 
 jobs:
   sync-repos:
