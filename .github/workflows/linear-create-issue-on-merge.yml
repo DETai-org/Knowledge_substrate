@@ -2,12 +2,12 @@ name: Create Linear issue on merge to main
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
 
 jobs:
   create_linear_issue:
     runs-on: ubuntu-latest
-
     steps:
       - name: Create issue in Linear (project: Site)
         env:
@@ -60,10 +60,7 @@ payload = {
 req = urllib.request.Request(
   "https://api.linear.app/graphql",
   data=json.dumps(payload).encode("utf-8"),
-  headers={
-    "Content-Type": "application/json",
-    "Authorization": api_key
-  }
+  headers={"Content-Type": "application/json", "Authorization": api_key}
 )
 
 with urllib.request.urlopen(req) as r:
