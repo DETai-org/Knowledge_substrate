@@ -1,0 +1,41 @@
+name: Sync Blog Posts to Site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'knowledge_core/source_of_truth/docs/publications/blogs/**'  # Путь в исходном репозитории
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'knowledge_core/source_of_truth/docs/publications/blogs/**'
+
+jobs:
+  sync-repos:
+    runs-on: ubuntu-latest
+    steps:
+      # Шаг 1: Клонируем репозиторий базы знаний (Source Repo)
+      - name: Checkout Source Repository (Knowledge_substrate)
+        uses: actions/checkout@v2
+        with:
+          repository: DETai-org/Knowledge_substrate  # Исходный репозиторий
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Шаг 2: Клонируем целевой репозиторий (Target Repo)
+      - name: Checkout Target Repository (Sites Repo)
+        uses: actions/checkout@v2
+        with:
+          repository: DETai-org/sites  # Целевой репозиторий
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: target-repo  # Сохраняем в папку target-repo для дальнейшей работы
+
+      # Шаг 3: Копируем файлы из исходного репозитория в целевой
+      - name: Copy Blog Posts to Site
+        run: |
+          cp -r knowledge_core/source_of_truth/docs/publications/blogs/* target-repo/docs/publications/blogs/
+          cd target-repo
+          git add .
+          git commit -m "Sync new blog posts"
+          git push
