@@ -31,7 +31,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: target-repo  # Сохраняем в папку target-repo для дальнейшей работы
 
-      # Шаг 3: Копируем файлы из исходного репозитория в целевой
+      # Шаг 3: Настройка идентификации Git
+      - name: Set up Git identity
+        run: |
+          git config --global user.email "kolhonena@gmail.com"  # Cвой email
+          git config --global user.name "Anton-Psy"  # Cвоё имя
+
+      # Шаг 4: Копируем файлы из исходного репозитория в целевой
       - name: Copy Blog Posts to Site
         run: |
           cp -r knowledge_core/source_of_truth/docs/publications/blogs/* target-repo/docs/publications/blogs/
