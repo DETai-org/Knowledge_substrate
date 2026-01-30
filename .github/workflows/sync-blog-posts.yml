@@ -4,8 +4,11 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'knowledge_core/source_of_truth/docs/publications/blogs/README.md'  # Исключаем README.md из синхронизации
+    paths:
+      - 'knowledge_core/source_of_truth/docs/publications/blogs/detai_site_blog/**'
+      - 'knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/**'
+      - '!knowledge_core/source_of_truth/docs/publications/blogs/detai_site_blog/README.md'
+      - '!knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/README.md'
 
 jobs:
   sync-repos:
