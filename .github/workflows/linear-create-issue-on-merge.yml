@@ -33,7 +33,7 @@ jobs:
           repo = os.environ["REPO"]
           sha = os.environ["SHA"]
           actor = os.environ["ACTOR"]
-          title = "Сайт: действия после merge в main"
+          title = "Добавления нового поста в систему"
           prompt_template = Path(".github/workflows/prompt.md").read_text(encoding="utf-8").strip()
           desc = prompt_template.format(repo=repo, sha=sha, actor=actor)
           payload = {
