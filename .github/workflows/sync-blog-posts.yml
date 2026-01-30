@@ -10,7 +10,7 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'docs/publications/blogs/README.md'  # Исключаем README.md в целевом репозитории сайтеи
+      - 'knowledge_core/source_of_truth/docs/publications/blogs/README.md'  # Исключаем README.md из синхронизации
 
 jobs:
   sync-repos:
@@ -40,7 +40,10 @@ jobs:
       # Шаг 4: Копируем файлы из исходного репозитория в целевой
       - name: Copy Blog Posts to Site
         run: |
-          cp -r knowledge_core/source_of_truth/docs/publications/blogs/* target-repo/docs/publications/blogs/
+          mkdir -p target-repo/docs/publications/blogs/detai_site_blog
+          mkdir -p target-repo/docs/publications/blogs/personal_site_blog
+          rsync -a --exclude 'Redmond*' knowledge_core/source_of_truth/docs/publications/blogs/detai_site_blog/ target-repo/docs/publications/blogs/detai_site_blog/
+          rsync -a --exclude 'Redmond*' knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/ target-repo/docs/publications/blogs/personal_site_blog/
           cd target-repo
           git add .
           git commit -m "Sync new blog posts"
