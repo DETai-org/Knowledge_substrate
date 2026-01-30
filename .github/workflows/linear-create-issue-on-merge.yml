@@ -1,0 +1,71 @@
+name: Create Linear issue on merge to main
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  create_linear_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create issue in Linear (project: Site)
+        env:
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+          LINEAR_TEAM_ID: ${{ secrets.LINEAR_TEAM_ID }}
+          LINEAR_PROJECT_ID: ${{ secrets.LINEAR_PROJECT_ID }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          TITLE="Сайт: действия после merge в main"
+          DESC=$(cat <<'EOF'
+Автоматически создано GitHub Actions после merge в `main`.
+
+Что сделать:
+- [ ] Проверить, что сборка/деплой прошли успешно
+- [ ] Быстрый smoke-check главной страницы
+- [ ] Проверить метаданные/OG (если были изменения)
+- [ ] Если были изменения контента — убедиться, что страницы отображаются корректно
+
+Техническая информация:
+- Репозиторий: __REPO__
+- Коммит: __SHA__
+- Автор merge: __ACTOR__
+EOF
+          )
+
+          # Подставляем переменные в описание (без зависимостей типа envsubst)
+          DESC="${DESC/__REPO__/$REPO}"
+          DESC="${DESC/__SHA__/$SHA}"
+          DESC="${DESC/__ACTOR__/$ACTOR}"
+
+          # Создаём issue в Linear
+          curl -sS https://api.linear.app/graphql \
+            -H "Content-Type: application/json" \
+            -H "Authorization: $LINEAR_API_KEY" \
+            --data "$(python3 - <<'PY'
+import json, os
+title = os.environ["TITLE"] if "TITLE" in os.environ else ""
+desc = os.environ["DESC"] if "DESC" in os.environ else ""
+team_id = os.environ["LINEAR_TEAM_ID"]
+project_id = os.environ["LINEAR_PROJECT_ID"]
+
+payload = {
+  "query": "mutation CreateIssue($input: IssueCreateInput!) { issueCreate(input: $input) { success issue { id identifier url title } } }",
+  "variables": {
+    "input": {
+      "teamId": team_id,
+      "projectId": project_id,
+      "title": os.environ.get("TITLE"),
+      "description": os.environ.get("DESC"),
+    }
+  }
+}
+print(json.dumps(payload))
+PY
+            )" \
+          | python3 -m json.tool
+        env:
+          TITLE: "Сайт: действия после merge в main"
+          DESC: ""
