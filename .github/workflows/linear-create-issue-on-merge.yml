@@ -20,54 +20,54 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-import json
-import os
-import textwrap
-import urllib.request
+          import json
+          import os
+          import textwrap
+          import urllib.request
 
-api_key = os.environ["LINEAR_API_KEY"]
-team_id = os.environ["LINEAR_TEAM_ID"]
-project_id = os.environ["LINEAR_PROJECT_ID"]
-repo = os.environ["REPO"]
-sha = os.environ["SHA"]
-actor = os.environ["ACTOR"]
+          api_key = os.environ["LINEAR_API_KEY"]
+          team_id = os.environ["LINEAR_TEAM_ID"]
+          project_id = os.environ["LINEAR_PROJECT_ID"]
+          repo = os.environ["REPO"]
+          sha = os.environ["SHA"]
+          actor = os.environ["ACTOR"]
 
-title = "Сайт: действия после merge в main"
-desc = textwrap.dedent(
-    f"""\
-    Автоматически создано GitHub Actions после merge в `main`.
+          title = "Сайт: действия после merge в main"
+          desc = textwrap.dedent(
+              f"""\
+              Автоматически создано GitHub Actions после merge в `main`.
 
-    Что сделать:
-    - [ ] Проверить, что сборка/деплой прошли успешно
-    - [ ] Быстрый smoke-check главной страницы
-    - [ ] Проверить метаданные/OG (если были изменения)
-    - [ ] Если были изменения контента — убедиться, что страницы отображаются корректно
+              Что сделать:
+              - [ ] Проверить, что сборка/деплой прошли успешно
+              - [ ] Быстрый smoke-check главной страницы
+              - [ ] Проверить метаданные/OG (если были изменения)
+              - [ ] Если были изменения контента — убедиться, что страницы отображаются корректно
 
-    Техническая информация:
-    - Репозиторий: {repo}
-    - Коммит: {sha}
-    - Автор merge: {actor}
-    """
-)
+              Техническая информация:
+              - Репозиторий: {repo}
+              - Коммит: {sha}
+              - Автор merge: {actor}
+              """
+          )
 
-payload = {
-  "query": "mutation CreateIssue($input: IssueCreateInput!) { issueCreate(input: $input) { success issue { id identifier url title } } }",
-  "variables": {
-    "input": {
-      "teamId": team_id,
-      "projectId": project_id,
-      "title": title,
-      "description": desc
-    }
-  }
-}
+          payload = {
+            "query": "mutation CreateIssue($input: IssueCreateInput!) { issueCreate(input: $input) { success issue { id identifier url title } } }",
+            "variables": {
+              "input": {
+                "teamId": team_id,
+                "projectId": project_id,
+                "title": title,
+                "description": desc
+              }
+            }
+          }
 
-req = urllib.request.Request(
-  "https://api.linear.app/graphql",
-  data=json.dumps(payload).encode("utf-8"),
-  headers={"Content-Type": "application/json", "Authorization": api_key}
-)
+          req = urllib.request.Request(
+            "https://api.linear.app/graphql",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json", "Authorization": api_key}
+          )
 
-with urllib.request.urlopen(req) as r:
-  print(r.read().decode("utf-8"))
+          with urllib.request.urlopen(req) as r:
+            print(r.read().decode("utf-8"))
 PY
