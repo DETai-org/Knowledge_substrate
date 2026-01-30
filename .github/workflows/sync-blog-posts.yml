@@ -6,11 +6,15 @@ on:
       - main
     paths:
       - 'knowledge_core/source_of_truth/docs/publications/blogs/**'  # Путь в исходном репозитории
+    paths-ignore:
+      - 'knowledge_core/source_of_truth/docs/publications/blogs/README.md'  # Исключаем README.md
   pull_request:
     branches:
       - main
     paths:
       - 'knowledge_core/source_of_truth/docs/publications/blogs/**'
+    paths-ignore:
+      - 'knowledge_core/source_of_truth/docs/publications/blogs/README.md'  # Исключаем README.md
 
 jobs:
   sync-repos:
