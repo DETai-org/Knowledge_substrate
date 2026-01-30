@@ -9,7 +9,10 @@ jobs:
   create_linear_issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Create issue in Linear (project: Site)
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Create Linear issue for Site project
         env:
           LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
           LINEAR_TEAM_ID: ${{ secrets.LINEAR_TEAM_ID }}
@@ -22,8 +25,8 @@ jobs:
           python3 - <<'PY'
           import json
           import os
-          import textwrap
           import urllib.request
+          from pathlib import Path
           api_key = os.environ["LINEAR_API_KEY"]
           team_id = os.environ["LINEAR_TEAM_ID"]
           project_id = os.environ["LINEAR_PROJECT_ID"]
@@ -31,22 +34,8 @@ jobs:
           sha = os.environ["SHA"]
           actor = os.environ["ACTOR"]
           title = "Сайт: действия после merge в main"
-          desc = textwrap.dedent(
-          f"""\
-          Автоматически создано GitHub Actions после merge в `main`.
-
-          Что сделать:
-          - [ ] Проверить, что сборка/деплой прошли успешно
-          - [ ] Быстрый smoke-check главной страницы
-          - [ ] Проверить метаданные/OG (если были изменения)
-          - [ ] Если были изменения контента — убедиться, что страницы отображаются корректно
-
-          Техническая информация:
-          - Репозиторий: {repo}
-          - Коммит: {sha}
-          - Автор merge: {actor}
-          """
-          )
+          prompt_template = Path(".github/workflows/prompt.md").read_text(encoding="utf-8").strip()
+          desc = prompt_template.format(repo=repo, sha=sha, actor=actor)
           payload = {
           "query": "mutation CreateIssue($input: IssueCreateInput!) { issueCreate(input: $input) { success issue { id identifier url title } } }",
           "variables": {
