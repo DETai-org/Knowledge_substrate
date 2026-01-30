@@ -6,11 +6,6 @@ on:
       - main
     paths-ignore:
       - 'knowledge_core/source_of_truth/docs/publications/blogs/README.md'  # Исключаем README.md из синхронизации
-  pull_request:
-    branches:
-      - main
-    paths-ignore:
-      - 'knowledge_core/source_of_truth/docs/publications/blogs/README.md'  # Исключаем README.md из синхронизации
 
 jobs:
   sync-repos:
