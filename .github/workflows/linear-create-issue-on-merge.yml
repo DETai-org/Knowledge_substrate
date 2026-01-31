@@ -1,13 +1,18 @@
 name: Create Linear issue on merge to main
 
 on:
-  push:
+  workflow_run:
+    workflows:
+      - Sync Blog Posts to Site
+    types:
+      - completed
     branches:
       - main
 
 jobs:
   create_linear_issue:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v4
         with:
