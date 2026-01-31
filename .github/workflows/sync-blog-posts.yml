@@ -50,4 +50,14 @@ jobs:
             exit 0
           fi
           git commit -m "Sync new blog posts"
-          git push
+          git fetch origin main
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            echo "Не удалось отправить изменения (попытка ${attempt}). Повтор через ${attempt}0 секунд..."
+            sleep "${attempt}0"
+          done
+          echo "Не удалось отправить изменения после 5 попыток."
+          exit 1
