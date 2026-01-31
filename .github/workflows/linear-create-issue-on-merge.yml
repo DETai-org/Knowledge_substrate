@@ -1,13 +1,19 @@
 name: Create Linear issue on merge to main
 
 on:
-  push:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Sync Blog Posts to Site
+    types:
+      - completed
     branches:
       - main
 
 jobs:
   create_linear_issue:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -17,6 +23,8 @@ jobs:
           LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
           LINEAR_TEAM_ID: ${{ secrets.LINEAR_TEAM_ID }}
           LINEAR_PROJECT_ID: ${{ secrets.LINEAR_PROJECT_ID }}
+          LINEAR_LABEL_ID_POST_TO_BLOG: ef1c4ff5-cbec-4ba2-9534-5a5158312e4f # Post to Blog
+          LINEAR_ASSIGNEE_ID: 12db3c09-7c21-407b-bcac-20e8c697d8ea # Anton-Psy
           REPO: ${{ github.repository }}
           SHA: ${{ github.sha }}
           ACTOR: ${{ github.actor }}
@@ -30,18 +38,23 @@ jobs:
           api_key = os.environ["LINEAR_API_KEY"]
           team_id = os.environ["LINEAR_TEAM_ID"]
           project_id = os.environ["LINEAR_PROJECT_ID"]
+          label_id_post_to_blog = os.environ["LINEAR_LABEL_ID_POST_TO_BLOG"]
+          assignee_id = os.environ["LINEAR_ASSIGNEE_ID"]
           repo = os.environ["REPO"]
           sha = os.environ["SHA"]
           actor = os.environ["ACTOR"]
           title = "Добавления нового поста в систему"
           prompt_template = Path(".github/workflows/prompt.md").read_text(encoding="utf-8").strip()
           desc = prompt_template.format(repo=repo, sha=sha, actor=actor)
+          label_ids = [label_id_post_to_blog]
           payload = {
           "query": "mutation CreateIssue($input: IssueCreateInput!) { issueCreate(input: $input) { success issue { id identifier url title } } }",
           "variables": {
           "input": {
           "teamId": team_id,
           "projectId": project_id,
+          "labelIds": label_ids,
+          "assigneeId": assignee_id,
           "title": title,
           "description": desc
           }
