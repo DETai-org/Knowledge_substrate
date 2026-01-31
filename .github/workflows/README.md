@@ -4,7 +4,7 @@
 
 ## 🚀 Deploy Docs (`.github/workflows/docs.yml`)
 - 🏗️ Собирает документацию на MkDocs при изменениях в документационных путях.
-- 🌐 Публикует результат в GitHub Pages для актуальной версии сайта.
+- 🌐 Публикует результат в GitHub Pages, чтобы в MkDocs отображались данные из файлов в [`knowledge_core/source_of_truth/docs/`](../../knowledge_core/source_of_truth/docs/).
 
 ## 🔁 Sync Blog Posts to Site (`.github/workflows/sync-blog-posts.yml`)
 - 📦 Копирует посты из Knowledge_substrate в репозиторий `DETai-org/sites`.
