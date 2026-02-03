@@ -28,7 +28,10 @@ class PostExtracted:
     source_hash: str
 
 
-def extract_publish_posts(source_root: Path) -> list[PostExtracted]:
+def extract_publish_posts(
+    source_root: Path,
+    prefer_channel: str | None = None,
+) -> list[PostExtracted]:
     posts: list[PostExtracted] = []
     for path in iter_markdown_files(source_root):
         try:
@@ -55,7 +58,7 @@ def extract_publish_posts(source_root: Path) -> list[PostExtracted]:
             continue
         posts.append(post)
 
-    return posts
+    return deduplicate_posts(posts, prefer_channel)
 
 
 def iter_markdown_files(source_root: Path) -> Iterable[Path]:
@@ -172,6 +175,52 @@ def clean_markdown(text: str) -> str:
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
+
+
+def deduplicate_posts(
+    posts: list[PostExtracted],
+    prefer_channel: str | None,
+) -> list[PostExtracted]:
+    by_id: dict[str, PostExtracted] = {}
+    duplicates: dict[str, list[PostExtracted]] = {}
+
+    for post in posts:
+        existing = by_id.get(post.id)
+        if existing is None:
+            by_id[post.id] = post
+            continue
+
+        duplicates.setdefault(post.id, [existing]).append(post)
+        chosen = choose_canonical_post(
+            [existing, post],
+            prefer_channel=prefer_channel,
+        )
+        by_id[post.id] = chosen
+
+    for doc_id, items in duplicates.items():
+        paths = sorted({item.source_path for item in items})
+        chosen_path = by_id[doc_id].source_path
+        logger.warning(
+            "Дубликат post id=%s, выбран путь=%s, кандидаты=%s",
+            doc_id,
+            chosen_path,
+            paths,
+        )
+
+    return list(by_id.values())
+
+
+def choose_canonical_post(
+    candidates: list[PostExtracted],
+    prefer_channel: str | None,
+) -> PostExtracted:
+    if prefer_channel:
+        preferred = [
+            post for post in candidates if prefer_channel in post.channels
+        ]
+        if preferred:
+            return sorted(preferred, key=lambda post: post.source_path)[0]
+    return sorted(candidates, key=lambda post: post.source_path)[0]
 
 
 def main() -> None:

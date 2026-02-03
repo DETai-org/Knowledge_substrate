@@ -382,3 +382,4 @@ Chunk embeddings и RAG — следующий этап.
 new 🆕 Ослабить preflight‑проверку DATABASE_URL в пользу полного DSN.
 new 🆕 Сделать OPENAI_API_KEY условной проверкой (dry‑run / non‑openai).
 new 🆕 Добавить structured log для ошибок preflight.
+new 🆕 Добавить дедупликацию publish‑постов по administrative.id с prefer_channel.

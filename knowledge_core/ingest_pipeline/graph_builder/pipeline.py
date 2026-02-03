@@ -53,10 +53,16 @@ class ExecutionConfig:
 
 
 @dataclass(frozen=True)
+class ExtractConfig:
+    prefer_channel: str | None
+
+
+@dataclass(frozen=True)
 class PipelineConfig:
     embeddings: EmbeddingConfig
     graph: GraphConfig
     execution: ExecutionConfig
+    extract: ExtractConfig
 
 
 @dataclass(frozen=True)
@@ -111,11 +117,12 @@ def run_pipeline(
     embedding_config: EmbeddingConfig,
     graph_config: GraphConfig,
     execution_config: ExecutionConfig,
+    extract_config: ExtractConfig,
     full_rebuild: bool,
     run_id: str,
 ) -> None:
     full_rebuild = full_rebuild or execution_config.mode == "full"
-    posts = extract_publish_posts(source_root)
+    posts = extract_publish_posts(source_root, prefer_channel=extract_config.prefer_channel)
     posts = apply_limit(posts, execution_config.limit_posts)
     log_event(run_id, "extract", "publish-посты извлечены", posts=len(posts))
 
@@ -645,6 +652,7 @@ def main() -> None:
     embedding_config = apply_cli_embeddings(pipeline_config.embeddings, args)
     graph_config = apply_cli_graph(pipeline_config.graph, args)
     execution_config = apply_cli_execution(pipeline_config.execution, args)
+    extract_config = pipeline_config.extract
 
     run_id = uuid.uuid4().hex[:8]
     log_event(
@@ -655,6 +663,7 @@ def main() -> None:
         top_k=graph_config.k,
         min_similarity=graph_config.min_similarity,
         mode=execution_config.mode,
+        prefer_channel=extract_config.prefer_channel,
     )
 
     preflight(
@@ -664,6 +673,7 @@ def main() -> None:
         embedding_config=embedding_config,
         graph_config=graph_config,
         execution_config=execution_config,
+        extract_config=extract_config,
         source_root=source_root,
     )
 
@@ -673,6 +683,7 @@ def main() -> None:
         embedding_config=embedding_config,
         graph_config=graph_config,
         execution_config=execution_config,
+        extract_config=extract_config,
         full_rebuild=args.full_rebuild or args.full,
         run_id=run_id,
     )
@@ -686,6 +697,7 @@ def load_config(path: Path) -> PipelineConfig:
     embeddings_data = data.get("embeddings") or {}
     graph_data = data.get("graph") or {}
     execution_data = data.get("execution") or {}
+    extract_data = data.get("extract") or {}
 
     embeddings = EmbeddingConfig(
         provider=str(embeddings_data.get("provider") or os.getenv("EMBEDDINGS_PROVIDER") or "openai"),
@@ -732,7 +744,19 @@ def load_config(path: Path) -> PipelineConfig:
             else os.getenv("EXECUTION_FAIL_FAST", "false").lower() == "true"
         ),
     )
-    return PipelineConfig(embeddings=embeddings, graph=graph, execution=execution)
+    extract = ExtractConfig(
+        prefer_channel=(
+            str(extract_data.get("prefer_channel"))
+            if extract_data.get("prefer_channel") is not None
+            else os.getenv("EXTRACT_PREFER_CHANNEL")
+        )
+    )
+    return PipelineConfig(
+        embeddings=embeddings,
+        graph=graph,
+        execution=execution,
+        extract=extract,
+    )
 
 
 def apply_cli_embeddings(config: EmbeddingConfig, args: argparse.Namespace) -> EmbeddingConfig:
@@ -780,6 +804,7 @@ def preflight(
     embedding_config: EmbeddingConfig,
     graph_config: GraphConfig,
     execution_config: ExecutionConfig,
+    extract_config: ExtractConfig,
     source_root: Path,
 ) -> None:
     try:
@@ -805,7 +830,7 @@ def preflight(
         raise
 
     try:
-        posts = extract_publish_posts(source_root)
+        posts = extract_publish_posts(source_root, prefer_channel=extract_config.prefer_channel)
         posts = apply_limit(posts, execution_config.limit_posts)
         if len(posts) < execution_config.min_posts:
             raise RuntimeError(

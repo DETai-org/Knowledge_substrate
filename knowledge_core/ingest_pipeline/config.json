@@ -17,5 +17,8 @@
     "min_posts": 1,
     "dry_run": false,
     "fail_fast": false
+  },
+  "extract": {
+    "prefer_channel": "detai_site_blog"
   }
 }
