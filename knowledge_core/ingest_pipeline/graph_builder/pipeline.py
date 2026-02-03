@@ -20,6 +20,18 @@ from knowledge_core.ingest_pipeline.posts import PostExtracted, extract_publish_
 
 logger = logging.getLogger(__name__)
 
+STAGE_EMOJI = {
+    "start": "🚀",
+    "preflight": "✅",
+    "extract": "📥",
+    "dry_run": "🧪",
+    "embed": "🧠",
+    "knn": "🔗",
+    "persist": "💾",
+}
+
+OPENAI_KEY_PATTERN = re.compile(r"^sk-[A-Za-z0-9_-]{20,}$")
+
 
 @dataclass(frozen=True)
 class EmbeddingConfig:
@@ -210,6 +222,27 @@ def build_provider(config: EmbeddingConfig) -> EmbeddingProvider:
     raise ValueError(f"Неизвестный провайдер embeddings: {config.provider}")
 
 
+def validate_openai_key_format(api_key: str) -> None:
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY не задан")
+    if not OPENAI_KEY_PATTERN.match(api_key):
+        raise RuntimeError("OPENAI_API_KEY не похож на валидный ключ")
+
+
+def validate_openai_embeddings_access(
+    api_key: str,
+    model: str,
+    batch_size: int,
+    run_id: str,
+) -> None:
+    provider = OpenAIEmbeddingProvider(model=model, batch_size=batch_size, api_key=api_key)
+    try:
+        provider.embed_texts(["ping"])
+    except Exception as exc:
+        log_error(run_id, "preflight", exc)
+        raise RuntimeError("Не удалось подтвердить доступ к embeddings OpenAI") from exc
+
+
 def normalize_text(text: str) -> str:
     lowered = text.lower()
     normalized = re.sub(r"\s+", " ", lowered).strip()
@@ -340,9 +373,7 @@ def process_batches(
                 raise
             if current_size <= 1:
                 raise
-            logger.warning(
-                "Падение batch=%s, уменьшаем размер: %s", current_size, exc
-            )
+            logger.warning("⚠️ Падение batch=%s, уменьшаем размер: %s", current_size, exc)
             batch_size = max(1, current_size // 2)
             continue
 
@@ -811,14 +842,14 @@ def preflight(
         if not config_path.exists():
             raise RuntimeError("config.json не найден")
 
-        if (
-            not execution_config.dry_run
-            and embedding_config.provider.lower() == "openai"
-            and not os.getenv("OPENAI_API_KEY")
-        ):
-            raise RuntimeError(
-                "OPENAI_API_KEY не задан для режима non-dry-run и провайдера openai"
-            )
+        if embedding_config.provider.lower() == "openai":
+            api_key = os.getenv("OPENAI_API_KEY", "")
+            if api_key:
+                validate_openai_key_format(api_key)
+            elif not execution_config.dry_run:
+                raise RuntimeError(
+                    "OPENAI_API_KEY не задан для режима non-dry-run и провайдера openai"
+                )
 
         json.loads(config_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
@@ -830,6 +861,19 @@ def preflight(
         raise
 
     try:
+        if (
+            not execution_config.dry_run
+            and embedding_config.provider.lower() == "openai"
+        ):
+            api_key = os.getenv("OPENAI_API_KEY", "")
+            validate_openai_key_format(api_key)
+            validate_openai_embeddings_access(
+                api_key=api_key,
+                model=embedding_config.model,
+                batch_size=embedding_config.batch_size,
+                run_id=run_id,
+            )
+
         posts = extract_publish_posts(source_root, prefer_channel=extract_config.prefer_channel)
         posts = apply_limit(posts, execution_config.limit_posts)
         if len(posts) < execution_config.min_posts:
@@ -877,7 +921,8 @@ def log_event(run_id: str, stage: str, message: str, **fields: object) -> None:
         if value is None:
             continue
         pairs.append(f"{key}={value}")
-    logger.info("%s %s", " ".join(pairs), message)
+    emoji = STAGE_EMOJI.get(stage, "✅")
+    logger.info("%s %s %s", emoji, " ".join(pairs), message)
 
 
 def log_error(
@@ -898,7 +943,7 @@ def log_error(
         parts.append(f"doc_ids={','.join(doc_ids[:5])}")
     if attempt is not None:
         parts.append(f"attempt={attempt}")
-    logger.error("%s %s", " ".join(parts), str(exc))
+    logger.error("❌ %s %s", " ".join(parts), str(exc))
 
 
 if __name__ == "__main__":

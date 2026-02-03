@@ -37,17 +37,17 @@ def extract_publish_posts(
         try:
             raw_text = path.read_text(encoding="utf-8")
         except OSError as exc:
-            logger.error("Не удалось прочитать файл %s: %s", path, exc)
+            logger.error("❌ Не удалось прочитать файл %s: %s", path, exc)
             continue
 
         try:
             frontmatter, body = split_frontmatter(raw_text, path)
             meta = yaml.safe_load(frontmatter) or {}
         except ValueError as exc:
-            logger.error("%s", exc)
+            logger.error("❌ %s", exc)
             continue
         except yaml.YAMLError as exc:
-            logger.error("Ошибка YAML в %s: %s", path, exc)
+            logger.error("❌ Ошибка YAML в %s: %s", path, exc)
             continue
 
         if not is_publish_post(meta):
@@ -62,7 +62,11 @@ def extract_publish_posts(
 
 
 def iter_markdown_files(source_root: Path) -> Iterable[Path]:
-    return (path for path in source_root.rglob("*.md") if path.is_file())
+    return (
+        path
+        for path in source_root.rglob("*.md")
+        if path.is_file() and path.name.lower() != "readme.md"
+    )
 
 
 def split_frontmatter(raw_text: str, path: Path) -> tuple[str, str]:
@@ -115,7 +119,7 @@ def build_post(
 
     if missing:
         logger.error(
-            "Пропущен файл %s: отсутствуют обязательные поля: %s",
+            "❌ Пропущен файл %s: отсутствуют обязательные поля: %s",
             path,
             ", ".join(missing),
         )
@@ -123,14 +127,14 @@ def build_post(
 
     doc_id = str(administrative["id"]).strip()
     if not doc_id:
-        logger.error("Пропущен файл %s: пустой administrative.id", path)
+        logger.error("❌ Пропущен файл %s: пустой administrative.id", path)
         return None
 
     date_ymd = str(administrative["date_ymd"]).strip()
     try:
         year = int(date_ymd.split("-", 1)[0])
     except (ValueError, IndexError):
-        logger.error("Пропущен файл %s: некорректный date_ymd=%s", path, date_ymd)
+        logger.error("❌ Пропущен файл %s: некорректный date_ymd=%s", path, date_ymd)
         return None
 
     title = str(descriptive["title"]).strip()
@@ -200,8 +204,8 @@ def deduplicate_posts(
     for doc_id, items in duplicates.items():
         paths = sorted({item.source_path for item in items})
         chosen_path = by_id[doc_id].source_path
-        logger.warning(
-            "Дубликат post id=%s, выбран путь=%s, кандидаты=%s",
+        logger.info(
+            "📃х2☝️ Дубликат post id=%s, выбран путь=%s, кандидаты=%s",
             doc_id,
             chosen_path,
             paths,
