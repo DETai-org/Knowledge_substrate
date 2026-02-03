@@ -26,6 +26,7 @@ class EmbeddingConfig:
     batch_size: int
     provider: str
     normalize_text: bool = True
+    max_chars: int | None = None
 
 
 @dataclass(frozen=True)
@@ -108,15 +109,19 @@ def run_pipeline(
     execution_config: ExecutionConfig,
     full_rebuild: bool,
 ) -> None:
+    full_rebuild = full_rebuild or execution_config.mode == "full"
     posts = extract_publish_posts(source_root)
     posts = apply_limit(posts, execution_config.limit_posts)
     logger.info("Найдено publish-постов: %s", len(posts))
 
     provider = build_provider(embedding_config)
     normalized_texts = {
-        post.id: normalize_text(post.text_for_embedding)
-        if embedding_config.normalize_text
-        else post.text_for_embedding
+        post.id: prepare_text(
+            post.text_for_embedding,
+            normalize=embedding_config.normalize_text,
+            max_chars=embedding_config.max_chars,
+            doc_id=post.id,
+        )
         for post in posts
     }
 
@@ -129,7 +134,7 @@ def run_pipeline(
             model=embedding_config.model,
         )
 
-        embeddings = build_embeddings(
+        embeddings, reused_count, recalculated_count = build_embeddings(
             provider,
             posts=posts,
             normalized_texts=normalized_texts,
@@ -138,11 +143,17 @@ def run_pipeline(
             model=embedding_config.model,
             conn=conn,
         )
+        logger.info(
+            "Embeddings: переиспользовано=%s, пересчитано=%s",
+            reused_count,
+            recalculated_count,
+        )
 
-        if full_rebuild or execution_config.mode == "full":
+        if full_rebuild:
             clear_edges(conn, graph_config)
 
         edges = build_similarity_edges(embeddings, graph_config)
+        logger.info("Edges: подготовлено=%s", len(edges))
         persist_edges(
             conn,
             edges,
@@ -166,6 +177,14 @@ def normalize_text(text: str) -> str:
     lowered = text.lower()
     normalized = re.sub(r"\s+", " ", lowered).strip()
     return normalized
+
+
+def prepare_text(text: str, normalize: bool, max_chars: int | None, doc_id: str) -> str:
+    prepared = normalize_text(text) if normalize else text
+    if max_chars is not None and max_chars > 0 and len(prepared) > max_chars:
+        logger.info("Текст обрезан по лимиту символов (%s): %s", max_chars, doc_id)
+        return prepared[:max_chars]
+    return prepared
 
 
 def fetch_existing_embeddings(
@@ -208,17 +227,56 @@ def build_embeddings(
 ) -> list[EmbeddingRecord]:
     to_update: list[PostExtracted] = []
     embeddings: list[EmbeddingRecord] = []
+    reused_count = 0
+    recalculated_count = 0
 
     for post in posts:
         record = existing.get(post.id)
         if record and record.source_hash == post.source_hash:
             embeddings.append(record)
+            reused_count += 1
             continue
         to_update.append(post)
 
-    for batch in chunked(to_update, provider.batch_size):
-        texts = [normalized_texts[item.id] for item in batch]
-        vectors = provider.embed_texts(texts)
+    recalculated_count += process_batches(
+        provider,
+        to_update,
+        normalized_texts,
+        embeddings,
+        conn,
+        doc_type,
+        model,
+    )
+
+    return embeddings, reused_count, recalculated_count
+
+
+def process_batches(
+    provider: EmbeddingProvider,
+    posts: list[PostExtracted],
+    normalized_texts: dict[str, str],
+    embeddings: list[EmbeddingRecord],
+    conn: psycopg2.extensions.connection,
+    doc_type: str,
+    model: str,
+) -> int:
+    recalculated_count = 0
+    batch_size = provider.batch_size
+    start = 0
+    while start < len(posts):
+        current_size = min(batch_size, len(posts) - start)
+        batch = posts[start : start + current_size]
+        try:
+            vectors = embed_with_retry(provider, [normalized_texts[item.id] for item in batch])
+        except Exception as exc:
+            if current_size <= 1:
+                raise
+            logger.warning(
+                "Падение batch=%s, уменьшаем размер: %s", current_size, exc
+            )
+            batch_size = max(1, current_size // 2)
+            continue
+
         if len(vectors) != len(batch):
             raise RuntimeError("Количество embeddings не совпадает с количеством документов")
 
@@ -231,6 +289,7 @@ def build_embeddings(
             )
             embeddings.append(record)
             updated_records.append(record)
+        recalculated_count += len(updated_records)
 
         upsert_embeddings(
             conn,
@@ -238,8 +297,28 @@ def build_embeddings(
             doc_type=doc_type,
             model=model,
         )
+        start += current_size
 
-    return embeddings
+    return recalculated_count
+
+
+def embed_with_retry(provider: EmbeddingProvider, texts: Sequence[str]) -> list[list[float]]:
+    delays = (1, 2, 4)
+    for attempt, delay in enumerate(delays, start=1):
+        try:
+            return provider.embed_texts(texts)
+        except Exception as exc:
+            if attempt == len(delays):
+                raise
+            logger.warning("Ошибка embeddings, повтор %s/%s: %s", attempt, len(delays), exc)
+            time_sleep(delay)
+    raise RuntimeError("Не удалось получить embeddings после повторов")
+
+
+def time_sleep(seconds: int) -> None:
+    import time
+
+    time.sleep(seconds)
 
 
 def upsert_embeddings(
@@ -455,10 +534,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", type=str, required=False)
     parser.add_argument("--provider", type=str, default=None)
     parser.add_argument("--batch-size", type=int, default=None)
+    parser.add_argument("--max-chars", type=int, default=None)
     parser.add_argument("--k", type=int, default=None)
     parser.add_argument("--min-similarity", type=float, default=None)
     parser.add_argument("--limit-posts", type=int, default=None)
+    parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--mode", type=str, choices=("incremental", "full"), default=None)
+    parser.add_argument("--full", action="store_true")
     parser.add_argument("--full-rebuild", action="store_true")
     return parser.parse_args()
 
@@ -473,7 +555,9 @@ def main() -> None:
         / "publications"
         / "blogs"
     )
-    config_path = args.config or (Path(__file__).resolve().parents[1] / "config.json")
+    config_path = args.config or Path(
+        os.getenv("CONFIG_PATH", Path(__file__).resolve().parents[1] / "config.json")
+    )
     pipeline_config = load_config(config_path)
 
     embedding_config = apply_cli_embeddings(pipeline_config.embeddings, args)
@@ -486,7 +570,7 @@ def main() -> None:
         embedding_config=embedding_config,
         graph_config=graph_config,
         execution_config=execution_config,
-        full_rebuild=args.full_rebuild,
+        full_rebuild=args.full_rebuild or args.full,
     )
 
 
@@ -502,11 +586,16 @@ def load_config(path: Path) -> PipelineConfig:
     embeddings = EmbeddingConfig(
         provider=str(embeddings_data.get("provider") or os.getenv("EMBEDDINGS_PROVIDER") or "openai"),
         model=str(embeddings_data.get("model") or os.getenv("EMBEDDINGS_MODEL") or "text-embedding-3-large"),
-        batch_size=int(embeddings_data.get("batch_size") or os.getenv("EMBEDDINGS_BATCH_SIZE") or 16),
+        batch_size=int(embeddings_data.get("batch_size") or os.getenv("EMBEDDINGS_BATCH_SIZE") or 32),
         normalize_text=bool(
             embeddings_data.get("normalize_text")
             if embeddings_data.get("normalize_text") is not None
             else os.getenv("EMBEDDINGS_NORMALIZE_TEXT", "true").lower() == "true"
+        ),
+        max_chars=(
+            int(embeddings_data.get("max_chars"))
+            if embeddings_data.get("max_chars") is not None
+            else (int(os.getenv("EMBEDDINGS_MAX_CHARS")) if os.getenv("EMBEDDINGS_MAX_CHARS") else None)
         ),
     )
     graph = GraphConfig(
@@ -533,6 +622,7 @@ def apply_cli_embeddings(config: EmbeddingConfig, args: argparse.Namespace) -> E
         model=args.model or config.model,
         batch_size=args.batch_size or config.batch_size,
         normalize_text=config.normalize_text,
+        max_chars=args.max_chars if args.max_chars is not None else config.max_chars,
     )
 
 
@@ -547,7 +637,11 @@ def apply_cli_graph(config: GraphConfig, args: argparse.Namespace) -> GraphConfi
 def apply_cli_execution(config: ExecutionConfig, args: argparse.Namespace) -> ExecutionConfig:
     return ExecutionConfig(
         mode=args.mode or config.mode,
-        limit_posts=args.limit_posts if args.limit_posts is not None else config.limit_posts,
+        limit_posts=(
+            args.limit
+            if args.limit is not None
+            else (args.limit_posts if args.limit_posts is not None else config.limit_posts)
+        ),
     )
 
 

@@ -2,8 +2,9 @@
   "embeddings": {
     "provider": "openai",
     "model": "text-embedding-3-large",
-    "batch_size": 16,
-    "normalize_text": true
+    "batch_size": 32,
+    "normalize_text": true,
+    "max_chars": 8000
   },
   "graph": {
     "method": "topk",

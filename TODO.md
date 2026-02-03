@@ -336,6 +336,32 @@ Chunk embeddings и RAG — следующий этап.
 
 ---
 
+## Sub-Issue 3a — Embeddings & Graph Builder (PR scope)
+Коротко: сделать runnable пайплайн embeddings + similarity graph с конфигом и self-hosted запуском.
+
+## 🎯 Purpose
+Собрать рабочий пайплайн для локального и self-hosted запуска, который берёт publish‑посты,
+считает embeddings, строит similarity graph и пишет всё в Postgres с идемпотентностью.
+
+## 📦 Acceptance Tasks
+- [x] Добавить config.json и поддержать приоритет CLI → config → env → defaults.
+  - Implementation Steps:
+    - Создать `knowledge_core/ingest_pipeline/config.json` и загрузку конфигурации в пайплайне.
+- [x] Обеспечить runnable CLI entrypoint и корректные логи по количеству постов/embeddings/edges.
+  - Implementation Steps:
+    - Добавить параметры CLI, логировать найденные посты, пересчитанные embeddings и количество edges.
+- [x] Реализовать устойчивость: retry с backoff, снижение batch и лимит длины текста.
+  - Implementation Steps:
+    - Добавить ретраи, уменьшение batch при ошибках и усечение текста с логом.
+- [x] Добавить GitHub Actions workflow для self-hosted runner.
+  - Implementation Steps:
+    - Создать workflow с `workflow_dispatch`, установкой зависимостей и запуском пайплайна.
+- [x] Зафиксировать в README, что секреты идут через env (локально и Actions).
+  - Implementation Steps:
+    - Обновить ingest_pipeline/README.md с правилами по env и config.
+
+---
+
 ## Sub-Issue 4 — API: Expose similarity graph endpoint
 Коротко: отдать publish‑граф через API в формате nodes + edges.
 
