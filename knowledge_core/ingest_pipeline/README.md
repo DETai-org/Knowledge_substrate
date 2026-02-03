@@ -4,6 +4,28 @@
 Ingest pipeline — это конвейер, который **берёт канонические документы из source_of_truth**, проверяет их метаданные, 
 и **синхронизирует** всё в Postgres так, чтобы дальше работали: фильтры, поиск, граф, агенты и векторизация.
 
+## Конфигурация и секреты
+
+### Что хранится в env
+
+Секреты **никогда** не коммитятся в репозиторий и приходят только через env:
+
+* `OPENAI_API_KEY`
+* `DATABASE_URL`
+
+Локальный запуск использует `.env` на сервере, запуск через GitHub Actions — `Secrets`.
+
+### Что хранится в config.json
+
+Параметры вычислений, которые **не являются секретами** и могут меняться от запуска к запуску,
+живут в `knowledge_core/ingest_pipeline/config.json`:
+
+* `embeddings.*` (model, batch_size, normalize_text, max_chars)
+* `graph.*` (top_k, min_similarity, method)
+* `execution.*` (mode, limit_posts)
+
+Приоритет источников: **CLI → config.json → env → defaults**.
+
 ## Что важно не забыть (чек-лист мыслей)
 
 ### 1) Что pipeline обязан делать

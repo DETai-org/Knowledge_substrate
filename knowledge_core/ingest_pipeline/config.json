@@ -1,0 +1,24 @@
+{
+  "embeddings": {
+    "provider": "openai",
+    "model": "text-embedding-3-large",
+    "batch_size": 32,
+    "normalize_text": true,
+    "max_chars": 8000
+  },
+  "graph": {
+    "method": "topk",
+    "top_k": 8,
+    "min_similarity": 0.75
+  },
+  "execution": {
+    "mode": "incremental",
+    "limit_posts": null,
+    "min_posts": 1,
+    "dry_run": false,
+    "fail_fast": false
+  },
+  "extract": {
+    "prefer_channel": "detai_site_blog"
+  }
+}
