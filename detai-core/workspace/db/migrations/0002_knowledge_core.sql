@@ -1,5 +1,7 @@
 BEGIN;
 
+CREATE EXTENSION IF NOT EXISTS vector;
+
 -- documents
 CREATE TABLE IF NOT EXISTS knowledge.documents (
   id          BIGSERIAL PRIMARY KEY,
