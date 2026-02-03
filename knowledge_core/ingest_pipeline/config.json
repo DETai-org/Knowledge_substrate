@@ -1,0 +1,17 @@
+{
+  "embeddings": {
+    "provider": "openai",
+    "model": "text-embedding-3-large",
+    "batch_size": 16,
+    "normalize_text": true
+  },
+  "graph": {
+    "method": "topk",
+    "top_k": 8,
+    "min_similarity": 0.75
+  },
+  "execution": {
+    "mode": "incremental",
+    "limit_posts": null
+  }
+}

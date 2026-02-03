@@ -25,6 +25,7 @@ class EmbeddingConfig:
     model: str
     batch_size: int
     provider: str
+    normalize_text: bool = True
 
 
 @dataclass(frozen=True)
@@ -38,6 +39,19 @@ class GraphConfig:
 @dataclass(frozen=True)
 class DbConfig:
     dsn: str
+
+
+@dataclass(frozen=True)
+class ExecutionConfig:
+    mode: str
+    limit_posts: int | None
+
+
+@dataclass(frozen=True)
+class PipelineConfig:
+    embeddings: EmbeddingConfig
+    graph: GraphConfig
+    execution: ExecutionConfig
 
 
 @dataclass(frozen=True)
@@ -91,14 +105,19 @@ def run_pipeline(
     db_config: DbConfig,
     embedding_config: EmbeddingConfig,
     graph_config: GraphConfig,
+    execution_config: ExecutionConfig,
     full_rebuild: bool,
 ) -> None:
     posts = extract_publish_posts(source_root)
+    posts = apply_limit(posts, execution_config.limit_posts)
     logger.info("Найдено publish-постов: %s", len(posts))
 
     provider = build_provider(embedding_config)
     normalized_texts = {
-        post.id: normalize_text(post.text_for_embedding) for post in posts
+        post.id: normalize_text(post.text_for_embedding)
+        if embedding_config.normalize_text
+        else post.text_for_embedding
+        for post in posts
     }
 
     with psycopg2.connect(db_config.dsn) as conn:
@@ -120,7 +139,7 @@ def run_pipeline(
             conn=conn,
         )
 
-        if full_rebuild:
+        if full_rebuild or execution_config.mode == "full":
             clear_edges(conn, graph_config)
 
         edges = build_similarity_edges(embeddings, graph_config)
@@ -432,11 +451,14 @@ def build_dsn() -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Построение embeddings и similarity graph для постов")
     parser.add_argument("--source-root", type=Path, required=False)
-    parser.add_argument("--model", type=str, required=True)
-    parser.add_argument("--provider", type=str, default="openai")
-    parser.add_argument("--batch-size", type=int, default=16)
-    parser.add_argument("--k", type=int, default=8)
-    parser.add_argument("--min-similarity", type=float, default=0.75)
+    parser.add_argument("--config", type=Path, required=False)
+    parser.add_argument("--model", type=str, required=False)
+    parser.add_argument("--provider", type=str, default=None)
+    parser.add_argument("--batch-size", type=int, default=None)
+    parser.add_argument("--k", type=int, default=None)
+    parser.add_argument("--min-similarity", type=float, default=None)
+    parser.add_argument("--limit-posts", type=int, default=None)
+    parser.add_argument("--mode", type=str, choices=("incremental", "full"), default=None)
     parser.add_argument("--full-rebuild", action="store_true")
     return parser.parse_args()
 
@@ -451,20 +473,88 @@ def main() -> None:
         / "publications"
         / "blogs"
     )
+    config_path = args.config or (Path(__file__).resolve().parents[1] / "config.json")
+    pipeline_config = load_config(config_path)
+
+    embedding_config = apply_cli_embeddings(pipeline_config.embeddings, args)
+    graph_config = apply_cli_graph(pipeline_config.graph, args)
+    execution_config = apply_cli_execution(pipeline_config.execution, args)
+
     run_pipeline(
         source_root=source_root,
         db_config=DbConfig(dsn=build_dsn()),
-        embedding_config=EmbeddingConfig(
-            model=args.model,
-            batch_size=args.batch_size,
-            provider=args.provider,
-        ),
-        graph_config=GraphConfig(
-            k=args.k,
-            min_similarity=args.min_similarity,
-        ),
+        embedding_config=embedding_config,
+        graph_config=graph_config,
+        execution_config=execution_config,
         full_rebuild=args.full_rebuild,
     )
+
+
+def load_config(path: Path) -> PipelineConfig:
+    data = {}
+    if path.exists():
+        data = json.loads(path.read_text(encoding="utf-8"))
+
+    embeddings_data = data.get("embeddings") or {}
+    graph_data = data.get("graph") or {}
+    execution_data = data.get("execution") or {}
+
+    embeddings = EmbeddingConfig(
+        provider=str(embeddings_data.get("provider") or os.getenv("EMBEDDINGS_PROVIDER") or "openai"),
+        model=str(embeddings_data.get("model") or os.getenv("EMBEDDINGS_MODEL") or "text-embedding-3-large"),
+        batch_size=int(embeddings_data.get("batch_size") or os.getenv("EMBEDDINGS_BATCH_SIZE") or 16),
+        normalize_text=bool(
+            embeddings_data.get("normalize_text")
+            if embeddings_data.get("normalize_text") is not None
+            else os.getenv("EMBEDDINGS_NORMALIZE_TEXT", "true").lower() == "true"
+        ),
+    )
+    graph = GraphConfig(
+        method=str(graph_data.get("method") or os.getenv("GRAPH_METHOD") or "topk"),
+        k=int(graph_data.get("top_k") or os.getenv("GRAPH_TOP_K") or 8),
+        min_similarity=float(
+            graph_data.get("min_similarity") or os.getenv("GRAPH_MIN_SIMILARITY") or 0.75
+        ),
+    )
+    execution = ExecutionConfig(
+        mode=str(execution_data.get("mode") or os.getenv("EXECUTION_MODE") or "incremental"),
+        limit_posts=(
+            int(execution_data.get("limit_posts"))
+            if execution_data.get("limit_posts") is not None
+            else (int(os.getenv("EXECUTION_LIMIT_POSTS")) if os.getenv("EXECUTION_LIMIT_POSTS") else None)
+        ),
+    )
+    return PipelineConfig(embeddings=embeddings, graph=graph, execution=execution)
+
+
+def apply_cli_embeddings(config: EmbeddingConfig, args: argparse.Namespace) -> EmbeddingConfig:
+    return EmbeddingConfig(
+        provider=args.provider or config.provider,
+        model=args.model or config.model,
+        batch_size=args.batch_size or config.batch_size,
+        normalize_text=config.normalize_text,
+    )
+
+
+def apply_cli_graph(config: GraphConfig, args: argparse.Namespace) -> GraphConfig:
+    return GraphConfig(
+        method=config.method,
+        k=args.k or config.k,
+        min_similarity=args.min_similarity or config.min_similarity,
+    )
+
+
+def apply_cli_execution(config: ExecutionConfig, args: argparse.Namespace) -> ExecutionConfig:
+    return ExecutionConfig(
+        mode=args.mode or config.mode,
+        limit_posts=args.limit_posts if args.limit_posts is not None else config.limit_posts,
+    )
+
+
+def apply_limit(posts: list[PostExtracted], limit: int | None) -> list[PostExtracted]:
+    if limit is None or limit <= 0:
+        return posts
+    return posts[:limit]
 
 
 if __name__ == "__main__":
