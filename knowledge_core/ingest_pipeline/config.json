@@ -9,7 +9,7 @@
   "graph": {
     "method": "topk",
     "top_k": 8,
-    "min_similarity": 0.75
+    "min_similarity": 0.60
   },
   "execution": {
     "mode": "incremental",
