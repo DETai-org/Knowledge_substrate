@@ -13,6 +13,9 @@
   },
   "execution": {
     "mode": "incremental",
-    "limit_posts": null
+    "limit_posts": null,
+    "min_posts": 1,
+    "dry_run": false,
+    "fail_fast": false
   }
 }

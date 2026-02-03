@@ -353,6 +353,9 @@ Chunk embeddings и RAG — следующий этап.
 - [x] Реализовать устойчивость: retry с backoff, снижение batch и лимит длины текста.
   - Implementation Steps:
     - Добавить ретраи, уменьшение batch при ошибках и усечение текста с логом.
+- [x] Добавить preflight, dry-run и структурные логи с run_id/stage.
+  - Implementation Steps:
+    - Реализовать preflight check, dry-run режим и stage-логи с счётчиками.
 - [x] Добавить GitHub Actions workflow для self-hosted runner.
   - Implementation Steps:
     - Создать workflow с `workflow_dispatch`, установкой зависимостей и запуском пайплайна.

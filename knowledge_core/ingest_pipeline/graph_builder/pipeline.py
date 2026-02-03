@@ -6,6 +6,7 @@ import logging
 import math
 import os
 import re
+import uuid
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Sequence
@@ -46,6 +47,9 @@ class DbConfig:
 class ExecutionConfig:
     mode: str
     limit_posts: int | None
+    min_posts: int
+    dry_run: bool
+    fail_fast: bool
 
 
 @dataclass(frozen=True)
@@ -108,11 +112,12 @@ def run_pipeline(
     graph_config: GraphConfig,
     execution_config: ExecutionConfig,
     full_rebuild: bool,
+    run_id: str,
 ) -> None:
     full_rebuild = full_rebuild or execution_config.mode == "full"
     posts = extract_publish_posts(source_root)
     posts = apply_limit(posts, execution_config.limit_posts)
-    logger.info("Найдено publish-постов: %s", len(posts))
+    log_event(run_id, "extract", "publish-посты извлечены", posts=len(posts))
 
     provider = build_provider(embedding_config)
     normalized_texts = {
@@ -121,6 +126,7 @@ def run_pipeline(
             normalize=embedding_config.normalize_text,
             max_chars=embedding_config.max_chars,
             doc_id=post.id,
+            run_id=run_id,
         )
         for post in posts
     }
@@ -134,6 +140,10 @@ def run_pipeline(
             model=embedding_config.model,
         )
 
+        if execution_config.dry_run:
+            log_event(run_id, "dry_run", "dry-run активен, вычисления и запись пропущены")
+            return
+
         embeddings, reused_count, recalculated_count = build_embeddings(
             provider,
             posts=posts,
@@ -142,24 +152,44 @@ def run_pipeline(
             doc_type=graph_config.doc_type,
             model=embedding_config.model,
             conn=conn,
+            fail_fast=execution_config.fail_fast,
+            run_id=run_id,
         )
-        logger.info(
-            "Embeddings: переиспользовано=%s, пересчитано=%s",
-            reused_count,
-            recalculated_count,
+        log_event(
+            run_id,
+            "embed",
+            "embeddings рассчитаны",
+            reused=reused_count,
+            recalculated=recalculated_count,
+            model=embedding_config.model,
+            batch=embedding_config.batch_size,
         )
 
         if full_rebuild:
             clear_edges(conn, graph_config)
 
         edges = build_similarity_edges(embeddings, graph_config)
-        logger.info("Edges: подготовлено=%s", len(edges))
-        persist_edges(
+        log_event(
+            run_id,
+            "knn",
+            "edges подготовлены",
+            edges=len(edges),
+            top_k=graph_config.k,
+            min_similarity=graph_config.min_similarity,
+        )
+        edges_written = persist_edges(
             conn,
             edges,
             graph_config=graph_config,
             affected_doc_ids={record.doc_id for record in embeddings},
             full_rebuild=full_rebuild,
+        )
+        log_event(
+            run_id,
+            "persist",
+            "запись завершена",
+            embeddings_upserted=recalculated_count,
+            edges_upserted=edges_written,
         )
 
         conn.commit()
@@ -179,10 +209,22 @@ def normalize_text(text: str) -> str:
     return normalized
 
 
-def prepare_text(text: str, normalize: bool, max_chars: int | None, doc_id: str) -> str:
+def prepare_text(
+    text: str,
+    normalize: bool,
+    max_chars: int | None,
+    doc_id: str,
+    run_id: str,
+) -> str:
     prepared = normalize_text(text) if normalize else text
     if max_chars is not None and max_chars > 0 and len(prepared) > max_chars:
-        logger.info("Текст обрезан по лимиту символов (%s): %s", max_chars, doc_id)
+        log_event(
+            run_id,
+            "extract",
+            "текст обрезан по лимиту символов",
+            doc_id=doc_id,
+            max_chars=max_chars,
+        )
         return prepared[:max_chars]
     return prepared
 
@@ -224,7 +266,9 @@ def build_embeddings(
     doc_type: str,
     model: str,
     conn: psycopg2.extensions.connection,
-) -> list[EmbeddingRecord]:
+    fail_fast: bool,
+    run_id: str,
+) -> tuple[list[EmbeddingRecord], int, int]:
     to_update: list[PostExtracted] = []
     embeddings: list[EmbeddingRecord] = []
     reused_count = 0
@@ -246,6 +290,8 @@ def build_embeddings(
         conn,
         doc_type,
         model,
+        fail_fast=fail_fast,
+        run_id=run_id,
     )
 
     return embeddings, reused_count, recalculated_count
@@ -259,6 +305,8 @@ def process_batches(
     conn: psycopg2.extensions.connection,
     doc_type: str,
     model: str,
+    fail_fast: bool,
+    run_id: str,
 ) -> int:
     recalculated_count = 0
     batch_size = provider.batch_size
@@ -267,8 +315,22 @@ def process_batches(
         current_size = min(batch_size, len(posts) - start)
         batch = posts[start : start + current_size]
         try:
-            vectors = embed_with_retry(provider, [normalized_texts[item.id] for item in batch])
+            vectors = embed_with_retry(
+                provider,
+                [normalized_texts[item.id] for item in batch],
+                run_id=run_id,
+                doc_ids=[item.id for item in batch],
+                fail_fast=fail_fast,
+            )
         except Exception as exc:
+            log_error(
+                run_id,
+                "embed",
+                exc,
+                doc_ids=[item.id for item in batch],
+            )
+            if fail_fast:
+                raise
             if current_size <= 1:
                 raise
             logger.warning(
@@ -302,7 +364,13 @@ def process_batches(
     return recalculated_count
 
 
-def embed_with_retry(provider: EmbeddingProvider, texts: Sequence[str]) -> list[list[float]]:
+def embed_with_retry(
+    provider: EmbeddingProvider,
+    texts: Sequence[str],
+    run_id: str,
+    doc_ids: list[str],
+    fail_fast: bool,
+) -> list[list[float]]:
     delays = (1, 2, 4)
     for attempt, delay in enumerate(delays, start=1):
         try:
@@ -310,7 +378,15 @@ def embed_with_retry(provider: EmbeddingProvider, texts: Sequence[str]) -> list[
         except Exception as exc:
             if attempt == len(delays):
                 raise
-            logger.warning("Ошибка embeddings, повтор %s/%s: %s", attempt, len(delays), exc)
+            log_error(
+                run_id,
+                "embed",
+                exc,
+                doc_ids=doc_ids,
+                attempt=attempt,
+            )
+            if fail_fast:
+                raise
             time_sleep(delay)
     raise RuntimeError("Не удалось получить embeddings после повторов")
 
@@ -426,12 +502,12 @@ def persist_edges(
     graph_config: GraphConfig,
     affected_doc_ids: set[str],
     full_rebuild: bool,
-) -> None:
+) -> int:
     if not full_rebuild and affected_doc_ids:
         delete_edges_for_docs(conn, graph_config, affected_doc_ids)
 
     if not edges:
-        return
+        return 0
 
     values = [
         (
@@ -458,6 +534,7 @@ def persist_edges(
     """
     with conn.cursor() as cur:
         psycopg2.extras.execute_values(cur, query, values)
+    return len(values)
 
 
 def delete_edges_for_docs(
@@ -540,6 +617,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit-posts", type=int, default=None)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--mode", type=str, choices=("incremental", "full"), default=None)
+    parser.add_argument("--min-posts", type=int, default=None)
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--fail-fast", action="store_true")
     parser.add_argument("--full", action="store_true")
     parser.add_argument("--full-rebuild", action="store_true")
     return parser.parse_args()
@@ -558,11 +638,34 @@ def main() -> None:
     config_path = args.config or Path(
         os.getenv("CONFIG_PATH", Path(__file__).resolve().parents[1] / "config.json")
     )
+    if not config_path.exists():
+        raise FileNotFoundError(f"config.json не найден: {config_path}")
     pipeline_config = load_config(config_path)
 
     embedding_config = apply_cli_embeddings(pipeline_config.embeddings, args)
     graph_config = apply_cli_graph(pipeline_config.graph, args)
     execution_config = apply_cli_execution(pipeline_config.execution, args)
+
+    run_id = uuid.uuid4().hex[:8]
+    log_event(
+        run_id,
+        "start",
+        "запуск пайплайна",
+        model=embedding_config.model,
+        top_k=graph_config.k,
+        min_similarity=graph_config.min_similarity,
+        mode=execution_config.mode,
+    )
+
+    preflight(
+        run_id=run_id,
+        config_path=config_path,
+        db_config=DbConfig(dsn=build_dsn()),
+        embedding_config=embedding_config,
+        graph_config=graph_config,
+        execution_config=execution_config,
+        source_root=source_root,
+    )
 
     run_pipeline(
         source_root=source_root,
@@ -571,6 +674,7 @@ def main() -> None:
         graph_config=graph_config,
         execution_config=execution_config,
         full_rebuild=args.full_rebuild or args.full,
+        run_id=run_id,
     )
 
 
@@ -612,6 +716,21 @@ def load_config(path: Path) -> PipelineConfig:
             if execution_data.get("limit_posts") is not None
             else (int(os.getenv("EXECUTION_LIMIT_POSTS")) if os.getenv("EXECUTION_LIMIT_POSTS") else None)
         ),
+        min_posts=int(
+            execution_data.get("min_posts")
+            if execution_data.get("min_posts") is not None
+            else os.getenv("EXECUTION_MIN_POSTS") or 1
+        ),
+        dry_run=bool(
+            execution_data.get("dry_run")
+            if execution_data.get("dry_run") is not None
+            else os.getenv("EXECUTION_DRY_RUN", "false").lower() == "true"
+        ),
+        fail_fast=bool(
+            execution_data.get("fail_fast")
+            if execution_data.get("fail_fast") is not None
+            else os.getenv("EXECUTION_FAIL_FAST", "false").lower() == "true"
+        ),
     )
     return PipelineConfig(embeddings=embeddings, graph=graph, execution=execution)
 
@@ -642,6 +761,9 @@ def apply_cli_execution(config: ExecutionConfig, args: argparse.Namespace) -> Ex
             if args.limit is not None
             else (args.limit_posts if args.limit_posts is not None else config.limit_posts)
         ),
+        min_posts=args.min_posts if args.min_posts is not None else config.min_posts,
+        dry_run=args.dry_run or config.dry_run,
+        fail_fast=args.fail_fast or config.fail_fast,
     )
 
 
@@ -649,6 +771,89 @@ def apply_limit(posts: list[PostExtracted], limit: int | None) -> list[PostExtra
     if limit is None or limit <= 0:
         return posts
     return posts[:limit]
+
+
+def preflight(
+    run_id: str,
+    config_path: Path,
+    db_config: DbConfig,
+    embedding_config: EmbeddingConfig,
+    graph_config: GraphConfig,
+    execution_config: ExecutionConfig,
+    source_root: Path,
+) -> None:
+    if not os.getenv("OPENAI_API_KEY"):
+        raise RuntimeError("OPENAI_API_KEY не задан")
+    if not os.getenv("DATABASE_URL"):
+        raise RuntimeError("DATABASE_URL не задан")
+    if not config_path.exists():
+        raise RuntimeError("config.json не найден")
+
+    try:
+        json.loads(config_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"config.json не читается: {exc}") from exc
+
+    posts = extract_publish_posts(source_root)
+    posts = apply_limit(posts, execution_config.limit_posts)
+    if len(posts) < execution_config.min_posts:
+        raise RuntimeError(
+            f"Найдено publish-постов меньше минимума: {len(posts)} < {execution_config.min_posts}"
+        )
+
+    with psycopg2.connect(db_config.dsn) as conn:
+        with conn.cursor() as cur:
+            cur.execute("SELECT 1")
+            cur.execute(
+                """
+                SELECT to_regclass('knowledge.embeddings'),
+                       to_regclass('knowledge.similarity_edges')
+                """
+            )
+            embeddings_table, edges_table = cur.fetchone()
+            if embeddings_table is None or edges_table is None:
+                raise RuntimeError("Не найдены таблицы embeddings/similarity_edges")
+
+    log_event(
+        run_id,
+        "preflight",
+        "preflight пройден",
+        model=embedding_config.model,
+        top_k=graph_config.k,
+        min_similarity=graph_config.min_similarity,
+        mode=execution_config.mode,
+        posts=len(posts),
+    )
+
+
+def log_event(run_id: str, stage: str, message: str, **fields: object) -> None:
+    pairs = [f"run_id={run_id}", f"stage={stage}"]
+    for key, value in fields.items():
+        if value is None:
+            continue
+        pairs.append(f"{key}={value}")
+    logger.info("%s %s", " ".join(pairs), message)
+
+
+def log_error(
+    run_id: str,
+    stage: str,
+    exc: Exception,
+    doc_id: str | None = None,
+    source_path: str | None = None,
+    doc_ids: list[str] | None = None,
+    attempt: int | None = None,
+) -> None:
+    parts = [f"run_id={run_id}", f"stage={stage}", f"error={type(exc).__name__}"]
+    if doc_id:
+        parts.append(f"doc_id={doc_id}")
+    if source_path:
+        parts.append(f"source_path={source_path}")
+    if doc_ids:
+        parts.append(f"doc_ids={','.join(doc_ids[:5])}")
+    if attempt is not None:
+        parts.append(f"attempt={attempt}")
+    logger.error("%s %s", " ".join(parts), str(exc))
 
 
 if __name__ == "__main__":
