@@ -782,37 +782,57 @@ def preflight(
     execution_config: ExecutionConfig,
     source_root: Path,
 ) -> None:
-    if not os.getenv("OPENAI_API_KEY"):
-        raise RuntimeError("OPENAI_API_KEY не задан")
-    if not os.getenv("DATABASE_URL"):
-        raise RuntimeError("DATABASE_URL не задан")
-    if not config_path.exists():
-        raise RuntimeError("config.json не найден")
-
     try:
+        if not config_path.exists():
+            raise RuntimeError("config.json не найден")
+
+        if (
+            not execution_config.dry_run
+            and embedding_config.provider.lower() == "openai"
+            and not os.getenv("OPENAI_API_KEY")
+        ):
+            raise RuntimeError(
+                "OPENAI_API_KEY не задан для режима non-dry-run и провайдера openai"
+            )
+
         json.loads(config_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
-        raise RuntimeError(f"config.json не читается: {exc}") from exc
+        error = RuntimeError(f"config.json не читается: {exc}")
+        log_error(run_id, "preflight", error)
+        raise error from exc
+    except Exception as exc:
+        log_error(run_id, "preflight", exc)
+        raise
 
-    posts = extract_publish_posts(source_root)
-    posts = apply_limit(posts, execution_config.limit_posts)
-    if len(posts) < execution_config.min_posts:
-        raise RuntimeError(
-            f"Найдено publish-постов меньше минимума: {len(posts)} < {execution_config.min_posts}"
-        )
-
-    with psycopg2.connect(db_config.dsn) as conn:
-        with conn.cursor() as cur:
-            cur.execute("SELECT 1")
-            cur.execute(
-                """
-                SELECT to_regclass('knowledge.embeddings'),
-                       to_regclass('knowledge.similarity_edges')
-                """
+    try:
+        posts = extract_publish_posts(source_root)
+        posts = apply_limit(posts, execution_config.limit_posts)
+        if len(posts) < execution_config.min_posts:
+            raise RuntimeError(
+                f"Найдено publish-постов меньше минимума: {len(posts)} < {execution_config.min_posts}"
             )
-            embeddings_table, edges_table = cur.fetchone()
-            if embeddings_table is None or edges_table is None:
-                raise RuntimeError("Не найдены таблицы embeddings/similarity_edges")
+
+        with psycopg2.connect(db_config.dsn) as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT 1")
+                cur.execute(
+                    """
+                    SELECT to_regclass('knowledge.embeddings'),
+                           to_regclass('knowledge.similarity_edges')
+                    """
+                )
+                embeddings_table, edges_table = cur.fetchone()
+                if embeddings_table is None or edges_table is None:
+                    raise RuntimeError("Не найдены таблицы embeddings/similarity_edges")
+    except psycopg2.OperationalError as exc:
+        error = RuntimeError(
+            "Не удалось подключиться к Postgres: проверьте параметры подключения"
+        )
+        log_error(run_id, "preflight", error)
+        raise error from exc
+    except Exception as exc:
+        log_error(run_id, "preflight", exc)
+        raise
 
     log_event(
         run_id,
