@@ -26,6 +26,13 @@ Ingest pipeline — это конвейер, который **берёт кан�
 
 Приоритет источников: **CLI → config.json → env → defaults**.
 
+## Навигация: Semantic Graph Posts
+Короткий вход для механизма семантического графа постов:
+- ADR: [adr-0001-semantic-similarity-graph-posts.md](../ADR/adr-0001-semantic-similarity-graph-posts.md)
+- Guide: [guide-semantic-graph-posts.md](../guides/guide-semantic-graph-posts.md)
+- Policy: [policy-semantic-graph-posts.md](../Policy/policy-semantic-graph-posts.md)
+- Sub-Issue: [1-sub-issue-semantic-graph-posts.md](../../issue/1-sub-issue-semantic-graph-posts.md)
+
 ## Что важно не забыть (чек-лист мыслей)
 
 ### 1) Что pipeline обязан делать

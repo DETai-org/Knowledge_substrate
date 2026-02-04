@@ -70,6 +70,11 @@ Accepted
 
 ---
 
+## Связанные документы
+- [Guide: Semantic Graph Posts](../guides/guide-semantic-graph-posts.md)
+
+---
+
 ## Follow-up
 
 * Выбрать конкретную модель embeddings.

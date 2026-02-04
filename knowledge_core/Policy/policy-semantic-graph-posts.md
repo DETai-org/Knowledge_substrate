@@ -11,3 +11,9 @@
 
 2. Для построения графа используются **только document-level embeddings**
    (chunk embeddings в этом контексте не применяются).
+
+---
+
+## Связанные документы
+- [Guide: Semantic Graph Posts](../guides/guide-semantic-graph-posts.md)
+- [ADR-0001: Semantic Similarity Graph for Posts](../ADR/adr-0001-semantic-similarity-graph-posts.md)

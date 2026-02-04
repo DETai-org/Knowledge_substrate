@@ -10,6 +10,13 @@
 
 ---
 
+## Связанные документы
+- [ADR-0001: Semantic Similarity Graph for Posts](../ADR/adr-0001-semantic-similarity-graph-posts.md)
+- [Policy: Semantic Graph Posts](../Policy/policy-semantic-graph-posts.md)
+- [Sub-Issue: Semantic Graph Posts — коммуникационный слой](../../issue/1-sub-issue-semantic-graph-posts.md)
+
+---
+
 ## Scope
 - Document type: `post`
 - Status: `publish` only
