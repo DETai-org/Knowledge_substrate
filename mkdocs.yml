@@ -82,7 +82,9 @@ nav:
               - ru/ecosystem/U.L.I/Хронология_версий/versions-chronology.md
       - Infrastructure:
           - ru/ecosystem/Infrastructure/README.md
-          - Knowledge Substrate: ru/ecosystem/Infrastructure/Knowledge_Substrate/README.md
+          - Knowledge Substrate:
+              - ru/ecosystem/Infrastructure/Knowledge_Substrate/README.md
+              - Knowledge Core: ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/index.md
           - Infrastructure Principles: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
       - Tools:
           - ru/ecosystem/Tools/README.md
