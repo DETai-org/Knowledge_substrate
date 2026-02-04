@@ -40,7 +40,7 @@ Knowledge_substrate
 │   │   │   │   │   ├── index.md
 │   │   │   │   │   └── README.md
 │   │   │   │   ├── DETai
-│   │   │   │   │   ├── U.L.I. — Улей
+│   │   │   │   │   ├── U.L.I
 │   │   │   │   │   │   ├── Логика_и_инфраструктура
 │   │   │   │   │   │   │   ├── index.md
 │   │   │   │   │   │   │   ├── README.md
@@ -54,6 +54,8 @@ Knowledge_substrate
 │   │   │   │   │   │   │   ├── policy-layer.md
 │   │   │   │   │   │   │   ├── README.md
 │   │   │   │   │   │   │   ├── telegram-bots-standard.md
+│   │   │   │   │   │   │   ├── work-model
+│   │   │   │   │   │   │   │   └── index.md
 │   │   │   │   │   │   │   └── versioning.md
 │   │   │   │   │   │   ├── Философия_и_установки
 │   │   │   │   │   │   │   ├── bee-roles.md
