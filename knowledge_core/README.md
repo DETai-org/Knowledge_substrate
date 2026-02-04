@@ -58,6 +58,12 @@ flowchart TD
 - Здесь задаются правила трансформации Markdown в структурированные записи,
   а также вспомогательные политики для последующей индексации и RAG.
 
+#### Навигация: Semantic Graph for Posts
+- ADR: [ADR-0001: Semantic Similarity Graph for Posts](ADR/adr-0001-semantic-similarity-graph-posts.md)
+- Guide: [Guide: Semantic Similarity Graph for Posts](guides/guide-semantic-graph-posts.md)
+- Policy: [Policy: Semantic Graph for Posts](Policy/policy-semantic-graph-posts.md)
+- Sub-Issue (Work Package): [1-sub-issue-semantic-graph-posts.md](../issue/1-sub-issue-semantic-graph-posts.md)
+
 ### 3. Operational Store — рабочие представления
 - Каталог `operational_store/` хранит модели и структуры данных,
   которые используются в **операционных БД** и сервисах доступа.
