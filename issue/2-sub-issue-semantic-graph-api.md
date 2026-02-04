@@ -4,26 +4,18 @@
 API‑выдача графа publish‑постов и доработки preflight.
 
 ## Purpose
-Сформировать API‑эндпоинт для выдачи графа publish‑постов и закрыть
-доработки preflight, чтобы обеспечить корректную выдачу данных и устойчивость пайплайна.
+Сформировать API‑эндпоинт для выдачи графа publish‑постов и обеспечить
+корректную выдачу данных для последующей визуализации на сайте.
 
 ## Tasks (Acceptance Checklist)
 
 ### 1) API: Expose similarity graph endpoint
-Коротко: отдать publish‑граф через API в формате nodes + edges.
-
-- [ ] Реализовать endpoint `/graph`, возвращающий nodes и edges.
-  - Implementation Steps:
-    - Определить контракт ответа и модель данных.
-- [ ] Ограничить выборку publish‑постами и валидными рёбрами.
-  - Implementation Steps:
-    - Добавить фильтрацию по status/type и валидности edges.
-- [ ] Поддержать фильтры: channel, year_from/year_to, rubric_id, category_id, limit_nodes.
-  - Implementation Steps:
-    - Реализовать query‑параметры и их валидацию.
-- [ ] Проверить, что JSON соответствует контракту и потребляется Next.js.
-  - Implementation Steps:
-    - Прогнать интеграционные проверки формата ответа.
+- [ ] API: Expose similarity graph endpoint
+  1. Отдать publish‑граф через API в формате nodes + edges.
+  2. Реализовать endpoint `/graph`, возвращающий nodes и edges.
+  3. Ограничить выборку publish‑постами и валидными рёбрами.
+  4. Поддержать фильтры: channel, year_from/year_to, rubric_id, category_id, limit_nodes.
+  5. Проверить, что JSON соответствует контракту и потребляется Next.js.
 
 ## Verification Notes
 Верификация будет считаться выполненной, когда графовые связи визуально
