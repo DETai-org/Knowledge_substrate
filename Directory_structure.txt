@@ -1,10 +1,15 @@
-Общее количество папок: 76
-Общее количество файлов: 123
+Общее количество папок: 95
+Общее количество файлов: 183
 
 Knowledge_substrate
 ├── .github
 │   └── workflows
-│       └── docs.yml
+│       ├── docs.yml
+│       ├── linear-create-issue-on-merge.yml
+│       ├── prompt.md
+│       ├── README.md
+│       ├── semantic-graph.yml
+│       └── sync-blog-posts.yml
 ├── detai-core
 │   ├── api
 │   │   └── app
@@ -15,135 +20,95 @@ Knowledge_substrate
 │   │   └── db
 │   │       ├── migrations
 │   │       │   ├── 0001_ledger.sql
-│   │       │   └── 0002_knowledge_core.sql
-│   │       └── apply_migrations.sh
+│   │       │   ├── 0002_knowledge_core.sql
+│   │       │   ├── 0003_semantic_graph.sql
+│   │       │   └── 0004_embeddings_text_id.sql
+│   │       ├── apply_migrations.sh
+│   │       └── README.md
 │   └── .env.example
+├── issue
+│   ├── Standard
+│   │   ├── development-model.md
+│   │   ├── issue-contract.md
+│   │   └── sub-issue-contract.md
+│   ├── 1-sub-issue-semantic-graph-posts.md
+│   ├── 2-sub-issue-semantic-graph-api.md
+│   └── issue-v0.1.md
 ├── knowledge_core
+│   ├── ADR
+│   │   └── adr-0001-semantic-similarity-graph-posts.md
+│   ├── guides
+│   │   └── guide-semantic-graph-posts.md
 │   ├── ingest_pipeline
+│   │   ├── graph_builder
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   ├── __init__.cpython-311.pyc
+│   │   │   │   ├── pipeline.cpython-310.pyc
+│   │   │   │   └── pipeline.cpython-311.pyc
+│   │   │   ├── __init__.py
+│   │   │   └── pipeline.py
 │   │   ├── policies
 │   │   │   └── ingest_and_rag_hybrid_model.md
+│   │   ├── posts
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-311.pyc
+│   │   │   │   └── extract_posts.cpython-311.pyc
+│   │   │   ├── __init__.py
+│   │   │   └── extract_posts.py
+│   │   ├── config.json
 │   │   └── README.md
 │   ├── operational_store
 │   │   └── README.md
+│   ├── Policy
+│   │   └── policy-semantic-graph-posts.md
 │   ├── source_of_truth
+│   │   ├── assets
+│   │   │   ├── javascripts
+│   │   │   │   ├── chatgpt-button.js
+│   │   │   │   └── chatgpt-prompt.js
+│   │   │   ├── overrides
+│   │   │   │   └── partials
+│   │   │   │       └── copyright.html
+│   │   │   ├── stylesheets
+│   │   │   │   └── extra.css
+│   │   │   └── README.md
 │   │   ├── docs
+│   │   │   ├── cn
+│   │   │   │   └── ecosystem
+│   │   │   │       └── index.md
 │   │   │   ├── de
 │   │   │   │   └── ecosystem
 │   │   │   │       └── index.md
-│   │   │   ├── ecosystem
-│   │   │   │   ├── DET
-│   │   │   │   │   ├── Методологии
-│   │   │   │   │   │   ├── glossary.md
-│   │   │   │   │   │   ├── mission.md
-│   │   │   │   │   │   ├── principles.md
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── index.md
-│   │   │   │   │   └── README.md
-│   │   │   │   ├── DETai
-│   │   │   │   │   ├── U.L.I
-│   │   │   │   │   │   ├── Логика_и_инфраструктура
-│   │   │   │   │   │   │   ├── index.md
-│   │   │   │   │   │   │   ├── README.md
-│   │   │   │   │   │   │   └── repo-logic.md
-│   │   │   │   │   │   ├── Описание_векторов
-│   │   │   │   │   │   │   ├── README.md
-│   │   │   │   │   │   │   └── vectors.md
-│   │   │   │   │   │   ├── Технические_стандарты
-│   │   │   │   │   │   │   ├── index.md
-│   │   │   │   │   │   │   ├── mosaic-approach.md
-│   │   │   │   │   │   │   ├── policy-layer.md
-│   │   │   │   │   │   │   ├── README.md
-│   │   │   │   │   │   │   ├── telegram-bots-standard.md
-│   │   │   │   │   │   │   ├── work-model
-│   │   │   │   │   │   │   │   └── index.md
-│   │   │   │   │   │   │   └── versioning.md
-│   │   │   │   │   │   ├── Философия_и_установки
-│   │   │   │   │   │   │   ├── bee-roles.md
-│   │   │   │   │   │   │   ├── index.md
-│   │   │   │   │   │   │   └── README.md
-│   │   │   │   │   │   ├── Хронология_версий
-│   │   │   │   │   │   │   ├── README.md
-│   │   │   │   │   │   │   └── versions-chronology.md
-│   │   │   │   │   │   ├── index.md
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Предпроекты
-│   │   │   │   │   │   ├── thought-canvas
-│   │   │   │   │   │   │   ├── index.md
-│   │   │   │   │   │   │   ├── philosophical-foundation.md
-│   │   │   │   │   │   │   ├── storage-format.md
-│   │   │   │   │   │   │   └── technology.md
-│   │   │   │   │   │   ├── index.md
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Проекты
-│   │   │   │   │   │   ├── Эшелоны
-│   │   │   │   │   │   │   ├── echelon-1
-│   │   │   │   │   │   │   │   ├── francis-galton.md
-│   │   │   │   │   │   │   │   └── index.md
-│   │   │   │   │   │   │   ├── echelon-2
-│   │   │   │   │   │   │   │   └── index.md
-│   │   │   │   │   │   │   ├── echelon-3
-│   │   │   │   │   │   │   │   └── index.md
-│   │   │   │   │   │   │   └── README.md
-│   │   │   │   │   │   ├── index.md
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── ecosystem-map.md
-│   │   │   │   │   ├── index.md
-│   │   │   │   │   └── README.md
-│   │   │   │   ├── en
-│   │   │   │   │   ├── detai
-│   │   │   │   │   │   └── projects
-│   │   │   │   │   │       └── echelon-1
-│   │   │   │   │   │           └── francis-galton.md
-│   │   │   │   │   ├── onboarding
-│   │   │   │   │   │   ├── 00-pre-onboarding
-│   │   │   │   │   │   │   ├── how-to-read.md
-│   │   │   │   │   │   │   └── uli.md
-│   │   │   │   │   │   └── index.md
-│   │   │   │   │   └── index.md
-│   │   │   │   ├── Infrastructure
-│   │   │   │   │   ├── Knowledge_Substrate
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Infrastructure_Principles.md
-│   │   │   │   │   └── README.md
-│   │   │   │   ├── Onboarding
-│   │   │   │   │   ├── onboarding
-│   │   │   │   │   │   ├── 00-pre-onboarding
-│   │   │   │   │   │   │   ├── how-to-read.md
-│   │   │   │   │   │   │   └── uli.md
-│   │   │   │   │   │   └── index.md
-│   │   │   │   │   ├── Презентации
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   └── README.md
-│   │   │   │   ├── Tools
-│   │   │   │   │   ├── ClickUp
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Codex
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── GitHub
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Make_Сценарии
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Obsidian
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Боты_Telegram
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   └── README.md
-│   │   │   │   ├── .pages
-│   │   │   │   ├── index.md
-│   │   │   │   └── README.md
 │   │   │   ├── en
-│   │   │   │   ├── ecosystem
-│   │   │   │   │   └── index.md
-│   │   │   │   └── index.md
+│   │   │   │   └── ecosystem
+│   │   │   │       └── index.md
 │   │   │   ├── fi
 │   │   │   │   └── ecosystem
 │   │   │   │       └── index.md
 │   │   │   ├── publications
 │   │   │   │   ├── blogs
 │   │   │   │   │   ├── detai_site_blog
-│   │   │   │   │   │   └── README.md
+│   │   │   │   │   │   ├── blizost-i-nezavisemost.md
+│   │   │   │   │   │   ├── lyubov-vedet-nas-za-soboy-potrebnost-nas-tolkaet.md
+│   │   │   │   │   │   ├── multidistsiplinarnyi-podkhod.md
+│   │   │   │   │   │   ├── nitsshe-i-vera-etap-ili-ulovka.md
+│   │   │   │   │   │   ├── poznaniya-dobra-i-zla.md
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── vera-v-svoi-sposobnosti.md
+│   │   │   │   │   │   └── vzaimopomoshch-kak-faktor-evolyutsii.md
 │   │   │   │   │   ├── personal_site_blog
-│   │   │   │   │   │   └── README.md
+│   │   │   │   │   │   ├── blizost-i-nezavisemost.md
+│   │   │   │   │   │   ├── eta-istoriya-pro-odnogo-cheloveka.md
+│   │   │   │   │   │   ├── lyubov-vedet-nas-za-soboy-potrebnost-nas-tolkaet.md
+│   │   │   │   │   │   ├── multidistsiplinarnyi-podkhod.md
+│   │   │   │   │   │   ├── poznaniya-dobra-i-zla.md
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── reshenie-stat-psikhologom.md
+│   │   │   │   │   │   ├── sila-i-svet-haus-i-mrak.md
+│   │   │   │   │   │   ├── sposoben-li-chelovek-izmenitsya.md
+│   │   │   │   │   │   ├── svyaz-razumov.md
+│   │   │   │   │   │   └── vera-v-svoi-sposobnosti.md
 │   │   │   │   │   └── README.md
 │   │   │   │   ├── Research_Publication
 │   │   │   │   │   ├── articles
@@ -153,17 +118,124 @@ Knowledge_substrate
 │   │   │   │   │   ├── theses
 │   │   │   │   │   │   └── README.md
 │   │   │   │   │   └── README.md
-│   │   │   │   ├── STORYTELLING
-│   │   │   │   │   ├── Categories
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Cycles
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   ├── Psychology
-│   │   │   │   │   │   └── README.md
-│   │   │   │   │   └── README.md
 │   │   │   │   ├── .pages
 │   │   │   │   ├── index.md
 │   │   │   │   └── README.md
+│   │   │   ├── ru
+│   │   │   │   └── ecosystem
+│   │   │   │       ├── DET
+│   │   │   │       │   ├── Concept
+│   │   │   │       │   │   └── index.md
+│   │   │   │       │   ├── glossary.md
+│   │   │   │       │   ├── index.md
+│   │   │   │       │   ├── mission.md
+│   │   │   │       │   ├── principles.md
+│   │   │   │       │   └── README.md
+│   │   │   │       ├── DETai
+│   │   │   │       │   ├── Projects
+│   │   │   │       │   │   ├── Эшелоны
+│   │   │   │       │   │   │   ├── echelon-1
+│   │   │   │       │   │   │   │   ├── francis-galton.md
+│   │   │   │       │   │   │   │   └── index.md
+│   │   │   │       │   │   │   ├── echelon-2
+│   │   │   │       │   │   │   │   └── index.md
+│   │   │   │       │   │   │   ├── echelon-3
+│   │   │   │       │   │   │   │   └── index.md
+│   │   │   │       │   │   │   └── README.md
+│   │   │   │       │   │   ├── index.md
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Предпроекты
+│   │   │   │       │   │   ├── thought-canvas
+│   │   │   │       │   │   │   ├── index.md
+│   │   │   │       │   │   │   ├── philosophical-foundation.md
+│   │   │   │       │   │   │   ├── storage-format.md
+│   │   │   │       │   │   │   └── technology.md
+│   │   │   │       │   │   ├── index.md
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── ecosystem-map.md
+│   │   │   │       │   ├── index.md
+│   │   │   │       │   └── README.md
+│   │   │   │       ├── en
+│   │   │   │       │   ├── detai
+│   │   │   │       │   │   └── projects
+│   │   │   │       │   │       └── echelon-1
+│   │   │   │       │   │           └── francis-galton.md
+│   │   │   │       │   ├── onboarding
+│   │   │   │       │   │   ├── 00-pre-onboarding
+│   │   │   │       │   │   │   ├── how-to-read.md
+│   │   │   │       │   │   │   └── uli.md
+│   │   │   │       │   │   └── index.md
+│   │   │   │       │   └── index.md
+│   │   │   │       ├── Infrastructure
+│   │   │   │       │   ├── Knowledge_Substrate
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Infrastructure_Principles.md
+│   │   │   │       │   └── README.md
+│   │   │   │       ├── Onboarding
+│   │   │   │       │   ├── onboarding
+│   │   │   │       │   │   ├── 00-pre-onboarding
+│   │   │   │       │   │   │   ├── how-to-read.md
+│   │   │   │       │   │   │   └── uli.md
+│   │   │   │       │   │   └── index.md
+│   │   │   │       │   ├── Презентации
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   └── README.md
+│   │   │   │       ├── STORYTELLING
+│   │   │   │       │   ├── Categories
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Cycles
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Psychology
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Rubrics
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── index.md
+│   │   │   │       │   └── README.md
+│   │   │   │       ├── Tools
+│   │   │   │       │   ├── ClickUp
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Codex
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── GitHub
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Make_Сценарии
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Obsidian
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Боты_Telegram
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   └── README.md
+│   │   │   │       ├── U.L.I
+│   │   │   │       │   ├── Логика_и_инфраструктура
+│   │   │   │       │   │   ├── index.md
+│   │   │   │       │   │   ├── README.md
+│   │   │   │       │   │   └── repo-logic.md
+│   │   │   │       │   ├── Описание_векторов
+│   │   │   │       │   │   ├── README.md
+│   │   │   │       │   │   └── vectors.md
+│   │   │   │       │   ├── Технические_стандарты
+│   │   │   │       │   │   ├── work-model
+│   │   │   │       │   │   │   ├── index.md
+│   │   │   │       │   │   │   ├── issue-contract.md
+│   │   │   │       │   │   │   ├── sub-issue-contract.md
+│   │   │   │       │   │   │   └── work-model.md
+│   │   │   │       │   │   ├── index.md
+│   │   │   │       │   │   ├── mosaic-approach.md
+│   │   │   │       │   │   ├── policy-layer.md
+│   │   │   │       │   │   ├── README.md
+│   │   │   │       │   │   ├── telegram-bots-standard.md
+│   │   │   │       │   │   └── versioning.md
+│   │   │   │       │   ├── Философия_и_установки
+│   │   │   │       │   │   ├── bee-roles.md
+│   │   │   │       │   │   ├── index.md
+│   │   │   │       │   │   └── README.md
+│   │   │   │       │   ├── Хронология_версий
+│   │   │   │       │   │   ├── README.md
+│   │   │   │       │   │   └── versions-chronology.md
+│   │   │   │       │   └── index.md
+│   │   │   │       ├── .pages
+│   │   │   │       ├── index.md
+│   │   │   │       └── README.md
 │   │   │   ├── .pages
 │   │   │   ├── index.md
 │   │   │   └── README.md
@@ -176,15 +248,20 @@ Knowledge_substrate
 │   │   │   │   │   ├── categories.json
 │   │   │   │   │   ├── category_policies.md
 │   │   │   │   │   ├── cycle.json
+│   │   │   │   │   ├── cycle_policies.md
 │   │   │   │   │   ├── keywords.json
 │   │   │   │   │   ├── keywords_policy.md
+│   │   │   │   │   ├── post_creation_prompt.md
 │   │   │   │   │   ├── preview_policies.md
 │   │   │   │   │   ├── README.md
 │   │   │   │   │   ├── rubrics.json
-│   │   │   │   │   └── rubrics_and_subrubrics_policy.md
+│   │   │   │   │   ├── rubrics_and_subrubrics_policy.md
+│   │   │   │   │   ├── size_policies.md
+│   │   │   │   │   └── sizes.json
 │   │   │   │   ├── research_publication
-│   │   │   │   │   ├── publications_schema.md
 │   │   │   │   │   └── README.md
+│   │   │   │   ├── authors.json
+│   │   │   │   ├── publications_schema.md
 │   │   │   │   └── README.md
 │   │   │   └── README.md
 │   │   └── README.md
