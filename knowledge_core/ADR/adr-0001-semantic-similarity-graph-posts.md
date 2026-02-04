@@ -75,3 +75,8 @@ Accepted
 * Выбрать конкретную модель embeddings.
 * Реализовать pipeline: parse SoT → embed → build edges → persist.
 * Реализовать API `/graph` и страницу визуализации в Next.js.
+
+---
+
+## Связанные документы
+- Guide: [Semantic Similarity Graph for Posts](../guides/guide-semantic-graph-posts.md)

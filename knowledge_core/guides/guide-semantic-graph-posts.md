@@ -152,3 +152,10 @@ UI задача:
 - Chunk embeddings + RAG: поиск по фрагментам, ответы на вопросы.
 - Добавление типов документов: quote, research_publication и т.д. — по мере готовности контрактов.
 - Автоматическое построение тематических кластеров (community detection) и генерация "постулатов-кандидатов".
+
+---
+
+## Связанные документы
+- ADR: [ADR-0001: Semantic Similarity Graph for Posts](../ADR/adr-0001-semantic-similarity-graph-posts.md)
+- Policy: [Policy: Semantic Graph for Posts](../Policy/policy-semantic-graph-posts.md)
+- Sub-Issue: [Work Package — Semantic Graph for Posts](../../issue/1-sub-issue-semantic-graph-posts.md)
