@@ -1,15 +1,13 @@
-Policy: Semantic Graph for Posts
-Scope
+# Policy: Semantic Graph for Posts
+Данная политика относится **только** к построению семантического графа для документов типа `post` со статусом `publish`.
 
-Данная политика относится только к построению семантического графа для документов типа post со статусом publish.
+---
+## Rules
 
-Rules
+1. В граф включаются документы:
 
-В граф включаются только документы:
+   * `type = post`
+   * `status = publish`.
 
-type = post
-
-status = publish.
-
-Для построения графа используются только document-level embeddings
-(chunk embeddings в этом контексте не применяются).
+2. Для построения графа используются **только document-level embeddings**
+   (chunk embeddings в этом контексте не применяются).
