@@ -85,6 +85,7 @@ nav:
           - Knowledge Substrate:
               - ru/ecosystem/Infrastructure/Knowledge_Substrate/README.md
               - Knowledge Core: ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/index.md
+              - Explanation: ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/Explanation.md
           - Infrastructure Principles: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
       - Tools:
           - ru/ecosystem/Tools/README.md
