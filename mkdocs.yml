@@ -62,24 +62,24 @@ nav:
                   - ru/ecosystem/DETai/Предпроекты/thought-canvas/storage-format.md
                   - ru/ecosystem/DETai/Предпроекты/thought-canvas/technology.md
       - "**U.L.I.**":
-          - ru/ecosystem/DETai/U.L.I/index.md
+          - ru/ecosystem/U.L.I/index.md
           - Технические стандарты:
-              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/index.md
-              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/versioning.md
-              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/policy-layer.md
-              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/mosaic-approach.md
-              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/telegram-bots-standard.md
-              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/work-model/index.md
+              - ru/ecosystem/U.L.I/Технические_стандарты/index.md
+              - ru/ecosystem/U.L.I/Технические_стандарты/versioning.md
+              - ru/ecosystem/U.L.I/Технические_стандарты/policy-layer.md
+              - ru/ecosystem/U.L.I/Технические_стандарты/mosaic-approach.md
+              - ru/ecosystem/U.L.I/Технические_стандарты/telegram-bots-standard.md
+              - ru/ecosystem/U.L.I/Технические_стандарты/work-model/index.md
           - Логика и инфраструктура:
-              - ru/ecosystem/DETai/U.L.I/Логика_и_инфраструктура/index.md
-              - ru/ecosystem/DETai/U.L.I/Логика_и_инфраструктура/repo-logic.md
+              - ru/ecosystem/U.L.I/Логика_и_инфраструктура/index.md
+              - ru/ecosystem/U.L.I/Логика_и_инфраструктура/repo-logic.md
           - Философия и установки:
-              - ru/ecosystem/DETai/U.L.I/Философия_и_установки/index.md
-              - ru/ecosystem/DETai/U.L.I/Философия_и_установки/bee-roles.md
+              - ru/ecosystem/U.L.I/Философия_и_установки/index.md
+              - ru/ecosystem/U.L.I/Философия_и_установки/bee-roles.md
           - Описание векторов:
-              - ru/ecosystem/DETai/U.L.I/Описание_векторов/vectors.md
+              - ru/ecosystem/U.L.I/Описание_векторов/vectors.md
           - Хронология версий:
-              - ru/ecosystem/DETai/U.L.I/Хронология_версий/versions-chronology.md
+              - ru/ecosystem/U.L.I/Хронология_версий/versions-chronology.md
       - Infrastructure:
           - ru/ecosystem/Infrastructure/README.md
           - Knowledge Substrate: ru/ecosystem/Infrastructure/Knowledge_Substrate/README.md
