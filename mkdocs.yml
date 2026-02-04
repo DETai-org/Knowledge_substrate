@@ -61,34 +61,29 @@ nav:
                   - ru/ecosystem/DETai/Предпроекты/thought-canvas/philosophical-foundation.md
                   - ru/ecosystem/DETai/Предпроекты/thought-canvas/storage-format.md
                   - ru/ecosystem/DETai/Предпроекты/thought-canvas/technology.md
-          - U.L.I. — Улей:
-              - "ru/ecosystem/DETai/U.L.I. — Улей/index.md"
-              - Технические стандарты:
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/index.md"
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/versioning.md"
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/policy-layer.md"
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/mosaic-approach.md"
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Технические_стандарты/telegram-bots-standard.md"
-              - Логика и инфраструктура:
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/index.md"
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Логика_и_инфраструктура/repo-logic.md"
-              - Философия и установки:
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/index.md"
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Философия_и_установки/bee-roles.md"
-              - Описание векторов:
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Описание_векторов/vectors.md"
-              - Хронология версий:
-                  - "ru/ecosystem/DETai/U.L.I. — Улей/Хронология_версий/versions-chronology.md"
+      - "**U.L.I.**":
+          - ru/ecosystem/DETai/U.L.I/index.md
+          - Технические стандарты:
+              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/index.md
+              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/versioning.md
+              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/policy-layer.md
+              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/mosaic-approach.md
+              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/telegram-bots-standard.md
+              - ru/ecosystem/DETai/U.L.I/Технические_стандарты/work-model/index.md
+          - Логика и инфраструктура:
+              - ru/ecosystem/DETai/U.L.I/Логика_и_инфраструктура/index.md
+              - ru/ecosystem/DETai/U.L.I/Логика_и_инфраструктура/repo-logic.md
+          - Философия и установки:
+              - ru/ecosystem/DETai/U.L.I/Философия_и_установки/index.md
+              - ru/ecosystem/DETai/U.L.I/Философия_и_установки/bee-roles.md
+          - Описание векторов:
+              - ru/ecosystem/DETai/U.L.I/Описание_векторов/vectors.md
+          - Хронология версий:
+              - ru/ecosystem/DETai/U.L.I/Хронология_версий/versions-chronology.md
       - Infrastructure:
           - ru/ecosystem/Infrastructure/README.md
           - Knowledge Substrate: ru/ecosystem/Infrastructure/Knowledge_Substrate/README.md
           - Infrastructure Principles: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
-      - Onboarding:
-          - ru/ecosystem/Onboarding/onboarding/index.md
-          - Pre-Onboarding:
-              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/uli.md
-              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/how-to-read.md
-          - Презентации: "ru/ecosystem/Onboarding/Презентации/README.md"
       - Tools:
           - ru/ecosystem/Tools/README.md
           - ClickUp: ru/ecosystem/Tools/ClickUp/README.md
@@ -97,6 +92,12 @@ nav:
           - Obsidian: ru/ecosystem/Tools/Obsidian/README.md
           - Make Сценарии: "ru/ecosystem/Tools/Make_Сценарии/README.md"
           - Боты Telegram: "ru/ecosystem/Tools/Боты_Telegram/README.md"
+      - Onboarding:
+          - ru/ecosystem/Onboarding/onboarding/index.md
+          - Pre-Onboarding:
+              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/uli.md
+              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/how-to-read.md
+          - Презентации: "ru/ecosystem/Onboarding/Презентации/README.md"
       - STORYTELLING:
           - ru/ecosystem/STORYTELLING/index.md
           - Категории: ru/ecosystem/STORYTELLING/Categories/README.md
