@@ -25,10 +25,10 @@ markdown_extensions:
   - pymdownx.details
 
 extra_css:
-  - ../assets/stylesheets/extra.css
+  - assets/stylesheets/extra.css
 extra_javascript:
-  - ../assets/javascripts/chatgpt-prompt.js
-  - ../assets/javascripts/chatgpt-button.js
+  - assets/javascripts/chatgpt-prompt.js
+  - assets/javascripts/chatgpt-button.js
 
 exclude_docs: |
   publications/Research_Publication/**
