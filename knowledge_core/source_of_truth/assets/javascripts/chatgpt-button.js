@@ -1,6 +1,7 @@
 (function () {
   const BUTTON_ID = "chatgpt-open-button";
   const CHATGPT_URL = "https://chatgpt.com/";
+  const TOAST_VISIBLE_MS = 1200;
 
   const DEFAULT_PROMPT_TEMPLATES = {
     ru: "Прочитай <CURRENT_PAGE_URL> и отвечай на вопросы о содержимом.",
@@ -77,21 +78,50 @@
       return {
         success: "Скопировано!",
         failure: "Ошибка копирования",
+        toast: "Скопировано ✅",
       };
     }
     return {
       success: "Copied!",
       failure: "Copy failed",
+      toast: "Copied ✅",
     };
   };
 
   const buildChatGptUrl = (prompt) => `${CHATGPT_URL}?prompt=${encodeURIComponent(prompt)}`;
 
-  const setFeedback = (button, message, delay) => {
+  const removeToast = () => {
+    const existingToast = document.querySelector(".chatgpt-toast");
+    if (existingToast) {
+      existingToast.remove();
+    }
+  };
+
+  const showToast = (message) => {
+    removeToast();
+
+    const toast = document.createElement("div");
+    toast.className = "chatgpt-toast";
+    toast.textContent = message;
+    document.body.appendChild(toast);
+
+    window.setTimeout(() => {
+      if (toast.parentNode) {
+        toast.remove();
+      }
+    }, TOAST_VISIBLE_MS);
+  };
+
+  const setFeedback = (button, message, delay, toastMessage) => {
     if (!button.dataset.chatgptLabel) {
       button.dataset.chatgptLabel = button.textContent.trim() || "Open in ChatGPT";
     }
     button.textContent = message;
+
+    if (toastMessage) {
+      showToast(toastMessage);
+    }
+
     window.setTimeout(() => {
       button.textContent = button.dataset.chatgptLabel;
     }, delay);
@@ -108,17 +138,17 @@
       return;
     }
 
+    updateButtonHref(button);
+
     if (!button.dataset.chatgptLabel) {
       button.dataset.chatgptLabel = button.textContent.trim() || "Open in ChatGPT";
     }
 
-    if (button.dataset.chatgptBound) {
-      updateButtonHref(button);
+    if (button.dataset.chatgptBound === "true") {
       return;
     }
 
     button.dataset.chatgptBound = "true";
-    updateButtonHref(button);
 
     ["mouseenter", "focus", "contextmenu"].forEach((eventName) => {
       button.addEventListener(eventName, () => updateButtonHref(button));
@@ -131,20 +161,37 @@
       button.href = chatGptUrl;
       const feedback = getFeedbackMessages();
 
+      let copied = false;
       try {
         await copyPrompt(prompt);
-        setFeedback(button, feedback.success, 1000);
+        copied = true;
+        setFeedback(button, feedback.success, 1000, feedback.toast);
       } catch (error) {
         console.warn("Не удалось скопировать prompt в буфер обмена.", error);
         setFeedback(button, feedback.failure, 1200);
       }
 
       window.open(chatGptUrl, "_blank", "noopener");
+
+      if (!copied) {
+        try {
+          await copyPrompt(prompt);
+          setFeedback(button, feedback.success, 1000, feedback.toast);
+        } catch (secondError) {
+          console.warn("Повторная попытка копирования prompt завершилась неудачей.", secondError);
+        }
+      }
     });
   };
 
   const initialize = () => {
     ensureButton();
+
+    const button = document.getElementById(BUTTON_ID);
+    if (button && button.dataset.chatgptBound !== "true") {
+      console.warn("ChatGPT button handler was not bound. Href fallback remains active.");
+      updateButtonHref(button);
+    }
   };
 
   if (window.document$ && typeof window.document$.subscribe === "function") {
