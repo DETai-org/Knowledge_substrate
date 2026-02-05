@@ -16,6 +16,7 @@ theme:
 
 plugins:
   - search
+  - awesome-pages
 
 markdown_extensions:
   - admonition
@@ -34,82 +35,3 @@ exclude_docs: |
   publications/Research_Publication/**
   publications/STORYTELLING/**
   publications/blogs/**
-
-nav:
-  - Ecosystem:
-      - Обзор: ru/ecosystem/index.md
-      - DET:
-          - ru/ecosystem/DET/index.md
-          - Concept: ru/ecosystem/DET/Concept/index.md
-          - Миссия: ru/ecosystem/DET/mission.md
-          - Принципы: ru/ecosystem/DET/principles.md
-          - Глоссарий: ru/ecosystem/DET/glossary.md
-      - DETai:
-          - ru/ecosystem/DETai/index.md
-          - Экосистема: ru/ecosystem/DETai/ecosystem-map.md
-          - Projects:
-              - ru/ecosystem/DETai/Projects/index.md
-              - Эшелоны:
-                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-1/index.md
-                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-1/francis-galton.md
-                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-2/index.md
-                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-3/index.md
-          - Предпроекты:
-              - ru/ecosystem/DETai/Предпроекты/index.md
-              - Thought Canvas:
-                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/index.md
-                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/philosophical-foundation.md
-                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/storage-format.md
-                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/technology.md
-      - "U.L.I.":
-          - ru/ecosystem/U.L.I/index.md
-          - Технические стандарты:
-              - ru/ecosystem/U.L.I/Технические_стандарты/index.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/versioning.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/policy-layer.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/mosaic-approach.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/telegram-bots-standard.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/work-model/index.md
-          - Логика и инфраструктура:
-              - ru/ecosystem/U.L.I/Логика_и_инфраструктура/index.md
-              - ru/ecosystem/U.L.I/Логика_и_инфраструктура/repo-logic.md
-          - Философия и установки:
-              - ru/ecosystem/U.L.I/Философия_и_установки/index.md
-              - ru/ecosystem/U.L.I/Философия_и_установки/bee-roles.md
-          - Описание векторов:
-              - ru/ecosystem/U.L.I/Описание_векторов/vectors.md
-          - Хронология версий:
-              - ru/ecosystem/U.L.I/Хронология_версий/versions-chronology.md
-      - Infrastructure:
-          - ru/ecosystem/Infrastructure/README.md
-          - Knowledge Substrate:
-              - ru/ecosystem/Infrastructure/Knowledge_Substrate/README.md
-              - Knowledge Core: ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/index.md
-              - Explanation: ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/Explanation.md
-          - Infrastructure Principles: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
-      - Tools:
-          - ru/ecosystem/Tools/README.md
-          - ClickUp: ru/ecosystem/Tools/ClickUp/README.md
-          - Codex: ru/ecosystem/Tools/Codex/README.md
-          - GitHub: ru/ecosystem/Tools/GitHub/README.md
-          - Obsidian: ru/ecosystem/Tools/Obsidian/README.md
-          - Make Сценарии: "ru/ecosystem/Tools/Make_Сценарии/README.md"
-          - Боты Telegram: "ru/ecosystem/Tools/Боты_Telegram/README.md"
-      - Onboarding:
-          - ru/ecosystem/Onboarding/onboarding/index.md
-          - Pre-Onboarding:
-              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/uli.md
-              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/how-to-read.md
-          - Презентации: "ru/ecosystem/Onboarding/Презентации/README.md"
-      - STORYTELLING:
-          - ru/ecosystem/STORYTELLING/index.md
-          - Категории: ru/ecosystem/STORYTELLING/Categories/README.md
-          - Рубрики: ru/ecosystem/STORYTELLING/Rubrics/README.md
-          - Циклы: ru/ecosystem/STORYTELLING/Cycles/README.md
-          - Психология: ru/ecosystem/STORYTELLING/Psychology/README.md
-  - Onboarding: ru/ecosystem/Onboarding/onboarding/index.md
-  - Публикации:
-      - ru/publications/index.md
-  - English:
-      - en/index.md
-      - Ecosystem: en/ecosystem/index.md

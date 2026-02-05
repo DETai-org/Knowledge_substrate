@@ -1,5 +1,6 @@
 nav:
-  - index.md
-  - ecosystem
-  - publications
-  - English: en/ecosystem/index.md
+  - Ecosystem: ru/ecosystem
+  - Onboarding: ru/ecosystem/Onboarding/onboarding/index.md
+  - Публикации: publications
+  - English:
+      - Ecosystem: en/ecosystem/index.md
