@@ -1,7 +1,7 @@
 ---
 type: post
 administrative:
-  id: amplituda-emotsionalnykh-perezhivanii-4-goda-spustya
+  id: emotional-amplitude-four-years-later
   authors:
     - Anton Kolhonen
   date_ymd: 2023-07-25
