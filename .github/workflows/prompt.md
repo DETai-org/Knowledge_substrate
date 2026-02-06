@@ -8,8 +8,11 @@
 ## ✅ Входные данные
 
 coverImage: "/images/posts/<postId>.jpg"
+
 alt:
+
 coverLayout:
+
 coverImageScale:
 
 
