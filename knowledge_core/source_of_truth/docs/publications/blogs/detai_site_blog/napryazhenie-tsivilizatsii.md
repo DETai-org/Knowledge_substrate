@@ -15,7 +15,7 @@ descriptive:
   seoLead: "Напряжение цивилизации рассматривается как испытание и ресурс: пост разбирает три пути бегства и рациональный ответ Поппера."
   taxonomy:
     rubric_ids: ["rubric:orientation-toward-overcoming"]
-    category_ids: ["category:overcoming"]
+    category_ids: ["category:defense-mechanisms"]
     keywords_raw: ["напряжение цивилизации", "стратегии бегства", "рациональность Поппера"]
 structural:
   external_links:
