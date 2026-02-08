@@ -22,19 +22,12 @@ jobs:
         shell: bash
         env:
           WORKFLOW_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
-          WORKFLOW_HEAD_COMMIT_SHA: ${{ github.event.workflow_run.head_commit.id || github.event.workflow_run.head_commit.sha }}
           WORKFLOW_BASE_SHA: ${{ github.event.workflow_run.pull_requests[0].base.sha }}
         run: |
           set -euo pipefail
           git fetch --no-tags --prune --depth=1 origin main
-          sha="${WORKFLOW_HEAD_SHA:-${WORKFLOW_HEAD_COMMIT_SHA:-${GITHUB_SHA}}}"
+          sha="${WORKFLOW_HEAD_SHA:-${GITHUB_SHA}}"
           base="${WORKFLOW_BASE_SHA:-}"
-          if [[ -z "${base}" ]]; then
-            # Для workflow_run без PR нужен родительский коммит, чтобы git diff показал изменения.
-            if git rev-parse "${sha}^" >/dev/null 2>&1; then
-              base="$(git rev-parse "${sha}^")"
-            fi
-          fi
           if [[ -z "${base}" ]]; then
             base="$(git merge-base "origin/main" "${sha}")"
           fi
