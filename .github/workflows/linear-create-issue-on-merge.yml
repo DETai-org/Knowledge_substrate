@@ -44,7 +44,7 @@ jobs:
           sha = os.environ["SHA"]
           actor = os.environ["ACTOR"]
           title = "Добавления нового поста в систему"
-          prompt_template = Path(".github/workflows/prompt.md").read_text(encoding="utf-8").strip()
+          prompt_template = Path(".github/workflows/prompt_2.md").read_text(encoding="utf-8").strip()
           desc = prompt_template.format(repo=repo, sha=sha, actor=actor)
           label_ids = [label_id_post_to_blog]
           payload = {
