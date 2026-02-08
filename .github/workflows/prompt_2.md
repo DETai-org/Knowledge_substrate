@@ -2,7 +2,7 @@
 
 ## ✅ Входные данные
 
-coverImage: "/images/posts/<postId>.png"
+coverImage: "/images/posts/<postId>.png/jpg"
 coverLayout: квадрат
 coverImageScale:
 alt: 
