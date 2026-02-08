@@ -1,3 +1,27 @@
+---
+type: post
+administrative:
+  id: missing-without-trace
+  authors:
+    - Anton Kolhonen
+  date_ymd: 2020-11-21
+  status: publish
+  channels:
+    - detai_site_blog
+descriptive:
+  size: "L"
+  title: "Пропавший без вести"
+  preview: "Пропавший без вести — размышление о том, как рыночная логика превращает человека в товар и притупляет гуманистическую совесть. ⚜️ Через Кафку, Маркса, Франкла и Фромма текст показывает, как «норма» формируется давлением среды и как привычка делает нас слепыми к унижению. Где проходит граница между приспособлением и утратой человеческого в нас, и можно ли её удержать❓"
+  seoLead: "Рыночные отношения как угроза гуманистической совести: текст о нормализации унижения и потере человеческого в человеке."
+  taxonomy:
+    rubric_ids: ["rubric:personality-types-and-existential-strategies"]
+    category_ids: ["category:humanistic-principles"]
+    keywords_raw: ["рыночные отношения", "гуманистическая совесть", "нормализация унижения"]
+structural:
+  external_links: []
+  document_links: []
+---
+
 # Пропавший без вести
 
 _По одноимённому рассказу_ Франца Кафки ["Пропавший без вести"](https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD))
