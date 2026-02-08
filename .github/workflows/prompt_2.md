@@ -3,9 +3,13 @@
 ## ✅ Входные данные
 
 Название файла: 
+
 coverImage: "/images/posts/<postId>.png"
-coverLayout: квадрат
+
+coverLayout:
+
 coverImageScale:
+
 alt: 
 
 ## 🎯 Задача
