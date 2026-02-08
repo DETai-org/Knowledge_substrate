@@ -2,7 +2,7 @@
 
 ## ✅ Входные данные
 
-Название файла: <<FILE_NAME>>
+Название файла: 
 
 coverImage: "/images/posts/<postId>.png"
 
