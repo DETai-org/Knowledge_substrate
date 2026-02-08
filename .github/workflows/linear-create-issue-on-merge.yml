@@ -17,8 +17,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+      - name: Найти новые посты в целевых папках
+        shell: bash
+        env:
+          WORKFLOW_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          WORKFLOW_BASE_SHA: ${{ github.event.workflow_run.pull_requests[0].base.sha }}
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --prune --depth=1 origin main
+          sha="${WORKFLOW_HEAD_SHA:-${GITHUB_SHA}}"
+          base="${WORKFLOW_BASE_SHA:-}"
+          if [[ -z "${base}" ]]; then
+            base="$(git merge-base "origin/main" "${sha}")"
+          fi
+          echo "Диапазон сравнения: ${base}..${sha}"
+          new_post_files="$(git diff --name-status "${base}" "${sha}" \
+            | awk '$1 == "A" && ($2 ~ /^docs\/publications\/blogs\/personal_site_blog\// || $2 ~ /^docs\/publications\/blogs\/detai_site_blog\//) {print $2}')"
+          {
+            echo "NEW_POST_FILES<<EOF"
+            echo "${new_post_files}"
+            echo "EOF"
+          } >> "${GITHUB_ENV}"
+          printf '%s\n' "${new_post_files}" > "${RUNNER_TEMP}/new_post_files.txt"
+      # Задача создаётся только при добавлении новых файлов в целевых папках.
       - name: Create Linear issue for Site project
+        if: ${{ env.NEW_POST_FILES != '' }}
         env:
           LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
           LINEAR_TEAM_ID: ${{ secrets.LINEAR_TEAM_ID }}
@@ -26,8 +50,9 @@ jobs:
           LINEAR_LABEL_ID_POST_TO_BLOG: ef1c4ff5-cbec-4ba2-9534-5a5158312e4f # Post to Blog
           LINEAR_ASSIGNEE_ID: 12db3c09-7c21-407b-bcac-20e8c697d8ea # Anton-Psy
           REPO: ${{ github.repository }}
-          SHA: ${{ github.sha }}
+          SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
           ACTOR: ${{ github.actor }}
+          NEW_POST_FILES: ${{ env.NEW_POST_FILES }}
         shell: bash
         run: |
           python3 - <<'PY'
@@ -43,8 +68,10 @@ jobs:
           repo = os.environ["REPO"]
           sha = os.environ["SHA"]
           actor = os.environ["ACTOR"]
+          file_name = os.environ.get("NEW_POST_FILES", "").strip()
           title = "Добавления нового поста в систему"
           prompt_template = Path(".github/workflows/prompt_2.md").read_text(encoding="utf-8").strip()
+          prompt_template = prompt_template.replace("<<FILE_NAME>>", file_name)
           desc = prompt_template.format(repo=repo, sha=sha, actor=actor)
           label_ids = [label_id_post_to_blog]
           payload = {
