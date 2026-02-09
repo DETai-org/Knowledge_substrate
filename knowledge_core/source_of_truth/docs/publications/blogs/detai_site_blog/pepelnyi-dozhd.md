@@ -1,7 +1,7 @@
 ---
 type: post
 administrative:
-  id: pepelnyi-dozhd-dialog
+  id: pepelnyi-dozhd
   authors:
     - Anton Kolhonnen
   date_ymd: 2020-06-09
