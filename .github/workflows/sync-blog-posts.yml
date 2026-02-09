@@ -46,7 +46,7 @@ jobs:
           rsync -a --exclude 'Redmond*' knowledge_core/source_of_truth/docs/publications/blogs/personal_site_blog/ "$target_path/personal_site_blog/"
           rsync -a knowledge_core/source_of_truth/docs/publications/blogs/list_publication_blogs.json target-repo/packages/blog-index/
           cd target-repo
-          git add docs/publications/blogs/detai_site_blog docs/publications/blogs/personal_site_blog docs/publications/blogs/list_publication_blogs.json
+          git add docs/publications/blogs/detai_site_blog docs/publications/blogs/personal_site_blog packages/blog-index/list_publication_blogs.json
           if git diff --cached --quiet; then
             echo "Изменений для коммита нет."
             exit 0
