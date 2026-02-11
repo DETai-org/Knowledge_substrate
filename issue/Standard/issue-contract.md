@@ -1,3 +1,8 @@
+
+Тип документа: Standard
+v1.0
+___
+
 # Issue (Initiative) Contract
 _(контракт для GitHub Issue, когда оно используется как Initiative)_
 
