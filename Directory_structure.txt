@@ -28,12 +28,13 @@ Knowledge_substrate
 │   └── .env.example
 ├── issue
 │   ├── Standard
-│   │   ├── development-model.md
+│   │   ├── index.md
 │   │   ├── issue-contract.md
-│   │   └── sub-issue-contract.md
+│   │   ├── sub-issue-contract.md
+│   │   └── work-model.md
 │   ├── 1-sub-issue-semantic-graph-posts.md
 │   ├── 2-sub-issue-semantic-graph-api.md
-│   └── issue-v0.1.md
+│   └── Epic_issue-v0.1.md
 ├── knowledge_core
 │   ├── ADR
 │   │   └── adr-0001-semantic-similarity-graph-posts.md
