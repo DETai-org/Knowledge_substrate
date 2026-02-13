@@ -109,123 +109,27 @@ ____
   4. Зафиксировать безопасные ограничения `limit_nodes` и поведение `truncated` при больших выборках.
 
 - [ ] **Единый data-contract ingest ↔ API для v1 (без двойной трактовки DoD)**
-  1. Собрать и зафиксировать единый список результатов (в ADR/Guide/Policy и OpenAPI):
+  1. Собрать и зафиксировать единый список результатов:
      - mapping полей `knowledge.similarity_edges` + `knowledge.doc_metadata` → API `nodes/edges`,
      - ограничения версии `v1`,
-     - fallback-поведение при неполной metadata,
+     - fallback при неполной metadata,
      - план эволюции `v1.1+`.
-  2. Зафиксировать строгий API-контракт `v1` с конкретными значениями и edge-case правилами:
-     - фильтры `channels / years / authors / rubrics / categories` работают только через `knowledge.doc_metadata`,
-     - `knowledge.documents.meta` не используется для фильтрации v1 как источник истины,
-     - metadata-gap (`edge` без обеих metadata-нод) исключается из ответа и логируется как `data_gap`.
-  3. Каноничное mapping-правило:
-     - `edges.source_id` → `nodes.id` (`source`), `edges.target_id` → `nodes.id` (`target`),
-     - `edges.weight` → `edges.weight` (float, диапазон `[0.0, 1.0]`),
-     - metadata-атрибуты узла (`year`, `channels`, `authors`, `rubric_ids`, `category_ids`, `meta`) берутся только из `knowledge.doc_metadata`.
-  4. Fallback при неполной metadata:
-     - если у узла нет `label`, вернуть `label = id`,
-     - если нет массивных полей (`channels`, `authors`, `rubric_ids`, `category_ids`), вернуть пустые массивы,
-     - если нет `year`, вернуть `year = null`,
-     - если отсутствует одна из нод ребра, ребро не включать в выдачу.
+  2. Зафиксировать строгий API-контракт `v1` с edge-case правилами и без разночтений между ingest/API/OpenAPI.
+  3. Синхронизировать формулировки между implementation notes и каноничными документами.
+
+  → Policy: [Semantic Graph API v1 (инварианты и правила)](../knowledge_core/Policy/semantic-graph-api-v1.policy.md)
+  → Guide: [Semantic Graph API v1 (использование и примеры)](../knowledge_core/guides/semantic-graph-api-v1.guide.md)
 
 - [ ] **Контракт и endpoint `GET /v1/graph`**
   1. Реализовать endpoint `GET /v1/graph`.
-  2. Query-параметры:
-     - `channels` (повторяемый param, минимум один или несколько),
-     - `year_from`, `year_to`,
-     - `rubric_ids`, `category_ids` (списки slug),
-     - `authors` (списки id/имён),
-     - `limit_nodes` (опционально): `default=200`, `max=1000`.
-  3. Коды ответов и причины:
-     - `200 OK`: валидный ответ `nodes + edges + meta` (включая пустой набор),
-     - `400 Bad Request`: синтаксически некорректный query (например, нечисловой `limit_nodes` при ручном парсинге),
-     - `422 Unprocessable Entity`: семантически невалидные параметры (`year_from > year_to`, `limit_nodes < 1` или `> 1000`),
-     - `500 Internal Server Error`: непредвиденная ошибка выполнения запроса/доступа к БД.
-  4. Response-контракт:
-     - `nodes`: `[{ id, type, label, year, channels, rubric_ids, category_ids, authors, meta }]`
-     - `edges`: `[{ source, target, type, weight, meta }]`
-     - `meta`: `{"filters_applied": ..., "total_nodes": ..., "total_edges": ..., "truncated": bool}`
-     - JSON-схема `meta.filters_applied`:
-       - `{"channels": string[], "years": {"from": int|null, "to": int|null}, "authors": string[], "rubric_ids": string[], "category_ids": string[], "limit_nodes": int}`.
-  5. Обязательные правила выборки и детерминизма:
-     - только publish-posts,
-     - только валидные рёбра semantic graph,
-     - сортировка `nodes`: по `year DESC NULLS LAST`, затем `id ASC`,
-     - сортировка `edges`: по `weight DESC`, затем `source ASC`, затем `target ASC`.
-  6. Edge-cases и ограничения выдачи:
-     - пустой результат: вернуть `200` и `{ "nodes": [], "edges": [], "meta": {"total_nodes": 0, "total_edges": 0, "truncated": false, ...}}`,
-     - при превышении `limit_nodes`: вернуть первые `limit_nodes` узлов по правилу сортировки и только рёбра между ними; `meta.truncated = true`,
-     - policy по дублям рёбер: нормализовать пару как `min(source,target)|max(source,target)` для типа `SIMILAR_UNDIRECTED`, хранить/возвращать одно ребро на пару с максимальным `weight`; направленные рёбра (`type != SIMILAR_UNDIRECTED`) не схлопывать.
-  7. Добавить 1–2 контрактных примера (в issue или ссылкой на каноничный файл в `knowledge_core/source_of_truth/docs/...`).
+  2. Поддержать query-параметры: `channels`, `year_from`, `year_to`, `rubric_ids`, `category_ids`, `authors`, `limit_nodes`.
+  3. Зафиксировать коды ответов (`200`, `400/422`, `500`) и причины.
+  4. Зафиксировать response-контракт: `nodes`, `edges`, `meta` (+ JSON-схема `meta.filters_applied`).
+  5. Зафиксировать детерминизм выборки: сортировка `nodes/edges`, правила пустого результата, `truncated=true`, policy по дублям рёбер.
+  6. Держать 1–2 каноничных примера запроса/ответа в guide-документе (без дублирования в sub-issue).
 
-  **Пример A (частичные фильтры, без truncation)**
-
-  ```http
-  GET /v1/graph?channels=telegram&year_from=2023&year_to=2024&limit_nodes=3
-  ```
-
-  ```json
-  {
-    "nodes": [
-      {
-        "id": "post-2024-001",
-        "type": "publish-post",
-        "label": "DET weekly update",
-        "year": 2024,
-        "channels": ["telegram"],
-        "rubric_ids": ["det-updates"],
-        "category_ids": ["ecosystem"],
-        "authors": ["team-det"],
-        "meta": {"doc_type": "post"}
-      }
-    ],
-    "edges": [],
-    "meta": {
-      "filters_applied": {
-        "channels": ["telegram"],
-        "years": {"from": 2023, "to": 2024},
-        "authors": [],
-        "rubric_ids": [],
-        "category_ids": [],
-        "limit_nodes": 3
-      },
-      "total_nodes": 1,
-      "total_edges": 0,
-      "truncated": false
-    }
-  }
-  ```
-
-  **Пример B (truncated=true и дедупликация неориентированного ребра)**
-
-  ```http
-  GET /v1/graph?channels=site&limit_nodes=2
-  ```
-
-  ```json
-  {
-    "nodes": [
-      {"id": "post-a", "type": "publish-post", "label": "post-a", "year": null, "channels": ["site"], "rubric_ids": [], "category_ids": [], "authors": [], "meta": {}},
-      {"id": "post-b", "type": "publish-post", "label": "post-b", "year": 2024, "channels": ["site"], "rubric_ids": ["core"], "category_ids": [], "authors": ["editor"], "meta": {}}
-    ],
-    "edges": [
-      {"source": "post-a", "target": "post-b", "type": "SIMILAR_UNDIRECTED", "weight": 0.93, "meta": {"deduplicated": true}}
-    ],
-    "meta": {
-      "filters_applied": {
-        "channels": ["site"],
-        "years": {"from": null, "to": null},
-        "authors": [],
-        "rubric_ids": [],
-        "category_ids": [],
-        "limit_nodes": 2
-      },
-      "total_nodes": 2,
-      "total_edges": 1,
-      "truncated": true
-    }
-  }
-  ```
+  → Policy: [Semantic Graph API v1 (инварианты и правила)](../knowledge_core/Policy/semantic-graph-api-v1.policy.md)
+  → Guide: [Semantic Graph API v1 (использование и примеры)](../knowledge_core/guides/semantic-graph-api-v1.guide.md)
 
 - [ ] **API hardening: CORS, ошибки, логирование**
   1. Подключить CORS с allowlist черз env (`API_CORS_ORIGINS`), запрет wildcard по умолчанию.
@@ -266,8 +170,8 @@ Sub-Issue считается выполненным, когда:
 
 ## Document package
 - ADR: 
-- Guide: 
-- Policy: 
+- Guide: [Semantic Graph API v1 — Guide](../knowledge_core/guides/semantic-graph-api-v1.guide.md)
+- Policy: [Semantic Graph API v1 — Policy](../knowledge_core/Policy/semantic-graph-api-v1.policy.md)
 
 ## 🚚 Delivery
 Branch: `<branch-name>`
