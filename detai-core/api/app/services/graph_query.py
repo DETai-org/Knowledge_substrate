@@ -116,13 +116,17 @@ class GraphQueryService:
 
                 cur.execute(
                     '''
-                    SELECT e.source_id::text, e.target_id::text, MAX(e.weight)::float8 AS weight
+                    SELECT
+                      LEAST(e.source_id::text, e.target_id::text) AS source_id,
+                      GREATEST(e.source_id::text, e.target_id::text) AS target_id,
+                      MAX(e.weight)::float8 AS weight
                     FROM knowledge.similarity_edges e
                     INNER JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id
                     INNER JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id
                     WHERE e.source_id = ANY(%s) AND e.target_id = ANY(%s)
-                    GROUP BY e.source_id, e.target_id
-                    ORDER BY e.source_id, e.target_id, weight DESC;
+                      AND e.source_id <> e.target_id
+                    GROUP BY LEAST(e.source_id::text, e.target_id::text), GREATEST(e.source_id::text, e.target_id::text)
+                    ORDER BY source_id, target_id, weight DESC;
                     ''',
                     (filtered_doc_ids, filtered_doc_ids),
                 )

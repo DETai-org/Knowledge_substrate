@@ -120,7 +120,7 @@ ____
   → Policy: [Semantic Graph API v1 (инварианты и правила)](../knowledge_core/Policy/semantic-graph-api-v1.policy.md)
   → Guide: [Semantic Graph API v1 (использование и примеры)](../knowledge_core/guides/semantic-graph-api-v1.guide.md)
 
-- [ ] **Контракт и endpoint `GET /v1/graph`**
+- [x] **Контракт и endpoint `GET /v1/graph`**
   1. Реализовать endpoint `GET /v1/graph`.
   2. Поддержать query-параметры: `channels`, `year_from`, `year_to`, `rubric_ids`, `category_ids`, `authors`, `limit_nodes`.
   3. Зафиксировать коды ответов (`200`, `400/422`, `500`) и причины.
