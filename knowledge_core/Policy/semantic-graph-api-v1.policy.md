@@ -6,6 +6,31 @@
 ## Назначение и область действия (только v1)
 Этот документ фиксирует **обязательные инварианты (MUST / MUST NOT)** для API-контракта `GET /v1/graph` и стыка ingest ↔ API в версии `v1`.
 
+
+## Каноничная модель metadata-узлов (v1)
+
+`knowledge.doc_metadata` является обязательным operational-контрактом для graph API v1.
+
+Минимальный набор полей:
+- `doc_id TEXT PRIMARY KEY` — canonical SoT id (`administrative.id`)
+- `date_ymd DATE` и/или вычисляемый `year`
+- `channels TEXT[]`
+- `authors TEXT[]`
+- `rubric_ids TEXT[]`
+- `category_ids TEXT[]`
+- `doc_type TEXT`
+- `updated_at TIMESTAMPTZ`
+- `meta JSONB`
+
+Правило canonical id:
+- `knowledge.documents.id (BIGSERIAL)` MUST NOT использоваться как canonical id semantic graph.
+- Join для `similarity_edges.source_id/target_id` выполняется только через `doc_metadata.doc_id`.
+
+Правила сериализации v1:
+- массивные поля MUST возвращаться как JSON-массивы строк (включая пустые `[]`);
+- отсутствующий `year` MUST возвращаться как `null`;
+- дополнительные поля metadata MAY передаваться через `meta` без нарушения v1-контракта.
+
 ## Инварианты (MUST / MUST NOT)
 
 1. **Источник фильтров (MUST)**

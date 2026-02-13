@@ -11,6 +11,22 @@
 
 Целевой сценарий: выдача publish-графа для клиентов/фронта с детерминированным контрактом.
 
+
+## Каноничный ingest → API mapping для metadata
+
+Источник metadata: `knowledge.doc_metadata`.
+
+- `doc_metadata.doc_id` → `nodes[].id`
+- `doc_metadata.doc_type` → `nodes[].type`
+- `doc_metadata.year` (или `date_ymd`) → `nodes[].year`
+- `doc_metadata.channels` → `nodes[].channels`
+- `doc_metadata.authors` → `nodes[].authors`
+- `doc_metadata.rubric_ids` → `nodes[].rubric_ids`
+- `doc_metadata.category_ids` → `nodes[].category_ids`
+- `doc_metadata.meta` → `nodes[].meta`
+
+Важно: `knowledge.documents.id` не участвует в этом mapping и не используется как canonical id semantic graph.
+
 ## Query-параметры
 - `channels` — повторяемый query-параметр
 - `year_from`, `year_to`

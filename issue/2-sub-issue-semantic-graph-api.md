@@ -23,7 +23,7 @@
   2. Убрать бизнес-логику SQL из `main.py` в service-слой.
   3. Сохранить обратную совместимость `/health` (или корректно зафиксировать breaking-change в Notes).
 
-- [ ] **Спроектировать и зафиксировать каноничную модель metadata-узлов для graph API v1**
+- [x] **Спроектировать и зафиксировать каноничную модель metadata-узлов для graph API v1**
   1. Добавить в DDL новую таблицу `knowledge.doc_metadata` (или эквивалент) с `doc_id TEXT PRIMARY KEY` как canonical SoT id (`administrative.id`).
   2. Зафиксировать минимальный набор полей для фильтров v1: `year` (или `date_ymd`), `channels`, `authors`, `rubric_ids`, `category_ids`, `doc_type`, `updated_at`, `meta`.
   3. Зафиксировать типы полей (массивы `TEXT[]` или `JSONB`) и единый контракт сериализации для API.
