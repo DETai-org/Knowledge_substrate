@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: detai
+      POSTGRES_USER: detai
+      POSTGRES_PASSWORD: detai
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://detai:detai@db:5432/detai
+      API_CORS_ORIGINS: http://localhost:3000,http://localhost:5173
+    ports:
+      - '8000:8000'
+
+volumes:
+  pgdata:

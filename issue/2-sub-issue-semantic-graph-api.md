@@ -138,7 +138,7 @@ ____
      `timestamp`, `level`, `event`, `request_id`, `path`, `status_code`, `duration_ms`.
   4. Для `/v1/graph` логировать число узлов/рёбер и признак truncation.
 
-- [ ] **Runtime и локальный запуск**
+- [x] **Runtime и локальный запуск**
   1. Добавить `Makefile` в `detai-core/` с минимумом целей:
      - `make api` (локальный запуск uvicorn),
      - `make lint` (если линтер уже используется в проекте),
