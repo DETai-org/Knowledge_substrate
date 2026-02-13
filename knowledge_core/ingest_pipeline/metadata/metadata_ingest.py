@@ -57,7 +57,7 @@ def upsert_doc_metadata(posts: list[PostExtracted], dsn: str, run_id: str) -> in
 
     query = """
     INSERT INTO knowledge.doc_metadata
-      (doc_id, date_ymd, channels, authors, rubric_ids, category_ids, doc_type, meta, updated_at)
+      (doc_id, date_ymd, channels, authors, rubric_ids, category_ids, doc_type, meta)
     VALUES %s
     ON CONFLICT (doc_id)
     DO UPDATE SET
