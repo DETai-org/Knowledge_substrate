@@ -32,8 +32,8 @@ def _fmt_fields(fields: dict[str, Any]) -> str:
     return ' | ' + ' '.join(f'{key}={value}' for key, value in ordered)
 
 
-def log_event(logger: logging.Logger, run_id: str, stage: str, message: str, **fields: Any) -> None:
-    emoji = STAGE_EMOJI.get(stage, 'ℹ️')
+def log_event(logger: logging.Logger, run_id: str, event: str, message: str, **fields: Any) -> None:
+    emoji = STAGE_EMOJI.get(event, 'ℹ️')
     logger.info('%s %s run_id=%s%s', emoji, message, run_id, _fmt_fields(fields))
 
 
