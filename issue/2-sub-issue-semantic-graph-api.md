@@ -11,7 +11,7 @@
 
 ## Tasks (Acceptance Checklist)
 
-- [ ] **Архитектура API-сервиса: декомпозиция FastAPI по модулям**
+- [x] **Архитектура API-сервиса: декомпозиция FastAPI по модулям**
   1. Внутри `detai-core/api/app/` выделить:
      - `main.py` (создание app + middleware + include_router),
      - `routers/health.py`,
