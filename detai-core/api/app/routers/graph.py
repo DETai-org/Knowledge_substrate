@@ -1,3 +1,4 @@
+import logging
 from fastapi import APIRouter, HTTPException, Query
 
 from app.schemas.graph import GraphResponse
@@ -5,6 +6,7 @@ from app.services.graph_query import GraphFilters, GraphQueryService
 
 router = APIRouter(prefix='/v1', tags=['graph'])
 service = GraphQueryService()
+logger = logging.getLogger(__name__)
 
 
 def _normalize_filter_values(values: list[str] | None, field_name: str) -> list[str] | None:
@@ -51,8 +53,15 @@ def get_graph(
             authors=_normalize_filter_values(authors, 'authors'),
             limit_nodes=limit_nodes,
         )
-        return service.fetch_graph(filters)
+        response = service.fetch_graph(filters)
+        logger.info(
+            'event=graph_result nodes_count=%s edges_count=%s truncated=%s',
+            response.meta.total_nodes,
+            response.meta.total_edges,
+            response.meta.truncated,
+        )
+        return response
     except HTTPException:
         raise
     except Exception as exc:
-        raise HTTPException(status_code=500, detail=f'graph query failed: {exc!s}') from exc
+        raise HTTPException(status_code=500, detail='graph query failed') from exc

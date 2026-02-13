@@ -131,7 +131,7 @@ ____
   → Policy: [Semantic Graph API v1 (инварианты и правила)](../knowledge_core/Policy/semantic-graph-api-v1.policy.md)
   → Guide: [Semantic Graph API v1 (использование и примеры)](../knowledge_core/guides/semantic-graph-api-v1.guide.md)
 
-- [ ] **API hardening: CORS, ошибки, логирование**
+- [x] **API hardening: CORS, ошибки, логирование**
   1. Подключить CORS с allowlist черз env (`API_CORS_ORIGINS`), запрет wildcard по умолчанию.
   2. Ввести единый формат ошибок (`HTTPException` + domain errors + понятный `detail` без утечки внутренних stack traces).
   3. Включить structured logs (json или key-value) минимум с полями:

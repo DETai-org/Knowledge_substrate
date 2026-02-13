@@ -17,4 +17,4 @@ def db_health() -> dict:
         service.db_health()
         return {'db': 'ok'}
     except Exception as exc:
-        raise HTTPException(status_code=500, detail=f'db error: {exc!s}') from exc
+        raise HTTPException(status_code=500, detail='database unavailable') from exc

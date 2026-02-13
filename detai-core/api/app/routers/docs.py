@@ -33,7 +33,7 @@ def create_doc(doc: DocIn) -> dict:
         )
         return {'id': new_id}
     except Exception as exc:
-        raise HTTPException(status_code=500, detail=f'insert failed: {exc!s}') from exc
+        raise HTTPException(status_code=500, detail='failed to create document') from exc
 
 
 @router.get('/docs/{doc_id}')
