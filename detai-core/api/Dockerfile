@@ -2,11 +2,8 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir \
-    fastapi==0.111.0 \
-    uvicorn[standard]==0.30.1 \
-    psycopg[binary]==3.2.1 \
-    python-dotenv==1.0.1
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
 COPY api /app/api
 

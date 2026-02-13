@@ -7,6 +7,13 @@
 - `DATABASE_URL` (обязательно)
 - `API_CORS_ORIGINS` (опционально, список origin через запятую, без `*`)
 
+### Bootstrap зависимостей (API + тесты)
+
+```bash
+cd detai-core
+python -m pip install -r requirements.txt
+```
+
 ### Через Makefile
 
 ```bash
@@ -37,9 +44,8 @@ API будет доступен на `http://localhost:8000`.
 ```bash
 make lint
 make format
+make test
 ```
-
-
 
 ## OpenAPI и пример контракта
 
