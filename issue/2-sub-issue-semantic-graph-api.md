@@ -108,11 +108,25 @@ ____
   3. Проверить, что текущие индексы `knowledge.similarity_edges` (`source_id`, `target_id`, `weight`) используются в конечной стратегии запроса.
   4. Зафиксировать безопасные ограничения `limit_nodes` и поведение `truncated` при больших выборках.
 
-- [ ] **Обновить data-contract и документацию v1 с явными ограничениями и эволюцией**
-  1. Добавить в ADR/Guide/Policy описание нового слоя materialized node metadata и canonical id join.
-  2. Зафиксировать, что фильтры `channels / years / authors / rubrics / categories` поддерживаются только через `knowledge.doc_metadata`.
-  3. Описать fallback-поведение при частично заполненной metadata (что возвращается, что отбрасывается, как логируется).
-  4. Зафиксировать план эволюции v1.1+ (например, нормализация в отдельные taxonomy-таблицы и relation-таблицы при росте нагрузки).
+- [ ] **Единый data-contract ingest ↔ API для v1 (без двойной трактовки DoD)**
+  1. Собрать и зафиксировать единый список результатов (в ADR/Guide/Policy и OpenAPI):
+     - mapping полей `knowledge.similarity_edges` + `knowledge.doc_metadata` → API `nodes/edges`,
+     - ограничения версии `v1`,
+     - fallback-поведение при неполной metadata,
+     - план эволюции `v1.1+`.
+  2. Зафиксировать строгий API-контракт `v1` с конкретными значениями и edge-case правилами:
+     - фильтры `channels / years / authors / rubrics / categories` работают только через `knowledge.doc_metadata`,
+     - `knowledge.documents.meta` не используется для фильтрации v1 как источник истины,
+     - metadata-gap (`edge` без обеих metadata-нод) исключается из ответа и логируется как `data_gap`.
+  3. Каноничное mapping-правило:
+     - `edges.source_id` → `nodes.id` (`source`), `edges.target_id` → `nodes.id` (`target`),
+     - `edges.weight` → `edges.weight` (float, диапазон `[0.0, 1.0]`),
+     - metadata-атрибуты узла (`year`, `channels`, `authors`, `rubric_ids`, `category_ids`, `meta`) берутся только из `knowledge.doc_metadata`.
+  4. Fallback при неполной metadata:
+     - если у узла нет `label`, вернуть `label = id`,
+     - если нет массивных полей (`channels`, `authors`, `rubric_ids`, `category_ids`), вернуть пустые массивы,
+     - если нет `year`, вернуть `year = null`,
+     - если отсутствует одна из нод ребра, ребро не включать в выдачу.
 
 - [ ] **Контракт и endpoint `GET /v1/graph`**
   1. Реализовать endpoint `GET /v1/graph`.
@@ -121,16 +135,97 @@ ____
      - `year_from`, `year_to`,
      - `rubric_ids`, `category_ids` (списки slug),
      - `authors` (списки id/имён),
-     - `limit_nodes` (опционально, default + max cap).
-  3. Response-контракт:
+     - `limit_nodes` (опционально): `default=200`, `max=1000`.
+  3. Коды ответов и причины:
+     - `200 OK`: валидный ответ `nodes + edges + meta` (включая пустой набор),
+     - `400 Bad Request`: синтаксически некорректный query (например, нечисловой `limit_nodes` при ручном парсинге),
+     - `422 Unprocessable Entity`: семантически невалидные параметры (`year_from > year_to`, `limit_nodes < 1` или `> 1000`),
+     - `500 Internal Server Error`: непредвиденная ошибка выполнения запроса/доступа к БД.
+  4. Response-контракт:
      - `nodes`: `[{ id, type, label, year, channels, rubric_ids, category_ids, authors, meta }]`
      - `edges`: `[{ source, target, type, weight, meta }]`
      - `meta`: `{"filters_applied": ..., "total_nodes": ..., "total_edges": ..., "truncated": bool}`
-  4. Обязательные правила выборки:
+     - JSON-схема `meta.filters_applied`:
+       - `{"channels": string[], "years": {"from": int|null, "to": int|null}, "authors": string[], "rubric_ids": string[], "category_ids": string[], "limit_nodes": int}`.
+  5. Обязательные правила выборки и детерминизма:
      - только publish-posts,
      - только валидные рёбра semantic graph,
-     - стабильная сортировка/детерминизм ответа.
-  5. Добавить валидацию диапазонов (`year_from <= year_to`, `limit_nodes` в допустимых пределах, пустые фильтры не ломают выдачу).
+     - сортировка `nodes`: по `year DESC NULLS LAST`, затем `id ASC`,
+     - сортировка `edges`: по `weight DESC`, затем `source ASC`, затем `target ASC`.
+  6. Edge-cases и ограничения выдачи:
+     - пустой результат: вернуть `200` и `{ "nodes": [], "edges": [], "meta": {"total_nodes": 0, "total_edges": 0, "truncated": false, ...}}`,
+     - при превышении `limit_nodes`: вернуть первые `limit_nodes` узлов по правилу сортировки и только рёбра между ними; `meta.truncated = true`,
+     - policy по дублям рёбер: нормализовать пару как `min(source,target)|max(source,target)` для типа `SIMILAR_UNDIRECTED`, хранить/возвращать одно ребро на пару с максимальным `weight`; направленные рёбра (`type != SIMILAR_UNDIRECTED`) не схлопывать.
+  7. Добавить 1–2 контрактных примера (в issue или ссылкой на каноничный файл в `knowledge_core/source_of_truth/docs/...`).
+
+  **Пример A (частичные фильтры, без truncation)**
+
+  ```http
+  GET /v1/graph?channels=telegram&year_from=2023&year_to=2024&limit_nodes=3
+  ```
+
+  ```json
+  {
+    "nodes": [
+      {
+        "id": "post-2024-001",
+        "type": "publish-post",
+        "label": "DET weekly update",
+        "year": 2024,
+        "channels": ["telegram"],
+        "rubric_ids": ["det-updates"],
+        "category_ids": ["ecosystem"],
+        "authors": ["team-det"],
+        "meta": {"doc_type": "post"}
+      }
+    ],
+    "edges": [],
+    "meta": {
+      "filters_applied": {
+        "channels": ["telegram"],
+        "years": {"from": 2023, "to": 2024},
+        "authors": [],
+        "rubric_ids": [],
+        "category_ids": [],
+        "limit_nodes": 3
+      },
+      "total_nodes": 1,
+      "total_edges": 0,
+      "truncated": false
+    }
+  }
+  ```
+
+  **Пример B (truncated=true и дедупликация неориентированного ребра)**
+
+  ```http
+  GET /v1/graph?channels=site&limit_nodes=2
+  ```
+
+  ```json
+  {
+    "nodes": [
+      {"id": "post-a", "type": "publish-post", "label": "post-a", "year": null, "channels": ["site"], "rubric_ids": [], "category_ids": [], "authors": [], "meta": {}},
+      {"id": "post-b", "type": "publish-post", "label": "post-b", "year": 2024, "channels": ["site"], "rubric_ids": ["core"], "category_ids": [], "authors": ["editor"], "meta": {}}
+    ],
+    "edges": [
+      {"source": "post-a", "target": "post-b", "type": "SIMILAR_UNDIRECTED", "weight": 0.93, "meta": {"deduplicated": true}}
+    ],
+    "meta": {
+      "filters_applied": {
+        "channels": ["site"],
+        "years": {"from": null, "to": null},
+        "authors": [],
+        "rubric_ids": [],
+        "category_ids": [],
+        "limit_nodes": 2
+      },
+      "total_nodes": 2,
+      "total_edges": 1,
+      "truncated": true
+    }
+  }
+  ```
 
 - [ ] **API hardening: CORS, ошибки, логирование**
   1. Подключить CORS с allowlist черз env (`API_CORS_ORIGINS`), запрет wildcard по умолчанию.
@@ -157,11 +252,6 @@ ____
      - health-check.
   2. Зафиксировать пример OpenAPI-схемы и пример ответа в документации.
   3. Проверить, что контракт потребляется фронтом (или зафиксировать mock-клиент в репозитории).
-
-- [ ] **Согласование data-contract между ingest и API**
-  1. Зафиксировать отображение полей из `knowledge.similarity_edges` и метаданных постов в API-модель узлов/рёбер.
-  2. Явно описать стратегию, как получать node metadata (channels, рубрики, категории, авторы, годы), если она не полностью хранится в `knowledge.documents`.
-  3. Зафиксировать ограничения текущей версии (`v1`) и эволюционный путь (`v1.1+`).
 
 ---
 
