@@ -84,6 +84,58 @@
 - `422 Unprocessable Entity` — семантически невалидные параметры (например, `year_from > year_to`).
 - `500 Internal Server Error` — непредвиденная ошибка исполнения.
 
+
+## Строгий API-контракт v1 (без двойной трактовки)
+
+```json
+{
+  "nodes": [
+    {
+      "id": "string",
+      "type": "publish-post|string",
+      "label": "string",
+      "year": 2024,
+      "channels": ["string"],
+      "rubric_ids": ["string"],
+      "category_ids": ["string"],
+      "authors": ["string"],
+      "meta": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "string",
+      "target": "string",
+      "type": "SIMILAR_UNDIRECTED",
+      "weight": 0.91,
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "filters_applied": {
+      "channels": ["string"],
+      "years": {"from": 2023, "to": 2024},
+      "authors": ["string"],
+      "rubric_ids": ["string"],
+      "category_ids": ["string"],
+      "limit_nodes": 200
+    },
+    "total_nodes": 1,
+    "total_edges": 1,
+    "truncated": false
+  }
+}
+```
+
+Fallback-правила v1:
+- если `label` не найден в metadata, используется `label = id`;
+- отсутствующие массивы сериализуются как пустые `[]`;
+- отсутствующий год сериализуется как `null`.
+
+План эволюции `v1.1+`:
+- допускается расширение `meta`-полей узлов/рёбер;
+- базовая структура `nodes/edges/meta` и поля фильтров сохраняются для совместимости.
+
 ## Практические примеры
 
 ### Пример A (частичные фильтры, без truncation)

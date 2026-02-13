@@ -108,7 +108,7 @@ ____
   3. Проверить, что текущие индексы `knowledge.similarity_edges` (`source_id`, `target_id`, `weight`) используются в конечной стратегии запроса.
   4. Зафиксировать безопасные ограничения `limit_nodes` и поведение `truncated` при больших выборках.
 
-- [ ] **Единый data-contract ingest ↔ API для v1 (без двойной трактовки DoD)**
+- [x] **Единый data-contract ingest ↔ API для v1 (без двойной трактовки DoD)**
   1. Собрать и зафиксировать единый список результатов:
      - mapping полей `knowledge.similarity_edges` + `knowledge.doc_metadata` → API `nodes/edges`,
      - ограничения версии `v1`,

@@ -31,6 +31,36 @@
 - отсутствующий `year` MUST возвращаться как `null`;
 - дополнительные поля metadata MAY передаваться через `meta` без нарушения v1-контракта.
 
+
+## Единый data-contract ingest ↔ API (фиксированный для v1)
+
+Источник данных для выдачи:
+- узлы: `knowledge.doc_metadata`
+- рёбра: `knowledge.similarity_edges`
+
+Нормативный mapping v1:
+- `doc_metadata.doc_id -> nodes[].id`
+- `doc_metadata.doc_type -> nodes[].type`
+- `doc_metadata.meta.title (fallback id) -> nodes[].label`
+- `doc_metadata.year -> nodes[].year`
+- `doc_metadata.channels -> nodes[].channels`
+- `doc_metadata.rubric_ids -> nodes[].rubric_ids`
+- `doc_metadata.category_ids -> nodes[].category_ids`
+- `doc_metadata.authors -> nodes[].authors`
+- `doc_metadata.meta -> nodes[].meta`
+- `similarity_edges.source_id/target_id -> edges[].source/target`
+- `MAX(similarity_edges.weight) per pair -> edges[].weight`
+- `edges[].type` в v1 фиксирован как `SIMILAR_UNDIRECTED`
+
+Edge-case правила v1:
+- пустая выборка возвращает `200` c `nodes=[]`, `edges=[]`;
+- `year_from > year_to` возвращает `422`;
+- `filters_applied` в `meta` MUST отражать фактически применённые фильтры.
+
+План эволюции:
+- `v1.1+` MAY расширять `nodes[].meta`/`edges[].meta` и добавлять новые поля,
+  но MUST сохранять обратную совместимость структуры `nodes/edges/meta` для клиентов v1.
+
 ## Инварианты (MUST / MUST NOT)
 
 1. **Источник фильтров (MUST)**

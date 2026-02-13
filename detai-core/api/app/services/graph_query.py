@@ -6,7 +6,14 @@ from dataclasses import dataclass
 import psycopg
 
 from app.core.config import get_settings
-from app.schemas.graph import GraphEdge, GraphMeta, GraphNode, GraphResponse
+from app.schemas.graph import (
+    GraphEdge,
+    GraphFiltersApplied,
+    GraphMeta,
+    GraphNode,
+    GraphResponse,
+    GraphYearsFilter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -82,16 +89,23 @@ class GraphQueryService:
                         nodes=[],
                         edges=[],
                         meta=GraphMeta(
-                            limit_nodes=filters.limit_nodes,
-                            nodes_count=0,
-                            edges_count=0,
+                            filters_applied=GraphFiltersApplied(
+                                channels=list(filters.channels or []),
+                                years=GraphYearsFilter(from_=filters.year_from, to=filters.year_to),
+                                authors=list(filters.authors or []),
+                                rubric_ids=list(filters.rubric_ids or []),
+                                category_ids=list(filters.category_ids or []),
+                                limit_nodes=filters.limit_nodes,
+                            ),
+                            total_nodes=0,
+                            total_edges=0,
                             truncated=truncated,
                         ),
                     )
 
                 cur.execute(
                     '''
-                    SELECT dm.doc_id, dm.meta->>'title' AS title, dm.year, dm.channels, dm.authors
+                    SELECT dm.doc_id, dm.doc_type, dm.meta->>'title' AS title, dm.year, dm.channels, dm.rubric_ids, dm.category_ids, dm.authors, dm.meta
                     FROM knowledge.doc_metadata dm
                     WHERE dm.doc_id = ANY(%s)
                     ORDER BY dm.doc_id;
@@ -132,15 +146,25 @@ class GraphQueryService:
         nodes = [
             GraphNode(
                 id=str(doc_id),
-                title=title or str(doc_id),
+                type=str(doc_type or 'publish-post'),
+                label=(title or str(doc_id)),
                 year=year,
                 channels=list(channels or []),
+                rubric_ids=list(rubric_ids or []),
+                category_ids=list(category_ids or []),
                 authors=list(authors or []),
+                meta=dict(meta or {}),
             )
-            for doc_id, title, year, channels, authors in node_rows
+            for doc_id, doc_type, title, year, channels, rubric_ids, category_ids, authors, meta in node_rows
         ]
         edges = [
-            GraphEdge(source=str(source_id), target=str(target_id), weight=float(weight))
+            GraphEdge(
+                source=str(source_id),
+                target=str(target_id),
+                type='SIMILAR_UNDIRECTED',
+                weight=float(weight),
+                meta={},
+            )
             for source_id, target_id, weight in edge_rows
         ]
 
@@ -148,9 +172,16 @@ class GraphQueryService:
             nodes=nodes,
             edges=edges,
             meta=GraphMeta(
-                limit_nodes=filters.limit_nodes,
-                nodes_count=len(nodes),
-                edges_count=len(edges),
+                filters_applied=GraphFiltersApplied(
+                    channels=list(filters.channels or []),
+                    years=GraphYearsFilter(from_=filters.year_from, to=filters.year_to),
+                    authors=list(filters.authors or []),
+                    rubric_ids=list(filters.rubric_ids or []),
+                    category_ids=list(filters.category_ids or []),
+                    limit_nodes=filters.limit_nodes,
+                ),
+                total_nodes=len(nodes),
+                total_edges=len(edges),
                 truncated=truncated,
             ),
         )
