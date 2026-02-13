@@ -44,11 +44,13 @@ def upsert_doc_metadata(posts: list[PostExtracted], dsn: str, run_id: str) -> in
             post.rubric_ids,
             post.category_ids,
             'post',
-            {
-                'source_path': post.source_path,
-                'title': post.title,
-                'source_hash': post.source_hash,
-            },
+            psycopg2.extras.Json(
+                {
+                    'source_path': post.source_path,
+                    'title': post.title,
+                    'source_hash': post.source_hash,
+                }
+            ),
         )
         for post in posts
     ]
@@ -72,7 +74,6 @@ def upsert_doc_metadata(posts: list[PostExtracted], dsn: str, run_id: str) -> in
     with psycopg2.connect(dsn) as conn:
         with conn.cursor() as cur:
             psycopg2.extras.execute_values(cur, query, values)
-        conn.commit()
     return len(values)
 
 
