@@ -36,3 +36,12 @@
 * В `similarity_edges` внешние ключи на `knowledge.documents(id)` не добавлены,
   потому что `documents.id` имеет тип `BIGINT`, а поля `source_id/target_id`
   определены как `TEXT`.
+
+
+## Индексы для фильтров graph API v1
+
+* Для `knowledge.doc_metadata` добавлены индексы:
+  * BTREE: `year`, `date_ymd`;
+  * GIN: `channels`, `authors`, `rubric_ids`, `category_ids`.
+* Для `knowledge.similarity_edges` используются индексы `source_id`, `target_id`, `weight DESC`.
+  В стратегии `/v1/graph` выборка рёбер идёт по `source_id/target_id` внутри отфильтрованного множества `doc_id`.

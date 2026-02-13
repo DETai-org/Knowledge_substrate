@@ -15,7 +15,7 @@ def get_graph(
     rubric_ids: list[str] | None = Query(default=None),
     category_ids: list[str] | None = Query(default=None),
     authors: list[str] | None = Query(default=None),
-    limit_nodes: int = Query(default=100, ge=1, le=1000),
+    limit_nodes: int = Query(default=200, ge=1, le=1000),
 ) -> GraphResponse:
 
     if year_from is not None and year_to is not None and year_from > year_to:

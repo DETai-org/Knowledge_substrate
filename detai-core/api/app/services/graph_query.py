@@ -71,9 +71,11 @@ class GraphQueryService:
                     ORDER BY dm.updated_at DESC, dm.doc_id
                     LIMIT %s;
                     ''',
-                    [*where_params, filters.limit_nodes],
+                    [*where_params, filters.limit_nodes + 1],
                 )
-                filtered_doc_ids = [str(row[0]) for row in cur.fetchall()]
+                filtered_doc_ids_raw = [str(row[0]) for row in cur.fetchall()]
+                truncated = len(filtered_doc_ids_raw) > filters.limit_nodes
+                filtered_doc_ids = filtered_doc_ids_raw[: filters.limit_nodes]
 
                 if not filtered_doc_ids:
                     return GraphResponse(
@@ -83,7 +85,7 @@ class GraphQueryService:
                             limit_nodes=filters.limit_nodes,
                             nodes_count=0,
                             edges_count=0,
-                            truncated=False,
+                            truncated=truncated,
                         ),
                     )
 
@@ -149,6 +151,6 @@ class GraphQueryService:
                 limit_nodes=filters.limit_nodes,
                 nodes_count=len(nodes),
                 edges_count=len(edges),
-                truncated=len(nodes) >= filters.limit_nodes,
+                truncated=truncated,
             ),
         )
