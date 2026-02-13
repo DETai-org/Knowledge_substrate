@@ -11,6 +11,34 @@
 
 Целевой сценарий: выдача publish-графа для клиентов/фронта с детерминированным контрактом.
 
+
+## Каноничный ingest → API mapping для metadata
+
+Источник metadata: `knowledge.doc_metadata`.
+
+- `doc_metadata.doc_id` → `nodes[].id`
+- `doc_metadata.doc_type` → `nodes[].type`
+- `doc_metadata.year` (или `date_ymd`) → `nodes[].year`
+- `doc_metadata.channels` → `nodes[].channels`
+- `doc_metadata.authors` → `nodes[].authors`
+- `doc_metadata.rubric_ids` → `nodes[].rubric_ids`
+- `doc_metadata.category_ids` → `nodes[].category_ids`
+- `doc_metadata.meta` → `nodes[].meta`
+
+Важно: `knowledge.documents.id` не участвует в этом mapping и не используется как canonical id semantic graph.
+
+
+## SQL-стратегия выборки для `/v1/graph` (v1)
+
+Порядок выполнения запроса в service-слое:
+
+1. Фильтруем `knowledge.doc_metadata` по `channels/authors/rubric_ids/category_ids/year` и получаем `doc_id` (с лимитом `limit_nodes`).
+2. Выбираем рёбра только между отфильтрованными `doc_id` из `knowledge.similarity_edges`.
+3. Join выполняется через `similarity_edges.source_id/target_id -> doc_metadata.doc_id`.
+4. Рёбра, у которых отсутствует metadata хотя бы по одной стороне, исключаются из ответа и логируются как `data_gap`.
+
+В `v1` фильтрация **не использует** `knowledge.documents.meta`.
+
 ## Query-параметры
 - `channels` — повторяемый query-параметр
 - `year_from`, `year_to`
@@ -39,11 +67,83 @@
 - `truncated=false`: данные уместились в лимит.
 - `truncated=true`: граф урезан до `limit_nodes`; рёбра возвращаются только между отданными узлами.
 
+
+
+## Детерминизм выборки и политика дублей рёбер
+
+- `nodes` в ответе отсортированы по `id` (лексикографически).
+- `edges` отсортированы по `source`, затем `target` (и `weight` внутри пары).
+- Для неориентированных рёбер в v1 применяется нормализация пары
+  `source=min(id1,id2)`, `target=max(id1,id2)` и выбор максимального `weight` для пары.
+- Пустой результат допустим и возвращается как `200` с `nodes=[]`, `edges=[]`.
+
+## Ограничения `limit_nodes` и `truncated` (safe defaults)
+
+- `limit_nodes` в v1 ограничен диапазоном `1..1000`.
+- Значение по умолчанию: `200`.
+- Для определения `truncated` сервис выбирает `limit_nodes + 1` кандидатов по metadata:
+  - если кандидатов больше лимита, ответ обрезается до `limit_nodes` и возвращается `truncated=true`;
+  - иначе `truncated=false`.
+
+Это поведение безопасно для больших выборок и предсказуемо для клиента.
+
 ## Коды ответов
 - `200 OK` — валидный ответ, включая пустой результат.
 - `400 Bad Request` — синтаксически некорректный query.
 - `422 Unprocessable Entity` — семантически невалидные параметры (например, `year_from > year_to`).
 - `500 Internal Server Error` — непредвиденная ошибка исполнения.
+
+
+## Строгий API-контракт v1 (без двойной трактовки)
+
+```json
+{
+  "nodes": [
+    {
+      "id": "string",
+      "type": "publish-post|string",
+      "label": "string",
+      "year": 2024,
+      "channels": ["string"],
+      "rubric_ids": ["string"],
+      "category_ids": ["string"],
+      "authors": ["string"],
+      "meta": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "string",
+      "target": "string",
+      "type": "SIMILAR_UNDIRECTED",
+      "weight": 0.91,
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "filters_applied": {
+      "channels": ["string"],
+      "years": {"from": 2023, "to": 2024},
+      "authors": ["string"],
+      "rubric_ids": ["string"],
+      "category_ids": ["string"],
+      "limit_nodes": 200
+    },
+    "total_nodes": 1,
+    "total_edges": 1,
+    "truncated": false
+  }
+}
+```
+
+Fallback-правила v1:
+- если `label` не найден в metadata, используется `label = id`;
+- отсутствующие массивы сериализуются как пустые `[]`;
+- отсутствующий год сериализуется как `null`.
+
+План эволюции `v1.1+`:
+- допускается расширение `meta`-полей узлов/рёбер;
+- базовая структура `nodes/edges/meta` и поля фильтров сохраняются для совместимости.
 
 ## Практические примеры
 

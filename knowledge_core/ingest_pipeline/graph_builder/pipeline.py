@@ -15,20 +15,14 @@ from urllib import request
 import psycopg2
 import psycopg2.extras
 
+from knowledge_core.ingest_pipeline.logging import (
+    log_error as log_error_event,
+    log_event as log_event_message,
+)
 from knowledge_core.ingest_pipeline.posts import PostExtracted, extract_publish_posts
 
 
 logger = logging.getLogger(__name__)
-
-STAGE_EMOJI = {
-    "start": "🚀",
-    "preflight": "✅",
-    "extract": "📥",
-    "dry_run": "🧪",
-    "embed": "🧠",
-    "knn": "🔗",
-    "persist": "💾",
-}
 
 OPENAI_KEY_PATTERN = re.compile(r"^sk-[A-Za-z0-9_-]{20,}$")
 
@@ -132,84 +126,97 @@ def run_pipeline(
     extract_config: ExtractConfig,
     full_rebuild: bool,
     run_id: str,
+    run_embeddings: bool = True,
+    run_edges: bool = True,
 ) -> None:
     full_rebuild = full_rebuild or execution_config.mode == "full"
     posts = extract_publish_posts(source_root, prefer_channel=extract_config.prefer_channel)
     posts = apply_limit(posts, execution_config.limit_posts)
     log_event(run_id, "extract", "publish-посты извлечены", posts=len(posts))
 
-    provider = build_provider(embedding_config)
-    normalized_texts = {
-        post.id: prepare_text(
-            post.text_for_embedding,
-            normalize=embedding_config.normalize_text,
-            max_chars=embedding_config.max_chars,
-            doc_id=post.id,
-            run_id=run_id,
-        )
-        for post in posts
-    }
+    embeddings: list[EmbeddingRecord] = []
+    recalculated_count = 0
 
     with psycopg2.connect(db_config.dsn) as conn:
         conn.autocommit = False
-        existing = fetch_existing_embeddings(
-            conn,
-            doc_ids=[post.id for post in posts],
-            doc_type=graph_config.doc_type,
-            model=embedding_config.model,
-        )
 
         if execution_config.dry_run:
             log_event(run_id, "dry_run", "dry-run активен, вычисления и запись пропущены")
             return
 
-        embeddings, reused_count, recalculated_count = build_embeddings(
-            provider,
-            posts=posts,
-            normalized_texts=normalized_texts,
-            existing=existing,
-            doc_type=graph_config.doc_type,
-            model=embedding_config.model,
-            conn=conn,
-            fail_fast=execution_config.fail_fast,
-            run_id=run_id,
-        )
-        log_event(
-            run_id,
-            "embed",
-            "embeddings рассчитаны",
-            reused=reused_count,
-            recalculated=recalculated_count,
-            model=embedding_config.model,
-            batch=embedding_config.batch_size,
-        )
+        if run_embeddings:
+            provider = build_provider(embedding_config)
+            normalized_texts = {
+                post.id: prepare_text(
+                    post.text_for_embedding,
+                    normalize=embedding_config.normalize_text,
+                    max_chars=embedding_config.max_chars,
+                    doc_id=post.id,
+                    run_id=run_id,
+                )
+                for post in posts
+            }
+            existing = fetch_existing_embeddings(
+                conn,
+                doc_ids=[post.id for post in posts],
+                doc_type=graph_config.doc_type,
+                model=embedding_config.model,
+            )
+            embeddings, reused_count, recalculated_count = build_embeddings(
+                provider,
+                posts=posts,
+                normalized_texts=normalized_texts,
+                existing=existing,
+                doc_type=graph_config.doc_type,
+                model=embedding_config.model,
+                conn=conn,
+                fail_fast=execution_config.fail_fast,
+                run_id=run_id,
+            )
+            log_event(
+                run_id,
+                "embed",
+                "embeddings рассчитаны",
+                reused=reused_count,
+                recalculated=recalculated_count,
+                model=embedding_config.model,
+                batch=embedding_config.batch_size,
+                docs_count=len(embeddings),
+            )
 
-        if full_rebuild:
-            clear_edges(conn, graph_config)
+        if run_edges:
+            if not embeddings:
+                embeddings = fetch_embeddings_for_edges(
+                    conn,
+                    doc_type=graph_config.doc_type,
+                    model=embedding_config.model,
+                )
+            if full_rebuild:
+                clear_edges(conn, graph_config)
 
-        edges = build_similarity_edges(embeddings, graph_config)
-        log_event(
-            run_id,
-            "knn",
-            "edges подготовлены",
-            edges=len(edges),
-            top_k=graph_config.k,
-            min_similarity=graph_config.min_similarity,
-        )
-        edges_written = persist_edges(
-            conn,
-            edges,
-            graph_config=graph_config,
-            affected_doc_ids={record.doc_id for record in embeddings},
-            full_rebuild=full_rebuild,
-        )
-        log_event(
-            run_id,
-            "persist",
-            "запись завершена",
-            embeddings_upserted=recalculated_count,
-            edges_upserted=edges_written,
-        )
+            edges = build_similarity_edges(embeddings, graph_config)
+            log_event(
+                run_id,
+                "knn",
+                "edges подготовлены",
+                edges=len(edges),
+                top_k=graph_config.k,
+                min_similarity=graph_config.min_similarity,
+            )
+            edges_written = persist_edges(
+                conn,
+                edges,
+                graph_config=graph_config,
+                affected_doc_ids={record.doc_id for record in embeddings},
+                full_rebuild=full_rebuild,
+            )
+            log_event(
+                run_id,
+                "persist",
+                "запись завершена",
+                embeddings_upserted=recalculated_count,
+                edges_upserted=edges_written,
+            )
 
         conn.commit()
 
@@ -296,6 +303,29 @@ def fetch_existing_embeddings(
             vector=vector,
         )
     return records
+
+
+def fetch_embeddings_for_edges(
+    conn: psycopg2.extensions.connection,
+    doc_type: str,
+    model: str,
+) -> list[EmbeddingRecord]:
+    query = """
+        SELECT doc_id::text, source_hash, embedding::text
+        FROM knowledge.embeddings
+        WHERE doc_type = %s AND model = %s
+    """
+    with conn.cursor() as cur:
+        cur.execute(query, (doc_type, model))
+        rows = cur.fetchall()
+    return [
+        EmbeddingRecord(
+            doc_id=str(doc_id),
+            source_hash=source_hash,
+            vector=parse_pgvector_text(embedding_text),
+        )
+        for doc_id, source_hash, embedding_text in rows
+    ]
 
 
 def build_embeddings(
@@ -916,13 +946,7 @@ def preflight(
 
 
 def log_event(run_id: str, stage: str, message: str, **fields: object) -> None:
-    pairs = [f"run_id={run_id}", f"stage={stage}"]
-    for key, value in fields.items():
-        if value is None:
-            continue
-        pairs.append(f"{key}={value}")
-    emoji = STAGE_EMOJI.get(stage, "✅")
-    logger.info("%s %s %s", emoji, " ".join(pairs), message)
+    log_event_message(logger, run_id, stage, message, **fields)
 
 
 def log_error(
@@ -934,16 +958,17 @@ def log_error(
     doc_ids: list[str] | None = None,
     attempt: int | None = None,
 ) -> None:
-    parts = [f"run_id={run_id}", f"stage={stage}", f"error={type(exc).__name__}"]
-    if doc_id:
-        parts.append(f"doc_id={doc_id}")
-    if source_path:
-        parts.append(f"source_path={source_path}")
-    if doc_ids:
-        parts.append(f"doc_ids={','.join(doc_ids[:5])}")
-    if attempt is not None:
-        parts.append(f"attempt={attempt}")
-    logger.error("❌ %s %s", " ".join(parts), str(exc))
+    log_error_event(
+        logger,
+        run_id,
+        stage,
+        str(exc),
+        error=type(exc).__name__,
+        doc_id=doc_id,
+        source_path=source_path,
+        doc_ids=','.join((doc_ids or [])[:5]) if doc_ids else None,
+        attempt=attempt,
+    )
 
 
 if __name__ == "__main__":

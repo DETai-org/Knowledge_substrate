@@ -1,116 +1,66 @@
-import os
-from pathlib import Path
-from typing import Optional
+import logging
+import time
+import uuid
 
-import psycopg
-from fastapi import FastAPI, HTTPException
-from dotenv import load_dotenv
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 
-app = FastAPI(title="DETai Core API", version="0.2.0")
+from app.core.config import get_settings
+from app.core.logging import configure_logging
+from app.routers.docs import router as docs_router
+from app.routers.graph import router as graph_router
+from app.routers.health import router as health_router
 
-BASE_DIR = Path(__file__).resolve().parents[2]  # detai-core/
-env_path = BASE_DIR / ".env"
+settings = get_settings()
+configure_logging()
+logger = logging.getLogger('api')
 
-load_dotenv(dotenv_path=env_path)
+app = FastAPI(title=settings.api_title, version=settings.api_version)
 
-def get_db_url() -> str:
-    url = os.getenv("DATABASE_URL")
-    if url:
-        return url
+if settings.api_cors_origins:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=list(settings.api_cors_origins),
+        allow_credentials=True,
+        allow_methods=['GET', 'POST', 'OPTIONS'],
+        allow_headers=['*'],
+    )
 
-    raise RuntimeError("DATABASE_URL not found")
 
-def db_connect():
-    return psycopg.connect(get_db_url())
+@app.middleware('http')
+async def request_logging_middleware(request: Request, call_next):
+    request_id = request.headers.get('x-request-id') or uuid.uuid4().hex[:12]
+    start = time.perf_counter()
+    request.state.request_id = request_id
 
-@app.get("/health")
-def health():
-    return {"status": "ok", "service": "detai-core-api"}
+    response = await call_next(request)
 
-@app.get("/db/health")
-def db_health():
-    try:
-        with db_connect() as conn:
-            with conn.cursor() as cur:
-                cur.execute("SELECT 1;")
-                return {"db": "ok"}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"db error: {e!s}")
+    duration_ms = int((time.perf_counter() - start) * 1000)
+    logger.info(
+        'event=request_finished request_id=%s path=%s status_code=%s duration_ms=%s',
+        request_id,
+        request.url.path,
+        response.status_code,
+        duration_ms,
+    )
+    response.headers['x-request-id'] = request_id
+    return response
 
-class DocIn(BaseModel):
-    zone: str = "private"
-    source: Optional[str] = None
-    title: Optional[str] = None
-    content: str
-    meta: dict = {}
 
-@app.post("/docs")
-def create_doc(doc: DocIn):
-    if doc.zone not in ("public", "team", "private"):
-        raise HTTPException(status_code=400, detail="zone must be public|team|private")
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    detail = exc.detail if isinstance(exc.detail, str) else 'request failed'
+    return JSONResponse(status_code=exc.status_code, content={'detail': detail})
 
-    q = """
-    INSERT INTO knowledge.documents (zone, source, title, content, meta)
-    VALUES (%s, %s, %s, %s, %s::jsonb)
-    RETURNING id;
-    """
-    try:
-        with db_connect() as conn:
-            with conn.cursor() as cur:
-                cur.execute(q, (doc.zone, doc.source, doc.title, doc.content, psycopg.types.json.Json(doc.meta)))
-                new_id = cur.fetchone()[0]
-                conn.commit()
-        return {"id": new_id}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"insert failed: {e!s}")
 
-@app.get("/docs/{doc_id}")
-def get_doc(doc_id: int):
-    q = """
-    SELECT id, zone, source, title, content, meta, created_at, updated_at
-    FROM knowledge.documents
-    WHERE id = %s;
-    """
-    with db_connect() as conn:
-        with conn.cursor() as cur:
-            cur.execute(q, (doc_id,))
-            row = cur.fetchone()
-            if not row:
-                raise HTTPException(status_code=404, detail="not found")
-            keys = ["id","zone","source","title","content","meta","created_at","updated_at"]
-            return dict(zip(keys, row))
+@app.exception_handler(Exception)
+async def unhandled_exception_handler(request: Request, exc: Exception):
+    request_id = getattr(request.state, 'request_id', 'unknown')
+    logger.exception('event=unhandled_exception request_id=%s path=%s', request_id, request.url.path)
+    return JSONResponse(status_code=500, content={'detail': 'internal server error'})
 
-@app.get("/search")
-def search(q: str, zone: Optional[str] = None, limit: int = 10):
-    if limit < 1 or limit > 50:
-        raise HTTPException(status_code=400, detail="limit must be 1..50")
 
-    if zone and zone not in ("public", "team", "private"):
-        raise HTTPException(status_code=400, detail="zone must be public|team|private")
-
-    if zone:
-        sql = """
-        SELECT id, zone, title
-        FROM knowledge.documents
-        WHERE zone = %s
-          AND fts @@ plainto_tsquery('simple', %s)
-        ORDER BY ts_rank(fts, plainto_tsquery('simple', %s)) DESC
-        LIMIT %s;
-        """
-        params = (zone, q, q, limit)
-    else:
-        sql = """
-        SELECT id, zone, title
-        FROM knowledge.documents
-        WHERE fts @@ plainto_tsquery('simple', %s)
-        ORDER BY ts_rank(fts, plainto_tsquery('simple', %s)) DESC
-        LIMIT %s;
-        """
-        params = (q, q, limit)
-
-    with db_connect() as conn:
-        with conn.cursor() as cur:
-            cur.execute(sql, params)
-            rows = cur.fetchall()
-            return [{"id": r[0], "zone": r[1], "title": r[2]} for r in rows]
+app.include_router(health_router)
+app.include_router(docs_router)
+app.include_router(graph_router)

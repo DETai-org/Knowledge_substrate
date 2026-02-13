@@ -48,3 +48,49 @@ Ingest pipeline — это конвейер, который **берёт кан�
 - Экономия денег и времени: пересчитывать embeddings только когда надо.
 - Предсказуемость: одинаковые правила → стабильный индекс и поиск.
 - Безопасность: меньше неожиданных “перезаписей” и случайных обновлений.
+
+---
+
+## Stage-оркестратор (`run_ingest.py`)
+
+Единая точка входа:
+
+```bash
+python -m knowledge_core.ingest_pipeline.run_ingest --stage all
+```
+
+Поддерживаемые этапы:
+
+- `--stage metadata` — materialization `knowledge.doc_metadata`
+- `--stage embeddings` — расчёт/upsert `knowledge.embeddings`
+- `--stage edges` — построение/upsert `knowledge.similarity_edges`
+- `--stage all` — последовательность `metadata -> embeddings -> edges`
+
+Обязательные env:
+
+- `DATABASE_URL` (или PGHOST/PGPORT/PGUSER/PGPASSWORD/PGDATABASE)
+- `OPENAI_API_KEY` (для non-dry-run в embeddings stage)
+
+Примеры запуска:
+
+```bash
+python -m knowledge_core.ingest_pipeline.run_ingest --stage metadata
+python -m knowledge_core.ingest_pipeline.run_ingest --stage embeddings --limit-posts 20
+python -m knowledge_core.ingest_pipeline.run_ingest --stage edges --k 8 --min-similarity 0.75
+python -m knowledge_core.ingest_pipeline.run_ingest --stage all
+```
+
+## Smoke-проверки
+
+После выполнения этапов проверьте минимально:
+
+```sql
+SELECT count(*) FROM knowledge.doc_metadata;
+SELECT count(*) FROM knowledge.embeddings;
+SELECT count(*) FROM knowledge.similarity_edges;
+```
+
+Ожидаемое поведение:
+- после `metadata` число строк в `knowledge.doc_metadata` растёт/обновляется;
+- после `embeddings` появляются/обновляются строки в `knowledge.embeddings`;
+- после `edges` появляются/обновляются строки в `knowledge.similarity_edges`.
