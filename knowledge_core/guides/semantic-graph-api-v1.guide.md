@@ -27,6 +27,18 @@
 
 Важно: `knowledge.documents.id` не участвует в этом mapping и не используется как canonical id semantic graph.
 
+
+## SQL-стратегия выборки для `/v1/graph` (v1)
+
+Порядок выполнения запроса в service-слое:
+
+1. Фильтруем `knowledge.doc_metadata` по `channels/authors/rubric_ids/category_ids/year` и получаем `doc_id` (с лимитом `limit_nodes`).
+2. Выбираем рёбра только между отфильтрованными `doc_id` из `knowledge.similarity_edges`.
+3. Join выполняется через `similarity_edges.source_id/target_id -> doc_metadata.doc_id`.
+4. Рёбра, у которых отсутствует metadata хотя бы по одной стороне, исключаются из ответа и логируются как `data_gap`.
+
+В `v1` фильтрация **не использует** `knowledge.documents.meta`.
+
 ## Query-параметры
 - `channels` — повторяемый query-параметр
 - `year_from`, `year_to`

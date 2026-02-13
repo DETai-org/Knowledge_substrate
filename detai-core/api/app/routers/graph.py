@@ -17,6 +17,10 @@ def get_graph(
     authors: list[str] | None = Query(default=None),
     limit_nodes: int = Query(default=100, ge=1, le=1000),
 ) -> GraphResponse:
+
+    if year_from is not None and year_to is not None and year_from > year_to:
+        raise HTTPException(status_code=422, detail='year_from must be less or equal year_to')
+
     try:
         filters = GraphFilters(
             channels=channels,

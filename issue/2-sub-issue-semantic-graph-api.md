@@ -96,7 +96,7 @@ ____
        - `edges` пишет строки в `knowledge.similarity_edges`
 ____
      
-- [ ] **Зафиксировать и внедрить каноничный join для графа: `similarity_edges -> doc_metadata`**
+- [x] **Зафиксировать и внедрить каноничный join для графа: `similarity_edges -> doc_metadata`**
   1. В service-слое `/v1/graph` использовать `source_id/target_id` из `knowledge.similarity_edges` как `doc_id` для join с `knowledge.doc_metadata`.
   2. Описать SQL-стратегию выборки: фильтрация doc_id по metadata -> выборка рёбер только между отфильтрованными doc_id -> сборка `nodes + edges + meta`.
   3. Добавить проверку консистентности: рёбра без соответствующей metadata-ноды не попадают в выдачу и логируются как data-gap.
