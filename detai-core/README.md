@@ -37,6 +37,20 @@ journalctl -u detai-core-api.service -n 200 --no-pager
 - `knowledge_core/ingest_pipeline/graph_builder/pipeline.py` пересобирает графовые связи в БД.
 - API (`detai-core/api`) читает граф и метаданные из БД и отдает их через `/v1/graph`.
 
+### 6) KPI-валидация пайплайна перед PROD
+
+Канонический набор диагностик находится в `workspace/db/diagnostics/graph_embedding_kpi.sql`.
+
+```bash
+cd detai-core
+psql "$DATABASE_URL" -f workspace/db/diagnostics/graph_embedding_kpi.sql
+```
+
+Критерии готовности:
+
+- **Эмбеддинги для всех постов**: `posts_missing_embedding = 0` и `embedding_duplicates = 0`.
+- **Глобальный граф стабилен**: `edge_docs_missing_metadata_ratio` ниже согласованного порога.
+
 ## Локальный запуск (опционально, не канонический)
 
 ### Требования

@@ -69,6 +69,7 @@ class GraphQueryService:
 
     def fetch_graph(self, filters: GraphFilters) -> GraphResponse:
         where_sql, where_params = self._build_doc_filter_sql(filters)
+        is_global_scope = filters.edge_scope == 'global'
 
         with self._connect() as conn:
             with conn.cursor() as cur:
@@ -119,8 +120,15 @@ class GraphQueryService:
 
                 edge_condition_sql = (
                     '(e.source_id = ANY(%s) OR e.target_id = ANY(%s))'
-                    if filters.edge_scope == 'global'
+                    if is_global_scope
                     else 'e.source_id = ANY(%s) AND e.target_id = ANY(%s)'
+                )
+                edge_join_sql = (
+                    'LEFT JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id\n'
+                    '                    LEFT JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id'
+                    if is_global_scope
+                    else 'INNER JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id\n'
+                    '                    INNER JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id'
                 )
                 cur.execute(
                     f'''
@@ -129,8 +137,7 @@ class GraphQueryService:
                       GREATEST(e.source_id::text, e.target_id::text) AS target_id,
                       MAX(e.weight)::float8 AS weight
                     FROM knowledge.similarity_edges e
-                    INNER JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id
-                    INNER JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id
+                    {edge_join_sql}
                     WHERE {edge_condition_sql}
                       AND e.source_id <> e.target_id
                     GROUP BY LEAST(e.source_id::text, e.target_id::text), GREATEST(e.source_id::text, e.target_id::text)
@@ -152,7 +159,7 @@ class GraphQueryService:
                 )
 
                 node_ids_set = {str(row[0]) for row in node_rows}
-                if filters.edge_scope == 'global':
+                if is_global_scope:
                     edge_node_ids = {
                         edge_node_id
                         for source_id, target_id, _ in edge_rows
@@ -171,11 +178,34 @@ class GraphQueryService:
                         )
                         supplemental_node_rows = cur.fetchall()
                         node_rows.extend(supplemental_node_rows)
+                        node_ids_set.update(str(row[0]) for row in supplemental_node_rows)
                         logger.info(
                             '🧩 graph_global_missing_nodes missing_count=%s missing_head=%s loaded=%s',
                             len(missing_node_ids),
                             missing_node_ids[:5],
                             len(supplemental_node_rows),
+                        )
+
+                    fallback_node_ids = sorted(edge_node_ids - node_ids_set)
+                    if fallback_node_ids:
+                        node_rows.extend(
+                            (
+                                doc_id,
+                                'unknown',
+                                doc_id,
+                                None,
+                                [],
+                                [],
+                                [],
+                                [],
+                                {},
+                            )
+                            for doc_id in fallback_node_ids
+                        )
+                        logger.warning(
+                            '🛟 graph_global_fallback_nodes created=%s ids_head=%s',
+                            len(fallback_node_ids),
+                            fallback_node_ids[:5],
                         )
 
                 cur.execute(
@@ -185,13 +215,21 @@ class GraphQueryService:
                     LEFT JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id
                     LEFT JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id
                     WHERE (e.source_id = ANY(%s) OR e.target_id = ANY(%s))
+                      AND e.source_id <> e.target_id
                       AND (s.doc_id IS NULL OR t.doc_id IS NULL);
                     ''',
                     (filtered_doc_ids, filtered_doc_ids),
                 )
                 data_gap_count = int(cur.fetchone()[0])
                 if data_gap_count > 0:
-                    logger.warning('data_gap detected in /v1/graph: edges_without_metadata=%s', data_gap_count)
+                    ratio = (data_gap_count / len(edge_rows)) if edge_rows else 0.0
+                    logger.warning(
+                        'data_gap detected in /v1/graph: edges_without_metadata=%s returned_edges=%s ratio=%.4f edge_scope=%s',
+                        data_gap_count,
+                        len(edge_rows),
+                        ratio,
+                        filters.edge_scope,
+                    )
 
         nodes = [
             GraphNode(
