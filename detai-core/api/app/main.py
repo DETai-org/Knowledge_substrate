@@ -18,14 +18,13 @@ logger = logging.getLogger('api')
 
 app = FastAPI(title=settings.api_title, version=settings.api_version)
 
-if settings.api_cors_origins:
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=list(settings.api_cors_origins),
-        allow_credentials=True,
-        allow_methods=['GET', 'POST', 'OPTIONS'],
-        allow_headers=['*'],
-    )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'],
+    allow_credentials=False,
+    allow_methods=['*'],
+    allow_headers=['*'],
+)
 
 
 @app.middleware('http')
