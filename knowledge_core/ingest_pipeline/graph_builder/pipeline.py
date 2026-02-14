@@ -839,11 +839,12 @@ def apply_cli_graph(config: GraphConfig, args: argparse.Namespace) -> GraphConfi
 
 
 def apply_cli_execution(config: ExecutionConfig, args: argparse.Namespace) -> ExecutionConfig:
+    limit = getattr(args, "limit", None)
     return ExecutionConfig(
         mode=args.mode or config.mode,
         limit_posts=(
-            args.limit
-            if args.limit is not None
+            limit
+            if limit is not None
             else (args.limit_posts if args.limit_posts is not None else config.limit_posts)
         ),
         min_posts=args.min_posts if args.min_posts is not None else config.min_posts,
