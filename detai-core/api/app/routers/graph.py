@@ -1,4 +1,6 @@
 import logging
+from typing import Literal
+
 from fastapi import APIRouter, HTTPException, Query
 
 from app.schemas.graph import GraphResponse
@@ -39,6 +41,7 @@ def get_graph(
     category_ids: list[str] | None = Query(default=None),
     authors: list[str] | None = Query(default=None),
     limit_nodes: int = Query(default=200, ge=1, le=1000),
+    edge_scope: Literal['local', 'global'] = Query(default='local'),
 ) -> GraphResponse:
     if year_from is not None and year_to is not None and year_from > year_to:
         raise HTTPException(status_code=422, detail='year_from must be less or equal year_to')
@@ -52,6 +55,16 @@ def get_graph(
             category_ids=_normalize_filter_values(category_ids, 'category_ids'),
             authors=_normalize_filter_values(authors, 'authors'),
             limit_nodes=limit_nodes,
+            edge_scope=edge_scope,
+        )
+        logger.info(
+            "🧭 graph_filters_normalized channels_count=%s channels_head=%s years=%s..%s limit_nodes=%s edge_scope=%s",
+            len(filters.channels or []),
+            (filters.channels or [])[:5],
+            filters.year_from,
+            filters.year_to,
+            filters.limit_nodes,
+            filters.edge_scope,
         )
         response = service.fetch_graph(filters)
         logger.info(

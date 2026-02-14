@@ -1,3 +1,5 @@
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 
@@ -35,6 +37,7 @@ class GraphFiltersApplied(BaseModel):
     rubric_ids: list[str] = Field(default_factory=list)
     category_ids: list[str] = Field(default_factory=list)
     limit_nodes: int
+    edge_scope: Literal['local', 'global'] = 'local'
 
 
 class GraphMeta(BaseModel):

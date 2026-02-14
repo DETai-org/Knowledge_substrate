@@ -78,6 +78,7 @@ class GraphApiTests(unittest.TestCase):
                         rubric_ids=list(filters.rubric_ids or []),
                         category_ids=list(filters.category_ids or []),
                         limit_nodes=filters.limit_nodes,
+                        edge_scope=filters.edge_scope,
                     ),
                     total_nodes=1,
                     total_edges=1,
@@ -105,7 +106,7 @@ class GraphApiTests(unittest.TestCase):
                 filters_applied=self.GraphFiltersApplied(
                     channels=list(filters.channels or []),
                     years=self.GraphYearsFilter(from_=filters.year_from, to=filters.year_to),
-                    authors=[], rubric_ids=[], category_ids=[], limit_nodes=filters.limit_nodes,
+                    authors=[], rubric_ids=[], category_ids=[], limit_nodes=filters.limit_nodes, edge_scope=filters.edge_scope,
                 ),
                 total_nodes=0,
                 total_edges=0,
@@ -127,7 +128,7 @@ class GraphApiTests(unittest.TestCase):
                 filters_applied=self.GraphFiltersApplied(
                     channels=[],
                     years=self.GraphYearsFilter(from_=None, to=None),
-                    authors=[], rubric_ids=[], category_ids=[], limit_nodes=filters.limit_nodes,
+                    authors=[], rubric_ids=[], category_ids=[], limit_nodes=filters.limit_nodes, edge_scope=filters.edge_scope,
                 ),
                 total_nodes=filters.limit_nodes,
                 total_edges=0,
@@ -140,6 +141,56 @@ class GraphApiTests(unittest.TestCase):
             response = self.client.get('/v1/graph?limit_nodes=2')
             self.assertEqual(response.status_code, 200)
             self.assertTrue(response.json()['meta']['truncated'])
+        finally:
+            self.graph_router.service.fetch_graph = original
+
+
+    def test_graph_edge_scope_global_passed_and_contract_allows_external_nodes(self):
+        captured = {}
+
+        def fake_fetch_graph(filters):
+            captured['edge_scope'] = filters.edge_scope
+            return self.GraphResponse(
+                nodes=[
+                    self.GraphNode(id='post-in-filter', type='publish-post', label='in', meta={}),
+                    self.GraphNode(id='post-outside-filter', type='publish-post', label='out', meta={}),
+                ],
+                edges=[
+                    self.GraphEdge(
+                        source='post-in-filter',
+                        target='post-outside-filter',
+                        type='SIMILAR_UNDIRECTED',
+                        weight=0.77,
+                        meta={},
+                    )
+                ],
+                meta=self.GraphMeta(
+                    filters_applied=self.GraphFiltersApplied(
+                        channels=list(filters.channels or []),
+                        years=self.GraphYearsFilter(from_=filters.year_from, to=filters.year_to),
+                        authors=list(filters.authors or []),
+                        rubric_ids=list(filters.rubric_ids or []),
+                        category_ids=list(filters.category_ids or []),
+                        limit_nodes=filters.limit_nodes,
+                        edge_scope=filters.edge_scope,
+                    ),
+                    total_nodes=2,
+                    total_edges=1,
+                    truncated=False,
+                ),
+            )
+
+        original = self.graph_router.service.fetch_graph
+        self.graph_router.service.fetch_graph = fake_fetch_graph
+        try:
+            response = self.client.get('/v1/graph?channels=site&edge_scope=global&limit_nodes=5')
+            self.assertEqual(response.status_code, 200)
+            body = response.json()
+            self.assertEqual(captured['edge_scope'], 'global')
+            self.assertEqual(body['meta']['filters_applied']['edge_scope'], 'global')
+            self.assertEqual(body['edges'][0]['target'], 'post-outside-filter')
+            node_ids = {node['id'] for node in body['nodes']}
+            self.assertIn('post-outside-filter', node_ids)
         finally:
             self.graph_router.service.fetch_graph = original
 

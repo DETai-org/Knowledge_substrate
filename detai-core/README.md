@@ -19,9 +19,10 @@ curl -sS http://127.0.0.1:9000/openapi.json
 
 ```bash
 curl -sS -i "http://127.0.0.1:9000/v1/graph?channels=detai_site_blog&limit_nodes=50"
+curl -sS -i "http://127.0.0.1:9000/v1/graph?channels=detai_site_blog&limit_nodes=50&edge_scope=global"
 ```
 
-Ожидается HTTP 200 и контракт с полями `nodes`, `edges`, `meta`.
+Ожидается HTTP 200 и контракт с полями `nodes`, `edges`, `meta`; при `edge_scope=global` возвращаются рёбра, где хотя бы один конец в отфильтрованных узлах, и API догружает недостающие узлы для целостности графа.
 
 ### 4) Перезапуск и диагностика
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 from dataclasses import dataclass
+from typing import Literal
 
 import psycopg
 
@@ -27,6 +28,7 @@ class GraphFilters:
     category_ids: list[str] | None = None
     authors: list[str] | None = None
     limit_nodes: int = 100
+    edge_scope: Literal['local', 'global'] = 'local'
 
 
 class GraphQueryService:
@@ -96,6 +98,7 @@ class GraphQueryService:
                                 rubric_ids=list(filters.rubric_ids or []),
                                 category_ids=list(filters.category_ids or []),
                                 limit_nodes=filters.limit_nodes,
+                                edge_scope=filters.edge_scope,
                             ),
                             total_nodes=0,
                             total_edges=0,
@@ -114,8 +117,13 @@ class GraphQueryService:
                 )
                 node_rows = cur.fetchall()
 
+                edge_condition_sql = (
+                    'e.source_id = ANY(%s) OR e.target_id = ANY(%s)'
+                    if filters.edge_scope == 'global'
+                    else 'e.source_id = ANY(%s) AND e.target_id = ANY(%s)'
+                )
                 cur.execute(
-                    '''
+                    f'''
                     SELECT
                       LEAST(e.source_id::text, e.target_id::text) AS source_id,
                       GREATEST(e.source_id::text, e.target_id::text) AS target_id,
@@ -123,7 +131,7 @@ class GraphQueryService:
                     FROM knowledge.similarity_edges e
                     INNER JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id
                     INNER JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id
-                    WHERE e.source_id = ANY(%s) AND e.target_id = ANY(%s)
+                    WHERE {edge_condition_sql}
                       AND e.source_id <> e.target_id
                     GROUP BY LEAST(e.source_id::text, e.target_id::text), GREATEST(e.source_id::text, e.target_id::text)
                     ORDER BY source_id, target_id, weight DESC;
@@ -131,6 +139,44 @@ class GraphQueryService:
                     (filtered_doc_ids, filtered_doc_ids),
                 )
                 edge_rows = cur.fetchall()
+
+                logger.info(
+                    '🔗 graph_filter_stats raw_count=%s filtered_count=%s truncated=%s raw_head=%s filtered_head=%s edge_rows=%s edge_scope=%s',
+                    len(filtered_doc_ids_raw),
+                    len(filtered_doc_ids),
+                    truncated,
+                    filtered_doc_ids_raw[:5],
+                    filtered_doc_ids[:5],
+                    len(edge_rows),
+                    filters.edge_scope,
+                )
+
+                node_ids_set = {str(row[0]) for row in node_rows}
+                if filters.edge_scope == 'global':
+                    edge_node_ids = {
+                        edge_node_id
+                        for source_id, target_id, _ in edge_rows
+                        for edge_node_id in (str(source_id), str(target_id))
+                    }
+                    missing_node_ids = sorted(edge_node_ids - node_ids_set)
+                    if missing_node_ids:
+                        cur.execute(
+                            '''
+                            SELECT dm.doc_id, dm.doc_type, dm.meta->>'title' AS title, dm.year, dm.channels, dm.rubric_ids, dm.category_ids, dm.authors, dm.meta
+                            FROM knowledge.doc_metadata dm
+                            WHERE dm.doc_id = ANY(%s)
+                            ORDER BY dm.doc_id;
+                            ''',
+                            (missing_node_ids,),
+                        )
+                        supplemental_node_rows = cur.fetchall()
+                        node_rows.extend(supplemental_node_rows)
+                        logger.info(
+                            '🧩 graph_global_missing_nodes missing_count=%s missing_head=%s loaded=%s',
+                            len(missing_node_ids),
+                            missing_node_ids[:5],
+                            len(supplemental_node_rows),
+                        )
 
                 cur.execute(
                     '''
@@ -183,6 +229,7 @@ class GraphQueryService:
                     rubric_ids=list(filters.rubric_ids or []),
                     category_ids=list(filters.category_ids or []),
                     limit_nodes=filters.limit_nodes,
+                    edge_scope=filters.edge_scope,
                 ),
                 total_nodes=len(nodes),
                 total_edges=len(edges),
