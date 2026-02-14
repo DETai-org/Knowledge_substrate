@@ -591,7 +591,7 @@ def persist_edges(
     ]
     query = """
         INSERT INTO knowledge.similarity_edges
-          (source_id, target_id, doc_type, weight, method, k, min_similarity, updated_at)
+          (source_id, target_id, doc_type, weight, method, k, min_similarity)
         VALUES %s
         ON CONFLICT (source_id, target_id, doc_type, method)
         DO UPDATE SET
