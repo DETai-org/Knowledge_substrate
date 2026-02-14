@@ -118,7 +118,7 @@ class GraphQueryService:
                 node_rows = cur.fetchall()
 
                 edge_condition_sql = (
-                    'e.source_id = ANY(%s) OR e.target_id = ANY(%s)'
+                    '(e.source_id = ANY(%s) OR e.target_id = ANY(%s))'
                     if filters.edge_scope == 'global'
                     else 'e.source_id = ANY(%s) AND e.target_id = ANY(%s)'
                 )
