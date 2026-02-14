@@ -1,10 +1,13 @@
-.PHONY: bootstrap api lint format test
+.PHONY: bootstrap api api-dev lint format test
 
 bootstrap:
 	python -m pip install --quiet -r requirements.txt
 
 api:
-	uvicorn app.main:app --app-dir api --host 0.0.0.0 --port 8000 --reload
+	uvicorn app.main:app --app-dir api --host 127.0.0.1 --port 9000
+
+api-dev:
+	uvicorn app.main:app --app-dir api --host 127.0.0.1 --port 9000 --reload
 
 lint:
 	python -m compileall api/app

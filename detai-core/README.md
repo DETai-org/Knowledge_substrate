@@ -1,8 +1,45 @@
 # DETai Core API
 
-## Локальный запуск
+## Канонический runbook (PROD): systemd + 127.0.0.1:9000
+
+### 1) Проверка, что API жив
+
+```bash
+systemctl status detai-core-api.service --no-pager
+curl -sS -i http://127.0.0.1:9000/health
+```
+
+### 2) Проверка доступных эндпоинтов (OpenAPI)
+
+```bash
+curl -sS http://127.0.0.1:9000/openapi.json
+```
+
+### 3) Проверка Graph API
+
+```bash
+curl -sS -i "http://127.0.0.1:9000/v1/graph?channels=detai_site_blog&limit_nodes=50"
+```
+
+Ожидается HTTP 200 и контракт с полями `nodes`, `edges`, `meta`.
+
+### 4) Перезапуск и диагностика
+
+```bash
+systemctl restart detai-core-api.service
+journalctl -u detai-core-api.service -n 200 --no-pager
+```
+
+### 5) Как ingest влияет на API
+
+- `knowledge_core/ingest_pipeline/metadata/metadata_ingest.py` обновляет метаданные в БД.
+- `knowledge_core/ingest_pipeline/graph_builder/pipeline.py` пересобирает графовые связи в БД.
+- API (`detai-core/api`) читает граф и метаданные из БД и отдает их через `/v1/graph`.
+
+## Локальный запуск (опционально, не канонический)
 
 ### Требования
+
 - Python 3.10+
 - `DATABASE_URL` (обязательно)
 - `API_CORS_ORIGINS` (опционально, список origin через запятую, без `*`)
@@ -26,25 +63,8 @@ make api
 Проверка:
 
 ```bash
-curl http://localhost:8000/health
-curl "http://localhost:8000/v1/graph?limit_nodes=5"
-```
-
-## Локальный запуск через Docker Compose
-
-```bash
-cd detai-core
-docker compose up --build
-```
-
-API будет доступен на `http://localhost:8000`.
-
-## Полезные цели Makefile
-
-```bash
-make lint
-make format
-make test
+curl -sS -i http://127.0.0.1:9000/health
+curl -sS -i "http://127.0.0.1:9000/v1/graph?limit_nodes=5"
 ```
 
 ## OpenAPI и пример контракта

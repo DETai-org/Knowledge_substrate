@@ -40,6 +40,11 @@ class GraphApiTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json()['status'], 'ok')
 
+    def test_openapi_contains_graph_endpoint(self):
+        response = self.client.get('/openapi.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('/v1/graph', response.json().get('paths', {}))
+
     def test_graph_happy_path(self):
         def fake_fetch_graph(filters):
             return self.GraphResponse(
