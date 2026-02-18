@@ -1,8 +1,8 @@
 (function () {
-  const SUPPORTED_LANGS = ["ru", "en"];
+  const SUPPORTED_LANGS = ["ru", "en", "de", "fi", "cn"];
 
   function getCurrentLanguage(pathname) {
-    const langMatch = pathname.match(/\/(ru|en)\//i);
+    const langMatch = pathname.match(/\/(ru|en|de|fi|cn)\//i);
     if (langMatch) {
       return langMatch[1].toLowerCase();
     }
@@ -16,8 +16,8 @@
       return pathname + search + hash;
     }
 
-    if (/\/(ru|en)\//i.test(pathname)) {
-      return pathname.replace(/\/(ru|en)\//i, `/${targetLang}/`) + search + hash;
+    if (/\/(ru|en|de|fi|cn)\//i.test(pathname)) {
+      return pathname.replace(/\/(ru|en|de|fi|cn)\//i, `/${targetLang}/`) + search + hash;
     }
 
     const trimmed = pathname.replace(/\/+$/, "");
@@ -33,6 +33,9 @@
     const targetByLabel = {
       English: "en",
       "Русский": "ru",
+      Deutsch: "de",
+      Suomi: "fi",
+      中文: "cn",
     };
 
     const menuLinks = document.querySelectorAll(
