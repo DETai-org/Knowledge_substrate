@@ -29,6 +29,7 @@ extra_css:
 extra_javascript:
   - assets/javascripts/chatgpt-prompt.js
   - assets/javascripts/chatgpt-button.js
+  - assets/javascripts/language-switcher.js
 
 exclude_docs: |
   publications/Research_Publication/**
@@ -110,6 +111,5 @@ nav:
   - Onboarding: ru/ecosystem/Onboarding/onboarding/index.md
   - Публикации:
       - ru/publications/index.md
-  - English:
-      - en/index.md
-      - Ecosystem: en/ecosystem/index.md
+  - Русский: ru/index.md
+  - English: en/index.md
