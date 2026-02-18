@@ -11,9 +11,10 @@ We chose GitHub because it is ideal for **open collaboration**, **teamwork**, an
 
 ---
 
-## **Knowledge_substrate** 📚✨
+## **Knowledge substrate** 📚✨
 
 **What is Knowledge_substrate?**
+
 **Knowledge_substrate** is not just a place to store information — it is a **knowledge library** where we gather everything we work on! 🚀 Here you will find information about how we operate, as well as links and repositories, some of which are public and open. This is a space for everyone who wants to understand how the DET ecosystem evolves and how our methods are applied. 🔥
 
 ---
