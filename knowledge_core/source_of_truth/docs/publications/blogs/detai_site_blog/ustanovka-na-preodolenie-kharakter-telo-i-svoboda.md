@@ -19,7 +19,8 @@ descriptive:
     keywords_raw: ["преодоление", "установка на преодоление", "формирование характера", "личностный рост", "психология преодоления", "воля и характер", "тело и психика", "свобода и ответственность"]
 structural:
   external_links: []
-  document_links: []
+  document_links:
+    - site:personal:id:admission-to-psychology-faculty
 ---
 
 # Установка на преодоление: характер, тело и свобода
