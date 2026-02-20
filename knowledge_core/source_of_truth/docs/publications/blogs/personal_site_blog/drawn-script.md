@@ -19,7 +19,8 @@ descriptive:
     keywords_raw: ["сценарный анализ", "свобода воли", "интеграция тени"]
 structural:
   external_links: []
-  document_links: []
+  document_links:
+    - site:personal:id:voina-i-mir-geterogennost-poznaniya
 ---
 # Нарисованный сценарий
 
