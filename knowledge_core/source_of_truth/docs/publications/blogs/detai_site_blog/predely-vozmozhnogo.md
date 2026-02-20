@@ -1,3 +1,34 @@
+---
+type: post
+administrative:
+  id: predely-vozmozhnogo
+  authors:
+    - Anton Kolhonen
+  date_ymd: 2022-05-25
+  status: publish
+  channels:
+    - detai_site_blog
+descriptive:
+  size: "L"
+  title: "Пределы возможного"
+  preview: "Пределы возможного — это пост о том, как смысл, дисциплина и ежедневное усилие превращают мечту в устойчивый рост. ⛳️ Что изменится в твоей жизни через 10 лет, если ты каждый день выбираешь движение вперёд?"
+  seoLead: "Пост о личной эффективности и мотивации: как ежедневное усилие, осмысленная цель и дисциплина помогают выйти за пределы возможного и строить лучшую жизнь."
+  taxonomy:
+    rubric_ids: [rubric:personality-types-and-existential-strategies]
+    category_ids: [category:effectiveness]
+    keyword_ids: []
+    keywords_raw:
+      - пределы возможного
+      - мотивация и дисциплина
+      - личная эффективность
+      - смысл и цель
+      - личностный рост
+      - экзистенциальный выбор
+structural:
+  external_links: []
+  document_links: []
+---
+
 # Пределы возможного
 
 Пределы возможного: как усилие, смысл и выбранный путь складываются в лучшую версию жизни
