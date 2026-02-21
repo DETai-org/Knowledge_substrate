@@ -202,6 +202,42 @@ def enrich_documents_from_frontmatter(
     return enriched
 
 
+def detect_edge_profile(
+    conn: psycopg2.extensions.connection,
+    *,
+    model: str,
+    doc_type: str = 'post',
+) -> tuple[str, int, float, int] | None:
+    query = """
+        SELECT se.method, se.k, se.min_similarity, COUNT(*) AS edges_count
+        FROM knowledge.similarity_edges se
+        WHERE se.doc_type = %s
+          AND EXISTS (
+              SELECT 1
+              FROM knowledge.embeddings es
+              WHERE es.doc_id = se.source_id
+                AND es.doc_type = %s
+                AND es.model = %s
+          )
+          AND EXISTS (
+              SELECT 1
+              FROM knowledge.embeddings et
+              WHERE et.doc_id = se.target_id
+                AND et.doc_type = %s
+                AND et.model = %s
+          )
+        GROUP BY se.method, se.k, se.min_similarity
+        ORDER BY edges_count DESC, se.k DESC, se.min_similarity DESC
+        LIMIT 1
+    """
+    with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+        cur.execute(query, (doc_type, doc_type, model, doc_type, model))
+        row = cur.fetchone()
+    if not row:
+        return None
+    return (str(row['method']), int(row['k']), float(row['min_similarity']), int(row['edges_count']))
+
+
 def load_edges(
     conn: psycopg2.extensions.connection,
     *,
@@ -235,9 +271,6 @@ def load_edges(
     with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
         cur.execute(query, (method, k, min_similarity, model, model))
         rows = cur.fetchall()
-
-    if not rows:
-        raise RuntimeError('similarity_edges empty; run ingest stages embeddings+edges first')
 
     return [
         Edge(
@@ -476,17 +509,70 @@ def main() -> None:
     model = args.model or config.embeddings.model
 
     log_event(logger, run_id, 'read', 'Чтение документов и рёбер из БД', model=model)
+    effective_method = graph_config.method
+    effective_k = graph_config.k
+    effective_min_similarity = graph_config.min_similarity
     with psycopg2.connect(build_dsn()) as conn:
         documents = load_documents(conn, model=model)
         edges = load_edges(
             conn,
             model=model,
-            method=graph_config.method,
-            k=graph_config.k,
-            min_similarity=graph_config.min_similarity,
+            method=effective_method,
+            k=effective_k,
+            min_similarity=effective_min_similarity,
         )
 
-    log_event(logger, run_id, 'read', 'Документы/рёбра загружены', documents=len(documents), edges=len(edges))
+        should_autodetect_profile = args.k is None and args.min_similarity is None
+        if not edges and should_autodetect_profile:
+            detected = detect_edge_profile(conn, model=model)
+            if detected is not None:
+                detected_method, detected_k, detected_min_similarity, detected_edges = detected
+                effective_method = detected_method
+                effective_k = detected_k
+                effective_min_similarity = detected_min_similarity
+                log_event(
+                    logger,
+                    run_id,
+                    'warn',
+                    'CLI-параметры --k/--min-similarity не заданы, рёбра по config не найдены; применён auto-detect профиля similarity_edges из БД',
+                    model=model,
+                    method=effective_method,
+                    k=effective_k,
+                    min_similarity=effective_min_similarity,
+                    edges_detected=detected_edges,
+                    recommendation='Для предсказуемого результата запускайте export_snapshot с явными --k и --min-similarity',
+                )
+                edges = load_edges(
+                    conn,
+                    model=model,
+                    method=effective_method,
+                    k=effective_k,
+                    min_similarity=effective_min_similarity,
+                )
+
+    if not edges:
+        log_event(
+            logger,
+            run_id,
+            'warn',
+            'similarity_edges пусты для выбранных параметров; продолжаем без графовых связей',
+            model=model,
+            method=effective_method,
+            k=effective_k,
+            min_similarity=effective_min_similarity,
+        )
+
+    log_event(
+        logger,
+        run_id,
+        'read',
+        'Документы/рёбра загружены',
+        documents=len(documents),
+        edges=len(edges),
+        method=effective_method,
+        k=effective_k,
+        min_similarity=effective_min_similarity,
+    )
     documents = enrich_documents_from_frontmatter(documents, blogs_root=blogs_root, logger=logger, run_id=run_id)
 
     rubric_counts = write_counts_by_rubric(args.out, documents)
@@ -499,9 +585,9 @@ def main() -> None:
         bridge_n=args.bridge_n,
         edge_n=args.edge_n,
         model=model,
-        method=graph_config.method,
-        k=graph_config.k,
-        min_similarity=graph_config.min_similarity,
+        method=effective_method,
+        k=effective_k,
+        min_similarity=effective_min_similarity,
     )
 
     aggregates_dir = args.out / 'aggregates'
