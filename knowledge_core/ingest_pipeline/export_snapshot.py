@@ -13,8 +13,11 @@ from typing import Any
 
 import psycopg2
 import psycopg2.extras
+import yaml
 
+from knowledge_core.ingest_pipeline import logging as ingest_logging
 from knowledge_core.ingest_pipeline.graph_builder.pipeline import apply_cli_graph, build_dsn, load_config
+from knowledge_core.ingest_pipeline.logging import log_error, log_event, setup_logging
 
 
 @dataclass(frozen=True)
@@ -63,9 +66,7 @@ def load_documents(conn: psycopg2.extensions.connection, *, model: str) -> dict[
             COALESCE(dm.rubric_ids, ARRAY[]::text[]) AS rubric_ids,
             COALESCE(dm.channels, ARRAY[]::text[]) AS channels,
             dm.date_ymd::text,
-            COALESCE(dm.meta->>'title', NULL) AS title,
-            COALESCE(dm.meta->>'seoLead', dm.meta->>'seo_lead', NULL) AS seo_lead,
-            COALESCE(dm.meta->'keywords_raw', dm.meta->'keywordsRaw', NULL) AS keywords_raw
+            COALESCE(dm.meta->>'title', NULL) AS title
         FROM knowledge.doc_metadata dm
         WHERE dm.doc_type = 'post'
           AND EXISTS (
@@ -87,10 +88,118 @@ def load_documents(conn: psycopg2.extensions.connection, *, model: str) -> dict[
                 channels=[str(x) for x in (row['channels'] or [])],
                 date_ymd=row['date_ymd'],
                 title=row['title'],
-                seo_lead=row['seo_lead'],
-                keywords_raw=row['keywords_raw'],
+                seo_lead=None,
+                keywords_raw=None,
             )
     return docs
+
+
+def split_frontmatter(raw_text: str, path: Path) -> tuple[str, str]:
+    lines = raw_text.splitlines()
+    if not lines or lines[0].strip() != '---':
+        raise ValueError(f'Отсутствует frontmatter в {path}')
+
+    for idx in range(1, len(lines)):
+        if lines[idx].strip() == '---':
+            frontmatter = '\n'.join(lines[1:idx])
+            body = '\n'.join(lines[idx + 1 :])
+            return frontmatter, body
+
+    raise ValueError(f'Не найден конец frontmatter в {path}')
+
+
+def choose_doc_path(doc_id: str, channels: list[str], path_index: dict[str, list[Path]]) -> Path | None:
+    candidates = path_index.get(doc_id, [])
+    if not candidates:
+        return None
+    if len(candidates) == 1:
+        return candidates[0]
+
+    normalized_channels = {str(ch).strip() for ch in channels if str(ch).strip()}
+    for candidate in candidates:
+        if candidate.parent.name in normalized_channels:
+            return candidate
+    return sorted(candidates)[0]
+
+
+def build_blog_path_index(blogs_root: Path) -> dict[str, list[Path]]:
+    path_index: dict[str, list[Path]] = defaultdict(list)
+    for path in blogs_root.rglob('*.md'):
+        if path.name.lower() == 'readme.md':
+            continue
+        path_index[path.stem].append(path)
+    return path_index
+
+
+def enrich_documents_from_frontmatter(
+    documents: dict[str, Document],
+    *,
+    blogs_root: Path,
+    logger: Any,
+    run_id: str,
+) -> dict[str, Document]:
+    path_index = build_blog_path_index(blogs_root)
+    enriched: dict[str, Document] = {}
+    missing_files = 0
+    missing_fields = 0
+
+    for doc_id, doc in documents.items():
+        path = choose_doc_path(doc_id, doc.channels, path_index)
+        if path is None:
+            missing_files += 1
+            log_event(logger, run_id, 'warn', 'Файл документа не найден по doc_id.md', doc_id=doc_id)
+            enriched[doc_id] = doc
+            continue
+
+        try:
+            raw_text = path.read_text(encoding='utf-8')
+            frontmatter, _ = split_frontmatter(raw_text, path)
+            meta = yaml.safe_load(frontmatter) or {}
+        except (OSError, ValueError, yaml.YAMLError) as exc:
+            missing_files += 1
+            log_error(logger, run_id, 'frontmatter', 'Ошибка чтения frontmatter', doc_id=doc_id, path=path, error=exc)
+            enriched[doc_id] = doc
+            continue
+
+        descriptive = meta.get('descriptive') if isinstance(meta, dict) else {}
+        descriptive = descriptive if isinstance(descriptive, dict) else {}
+        taxonomy = descriptive.get('taxonomy') if isinstance(descriptive, dict) else {}
+        taxonomy = taxonomy if isinstance(taxonomy, dict) else {}
+
+        seo_lead = descriptive.get('seoLead')
+        keywords_raw = taxonomy.get('keywords_raw')
+
+        if seo_lead is None or keywords_raw is None:
+            missing_fields += 1
+            log_event(
+                logger,
+                run_id,
+                'warn',
+                'Во frontmatter отсутствуют seoLead или keywords_raw',
+                doc_id=doc_id,
+                path=path,
+            )
+
+        enriched[doc_id] = Document(
+            doc_id=doc.doc_id,
+            rubric_ids=doc.rubric_ids,
+            channels=doc.channels,
+            date_ymd=doc.date_ymd,
+            title=doc.title,
+            seo_lead=seo_lead,
+            keywords_raw=keywords_raw,
+        )
+
+    log_event(
+        logger,
+        run_id,
+        'done',
+        'Обогащение из frontmatter завершено',
+        docs_total=len(documents),
+        missing_files=missing_files,
+        missing_fields=missing_fields,
+    )
+    return enriched
 
 
 def load_edges(
@@ -354,12 +463,19 @@ def build_selection(
 
 
 def main() -> None:
+    setup_logging()
+    logger = ingest_logging.logging.getLogger(__name__)
+    run_id = datetime.now(tz=UTC).strftime('%Y%m%dT%H%M%SZ')
     args = parse_args()
     config_path = args.config or Path(os.getenv('CONFIG_PATH', Path(__file__).resolve().parent / 'config.json'))
+    blogs_root = Path(__file__).resolve().parents[1] / 'source_of_truth' / 'docs' / 'publications' / 'blogs'
+
+    log_event(logger, run_id, 'start', 'Запуск export_snapshot', out=args.out, config=config_path)
     config = load_config(config_path)
     graph_config = apply_cli_graph(config.graph, args)
     model = args.model or config.embeddings.model
 
+    log_event(logger, run_id, 'read', 'Чтение документов и рёбер из БД', model=model)
     with psycopg2.connect(build_dsn()) as conn:
         documents = load_documents(conn, model=model)
         edges = load_edges(
@@ -370,7 +486,11 @@ def main() -> None:
             min_similarity=graph_config.min_similarity,
         )
 
+    log_event(logger, run_id, 'read', 'Документы/рёбра загружены', documents=len(documents), edges=len(edges))
+    documents = enrich_documents_from_frontmatter(documents, blogs_root=blogs_root, logger=logger, run_id=run_id)
+
     rubric_counts = write_counts_by_rubric(args.out, documents)
+    log_event(logger, run_id, 'done', '📂 Обновлён counts_by_rubric.csv', path=args.out / 'aggregates' / 'counts_by_rubric.csv')
     selection = build_selection(
         documents,
         edges,
@@ -388,6 +508,7 @@ def main() -> None:
     aggregates_dir.mkdir(parents=True, exist_ok=True)
     snapshot_path = aggregates_dir / 'selection_for_synthesis.json'
     snapshot_path.write_text(json.dumps(selection, ensure_ascii=False, indent=2), encoding='utf-8')
+    log_event(logger, run_id, 'done', '📂 Обновлён selection_for_synthesis.json', path=snapshot_path)
 
 
 if __name__ == '__main__':
