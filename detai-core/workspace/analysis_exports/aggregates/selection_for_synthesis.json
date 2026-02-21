@@ -1,0 +1,3084 @@
+{
+  "meta": {
+    "generated_at": "2026-02-21T12:32:30.021128+00:00",
+    "model": "text-embedding-3-large",
+    "k": 8,
+    "min_similarity": 0.6,
+    "method": "topk",
+    "index_field": "seoLead",
+    "note": "seoLead is an index, not a source of truth; full text must be read for core and bridges"
+  },
+  "rubrics": {
+    "rubric:det-notes": {
+      "counts": {
+        "posts": 6
+      },
+      "core": [
+        {
+          "doc_id": "multidistsiplinarnyi-podkhod",
+          "title": "Мультидисциплинарный подход",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog",
+            "personal_site_blog"
+          ],
+          "date_ymd": "2017-11-15",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "blizost-i-nezavisemost",
+          "title": "Близость и независемость",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog",
+            "personal_site_blog"
+          ],
+          "date_ymd": "2016-12-15",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "vzaimopomoshch-kak-faktor-evolyutsii",
+          "title": "Взаимопомощь как фактор эволюции",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2017-11-04",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "blagogovenie-pered-zhiznyu",
+          "title": "Благоговение перед жизнью",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-11-06",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "o-psikhoterapii-nauke-i-zhizni",
+          "title": "О психотерапии, науке и жизни",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2023-04-24",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 3.214798,
+            "total_weight_sum": 3.214798,
+            "bridge_ratio": 1.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "o-psikhoterapii-nauke-i-zhizni",
+          "title": "О психотерапии, науке и жизни",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2023-04-24",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 3.214798,
+            "total_weight_sum": 3.214798,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.404833
+            },
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "share": 0.209234
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 0.196367
+            },
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "share": 0.189567
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "links": [
+                {
+                  "target_doc_id": "napryazhenie-tsivilizatsii",
+                  "weight": 0.609418
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "links": [
+                {
+                  "target_doc_id": "psychologists-day",
+                  "weight": 0.672644
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "psikhologiya-v-shkole",
+                  "weight": 0.631279
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "o-psikhologii",
+                  "weight": 0.660958
+                },
+                {
+                  "target_doc_id": "dark-side-of-good-people",
+                  "weight": 0.640498
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "multidistsiplinarnyi-podkhod",
+          "title": "Мультидисциплинарный подход",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog",
+            "personal_site_blog"
+          ],
+          "date_ymd": "2017-11-15",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "blizost-i-nezavisemost",
+          "title": "Близость и независемость",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog",
+            "personal_site_blog"
+          ],
+          "date_ymd": "2016-12-15",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "vzaimopomoshch-kak-faktor-evolyutsii",
+          "title": "Взаимопомощь как фактор эволюции",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2017-11-04",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "blagogovenie-pered-zhiznyu",
+          "title": "Благоговение перед жизнью",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-11-06",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        }
+      ],
+      "edges": [
+        {
+          "doc_id": "zvezdy-nad-pantelleriei",
+          "title": "Звезды над Пантеллерией",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:det-notes"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2022-06-18",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridge_summary": [
+        {
+          "to_rubric_id": "rubric:shadow-and-light",
+          "share": 0.404833
+        },
+        {
+          "to_rubric_id": "rubric:personal-psychology",
+          "share": 0.209234
+        },
+        {
+          "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+          "share": 0.196367
+        },
+        {
+          "to_rubric_id": "rubric:orientation-toward-overcoming",
+          "share": 0.189567
+        }
+      ]
+    },
+    "rubric:orientation-toward-overcoming": {
+      "counts": {
+        "posts": 14
+      },
+      "core": [
+        {
+          "doc_id": "drugaya-olimpiada",
+          "title": "Другая Олимпиада",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2022-04-18",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 2.633122,
+            "intra_degree": 4,
+            "cross_weight_sum": 0.639092,
+            "total_weight_sum": 3.272214,
+            "bridge_ratio": 0.195309
+          }
+        },
+        {
+          "doc_id": "ustanovka-na-preodolenie-kharakter-telo-i-svoboda",
+          "title": "Установка на преодоление: характер, тело и свобода",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-02-09",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 2.0371,
+            "intra_degree": 3,
+            "cross_weight_sum": 3.285254,
+            "total_weight_sum": 5.322354,
+            "bridge_ratio": 0.617256
+          }
+        },
+        {
+          "doc_id": "pustynya-besstatusnosti",
+          "title": "Пустыня бесстатусности",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-10-22",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.390533,
+            "intra_degree": 2,
+            "cross_weight_sum": 2.735402,
+            "total_weight_sum": 4.125935,
+            "bridge_ratio": 0.662978
+          }
+        },
+        {
+          "doc_id": "strah-peremen",
+          "title": "Страх перемен",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-06-27",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.388984,
+            "intra_degree": 2,
+            "cross_weight_sum": 1.304768,
+            "total_weight_sum": 2.693751,
+            "bridge_ratio": 0.484368
+          }
+        },
+        {
+          "doc_id": "suae-quisque-fortunae-faber",
+          "title": "Suae quisque fortunae faber",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-10-04",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.218261,
+            "intra_degree": 2,
+            "cross_weight_sum": 0.649887,
+            "total_weight_sum": 1.868148,
+            "bridge_ratio": 0.347878
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "napryazhenie-tsivilizatsii",
+          "title": "Напряжение цивилизации",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2023-02-23",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.609418,
+            "total_weight_sum": 0.609418,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:det-notes",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:det-notes",
+              "links": [
+                {
+                  "target_doc_id": "o-psikhoterapii-nauke-i-zhizni",
+                  "weight": 0.609418
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "pustynya-besstatusnosti",
+          "title": "Пустыня бесстатусности",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-10-22",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 1.390533,
+            "intra_degree": 2,
+            "cross_weight_sum": 2.735402,
+            "total_weight_sum": 4.125935,
+            "bridge_ratio": 0.662978
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.743885
+            },
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 0.256115
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "liminalnaya-faza",
+                  "weight": 0.700578
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "suum-cuique",
+                  "weight": 0.691121
+                },
+                {
+                  "target_doc_id": "voina-i-mir-geterogennost-poznaniya",
+                  "weight": 0.672048
+                },
+                {
+                  "target_doc_id": "notes-from-underground",
+                  "weight": 0.671655
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "ustanovka-na-preodolenie-kharakter-telo-i-svoboda",
+          "title": "Установка на преодоление: характер, тело и свобода",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-02-09",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 2.0371,
+            "intra_degree": 3,
+            "cross_weight_sum": 3.285254,
+            "total_weight_sum": 5.322354,
+            "bridge_ratio": 0.617256
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.803331
+            },
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 0.196669
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "liminalnaya-faza",
+                  "weight": 0.646107
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "notes-from-underground",
+                  "weight": 0.673518
+                },
+                {
+                  "target_doc_id": "suum-cuique",
+                  "weight": 0.662016
+                },
+                {
+                  "target_doc_id": "drawn-script",
+                  "weight": 0.65789
+                },
+                {
+                  "target_doc_id": "dark-side-of-good-people",
+                  "weight": 0.645723
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "strah-peremen",
+          "title": "Страх перемен",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-06-27",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 1.388984,
+            "intra_degree": 2,
+            "cross_weight_sum": 1.304768,
+            "total_weight_sum": 2.693751,
+            "bridge_ratio": 0.484368
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.510669
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 0.489331
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "psikhologiya-v-shkole",
+                  "weight": 0.638463
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "suum-cuique",
+                  "weight": 0.666304
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "suae-quisque-fortunae-faber",
+          "title": "Suae quisque fortunae faber",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-10-04",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 1.218261,
+            "intra_degree": 2,
+            "cross_weight_sum": 0.649887,
+            "total_weight_sum": 1.868148,
+            "bridge_ratio": 0.347878
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "suum-cuique",
+                  "weight": 0.649887
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "doc_id": "vera-v-svoi-sposobnosti",
+          "title": "Вера в свои способности",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2018-12-10",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "sila-vyderzhat-udar",
+          "title": "Сила выдержать удар",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-01-11",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "voploshchennaya-ideya-eto-epigon-istiny",
+          "title": "Воплощенная идея — это эпигон истины",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2019-12-17",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "yukon-law",
+          "title": "Закон Юкона",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-08-10",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "novye-struktury",
+          "title": "Новые структуры 🧭",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:orientation-toward-overcoming"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2022-12-28",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridge_summary": [
+        {
+          "to_rubric_id": "rubric:shadow-and-light",
+          "share": 0.69777
+        },
+        {
+          "to_rubric_id": "rubric:personal-key-milestones",
+          "share": 0.15687
+        },
+        {
+          "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+          "share": 0.074372
+        },
+        {
+          "to_rubric_id": "rubric:det-notes",
+          "share": 0.070989
+        }
+      ]
+    },
+    "rubric:personal-health-practices": {
+      "counts": {
+        "posts": 2
+      },
+      "core": [
+        {
+          "doc_id": "i-position-of-a-masseur",
+          "title": "Я как массажист",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-health-practices"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-10-04",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "fitnes-i-massazh-kak-profilaktika-depressii",
+          "title": "Фитнес и массаж как профилактика депрессий",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-health-practices"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2023-03-10",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "i-position-of-a-masseur",
+          "title": "Я как массажист",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-health-practices"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-10-04",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "fitnes-i-massazh-kak-profilaktika-depressii",
+          "title": "Фитнес и массаж как профилактика депрессий",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-health-practices"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2023-03-10",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        }
+      ],
+      "edges": [],
+      "bridge_summary": []
+    },
+    "rubric:personal-key-milestones": {
+      "counts": {
+        "posts": 5
+      },
+      "core": [
+        {
+          "doc_id": "u-kazhdogo-svoya-doroga-ili-o-etapah-i-motivah-odnogo-aspiranta",
+          "title": "У каждого своя дорога, или о этапах и мотивах одного аспиранта",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2022-08-30",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.478987,
+            "intra_degree": 2,
+            "cross_weight_sum": 4.168922,
+            "total_weight_sum": 5.647909,
+            "bridge_ratio": 0.738136
+          }
+        },
+        {
+          "doc_id": "admission-to-psychology-faculty",
+          "title": "Поступление на факультет психологии",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-09-13",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.79211,
+            "intra_degree": 1,
+            "cross_weight_sum": 4.840154,
+            "total_weight_sum": 5.632264,
+            "bridge_ratio": 0.859362
+          }
+        },
+        {
+          "doc_id": "amplituda-strastei-chelovecheskikh",
+          "title": "Амплитуда страстей человеческих",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-02-03",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.686876,
+            "intra_degree": 1,
+            "cross_weight_sum": 1.337898,
+            "total_weight_sum": 2.024775,
+            "bridge_ratio": 0.660764
+          }
+        },
+        {
+          "doc_id": "reshenie-stat-psikhologom",
+          "title": "Решение стать психологом",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2018-01-27",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.663697,
+            "total_weight_sum": 0.663697,
+            "bridge_ratio": 1.0
+          }
+        },
+        {
+          "doc_id": "liminalnaya-faza",
+          "title": "Лиминальная фаза",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-11-05",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 4.682042,
+            "total_weight_sum": 4.682042,
+            "bridge_ratio": 1.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "liminalnaya-faza",
+          "title": "Лиминальная фаза",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-11-05",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 4.682042,
+            "total_weight_sum": 4.682042,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.427858
+            },
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "share": 0.287628
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 0.142957
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "share": 0.141557
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "links": [
+                {
+                  "target_doc_id": "pustynya-besstatusnosti",
+                  "weight": 0.700578
+                },
+                {
+                  "target_doc_id": "ustanovka-na-preodolenie-kharakter-telo-i-svoboda",
+                  "weight": 0.646107
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "links": [
+                {
+                  "target_doc_id": "kartina-maslom",
+                  "weight": 0.662778
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "in-media-vita",
+                  "weight": 0.669329
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "notes-from-underground",
+                  "weight": 0.697283
+                },
+                {
+                  "target_doc_id": "voina-i-mir-geterogennost-poznaniya",
+                  "weight": 0.65917
+                },
+                {
+                  "target_doc_id": "drawn-script",
+                  "weight": 0.646798
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "reshenie-stat-psikhologom",
+          "title": "Решение стать психологом",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2018-01-27",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.663697,
+            "total_weight_sum": 0.663697,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "links": [
+                {
+                  "target_doc_id": "psychologists-day",
+                  "weight": 0.663697
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "admission-to-psychology-faculty",
+          "title": "Поступление на факультет психологии",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-09-13",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.79211,
+            "intra_degree": 1,
+            "cross_weight_sum": 4.840154,
+            "total_weight_sum": 5.632264,
+            "bridge_ratio": 0.859362
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 0.286789
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.279681
+            },
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "share": 0.150178
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "share": 0.143063
+            },
+            {
+              "to_rubric_id": "rubric:personal-lesgaft-study-notes",
+              "share": 0.140288
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-lesgaft-study-notes",
+              "links": [
+                {
+                  "target_doc_id": "doroga-na-psikhfak",
+                  "weight": 0.679015
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "links": [
+                {
+                  "target_doc_id": "psychologists-day",
+                  "weight": 0.726886
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "links": [
+                {
+                  "target_doc_id": "kartina-maslom",
+                  "weight": 0.692449
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "predely-vozmozhnogo",
+                  "weight": 0.716476
+                },
+                {
+                  "target_doc_id": "psikhologiya-v-shkole",
+                  "weight": 0.671629
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "notes-from-underground",
+                  "weight": 0.682324
+                },
+                {
+                  "target_doc_id": "dark-side-of-good-people",
+                  "weight": 0.671376
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "u-kazhdogo-svoya-doroga-ili-o-etapah-i-motivah-odnogo-aspiranta",
+          "title": "У каждого своя дорога, или о этапах и мотивах одного аспиранта",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2022-08-30",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 1.478987,
+            "intra_degree": 2,
+            "cross_weight_sum": 4.168922,
+            "total_weight_sum": 5.647909,
+            "bridge_ratio": 0.738136
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.339527
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 0.333065
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "share": 0.164353
+            },
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "share": 0.163055
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "links": [
+                {
+                  "target_doc_id": "psychologists-day",
+                  "weight": 0.679764
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "links": [
+                {
+                  "target_doc_id": "kartina-maslom",
+                  "weight": 0.685173
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "psikhologiya-v-shkole",
+                  "weight": 0.696676
+                },
+                {
+                  "target_doc_id": "predely-vozmozhnogo",
+                  "weight": 0.691848
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "notes-from-underground",
+                  "weight": 0.713318
+                },
+                {
+                  "target_doc_id": "voina-i-mir-geterogennost-poznaniya",
+                  "weight": 0.702144
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "amplituda-strastei-chelovecheskikh",
+          "title": "Амплитуда страстей человеческих",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-key-milestones"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-02-03",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.686876,
+            "intra_degree": 1,
+            "cross_weight_sum": 1.337898,
+            "total_weight_sum": 2.024775,
+            "bridge_ratio": 0.660764
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "voina-i-mir-geterogennost-poznaniya",
+                  "weight": 0.691144
+                },
+                {
+                  "target_doc_id": "suum-cuique",
+                  "weight": 0.646755
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "edges": [],
+      "bridge_summary": [
+        {
+          "to_rubric_id": "rubric:shadow-and-light",
+          "share": 0.389372
+        },
+        {
+          "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+          "share": 0.21959
+        },
+        {
+          "to_rubric_id": "rubric:personal-psychology",
+          "share": 0.13193
+        },
+        {
+          "to_rubric_id": "rubric:personal-rhyme-poetry",
+          "share": 0.130022
+        },
+        {
+          "to_rubric_id": "rubric:orientation-toward-overcoming",
+          "share": 0.085816
+        },
+        {
+          "to_rubric_id": "rubric:personal-lesgaft-study-notes",
+          "share": 0.043269
+        }
+      ]
+    },
+    "rubric:personal-lesgaft-study-notes": {
+      "counts": {
+        "posts": 3
+      },
+      "core": [
+        {
+          "doc_id": "sposoben-li-chelovek-izmenitsya",
+          "title": "Способен ли человек измениться?",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-lesgaft-study-notes"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2017-05-01",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "svyaz-razumov",
+          "title": "Межличностные и межнейронные связи — как фактор проблематики и эволюции человека",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-lesgaft-study-notes"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2019-04-27",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "doroga-na-psikhfak",
+          "title": "Дорога на психфак",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-lesgaft-study-notes"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-03-06",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.679015,
+            "total_weight_sum": 0.679015,
+            "bridge_ratio": 1.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "doroga-na-psikhfak",
+          "title": "Дорога на психфак",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-lesgaft-study-notes"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-03-06",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.679015,
+            "total_weight_sum": 0.679015,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "admission-to-psychology-faculty",
+                  "weight": 0.679015
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "sposoben-li-chelovek-izmenitsya",
+          "title": "Способен ли человек измениться?",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-lesgaft-study-notes"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2017-05-01",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "svyaz-razumov",
+          "title": "Межличностные и межнейронные связи — как фактор проблематики и эволюции человека",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-lesgaft-study-notes"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2019-04-27",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        }
+      ],
+      "edges": [],
+      "bridge_summary": [
+        {
+          "to_rubric_id": "rubric:personal-key-milestones",
+          "share": 1.0
+        }
+      ]
+    },
+    "rubric:personal-psychology": {
+      "counts": {
+        "posts": 4
+      },
+      "core": [
+        {
+          "doc_id": "psychologists-day",
+          "title": "День психолога. 🧭",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-psychology"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-11-22",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 4.064765,
+            "total_weight_sum": 4.064765,
+            "bridge_ratio": 1.0
+          }
+        },
+        {
+          "doc_id": "troy-in-a-boat",
+          "title": "Троя. (in the boat) Не shit а' Я 🐕",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-psychology"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-01-26",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "perepisyvaya-chistovik",
+          "title": "Переписывая чистовик",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-psychology"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-02-09",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "svoboda-ot-smolyanova-chuchelka",
+          "title": "Свобода от смольянова чучелка",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-psychology"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-08-27",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "psychologists-day",
+          "title": "День психолога. 🧭",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-psychology"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-11-22",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 4.064765,
+            "total_weight_sum": 4.064765,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 0.50934
+            },
+            {
+              "to_rubric_id": "rubric:det-notes",
+              "share": 0.165482
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.163862
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 0.161316
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:det-notes",
+              "links": [
+                {
+                  "target_doc_id": "o-psikhoterapii-nauke-i-zhizni",
+                  "weight": 0.672644
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "admission-to-psychology-faculty",
+                  "weight": 0.726886
+                },
+                {
+                  "target_doc_id": "u-kazhdogo-svoya-doroga-ili-o-etapah-i-motivah-odnogo-aspiranta",
+                  "weight": 0.679764
+                },
+                {
+                  "target_doc_id": "reshenie-stat-psikhologom",
+                  "weight": 0.663697
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "psikhologiya-v-shkole",
+                  "weight": 0.655712
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "o-psikhologii",
+                  "weight": 0.666062
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "troy-in-a-boat",
+          "title": "Троя. (in the boat) Не shit а' Я 🐕",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-psychology"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-01-26",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "perepisyvaya-chistovik",
+          "title": "Переписывая чистовик",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-psychology"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-02-09",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "svoboda-ot-smolyanova-chuchelka",
+          "title": "Свобода от смольянова чучелка",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-psychology"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-08-27",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        }
+      ],
+      "edges": [],
+      "bridge_summary": [
+        {
+          "to_rubric_id": "rubric:personal-key-milestones",
+          "share": 0.50934
+        },
+        {
+          "to_rubric_id": "rubric:det-notes",
+          "share": 0.165482
+        },
+        {
+          "to_rubric_id": "rubric:shadow-and-light",
+          "share": 0.163862
+        },
+        {
+          "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+          "share": 0.161316
+        }
+      ]
+    },
+    "rubric:personal-rhyme-poetry": {
+      "counts": {
+        "posts": 4
+      },
+      "core": [
+        {
+          "doc_id": "nartsiss-pred-zerkalom-sidel",
+          "title": "Нарцисс пред зеркалом сидел",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-rhyme-poetry"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-11-03",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "kartina-maslom",
+          "title": "Картина маслом",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-rhyme-poetry"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2026-01-17",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 5.419452,
+            "total_weight_sum": 5.419452,
+            "bridge_ratio": 1.0
+          }
+        },
+        {
+          "doc_id": "sweet-coffee-time",
+          "title": "Sweet coffee time☕",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-rhyme-poetry"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-11-10",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "nostalgiya",
+          "title": "Ностальгия",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-rhyme-poetry"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-12-13",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "kartina-maslom",
+          "title": "Картина маслом",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-rhyme-poetry"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2026-01-17",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 5.419452,
+            "total_weight_sum": 5.419452,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 0.376496
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.373129
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 0.250376
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "admission-to-psychology-faculty",
+                  "weight": 0.692449
+                },
+                {
+                  "target_doc_id": "u-kazhdogo-svoya-doroga-ili-o-etapah-i-motivah-odnogo-aspiranta",
+                  "weight": 0.685173
+                },
+                {
+                  "target_doc_id": "liminalnaya-faza",
+                  "weight": 0.662778
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "predely-vozmozhnogo",
+                  "weight": 0.701908
+                },
+                {
+                  "target_doc_id": "missing-without-trace",
+                  "weight": 0.65499
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "notes-from-underground",
+                  "weight": 0.680938
+                },
+                {
+                  "target_doc_id": "moi-nakidannye-neirosetyu-narrativy",
+                  "weight": 0.680837
+                },
+                {
+                  "target_doc_id": "voina-i-mir-geterogennost-poznaniya",
+                  "weight": 0.66038
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "nartsiss-pred-zerkalom-sidel",
+          "title": "Нарцисс пред зеркалом сидел",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-rhyme-poetry"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-11-03",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "sweet-coffee-time",
+          "title": "Sweet coffee time☕",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-rhyme-poetry"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-11-10",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        },
+        {
+          "doc_id": "nostalgiya",
+          "title": "Ностальгия",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personal-rhyme-poetry"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-12-13",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        }
+      ],
+      "edges": [],
+      "bridge_summary": [
+        {
+          "to_rubric_id": "rubric:personal-key-milestones",
+          "share": 0.376496
+        },
+        {
+          "to_rubric_id": "rubric:shadow-and-light",
+          "share": 0.373129
+        },
+        {
+          "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+          "share": 0.250376
+        }
+      ]
+    },
+    "rubric:personality-types-and-existential-strategies": {
+      "counts": {
+        "posts": 8
+      },
+      "core": [
+        {
+          "doc_id": "in-media-vita",
+          "title": "In media vita",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-02-05",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.669329,
+            "total_weight_sum": 0.669329,
+            "bridge_ratio": 1.0
+          }
+        },
+        {
+          "doc_id": "pepelnyi-dozhd",
+          "title": "Пепельный дождь",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-06-09",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "missing-without-trace",
+          "title": "Пропавший без вести",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-11-21",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.65499,
+            "total_weight_sum": 0.65499,
+            "bridge_ratio": 1.0
+          }
+        },
+        {
+          "doc_id": "binarnyi-vzglyad-na-mir",
+          "title": "Бинарный взгляд на мир",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-05-22",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "emotional-amplitude-four-years-later",
+          "title": "Амплитуда эмоциональных переживаний: 4 года спустя",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2023-07-25",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "psikhologiya-v-shkole",
+          "title": "Психология в школе",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2023-03-24",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 3.943619,
+            "total_weight_sum": 3.943619,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 0.346967
+            },
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "share": 0.166272
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.164788
+            },
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "share": 0.161898
+            },
+            {
+              "to_rubric_id": "rubric:det-notes",
+              "share": 0.160076
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:det-notes",
+              "links": [
+                {
+                  "target_doc_id": "o-psikhoterapii-nauke-i-zhizni",
+                  "weight": 0.631279
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "links": [
+                {
+                  "target_doc_id": "strah-peremen",
+                  "weight": 0.638463
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "u-kazhdogo-svoya-doroga-ili-o-etapah-i-motivah-odnogo-aspiranta",
+                  "weight": 0.696676
+                },
+                {
+                  "target_doc_id": "admission-to-psychology-faculty",
+                  "weight": 0.671629
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "links": [
+                {
+                  "target_doc_id": "psychologists-day",
+                  "weight": 0.655712
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "dark-side-of-good-people",
+                  "weight": 0.64986
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "predely-vozmozhnogo",
+          "title": "Пределы возможного",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2022-05-25",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 3.38792,
+            "total_weight_sum": 3.38792,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 0.41569
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "share": 0.20718
+            },
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "share": 0.188638
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 0.188492
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "links": [
+                {
+                  "target_doc_id": "drugaya-olimpiada",
+                  "weight": 0.639092
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "admission-to-psychology-faculty",
+                  "weight": 0.716476
+                },
+                {
+                  "target_doc_id": "u-kazhdogo-svoya-doroga-ili-o-etapah-i-motivah-odnogo-aspiranta",
+                  "weight": 0.691848
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "links": [
+                {
+                  "target_doc_id": "kartina-maslom",
+                  "weight": 0.701908
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "moi-nakidannye-neirosetyu-narrativy",
+                  "weight": 0.638597
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "visual-diet-and-personal-growth",
+          "title": "Визуальная диета как условие личного развития",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2023-03-14",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 1.22138,
+            "total_weight_sum": 1.22138,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:shadow-and-light",
+              "links": [
+                {
+                  "target_doc_id": "drawn-script",
+                  "weight": 0.619521
+                },
+                {
+                  "target_doc_id": "proektsiya",
+                  "weight": 0.601859
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "in-media-vita",
+          "title": "In media vita",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-02-05",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.669329,
+            "total_weight_sum": 0.669329,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "liminalnaya-faza",
+                  "weight": 0.669329
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "missing-without-trace",
+          "title": "Пропавший без вести",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:personality-types-and-existential-strategies"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-11-21",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.65499,
+            "total_weight_sum": 0.65499,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "links": [
+                {
+                  "target_doc_id": "kartina-maslom",
+                  "weight": 0.65499
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "edges": [],
+      "bridge_summary": [
+        {
+          "to_rubric_id": "rubric:personal-key-milestones",
+          "share": 0.348879
+        },
+        {
+          "to_rubric_id": "rubric:shadow-and-light",
+          "share": 0.254103
+        },
+        {
+          "to_rubric_id": "rubric:personal-rhyme-poetry",
+          "share": 0.137376
+        },
+        {
+          "to_rubric_id": "rubric:orientation-toward-overcoming",
+          "share": 0.129343
+        },
+        {
+          "to_rubric_id": "rubric:personal-psychology",
+          "share": 0.066386
+        },
+        {
+          "to_rubric_id": "rubric:det-notes",
+          "share": 0.063913
+        }
+      ]
+    },
+    "rubric:shadow-and-light": {
+      "counts": {
+        "posts": 14
+      },
+      "core": [
+        {
+          "doc_id": "dark-side-of-good-people",
+          "title": "Почему хорошие люди совершают плохие поступки. Понимание темных сторон нашей души",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-08-06",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.354745,
+            "intra_degree": 2,
+            "cross_weight_sum": 2.607457,
+            "total_weight_sum": 3.962202,
+            "bridge_ratio": 0.658083
+          }
+        },
+        {
+          "doc_id": "drawn-script",
+          "title": "Нарисованный сценарий",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-04-07",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.352041,
+            "intra_degree": 2,
+            "cross_weight_sum": 1.924209,
+            "total_weight_sum": 3.27625,
+            "bridge_ratio": 0.58732
+          }
+        },
+        {
+          "doc_id": "notes-from-underground",
+          "title": "Записки из подполья",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-06-23",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.346874,
+            "intra_degree": 2,
+            "cross_weight_sum": 4.119035,
+            "total_weight_sum": 5.465909,
+            "bridge_ratio": 0.753586
+          }
+        },
+        {
+          "doc_id": "nasha-obshchaya-mifologema",
+          "title": "Наша общая мифологема",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2022-01-16",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.325521,
+            "intra_degree": 2,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 1.325521,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "lyubov-i-volya",
+          "title": "Любовь и воля",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2021-07-06",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 1.317141,
+            "intra_degree": 2,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 1.317141,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "suum-cuique",
+          "title": "Suum cuique",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2021-03-08",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 3.316082,
+            "total_weight_sum": 3.316082,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "share": 0.804964
+            },
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 0.195036
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "links": [
+                {
+                  "target_doc_id": "pustynya-besstatusnosti",
+                  "weight": 0.691121
+                },
+                {
+                  "target_doc_id": "strah-peremen",
+                  "weight": 0.666304
+                },
+                {
+                  "target_doc_id": "ustanovka-na-preodolenie-kharakter-telo-i-svoboda",
+                  "weight": 0.662016
+                },
+                {
+                  "target_doc_id": "suae-quisque-fortunae-faber",
+                  "weight": 0.649887
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "amplituda-strastei-chelovecheskikh",
+                  "weight": 0.646755
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "o-psikhologii",
+          "title": "О психологии",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2022-03-14",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 1.32702,
+            "total_weight_sum": 1.32702,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "share": 0.501923
+            },
+            {
+              "to_rubric_id": "rubric:det-notes",
+              "share": 0.498077
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:det-notes",
+              "links": [
+                {
+                  "target_doc_id": "o-psikhoterapii-nauke-i-zhizni",
+                  "weight": 0.660958
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-psychology",
+              "links": [
+                {
+                  "target_doc_id": "psychologists-day",
+                  "weight": 0.666062
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "moi-nakidannye-neirosetyu-narrativy",
+          "title": "Мои накиданные нейросетью нарративы",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2022-10-27",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 1.319433,
+            "total_weight_sum": 1.319433,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "share": 0.516007
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 0.483993
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "links": [
+                {
+                  "target_doc_id": "kartina-maslom",
+                  "weight": 0.680837
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "predely-vozmozhnogo",
+                  "weight": 0.638597
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "proektsiya",
+          "title": "Проекция",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2019-11-20",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.601859,
+            "total_weight_sum": 0.601859,
+            "bridge_ratio": 1.0
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "share": 1.0
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+              "links": [
+                {
+                  "target_doc_id": "visual-diet-and-personal-growth",
+                  "weight": 0.601859
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "doc_id": "voina-i-mir-geterogennost-poznaniya",
+          "title": "Война и мир: гетерогенность познания",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2020-04-15",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.67124,
+            "intra_degree": 1,
+            "cross_weight_sum": 3.384886,
+            "total_weight_sum": 4.056126,
+            "bridge_ratio": 0.834512
+          },
+          "bridge_to": [
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "share": 0.606359
+            },
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "share": 0.198544
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "share": 0.195097
+            }
+          ],
+          "top_links": [
+            {
+              "to_rubric_id": "rubric:orientation-toward-overcoming",
+              "links": [
+                {
+                  "target_doc_id": "pustynya-besstatusnosti",
+                  "weight": 0.672048
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-key-milestones",
+              "links": [
+                {
+                  "target_doc_id": "u-kazhdogo-svoya-doroga-ili-o-etapah-i-motivah-odnogo-aspiranta",
+                  "weight": 0.702144
+                },
+                {
+                  "target_doc_id": "amplituda-strastei-chelovecheskikh",
+                  "weight": 0.691144
+                },
+                {
+                  "target_doc_id": "liminalnaya-faza",
+                  "weight": 0.65917
+                }
+              ]
+            },
+            {
+              "to_rubric_id": "rubric:personal-rhyme-poetry",
+              "links": [
+                {
+                  "target_doc_id": "kartina-maslom",
+                  "weight": 0.66038
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "doc_id": "poznaniya-dobra-i-zla",
+          "title": "Познания добра и зла",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2019-03-01",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "nitsshe-i-vera-etap-ili-ulovka",
+          "title": "Ницше и вера: этап или уловка?",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "detai_site_blog"
+          ],
+          "date_ymd": "2018-08-13",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        },
+        {
+          "doc_id": "sila-i-svet-haus-i-mrak",
+          "title": "Сила и свет, хаус и мрак",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "rubric:shadow-and-light"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2026-01-17",
+          "role": "edge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridge_summary": [
+        {
+          "to_rubric_id": "rubric:orientation-toward-overcoming",
+          "share": 0.335841
+        },
+        {
+          "to_rubric_id": "rubric:personal-key-milestones",
+          "share": 0.271297
+        },
+        {
+          "to_rubric_id": "rubric:personal-rhyme-poetry",
+          "share": 0.134805
+        },
+        {
+          "to_rubric_id": "rubric:personality-types-and-existential-strategies",
+          "share": 0.124678
+        },
+        {
+          "to_rubric_id": "rubric:personal-psychology",
+          "share": 0.066946
+        },
+        {
+          "to_rubric_id": "rubric:det-notes",
+          "share": 0.066433
+        }
+      ]
+    },
+    "rubric:психология": {
+      "counts": {
+        "posts": 1
+      },
+      "core": [
+        {
+          "doc_id": "diplom-na-vsyakii-sluchai",
+          "title": "Диплом на всякий случай",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "психология"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-07-23",
+          "role": "core",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          }
+        }
+      ],
+      "bridges": [
+        {
+          "doc_id": "diplom-na-vsyakii-sluchai",
+          "title": "Диплом на всякий случай",
+          "seoLead": null,
+          "keywords_raw": null,
+          "rubric_ids": [
+            "психология"
+          ],
+          "channels": [
+            "personal_site_blog"
+          ],
+          "date_ymd": "2020-07-23",
+          "role": "bridge",
+          "evidence": {
+            "intra_weight_sum": 0.0,
+            "intra_degree": 0,
+            "cross_weight_sum": 0.0,
+            "total_weight_sum": 0.0,
+            "bridge_ratio": 0.0
+          },
+          "bridge_to": [],
+          "top_links": []
+        }
+      ],
+      "edges": [],
+      "bridge_summary": []
+    }
+  }
+}
