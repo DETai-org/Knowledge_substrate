@@ -1,118 +1,190 @@
 site_name: DET / DETai — Knowledge Core
-site_url: "https://detai-org.github.io/Knowledge_substrate/"
+site_url: https://detai-org.github.io/Knowledge_substrate/
 use_directory_urls: true
 docs_dir: knowledge_core/source_of_truth/docs
-
 theme:
   name: material
   custom_dir: knowledge_core/source_of_truth/assets/overrides
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.indexes
-    - toc.integrate
-    - search.suggest
-    - search.highlight
-
+  - navigation.tabs
+  - navigation.sections
+  - navigation.indexes
+  - toc.integrate
+  - search.suggest
+  - search.highlight
 plugins:
-  - search
-
+- search
 markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - pymdownx.superfences
-  - pymdownx.details
-
+- admonition
+- toc:
+    permalink: true
+- pymdownx.superfences
+- pymdownx.details
 extra_css:
-  - assets/stylesheets/extra.css
+- assets/stylesheets/extra.css
 extra_javascript:
-  - assets/javascripts/chatgpt-prompt.js
-  - assets/javascripts/chatgpt-button.js
-  - assets/javascripts/language-switcher.js
-
+- assets/javascripts/chatgpt-prompt.js
+- assets/javascripts/chatgpt-button.js
+- assets/javascripts/language-switcher.js
 exclude_docs: |
   publications/Research_Publication/**
   publications/STORYTELLING/**
   publications/blogs/**
+  ru/ecosystem/sortspec.md
 
 nav:
-  - Ecosystem:
-      - Обзор: ru/ecosystem/index.md
-      - DET:
-          - ru/ecosystem/DET/index.md
-          - Concept: ru/ecosystem/DET/Concept/index.md
-          - Миссия: ru/ecosystem/DET/mission.md
-          - Принципы: ru/ecosystem/DET/principles.md
-          - Глоссарий: ru/ecosystem/DET/glossary.md
-      - DETai:
-          - ru/ecosystem/DETai/index.md
-          - Экосистема: ru/ecosystem/DETai/ecosystem-map.md
-          - Projects:
-              - ru/ecosystem/DETai/Projects/index.md
-              - Эшелоны:
-                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-1/index.md
-                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-1/francis-galton.md
-                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-2/index.md
-                  - ru/ecosystem/DETai/Projects/Эшелоны/echelon-3/index.md
-          - Предпроекты:
-              - ru/ecosystem/DETai/Предпроекты/index.md
-              - Thought Canvas:
-                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/index.md
-                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/philosophical-foundation.md
-                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/storage-format.md
-                  - ru/ecosystem/DETai/Предпроекты/thought-canvas/technology.md
-      - "U.L.I.":
-          - ru/ecosystem/U.L.I/index.md
-          - Технические стандарты:
-              - ru/ecosystem/U.L.I/Технические_стандарты/index.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/versioning.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/policy-layer.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/mosaic-approach.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/telegram-bots-standard.md
-              - ru/ecosystem/U.L.I/Технические_стандарты/work-model/index.md
-          - Логика и инфраструктура:
-              - ru/ecosystem/U.L.I/Логика_и_инфраструктура/index.md
-              - ru/ecosystem/U.L.I/Логика_и_инфраструктура/repo-logic.md
-          - Философия и установки:
-              - ru/ecosystem/U.L.I/Философия_и_установки/index.md
-              - ru/ecosystem/U.L.I/Философия_и_установки/bee-roles.md
-          - Описание векторов:
-              - ru/ecosystem/U.L.I/Описание_векторов/vectors.md
-          - Хронология версий:
-              - ru/ecosystem/U.L.I/Хронология_версий/versions-chronology.md
-      - Infrastructure:
-          - ru/ecosystem/Infrastructure/README.md
-          - Knowledge Substrate:
-              - ru/ecosystem/Infrastructure/Knowledge_Substrate/README.md
-              - Knowledge Core: ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/index.md
-              - Explanation: ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/Explanation.md
-          - Infrastructure Principles: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
-      - Tools:
-          - ru/ecosystem/Tools/README.md
-          - ClickUp: ru/ecosystem/Tools/ClickUp/README.md
-          - Codex: ru/ecosystem/Tools/Codex/README.md
-          - GitHub: ru/ecosystem/Tools/GitHub/README.md
-          - Obsidian: ru/ecosystem/Tools/Obsidian/README.md
-          - Make Сценарии: "ru/ecosystem/Tools/Make_Сценарии/README.md"
-          - Боты Telegram: "ru/ecosystem/Tools/Боты_Telegram/README.md"
-      - Onboarding:
-          - ru/ecosystem/Onboarding/onboarding/index.md
-          - Pre-Onboarding:
-              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/uli.md
-              - ru/ecosystem/Onboarding/onboarding/00-pre-onboarding/how-to-read.md
-          - Презентации: "ru/ecosystem/Onboarding/Презентации/README.md"
-      - STORYTELLING:
-          - ru/ecosystem/STORYTELLING/index.md
-          - Категории: ru/ecosystem/STORYTELLING/Categories/README.md
-          - Рубрики: ru/ecosystem/STORYTELLING/Rubrics/README.md
-          - Циклы: ru/ecosystem/STORYTELLING/Cycles/README.md
-          - Психология: ru/ecosystem/STORYTELLING/Psychology/README.md
-  - Onboarding: ru/ecosystem/Onboarding/onboarding/index.md
-  - Публикации:
-      - ru/publications/index.md
-  - Русский: ru/index.md
-  - English: en/index.md
-  - Deutsch: de/index.md
-  - Suomi: fi/index.md
-  - 中文: cn/index.md
+- Ecosystem:
+  - ru/ecosystem/index.md
+  - DET Ecosystem Governance:
+    - ru/ecosystem/Governance/index.md
+    - Конституция: ru/ecosystem/Governance/Constitution.md
+    - Наша миссия: ru/ecosystem/Governance/Mission.md
+    - Наше видение: ru/ecosystem/Governance/Vision.md
+    - Наши ценности: ru/ecosystem/Governance/Values.md
+    - BHAG: ru/ecosystem/Governance/BHAG.md
+  - Management Layer:
+    - ru/ecosystem/Management_layer/index.md
+    - Philosophy:
+      - ru/ecosystem/Management_layer/1_Philosophy/index.md
+      - Принципы участия: ru/ecosystem/Management_layer/1_Philosophy/Participation_principles.md
+      - Product & Service Value Proposition: ru/ecosystem/Management_layer/1_Philosophy/product-and-service-value-proposition.md
+    - Architecture & Logic:
+      - ru/ecosystem/Management_layer/2_Architecture_and_Logic/index.md
+      - Архитектура распределённого управления: ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md
+      - Уровни работы: ru/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md
+      - ♻️ Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
+      - Документация как исполняемый интерфейс для агентов и людей: ru/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md
+    - Technical Standards:
+      - ru/ecosystem/Management_layer/3_Technical_Standards/index.md
+      - Versioning Standard: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
+    - Docs Ecosystem:
+      - ru/ecosystem/Management_layer/Docs-Ecosystem/index.md
+      - Политика metadata документов: ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md
+      - Функция документов: ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md
+      - Документационная архитектура экосистемы: ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md
+    - Strategic Development:
+      - ru/ecosystem/Management_layer/Strategic_Development/index.md
+    - 💰 Ресурсы экосистемы: ru/ecosystem/Management_layer/ecosystem-resource.md
+  - Dialectical Existential Therapy:
+    - ru/ecosystem/DET/index.md
+    - Concept Fact:
+      - ru/ecosystem/DET/Concept/index.md
+      - Concept DET: ru/ecosystem/DET/Concept/Concept-DET.md
+      - Тень и свет: ru/ecosystem/DET/Concept/shadow-and-light.md
+      - Типы личности: ru/ecosystem/DET/Concept/personality-types.md
+      - Установка на преодоление: ru/ecosystem/DET/Concept/overcoming.md
+    - 5 характеристик DET как культуры: ru/ecosystem/DET/5-characteristics-of-det-as-culture.md
+    - На стыке трёх миров: ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md
+  - Кластер DETai:
+    - ru/ecosystem/DETai/index.md
+    - Platform DETai:
+      - ru/ecosystem/DETai/Platform_DETai/index.md
+      - E1-Core:
+        - Francis Galton:
+          - ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md
+        - Psykhḗ AI:
+          - ru/ecosystem/DETai/Platform_DETai/E1-Core/🌀Psykhḗ AI/index.md
+      - E2-Brand:
+        - Telegram:
+          - ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
+          - UserControl — Модуль управления Telegram-процессами:
+            - ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
+        - '**Сайт** — Визитная карточка экосистемы DET/DETai':
+          - ru/ecosystem/DETai/Platform_DETai/E2-Brand/Сайт/index.md
+      - E3-Infra:
+        - gpt_promt_engine:
+          - ru/ecosystem/DETai/Platform_DETai/E3-Infra/gpt_promt_engine/index.md
+        - Проект Knowledge Substrate — Каноническая структура знаний и данных:
+          - ru/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md
+      - R&D:
+        - ru/ecosystem/DETai/Platform_DETai/R&D/index.md
+    - U.L.I. — Universal Learning Intelligence:
+      - ru/ecosystem/DETai/U.L.I/index.md
+      - 🐝 Philosophy:
+        - ru/ecosystem/DETai/U.L.I/1_Philosophy/index.md
+        - Роли пчел 👥: ru/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md
+        - Почему стандарты U.L.I.  важны: ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md
+      - 🕸️ Architecture & Logic:
+        - ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md
+        - Документационная архитектура U.L.I.: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md
+        - Методология проектного цикла DETai: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md
+      - ⚙️ Technical Standards:
+        - ru/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md
+        - Модель работы:
+          - ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md
+          - Epic Issue Contract: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md
+          - Sub-Issue (Work Package) Contract: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md
+          - Work Model: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md
+        - Telegram Bots Documentation:
+          - ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md
+          - 🛡️Policy Layer: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md
+          - Стандарт создания Telegram‑ботов: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md
+          - README для Telegram‑бота: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme.md
+        - Мозаический подход: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md
+        - README-template: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md
+        - Release Fixation Standard: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md
+        - ♻️ Процесс версионности в U.L.I.: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md
+    - 🪽 Логика эшелонов: ru/ecosystem/DETai/logic-of-echelons.md
+    - Таблица ресурсов: ru/ecosystem/DETai/table-of-resources.md
+  - Infrastructure:
+    - ru/ecosystem/Infrastructure/index.md
+    - 🧭 Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
+    - Сервера:
+      - ru/ecosystem/Infrastructure/🌍 Сервера/index.md
+    - Knowledge Substrate:
+      - ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
+  - Tools:
+    - ru/ecosystem/Tools/index.md
+    - GPT:
+      - ru/ecosystem/Tools/🤖 GPT/index.md
+      - Кастомные GPT (Кураторы):
+        - 01_GPT_META:
+          - 📜 Основные правила работы META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md
+          - 🧠 База знаний META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md
+          - 🎨 Стиль общения META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md
+    - 🎯 ClickUp:
+      - ru/ecosystem/Tools/🎯ClickUp/index.md
+      - Структура ClickUp и принципы организации: ru/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md
+    - Codex:
+      - ru/ecosystem/Tools/🧭Codex/index.md
+      - Форма взаимодействия с Codex: ru/ecosystem/Tools/🧭Codex/codex-interaction-format.md
+      - 📘 Манифест Codex: ru/ecosystem/Tools/🧭Codex/codex-manifest.md
+      - Create Epic Issue Release: ru/ecosystem/Tools/🧭Codex/create-epic-issue-release.md
+      - 🤝 Взаимодействие с Codex: ru/ecosystem/Tools/🧭Codex/interaction-with-codex.md
+      - Связь с GitHub: ru/ecosystem/Tools/🧭Codex/integration-with-github.md
+    - GitHub:
+      - ru/ecosystem/Tools/🛠GitHub/index.md
+      - Подключить репозиторий: ru/ecosystem/Tools/🛠GitHub/connect-repository.md
+      - GitHub App — Бот: ru/ecosystem/Tools/🛠GitHub/github-app-bot.md
+      - Git для дураков но умнеющих: ru/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md
+      - Как быстро вникнуть в проект: ru/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md
+      - Как убрать секреты из config: ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md
+      - Переход на Organization: ru/ecosystem/Tools/🛠GitHub/transition-to-organization.md
+    - 💮Linear:
+      - ru/ecosystem/Tools/Linear/index.md
+      - Архитектура автоматизации GitHub → Linear: ru/ecosystem/Tools/Linear/github-linear-automation-architecture.md
+    - VS Code:
+      - ru/ecosystem/Tools/VS_Code/index.md
+      - Установка и первичная настройка: ru/ecosystem/Tools/VS_Code/installation-and-initial-setup.md
+      - 'Git, GitHub и VS Code: рабочая модель с участием агента (Codex)': ru/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md
+    - Ⓜ️Make:
+      - ru/ecosystem/Tools/Ⓜ️Make/index.md
+    - Airtable:
+      - ru/ecosystem/Tools/📦 Airtable/index.md
+      - Airtable в экосистеме DETai: ru/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md
+      - ADR-2026-02-11 — Использование Airtable как временного working-context слоя для ChatGPT: ru/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md
+    - Telegram Bots:
+      - ru/ecosystem/Tools/🤖 Telegram_Bots/index.md
+    - FileZilla:
+      - ru/ecosystem/Tools/FileZilla/index.md
+      - Настройки FileZilla: ru/ecosystem/Tools/FileZilla/filezilla-settings.md
+  - Storytelling:
+    - ru/ecosystem/STORYTELLING/index.md
+  - Глоссарий: ru/ecosystem/glossary.md
+- Публикации:
+  - ru/publications/index.md
+- Русский: ru/index.md
+- English: en/index.md
+- Deutsch: de/index.md
+- Suomi: fi/index.md
+- 中文: cn/index.md
