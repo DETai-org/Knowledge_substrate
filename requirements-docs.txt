@@ -1,3 +1,4 @@
 mkdocs
 mkdocs-material
+mkdocs-callouts
 mkdocs-awesome-pages-plugin

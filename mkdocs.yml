@@ -13,6 +13,9 @@ theme:
   - search.suggest
   - search.highlight
 plugins:
+- callouts:
+    aliases: false
+    breakless_lists: true
 - search
 markdown_extensions:
 - admonition

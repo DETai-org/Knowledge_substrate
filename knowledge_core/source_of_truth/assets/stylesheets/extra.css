@@ -36,3 +36,40 @@
   font-weight: 500;
   letter-spacing: 0.01em;
 }
+
+/* Унификация callout/admonition стиля (Obsidian semantic parity) */
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0 0 0 0.22rem;
+  border-radius: 0.5rem;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 700;
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-left-color: #2e7d32;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: #ed6c02;
+}
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-left-color: #0288d1;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-left-color: #546e7a;
+}
+
+.md-typeset .admonition.quote,
+.md-typeset details.quote {
+  border-left-color: #6d4c41;
+}
