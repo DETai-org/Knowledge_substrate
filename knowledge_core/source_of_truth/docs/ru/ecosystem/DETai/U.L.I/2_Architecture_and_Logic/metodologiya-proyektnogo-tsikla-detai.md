@@ -79,10 +79,10 @@ ____
 
 ### Связанные документы
 
-- [[Versioning-in-U.L.I|♻️ Процесс версионности в U.L.I.]]
+- [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/)
     Описывает, как версии проектов (Epic Issue) формируются, завершаются и архивируются как завершённые этапы развития системы.
     
-- [[ecosystem-resource|💰 Ресурсы экосистемы]]
+- [💰 Ресурсы экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/ecosystem-resource/)
     Фиксирует базовые типы ресурсов, по которым оценивается вклад каждой версии проекта в развитие экосистемы.
 
 Методология объясняет **«как мы действуем»**,  а текущая стратегия — **«куда движемся»**.

@@ -31,4 +31,4 @@ ___
 Management Layer координирует развитие обоих кластеров, обеспечивая согласованность Governance с исполнением. 💫
 
 Кластер могут иметь локальное организационное и операционное управление (свой Management Layer), подчинённое общей логике. 
-См. файл: [[distributed_management_architecture|Архитектура распределённого управления]]
+См. файл: [Архитектура распределённого управления](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture/)

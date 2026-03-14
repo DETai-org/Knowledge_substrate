@@ -15,8 +15,8 @@ status: active
 
 Этот документ объясняет, как правила версионности применяются в среде разработки **U.L.I.**  Общая модель версий определяется на уровне экосистемы в документах:  
   
-- [[Versioning-process|♻️ Процесс версионности]]
-- [[Versioning-standard]]
+- [♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/)
+- [Versioning-standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/)
   
 Этот документ не устанавливает новых правил версионности. Он объясняет, как Versioning Standard применяется в среде U.L.I.
   
@@ -36,7 +36,7 @@ status: active
 ```
 Epic Issue → разработка → Git tag → GitHub Release
 ```
-Про этот цикл подробнее смотри в [[work-model|Work Model]]
+Про этот цикл подробнее смотри в [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/)
 
   
 ---  
@@ -55,7 +55,7 @@ ___
   
 ### В GitHub Release  
   
-там фиксируется техническое состояние системы. Подробнее см.  [[release-fixation-standard|Release Fixation Standard]]
+там фиксируется техническое состояние системы. Подробнее см.  [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/)
   
 ### В README проекта  
   
@@ -73,7 +73,7 @@ README отражает **смысловой статус проекта**, а R
   
 # Версии документов среды  
   
-Документы среды используют общий стандарт системы:  см. [[Versioning-process|♻️ Процесс версионности]]
+Документы среды используют общий стандарт системы:  см. [♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/)
 
 ---  
   

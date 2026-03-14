@@ -60,4 +60,4 @@ Epic Issue = завершена, когда завершены все её Sub-I
   
 ```
 
-Нужно следить, чтобы этот шаблон соответствовал той структуре, которая указана в стандарте [[release-fixation-standard|Release Fixation Standard]] 
+Нужно следить, чтобы этот шаблон соответствовал той структуре, которая указана в стандарте [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) 

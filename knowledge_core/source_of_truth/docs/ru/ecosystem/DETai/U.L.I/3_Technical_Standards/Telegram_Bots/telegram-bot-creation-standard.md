@@ -12,7 +12,7 @@ external_link:
 ---
 # Стандарт создания Telegram‑ботов
 
-Этот документ описывает, как строить **Telegram‑боты** в рамках экосистемы DETai с учётом философии **мозаичного подхода**.  (см. [[mosaic-approach|Мозаический подход]])
+Этот документ описывает, как строить **Telegram‑боты** в рамках экосистемы DETai с учётом философии **мозаичного подхода**.  (см. [Мозаический подход](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach/))
 
 > [!INFO]
 Мозаичный подход в контексте ботов означает, что бот должен состоять из независимых, легко заменяемых модулей и придерживаться чётких правил организации.
@@ -136,7 +136,7 @@ external_link:
 
 
 ➕
-см. [[telegram-bot-readme|README для Telegram‑бота]]
+см. [README для Telegram‑бота](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme/)
 
 ♻️ Метаданные
 Документ создан по стандарту **U.L.I. v1.0** и соответствует мозаичному подходу к разработке. Обновляйте этот раздел при изменении версии бота или стандарта.

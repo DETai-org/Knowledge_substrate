@@ -128,7 +128,7 @@ Distributed Management Architecture
 
 Не «или / или»,  а **«и / и»**. 
 
-*Принцип "И"  – это наша ценность доставшаяся нам от гуманистических психологов* (См. [[Values|Наши ценности]])
+*Принцип "И"  – это наша ценность доставшаяся нам от гуманистических психологов* (См. [Наши ценности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Governance/Values/))
 
 ---
 
