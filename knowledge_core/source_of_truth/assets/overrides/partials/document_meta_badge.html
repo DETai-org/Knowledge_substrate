@@ -1,0 +1,19 @@
+{#
+  Метаплашка документа.
+  Сейчас выводит descriptive.version и descriptive.date_ymd.
+  В будущем можно расширить дополнительными полями (например, classification.layer, status).
+#}
+{% set descriptive = page.meta.descriptive if page and page.meta and page.meta.descriptive else {} %}
+{% set document_version = descriptive.version if descriptive and descriptive.version else none %}
+{% set document_date = descriptive.date_ymd if descriptive and descriptive.date_ymd else none %}
+
+{% if document_version or document_date %}
+  <aside class="doc-meta-badge" aria-label="Метаданные документа">
+    {% if document_version %}
+      <div class="doc-meta-badge__item">♻️ Версия: {{ document_version }}</div>
+    {% endif %}
+    {% if document_date %}
+      <div class="doc-meta-badge__item">📆 {{ document_date }}</div>
+    {% endif %}
+  </aside>
+{% endif %}
