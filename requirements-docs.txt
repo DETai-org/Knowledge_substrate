@@ -2,3 +2,4 @@ mkdocs
 mkdocs-material
 mkdocs-callouts
 mkdocs-awesome-pages-plugin
+mkdocs-simple-hooks
