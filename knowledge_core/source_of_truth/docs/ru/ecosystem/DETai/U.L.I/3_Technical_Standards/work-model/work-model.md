@@ -8,7 +8,7 @@ v1.0
 
 > [!INFO]
 Формирование этого процесса идёт в связке с Промтом
-[[issue_subissue_assembler]]
+[issue_subissue_assembler](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/issue_subissue_assembler/)
 
 # Work Model
 (Epic Issue → Sub-Issue → PR)
@@ -113,7 +113,7 @@ Work Package считается **Done** только когда:
 2. выполнена финальная проверка,
 
 Пункт 2 — **финальная проверка** 🔎 :
-Используй промт: [[Промты для Codex#🔍 Финальная проверка перед merge| 🔍 Финальная проверка перед merge]]
+Используй промт: [🔍 Финальная проверка перед merge](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Промты для Codex/#🔍 Финальная проверка перед merge)
 
 То есть это не просто «глазом посмотрели», а: осмысленная проверка по критериям, с короткими заметками о результате.
 

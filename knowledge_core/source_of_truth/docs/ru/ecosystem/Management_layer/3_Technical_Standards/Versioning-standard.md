@@ -103,7 +103,7 @@ v3
   
 # Связанные документы  
   
-- [[Versioning-process|♻️ Процесс версионности]]
-- [[documentation-architecture|Документационная архитектура экосистемы]]  
-- [[Archive/document_metadata_policy|Политика метаданных документов]]
+- [♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/)
+- [Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)  
+- [Политика метаданных документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Archive/document_metadata_policy/)
 

@@ -23,11 +23,11 @@ U.L.I. является **environment-уровнем** внутри класте
 
 Типы документов, их базовые атрибуты и общая логика документационной системы задаются на уровне всей экосистемы DET / DETai в документе:
 
-**[[documentation-architecture|Документационная архитектура экосистемы]]**
+**[Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)**
 
 Дополнительно обязательные метаполя документов определяются в документе:
 
-**[[Archive/document_metadata_policy|Политика метаданных документов]]**
+**[Политика метаданных документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Archive/document_metadata_policy/)**
 
 Таким образом, данный документ не вводит новую общую систему типов документов, а показывает, **как экосистемная документационная архитектура применяется внутри среды U.L.I.**
 
@@ -113,7 +113,7 @@ U.L.I. является **environment-уровнем** внутри класте
 ## Как читать эту таблицу правильно
 
 Эта таблица **не заменяет** документ  
-**[[documentation-architecture|Документационная архитектура экосистемы]]**.
+**[Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)**.
 
 Она показывает не общую теорию типов документов, а **их локальное применение внутри U.L.I.**
 
@@ -185,11 +185,11 @@ ecosystem → cluster → environment → project
 Документы среды U.L.I. подчиняются общему процессу версионности, принятому в экосистеме.
 
 См. документ:
-[[Versioning-in-U.L.I|♻️ Процесс версионности]]
+[♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/)
 
 
 Также документы U.L.I. используют общую систему метаданных
 
 См. документ:
-**[[Archive/document_metadata_policy|Политика метаданных документов]]**
+**[Политика метаданных документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Archive/document_metadata_policy/)**
 

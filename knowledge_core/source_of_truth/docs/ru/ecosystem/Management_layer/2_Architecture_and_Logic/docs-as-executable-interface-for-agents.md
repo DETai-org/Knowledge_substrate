@@ -44,13 +44,13 @@ status: active
 Мы  думаем в логике v0.1, v0.2, стандартов, evolving docs. Это критично, потому что агент должен знать не просто “правило”, а **какая версия правила сейчас действующая**. OpenAI отдельно рекомендует pinning и evals при изменении моделей и промптов, а это та же логика: поведение системы должно быть воспроизводимым и управляемым по версиям. 
 
 Мировой тренд смотри в ([OpenAI Разработчики](https://developers.openai.com/api/docs/guides/prompt-engineering/?utm_source=chatgpt.com "Prompt engineering | OpenAI API")) 
-У нас смотри в [[Versioning-in-U.L.I|♻️ Процесс версионности в U.L.I.]]
+У нас смотри в [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/)
 
 **3. Таксономия и схемы**  
 Наши distinctions между document / concept / rubric / category / schema — это не бюрократия. Для агента это способ понять, что перед ним: policy, reference, workflow, draft, canonical definition, publication metadata или operational playbook. Чем яснее тип сущности, тем лучше agent routing и меньше галлюцинаций на уровне процесса. Это согласуется с общим движением в сторону structured outputs, tool schemas и context engineering.
 
 Мировой тренд смотри в ([OpenAI Разработчики](https://developers.openai.com/tracks/building-agents/?utm_source=chatgpt.com "Building agents"))
-У нас смотри в [[documentation-architecture-U-L-I|Документационная архитектура U.L.I.]]
+У нас смотри в [Документационная архитектура U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I/)
 
 **4. Документы как рамка действия**  
 Мы уже строим governance-документы, onboarding, процессы, роли, стандарты. Это почти буквально то, что OpenAI в руководстве по governed AI agents называет scaffolding и governance: агентам нужны рамки, в которых они действуют безопасно и масштабируемо. ([OpenAI Разработчики](https://developers.openai.com/cookbook/examples/partners/agentic_governance_guide/agentic_governance_cookbook/?utm_source=chatgpt.com "Building Governed AI Agents - A Practical Guide to ..."))
@@ -145,7 +145,7 @@ status: active
 То есть агент получает issue, подтягивает канонические документы, выполняет работу в разрешённых границах и возвращает результат в стандартизированном формате. Это прямое продолжение идеи agents + tools + structured outputs.
 
 Мировой тренд смотри в ([OpenAI](https://openai.com/index/new-tools-for-building-agents/?utm_source=chatgpt.com "New tools for building agents"))
-У нас смотри в [[work-model|Work Model]] 
+У нас смотри в [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) 
 
 *Т.е. уже есть стандарт о создании первых двух звеньев этой цепочки*
 
@@ -154,7 +154,7 @@ status: active
 С учётом того, что MCP стандартизирует доступ к данным и инструментам, наша knowledge substrate (база знаний) в будущем очень естественно превращается в **контекстный сервер для агентов**: агент не “помнит всё”, а запрашивает нужный канонический контекст из базы знаний. Это одна из самых сильных точек соприкосновения с текущим мышлением. 
 
 Мировой тренд смотри в ([anthropic.com](https://www.anthropic.com/news/model-context-protocol?utm_source=chatgpt.com "Introducing the Model Context Protocol"))
-У нас смотри в [[Ecosystem/Infrastructure/Knowledge_Substrate/index|index]] 
+У нас смотри в [index](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/Infrastructure/Knowledge_Substrate/) 
 
 # 🧪 Самая важная мысль
 

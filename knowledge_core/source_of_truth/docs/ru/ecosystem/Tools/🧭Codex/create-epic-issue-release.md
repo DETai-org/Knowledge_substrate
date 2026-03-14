@@ -5,7 +5,7 @@ date_ymd: 2026-03-02
 Промпт для создания архивного `Epic_issue-vX.Y.md` файла фиксации версии.  
 Опирается на `release-fixation-standard.md`, анализирует закрытые Sub-Issue и текущее состояние репозитория, синтезирует итог перехода состояния без превращения его в аудит кода.
 
-Связан с: [[release-fixation-standard|Release Fixation Standard]]
+Связан с: [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/)
 
 ---
 

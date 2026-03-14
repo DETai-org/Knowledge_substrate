@@ -5,7 +5,7 @@
 > Этот документ фиксирует **принципы и структуру нашего взаимодействия с Codex-агентом**, включая стиль задач, этапность, сопровождение через GPT и то, как сохраняется история пулов.
 
 
-Сейчас текущая взаимодействие хорошо описано в [[work-model|Work Model]]
+Сейчас текущая взаимодействие хорошо описано в [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/)
 
 
 

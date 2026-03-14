@@ -72,4 +72,4 @@ status: active
 
 ---
 
-Смотри также:  [[ecosystem-resource|💰 Ресурсы экосистемы]]
+Смотри также:  [💰 Ресурсы экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/ecosystem-resource/)

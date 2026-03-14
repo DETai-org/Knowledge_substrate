@@ -34,24 +34,24 @@ title: Политика metadata документов
 
 ## Оглавление
 
-- [[#Тип документа|Тип документа]]
-- [[#Поле title|Поле `title`]]
-- [[#Классификация|Классификация]]
-    - [[#Поле scope|Поле `scope`]]
-    - [[#Поле context|Поле `context`]]
-    - [[#Поле layer|Поле `layer`]]
-    - [[#Поле function|Поле `function`]]
-- [[#Описание|Описание]]
-    - [[#Поле id|Поле `id`]]
-    - [[#Поле version|Поле `version`]]
-    - [[#Поле status|Поле `status`]]
-    - [[#Поле date_ymd|Поле `date_ymd`]]
-- [[#Ссылки|Ссылки]]
-    - [[#Поле external_links|Поле `external_links`]]
-    - [[#Поле document_links|Поле `document_links`]]
-- [[#Пример метаблока|Пример метаблока]]
-- [[#Принцип иерархии документов|Принцип иерархии документов]]
-- [[#Принцип развития системы|Принцип развития системы]]
+- [Тип документа](#Тип документа)
+- [Поле `title`](#Поле title)
+- [Классификация](#Классификация)
+    - [Поле `scope`](#Поле scope)
+    - [Поле `context`](#Поле context)
+    - [Поле `layer`](#Поле layer)
+    - [Поле `function`](#Поле function)
+- [Описание](#Описание)
+    - [Поле `id`](#Поле id)
+    - [Поле `version`](#Поле version)
+    - [Поле `status`](#Поле status)
+    - [Поле `date_ymd`](#Поле date_ymd)
+- [Ссылки](#Ссылки)
+    - [Поле `external_links`](#Поле external_links)
+    - [Поле `document_links`](#Поле document_links)
+- [Пример метаблока](#Пример метаблока)
+- [Принцип иерархии документов](#Принцип иерархии документов)
+- [Принцип развития системы](#Принцип развития системы)
 
 ---
 
@@ -115,13 +115,13 @@ links:
 
 | Значение         | Краткое описание                                                      | Ссылка на спецификацию                                   |
 | :--------------- | :-------------------------------------------------------------------- | :------------------------------------------------------- |
-| `Governance`     | Уровень общих принципов и правил принятия решений во всей экосистеме. | [[Ecosystem/Governance/index\|DET Ecosystem Governance]] |
-| `ecosystem`      | Документ действует на всю экосистему DET в целом.                     | [[Ecosystem/index\|Ecosystem DET]]                       |
-| `DET_cluster`    | Документ действует в пределах кластера DET.                           | [[Ecosystem/DET/index\|Dialectical Existential Therapy]] |
-| `DETai_cluster`  | Документ действует в пределах кластера DETai.                         | [[Ecosystem/DETai/index\|Кластер DETai]]                 |
-| `Infrastructure` | Документ относится к инфраструктурным компонентам.                    | [[Ecosystem/Infrastructure/index\|Infrastructure]]       |
-| `Tools`          | Документ описывает инструменты экосистемы (например, ClickUp, Miro).  | [[Ecosystem/Tools/index\|Tools]]                         |
-| `STORYTELLING`   | Документ относится к внешним коммуникациям и контенту для сайта.      | [[Ecosystem/STORYTELLING/index\|Storytelling]]           |
+| `Governance`     | Уровень общих принципов и правил принятия решений во всей экосистеме. | [DET Ecosystem Governance](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/Governance/index/) |
+| `ecosystem`      | Документ действует на всю экосистему DET в целом.                     | [Ecosystem DET](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/index/)                       |
+| `DET_cluster`    | Документ действует в пределах кластера DET.                           | [Dialectical Existential Therapy](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/DET/index/) |
+| `DETai_cluster`  | Документ действует в пределах кластера DETai.                         | [Кластер DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/DETai/index/)                 |
+| `Infrastructure` | Документ относится к инфраструктурным компонентам.                    | [Infrastructure](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/Infrastructure/index/)       |
+| `Tools`          | Документ описывает инструменты экосистемы (например, ClickUp, Miro).  | [Tools](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/Tools/index/)                         |
+| `STORYTELLING`   | Документ относится к внешним коммуникациям и контенту для сайта.      | [Storytelling](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/STORYTELLING/index/)           |
 
 > *Информационная сноска:* Если краткого описания недостаточно, перейдите по ссылке в столбце «Ссылка на спецификацию», чтобы прочитать подробный документ о данном уровне системы.
 
@@ -223,7 +223,7 @@ ___
 `technical-standards` — слой технических стандартов, норм, спецификаций и правил. Документы этого слоя фиксируют договорённости и регламенты, которым необходимо следовать.
 
 
-📌 _Важно:_ Документы с функциями `guide`, `how-to` и `tutorial` относятся к **Onboarding** (каналу входа и обучения) и не входят в основные слои `layer`. Для таких документов в поле `layer` указывается значение `null`. Подробнее об архитектуре слоёв см. в  [[documentation-architecture|Документационная архитектура экосистемы]].
+📌 _Важно:_ Документы с функциями `guide`, `how-to` и `tutorial` относятся к **Onboarding** (каналу входа и обучения) и не входят в основные слои `layer`. Для таких документов в поле `layer` указывается значение `null`. Подробнее об архитектуре слоёв см. в  [Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/).
 
 ### Поле `function`
 
@@ -244,7 +244,7 @@ log-summary
 note
 ```
 
-> Полное описание этих функций приведено в документе: [[functions_of_documents|Функция документов]]
+> Полное описание этих функций приведено в документе: [Функция документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents/)
 
 ---
 

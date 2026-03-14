@@ -46,7 +46,7 @@ ___
 ## Как увязать это с ULI/ResourceTracker
 В рамках организации создается **GitHub App** (например, **Uli Bot**), который позволяет интегрировать различные репозитории и отслеживать метрики, события и задачи.
 
-(см. [[github-app-bot]]
+(см. [github-app-bot](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🛠GitHub/github-app-bot/)
 
 ### Планы на будущее:
 1. Создание организации `det-ai` и настройка всех интеграций.
