@@ -1,24 +1,15 @@
 ---
-
 title: ♻️ Процесс версионности
-
-date\_ymd: 2026-03-07
-
+date_ymd: 2026-03-07
 type: explanation
-
 layer: architecture-and-logic
-
 scope: ecosystem
-
 authority: governing
-
 context: management-layer
-
 version: v1
-
 status: active
-
 ---
+
 # ♻️ Процесс версионности  
   
 
@@ -85,7 +76,7 @@ v3
 Важно понимать: такие документы **не являются исполняемой системой**, но они задают правила и рамку для неё. Стандарты, политики и объяснения определяют, _как должны строиться проекты и репозитории_. 
 Иными словами, если версия проекта фиксирует состояние системы, то версия стандарта фиксирует состояние правил, по которым эта система строится.
 
-О том почему это важно смотри в [why-uli-standards-matter](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter/)
+О том почему это важно смотри в [Почему стандарты U.L.I. важны](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter/)
 
 
 ### Концептуальные материалы  
