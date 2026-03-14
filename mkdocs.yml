@@ -16,11 +16,16 @@ plugins:
 - callouts:
     aliases: false
     breakless_lists: true
+- mkdocs-simple-hooks:
+    hooks:
+      on_page_markdown: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:convert_obsidian_wikilinks
 - search
 markdown_extensions:
 - admonition
 - toc:
     permalink: true
+    slugify: !!python/name:markdown.extensions.toc.slugify_unicode
+    separator: "-"
 - pymdownx.superfences
 - pymdownx.details
 extra_css:
