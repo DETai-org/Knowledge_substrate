@@ -1,2 +1,0 @@
-# (Placeholder) Принципы / Principles
-TODO

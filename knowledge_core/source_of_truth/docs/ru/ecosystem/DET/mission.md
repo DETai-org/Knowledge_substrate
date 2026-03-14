@@ -1,2 +1,0 @@
-# (Placeholder) Миссия / Mission
-TODO
