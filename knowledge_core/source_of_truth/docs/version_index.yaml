@@ -1,0 +1,8 @@
+version_index:
+  - id: constitution
+    title: Конституция
+    versions:
+      - version: v2
+        commit: b792f149d96d186b38eaf20b9700dc8a2eb214ec
+        date_ymd: 2026-03-25
+        path: knowledge_core/source_of_truth/docs/ru/ecosystem/Governance/Constitution.md
