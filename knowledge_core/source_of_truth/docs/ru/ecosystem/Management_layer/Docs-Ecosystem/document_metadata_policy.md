@@ -115,13 +115,13 @@ links:
 
 | Значение         | Краткое описание                                                      | Ссылка на спецификацию                                   |
 | :--------------- | :-------------------------------------------------------------------- | :------------------------------------------------------- |
-| `Governance`     | Уровень общих принципов и правил принятия решений во всей экосистеме. | [DET Ecosystem Governance](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/Governance/index/) |
-| `ecosystem`      | Документ действует на всю экосистему DET в целом.                     | [Ecosystem DET](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/index/)                       |
-| `DET_cluster`    | Документ действует в пределах кластера DET.                           | [Dialectical Existential Therapy](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/DET/index/) |
-| `DETai_cluster`  | Документ действует в пределах кластера DETai.                         | [Кластер DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/DETai/index/)                 |
-| `Infrastructure` | Документ относится к инфраструктурным компонентам.                    | [Infrastructure](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/Infrastructure/index/)       |
-| `Tools`          | Документ описывает инструменты экосистемы (например, ClickUp, Miro).  | [Tools](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/Tools/index/)                         |
-| `STORYTELLING`   | Документ относится к внешним коммуникациям и контенту для сайта.      | [Storytelling](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Ecosystem/STORYTELLING/index/)           |
+| `Governance`     | Уровень общих принципов и правил принятия решений во всей экосистеме. | [DET Ecosystem Governance](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Governance/index/) |
+| `ecosystem`      | Документ действует на всю экосистему DET в целом.                     | [Ecosystem DET](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/index/)                       |
+| `DET_cluster`    | Документ действует в пределах кластера DET.                           | [Dialectical Existential Therapy](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/index/) |
+| `DETai_cluster`  | Документ действует в пределах кластера DETai.                         | [Кластер DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/index/)                 |
+| `Infrastructure` | Документ относится к инфраструктурным компонентам.                    | [Infrastructure](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/index/)       |
+| `Tools`          | Документ описывает инструменты экосистемы (например, ClickUp, Miro).  | [Tools](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/index/)                         |
+| `STORYTELLING`   | Документ относится к внешним коммуникациям и контенту для сайта.      | [Storytelling](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/STORYTELLING/index/)           |
 
 > *Информационная сноска:* Если краткого описания недостаточно, перейдите по ссылке в столбце «Ссылка на спецификацию», чтобы прочитать подробный документ о данном уровне системы.
 
