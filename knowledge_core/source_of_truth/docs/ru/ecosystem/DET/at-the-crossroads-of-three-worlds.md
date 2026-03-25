@@ -1,6 +1,29 @@
 ---
+type: ecosystem
+classification:
+  scope: DET_cluster
+  context: DET
+  layer: philosophy
+  function: philosophy
+descriptive:
+  id: at-the-crossroads-of-three-worlds
+  version: 1st-edition
+  status: active
+  date_ymd: 2026-02-19
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/at-the-crossroads-of-three-worlds/"
+    - type: ""
+      url: ""
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: На стыке трёх миров
-date_ymd: 2026-02-19
 ---
 
 

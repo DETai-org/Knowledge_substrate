@@ -1,6 +1,29 @@
 ---
+type: ecosystem
+classification:
+  scope: Governance
+  context: governance
+  layer: null
+  function: index
+descriptive:
+  id: governance-index
+  version: v1
+  status: active
+  date_ymd: 2026-02-18
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Governance/"
+    - type: ""
+      url: ""
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: DET Ecosystem Governance
-date_ymd: 2026-02-18
 ---
 # DET Ecosystem Governance
 
@@ -74,5 +97,4 @@ Governance и системно-организационный уровни ос�
 - **Vision**
 - **Values**
 - **BHAG**
-
 

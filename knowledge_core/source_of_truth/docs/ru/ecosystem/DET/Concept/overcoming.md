@@ -1,6 +1,29 @@
 ---
+type: ecosystem
+classification:
+  scope: DET_cluster
+  context: DET
+  layer: philosophy
+  function: philosophy
+descriptive:
+  id: overcoming
+  version: 1st-edition
+  status: active
+  date_ymd: 2026-02-19
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/Concept/overcoming/"
+    - type: ""
+      url: ""
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Установка на преодоление
-date_ymd: 2026-02-19
 ---
 # Установка на преодоление
 

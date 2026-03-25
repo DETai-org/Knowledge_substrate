@@ -1,6 +1,29 @@
 ---
+type: ecosystem
+classification:
+  scope: Governance
+  context: governance
+  layer: philosophy
+  function: principles
+descriptive:
+  id: values
+  version: v1
+  status: active
+  date_ymd: 2026-02-17
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Governance/Values/"
+    - type: ""
+      url: ""
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Ценности
-date_ymd: 2026-02-17
 ---
 # Наши ценности
 

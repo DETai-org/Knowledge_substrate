@@ -1,6 +1,29 @@
 ---
+type: ecosystem
+classification:
+  scope: DET_cluster
+  context: DET
+  layer: architecture-and-logic
+  function: explanation
+descriptive:
+  id: concept-det
+  version: v1
+  status: active
+  date_ymd: 2026-02-19
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/Concept/Concept-DET/"
+    - type: ""
+      url: ""
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Concept DET
-date_ymd: 2026-02-19
 ---
 # Concept DET
 
