@@ -74,41 +74,30 @@
   border-left-color: #6d4c41;
 }
 
-/* Плавающая метаплашка документа (version/date из front matter) */
-.doc-meta-badge {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 40;
+/* Встроенный блок метаданных документа внизу статьи */
+.doc-meta-footer {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  min-width: 11.5rem;
-  max-width: min(92vw, 18rem);
-  padding: 0.55rem 0.7rem;
+  gap: 0.35rem;
+  width: clamp(17.5rem, 36vw, 21.25rem);
+  max-width: 100%;
+  margin: 2.25rem 0 0 auto;
+  padding: 0.7rem 0.85rem;
   border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 16%, transparent);
-  border-radius: 0.55rem;
-  background: color-mix(in srgb, var(--md-default-bg-color) 90%, var(--md-default-fg-color) 10%);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(6px);
+  border-radius: 0.6rem;
+  background: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--md-default-fg-color) 6%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-.doc-meta-badge__item {
-  font-size: 0.76rem;
-  line-height: 1.3;
+.doc-meta-footer__item {
+  font-size: 0.75rem;
+  line-height: 1.35;
   color: var(--md-default-fg-color--light);
-  white-space: nowrap;
 }
 
-@media (max-width: 76.1875em) {
-  .doc-meta-badge {
-    right: 0.75rem;
-    bottom: 0.75rem;
-    min-width: 10.5rem;
-    padding: 0.5rem 0.65rem;
-  }
-
-  .doc-meta-badge__item {
-    font-size: 0.72rem;
+@media (max-width: 44.9375em) {
+  .doc-meta-footer {
+    width: 100%;
+    margin-top: 1.9rem;
   }
 }
