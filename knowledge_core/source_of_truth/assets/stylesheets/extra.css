@@ -75,28 +75,35 @@
 }
 
 /* Встроенный блок метаданных документа внизу статьи */
-.doc-meta-footer {
+.md-typeset .doc-meta-footer {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
   width: clamp(17.5rem, 36vw, 21.25rem);
   max-width: 100%;
-  margin: 2.25rem 0 0 auto;
-  padding: 0.7rem 0.85rem;
+  margin: 3.1rem 0 0 auto;
+  padding: 0.95rem 1rem 0.85rem;
   border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 16%, transparent);
-  border-radius: 0.6rem;
+  border-radius: 0.75rem;
   background: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--md-default-fg-color) 6%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
-.doc-meta-footer__item {
+.md-typeset .doc-meta-footer::before {
+  content: "";
+  display: block;
+  border-top: 1px solid color-mix(in srgb, var(--md-default-fg-color) 20%, transparent);
+  margin-bottom: 0.2rem;
+}
+
+.md-typeset .doc-meta-footer__item {
   font-size: 0.75rem;
   line-height: 1.35;
   color: var(--md-default-fg-color--light);
 }
 
 @media (max-width: 44.9375em) {
-  .doc-meta-footer {
+  .md-typeset .doc-meta-footer {
     width: 100%;
     margin-top: 1.9rem;
   }
