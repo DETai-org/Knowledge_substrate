@@ -120,7 +120,7 @@ links:
 | `DET_cluster`    | Документ действует в пределах кластера DET.                           | [Dialectical Existential Therapy](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/index/) |
 | `DETai_cluster`  | Документ действует в пределах кластера DETai.                         | [Кластер DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/index/)                 |
 | `Infrastructure` | Документ относится к инфраструктурным компонентам.                    | [Infrastructure](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/index/)       |
-| `Tools`          | Документ описывает инструменты экосистемы (например, ClickUp, Miro).  | [Tools](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/index/)                         |
+| `Tools`          | Документ описывает инструменты экосистемы (например, ClickUp, github ).  | [Tools](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/index/)                         |
 | `STORYTELLING`   | Документ относится к внешним коммуникациям и контенту для сайта.      | [Storytelling](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/STORYTELLING/index/)           |
 
 > *Информационная сноска:* Если краткого описания недостаточно, перейдите по ссылке в столбце «Ссылка на спецификацию», чтобы прочитать подробный документ о данном уровне системы.
