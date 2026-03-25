@@ -1,10 +1,33 @@
 ---
+type: ecosystem
+classification:
+  scope: Governance
+  context: governance
+  layer: technical-standards
+  function: policy
+descriptive:
+  id: constitution
+  version: v1
+  status: active
+  date_ymd: 2026-02-17
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Governance/Constitution/"
+    - type: ""
+      url: ""
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Конституция
 ---
 # Конституция
 DET Constitutional Governance & Delegation Charter 🏛
 
-**Версия 1.0**
 ___
 
 ## 1. Назначение документа

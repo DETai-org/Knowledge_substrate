@@ -1,8 +1,29 @@
 ---
+type: ecosystem
+classification:
+  scope: DET_cluster
+  context: DET
+  layer: null
+  function: index
+descriptive:
+  id: det-index
+  version: v1
+  status: active
+  date_ymd: 2026-02-18
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/"
+    - type: ""
+      url: ""
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Dialectical Existential Therapy
-date_ymd: 2026-02-18
-scope: cluster
-context: DET
 ---
 # Dialectical Existential Therapy
 

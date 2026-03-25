@@ -1,6 +1,29 @@
 ---
+type: ecosystem
+classification:
+  scope: DET_cluster
+  context: DET
+  layer: philosophy
+  function: principles
+descriptive:
+  id: 5-characteristics-of-det-as-culture
+  version: v1
+  status: active
+  date_ymd: 2026-02-19
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/5-characteristics-of-det-as-culture/"
+    - type: ""
+      url: ""
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: 5 характеристик DET как культуры
-date_ymd: 2026-02-19
 ---
 
 
