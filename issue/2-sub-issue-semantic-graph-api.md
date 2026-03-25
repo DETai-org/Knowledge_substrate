@@ -117,8 +117,8 @@ ____
   2. Зафиксировать строгий API-контракт `v1` с edge-case правилами и без разночтений между ingest/API/OpenAPI.
   3. Синхронизировать формулировки между implementation notes и каноничными документами.
 
-  → Policy: [Semantic Graph API v1 (инварианты и правила)](../knowledge_core/Policy/semantic-graph-api-v1.policy.md)
-  → Guide: [Semantic Graph API v1 (использование и примеры)](../knowledge_core/guides/semantic-graph-api-v1.guide.md)
+  → Policy: [Semantic Graph API v1 (инварианты и правила)](../docs/Policy/semantic-graph-api-v1.policy.md)
+  → Guide: [Semantic Graph API v1 (использование и примеры)](../docs/guides/semantic-graph-api-v1.guide.md)
 
 - [x] **Контракт и endpoint `GET /v1/graph`**
   1. Реализовать endpoint `GET /v1/graph`.
@@ -128,8 +128,8 @@ ____
   5. Зафиксировать детерминизм выборки: сортировка `nodes/edges`, правила пустого результата, `truncated=true`, policy по дублям рёбер.
   6. Держать 1–2 каноничных примера запроса/ответа в guide-документе (без дублирования в sub-issue).
 
-  → Policy: [Semantic Graph API v1 (инварианты и правила)](../knowledge_core/Policy/semantic-graph-api-v1.policy.md)
-  → Guide: [Semantic Graph API v1 (использование и примеры)](../knowledge_core/guides/semantic-graph-api-v1.guide.md)
+  → Policy: [Semantic Graph API v1 (инварианты и правила)](../docs/Policy/semantic-graph-api-v1.policy.md)
+  → Guide: [Semantic Graph API v1 (использование и примеры)](../docs/guides/semantic-graph-api-v1.guide.md)
 
 - [x] **API hardening: CORS, ошибки, логирование**
   1. Подключить CORS с allowlist черз env (`API_CORS_ORIGINS`), запрет wildcard по умолчанию.
@@ -170,8 +170,8 @@ Sub-Issue считается выполненным, когда:
 
 ## Document package
 - ADR: 
-- Guide: [Semantic Graph API v1 — Guide](../knowledge_core/guides/semantic-graph-api-v1.guide.md)
-- Policy: [Semantic Graph API v1 — Policy](../knowledge_core/Policy/semantic-graph-api-v1.policy.md)
+- Guide: [Semantic Graph API v1 — Guide](../docs/guides/semantic-graph-api-v1.guide.md)
+- Policy: [Semantic Graph API v1 — Policy](../docs/Policy/semantic-graph-api-v1.policy.md)
 
 ## 🚚 Delivery
 Branch: `codex/complete-current-sub-issue`

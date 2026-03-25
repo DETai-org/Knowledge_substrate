@@ -59,9 +59,9 @@ flowchart TD
   а также вспомогательные политики для последующей индексации и RAG.
 
 #### Навигация: Semantic Graph for Posts
-- ADR: [ADR-0001: Semantic Similarity Graph for Posts](ADR/adr-0001-semantic-similarity-graph-posts.md)
-- Guide: [Guide: Semantic Similarity Graph for Posts](guides/guide-semantic-graph-posts.md)
-- Policy: [Policy: Semantic Graph for Posts](Policy/policy-semantic-graph-posts.md)
+- ADR: [ADR-0001: Semantic Similarity Graph for Posts](../docs/ADR/adr-0001-semantic-similarity-graph-posts.md)
+- Guide: [Guide: Semantic Similarity Graph for Posts](../docs/guides/guide-semantic-graph-posts.md)
+- Policy: [Policy: Semantic Graph for Posts](../docs/Policy/policy-semantic-graph-posts.md)
 - Sub-Issue (Work Package): [1-sub-issue-semantic-graph-posts.md](../issue/1-sub-issue-semantic-graph-posts.md)
 - **Концептуальная задумка** размещена в базе знаний на MkDocs: [Semantic Similarity Graph — Explanation](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/Explanation/)
 
