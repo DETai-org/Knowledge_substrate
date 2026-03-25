@@ -1,0 +1,38 @@
+{#
+  Встроенный блок метаданных документа внизу статьи.
+  Выводит только descriptive.version, descriptive.date_ymd и descriptive.status.
+#}
+{% set descriptive = page.meta.descriptive if page and page.meta and page.meta.descriptive else {} %}
+{% set document_version = descriptive.version if descriptive and descriptive.version else none %}
+{% set document_date = descriptive.date_ymd if descriptive and descriptive.date_ymd else none %}
+{% set document_status = descriptive.status if descriptive and descriptive.status else none %}
+
+{% if document_version or document_date or document_status %}
+  <aside class="doc-meta-footer" aria-label="Метаданные документа">
+    {% if document_version %}
+      <div class="doc-meta-footer__item">♻️ version: {{ document_version }}</div>
+    {% endif %}
+
+    {% if document_date %}
+      <div class="doc-meta-footer__item">📅 date: {{ document_date }}</div>
+    {% endif %}
+
+    {% if document_status %}
+      {% set status_normalized = document_status|string|lower %}
+      {% if status_normalized == "active" %}
+        {% set status_label = "🟢 Active" %}
+      {% elif status_normalized == "draft" %}
+        {% set status_label = "🟡 Draft" %}
+      {% elif status_normalized == "review" %}
+        {% set status_label = "🟣 Review" %}
+      {% elif status_normalized == "deprecated" %}
+        {% set status_label = "🔴 Deprecated" %}
+      {% elif status_normalized == "archived" %}
+        {% set status_label = "⚫ Archived" %}
+      {% else %}
+        {% set status_label = "⚪ Unknown" %}
+      {% endif %}
+      <div class="doc-meta-footer__item">🚦 status: {{ status_label }}</div>
+    {% endif %}
+  </aside>
+{% endif %}
