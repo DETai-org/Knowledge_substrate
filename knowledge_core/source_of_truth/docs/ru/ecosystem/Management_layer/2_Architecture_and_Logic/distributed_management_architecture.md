@@ -1,14 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: ecosystem
+  context: management-layer
+  layer: architecture-and-logic
+  function: explanation
+descriptive:
+  id: management-layer-2-architecture-and-logic-distributed-management-architecture
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Архитектура распределённого управления
-date_ymd: 2026-02-18
-type: explanation
-layer: architecture-and-logic
-scope: ecosystem
-authority: governing
-context: management-layer
-version: v1
-status: active
 ---
+
 # Архитектура распределённого управления
 Distributed Management Architecture
 

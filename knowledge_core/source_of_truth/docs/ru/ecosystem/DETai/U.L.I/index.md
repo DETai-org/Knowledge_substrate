@@ -1,12 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: uli
+  layer: null
+  function: index
+descriptive:
+  id: detai-u-l-i-index
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: U.L.I. — Universal Learning Intelligence
-date_ymd: 2026-03-08
-scope: "scope: environment-U.L.I."
-context: DETai
-version: v1
-status: active
-external_link:
 ---
+
 # U.L.I. — Universal Learning Intelligence
 
 «Улей» 🐝 Это почти буквальное описание: **Collective Intelligence System** или **Human-AI Development Environment**

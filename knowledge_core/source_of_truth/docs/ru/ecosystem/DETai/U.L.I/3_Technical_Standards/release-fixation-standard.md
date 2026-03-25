@@ -1,10 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: uli
+  layer: technical-standards
+  function: standard
+descriptive:
+  id: detai-u-l-i-3-technical-standards-release-fixation-standard
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Release Fixation Standard
-type: standard
-date_ymd: 2026-03-02
-version: v1.0
-status: active
 ---
+
 # Release Fixation Standard
 
 _(стандарт фиксации перехода версии и архивирования состояния системы)_

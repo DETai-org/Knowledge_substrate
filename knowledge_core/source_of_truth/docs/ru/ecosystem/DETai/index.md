@@ -1,8 +1,24 @@
 ---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: management-layer
+  layer: null
+  function: index
+descriptive:
+  id: detai-index
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Кластер DETai
-date_ymd: 2026-02-19
-scope: cluster
-context: DETai
 ---
 
 # Кластер DETai

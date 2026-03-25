@@ -1,7 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: Infrastructure
+  context: servers
+  layer: null
+  function: principles
+descriptive:
+  id: infrastructure-infrastructure-principles
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/Infrastructure_Principles/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: 🧭 Принципы инфраструктуры
-date_ymd: 2026-03-07
 ---
+
 # 🧭 Принципы инфраструктуры
 
 

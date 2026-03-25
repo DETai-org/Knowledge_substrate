@@ -2,19 +2,25 @@
 type: ecosystem
 classification:
   scope: Tools
-  context: github
-  layer: architecture-and-logic
+  context: linear
+  layer: null
   function: explanation
 descriptive:
-  id: github-linear-automation-architecture
+  id: tools-linear-github-linear-automation-architecture
   version: v1
   status: active
-  date_ymd: 2026-03-09
+  date_ymd: 2026-03-25
 links:
   external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/Linear/github-linear-automation-architecture/"
   document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Архитектура автоматизации GitHub → Linear
 ---
+
 # Архитектура автоматизации GitHub → Linear
 ## 🧩 Архитектура: что с чем связано
 Данная автоматизация реализует создание задач в Linear непосредственно из процессов GitHub. Это позволяет связывать задачи с кодом, пулл-реквестами и автоматизировать рутину.

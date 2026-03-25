@@ -1,3 +1,25 @@
+---
+type: ecosystem
+classification:
+  scope: Tools
+  context: github
+  layer: null
+  function: explanation
+descriptive:
+  id: tools-github-git-for-dummies-but-getting-smarter
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: Git для дураков но умнеющих
+---
 
 # Git для дураков но умнеющих
 

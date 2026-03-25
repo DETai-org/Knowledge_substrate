@@ -1,7 +1,24 @@
 ---
+type: ecosystem
+classification:
+  scope: ecosystem
+  context: management-layer
+  layer: null
+  function: explanation
+descriptive:
+  id: management-layer-ecosystem-resource
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/ecosystem-resource/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: 💰 Ресурсы экосистемы
-date_ymd: 2026-03-02
-status: draft
 ---
 
 # 💰 Ресурсы экосистемы

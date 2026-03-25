@@ -1,8 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: management-layer
+  layer: null
+  function: explanation
+descriptive:
+  id: detai-logic-of-echelons
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/logic-of-echelons/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: 🪽 Логика эшелонов
-date_ymd: 2026-03-02
-status: active
 ---
+
 # 🪽 Логика эшелонов
 
 Эшелоны — это способ распределения проектов внутри экосистемы по их роли. Проще говоря, это уровни, которые показывают, какую функцию выполняет проект.

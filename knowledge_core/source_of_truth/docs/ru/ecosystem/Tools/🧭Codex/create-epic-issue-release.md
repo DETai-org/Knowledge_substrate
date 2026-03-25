@@ -1,7 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: Tools
+  context: codex
+  layer: null
+  function: explanation
+descriptive:
+  id: tools-codex-create-epic-issue-release
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🧭Codex/create-epic-issue-release/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Create Epic Issue Release
-date_ymd: 2026-03-02
 ---
+
 Промпт для создания архивного `Epic_issue-vX.Y.md` файла фиксации версии.  
 Опирается на `release-fixation-standard.md`, анализирует закрытые Sub-Issue и текущее состояние репозитория, синтезирует итог перехода состояния без превращения его в аудит кода.
 

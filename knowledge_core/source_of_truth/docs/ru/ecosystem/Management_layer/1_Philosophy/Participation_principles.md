@@ -1,13 +1,24 @@
 ---
+type: ecosystem
+classification:
+  scope: ecosystem
+  context: management-layer
+  layer: philosophy
+  function: principles
+descriptive:
+  id: management-layer-1-philosophy-participation-principles
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/1_Philosophy/Participation_principles/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Принципы включённости
-date_ymd: 2026-02-18
-type: principles
-layer: philosophy
-scope: ecosystem
-authority: governing
-context: management-layer
-version: 1st-edition
-status: active
 ---
 
 # Принципы участия

@@ -1,6 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: Tools
+  context: github
+  layer: null
+  function: how-to
+descriptive:
+  id: tools-github-how-to-quickly-understand-project
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Как быстро вникнуть в проект
 ---
+
 # Как быстро вникнуть в проект
 
 Как быстро вникнуть в проект напарника (через Агент + проверка на сервере)

@@ -1,13 +1,24 @@
 ---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: uli
+  layer: architecture-and-logic
+  function: explanation
+descriptive:
+  id: detai-u-l-i-2-architecture-and-logic-documentation-architecture-u-l-i
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Документационная архитектура U.L.I.
-date_ymd: 2026-03-07
-type: explanation
-layer: architecture-and-logic
-scope: environment
-authority: subordinate
-context: DETai
-version: v1
-status: active
 ---
 
 # Документационная архитектура U.L.I.

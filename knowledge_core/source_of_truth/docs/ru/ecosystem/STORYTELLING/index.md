@@ -1,3 +1,25 @@
+---
+type: ecosystem
+classification:
+  scope: STORYTELLING
+  context: website
+  layer: null
+  function: index
+descriptive:
+  id: storytelling-index
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/STORYTELLING/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: Storytelling
+---
 
 # Storytelling
 

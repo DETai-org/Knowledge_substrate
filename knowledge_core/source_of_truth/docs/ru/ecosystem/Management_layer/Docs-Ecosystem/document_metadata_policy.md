@@ -6,20 +6,15 @@ classification:
   layer: technical-standards
   function: policy
 descriptive:
-  id: document_metadata_policy
-  version: v2
+  id: management-layer-docs-ecosystem-document-metadata-policy
+  version: v1
   status: active
-  date_ymd: 2026-03-07
+  date_ymd: 2026-03-25
 links:
   external_links:
-    - type: ""
-      url: ""
-    - type: ""
-      url: ""
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
     - schema: ""
       link_type: ""
       linked_document_id: ""

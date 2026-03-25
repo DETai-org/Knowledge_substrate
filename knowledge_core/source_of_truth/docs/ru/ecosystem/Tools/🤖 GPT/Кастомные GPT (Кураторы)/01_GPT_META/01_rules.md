@@ -1,3 +1,25 @@
+---
+type: ecosystem
+classification:
+  scope: Tools
+  context: gpt
+  layer: technical-standards
+  function: explanation
+descriptive:
+  id: tools-gpt-кастомные-gpt-кураторы-01-gpt-meta-01-rules
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: 📜 Основные правила работы META
+---
 
 # 📜 Основные правила работы META
 

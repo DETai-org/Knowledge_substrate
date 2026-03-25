@@ -1,3 +1,26 @@
+---
+type: ecosystem
+classification:
+  scope: Tools
+  context: gpt
+  layer: null
+  function: explanation
+descriptive:
+  id: tools-gpt-кастомные-gpt-кураторы-01-gpt-meta-02-knowledge-base
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: 🧠 База знаний META
+---
+
 # 🧠 База знаний META
 
 Этот файл описывает основные принципы организации работы и материалов META.
