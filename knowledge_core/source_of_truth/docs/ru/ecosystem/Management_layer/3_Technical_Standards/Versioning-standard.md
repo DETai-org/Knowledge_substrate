@@ -1,23 +1,24 @@
 ---
-
-title: 
-
-date\_ymd: 2026-03-07
-
-type: standard
-
-layer: technical-standards
-
-scope: ecosystem
-
-authority: governing
-
-context: management-layer
-
-version: v1
-
-status: active
-
+type: ecosystem
+classification:
+  scope: ecosystem
+  context: management-layer
+  layer: technical-standards
+  function: standard
+descriptive:
+  id: management-layer-3-technical-standards-versioning-standard
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: date\_ymd: 2026-03-07
 ---
 
 # Versioning Standard  

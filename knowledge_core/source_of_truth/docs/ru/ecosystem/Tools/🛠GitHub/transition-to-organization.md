@@ -1,5 +1,25 @@
-
-
+---
+type: ecosystem
+classification:
+  scope: Tools
+  context: github
+  layer: null
+  function: explanation
+descriptive:
+  id: tools-github-transition-to-organization
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🛠GitHub/transition-to-organization/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: Переход на Organization
+---
 
 # Переход на Organization
 

@@ -1,3 +1,25 @@
+---
+type: ecosystem
+classification:
+  scope: Tools
+  context: codex
+  layer: null
+  function: explanation
+descriptive:
+  id: tools-codex-codex-interaction-format
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🧭Codex/codex-interaction-format/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: Форма взаимодействия с Codex
+---
 
 # Форма взаимодействия с Codex
 

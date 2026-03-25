@@ -1,7 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: Infrastructure
+  context: servers
+  layer: null
+  function: index
+descriptive:
+  id: infrastructure-index
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Infrastructure
-date_ymd: 2026-03-07
 ---
+
 # Infrastructure
 
 **Инфраструктура в экосистеме DET / DETai** — это **система взаимосвязей** между **проектами**, **данными** и **инструментами**, которая создаёт **структуру**, обеспечивающую эффективную работу всех частей экосистемы. Всё, что создаётся в системе, должно быть **согласовано и интегрировано** с этой структурой, чтобы обеспечить **взаимодополняющее** взаимодействие между её компонентами.

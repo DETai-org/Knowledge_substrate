@@ -1,13 +1,24 @@
 ---
+type: ecosystem
+classification:
+  scope: ecosystem
+  context: management-layer
+  layer: architecture-and-logic
+  function: explanation
+descriptive:
+  id: management-layer-2-architecture-and-logic-versioning-process
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: ♻️ Процесс версионности
-date_ymd: 2026-03-07
-type: explanation
-layer: architecture-and-logic
-scope: ecosystem
-authority: governing
-context: management-layer
-version: v1
-status: active
 ---
 
 # ♻️ Процесс версионности  

@@ -1,16 +1,25 @@
 ---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: uli
+  layer: technical-standards
+  function: explanation
+descriptive:
+  id: detai-u-l-i-3-technical-standards-telegram-bots-telegram-bot-readme
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: README для Telegram‑бота
-date_ymd: 2026-03-08
-type: standard
-layer: technical-standards
-scope: environment
-authority: advisory
-context: DETai
-version: v1
-status: active
-external_link: null
 ---
-
 
 # README для Telegram‑бота
 

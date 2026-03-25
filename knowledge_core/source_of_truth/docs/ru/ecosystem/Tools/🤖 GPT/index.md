@@ -1,3 +1,25 @@
+---
+type: ecosystem
+classification:
+  scope: Tools
+  context: gpt
+  layer: null
+  function: index
+descriptive:
+  id: tools-gpt-index
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🤖 GPT/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: GPT
+---
 
 # GPT
 

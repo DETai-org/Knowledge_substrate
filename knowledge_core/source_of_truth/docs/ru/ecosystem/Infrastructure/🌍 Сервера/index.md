@@ -1,3 +1,25 @@
+---
+type: ecosystem
+classification:
+  scope: Infrastructure
+  context: servers
+  layer: null
+  function: index
+descriptive:
+  id: infrastructure-сервера-index
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/🌍 Сервера/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: Сервера
+---
 
 # Сервера
 

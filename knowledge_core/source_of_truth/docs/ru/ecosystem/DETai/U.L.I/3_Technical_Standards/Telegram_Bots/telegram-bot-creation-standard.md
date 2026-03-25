@@ -1,15 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: uli
+  layer: technical-standards
+  function: standard
+descriptive:
+  id: detai-u-l-i-3-technical-standards-telegram-bots-telegram-bot-creation-standard
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Стандарт создания Telegram‑ботов
-date_ymd: 2026-03-08
-type: standard
-layer: technical-standards
-scope: environment
-authority: governing
-context: DETai
-version: v1
-status: active
-external_link:
 ---
+
 # Стандарт создания Telegram‑ботов
 
 Этот документ описывает, как строить **Telegram‑боты** в рамках экосистемы DETai с учётом философии **мозаичного подхода**.  (см. [Мозаический подход](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach/))

@@ -1,7 +1,25 @@
 ---
+type: ecosystem
+classification:
+  scope: Tools
+  context: filezilla
+  layer: null
+  function: explanation
+descriptive:
+  id: tools-filezilla-filezilla-settings
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/FileZilla/filezilla-settings/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Настройки FileZilla
 ---
-
 
 # Настройки FileZilla
 

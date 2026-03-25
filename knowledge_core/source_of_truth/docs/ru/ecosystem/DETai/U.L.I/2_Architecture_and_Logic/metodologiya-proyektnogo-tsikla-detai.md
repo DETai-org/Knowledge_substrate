@@ -1,8 +1,25 @@
 ---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: uli
+  layer: architecture-and-logic
+  function: explanation
+descriptive:
+  id: detai-u-l-i-2-architecture-and-logic-metodologiya-proyektnogo-tsikla-detai
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Методология проектного цикла DETai
-date_ymd: 2026-03-14
 ---
-
 
 # Методология проектного цикла DETai
 

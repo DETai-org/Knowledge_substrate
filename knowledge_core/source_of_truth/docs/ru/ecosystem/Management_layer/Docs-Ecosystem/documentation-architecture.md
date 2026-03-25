@@ -1,15 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: ecosystem
+  context: management-layer
+  layer: technical-standards
+  function: explanation
+descriptive:
+  id: management-layer-docs-ecosystem-documentation-architecture
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Документационная архитектура экосистемы
-date_ymd: 2026-03-07
-type: explanation
-layer: architecture-and-logic
-scope: ecosystem
-authority: governing
-context: management-layer
-version: v1
-status: active
-external_link:
 ---
+
 # Документационная архитектура экосистемы
 
 

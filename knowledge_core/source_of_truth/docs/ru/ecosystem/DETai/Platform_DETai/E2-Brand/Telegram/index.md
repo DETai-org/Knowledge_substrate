@@ -1,3 +1,26 @@
+---
+type: ecosystem
+classification:
+  scope: DETai_cluster
+  context: platform
+  layer: null
+  function: index
+descriptive:
+  id: detai-platform-detai-e2-brand-telegram-index
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: Telegram
+---
+
 # Telegram
 
 

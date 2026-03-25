@@ -1,7 +1,25 @@
 ---
+type: ecosystem
+classification:
+  scope: Tools
+  context: github
+  layer: null
+  function: how-to
+descriptive:
+  id: tools-github-how-to-remove-secrets-from-config
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Как убрать секреты из config
 ---
-
 
 # Как убрать секреты из config
 

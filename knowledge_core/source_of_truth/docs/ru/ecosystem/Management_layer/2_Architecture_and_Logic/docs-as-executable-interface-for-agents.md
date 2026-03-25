@@ -1,14 +1,26 @@
 ---
+type: ecosystem
+classification:
+  scope: ecosystem
+  context: management-layer
+  layer: architecture-and-logic
+  function: explanation
+descriptive:
+  id: management-layer-2-architecture-and-logic-docs-as-executable-interface-for-agents
+  version: v1
+  status: active
+  date_ymd: 2026-03-25
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Документация как исполняемый интерфейс для агентов и людей
-date_ymd: 2026-03-07
-type: explanation
-layer: architecture-and-logic
-scope: ecosystem
-authority: governing
-context: management-layer
-version: v1
-status: active
 ---
+
 # Документация как исполняемый интерфейс для агентов и людей
 
 Фраза **“docs as executable interface for agents”** — это не официальный стандарт с одним каноническим названием, а скорее **удачная формулировка для реально складывающегося паттерна**: документация перестаёт быть просто текстом “для людей” и становится **операционной средой для агентов** — источником правил, контекста, схем действий и ограничений. Это хорошо бьётся с тем, куда в 2025–2026 уехал рынок: OpenAI прямо продвигает agents, structured outputs, tool use и production best practices; Anthropic отдельно пишет уже не только про prompt engineering, а про **context engineering**; а MCP оформился как стандартный способ подключать данные, инструменты и workflow к AI-системам. ([OpenAI](https://openai.com/index/new-tools-for-building-agents/?utm_source=chatgpt.com "New tools for building agents"))
