@@ -75,9 +75,9 @@ API‑слоем и визуализацией.
 и доступны для последующей выдачи в API‑слое.
 
 ## Document package
-- ADR: [ADR-0001: Semantic Similarity Graph for Posts](../knowledge_core/ADR/adr-0001-semantic-similarity-graph-posts.md)
-- Guide: [Guide: Semantic Similarity Graph for Posts](../knowledge_core/guides/guide-semantic-graph-posts.md)
-- Policy: [Policy: Semantic Graph for Posts](../knowledge_core/Policy/policy-semantic-graph-posts.md)
+- ADR: [ADR-0001: Semantic Similarity Graph for Posts](../docs/ADR/adr-0001-semantic-similarity-graph-posts.md)
+- Guide: [Guide: Semantic Similarity Graph for Posts](../docs/guides/guide-semantic-graph-posts.md)
+- Policy: [Policy: Semantic Graph for Posts](../docs/Policy/policy-semantic-graph-posts.md)
 
 ## 🚚 Delivery
 Branch: `<branch-name>`
