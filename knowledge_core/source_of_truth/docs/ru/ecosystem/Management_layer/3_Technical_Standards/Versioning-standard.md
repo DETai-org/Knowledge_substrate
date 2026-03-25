@@ -18,7 +18,7 @@ links:
     - schema: ""
       link_type: ""
       linked_document_id: ""
-title: date\_ymd: 2026-03-07
+title: Versioning Standard
 ---
 
 # Versioning Standard  
@@ -107,4 +107,3 @@ v3
 - [♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/)
 - [Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)  
 - [Политика метаданных документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Archive/document_metadata_policy/)
-
