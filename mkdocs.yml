@@ -183,6 +183,8 @@ nav:
       - ADR-2026-02-11 — Использование Airtable как временного working-context слоя для ChatGPT: ru/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md
     - Telegram Bots:
       - ru/ecosystem/Tools/🤖 Telegram_Bots/index.md
+    - Obsidian:
+      - ru/ecosystem/Tools/Obsidian/index.md
     - FileZilla:
       - ru/ecosystem/Tools/FileZilla/index.md
       - Настройки FileZilla: ru/ecosystem/Tools/FileZilla/filezilla-settings.md
