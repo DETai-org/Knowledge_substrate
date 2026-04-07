@@ -256,6 +256,7 @@ sorting-spec: |
     Ⓜ️Make
     📦 Airtable
     🤖 Telegram_Bots
+    Obsidian
     FileZilla
 
 
