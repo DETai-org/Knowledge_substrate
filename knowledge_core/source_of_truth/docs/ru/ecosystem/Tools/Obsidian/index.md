@@ -1,3 +1,26 @@
+---
+type: ecosystem
+classification:
+  scope: Tools
+  context: obsidian
+  layer: null
+  function: index
+descriptive:
+  id: tools-obsidian-index
+  version: v1
+  status: active
+  date_ymd: 2026-04-07
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/Obsidian/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
+title: Obsidian
+---
+
 # Obsidian
 
 ## Назначение инструмента
@@ -36,4 +59,3 @@ Obsidian в нашей системе:
 
 - устанавливается в базовом варианте на онбординге;
 - используется дальше **по желанию**;
-
