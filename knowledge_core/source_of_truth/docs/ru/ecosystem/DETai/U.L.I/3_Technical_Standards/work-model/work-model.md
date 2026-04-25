@@ -21,10 +21,6 @@ links:
 title: Work Model
 ---
 
-Тип документа: ???
-v1.0
-
-
 > [!INFO]
 Формирование этого процесса идёт в связке с Промтом
 [issue_subissue_assembler](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/issue_subissue_assembler/)
