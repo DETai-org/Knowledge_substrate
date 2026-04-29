@@ -8,7 +8,7 @@ classification:
 descriptive:
   id: detai-u-l-i-2-architecture-and-logic-metodologiya-proyektnogo-tsikla-detai
   version: v1
-  status: active
+  status: draft
   date_ymd: 2026-03-25
 links:
   external_links:

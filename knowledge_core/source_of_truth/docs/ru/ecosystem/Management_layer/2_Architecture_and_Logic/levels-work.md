@@ -8,7 +8,7 @@ classification:
 descriptive:
   id: management-layer-2-architecture-and-logic-levels-work
   version: v1
-  status: active
+  status: draft
   date_ymd: 2026-03-25
 links:
   external_links:

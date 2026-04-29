@@ -8,7 +8,7 @@ classification:
 descriptive:
   id: detai-u-l-i-3-technical-standards-release-fixation-standard
   version: v1
-  status: active
+  status: draft
   date_ymd: 2026-03-25
 links:
   external_links:

@@ -8,7 +8,7 @@ classification:
 descriptive:
   id: management-layer-3-technical-standards-versioning-standard
   version: v1
-  status: active
+  status: draft
   date_ymd: 2026-03-25
 links:
   external_links:
