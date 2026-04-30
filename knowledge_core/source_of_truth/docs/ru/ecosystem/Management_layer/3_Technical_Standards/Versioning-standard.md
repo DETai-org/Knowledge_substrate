@@ -101,6 +101,7 @@ descriptive:
   version: v<N>
   status: active
   date_ymd: <дата публикации>
+  date_update: <дата загрузки в Knowledge Substrate>
 ```
 
 ## Связанные документы
