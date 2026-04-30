@@ -116,6 +116,7 @@ nav:
         - ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md
         - Документационная архитектура U.L.I.: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md
         - Методология проектного цикла DETai: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md
+        - Производственный цикл проектов и карта ролей вокруг него: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md
       - ⚙️ Technical Standards:
         - ru/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md
         - Модель работы:

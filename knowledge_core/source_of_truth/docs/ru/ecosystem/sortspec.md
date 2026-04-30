@@ -197,6 +197,7 @@ sorting-spec: |
     index
     documentation-architecture-U-L-I
     metodologiya-proyektnogo-tsikla-detai
+    production-cycle
 
 
   target-folder: Ecosystem/DETai/U.L.I/3_Technical_Standards
