@@ -7,9 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: detai-u-l-i-3-technical-standards-work-model-issue-contract
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-03-25
+  date_update: 2026-04-30
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -21,52 +22,72 @@ links:
 title: Epic Issue Contract
 ---
 
-Тип документа: Standard
-v1.0
-___
-
 # Epic Issue Contract
-_(контракт для GitHub Issue, когда оно используется как Epic Issue)_
+
+Тип документа: Standard
+v2.0
+
+(контракт верхнеуровневой задачи, когда она используется как Epic Issue)
 
 ## Purpose
 
-Этот документ задаёт правила заполнения и ведения **GitHub Issue**,
-когда Issue используется как **Epic Issue**.
+Этот документ задаёт правила заполнения и ведения Epic Issue как верхнеуровневого контейнера работы.
 
-Фокус контракта: как Epic Issue живёт в GitHub —
-структура, дисциплина обновлений, и формат разбиения на Work Packages
-внутри Epic Issue через “верхнеуровневые чекбоксы-группы”.
+Epic Issue описывает качественный переход проекта: целевое состояние, границы изменений, состав Sub-Issue / Work Packages и критерии завершения. Он не является списком случайных задач и не заменяет Pull Request, документацию или release summary.
 
----
+## Operational Placement
 
-## 1) Обязательная структура Epic Issue
+Текущая операционная реализация Epic Issue для проектов DETai ведётся в ClickUp.
+
+- У каждого проекта есть своя папка в ClickUp.
+- Внутри папки находится проектный лист, где ведутся Epic Issue и связанные с ними задачи.
+- Codex или другой агент должен использовать явно переданный пользователем ID / URL листа. Если лист не указан, агент должен запросить его у пользователя перед созданием Epic Issue.
+- Epic Issue оформляется как верхнеуровневая задача.
+- Sub-Issue / Work Package оформляется как подзадача или связанная задача.
+- После завершения Epic Issue история выполнения сохраняется в ClickUp через статус Complete.
+- Поля GitHub PR и GitHub Branch используются для связи ClickUp-задачи с кодовой реализацией:
+  - GitHub PR — URL-ссылка на Pull Request;
+  - GitHub Branch — текстовое имя ветки.
+
+GitHub остаётся code-facing delivery layer: там живут ветки, Pull Requests, review и история изменений кода. ClickUp является operational planning layer: там живут Epic Issue, Sub-Issue, статусы и история выполнения работы.
+
+## 1. Обязательная структура Epic Issue
 
 ### 1.1 Title
-Короткий навигационный заголовок, без реализации.
+
+Короткий навигационный заголовок, без деталей реализации.
 
 ### 1.2 Цель (целевое состояние) 🎯
-**Goal (Target State)** — это 1–3 абзаца, формулирующих **качественно новое состояние проекта или репозитория**, которое должно быть достигнуто после полного завершения данной Epic Issue.
-Речь идёт не о результате одного изменения и не о выполнении отдельных Work Packages, а о **системном сдвиге**: появлении нового уровня возможностей, устойчивости или структуры, который делает проект иным по сравнению с исходным состоянием.
+
+Goal (Target State) — это 1–3 абзаца, формулирующих качественно новое состояние проекта или репозитория, которое должно быть достигнуто после полного завершения данной Epic Issue.
 
 ### 1.3 Область изменений (рамка перехода)
 
-**Scope (Frame of Change)** — это описание **границ допустимых изменений** в рамках данной Epic Issue, фиксирующее, **какого рода качественный переход** относится к ней, а какого — нет.
-Поскольку в процессе работы в Epic Issue могут добавляться **🆕 Sub-Issues**, существует риск постепенно расширить её настолько, что она перестанет описывать единый осмысленный переход и превратится в совокупность разнородных улучшений поэтому задаем
+Scope (Frame of Change) — это описание границ допустимых изменений в рамках данной Epic Issue.
+
 Границы изменений:
-- **In scope:** …
-- **Out of scope:** …
 
-### 1.4 Критерии завершения (определение «сделано»)
-**Completion Criteria (Epic Issue DoD)** — это по сути названия Sub-Issue которые есть и совокупность которых = Epic Issue
-Epic Issue = завершена, когда завершены все её Sub-Issues, а что совокупность выполненных Sub-Issues
-привела к достижению целевого состояния, описанного в Goal 🎯.
+```text
+In scope: …
+Out of scope: …
+```
 
----
+### 1.4 Sub-Issue / Work Packages
 
+Epic Issue должна содержать или ссылаться на набор Sub-Issue / Work Packages, которые вместе приводят к достижению Goal.
+
+### 1.5 Критерии завершения (определение «сделано»)
+
+Epic Issue считается завершённой, когда:
+
+- завершены все обязательные Sub-Issue / Work Packages;
+- подтверждено, что их совокупный результат привёл к достижению целевого состояния, описанного в Goal;
+- заполнены операционные поля, связывающие работу с delivery layer, если они применимы: GitHub PR и GitHub Branch;
+- финальное состояние зафиксировано через Release Fixation, если работа меняет версию проекта или документации.
 
 ## Быстрый шаблон Epic Issue (Copy/Paste)
 
-```md
+```markdown
 # <Epic Issue Title>
 
 ## 🎯 Goal (Target State)
@@ -75,11 +96,22 @@ Epic Issue = завершена, когда завершены все её Sub-I
 **In scope:** …
 **Out of scope:** …
 
-## Sub-Issue
+## Sub-Issue / Work Packages
 - [ ] …
 - [ ] …
 - [ ] …
-  
+
+## Completion Criteria
+- [ ] All required Sub-Issue / Work Packages are complete
+- [ ] Goal is actually achieved
+- [ ] GitHub PR is linked where applicable
+- [ ] GitHub Branch is filled where applicable
 ```
 
-Нужно следить, чтобы этот шаблон соответствовал той структуре, которая указана в стандарте [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) 
+## Related Documents
+
+- [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/)
+- [Sub-Issue (Work Package) Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/)
+- [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/)
+- [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/)
+- Migration Notice: переход Epic Issue / Sub-Issue из Markdown-файлов репозитория в ClickUp

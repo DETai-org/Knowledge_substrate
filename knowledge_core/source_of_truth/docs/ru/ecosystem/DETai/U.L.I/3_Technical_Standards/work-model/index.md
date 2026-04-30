@@ -7,9 +7,10 @@ classification:
   function: index
 descriptive:
   id: detai-u-l-i-3-technical-standards-work-model-index
-  version: v1
-  status: draft
+  version: v2
+  status: active
   date_ymd: 2026-03-25
+  date_update: 2026-04-30
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -23,35 +24,29 @@ title: Модель работы
 
 # Модель работы
 
-**🧬 work-model это - стандарт процесса: Epic Issue → Sub-Issue → PR → document layer**
+Модель работы — это навигационный вход в связку документов Work Model.
 
-Модель работы для сложной, составной и воспроизводимой деятельности
+Эта папка описывает, как проектное намерение превращается в организованную работу и поставляемый результат. В производственном цикле DETai Work Model относится прежде всего к этапам:
 
-Модель задаёт способ организации значимой работы: от постановки цели через Epic Issue, к разбиению на Sub-Issue, и далее — к появлению устойчивых артефактов (решений, правил, документов, кода).
+- 2. Work Model Planning — разбиение проектного намерения на Epic Issue, Sub-Issue / Work Package и проверяемые результаты;
+- 3. Implementation — выполнение Work Package через branch, PR, checklist и финальную проверку.
 
-## Она используется
+## Состав связки
 
-Эта модель применяется для работы, в которой важно сохранять и передавать контекст изменений между шагами: чтобы и человек, и агент понимали, из какого состояния система вышла и к какому состоянию она переходит, а каждый следующий Epic Issue логично вытекал из предыдущего, а не был изолированной правкой.
+- [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — explanation-документ: объясняет общий процесс Epic Issue -> Sub-Issue / Work Package -> PR.
+- [Epic Issue Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract/) — стандарт / контракт верхнеуровневого блока смысла и навигации.
+- [Sub-Issue / Work Package Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/) — стандарт / контракт поставляемого фрагмента работы.
 
-Большая цель, зафиксированная на уровне Epic Issue, дробится на Sub-Issue, каждая из которых завершает отдельный фрагмент смысла и результата. Завершение Epic Issue означает не просто окончание набора действий, а **переход проекта / репозитория  в новое состояние**. В зависимости от контекста это может означать:
-Выход проекта или продукта на **новую версию**,
+## Как читать эту папку
 
+Сначала смотри Work Model, чтобы понять общую логику процесса.
 
-Таким образом, модель используется там, где работа имеет составную структуру и требует фиксации достигнутого уровня. Она применяется в ситуациях, когда важно не только выполнить действия, но и сохранить результат в виде устойчивых артефактов: решений, документов, правил или изменений в системе. В этом смысле модель напрямую связана с:
-—  [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/)
+Затем используй контракты, когда нужно оформить конкретный Epic Issue или Work Package по обязательной структуре.
 
-Не все изменения в проекте или репозитории требуют разворачивания полной структуры Epic Issue → Sub-Issue. Для простых правок допускается упрощённый режим работы; при необходимости любой крупный Pull Request может быть включён в эту модель как отдельный Sub-Issue без перегрузки процесса.
+Для Codex эта связка задаёт рабочий контекст выполнения: агент действует внутри Epic Issue / Work Package, удерживает scope и доводит результат до проверяемого состояния.
 
----
+## Связанные документы
 
-## Роль исполнителя
-
-В рамках этой модели **Codex выступает как исполнитель**:
-он работает по заданной структуре Epic Issue и Sub-Issue, выполняет чекбоксы и реализует шаги.
-
-См. [Промты для Codex](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Промты для Codex/)
-
----
-
-Этот стандарт описывают один процесс:
-**как сложная работа превращается в структурированный результат системы**.
+- [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — карта полного цикла от идеи до документационной обвязки.
+- [Методология проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет, как мысль становится проектным намерением.
+- [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/) — объясняет, как версии проектов формируются и завершаются.

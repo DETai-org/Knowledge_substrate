@@ -7,9 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: detai-u-l-i-3-technical-standards-work-model-work-model
-  version: v1
-  status: draft
+  version: v2
+  status: active
   date_ymd: 2026-03-25
+  date_update: 2026-04-30
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -21,140 +22,126 @@ links:
 title: Work Model
 ---
 
-> [!INFO]
-Формирование этого процесса идёт в связке с Промтом
-[issue_subissue_assembler](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/issue_subissue_assembler/)
-
 # Work Model
-(Epic Issue → Sub-Issue → PR)
+
+Work Model — это процессная модель выполнения работы в DETai: от Epic Issue и Work Package до branch, PR и проверяемого результата.
+
+В производственном цикле проектов она покрывает этапы:
+
+- 2. Work Model Planning — проектное намерение переводится в структуру работы;
+- 3. Implementation — Work Package выполняется через branch, PR, checklist и финальную проверку.
+
+Конкретные обязательные поля, шаблоны и форматы оформления живут в контрактах: [Epic Issue Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract/) и [Sub-Issue / Work Package Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/).
 
 ## Purpose
 
-Этот документ определяет переиспользуемый, нативный для платформы GitHub способ структурирования и выполнения работы с помощью чёткой иерархии:
-**Epic Issue → Sub-Issue  (Work Package) → Tasks (Checklist) → Implementation Steps**.
+Этот документ определяет переиспользуемый способ структурирования и выполнения работы через иерархию:
 
-Он спроектирован так, чтобы быть:
-
-- переиспользуемым для любого типа проектов (код, контент, инфраструктура, исследования, продукт),
-- совместимым с GitHub Issues / Sub-issues / Projects,
-- agent-friendly (хорошо работает с coding agents, которые работают в branch и создают PR).
-
----
-## Core Entities (Canonical Vocabulary)
-
-### 1) Epic Issue
-
-**GitHub entity:** Issue (родительский уровня Epic Issue)
-**Role:** верхнеуровневое направление / крупный поток работ / цель масштаба версии
-**Отвечает на вопросы:** _Зачем мы это делаем? Каково целевое состояние?_
-**Содержит:** scope (область работ), стратегию, список sub-issues, критерии завершения.
-
-**Ключевой принцип:** Epic Issue — это про **навигацию**, а не про реализацию. В целом Epic Issue описывает **вектор развития репозитория**: по завершении Epic Issue через выполнение её Sub-Issues система переходит в новое функциональное состояние —  что можно рассматривать как завершения версии проекта/репо
-
----
-
-### 2) Sub-Issue (Work Package)
-
-**GitHub entity:** Sub-issue внутри Epic Issue
-**Role:** единица поставки результата, которая заканчивается **мерджем одного PR**
-**Отвечает на вопрос:** _Что именно мы поставляем в этом срезе работы?_
-**Содержит:** 3–7 acceptance tasks (пункты checklist), ссылки на поставку (branch/PR), заметки о проверке.
-
-**Жёсткое правило:** **1 Work Package = 1 branch = 1 PR**.
-По завершению Sub-Issue добавляется новый слой возможностей или завершается важный этап архитектуры.
-
----
-
-### 3) Task (Checklist Item)
-
-Альтернативное название Acceptance Task
-**GitHub entity:** checkbox-пункт внутри Sub-Issue
-**Role:** _проверяемый результат_ (а не расплывчатая активность)
-**Отвечает на вопрос:** _Какой конкретный результат должен появиться?_
-
-**Рекомендация:** 3–7 tasks на один Sub-Issue (≈ **5 ± 2**).
-
----
-
-### 4) Implementation Steps (Subtasks)
-
-_(шаги реализации / подзадачи)_
-
-**GitHub entity:** нумерованный список (алгоритм) внутри Acceptance Task
-**Role:** конкретные технические действия, из которых складывается выполнение task
-**Отвечает на вопрос:** _Как именно реализовать этот task?_
-
-Это самый нижний уровень иерархии — здесь уже нет целей, только действия
-
-```markdown
-Пример: Если Task "Подготовить ingest-модуль для чтения publish-постов из SoT"
-то список внутри:
-
-1. В коде ingest‑модуля пройти по путям SoT с постами.
-2. Прочитать markdown‑файлы, извлечь frontmatter и body.
-3. Отфильтровать записи: `type == "post"` и `administrative.status == "publish"`.
-4. Построить `text_for_embedding`: очистить markdown, собрать `title + "\n\n" + body_text`.
-5. Сформироваь объект поста с полями: id, title, authors, date\_ymd, channels, taxonomy (rubric\_ids, category\_ids), text\_for\_embedding.
-6. Подготовить README/описание, если требуется контрактом.
+```text
+Epic Issue -> Sub-Issue / Work Package -> Acceptance Tasks -> Implementation Steps -> PR
 ```
 
-**📝 Важно:**
-Subtask — это не цель, а **операция**.  Acceptance Task — это **результат**, Subtask — это **шаг к результату**.
-Иерархии в уровнях Epic Issue / Sub-Issue / Task / Subtask
+Модель спроектирована так, чтобы быть:
 
-#### Size & Cognitive Load
-_(размер и когнитивная нагрузка)_
+- переиспользуемой для кода, контента, инфраструктуры, исследований и документации;
+- совместимой с ClickUp-задачами, GitHub branches и Pull Requests;
+- понятной для людей и agent-friendly для Codex;
+- достаточно строгой, чтобы сохранять контекст между шагами, но не превращать каждую простую правку в тяжёлый процесс.
 
-- **Work Package:** 3–7 Acceptance Tasks (идеально ~5)
-- **Acceptance Task:** 3–10  (достаточно подробно, чтобы выполнить; не превращать в техдок на 10 страниц)
+## Operational Placement (операционное размещение)
 
-Почему именно так ⁉️
+Текущая операционная реализация Work Model для проектов DETai ведётся в ClickUp.
 
-Здесь используется принцип из психологии памяти: **7 ± 2 элемента** — классический предел удержания в рабочей памяти.
-Но так как: модель новая, задачи часто сложные, в процессе участвуют и люди, и агенты,
-мы используем более консервативный стандарт:  **5 ± 2**, то есть **3–7 Acceptance Tasks** на один Work Package. Это даёт устойчивое внимание и удобный объём для одного PR.
+У каждого проекта есть своя папка. Внутри папки используется проектный лист, где:
 
----
+- Epic Issue оформляется как верхнеуровневая задача;
+- Sub-Issue / Work Package оформляется как подзадача или связанная задача;
+- статус Complete сохраняет историю завершённых Epic Issue и Sub-Issue;
+- поле GitHub PR хранит URL-ссылку на соответствующий Pull Request;
+- поле GitHub Branch хранит название ветки как текстовое значение;
+- даты создания, статусы, комментарии и связи задач сохраняют операционный след выполнения.
 
-## Delivery Rules (What “Done” Means)
+Если Codex или другой агент создаёт новую проектную структуру в ClickUp, он должен использовать лист, явно указанный пользователем, либо запросить у пользователя ссылку или ID нужного листа. Нельзя создавать Epic Issue в произвольном листе только по догадке.
 
-_(правила завершения — что считается “сделано”)_
+GitHub остаётся местом code-facing поставки результата: branch, PR, merge history, Git tag и GitHub Release. Поэтому Work Package должен сохранять ссылки на branch и PR даже тогда, когда сама структура Epic Issue / Sub-Issue ведётся в ClickUp.
 
-### Definition of Done (Work Package)
+## 1. Epic Issue
 
-Work Package считается **Done** только когда:
+Role: верхнеуровневый блок смысла, направление или цель масштаба версии.
 
-1. все Acceptance Tasks отмечены (checklist полностью закрыт),
-2. выполнена финальная проверка,
+Epic Issue отвечает на вопросы: зачем мы это делаем, какое состояние должно измениться, какой переход считается успешным.
 
-Пункт 2 — **финальная проверка** 🔎 :
-Используй промт: [🔍 Финальная проверка перед merge](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Промты для Codex/#🔍 Финальная проверка перед merge)
+Epic Issue содержит:
 
-То есть это не просто «глазом посмотрели», а: осмысленная проверка по критериям, с короткими заметками о результате.
+- смысловой контекст;
+- scope работ;
+- список Sub-Issue / Work Package;
+- критерии завершения;
+- ссылки на связанные документы, решения и результаты.
 
-И только после этого PR смержен в main branch и Sub-Issue выполнен ✅
+## 2. Sub-Issue / Work Package
 
----
-### Epic Issue Completion
+Role: единица поставки результата, которая обычно завершается одним PR.
 
-Завершение Epic Issue может идти неделями в него могут добавляться новые Sub-Issue
+Базовое правило:
 
-Epic Issue считается **Done** ✅, когда:
-- все Sub-Issue завершены (смёрджены), и
-- выполнены критерии завершения на уровне Epic Issue.
-
-"При добавлении новых Sub-Issue убедись, что они соответствуют целям и остаются в рамках этой Epic Issue. Если новые Sub-Issue выходят за рамки, необходимо создать новую Epic Issue, чтобы сохранить чёткую навигацию
-
----
-
-### Linking Rules 🚚
-
-Пишем в конце  Sub-Issue
-
-ПРИМЕР
-```markdown
-PR: Добавить ShareSection и синхронизировать фильтры блога personal-site [#310](https://github.com/DETai-org/sites/pull/310)
-
-Ветка: codex/migrate-blog-card-format-to-personal-site-fgdmet
+```text
+1 Work Package = 1 branch = 1 PR
 ```
 
+Work Package содержит:
+
+- локальный контекст;
+- ожидаемый результат;
+- 3–7 Acceptance Tasks;
+- ссылки на branch и PR;
+- заметки о проверке.
+
+## 3. Acceptance Task
+
+Role: проверяемый результат, а не расплывчатая активность.
+
+Хорошая Acceptance Task формулируется как результат, который можно проверить: компонент добавлен, документ обновлён, тест проходит, сценарий работает, решение зафиксировано, ссылка или контракт приведены в соответствие.
+
+## 4. Implementation Steps
+
+Implementation Steps — это нижний уровень модели: последовательность действий, которую можно выполнить, проверить и связать с результатом.
+
+Acceptance Task — это результат. Implementation Step — это шаг к результату.
+
+## 5. Delivery Rules
+
+Work Package считается завершённым только когда:
+
+- все Acceptance Tasks выполнены;
+- результат проверен;
+- PR готов к merge или уже смержен;
+- ссылки на PR, branch и важные решения зафиксированы в Sub-Issue.
+
+## 6. Epic Issue Completion
+
+Epic Issue считается завершённым, когда:
+
+- все входящие Work Package закрыты или явно сняты с текущего scope;
+- критерии завершения Epic Issue выполнены;
+- итоговый результат зафиксирован;
+- понятно, требуется ли Release Fixation и обновление документационной обвязки.
+
+## 7. Связь с другими этапами
+
+Work Model получает вход из этапа Project Intent: уже есть смысловой вектор, который можно структурировать.
+
+После выполнения Work Package результат передаётся дальше:
+
+- в Release Fixation, если нужно зафиксировать новую версию проекта или репозитория;
+- в Documentation Architecture, если результат требует обновления Knowledge Substrate, стандартов, описаний, tutorials или onboarding.
+
+Таким образом, Work Model является рабочим мостом между намерением и поставкой результата.
+
+## Связанные документы
+
+- [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — индекс связки Work Model.
+- [Epic Issue Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract/) — контракт Epic Issue.
+- [Sub-Issue / Work Package Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/) — контракт Work Package.
+- [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — карта полного цикла DETai.
+- [Методология проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет переход от мысли к проектному намерению.
