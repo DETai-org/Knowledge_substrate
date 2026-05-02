@@ -107,87 +107,110 @@
 
 ## Тип документа: Quote (Цитата)
 
+`quote` — документная сущность для цитаты как знания и публикационного артефакта. Source of truth для цитаты — не изображение, а **Quote Record**: текст, языковые версии, атрибуция, источник, цитирование, таксономия и ссылки на производные assets.
+
+Минимальный контракт v0.1:
+
 ```json
 {
   "type": "quote",
+  "id": "q_1",
   "administrative": {
-    "id": "unique_identifier",
-    "authors": ["Anton"],
-    "date_ymd": "2026-01-01",
-    "status": "publish"
+    "curated_by": "Anton",
+    "date_ymd": "2026-05-02",
+    "status": "draft"
   },
-  "descriptive": {
-    "title": "Quote title (optional)",
-    "content": "Quoted text",
-    "taxonomy": {
-      "rubric_ids": [],
-      "category_ids": ["category:unusual-style"],
-      "keyword_ids": [],
-      "keywords_raw": ["Motivation"]
-    },
-    "attribution": {
-      "quote_author": "Author of the book (e.g., Nietzsche)"
-    },
-    "source": {
-      "source_type": "book",
-      "title": "Book title",
-      "author": "Book author (can duplicate quote_author or differ if editor/collection)",
-      "pages": "27",
-      "chapter": "optional",
-      "publisher": "optional",
-      "year": "optional",
-      "isbn": "optional"
+  "texts": {
+    "ru": {
+      "text": "Любовь и труд неразделимы: мы любим то, над чем трудимся, и трудимся над тем, что любим.",
+      "highlight": "Любовь и труд неразделимы",
+      "status": "source"
     }
   },
-  "structural": {
-    "external_links": [
-      { "type": "website", "url": "link_to_quote_on_website" },
-      { "type": "telegram", "url": "link_to_quote_in_telegram" }
-    ],
-    "document_links": [
-      {
-        "linked_document_id": "linked_document_id",
-        "link_type": "citation"
+  "taxonomy": {
+    "rubric_ids": [],
+    "category_ids": [],
+    "keyword_ids": [],
+    "keywords_raw": []
+  },
+  "attribution": {
+    "quote_author": {
+      "canonical_name": "Erich Fromm",
+      "display_name": {
+        "ru": "Эрих Фромм",
+        "en": "Erich Fromm"
       }
-    ]
-  }
+    },
+    "source": {
+      "title_original": "The Art of Loving: An Enquiry into the Nature of Love",
+      "title_display": {
+        "ru": "Искусство любить",
+        "en": "The Art of Loving"
+      },
+      "original_language": "en",
+      "original_year": 1956,
+      "publisher": "Harper & Brothers",
+      "page": "56"
+    },
+    "source_display": {
+      "ru": "Эрих Фромм, Искусство любить, с. 56"
+    },
+    "citations": {
+      "apa": "Fromm, E. (1956). The art of loving: An enquiry into the nature of love. Harper & Brothers.",
+      "gost": ""
+    }
+  },
+  "assets": {
+    "ru": {
+      "white": {
+        "webp": "content/quotes/assets/q_1/ru/white.webp",
+        "png": "content/quotes/assets/q_1/ru/white.png"
+      }
+    }
+  },
+  "external_links": [
+    {
+      "type": "website",
+      "url": ""
+    },
+    {
+      "type": "telegram",
+      "url": ""
+    }
+  ]
 }
 ```
 
+### Пояснение по полям Quote Record
+
+- `texts` хранит языковые версии цитаты. Поддерживаемые языки экосистемы: `ru`, `en`, `de`, `fi`, `cn`. Поле `highlight` используется для визуального акцента в рендерах; исходная mini-markup-разметка не является главным форматом хранения.
+- `taxonomy` оставляет место для controlled vocabularies (`rubric_ids`, `category_ids`, `keyword_ids`) и свободных ключевых слов (`keywords_raw`) на период модерации.
+- `attribution.quote_author` отвечает на вопрос, кому принадлежит мысль.
+- `attribution.source` описывает первоисточник или используемое издание. `original_year` хранится отдельным числовым полем, чтобы сайт и будущая база могли фильтровать и сортировать цитаты по году без парсинга APA/GOST-строк.
+- `attribution.source_display` хранит короткую человекочитаемую подпись для конкретного языка.
+- `attribution.citations.apa` и `attribution.citations.gost` хранят готовые строки для научного цитирования и экспорта.
+- `assets` хранит ссылки на производные изображения по языку и шаблону. Изображения являются derivative-артефактами, а не source of truth.
+- `external_links` хранит ссылки на опубликованные представления цитаты: сайт, Telegram и другие каналы.
+
+### Зоны ответственности репозиториев
+
+- `DETai-org/Knowledge_substrate` хранит каноническую схему, правила и политику типа документа `quote`.
+- `DETai-org/psychology-in-quotes` является operational-хранилищем Quote Records и производных media assets для проекта «Психология в цитатах».
+- `DETai-org/sites` / `detai-site` потребляет Quote Records и assets для публичной страницы/галереи «Психология в цитатах», фильтров, языкового переключения и будущего поиска.
+
+Репозиторий проекта цитат: https://github.com/DETai-org/psychology-in-quotes
+
 ---
+## Примечание: автор мысли и источник
 
-## 🔥 Маленький хак, который тебе пригодится очень скоро
+`attribution.quote_author` и `attribution.source` описывают разные уровни атрибуции:
 
-Поле `source.author` и `attribution.quote_author` могут быть одинаковыми, но не всегда.
+- `attribution.quote_author` = кому принадлежит мысль или цитируемый фрагмент;
+- `attribution.source` = откуда цитата взята как публикационный источник: книга, статья, лекция, сборник или другое издание.
 
-Пример когда отличаются:
+В простом случае автор мысли и автор книги совпадают. В сложных случаях (сборник, учебник, лекция в чужой редакции) дополнительные сведения об авторах, редакторах, переводчиках и издании могут добавляться в `attribution.source` или в будущий нормализованный слой `sources`.
 
-- цитата взята из **сборника** (составитель один, автор цитаты другой)
-    
-- цитата из **учебника**, где автор книги и автор цитируемого фрагмента могут не совпадать
-    
-
-Поэтому:
-
-- `attribution.quote_author` = _кому принадлежит мысль_
-    
-- `source.*` = _откуда ты её взял физически (книга/статья/лекция)_
-    
-
-⚙️ Маленькая ремарка (чтобы было “по-взрослому”)
-
-Ты заметишь: раньше `document_links` и `external_links` были вынесены “глобально”.  
-В варианте B я положил их **внутрь документа** (так обычно удобнее для API/рендера/агентов).
-
-Если ты хочешь сохранить _и_ “глобальные таблицы связей” (для графа/БД) — это легко делается так:
-
-- внутри документа храним `structural.*` как “удобное представление”
-    
-- а в базе/индексах — отдельные таблицы `document_links` / `external_links` как нормализованные сущности
-    
-
-Скажи одно слово: **“нормализация”** — и я дам тебе финальный “двухслойный” канон (document view + db view), чтобы было идеально под рост и граф.
-
+Текущий v0.1 Quote Record намеренно хранит компактный Document View. При росте проекта он может быть разложен в DB View: `documents`, `quote_attribution`, `sources`, `quote_sources`, `external_links`, `document_links`.
 _____
 
 # 📋 Памятка сущностей `publications_schema` (каноническая)
@@ -384,24 +407,35 @@ Digital Object Identifier — постоянный идентификатор н
 
 ---
 
-## **source.title**
+## **source.title_original**
 
-Название источника (например, книги или статьи).
-
----
-
-## **source.author**
-
-Автор источника как произведения (может совпадать или не совпадать с `quote_author`).
+Оригинальное название источника на языке первоисточника.
 
 ---
 
-## **source.pages**
+## **source.title_display**
 
-Номер или диапазон страниц источника, где находится цитата (например, `27` или `27–29`).
+Локализованные названия источника для отображения в интерфейсах и карточках цитат.
 
 ---
 
+## **source.original_language**
+
+Язык первоисточника в коде экосистемы или совместимом языковом коде.
+
+---
+
+## **source.original_year**
+
+Год оригинального издания как числовое поле. Используется для фильтрации, сортировки и исторического контекста без парсинга строк APA/GOST.
+
+---
+
+## **source.page**
+
+Страница или локатор источника, где находится цитата (например, `27`, `27–29`, `section 3`).
+
+---
 ## **structural**
 
 Блок метаданных, описывающий связи документа с другими документами и внешними платформами.
