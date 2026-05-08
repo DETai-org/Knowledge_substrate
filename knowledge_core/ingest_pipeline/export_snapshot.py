@@ -67,11 +67,11 @@ def load_documents(conn: psycopg2.extensions.connection, *, model: str) -> dict[
             COALESCE(dm.channels, ARRAY[]::text[]) AS channels,
             dm.date_ymd::text,
             COALESCE(dm.meta->>'title', NULL) AS title
-        FROM knowledge.doc_metadata dm
+        FROM publications.doc_metadata dm
         WHERE dm.doc_type = 'post'
           AND EXISTS (
               SELECT 1
-              FROM knowledge.embeddings e
+              FROM publications.embeddings e
               WHERE e.doc_id = dm.doc_id
                 AND e.doc_type = 'post'
                 AND e.model = %s
@@ -210,18 +210,18 @@ def detect_edge_profile(
 ) -> tuple[str, int, float, int] | None:
     query = """
         SELECT se.method, se.k, se.min_similarity, COUNT(*) AS edges_count
-        FROM knowledge.similarity_edges se
+        FROM publications.similarity_edges se
         WHERE se.doc_type = %s
           AND EXISTS (
               SELECT 1
-              FROM knowledge.embeddings es
+              FROM publications.embeddings es
               WHERE es.doc_id = se.source_id
                 AND es.doc_type = %s
                 AND es.model = %s
           )
           AND EXISTS (
               SELECT 1
-              FROM knowledge.embeddings et
+              FROM publications.embeddings et
               WHERE et.doc_id = se.target_id
                 AND et.doc_type = %s
                 AND et.model = %s
@@ -248,21 +248,21 @@ def load_edges(
 ) -> list[Edge]:
     query = """
         SELECT se.source_id::text, se.target_id::text, se.weight, se.method, se.k, se.min_similarity, se.doc_type
-        FROM knowledge.similarity_edges se
+        FROM publications.similarity_edges se
         WHERE se.doc_type = 'post'
           AND se.method = %s
           AND se.k = %s
           AND se.min_similarity = %s
           AND EXISTS (
               SELECT 1
-              FROM knowledge.embeddings es
+              FROM publications.embeddings es
               WHERE es.doc_id = se.source_id
                 AND es.doc_type = 'post'
                 AND es.model = %s
           )
           AND EXISTS (
               SELECT 1
-              FROM knowledge.embeddings et
+              FROM publications.embeddings et
               WHERE et.doc_id = se.target_id
                 AND et.doc_type = 'post'
                 AND et.model = %s

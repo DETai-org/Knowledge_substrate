@@ -61,9 +61,9 @@ python -m knowledge_core.ingest_pipeline.run_ingest --stage all
 
 Поддерживаемые этапы:
 
-- `--stage metadata` — materialization `knowledge.doc_metadata`
-- `--stage embeddings` — расчёт/upsert `knowledge.embeddings`
-- `--stage edges` — построение/upsert `knowledge.similarity_edges`
+- `--stage metadata` — materialization `publications.doc_metadata`
+- `--stage embeddings` — расчёт/upsert `publications.embeddings`
+- `--stage edges` — построение/upsert `publications.similarity_edges`
 - `--stage all` — последовательность `metadata -> embeddings -> edges`
 
 Обязательные env:
@@ -85,12 +85,12 @@ python -m knowledge_core.ingest_pipeline.run_ingest --stage all
 После выполнения этапов проверьте минимально:
 
 ```sql
-SELECT count(*) FROM knowledge.doc_metadata;
-SELECT count(*) FROM knowledge.embeddings;
-SELECT count(*) FROM knowledge.similarity_edges;
+SELECT count(*) FROM publications.doc_metadata;
+SELECT count(*) FROM publications.embeddings;
+SELECT count(*) FROM publications.similarity_edges;
 ```
 
 Ожидаемое поведение:
-- после `metadata` число строк в `knowledge.doc_metadata` растёт/обновляется;
-- после `embeddings` появляются/обновляются строки в `knowledge.embeddings`;
-- после `edges` появляются/обновляются строки в `knowledge.similarity_edges`.
+- после `metadata` число строк в `publications.doc_metadata` растёт/обновляется;
+- после `embeddings` появляются/обновляются строки в `publications.embeddings`;
+- после `edges` появляются/обновляются строки в `publications.similarity_edges`.

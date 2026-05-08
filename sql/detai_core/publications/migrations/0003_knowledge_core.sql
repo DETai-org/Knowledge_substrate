@@ -3,7 +3,7 @@ BEGIN;
 CREATE EXTENSION IF NOT EXISTS vector;
 
 -- documents
-CREATE TABLE IF NOT EXISTS knowledge.documents (
+CREATE TABLE IF NOT EXISTS publications.documents (
   id          BIGSERIAL PRIMARY KEY,
   zone        TEXT NOT NULL CHECK (zone IN ('public','team','private')),
   source      TEXT,
@@ -15,20 +15,20 @@ CREATE TABLE IF NOT EXISTS knowledge.documents (
 );
 
 -- full-text search
-ALTER TABLE knowledge.documents
+ALTER TABLE publications.documents
   ADD COLUMN IF NOT EXISTS fts tsvector
   GENERATED ALWAYS AS (
     to_tsvector('simple', coalesce(title,'') || ' ' || coalesce(content,''))
   ) STORED;
 
-CREATE INDEX IF NOT EXISTS documents_fts_idx ON knowledge.documents USING GIN (fts);
-CREATE INDEX IF NOT EXISTS documents_zone_idx ON knowledge.documents (zone);
+CREATE INDEX IF NOT EXISTS documents_fts_idx ON publications.documents USING GIN (fts);
+CREATE INDEX IF NOT EXISTS documents_zone_idx ON publications.documents (zone);
 
 -- links (graph edges)
-CREATE TABLE IF NOT EXISTS knowledge.links (
+CREATE TABLE IF NOT EXISTS publications.links (
   id            BIGSERIAL PRIMARY KEY,
-  from_id       BIGINT NOT NULL REFERENCES knowledge.documents(id) ON DELETE CASCADE,
-  to_id         BIGINT NOT NULL REFERENCES knowledge.documents(id) ON DELETE CASCADE,
+  from_id       BIGINT NOT NULL REFERENCES publications.documents(id) ON DELETE CASCADE,
+  to_id         BIGINT NOT NULL REFERENCES publications.documents(id) ON DELETE CASCADE,
   relation      TEXT NOT NULL CHECK (relation IN (
                  'part_of','explains','implements','supports','contradicts','relates_to'
                )),
@@ -38,14 +38,14 @@ CREATE TABLE IF NOT EXISTS knowledge.links (
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE INDEX IF NOT EXISTS links_from_idx ON knowledge.links (from_id);
-CREATE INDEX IF NOT EXISTS links_to_idx   ON knowledge.links (to_id);
-CREATE INDEX IF NOT EXISTS links_rel_idx  ON knowledge.links (relation);
+CREATE INDEX IF NOT EXISTS links_from_idx ON publications.links (from_id);
+CREATE INDEX IF NOT EXISTS links_to_idx   ON publications.links (to_id);
+CREATE INDEX IF NOT EXISTS links_rel_idx  ON publications.links (relation);
 
 -- embeddings
 -- dims фиксируем 1536 как стартовый стандарт (потом миграцией поменяем, если нужно)
-CREATE TABLE IF NOT EXISTS knowledge.embeddings (
-  doc_id     BIGINT PRIMARY KEY REFERENCES knowledge.documents(id) ON DELETE CASCADE,
+CREATE TABLE IF NOT EXISTS publications.embeddings (
+  doc_id     BIGINT PRIMARY KEY REFERENCES publications.documents(id) ON DELETE CASCADE,
   model      TEXT NOT NULL,
   dims       INT  NOT NULL DEFAULT 1536,
   embedding  vector(1536) NOT NULL,
