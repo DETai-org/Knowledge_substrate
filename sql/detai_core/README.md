@@ -1,4 +1,15 @@
-# DETai Core API
+# detai_core
+
+`sql/detai_core/` хранит реализацию canonical/query SQL-контура экосистемы DET / DETai:
+- API;
+- SQL migrations;
+- diagnostics;
+- tests;
+- локальный docker-compose и make targets.
+
+Ниже остаётся runbook этого контура.
+
+## DETai Core API
 
 ## Канонический runbook (PROD): systemd + 127.0.0.1:9000
 
@@ -35,14 +46,14 @@ journalctl -u detai-core-api.service -n 200 --no-pager
 
 - `knowledge_core/ingest_pipeline/metadata/metadata_ingest.py` обновляет метаданные в БД.
 - `knowledge_core/ingest_pipeline/graph_builder/pipeline.py` пересобирает графовые связи в БД.
-- API (`detai-core/api`) читает граф и метаданные из БД и отдает их через `/v1/graph`.
+- API (`sql/detai_core/api`) читает граф и метаданные из БД и отдает их через `/v1/graph`.
 
 ### 6) KPI-валидация пайплайна перед PROD
 
 Канонический набор диагностик находится в `workspace/db/diagnostics/graph_embedding_kpi.sql`.
 
 ```bash
-cd detai-core
+cd sql/detai_core
 psql "$DATABASE_URL" -f workspace/db/diagnostics/graph_embedding_kpi.sql
 ```
 
@@ -62,14 +73,14 @@ psql "$DATABASE_URL" -f workspace/db/diagnostics/graph_embedding_kpi.sql
 ### Bootstrap зависимостей (API + тесты)
 
 ```bash
-cd detai-core
+cd sql/detai_core
 python -m pip install -r requirements.txt
 ```
 
 ### Через Makefile
 
 ```bash
-cd detai-core
+cd sql/detai_core
 export DATABASE_URL=postgresql://detai:detai@localhost:5432/detai
 export API_CORS_ORIGINS=http://localhost:3000,http://localhost:5173
 make api

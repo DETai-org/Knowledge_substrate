@@ -12,7 +12,7 @@
 ## Tasks (Acceptance Checklist)
 
 - [x] **Архитектура API-сервиса: декомпозиция FastAPI по модулям**
-  1. Внутри `detai-core/api/app/` выделить:
+  1. Внутри `sql/detai_core/api/app/` выделить:
      - `main.py` (создание app + middleware + include_router),
      - `routers/health.py`,
      - `routers/graph.py`,
@@ -139,12 +139,12 @@ ____
   4. Для `/v1/graph` логировать число узлов/рёбер и признак truncation.
 
 - [x] **Runtime и локальный запуск**
-  1. Добавить `Makefile` в `detai-core/` с минимумом целей:
+  1. Добавить `Makefile` в `sql/detai_core/` с минимумом целей:
      - `make api` (локальный запуск uvicorn),
      - `make lint` (если линтер уже используется в проекте),
      - `make format` (опционально, если уже есть formatter-стандарт).
-  2. Добавить `detai-core/api/Dockerfile` для сервиса API.
-  3. Добавить/обновить `docker-compose.yml` (в корне или в `detai-core/`) с сервисами API + Postgres (или подключение к существующему контейнеру БД).
+  2. Добавить `sql/detai_core/api/Dockerfile` для сервиса API.
+  3. Добавить/обновить `docker-compose.yml` (в корне или в `sql/detai_core/`) с сервисами API + Postgres (или подключение к существующему контейнеру БД).
   4. Обновить `README` с инструкцией «как поднять API локально», обязательными env и примером запроса к `/v1/graph`.
 
 - [x] **Тестируемость и контрактная верификация**
@@ -178,7 +178,7 @@ Branch: `codex/complete-current-sub-issue`
 PR: [Codex-generated pull request#152](https://github.com/DETai-org/Knowledge_substrate/pull/152)
 
 - [ ] **[AUDIT] Зафиксировать обязательный шаг применения миграций перед запуском API (compose/local)**
-  1. В `detai-core/README.md` явно добавить шаг применения SQL-миграций (`0001...0006`) до первого вызова `/health` и `/v1/graph`.
+  1. В `sql/detai_core/README.md` явно добавить шаг применения SQL-миграций (`0001...0006`) до первого вызова `/health` и `/v1/graph`.
   2. Для `docker-compose` зафиксировать способ применения миграций (скрипт/команда) и порядок запуска.
   3. Добавить короткую smoke-проверку, подтверждающую наличие таблиц `knowledge.doc_metadata` и `knowledge.similarity_edges`.
 

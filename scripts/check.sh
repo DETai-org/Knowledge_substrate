@@ -2,4 +2,4 @@
 set -euo pipefail
 
 mkdocs build --clean
-python -m compileall detai-core
+python -m compileall sql/detai_core
