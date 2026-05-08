@@ -12,11 +12,11 @@
 
 `docs/` хранит **экземпляры знаний и публикаций**.
 
-- `docs/{lang}/ecosystem/` — документы домена `ecosystem`.
+- `docs/ecosystem/{lang}/ecosystem/` — документы домена `ecosystem`.
 - `docs/publications/` — документы домена `publications`.
 
 Важно: языковые папки `ru/`, `en/`, `de/`, `fi/`, `cn/` не являются отдельными доменами знания.
-Это presentation/localization rails для домена `ecosystem`.
+Это presentation/localization rails внутри `docs/ecosystem/`.
 
 ### 2. `schemas/` — контракты, политики и naming rules
 
@@ -69,6 +69,6 @@ SQL layers               -> operational/query representations
 ## MkDocs и публичность
 
 - навигация MkDocs автогенерируется из структуры файлов;
-- `docs/{lang}/ecosystem/` публикуется как knowledge-витрина;
-- `docs/publications/` остаётся частью канона и не обязан полностью публиковаться наружу;
+- `docs/ecosystem/` публикуется как knowledge-витрина;
+- `docs/publications/` остаётся частью канона и не входит в MkDocs-сборку;
 - документ может существовать в каноне и использоваться системой, даже если он не показывается в публичной MkDocs-навигации.

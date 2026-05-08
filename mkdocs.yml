@@ -1,7 +1,7 @@
 site_name: DET / DETai — Knowledge Core
 site_url: https://detai-org.github.io/Knowledge_substrate/
 use_directory_urls: true
-docs_dir: knowledge_core/source_of_truth/docs
+docs_dir: knowledge_core/source_of_truth/docs/ecosystem
 theme:
   name: material
   custom_dir: knowledge_core/source_of_truth/assets/overrides
@@ -35,9 +35,6 @@ extra_javascript:
 - assets/javascripts/chatgpt-button.js
 - assets/javascripts/language-switcher.js
 exclude_docs: |
-  publications/Research_Publication/**
-  publications/STORYTELLING/**
-  publications/blogs/**
   ru/ecosystem/sortspec.md
 
 nav:
