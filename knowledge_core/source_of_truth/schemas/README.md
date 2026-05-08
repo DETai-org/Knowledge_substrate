@@ -41,6 +41,16 @@
 - `publications/` — схема публикаций и все связанные сущности.
 - `ecosystem/` — схема домена экосистемы (пока с заглушкой).
 
+## Зеркало к `docs/`
+
+`schemas/` должен зеркалить логические домены из `source_of_truth/docs/`, но не их presentation-слой.
+
+То есть:
+- `docs/publications/...` <-> `schemas/publications/...`
+- `docs/{lang}/ecosystem/...` <-> `schemas/ecosystem/...`
+
+Языковые папки `ru/`, `en/`, `de/`, `fi/`, `cn/` не копируются в `schemas/`, потому что схема описывает домен, а не локализацию.
+
 ---
 
 ## Controlled vocabularies — общий контракт

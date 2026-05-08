@@ -6,7 +6,7 @@
 - `host`: `127.0.0.1`
 - `port`: `9000`
 - `ExecStart`: `uvicorn app.main:app --host 127.0.0.1 --port 9000`
-- Переменные окружения берутся из `/srv/Knowledge_substrate/detai-core/.env` (или эквивалентного env-файла systemd).
+- Переменные окружения берутся из `/srv/Knowledge_substrate/sql/detai_core/.env` (или эквивалентного env-файла systemd).
 
 ## 1) Как проверить, что API жив
 

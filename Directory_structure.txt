@@ -1,5 +1,5 @@
-Общее количество папок: 95
-Общее количество файлов: 183
+Общее количество папок: 125
+Общее количество файлов: 375
 
 Knowledge_substrate
 ├── .github
@@ -10,22 +10,26 @@ Knowledge_substrate
 │       ├── README.md
 │       ├── semantic-graph.yml
 │       └── sync-blog-posts.yml
-├── detai-core
-│   ├── api
-│   │   └── app
-│   │       ├── __pycache__
-│   │       │   └── main.cpython-310.pyc
-│   │       └── main.py
-│   ├── workspace
-│   │   └── db
-│   │       ├── migrations
-│   │       │   ├── 0001_ledger.sql
-│   │       │   ├── 0002_knowledge_core.sql
-│   │       │   ├── 0003_semantic_graph.sql
-│   │       │   └── 0004_embeddings_text_id.sql
-│   │       ├── apply_migrations.sh
-│   │       └── README.md
-│   └── .env.example
+├── sql
+│   ├── detai_core
+│   │   ├── api
+│   │   │   └── app
+│   │   │       ├── __pycache__
+│   │   │       │   └── main.cpython-310.pyc
+│   │   │       └── main.py
+│   │   ├── workspace
+│   │   │   └── db
+│   │   │       ├── migrations
+│   │   │       │   ├── 0001_ledger.sql
+│   │   │       │   ├── 0002_knowledge_core.sql
+│   │   │       │   ├── 0003_semantic_graph.sql
+│   │   │       │   └── 0004_embeddings_text_id.sql
+│   │   │       ├── apply_migrations.sh
+│   │   │       └── README.md
+│   │   └── .env.example
+│   ├── detai_projects
+│   │   └── README.md
+│   └── README.md
 ├── issue
 │   ├── Standard
 │   │   ├── index.md

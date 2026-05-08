@@ -22,7 +22,7 @@ API‑слоем и визуализацией.
   5. Добавить индексы: source_id, target_id, weight DESC.
   6. Добавить FK на knowledge.documents(id) с ON DELETE CASCADE (если таблица/тип подходят), иначе описать причину отсутствия FK.
   7. Проверить/создать knowledge.embeddings для doc‑level embeddings без ломки совместимости.
-  8. Обновить detai-core/workspace/db/README.md (pgvector, similarity_edges, undirected constraints).
+  8. Обновить sql/detai_core/workspace/db/README.md (pgvector, similarity_edges, undirected constraints).
 
 ---
 

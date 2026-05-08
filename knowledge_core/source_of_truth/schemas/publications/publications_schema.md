@@ -107,100 +107,35 @@
 
 ## Тип документа: Quote (Цитата)
 
-`quote` — документная сущность для цитаты как знания и публикационного артефакта. Source of truth для цитаты — не изображение, а **Quote Record**: текст, языковые версии, атрибуция, источник, цитирование, таксономия и ссылки на производные assets.
+`quote` — отдельный тип документа схемы `publications`.
 
-Минимальный контракт v0.1:
+Полный детальный контракт вынесен в:
 
-```json
-{
-  "type": "quote",
-  "id": "q_1",
-  "administrative": {
-    "curated_by": "Anton",
-    "date_ymd": "2026-05-02",
-    "status": "draft"
-  },
-  "texts": {
-    "ru": {
-      "text": "Любовь и труд неразделимы: мы любим то, над чем трудимся, и трудимся над тем, что любим.",
-      "highlight": "Любовь и труд неразделимы",
-      "status": "source"
-    }
-  },
-  "taxonomy": {
-    "rubric_ids": [],
-    "category_ids": [],
-    "keyword_ids": [],
-    "keywords_raw": []
-  },
-  "attribution": {
-    "quote_author": {
-      "canonical_name": "Erich Fromm",
-      "display_name": {
-        "ru": "Эрих Фромм",
-        "en": "Erich Fromm"
-      }
-    },
-    "source": {
-      "title_original": "The Art of Loving: An Enquiry into the Nature of Love",
-      "title_display": {
-        "ru": "Искусство любить",
-        "en": "The Art of Loving"
-      },
-      "original_language": "en",
-      "original_year": 1956,
-      "publisher": "Harper & Brothers",
-      "page": "56"
-    },
-    "source_display": {
-      "ru": "Эрих Фромм, Искусство любить, с. 56"
-    },
-    "citations": {
-      "apa": "Fromm, E. (1956). The art of loving: An enquiry into the nature of love. Harper & Brothers.",
-      "gost": ""
-    }
-  },
-  "assets": {
-    "ru": {
-      "white": {
-        "webp": "content/quotes/assets/q_1/ru/white.webp",
-        "png": "content/quotes/assets/q_1/ru/white.png"
-      }
-    }
-  },
-  "external_links": [
-    {
-      "type": "website",
-      "url": ""
-    },
-    {
-      "type": "telegram",
-      "url": ""
-    }
-  ]
-}
-```
+- `knowledge_core/source_of_truth/schemas/publications/quotes/quote_record_contract.md`
 
-### Пояснение по полям Quote Record
+Верхнеуровневая фиксация для `publications_schema`:
 
-- `texts` хранит языковые версии цитаты. Поддерживаемые языки экосистемы: `ru`, `en`, `de`, `fi`, `cn`. Поле `highlight` используется для визуального акцента в рендерах; исходная mini-markup-разметка не является главным форматом хранения.
-- `taxonomy` оставляет место для controlled vocabularies (`rubric_ids`, `category_ids`, `keyword_ids`) и свободных ключевых слов (`keywords_raw`) на период модерации.
-- `attribution.quote_author` отвечает на вопрос, кому принадлежит мысль.
-- `attribution.source` описывает первоисточник или используемое издание. `original_year` хранится отдельным числовым полем, чтобы сайт и будущая база могли фильтровать и сортировать цитаты по году без парсинга APA/GOST-строк.
-- `attribution.source_display` хранит короткую человекочитаемую подпись для конкретного языка.
-- `attribution.citations.apa` и `attribution.citations.gost` хранят готовые строки для научного цитирования и экспорта.
-- `assets` хранит ссылки на производные изображения по языку и шаблону. Изображения являются derivative-артефактами, а не source of truth.
-- `external_links` хранит ссылки на опубликованные представления цитаты: сайт, Telegram и другие каналы.
+- source of truth для цитаты — **Quote Record**, а не изображение;
+- `quote` относится к домену `publications`;
+- derivative assets не являются первичным каноническим слоем;
+- user runtime data и project-private state не относятся к `quote` как типу публикационного документа.
 
-### Зоны ответственности репозиториев
+Сами quote-документы должны жить в document-layer:
 
-- `DETai-org/Knowledge_substrate` хранит каноническую схему, правила и политику типа документа `quote`.
-- `DETai-org/psychology-in-quotes` является operational-хранилищем Quote Records и производных media assets для проекта «Психология в цитатах».
-- `DETai-org/sites` / `detai-site` потребляет Quote Records и assets для публичной страницы/галереи «Психология в цитатах», фильтров, языкового переключения и будущего поиска.
+- `knowledge_core/source_of_truth/docs/publications/quotes/`
 
-Репозиторий проекта цитат: https://github.com/DETai-org/psychology-in-quotes
+Контракт schema-layer должен жить отдельно:
+
+- `knowledge_core/source_of_truth/schemas/publications/quotes/`
+
+Такое разделение позволяет не смешивать:
+- document instances;
+- schema contracts;
+- project runtime data;
+- SQL-нормализацию.
 
 ---
+
 ## Примечание: автор мысли и источник
 
 `attribution.quote_author` и `attribution.source` описывают разные уровни атрибуции:
@@ -208,7 +143,7 @@
 - `attribution.quote_author` = кому принадлежит мысль или цитируемый фрагмент;
 - `attribution.source` = откуда цитата взята как публикационный источник: книга, статья, лекция, сборник или другое издание.
 
-В простом случае автор мысли и автор книги совпадают. В сложных случаях (сборник, учебник, лекция в чужой редакции) дополнительные сведения об авторах, редакторах, переводчиках и издании могут добавляться в `attribution.source` или в будущий нормализованный слой `sources`.
+В простом случае автор мысли и автор книги совпадают. В сложных случаях дополнительные сведения об авторах, редакторах, переводчиках и издании могут добавляться в `attribution.source` или в будущий нормализованный слой `sources`.
 
 Текущий v0.1 Quote Record намеренно хранит компактный Document View. При росте проекта он может быть разложен в DB View: `documents`, `quote_attribution`, `sources`, `quote_sources`, `external_links`, `document_links`.
 _____

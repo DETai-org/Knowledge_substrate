@@ -22,8 +22,16 @@
   - `_indexes_min.md` — быстрый обзор сущностей;
   - подробные политики (`category_policies.md`, `keywords_policy.md`,
     `rubrics_and_subrubrics_policy.md`, `preview_policies.md`).
+- `quotes/` — контракт Quote Record и связанные правила для документов типа **quote**.
 - `research_publication/` — заглушка под документы и правила научных публикаций.
 - `publications_schema.md` — канонический контракт схемы публикаций.
+
+## Разделение ответственности
+
+- `publications_schema.md` — верхнеуровневый общий контракт по типам документов.
+- `post_documents/` — детальный контракт и controlled vocabularies для `post`.
+- `quotes/` — детальный контракт Quote Record для `quote`.
+- `research_publication/` — место для детального контракта `research_publication`.
 
 ## Связанные разделы
 
