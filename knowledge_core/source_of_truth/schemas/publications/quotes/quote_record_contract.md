@@ -2,7 +2,7 @@
 
 `quote` — документная сущность схемы `publications`.
 
-Source of truth для цитаты — не изображение, а **Quote Record**: текст, языковые версии, атрибуция, источник, цитирование, таксономия и ссылки на производные assets.
+Source of truth для цитаты — не изображение, а **Quote Record**: текст, языковые версии, атрибуция, источник, verification state, цитирование, таксономия и ссылки на производные assets.
 
 ## Минимальный контракт v0.1
 
@@ -14,6 +14,12 @@ Source of truth для цитаты — не изображение, а **Quote 
     "curated_by": "Anton",
     "date_ymd": "2026-05-02",
     "status": "draft"
+  },
+  "verification": {
+    "state": "verified",
+    "submitted_by_role": "admin",
+    "verified_by": "Anton",
+    "verified_at": "2026-05-08T10:00:00.000Z"
   },
   "texts": {
     "ru": {
@@ -58,8 +64,12 @@ Source of truth для цитаты — не изображение, а **Quote 
   "assets": {
     "ru": {
       "white": {
-        "webp": "content/quotes/assets/q_1/ru/white.webp",
-        "png": "content/quotes/assets/q_1/ru/white.png"
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/q_1/assets/ru/white.webp",
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/q_1/assets/ru/white.png"
+      },
+      "voiceover": {
+        "mp3": "knowledge_core/source_of_truth/docs/publications/quotes/q_1/assets/ru/voiceover.mp3",
+        "telegramFileId": "CQACAgIAAxkBA..."
       }
     }
   },
@@ -71,6 +81,10 @@ Source of truth для цитаты — не изображение, а **Quote 
     {
       "type": "telegram",
       "url": ""
+    },
+    {
+      "type": "other",
+      "url": ""
     }
   ]
 }
@@ -78,6 +92,8 @@ Source of truth для цитаты — не изображение, а **Quote 
 
 ## Пояснение по полям
 
+- `administrative` хранит curator/date/status публикационной единицы.
+- `verification` хранит verification state и следы утверждения записи.
 - `texts` хранит языковые версии цитаты. Поддерживаемые языки экосистемы: `ru`, `en`, `de`, `fi`, `cn`.
 - `highlight` используется для визуального акцента в рендерах.
 - `taxonomy` хранит ссылки на controlled vocabularies и переходный слой `keywords_raw`.
@@ -85,13 +101,35 @@ Source of truth для цитаты — не изображение, а **Quote 
 - `attribution.source` описывает первоисточник или используемое издание.
 - `attribution.source_display` хранит короткую человекочитаемую подпись для конкретного языка.
 - `attribution.citations` хранит готовые строки для научного цитирования и экспорта.
-- `assets` хранит ссылки на производные изображения по языку и шаблону.
+- `assets` хранит ссылки на производные артефакты по языку и template/channel key.
+- Внутри `assets` допустимы `png`, `webp`, `mp3`, `telegramFileId`.
 - `external_links` хранит ссылки на опубликованные представления цитаты.
+
+## Canonical Storage Layout
+
+Для каждой цитаты используется отдельная директория:
+
+```text
+knowledge_core/source_of_truth/docs/publications/quotes/<quoteId>/
+  record.json
+  assets/
+    <lang>/
+      <template>.png
+      <template>.webp
+```
+
+Пример:
+
+```text
+knowledge_core/source_of_truth/docs/publications/quotes/q_1/record.json
+knowledge_core/source_of_truth/docs/publications/quotes/q_1/assets/ru/white.png
+knowledge_core/source_of_truth/docs/publications/quotes/q_1/assets/ru/white.webp
+```
 
 ## Принципиальные границы
 
 - Quote Record является canonical document data.
-- Изображения являются derivative assets.
+- Изображения, audio и platform-specific file references являются derivative assets.
 - Product output не должен становиться primary SQL binary layer.
 - User runtime data проекта не относятся к Quote Record contract.
 

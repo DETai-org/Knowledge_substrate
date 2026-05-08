@@ -1,0 +1,122 @@
+{
+  "type": "quote",
+  "id": "telegram-preview-20260503144651",
+  "administrative": {
+    "curated_by": "Anton",
+    "date_ymd": "2026-05-03",
+    "status": "draft"
+  },
+  "texts": {
+    "ru": {
+      "text": "Р›СЋР±РѕРІСЊ Рё С‚СЂСѓРґ РЅРµСЂР°Р·РґРµР»РёРјС‹: РјС‹ Р»СЋР±РёРј С‚Рѕ, РЅР°Рґ С‡РµРј С‚СЂСѓРґРёРјСЃСЏ, Рё С‚СЂСѓРґРёРјСЃСЏ РЅР°Рґ С‚РµРј, С‡С‚Рѕ Р»СЋР±РёРј",
+      "highlight": "Р›СЋР±РѕРІСЊ Рё С‚СЂСѓРґ РЅРµСЂР°Р·РґРµР»РёРјС‹",
+      "status": "source"
+    },
+    "en": {
+      "text": "Love and work are inseparable: we love what we work on, and we work on what we love",
+      "highlight": "Love and work are inseparable",
+      "status": "translated"
+    },
+    "de": {
+      "text": "Liebe und Arbeit sind untrennbar: Wir lieben, woran wir arbeiten, und wir arbeiten an dem, was wir lieben",
+      "highlight": "Liebe und Arbeit sind untrennbar",
+      "status": "translated"
+    },
+    "fi": {
+      "text": "Rakkaus ja tyГ¶ ovat erottamattomat: rakastamme sitГ¤, minkГ¤ parissa tyГ¶skentelemme, ja tyГ¶skentelemme sen parissa, mitГ¤ rakastamme",
+      "highlight": "Rakkaus ja tyГ¶ ovat erottamattomat",
+      "status": "translated"
+    },
+    "cn": {
+      "text": "з€±дёЋеЉіеЉЁдёЌеЏЇе€†е‰Іпјљж€‘д»¬з€±ж€‘д»¬дёєд№‹еЉЄеЉ›зљ„пјЊд№џдёєж€‘д»¬ж‰Ђз€±зљ„еЉЄеЉ›",
+      "highlight": "з€±дёЋеЉіеЉЁдёЌеЏЇе€†е‰І",
+      "status": "translated"
+    }
+  },
+  "taxonomy": {
+    "rubric_ids": [],
+    "category_ids": [],
+    "keyword_ids": [],
+    "keywords_raw": []
+  },
+  "attribution": {
+    "quote_author": {
+      "canonical_name": "Р­СЂРёС… Р¤СЂРѕРјРј",
+      "display_name": {
+        "ru": "Р­СЂРёС… Р¤СЂРѕРјРј",
+        "en": "Erich Fromm",
+        "de": "Erich Fromm",
+        "fi": "Erich Fromm",
+        "cn": "еџѓй‡ЊеёЊВ·еј—жґ›е§†"
+      }
+    },
+    "source": {
+      "title_display": {
+        "ru": "РСЃРєСѓСЃСЃС‚РІРѕ Р»СЋР±РёС‚СЊ",
+        "en": "The Art of Loving",
+        "de": "Die Kunst des Liebens",
+        "fi": "Rakastamisen taito",
+        "cn": "з€±зљ„и‰єжњЇ"
+      }
+    },
+    "source_display": {
+      "ru": "Р­СЂРёС… Р¤СЂРѕРјРј, РСЃРєСѓСЃСЃС‚РІРѕ Р»СЋР±РёС‚СЊ",
+      "en": "Erich Fromm, The Art of Loving",
+      "de": "Erich Fromm, Die Kunst des Liebens",
+      "fi": "Erich Fromm, Rakastamisen taito",
+      "cn": "еџѓй‡ЊеёЊВ·еј—жґ›е§†пјЊгЂЉз€±зљ„и‰єжњЇгЂ‹"
+    },
+    "citations": {
+      "apa": "",
+      "gost": ""
+    }
+  },
+  "assets": {
+    "ru": {
+      "white": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/ru/white.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/ru/white.webp"
+      }
+    },
+    "en": {
+      "white": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/en/white.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/en/white.webp"
+      }
+    },
+    "de": {
+      "white": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/de/white.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/de/white.webp"
+      }
+    },
+    "fi": {
+      "white": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/fi/white.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/fi/white.webp"
+      }
+    },
+    "cn": {
+      "white": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/cn/white.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260503144651/assets/cn/white.webp"
+      }
+    }
+  },
+  "external_links": [
+    {
+      "type": "website",
+      "url": ""
+    },
+    {
+      "type": "telegram",
+      "url": ""
+    }
+  ],
+  "verification": {
+    "state": "verified",
+    "submitted_by_role": "admin",
+    "verified_by": "Anton",
+    "verified_at": "2026-05-08T20:30:52.4997696Z"
+  }
+}

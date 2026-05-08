@@ -25,6 +25,6 @@ ALTER TABLE knowledge.embeddings
 
 COMMIT;
 
-INSERT INTO product.schema_migrations (version)
+INSERT INTO infra.schema_migrations (version)
 VALUES ('0003_semantic_graph')
 ON CONFLICT (version) DO NOTHING;
