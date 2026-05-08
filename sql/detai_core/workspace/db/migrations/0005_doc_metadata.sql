@@ -26,6 +26,6 @@ COMMENT ON COLUMN knowledge.doc_metadata.doc_id IS
 
 COMMIT;
 
-INSERT INTO product.schema_migrations (version)
+INSERT INTO infra.schema_migrations (version)
 VALUES ('0005_doc_metadata')
 ON CONFLICT (version) DO NOTHING;

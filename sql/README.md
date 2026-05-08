@@ -20,6 +20,10 @@
 - embeddings;
 - query-facing tables и сервисы доступа.
 
+Внутри `detai_core` допустим только нейтральный технический служебный слой для самой БД
+например `infra.schema_migrations`, если он нужен для bootstrap и обслуживания схемы.
+Он не является частью доменной модели.
+
 Источник истины для этого слоя находится в `knowledge_core/source_of_truth/`.
 
 ### `detai_projects`

@@ -54,6 +54,6 @@ CREATE TABLE IF NOT EXISTS knowledge.embeddings (
 
 COMMIT;
 
-INSERT INTO product.schema_migrations (version)
+INSERT INTO infra.schema_migrations (version)
 VALUES ('0002_knowledge_core')
 ON CONFLICT (version) DO NOTHING;

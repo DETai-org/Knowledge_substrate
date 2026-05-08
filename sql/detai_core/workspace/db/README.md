@@ -1,5 +1,11 @@
 # База данных DETai core
 
+## Служебный техслой
+
+* `infra.schema_migrations` — журнал применённых SQL-миграций для `detai_core`.
+* Это не доменные данные `knowledge` и не project runtime layer.
+* Legacy-схема `product` удалена из `detai_core` и больше не используется.
+
 ## Расширения
 
 * Включено расширение `pgvector` через `CREATE EXTENSION IF NOT EXISTS vector;`.

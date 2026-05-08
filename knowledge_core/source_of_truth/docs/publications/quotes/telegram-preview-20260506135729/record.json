@@ -1,0 +1,121 @@
+{
+  "type": "quote",
+  "id": "telegram-preview-20260506135729",
+  "administrative": {
+    "curated_by": "Anton",
+    "date_ymd": "2026-05-06",
+    "status": "draft"
+  },
+  "texts": {
+    "ru": {
+      "text": "\"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РІ СЌС‚РѕРј РєСЂРѕРµС‚СЃСЏ РѕС‡РµСЂРµРґРЅРѕР№ РїСЂРёРЅС†РёРї С‚РµСЂР°РїРµРІС‚РёС‡РµСЃРєРѕР№ РѕС‚РєСЂРѕРІРµРЅРЅРѕСЃС‚Рё? Р’РѕР·РјРѕР¶РЅРѕ, С‚РµСЂР°РїРµРІС‚ РЅРµ РґРѕР»Р¶РµРЅ РґРµР»РёС‚СЊСЃСЏ СЃ РїР°С†РёРµРЅС‚РѕРј С‚РµРј, С‡С‚Рѕ РІС‹Р·С‹РІР°РµС‚ Сѓ РЅРµРіРѕ СЃРёР»СЊРЅС‹Р№ РІРЅСѓС‚СЂРµРЅРЅРёР№ РєРѕРЅС„Р»РёРєС‚. Р”Р»СЏ РЅР°С‡Р°Р»Р° РµРјСѓ СЃР°РјРѕРјСѓ СЃР»РµРґСѓРµС‚ РїСЂРѕСЂР°Р±РѕС‚Р°С‚СЊ СЌС‚Рё РїСЂРѕР±Р»РµРјС‹ РІ РїСЂРѕС†РµСЃСЃРµ РёРЅРґРёРІРёРґСѓР°Р»СЊРЅРѕР№ С‚РµСЂР°РїРёРё. РРЅР°С‡Рµ РїР°С†РёРµРЅС‚Сѓ РїСЂРёРґС‘С‚СЃСЏ СЂРµС€Р°С‚СЊ РїСЂРѕР±Р»РµРјС‹ С‚РµСЂР°РїРµРІС‚Р°\"",
+      "status": "source"
+    },
+    "en": {
+      "text": "\"Perhaps this is yet another principle of therapeutic candor? Maybe the therapist should not share with the patient what causes a strong inner conflict within themselves. First, they should work through these problems in individual therapy. Otherwise, the patient will have to solve the therapist's problems\"",
+      "status": "translated"
+    },
+    "de": {
+      "text": "\"Vielleicht verbirgt sich darin ein weiteres Prinzip therapeutischer Offenheit? Vielleicht sollte der Therapeut dem Patienten nicht das mitteilen, was in ihm selbst starke innere Konflikte auslГ¶st. ZunГ¤chst sollte er diese Probleme in einer Einzeltherapie selbst bearbeiten. Andernfalls mГјsste der Patient die Probleme des Therapeuten lГ¶sen\"",
+      "status": "translated"
+    },
+    "fi": {
+      "text": "\"EhkГ¤ tГ¤ssГ¤ piilee jГ¤lleen yksi terapeuttisen rehellisyyden periaate? EhkГ¤ terapeutin ei pitГ¤isi jakaa potilaalle sitГ¤, mikГ¤ itselle aiheuttaa voimakasta sisГ¤istГ¤ ristiriitaa. Ensin hГ¤nen tulisi kГ¤sitellГ¤ nГ¤mГ¤ ongelmat itse yksilГ¶terapiassa. Muuten potilaan tГ¤ytyy ratkaista terapeutin ongelmat\"",
+      "status": "translated"
+    },
+    "cn": {
+      "text": "вЂњд№џи®ёпјЊиї™д№џжЇжІ»з–—жЂ§еќ¦иЇљзљ„еЏ€дёЂеЋџе€™пјџд№џи®ёжІ»з–—её€дёЌеє”иЇҐдёЋжќҐи®їиЂ…е€†дє«й‚Јдє›дјљеј•еЏ‘и‡Єе·±ејєзѓ€е†…еїѓе†ІзЄЃзљ„дє‹жѓ…гЂ‚й¦–е…€пјЊд»–еє”ењЁдёЄдєєжІ»з–—дё­з‹¬и‡Єе¤„зђ†иї™дє›й—®йўгЂ‚еђ¦е€™пјЊжќҐи®їиЂ…е°±дёЌеѕ—дёЌеЋ»и§Је†іжІ»з–—её€зљ„й—®йўдє†гЂ‚вЂќ",
+      "status": "translated"
+    }
+  },
+  "taxonomy": {
+    "rubric_ids": [],
+    "category_ids": [],
+    "keyword_ids": [],
+    "keywords_raw": []
+  },
+  "attribution": {
+    "quote_author": {
+      "canonical_name": "РСЂРІРёРЅ РЇР»РѕРј",
+      "display_name": {
+        "ru": "РСЂРІРёРЅ РЇР»РѕРј",
+        "en": "Irvin Yalom",
+        "de": "Irvin Yalom",
+        "fi": "Irvin Yalom",
+        "cn": "ж¬§ж–‡В·дєљйљ†"
+      }
+    },
+    "source": {
+      "title_display": {
+        "ru": "Р›Р¶РµС† РЅР° РєСѓС€РµС‚РєРµ",
+        "en": "Liar on the Couch",
+        "de": "LГјgner auf der Couch",
+        "fi": "Valehtelija sohvalla",
+        "cn": "еїѓзђ†е’ЁиЇўеё€зљ„и°ЋиЁЂ"
+      },
+      "page": "303"
+    },
+    "source_display": {
+      "ru": "РСЂРІРёРЅ РЇР»РѕРј, Р›Р¶РµС† РЅР° РєСѓС€РµС‚РєРµ, СЃ. 303",
+      "en": "Irvin Yalom, Liar on the Couch, p. 303",
+      "de": "Irvin Yalom, LГјgner auf der Couch, S. 303",
+      "fi": "Irvin Yalom, Valehtelija sohvalla, s. 303",
+      "cn": "ж¬§ж–‡В·дєљйљ†пјЊгЂЉеїѓзђ†е’ЁиЇўеё€зљ„и°ЋиЁЂгЂ‹пјЊз¬¬303йЎµ"
+    },
+    "citations": {
+      "apa": "",
+      "gost": ""
+    }
+  },
+  "assets": {
+    "ru": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/ru/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/ru/black.webp"
+      },
+      "voiceover": {
+        "telegramFileId": "CQACAgIAAxkDAAIDGmn7Se90bJT_d_jFv7sm8y6WLQTOAAKepQACZHLZS3Eq0-tiZpwFOwQ"
+      }
+    },
+    "en": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/en/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/en/black.webp"
+      }
+    },
+    "de": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/de/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/de/black.webp"
+      }
+    },
+    "fi": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/fi/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/fi/black.webp"
+      }
+    },
+    "cn": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/cn/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260506135729/assets/cn/black.webp"
+      }
+    }
+  },
+  "external_links": [
+    {
+      "type": "website",
+      "url": ""
+    },
+    {
+      "type": "telegram",
+      "url": ""
+    }
+  ],
+  "verification": {
+    "state": "verified",
+    "submitted_by_role": "admin",
+    "verified_by": "Anton",
+    "verified_at": "2026-05-08T20:30:52.5537995Z"
+  }
+}

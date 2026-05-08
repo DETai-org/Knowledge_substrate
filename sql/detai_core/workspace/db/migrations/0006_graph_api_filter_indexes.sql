@@ -20,6 +20,6 @@ CREATE INDEX IF NOT EXISTS doc_metadata_category_ids_gin_idx
 
 COMMIT;
 
-INSERT INTO product.schema_migrations (version)
+INSERT INTO infra.schema_migrations (version)
 VALUES ('0006_graph_api_filter_indexes')
 ON CONFLICT (version) DO NOTHING;

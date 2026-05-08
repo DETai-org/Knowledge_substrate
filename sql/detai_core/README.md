@@ -7,6 +7,9 @@
 - tests;
 - локальный docker-compose и make targets.
 
+Служебный журнал миграций относится к нейтральному техслою `infra`, а не к доменной модели
+`detai_core`.
+
 Ниже остаётся runbook этого контура.
 
 ## DETai Core API
