@@ -2,3 +2,8 @@
 # secrets
 .env
 **/.env
+
+# python artifacts
+__pycache__/
+**/__pycache__/
+*.pyc
