@@ -11,16 +11,18 @@
 ### Домен `ecosystem`
 
 `ecosystem` хранится в мультиязычном виде:
-- `docs/ru/ecosystem/...`
-- `docs/en/ecosystem/...`
-- `docs/de/ecosystem/...`
-- `docs/fi/ecosystem/...`
-- `docs/cn/ecosystem/...`
+- `docs/ecosystem/ru/ecosystem/...`
+- `docs/ecosystem/en/ecosystem/...`
+- `docs/ecosystem/de/ecosystem/...`
+- `docs/ecosystem/fi/ecosystem/...`
+- `docs/ecosystem/cn/ecosystem/...`
 
 Важно: языковые папки не являются отдельными сущностями верхнего уровня.
 Это языковые рельсы одного и того же домена `ecosystem`.
 
 Русская версия является дефолтной и задаёт опорную структуру путей.
+
+Для MkDocs эта ветка публикуется отдельно через `docs_dir = knowledge_core/source_of_truth/docs/ecosystem`, поэтому публичные URL сохраняют language-first формат `/ru/...`, `/en/...`.
 
 ### Домен `publications`
 
@@ -38,7 +40,7 @@
 Пример:
 - документы публикаций -> `docs/publications/...`
 - контракты публикаций -> `schemas/publications/...`
-- документы экосистемы -> `docs/{lang}/ecosystem/...`
+- документы экосистемы -> `docs/ecosystem/{lang}/ecosystem/...`
 - контракты экосистемы -> `schemas/ecosystem/...`
 
 ## Правило

@@ -6,7 +6,7 @@
 
 Используй индекс версий:
 
-- [knowledge_core/source_of_truth/docs/version_index.yaml](../../knowledge_core/source_of_truth/docs/version_index.yaml)
+- [knowledge_core/source_of_truth/docs/ecosystem/version_index.yaml](../../knowledge_core/source_of_truth/docs/ecosystem/version_index.yaml)
 
 > В индексе хранятся: `id`, `title`, список `versions`, `version`, `commit`, `date_ymd`, `path`.
 
@@ -85,7 +85,7 @@
 
 ```text
 Проанализируй эволюцию документа с id=<ID> на основе файла
-knowledge_core/source_of_truth/docs/version_index.yaml.
+knowledge_core/source_of_truth/docs/ecosystem/version_index.yaml.
 
 Сделай:
 1) список релевантных версий и commit;
