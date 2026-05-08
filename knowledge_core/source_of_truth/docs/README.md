@@ -26,12 +26,12 @@
 
 ### Домен `publications`
 
-`publications` хранится отдельно и описывает публикационные матерялы нашего основного сайта:
-- Посты в блоге `docs/publications/blogs/...`
-- Научные публикации (тезисы конференций, науч.статьи, диссертации)`docs/publications/research_publication/...`
-- Цитаты (которые создаються через проект `Psychology-in-quotes`) `docs/publications/quotes/...`
+`publications` хранится отдельно и описывает публикационные материалы основного сайта:
+- посты в блоге `docs/publications/blogs/...`
+- научные публикации `docs/publications/Research_Publication/...`
+- цитаты, создаваемые через проект `psychology-in-quotes` — `docs/publications/quotes/...`
 
-`publications` сейчас не разнесён по языковым папкам, потому что это делается в отдельных местах 
+`publications` сейчас не разнесён по языковым папкам, потому что этот домен обслуживается отдельно от мультиязычной ecosystem-витрины.
 
 ## Принцип зеркальности
 
