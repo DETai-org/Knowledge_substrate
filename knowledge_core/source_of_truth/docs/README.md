@@ -26,12 +26,12 @@
 
 ### Домен `publications`
 
-`publications` хранится отдельно и описывает публикационные документы:
-- `docs/publications/blogs/...`
-- `docs/publications/research_publication/...`
-- `docs/publications/quotes/...`
+`publications` хранится отдельно и описывает публикационные матерялы нашего основного сайта:
+- Посты в блоге `docs/publications/blogs/...`
+- Научные публикации (тезисы конференций, науч.статьи, диссертации)`docs/publications/research_publication/...`
+- Цитаты (которые создаються через проект `Psychology-in-quotes`) `docs/publications/quotes/...`
 
-`publications` сейчас не разнесён по языковым папкам, потому что это отдельный домен данных, а не часть мультиязычной ecosystem-витрины.
+`publications` сейчас не разнесён по языковым папкам, потому что это делается в отдельных местах 
 
 ## Принцип зеркальности
 
