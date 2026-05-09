@@ -287,7 +287,7 @@ def fetch_existing_embeddings(
 
     query = """
         SELECT doc_id::text, source_hash, embedding::text
-        FROM knowledge.embeddings
+        FROM publications.embeddings
         WHERE doc_type = %s AND model = %s AND doc_id = ANY(%s)
     """
     with conn.cursor() as cur:
@@ -312,7 +312,7 @@ def fetch_embeddings_for_edges(
 ) -> list[EmbeddingRecord]:
     query = """
         SELECT doc_id::text, source_hash, embedding::text
-        FROM knowledge.embeddings
+        FROM publications.embeddings
         WHERE doc_type = %s AND model = %s
     """
     with conn.cursor() as cur:
@@ -485,7 +485,7 @@ def upsert_embeddings(
         for record in records
     ]
     query = """
-        INSERT INTO knowledge.embeddings (doc_id, doc_type, model, source_hash, embedding, updated_at)
+        INSERT INTO publications.embeddings (doc_id, doc_type, model, source_hash, embedding, updated_at)
         VALUES %s
         ON CONFLICT (doc_id, doc_type, model)
         DO UPDATE SET
@@ -590,7 +590,7 @@ def persist_edges(
         for source_id, target_id, weight in edges
     ]
     query = """
-        INSERT INTO knowledge.similarity_edges
+        INSERT INTO publications.similarity_edges
           (source_id, target_id, doc_type, weight, method, k, min_similarity)
         VALUES %s
         ON CONFLICT (source_id, target_id, doc_type, method)
@@ -611,7 +611,7 @@ def delete_edges_for_docs(
     doc_ids: set[str],
 ) -> None:
     query = """
-        DELETE FROM knowledge.similarity_edges
+        DELETE FROM publications.similarity_edges
         WHERE doc_type = %s
           AND method = %s
           AND (source_id = ANY(%s) OR target_id = ANY(%s))
@@ -625,7 +625,7 @@ def clear_edges(
     graph_config: GraphConfig,
 ) -> None:
     query = """
-        DELETE FROM knowledge.similarity_edges
+        DELETE FROM publications.similarity_edges
         WHERE doc_type = %s AND method = %s
     """
     with conn.cursor() as cur:
@@ -917,8 +917,8 @@ def preflight(
                 cur.execute("SELECT 1")
                 cur.execute(
                     """
-                    SELECT to_regclass('knowledge.embeddings'),
-                           to_regclass('knowledge.similarity_edges')
+                    SELECT to_regclass('publications.embeddings'),
+                           to_regclass('publications.similarity_edges')
                     """
                 )
                 embeddings_table, edges_table = cur.fetchone()

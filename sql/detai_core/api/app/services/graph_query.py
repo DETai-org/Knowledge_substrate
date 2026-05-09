@@ -76,7 +76,7 @@ class GraphQueryService:
                 cur.execute(
                     f'''
                     SELECT dm.doc_id
-                    FROM knowledge.doc_metadata dm
+                    FROM publications.doc_metadata dm
                     {where_sql}
                     ORDER BY dm.updated_at DESC, dm.doc_id
                     LIMIT %s;
@@ -110,7 +110,7 @@ class GraphQueryService:
                 cur.execute(
                     '''
                     SELECT dm.doc_id, dm.doc_type, dm.meta->>'title' AS title, dm.year, dm.channels, dm.rubric_ids, dm.category_ids, dm.authors, dm.meta
-                    FROM knowledge.doc_metadata dm
+                    FROM publications.doc_metadata dm
                     WHERE dm.doc_id = ANY(%s)
                     ORDER BY dm.doc_id;
                     ''',
@@ -124,11 +124,11 @@ class GraphQueryService:
                     else 'e.source_id = ANY(%s) AND e.target_id = ANY(%s)'
                 )
                 edge_join_sql = (
-                    'LEFT JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id\n'
-                    '                    LEFT JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id'
+                    'LEFT JOIN publications.doc_metadata s ON s.doc_id = e.source_id\n'
+                    '                    LEFT JOIN publications.doc_metadata t ON t.doc_id = e.target_id'
                     if is_global_scope
-                    else 'INNER JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id\n'
-                    '                    INNER JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id'
+                    else 'INNER JOIN publications.doc_metadata s ON s.doc_id = e.source_id\n'
+                    '                    INNER JOIN publications.doc_metadata t ON t.doc_id = e.target_id'
                 )
                 cur.execute(
                     f'''
@@ -136,7 +136,7 @@ class GraphQueryService:
                       LEAST(e.source_id::text, e.target_id::text) AS source_id,
                       GREATEST(e.source_id::text, e.target_id::text) AS target_id,
                       MAX(e.weight)::float8 AS weight
-                    FROM knowledge.similarity_edges e
+                    FROM publications.similarity_edges e
                     {edge_join_sql}
                     WHERE {edge_condition_sql}
                       AND e.source_id <> e.target_id
@@ -170,7 +170,7 @@ class GraphQueryService:
                         cur.execute(
                             '''
                             SELECT dm.doc_id, dm.doc_type, dm.meta->>'title' AS title, dm.year, dm.channels, dm.rubric_ids, dm.category_ids, dm.authors, dm.meta
-                            FROM knowledge.doc_metadata dm
+                            FROM publications.doc_metadata dm
                             WHERE dm.doc_id = ANY(%s)
                             ORDER BY dm.doc_id;
                             ''',
@@ -211,9 +211,9 @@ class GraphQueryService:
                 cur.execute(
                     '''
                     SELECT count(*)
-                    FROM knowledge.similarity_edges e
-                    LEFT JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id
-                    LEFT JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id
+                    FROM publications.similarity_edges e
+                    LEFT JOIN publications.doc_metadata s ON s.doc_id = e.source_id
+                    LEFT JOIN publications.doc_metadata t ON t.doc_id = e.target_id
                     WHERE (e.source_id = ANY(%s) OR e.target_id = ANY(%s))
                       AND e.source_id <> e.target_id
                       AND (s.doc_id IS NULL OR t.doc_id IS NULL);

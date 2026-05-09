@@ -1,17 +1,24 @@
-# detai_projects DB Runbook
+# psychology_in_quotes schema
 
-Этот runbook описывает **первую infra-итерацию** private runtime database для проекта `psychology-in-quotes`.
+`sql/detai_projects/psychology_in_quotes/` хранит SQL-контур project schema
+`psychology_in_quotes` внутри database `detai_projects`.
 
-## Цель итерации
+## Цель текущей итерации
 
-Собрать и применить SQL-контур, который:
+Первая итерация этого контура — **infra-only migration layer**.
 
-- создаёт database `detai_projects`;
-- создаёт schema `psychology_in_quotes`;
-- создаёт первый рабочий набор runtime tables;
-- загружает initial data snapshot из текущих JSON seed-файлов проекта `psychology-in-quotes`.
+Она покрывает:
 
-Эта итерация **не** переписывает Telegram-бота на SQL. Бот пока может продолжать жить на текущем runtime JSON, пока в проекте `psychology-in-quotes` не будет добавлен отдельный database access layer.
+- создание schema `psychology_in_quotes`;
+- создание runtime tables, индексов и ограничений;
+- initial SQL seed на базе текущего snapshot из
+  `DETai-org/psychology-in-quotes/apps/telegram-bot/runtime-db-seed/`.
+
+Она пока не покрывает:
+
+- переписывание Telegram-бота на прямую работу с PostgreSQL;
+- runtime repository/service layer внутри проекта `psychology-in-quotes`;
+- product output layout внутри `docs/publications/quotes/`.
 
 ## Граница ответственности
 
@@ -35,8 +42,6 @@ Initial import берётся из текущего operational snapshot в со
 D:\dev\DETai-org\psychology-in-quotes\apps\telegram-bot\runtime-db-seed\
 ```
 
-С точки зрения сервера это означает: перед применением initial seed нужно либо подготовить эквивалентный SQL snapshot, либо запустить импорт из актуального checked-out состояния проекта `psychology-in-quotes`.
-
 В этом репозитории зафиксирован SQL seed snapshot, собранный из текущих файлов:
 
 - `config/user-access.json`
@@ -45,13 +50,17 @@ D:\dev\DETai-org\psychology-in-quotes\apps\telegram-bot\runtime-db-seed\
 
 `access-control.json` в эту итерацию не переносится в SQL и не считается primary source.
 
-## Состав файлов
+## Состав каталога
 
-- `bootstrap/0000_create_database.sql` — создаёт database `detai_projects`, если её ещё нет.
-- `bootstrap/create_database.sh` — shell-wrapper для применения bootstrap.
 - `migrations/0001_psychology_in_quotes_runtime.sql` — создаёт schema, функции, таблицы и индексы.
 - `seeds/0001_psychology_in_quotes_initial_seed.sql` — initial import текущего snapshot.
 - `apply_migrations.sh` — накатывает migrations на database `detai_projects`.
+
+Database bootstrap находится уровнем выше, потому что относится ко всей database:
+
+- `sql/detai_projects/bootstrap/0000_create_database.sql`
+- `sql/detai_projects/bootstrap/create_database.sh`
+- `sql/detai_projects/apply_all_migrations.sh`
 
 ## Порядок применения на сервере
 
@@ -59,20 +68,28 @@ D:\dev\DETai-org\psychology-in-quotes\apps\telegram-bot\runtime-db-seed\
 
 ```bash
 cd /srv/Knowledge_substrate/sql/detai_projects
-bash workspace/db/bootstrap/create_database.sh
+bash bootstrap/create_database.sh
 ```
 
-### 2. Накатить migrations
+### 2. Накатить migrations schema
+
+```bash
+cd /srv/Knowledge_substrate/sql/detai_projects/psychology_in_quotes
+bash apply_migrations.sh
+```
+
+Если нужно накатить все project schemas database целиком, используется root-level
+entrypoint:
 
 ```bash
 cd /srv/Knowledge_substrate/sql/detai_projects
-bash workspace/db/apply_migrations.sh
+bash apply_all_migrations.sh
 ```
 
 ### 3. Загрузить initial seed
 
 ```bash
-sudo -u postgres psql -d detai_projects -v ON_ERROR_STOP=1 -f /srv/Knowledge_substrate/sql/detai_projects/workspace/db/seeds/0001_psychology_in_quotes_initial_seed.sql
+sudo -u postgres psql -d detai_projects -v ON_ERROR_STOP=1 -f /srv/Knowledge_substrate/sql/detai_projects/psychology_in_quotes/seeds/0001_psychology_in_quotes_initial_seed.sql
 ```
 
 ## Проверка результата
@@ -99,18 +116,9 @@ sudo -u postgres psql -d detai_projects -Atqc "SELECT count(*) FROM psychology_i
 sudo -u postgres psql -d detai_projects -Atqc "SELECT count(*) FROM psychology_in_quotes.moderation_entries;"
 ```
 
-## Важные ограничения этой итерации
+## Важные ограничения
 
 - `detai_core` не трогаем и не используем для новых project runtime данных.
-- `product` schema внутри `detai_core` рассматривается как legacy текущего core-контура, а не как место для новых runtime tables проекта.
 - system brand kit `det-ecosystem` не переносится в SQL.
 - system templates и caption defaults не переносятся в SQL.
 - product outputs и publication artifacts не являются частью этого SQL runbook.
-
-## Следующая итерация
-
-После применения этого контура следующий этап делается в репозитории `psychology-in-quotes`:
-
-- заменить чтение `user-access.json`, `channel-bindings.json`, `moderation.json` на SQL;
-- заменить runtime updates этих данных на прямую запись в SQL;
-- зафиксировать database access layer и runtime ownership модели.

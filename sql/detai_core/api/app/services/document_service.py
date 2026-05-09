@@ -27,7 +27,7 @@ class DocumentService:
 
     def create_doc(self, payload: DocInput) -> int:
         query = """
-        INSERT INTO knowledge.documents (zone, source, title, content, meta)
+        INSERT INTO publications.documents (zone, source, title, content, meta)
         VALUES (%s, %s, %s, %s, %s::jsonb)
         RETURNING id;
         """
@@ -50,7 +50,7 @@ class DocumentService:
     def get_doc(self, doc_id: int) -> dict | None:
         query = """
         SELECT id, zone, source, title, content, meta, created_at, updated_at
-        FROM knowledge.documents
+        FROM publications.documents
         WHERE id = %s;
         """
         with self._connect() as conn:
@@ -66,7 +66,7 @@ class DocumentService:
         if zone:
             sql = """
             SELECT id, zone, title
-            FROM knowledge.documents
+            FROM publications.documents
             WHERE zone = %s
               AND fts @@ plainto_tsquery('simple', %s)
             ORDER BY ts_rank(fts, plainto_tsquery('simple', %s)) DESC
@@ -76,7 +76,7 @@ class DocumentService:
         else:
             sql = """
             SELECT id, zone, title
-            FROM knowledge.documents
+            FROM publications.documents
             WHERE fts @@ plainto_tsquery('simple', %s)
             ORDER BY ts_rank(fts, plainto_tsquery('simple', %s)) DESC
             LIMIT %s;
