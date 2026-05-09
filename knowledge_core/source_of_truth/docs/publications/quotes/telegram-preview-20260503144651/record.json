@@ -8,8 +8,8 @@
   },
   "texts": {
     "ru": {
-      "text": "Р›СЋР±РѕРІСЊ Рё С‚СЂСѓРґ РЅРµСЂР°Р·РґРµР»РёРјС‹: РјС‹ Р»СЋР±РёРј С‚Рѕ, РЅР°Рґ С‡РµРј С‚СЂСѓРґРёРјСЃСЏ, Рё С‚СЂСѓРґРёРјСЃСЏ РЅР°Рґ С‚РµРј, С‡С‚Рѕ Р»СЋР±РёРј",
-      "highlight": "Р›СЋР±РѕРІСЊ Рё С‚СЂСѓРґ РЅРµСЂР°Р·РґРµР»РёРјС‹",
+      "text": "Любовь и труд неразделимы: мы любим то, над чем трудимся, и трудимся над тем, что любим",
+      "highlight": "Любовь и труд неразделимы",
       "status": "source"
     },
     "en": {
@@ -23,13 +23,13 @@
       "status": "translated"
     },
     "fi": {
-      "text": "Rakkaus ja tyГ¶ ovat erottamattomat: rakastamme sitГ¤, minkГ¤ parissa tyГ¶skentelemme, ja tyГ¶skentelemme sen parissa, mitГ¤ rakastamme",
-      "highlight": "Rakkaus ja tyГ¶ ovat erottamattomat",
+      "text": "Rakkaus ja työ ovat erottamattomat: rakastamme sitä, minkä parissa työskentelemme, ja työskentelemme sen parissa, mitä rakastamme",
+      "highlight": "Rakkaus ja työ ovat erottamattomat",
       "status": "translated"
     },
     "cn": {
-      "text": "з€±дёЋеЉіеЉЁдёЌеЏЇе€†е‰Іпјљж€‘д»¬з€±ж€‘д»¬дёєд№‹еЉЄеЉ›зљ„пјЊд№џдёєж€‘д»¬ж‰Ђз€±зљ„еЉЄеЉ›",
-      "highlight": "з€±дёЋеЉіеЉЁдёЌеЏЇе€†е‰І",
+      "text": "爱与劳动不可分割：我们爱我们为之努力的，也为我们所爱的努力",
+      "highlight": "爱与劳动不可分割",
       "status": "translated"
     }
   },
@@ -41,30 +41,30 @@
   },
   "attribution": {
     "quote_author": {
-      "canonical_name": "Р­СЂРёС… Р¤СЂРѕРјРј",
+      "canonical_name": "Эрих Фромм",
       "display_name": {
-        "ru": "Р­СЂРёС… Р¤СЂРѕРјРј",
+        "ru": "Эрих Фромм",
         "en": "Erich Fromm",
         "de": "Erich Fromm",
         "fi": "Erich Fromm",
-        "cn": "еџѓй‡ЊеёЊВ·еј—жґ›е§†"
+        "cn": "埃里希·弗洛姆"
       }
     },
     "source": {
       "title_display": {
-        "ru": "РСЃРєСѓСЃСЃС‚РІРѕ Р»СЋР±РёС‚СЊ",
+        "ru": "Искусство любить",
         "en": "The Art of Loving",
         "de": "Die Kunst des Liebens",
         "fi": "Rakastamisen taito",
-        "cn": "з€±зљ„и‰єжњЇ"
+        "cn": "爱的艺术"
       }
     },
     "source_display": {
-      "ru": "Р­СЂРёС… Р¤СЂРѕРјРј, РСЃРєСѓСЃСЃС‚РІРѕ Р»СЋР±РёС‚СЊ",
+      "ru": "Эрих Фромм, Искусство любить",
       "en": "Erich Fromm, The Art of Loving",
       "de": "Erich Fromm, Die Kunst des Liebens",
       "fi": "Erich Fromm, Rakastamisen taito",
-      "cn": "еџѓй‡ЊеёЊВ·еј—жґ›е§†пјЊгЂЉз€±зљ„и‰єжњЇгЂ‹"
+      "cn": "埃里希·弗洛姆，《爱的艺术》"
     },
     "citations": {
       "apa": "",
