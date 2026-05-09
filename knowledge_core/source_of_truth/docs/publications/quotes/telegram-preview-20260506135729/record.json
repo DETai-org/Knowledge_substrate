@@ -8,7 +8,7 @@
   },
   "texts": {
     "ru": {
-      "text": "\"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РІ СЌС‚РѕРј РєСЂРѕРµС‚СЃСЏ РѕС‡РµСЂРµРґРЅРѕР№ РїСЂРёРЅС†РёРї С‚РµСЂР°РїРµРІС‚РёС‡РµСЃРєРѕР№ РѕС‚РєСЂРѕРІРµРЅРЅРѕСЃС‚Рё? Р’РѕР·РјРѕР¶РЅРѕ, С‚РµСЂР°РїРµРІС‚ РЅРµ РґРѕР»Р¶РµРЅ РґРµР»РёС‚СЊСЃСЏ СЃ РїР°С†РёРµРЅС‚РѕРј С‚РµРј, С‡С‚Рѕ РІС‹Р·С‹РІР°РµС‚ Сѓ РЅРµРіРѕ СЃРёР»СЊРЅС‹Р№ РІРЅСѓС‚СЂРµРЅРЅРёР№ РєРѕРЅС„Р»РёРєС‚. Р”Р»СЏ РЅР°С‡Р°Р»Р° РµРјСѓ СЃР°РјРѕРјСѓ СЃР»РµРґСѓРµС‚ РїСЂРѕСЂР°Р±РѕС‚Р°С‚СЊ СЌС‚Рё РїСЂРѕР±Р»РµРјС‹ РІ РїСЂРѕС†РµСЃСЃРµ РёРЅРґРёРІРёРґСѓР°Р»СЊРЅРѕР№ С‚РµСЂР°РїРёРё. РРЅР°С‡Рµ РїР°С†РёРµРЅС‚Сѓ РїСЂРёРґС‘С‚СЃСЏ СЂРµС€Р°С‚СЊ РїСЂРѕР±Р»РµРјС‹ С‚РµСЂР°РїРµРІС‚Р°\"",
+      "text": "\"Может быть, в этом кроется очередной принцип терапевтической откровенности? Возможно, терапевту не следует делиться с пациентом тем, что вызывает у него сильный внутренний конфликт. Сначала ему самому следует проработать эти проблемы в процессе индивидуальной терапии. Иначе пациенту придётся решать проблемы терапевта\"",
       "status": "source"
     },
     "en": {
@@ -16,15 +16,15 @@
       "status": "translated"
     },
     "de": {
-      "text": "\"Vielleicht verbirgt sich darin ein weiteres Prinzip therapeutischer Offenheit? Vielleicht sollte der Therapeut dem Patienten nicht das mitteilen, was in ihm selbst starke innere Konflikte auslГ¶st. ZunГ¤chst sollte er diese Probleme in einer Einzeltherapie selbst bearbeiten. Andernfalls mГјsste der Patient die Probleme des Therapeuten lГ¶sen\"",
+      "text": "\"Vielleicht verbirgt sich darin ein weiteres Prinzip therapeutischer Offenheit? Vielleicht sollte der Therapeut dem Patienten nicht das mitteilen, was in ihm selbst starke innere Konflikte auslöst. Zunächst sollte er diese Probleme in einer Einzeltherapie selbst bearbeiten. Andernfalls müsste der Patient die Probleme des Therapeuten lösen\"",
       "status": "translated"
     },
     "fi": {
-      "text": "\"EhkГ¤ tГ¤ssГ¤ piilee jГ¤lleen yksi terapeuttisen rehellisyyden periaate? EhkГ¤ terapeutin ei pitГ¤isi jakaa potilaalle sitГ¤, mikГ¤ itselle aiheuttaa voimakasta sisГ¤istГ¤ ristiriitaa. Ensin hГ¤nen tulisi kГ¤sitellГ¤ nГ¤mГ¤ ongelmat itse yksilГ¶terapiassa. Muuten potilaan tГ¤ytyy ratkaista terapeutin ongelmat\"",
+      "text": "\"Ehkä tässä piilee jälleen yksi terapeuttisen rehellisyyden periaate? Ehkä terapeutin ei pitäisi jakaa potilaalle sitä, mikä itselle aiheuttaa voimakasta sisäistä ristiriitaa. Ensin hänen tulisi käsitellä nämä ongelmat itse yksilöterapiassa. Muuten potilaan täytyy ratkaista terapeutin ongelmat\"",
       "status": "translated"
     },
     "cn": {
-      "text": "вЂњд№џи®ёпјЊиї™д№џжЇжІ»з–—жЂ§еќ¦иЇљзљ„еЏ€дёЂеЋџе€™пјџд№џи®ёжІ»з–—её€дёЌеє”иЇҐдёЋжќҐи®їиЂ…е€†дє«й‚Јдє›дјљеј•еЏ‘и‡Єе·±ејєзѓ€е†…еїѓе†ІзЄЃзљ„дє‹жѓ…гЂ‚й¦–е…€пјЊд»–еє”ењЁдёЄдєєжІ»з–—дё­з‹¬и‡Єе¤„зђ†иї™дє›й—®йўгЂ‚еђ¦е€™пјЊжќҐи®їиЂ…е°±дёЌеѕ—дёЌеЋ»и§Је†іжІ»з–—её€зљ„й—®йўдє†гЂ‚вЂќ",
+      "text": "\"也许，这又是治疗性坦诚的另一条原则？也许治疗师不应该与来访者分享那些会在自己内心引发强烈冲突的事情。首先，他应该在个体治疗中先处理这些问题。否则，来访者将不得不去解决治疗师的问题。\"",
       "status": "translated"
     }
   },
@@ -36,31 +36,31 @@
   },
   "attribution": {
     "quote_author": {
-      "canonical_name": "РСЂРІРёРЅ РЇР»РѕРј",
+      "canonical_name": "Ирвин Ялом",
       "display_name": {
-        "ru": "РСЂРІРёРЅ РЇР»РѕРј",
+        "ru": "Ирвин Ялом",
         "en": "Irvin Yalom",
         "de": "Irvin Yalom",
         "fi": "Irvin Yalom",
-        "cn": "ж¬§ж–‡В·дєљйљ†"
+        "cn": "欧文·亚隆"
       }
     },
     "source": {
       "title_display": {
-        "ru": "Р›Р¶РµС† РЅР° РєСѓС€РµС‚РєРµ",
+        "ru": "Лжец на кушетке",
         "en": "Liar on the Couch",
-        "de": "LГјgner auf der Couch",
+        "de": "Lügner auf der Couch",
         "fi": "Valehtelija sohvalla",
-        "cn": "еїѓзђ†е’ЁиЇўеё€зљ„и°ЋиЁЂ"
+        "cn": "心理咨询师的谎言"
       },
       "page": "303"
     },
     "source_display": {
-      "ru": "РСЂРІРёРЅ РЇР»РѕРј, Р›Р¶РµС† РЅР° РєСѓС€РµС‚РєРµ, СЃ. 303",
+      "ru": "Ирвин Ялом, Лжец на кушетке, с. 303",
       "en": "Irvin Yalom, Liar on the Couch, p. 303",
-      "de": "Irvin Yalom, LГјgner auf der Couch, S. 303",
+      "de": "Irvin Yalom, Lügner auf der Couch, S. 303",
       "fi": "Irvin Yalom, Valehtelija sohvalla, s. 303",
-      "cn": "ж¬§ж–‡В·дєљйљ†пјЊгЂЉеїѓзђ†е’ЁиЇўеё€зљ„и°ЋиЁЂгЂ‹пјЊз¬¬303йЎµ"
+      "cn": "欧文·亚隆，《心理咨询师的谎言》，第303页"
     },
     "citations": {
       "apa": "",
