@@ -1,6 +1,6 @@
 BEGIN;
 
-CREATE TABLE IF NOT EXISTS knowledge.doc_metadata (
+CREATE TABLE IF NOT EXISTS publications.doc_metadata (
   doc_id         TEXT PRIMARY KEY,
   date_ymd       DATE,
   year           INTEGER GENERATED ALWAYS AS (
@@ -18,11 +18,11 @@ CREATE TABLE IF NOT EXISTS knowledge.doc_metadata (
   meta           JSONB NOT NULL DEFAULT '{}'::JSONB
 );
 
-COMMENT ON TABLE knowledge.doc_metadata IS
+COMMENT ON TABLE publications.doc_metadata IS
 'Canonical metadata для semantic graph API v1. PK doc_id = administrative.id (SoT).';
 
-COMMENT ON COLUMN knowledge.doc_metadata.doc_id IS
-'Canonical SoT id (administrative.id). Не использовать knowledge.documents.id как canonical id.';
+COMMENT ON COLUMN publications.doc_metadata.doc_id IS
+'Canonical SoT id (administrative.id). Не использовать publications.documents.id как canonical id.';
 
 COMMIT;
 

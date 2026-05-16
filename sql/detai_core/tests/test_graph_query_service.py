@@ -87,8 +87,8 @@ class GraphQueryServiceTests(unittest.TestCase):
         self.assertEqual(result.edges[0].target, 'post-2')
 
         edge_query_sql = fake_cursor.executed_sql[2][0]
-        self.assertIn('LEFT JOIN knowledge.doc_metadata s ON s.doc_id = e.source_id', edge_query_sql)
-        self.assertIn('LEFT JOIN knowledge.doc_metadata t ON t.doc_id = e.target_id', edge_query_sql)
+        self.assertIn('LEFT JOIN publications.doc_metadata s ON s.doc_id = e.source_id', edge_query_sql)
+        self.assertIn('LEFT JOIN publications.doc_metadata t ON t.doc_id = e.target_id', edge_query_sql)
 
 
 if __name__ == '__main__':

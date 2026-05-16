@@ -3,11 +3,11 @@
 -- 1) Корректный расчёт количества уникальных документов в рёбрах (doc_type='post').
 WITH edge_docs AS (
   SELECT e.source_id AS doc_id
-  FROM knowledge.similarity_edges e
+  FROM publications.similarity_edges e
   WHERE e.doc_type = 'post'
   UNION
   SELECT e.target_id AS doc_id
-  FROM knowledge.similarity_edges e
+  FROM publications.similarity_edges e
   WHERE e.doc_type = 'post'
 )
 SELECT COUNT(*) AS distinct_edge_docs
@@ -16,17 +16,17 @@ FROM edge_docs;
 -- 2) Полнота embeddings для постов.
 WITH canonical_posts AS (
   SELECT dm.doc_id
-  FROM knowledge.doc_metadata dm
+  FROM publications.doc_metadata dm
   WHERE dm.doc_type = 'post'
 ),
 posts_with_embedding AS (
   SELECT DISTINCT emb.doc_id
-  FROM knowledge.embeddings emb
+  FROM publications.embeddings emb
   WHERE emb.doc_type = 'post'
 ),
 embedding_duplicates AS (
   SELECT emb.doc_id
-  FROM knowledge.embeddings emb
+  FROM publications.embeddings emb
   WHERE emb.doc_type = 'post'
   GROUP BY emb.doc_id
   HAVING COUNT(*) > 1
@@ -45,26 +45,26 @@ SELECT
 -- 3) Полнота metadata для endpoint-ов графа (doc_type='post').
 WITH edge_docs AS (
   SELECT e.source_id AS doc_id
-  FROM knowledge.similarity_edges e
+  FROM publications.similarity_edges e
   WHERE e.doc_type = 'post'
   UNION
   SELECT e.target_id AS doc_id
-  FROM knowledge.similarity_edges e
+  FROM publications.similarity_edges e
   WHERE e.doc_type = 'post'
 )
 SELECT COUNT(*) AS edge_docs_missing_metadata
 FROM edge_docs ed
-LEFT JOIN knowledge.doc_metadata dm ON dm.doc_id = ed.doc_id
+LEFT JOIN publications.doc_metadata dm ON dm.doc_id = ed.doc_id
 WHERE dm.doc_id IS NULL;
 
 -- 4) Доля endpoint-ов без metadata (для критерия стабильности global графа).
 WITH edge_docs AS (
   SELECT e.source_id AS doc_id
-  FROM knowledge.similarity_edges e
+  FROM publications.similarity_edges e
   WHERE e.doc_type = 'post'
   UNION
   SELECT e.target_id AS doc_id
-  FROM knowledge.similarity_edges e
+  FROM publications.similarity_edges e
   WHERE e.doc_type = 'post'
 ),
 edge_docs_quality AS (
@@ -72,7 +72,7 @@ edge_docs_quality AS (
     COUNT(*) AS edge_docs_total,
     COUNT(*) FILTER (WHERE dm.doc_id IS NULL) AS edge_docs_missing_metadata
   FROM edge_docs ed
-  LEFT JOIN knowledge.doc_metadata dm ON dm.doc_id = ed.doc_id
+  LEFT JOIN publications.doc_metadata dm ON dm.doc_id = ed.doc_id
 )
 SELECT
   edge_docs_total,

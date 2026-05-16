@@ -1,22 +1,22 @@
 BEGIN;
 
 CREATE INDEX IF NOT EXISTS doc_metadata_year_idx
-  ON knowledge.doc_metadata (year);
+  ON publications.doc_metadata (year);
 
 CREATE INDEX IF NOT EXISTS doc_metadata_date_ymd_idx
-  ON knowledge.doc_metadata (date_ymd);
+  ON publications.doc_metadata (date_ymd);
 
 CREATE INDEX IF NOT EXISTS doc_metadata_channels_gin_idx
-  ON knowledge.doc_metadata USING GIN (channels);
+  ON publications.doc_metadata USING GIN (channels);
 
 CREATE INDEX IF NOT EXISTS doc_metadata_authors_gin_idx
-  ON knowledge.doc_metadata USING GIN (authors);
+  ON publications.doc_metadata USING GIN (authors);
 
 CREATE INDEX IF NOT EXISTS doc_metadata_rubric_ids_gin_idx
-  ON knowledge.doc_metadata USING GIN (rubric_ids);
+  ON publications.doc_metadata USING GIN (rubric_ids);
 
 CREATE INDEX IF NOT EXISTS doc_metadata_category_ids_gin_idx
-  ON knowledge.doc_metadata USING GIN (category_ids);
+  ON publications.doc_metadata USING GIN (category_ids);
 
 COMMIT;
 

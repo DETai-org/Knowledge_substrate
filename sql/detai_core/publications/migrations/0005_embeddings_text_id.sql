@@ -1,10 +1,10 @@
 BEGIN;
 
-ALTER TABLE knowledge.embeddings
+ALTER TABLE publications.embeddings
   DROP CONSTRAINT IF EXISTS embeddings_doc_id_fkey,
   DROP CONSTRAINT IF EXISTS embeddings_pkey;
 
-ALTER TABLE knowledge.embeddings
+ALTER TABLE publications.embeddings
   ALTER COLUMN doc_id TYPE TEXT USING doc_id::text;
 
 DO $$
@@ -12,10 +12,10 @@ BEGIN
   IF NOT EXISTS (
     SELECT 1
     FROM pg_constraint
-    WHERE conrelid = 'knowledge.embeddings'::regclass
+    WHERE conrelid = 'publications.embeddings'::regclass
       AND conname = 'embeddings_doc_id_type_model_unique'
   ) THEN
-    ALTER TABLE knowledge.embeddings
+    ALTER TABLE publications.embeddings
       ADD CONSTRAINT embeddings_doc_id_type_model_unique UNIQUE (doc_id, doc_type, model);
   END IF;
 END $$;

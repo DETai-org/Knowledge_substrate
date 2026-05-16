@@ -56,7 +56,7 @@ def upsert_doc_metadata(posts: list[PostExtracted], dsn: str, run_id: str) -> in
     ]
 
     query = """
-    INSERT INTO knowledge.doc_metadata
+    INSERT INTO publications.doc_metadata
       (doc_id, date_ymd, channels, authors, rubric_ids, category_ids, doc_type, meta)
     VALUES %s
     ON CONFLICT (doc_id)
@@ -95,13 +95,13 @@ def run_metadata_stage(source_root: Path, dsn: str, limit_posts: int | None = No
 
     rows = upsert_doc_metadata(posts, dsn=dsn, run_id=local_run_id)
     duration_ms = int((time.time() - started) * 1000)
-    log_event(logger, local_run_id, 'upsert', 'materialization metadata завершен', stage='metadata', table='knowledge.doc_metadata', rows=rows)
+    log_event(logger, local_run_id, 'upsert', 'materialization metadata завершен', stage='metadata', table='publications.doc_metadata', rows=rows)
     log_event(logger, local_run_id, 'done', 'metadata stage done', stage='metadata', duration_ms=duration_ms)
     return rows
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description='Materialize metadata: SoT -> knowledge.doc_metadata')
+    parser = argparse.ArgumentParser(description='Materialize metadata: SoT -> publications.doc_metadata')
     parser.add_argument('--source-root', type=Path, required=False)
     parser.add_argument('--limit-posts', type=int, default=None)
     parser.add_argument('--debug', action='store_true')

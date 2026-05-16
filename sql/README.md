@@ -6,6 +6,10 @@
 - `detai_core` — canonical/query database экосистемы;
 - `detai_projects` — private project runtime database.
 
+Git-структура внутри каждого database-контура должна по возможности отражать
+структуру самих PostgreSQL schemas, а не прятать schema-specific SQL в абстрактные
+технические папки.
+
 ## Зачем это разделение
 
 `detai_core` и `detai_projects` решают разные задачи и не должны смешиваться.
@@ -26,6 +30,12 @@
 
 Источник истины для этого слоя находится в `knowledge_core/source_of_truth/`.
 
+Ожидаемая раскладка внутри `sql/detai_core/`:
+- root-level файлы и каталоги — database-wide assets (`bootstrap/`, `api/`, `tests/`, `apply_migrations.sh`, `Makefile`, `docker-compose.yml`, `analysis_exports/`);
+- `infra/` — нейтральный технический schema-layer;
+- `ecosystem/` — ecosystem schema-layer;
+- `publications/` — publications schema-layer.
+
 ### `detai_projects`
 
 Хранит private mutable project runtime data:
@@ -40,6 +50,11 @@
 Внутри `detai_projects` каждая схема должна называться по проекту:
 - `psychology_in_quotes`
 - будущие project schemas по тому же правилу.
+
+Ожидаемая раскладка внутри `sql/detai_projects/`:
+- root-level файлы и каталоги — database-wide assets (`bootstrap/`, `apply_all_migrations.sh`, `README.md`);
+- `psychology_in_quotes/` — SQL-контур конкретной project schema;
+- будущие project folders по тому же правилу.
 
 ## Текущее состояние репозитория
 
