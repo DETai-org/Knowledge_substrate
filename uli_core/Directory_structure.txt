@@ -1,5 +1,0 @@
-.
-├── Directory_structure.txt
-├── README.md
-├── config.py
-└── config.toml

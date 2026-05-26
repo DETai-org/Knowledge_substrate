@@ -273,11 +273,6 @@ Knowledge_substrate
 │   └── README.md
 ├── scripts
 │   └── check.sh
-├── uli_core
-│   ├── config.py
-│   ├── config.toml
-│   ├── Directory_structure.txt
-│   └── README.md
 ├── .gitignore
 ├── AGENTS.md
 ├── Directory_structure.txt
