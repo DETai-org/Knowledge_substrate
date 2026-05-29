@@ -10,6 +10,13 @@
 - 📦 Копирует посты из Knowledge_substrate в репозиторий `DETai-org/sites`.
 - 🔄 Поддерживает синхронизацию блогов при обновлениях в целевых каталогах.
 
+## 🗓️ Monthly Docs Snapshot (`.github/workflows/monthly-docs-snapshot.yml`)
+- 🏷️ Создаёт ежемесячный аннотированный тег `docs-ecosystem-YYYY-MM` от ветки `main` как active snapshot публичного состояния `docs/ecosystem`.
+- 🕛 Запускается в `23:55` по `Europe/Moscow` в последние дни месяца и реально срабатывает только в последний календарный день месяца.
+- 🔎 Перед созданием тега проверяет открытые PR, связанные с `docs/ecosystem`, по label, имени ветки и документационному пути, чтобы зафиксировать незамёрженные изменения.
+- 📝 Сохраняет короткую snapshot-note как artifact и в summary workflow, чтобы monthly snapshot был связан с текущим редакционным состоянием.
+- 🎛️ Поддерживает `workflow_dispatch` с `force_run=true` для ручной проверки вне конца месяца.
+
 ## 🧭 Create Linear issue on merge to main (`.github/workflows/linear-create-issue-on-merge.yml`)
 
 ### Условия создания задачи
@@ -54,6 +61,7 @@ docs/publications/blogs/detai_site_blog/
 
 | Workflow | Затрагиваемый репозиторий | Запуск |
 | --- | --- | --- |
+| Monthly Docs Snapshot | Knowledge_substrate | schedule 28-31 числа, реальный запуск только в последний день месяца; workflow_dispatch |
 | Deploy Docs | Knowledge_substrate | push/pr в main по путям docs |
 | Sync Blog Posts to Site | Knowledge_substrate → DETai-org/sites | push в main по путям blog posts |
 | Create Linear issue on merge to main | Knowledge_substrate | workflow_dispatch; workflow_run после Sync Blog Posts |

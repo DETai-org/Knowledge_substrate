@@ -1,0 +1,192 @@
+name: Monthly Docs Snapshot
+
+on:
+  schedule:
+    # 23:55 Europe/Moscow on the last calendar day of the month.
+    - cron: "55 20 28-31 * *"
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: "Bypass the last-day-of-month guard for manual verification"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: monthly-docs-snapshot
+  cancel-in-progress: false
+
+jobs:
+  tag-month-end:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Resolve snapshot window
+        id: snapshot
+        env:
+          TZ: Europe/Moscow
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.force_run || 'false' }}
+        run: |
+          SNAPSHOT_DATE="$(date +%Y-%m-%d)"
+          TOMORROW_DAY="$(date -d "$SNAPSHOT_DATE + 1 day" +%d)"
+          TAG="docs-ecosystem-$(date +%Y-%m)"
+
+          if [ "$FORCE_RUN" = "true" ]; then
+            SHOULD_RUN=true
+            REASON="manual override"
+          elif [ "$TOMORROW_DAY" = "01" ]; then
+            SHOULD_RUN=true
+            REASON="last day of month"
+          else
+            SHOULD_RUN=false
+            REASON="not the last day of month"
+          fi
+
+          {
+            echo "snapshot_date=$SNAPSHOT_DATE"
+            echo "tag=$TAG"
+            echo "should_run=$SHOULD_RUN"
+            echo "reason=$REASON"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Skip outside snapshot window
+        if: steps.snapshot.outputs.should_run != 'true'
+        run: |
+          echo "Monthly snapshot skipped: ${{ steps.snapshot.outputs.reason }}."
+          {
+            echo "## Monthly Docs Snapshot"
+            echo
+            echo "- Snapshot date (Europe/Moscow): \`${{ steps.snapshot.outputs.snapshot_date }}\`"
+            echo "- Result: skipped"
+            echo "- Reason: ${{ steps.snapshot.outputs.reason }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Find open docs ecosystem PRs
+        if: steps.snapshot.outputs.should_run == 'true'
+        id: prs
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const ecosystemPrefix = "knowledge_core/source_of_truth/docs/ecosystem/";
+            const pulls = await github.paginate(github.rest.pulls.list, {
+              owner,
+              repo,
+              state: "open",
+              base: "main",
+              per_page: 100,
+            });
+
+            const matches = [];
+
+            for (const pr of pulls) {
+              const labels = pr.labels.map((label) => label.name);
+              const reasons = [];
+
+              if (labels.includes("docs/ecosystem")) {
+                reasons.push("label docs/ecosystem");
+              }
+
+              if (pr.head.ref === "docs/ecosystem") {
+                reasons.push("branch docs/ecosystem");
+              }
+
+              const files = await github.paginate(github.rest.pulls.listFiles, {
+                owner,
+                repo,
+                pull_number: pr.number,
+                per_page: 100,
+              });
+
+              if (files.some((file) => file.filename.startsWith(ecosystemPrefix))) {
+                reasons.push(`path ${ecosystemPrefix}`);
+              }
+
+              if (reasons.length > 0) {
+                matches.push({
+                  number: pr.number,
+                  title: pr.title,
+                  url: pr.html_url,
+                  headRefName: pr.head.ref,
+                  reasons,
+                });
+              }
+            }
+
+            const markdown = matches.length
+              ? matches
+                  .map(
+                    (pr) =>
+                      `- #${pr.number} ${pr.title} (${pr.headRefName}) — ${pr.reasons.join(", ")}`
+                  )
+                  .join("\n")
+              : "- No open docs ecosystem PRs matched the snapshot guard.";
+
+            core.setOutput("count", String(matches.length));
+            core.setOutput("markdown", markdown);
+            core.setOutput("json", JSON.stringify(matches));
+
+      - name: Check whether tag already exists
+        if: steps.snapshot.outputs.should_run == 'true'
+        id: tag_exists
+        run: |
+          if git rev-parse --verify --quiet "refs/tags/${{ steps.snapshot.outputs.tag }}" >/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create snapshot note
+        if: steps.snapshot.outputs.should_run == 'true'
+        run: |
+          cat <<'EOF' > snapshot-note.md
+          # Monthly Docs Snapshot
+
+          - Snapshot date (Europe/Moscow): `${{ steps.snapshot.outputs.snapshot_date }}`
+          - Tag: `${{ steps.snapshot.outputs.tag }}`
+          - Open relevant PR count: `${{ steps.prs.outputs.count }}`
+
+          ## Open PRs not included in active snapshot
+          ${{ steps.prs.outputs.markdown }}
+          EOF
+
+      - name: Upload snapshot note
+        if: steps.snapshot.outputs.should_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: monthly-docs-snapshot-note-${{ steps.snapshot.outputs.tag }}
+          path: snapshot-note.md
+
+      - name: Create and push monthly tag
+        if: steps.snapshot.outputs.should_run == 'true' && steps.tag_exists.outputs.exists != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "${{ steps.snapshot.outputs.tag }}" -m "Monthly docs ecosystem snapshot: ${{ steps.snapshot.outputs.tag }}"
+          git push origin "${{ steps.snapshot.outputs.tag }}"
+
+      - name: Publish run summary
+        if: steps.snapshot.outputs.should_run == 'true'
+        run: |
+          {
+            echo "## Monthly Docs Snapshot"
+            echo
+            echo "- Snapshot date (Europe/Moscow): \`${{ steps.snapshot.outputs.snapshot_date }}\`"
+            echo "- Tag: \`${{ steps.snapshot.outputs.tag }}\`"
+            echo "- Tag already existed: \`${{ steps.tag_exists.outputs.exists }}\`"
+            echo "- Open relevant PR count: \`${{ steps.prs.outputs.count }}\`"
+            echo
+            echo "### Open PRs not included in active snapshot"
+            echo "${{ steps.prs.outputs.markdown }}"
+          } >> "$GITHUB_STEP_SUMMARY"
