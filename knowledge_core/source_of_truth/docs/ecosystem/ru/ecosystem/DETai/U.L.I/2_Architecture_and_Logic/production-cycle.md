@@ -7,10 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: production-cycle
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-04-29
-  date_update: 2026-04-30
+  date_update: 2026-05-29
 links:
   external_links:
     - type: "MkDocs_ru"

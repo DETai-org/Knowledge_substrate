@@ -7,9 +7,10 @@ classification:
   function: principles
 descriptive:
   id: tools-clickup-clickup-structure-principles
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-03-25
+  date_update: 2026-05-29
 links:
   external_links:
     - type: "MkDocs_ru"

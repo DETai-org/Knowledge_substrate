@@ -7,10 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: detai-u-l-i-3-technical-standards-work-model-work-model
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-03-25
-  date_update: 2026-04-30
+  date_update: 2026-05-29
 links:
   external_links:
     - type: "MkDocs_ru"

@@ -8,7 +8,7 @@ classification:
 descriptive:
   id: human-agent-collaborative-planning-in-work-model-planning
   version: v1
-  status: draft
+  status: active
   date_ymd: 2026-05-29
 links:
   external_links:
