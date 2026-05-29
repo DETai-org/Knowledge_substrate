@@ -72,6 +72,7 @@ title: Методология проектного цикла DETai
 См. также:
 
 - [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/)
+- [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/)
 - [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/)
 - [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/)
 
@@ -106,6 +107,7 @@ title: Методология проектного цикла DETai
 ## Связанные документы
 
 - [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — описывает этапы производственного цикла, роли и участие Codex skills.
+- [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — объясняет, как человек и агент распределяют роли на переходе от намерения к структуре работы.
 - [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — связывает сложную работу с Epic Issue, Sub-Issue и документальным результатом.
 - [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — описывает операционную механику Epic Issue, Work Package, Acceptance Tasks и PR.
 - [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/) — объясняет, как версии проектов формируются и завершаются.

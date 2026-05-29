@@ -138,6 +138,8 @@ Work Model получает вход из этапа Project Intent: уже ес
 
 Таким образом, Work Model является рабочим мостом между намерением и поставкой результата.
 
+Распределение ролей между человеком и агентом внутри этапа Work Model Planning подробнее раскрыто в документе [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/).
+
 ## Связанные документы
 
 - [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — индекс связки Work Model.
@@ -145,3 +147,4 @@ Work Model получает вход из этапа Project Intent: уже ес
 - [Sub-Issue / Work Package Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/) — контракт Work Package.
 - [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — карта полного цикла DETai.
 - [Методология проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет переход от мысли к проектному намерению.
+- [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — объясняет совместную форму planning между человеком и агентом.

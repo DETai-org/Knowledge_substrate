@@ -60,6 +60,8 @@ title: Производственный цикл проектов и карта 
 
 Этот этап уже относится к Work Model. Производственный цикл только показывает место этапа в общей траектории, а конкретные правила структуры задаются связкой [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) и [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/).
 
+Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — документ о распределении high-level и low-level ролей между человеком и агентом.
+
 ## 3. Implementation
 
 На третьем этапе Work Package выполняется.
@@ -118,6 +120,8 @@ Release Fixation отвечает за момент, когда результа
 
 На уровне Work Model Planning и Implementation ключевым становится агент, который умеет работать внутри Epic Issue / Work Package, удерживать scope, выполнять checklist и готовить PR.
 
+Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/).
+
 ## Граница документа
 
 Этот документ отвечает за карту цикла и распределение ответственности между этапами.
@@ -135,6 +139,7 @@ Release Fixation отвечает за момент, когда результа
 ## Связанные документы
 
 - [Методология проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет переход от мысли к проектному намерению.
+- [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
 - [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — индекс связки Work Model.
 - [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — процесс этапов Work Model Planning и Implementation.
 - [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) — стандарт фиксации версии проекта.
