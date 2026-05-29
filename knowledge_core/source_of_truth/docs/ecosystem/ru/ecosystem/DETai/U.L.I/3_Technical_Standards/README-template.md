@@ -7,9 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: detai-u-l-i-3-technical-standards-readme-template
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-03-25
+  date_update: 2026-05-29
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -133,7 +134,9 @@ _(каждая команда оформляется так, чтобы можн
 
 ### 🔌 Коннекторы (`connectors/`)
 
-> {{Описание подключений к внешним инструментам см. Наш технический Стандарт 🗄️ [README](tools/README.md)   
+> {{Описание локальных адаптеров к внешним сервисам: Telegram, VK, GitHub, Google Docs, OpenAI, webhook и др.}}
+> Коннекторы образуют границу интеграций проекта: бизнес-логика вызывает функции уровня проекта, а токены, URL, SDK/API, retries, форматы ответа и ошибки остаются внутри `connectors/`.
+> Общий код не выносится заранее; повторяющийся стабильный адаптер может быть оформлен отдельным пакетом или репозиторием после явного решения.
 
 
 ### 📊 Статистика / аналитика (`statistics/`)

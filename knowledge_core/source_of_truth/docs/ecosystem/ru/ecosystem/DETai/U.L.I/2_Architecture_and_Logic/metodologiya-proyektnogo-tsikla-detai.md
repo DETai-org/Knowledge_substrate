@@ -7,10 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: detai-u-l-i-2-architecture-and-logic-metodologiya-proyektnogo-tsikla-detai
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-03-25
-  date_update: 2026-04-30
+  date_update: 2026-05-29
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -23,9 +23,6 @@ title: Методология проектного цикла DETai
 ---
 
 # Методология проектного цикла DETai
-
-Тип документа: Explanation
-v2.0
 
 Этот документ объясняет, как в экосистеме DETai мысль становится проектным направлением и входит в производственный цикл проектов. Он не описывает всю операционную механику выполнения задач; для этого используются отдельные документы производственного цикла и Work Model.
 
@@ -47,8 +44,13 @@ v2.0
 Проект не начинается сразу с Epic Issue, Work Package или чекбоксов. Сначала появляется первичный материал: наблюдение, мысль, вопрос, раздражение, догадка, возможность или повторяющийся сигнал из работы.
 
 На этом уровне идея ещё не обязана быть структурной. Её задача — показать потенциальное направление внимания и возможное качественное изменение состояния проекта, репозитория или части экосистемы.
+При этом, если идея не подходит ни под один уже существующий проект или продукт, для таких идей используется ClickUp.
 
-Если мысль пока не готова к оформлению, она фиксируется в пространстве «Ещё мысль 🧠» как импульс, наблюдение или идея. Это позволяет не превращать каждую догадку в задачу раньше времени, но и не терять материал для будущего развития.
+**Все независимые идеи**, которые не привязаны к существующим проектам, **хранятся в папке R&D и фиксируются на листе  💡Idea Lab**.
+
+**Если мысль относится к какому-либо проекту, она фиксируется в листе «🧠Ещё мысль»**, который есть у каждого нашего проекта или продукта и служит пространством новых идей, которые могут стать частью новой версии (v. up ♻️) проекта.
+
+Это позволяет не превращать каждую догадку в задачу раньше времени, но и не терять материал для будущего развития.
 
 Идея становится проектным намерением только тогда, когда из набора наблюдений появляется осмысленный вектор:
 
@@ -57,7 +59,7 @@ v2.0
 - можно описать ожидаемый переход;
 - есть связь с текущим развитием проекта или экосистемы.
 
-После этого проектное намерение может входить в производственный цикл проектов и карту ролей вокруг него.
+После этого идея может входить в производственный цикл проекта.
 
 ## 3. Блок смысла и вход в цикл
 
@@ -70,6 +72,7 @@ v2.0
 См. также:
 
 - [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/)
+- [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/)
 - [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/)
 - [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/)
 
@@ -104,6 +107,7 @@ v2.0
 ## Связанные документы
 
 - [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — описывает этапы производственного цикла, роли и участие Codex skills.
+- [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — объясняет, как человек и агент распределяют роли на переходе от намерения к структуре работы.
 - [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — связывает сложную работу с Epic Issue, Sub-Issue и документальным результатом.
 - [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — описывает операционную механику Epic Issue, Work Package, Acceptance Tasks и PR.
 - [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/) — объясняет, как версии проектов формируются и завершаются.
