@@ -19,22 +19,22 @@ alt:
 
 Опирайся на:
 
-- `knowledge_core/source_of_truth/docs/schemas/post_documents/` (зеркальная копия JSON-канонов рубрик/категорий/ключей из sites)
-- `knowledge_core/source_of_truth/docs/policies/` (человекочитаемые политики)
-- `knowledge_core/source_of_truth/docs/policies/shared/post-creation-prompt.md` (инструкции и ссылки для работы с `coverImage`, `coverLayout`, `coverImageScale`, `alt`)
+- `knowledge_core/source_of_truth/schemas/publications/post_documents/` (зеркальная копия JSON-канонов рубрик/категорий/ключей из sites)
+- `knowledge_core/source_of_truth/policies/` (человекочитаемые политики)
+- `knowledge_core/source_of_truth/policies/shared/post-creation-prompt.md` (инструкции и ссылки для работы с `coverImage`, `coverLayout`, `coverImageScale`, `alt`)
   
 
 ## 1) Где лежит исходный пост
 
 Я (пользователь) **уже добавлю** исходный пост **на русском** в одну из папок:
 
-- `storage/publications/blogs/personal_site_blog/`
+- `docs/publications/blogs/personal_site_blog/`
     
-- `storage/publications/blogs/detai_site_blog/`
+- `docs/publications/blogs/detai_site_blog/`
     
 
 Возможны оба варианта сразу.  
-Твоя задача — **взять frontmatter оригинала** (RU) из storage‑поста и **перенести/нормализовать** его в инфраструктуру нужного сайта(ов).
+Твоя задача — **взять frontmatter оригинала** (RU) из исходного blog post document и **перенести/нормализовать** его в инфраструктуру нужного сайта(ов).
 
 ## 2) Что именно делаем
 
@@ -112,7 +112,7 @@ alt:
 
 - `coverImage` заполнен или соответствует политике (см. Каноничные источники)
 
-- Поддержаны оба сайта, если исходные посты лежали в двух папках в `storage/publications/blogs/`.
+- Поддержаны оба сайта, если исходные посты лежали в двух папках в `docs/publications/blogs/`.
 ____
 
 ⚠️ Важно: В описании PR укажи magic word вида: Fixes <ID текущей задачи Linear>

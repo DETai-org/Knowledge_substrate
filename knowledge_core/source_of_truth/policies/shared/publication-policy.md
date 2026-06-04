@@ -2,8 +2,8 @@
 
 Связанные технические файлы:
 
-- `../../schemas/post_documents/rubrics.json`
-- `../../schemas/post_documents/categories.json`
+- `../../schemas/publications/post_documents/rubrics.json`
+- `../../schemas/publications/post_documents/categories.json`
 - `post-creation-prompt.md`
 
 ## Основные правила

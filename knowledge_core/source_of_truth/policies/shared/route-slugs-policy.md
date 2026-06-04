@@ -31,7 +31,7 @@
 ---
 
 ## 4) Где хранится
-`routeSlugs` хранится внутри per-type JSON файлов в `docs/schemas/post_documents/**` в каждой сущности таксономии.
+`routeSlugs` хранится внутри per-type JSON файлов в `schemas/publications/post_documents/**` в каждой сущности таксономии.
 
 ---
 

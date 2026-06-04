@@ -3,7 +3,7 @@
   "version": "v0.2",
   "status": "planned",
   "policy": {
-    "reference": "docs/policies/shared/keywords-policy.md",
+    "reference": "policies/shared/keywords-policy.md",
     "description": {
       "ru": "На текущем этапе повторно используемый словарь keyword_ids ещё не сформирован. Рабочим слоем остаются keywords_raw во frontmatter постов, а keywords.json сохраняется как заготовка под будущую кластеризацию.",
       "en": "At the current stage, a reusable keyword_ids vocabulary has not yet been formed. The working layer remains keywords_raw in post frontmatter, while keywords.json is kept as a placeholder for future clustering.",

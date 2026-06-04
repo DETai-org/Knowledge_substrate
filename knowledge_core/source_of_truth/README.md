@@ -6,7 +6,7 @@
 - controlled vocabularies;
 - схемы и политики, по которым эти документы затем попадают в SQL, graph и agent-facing слои.
 
-## Три зоны ответственности
+## Четыре зоны ответственности
 
 ### 1. `docs/` — канон самих документов
 
@@ -18,9 +18,9 @@
 Важно: языковые папки `ru/`, `en/`, `de/`, `fi/`, `cn/` не являются отдельными доменами знания.
 Это presentation/localization rails внутри `docs/ecosystem/`.
 
-### 2. `schemas/` — контракты, политики и naming rules
+### 2. `schemas/` — контракты, словари и naming rules
 
-`schemas/` хранит **не сами документы**, а правила:
+`schemas/` хранит **не сами документы**, а машинно-читаемые правила:
 - какие типы сущностей существуют;
 - как они именуются;
 - какие поля у них допустимы;
@@ -31,7 +31,17 @@
 - `schemas/ecosystem/`
 - `schemas/publications/`
 
-### 3. `assets/` — технический слой витрины
+### 3. `policies/` — человекочитаемые политики
+
+`policies/` хранит отдельный слой правил, который объясняет, как применять схемы:
+- editorial policies;
+- правила публикаций;
+- правила атрибуции, цитирования и cross-site links;
+- человекочитаемые описания controlled vocabularies.
+
+Политики не являются экземплярами документов и не являются JSON-схемами.
+
+### 4. `assets/` — технический слой витрины
 
 `assets/` хранит только технические файлы MkDocs:
 - JS;
@@ -49,13 +59,15 @@ SoT не равен SQL-базе напрямую.
 
 ```text
 source_of_truth/docs     -> canonical documents
-source_of_truth/schemas  -> contracts and policies
+source_of_truth/schemas  -> machine-readable contracts
+source_of_truth/policies -> human-readable rules
 SQL layers               -> operational/query representations
 ```
 
 Это означает:
 - `docs/` отвечает за материал;
 - `schemas/` отвечает за контракт;
+- `policies/` отвечает за правила применения;
 - SQL отвечает за производное operational/query-представление.
 
 ## Правило

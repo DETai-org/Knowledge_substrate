@@ -9,7 +9,7 @@
       "fi": "Rubriikit ovat sivustokohtaisia käsitteellisiä vektoreita julkaisujen luokitteluun. Jokainen sivusto ylläpitää omaa rubriikkijoukkoaan narratiivisen ja temaattisen eheyden säilyttämiseksi.",
       "cn": "栏目是用于分类出版物的站点特定概念向量。每个站点维护自己的栏目集合，以保持叙事与主题完整性。"
     },
-    "reference": "docs/policies/shared/rubrics-policy.md"
+    "reference": "policies/shared/rubrics-policy.md"
   },
   "blocks": [
     {

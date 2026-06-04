@@ -35,6 +35,6 @@
 ## Связанные разделы
 
 - Общие правила схем и словарей: `knowledge_core/source_of_truth/schemas/README.md`.
-- Тематические циклы (зеркальный словарь для постов): `knowledge_core/source_of_truth/docs/schemas/post_documents/cycle.json`.
+- Тематические циклы (зеркальный словарь для постов): `knowledge_core/source_of_truth/schemas/publications/post_documents/cycle.json`.
 - Operational source for website blog taxonomy: [DETai-org/sites docs/schemas/post_documents](https://github.com/DETai-org/sites/tree/main/docs/schemas/post_documents).
 - Ingest & RAG hybrid model: `knowledge_core/ingest_pipeline/policies/ingest_and_rag_hybrid_model.md`.

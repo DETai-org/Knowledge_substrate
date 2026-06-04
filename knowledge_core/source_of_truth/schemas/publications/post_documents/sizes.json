@@ -9,7 +9,7 @@
       "fi": "Postauksen koko määrittää tekstin odotetun mittakaavan ja chunkkauksen säännöt. Nykyisessä sanastossa käytetään vain kokoja M ja L.",
       "cn": "帖子尺寸记录文本的预期规模和分块规则。当前词汇表只使用 M 和 L 两种尺寸。"
     },
-    "reference": "docs/policies/shared/sizes-policy.md"
+    "reference": "policies/shared/sizes-policy.md"
   },
   "items": [
     {

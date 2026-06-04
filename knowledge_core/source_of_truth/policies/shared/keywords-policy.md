@@ -1,6 +1,6 @@
 # Keywords Policy
 
-Технический аналог: `../../schemas/post_documents/keywords.json`
+Технический аналог: `../../schemas/publications/post_documents/keywords.json`
 
 ## Текущий статус
 

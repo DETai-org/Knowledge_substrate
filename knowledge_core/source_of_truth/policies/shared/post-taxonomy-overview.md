@@ -4,11 +4,11 @@
 
 ## Технический аналог
 
-- `../../schemas/post_documents/rubrics.json`
-- `../../schemas/post_documents/categories.json`
-- `../../schemas/post_documents/cycle.json`
-- `../../schemas/post_documents/sizes.json`
-- `../../schemas/post_documents/keywords.json`
+- `../../schemas/publications/post_documents/rubrics.json`
+- `../../schemas/publications/post_documents/categories.json`
+- `../../schemas/publications/post_documents/cycle.json`
+- `../../schemas/publications/post_documents/sizes.json`
+- `../../schemas/publications/post_documents/keywords.json`
 
 ## Основная модель
 

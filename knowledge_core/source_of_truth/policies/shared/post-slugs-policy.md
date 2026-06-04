@@ -129,7 +129,7 @@ routeSlug: "power-and-light-chaos-and-darkness"
 
 ## 8) Отличие от таксономии
 Таксономия (rubrics/categories/keywords) — **общая** для всех сайтов и хранится
-в `docs/schemas/post_documents`, а runtime-loader находится в `packages/blog-taxonomy`.
+в `schemas/publications/post_documents`, а runtime-loader находится в `packages/blog-taxonomy`.
 Посты и их slugs — **локальные** и всегда хранятся внутри конкретного сайта рядом
 с текстами постов.
 

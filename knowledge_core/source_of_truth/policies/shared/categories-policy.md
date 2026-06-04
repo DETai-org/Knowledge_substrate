@@ -1,6 +1,6 @@
 # Categories Policy
 
-Технический JSON-источник: [categories.json](../../schemas/post_documents/categories.json)
+Технический JSON-источник: [categories.json](../../schemas/publications/post_documents/categories.json)
 
 ## Правило
 
@@ -34,7 +34,7 @@
 
 ## Таблица категорий
 
-Эта таблица является человекочитаемым представлением [categories.json](../../schemas/post_documents/categories.json): emoji, русское название, стабильный ID, область действия, сайты, статус посадочной страницы и критерий использования.
+Эта таблица является человекочитаемым представлением [categories.json](../../schemas/publications/post_documents/categories.json): emoji, русское название, стабильный ID, область действия, сайты, статус посадочной страницы и критерий использования.
 
 | Emoji + RU label | ID | Scope | Sites | Landing page | Criteria / use |
 | --- | --- | --- | --- | --- | --- |
@@ -64,7 +64,7 @@
 
 ## Описания категорий
 
-Ниже приведена описательная копия русских описаний из [categories.json](../../schemas/post_documents/categories.json). Изменение текста только в этом Markdown-файле не меняет данные сайта и переводы в интерфейсе. Если правим описание, источник нужно менять в JSON, а этот раздел обновлять как копию JSON.
+Ниже приведена описательная копия русских описаний из [categories.json](../../schemas/publications/post_documents/categories.json). Изменение текста только в этом Markdown-файле не меняет данные сайта и переводы в интерфейсе. Если правим описание, источник нужно менять в JSON, а этот раздел обновлять как копию JSON.
 
 ### ❗️ ТОП идеи
 

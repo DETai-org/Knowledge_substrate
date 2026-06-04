@@ -1,6 +1,6 @@
 # Rubrics Policy
 
-Технический JSON-источник: [rubrics.json](../../schemas/post_documents/rubrics.json)
+Технический JSON-источник: [rubrics.json](../../schemas/publications/post_documents/rubrics.json)
 
 ## Правило
 
@@ -38,7 +38,7 @@
 
 ## Таблица рубрик
 
-Эта таблица является человекочитаемым представлением [rubrics.json](../../schemas/post_documents/rubrics.json): русское название, стабильный ID, область действия, сайты, route slug на русском языке, статус посадочной страницы и критерий использования.
+Эта таблица является человекочитаемым представлением [rubrics.json](../../schemas/publications/post_documents/rubrics.json): русское название, стабильный ID, область действия, сайты, route slug на русском языке, статус посадочной страницы и критерий использования.
 
 | RU label | ID | Scope | Sites | RU route slug | Landing page | Criteria / use |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -53,7 +53,7 @@
 
 ## Описания рубрик
 
-Ниже приведена описательная копия русских описаний из [rubrics.json](../../schemas/post_documents/rubrics.json). Изменение текста только в этом Markdown-файле не меняет данные сайта, переводы, URL или поведение фильтров. Если правим описание, label или route slug, источник нужно менять в JSON, а этот раздел обновлять как копию JSON.
+Ниже приведена описательная копия русских описаний из [rubrics.json](../../schemas/publications/post_documents/rubrics.json). Изменение текста только в этом Markdown-файле не меняет данные сайта, переводы, URL или поведение фильтров. Если правим описание, label или route slug, источник нужно менять в JSON, а этот раздел обновлять как копию JSON.
 
 ### Тень и Свет
 

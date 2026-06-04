@@ -1,6 +1,6 @@
 # Cycles Policy
 
-Технический JSON-источник: [cycle.json](../../schemas/post_documents/cycle.json)
+Технический JSON-источник: [cycle.json](../../schemas/publications/post_documents/cycle.json)
 
 ## Что такое цикл
 
@@ -18,7 +18,7 @@
 
 ## Описания циклов
 
-Ниже приведена описательная копия русских названий и описаний из [cycle.json](../../schemas/post_documents/cycle.json). Изменение текста только в этом Markdown-файле не меняет данные сайта. Если правим цикл, источник нужно менять в JSON, а этот раздел обновлять как копию JSON.
+Ниже приведена описательная копия русских названий и описаний из [cycle.json](../../schemas/publications/post_documents/cycle.json). Изменение текста только в этом Markdown-файле не меняет данные сайта. Если правим цикл, источник нужно менять в JSON, а этот раздел обновлять как копию JSON.
 
 ### Психология и AI
 

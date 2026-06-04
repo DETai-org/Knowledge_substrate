@@ -2,19 +2,19 @@
 
 Короткая техническая памятка для создания новых блоговых постов.
 
-## Куда сохранять временный файл
+## Куда сохранять blog post document
 
-Временное хранилище постов находится в корневой папке:
+Блоговые post documents находятся в публикационном слое:
 
-- `storage/publications/blogs/detai_site_blog/`
-- `storage/publications/blogs/personal_site_blog/`
+- `docs/publications/blogs/detai_site_blog/`
+- `docs/publications/blogs/personal_site_blog/`
 
-Если пост публикуется на оба сайта, один и тот же файл должен существовать в обеих папках временного хранилища.
+Если пост публикуется на оба сайта, один и тот же файл должен существовать в обеих site-папках.
 
 ## Где лежат правила
 
-- рубрики: `../../schemas/post_documents/rubrics.json` + `rubrics-policy.md`
-- категории: `../../schemas/post_documents/categories.json` + `categories-policy.md`
+- рубрики: `../../schemas/publications/post_documents/rubrics.json` + `rubrics-policy.md`
+- категории: `../../schemas/publications/post_documents/categories.json` + `categories-policy.md`
 - публикация на один или два сайта: `publication-policy.md`
 
 ## Таксономия
@@ -31,4 +31,4 @@
 
 ## Расположение
 
-Этот prompt хранится в Markdown-политиках, а не в папке JSON-схем. JSON-источники остаются в [docs/schemas/post_documents](../../schemas/post_documents).
+Этот prompt хранится в Markdown-политиках, а не в папке JSON-схем. JSON-источники остаются в [schemas/publications/post_documents](../../schemas/publications/post_documents).

@@ -9,7 +9,7 @@
       "fi": "Kategoriat ovat universaaleja tageja ja suodattimia poikkiteemaiseen luokitteluun. Ne soveltuvat mihin tahansa dokumenttiin ja rubriikkiin, auttavat yhdistämään materiaalit yhteisten teemojen kautta ja tarjoavat yhtenäisen navigointikerroksen.",
       "cn": "类别是跨主题分类的通用标签和筛选器，适用于任何文档和任何栏目，帮助按共同主题关联内容，并提供统一的导航层。"
     },
-    "reference": "docs/policies/shared/categories-policy.md"
+    "reference": "policies/shared/categories-policy.md"
   },
   "items": [
     {

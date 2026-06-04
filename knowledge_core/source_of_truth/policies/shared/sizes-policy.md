@@ -1,6 +1,6 @@
 # Sizes Policy
 
-Технический JSON-источник: [sizes.json](../../schemas/post_documents/sizes.json)
+Технический JSON-источник: [sizes.json](../../schemas/publications/post_documents/sizes.json)
 
 ## Правило
 
@@ -15,7 +15,7 @@
 
 ## Описания размеров
 
-Ниже приведена описательная копия русских описаний из [sizes.json](../../schemas/post_documents/sizes.json). Изменение текста только в этом Markdown-файле не меняет словарь размеров. Если правим размер, label или описание, источник нужно менять в JSON, а этот раздел обновлять как копию JSON.
+Ниже приведена описательная копия русских описаний из [sizes.json](../../schemas/publications/post_documents/sizes.json). Изменение текста только в этом Markdown-файле не меняет словарь размеров. Если правим размер, label или описание, источник нужно менять в JSON, а этот раздел обновлять как копию JSON.
 
 ### Пост размера M
 

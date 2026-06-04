@@ -1,12 +1,12 @@
 # `docs/` — слой документов
 
-`docs/` в `Knowledge_substrate` хранит только документы и их человекочитаемые описания.
+`docs/` в `Knowledge_substrate` хранит только экземпляры документов.
 
 ## Что важно после реструктуризации
 
-- Документы и policies остаются в `docs/`.
-- Машинно-читаемые реестры для blog post documents лежат в `docs/schemas/post_documents/` как зеркало operational-слоя сайта.
-- Временное хранилище входящих блог-постов вынесено из `docs/` в `../storage/publications/blogs/`.
+- Policies вынесены из `docs/` в `../policies/`.
+- Машинно-читаемые реестры для blog post documents лежат в `../schemas/publications/post_documents/`.
+- Блоговые публикации из бывшего storage-слоя живут в `publications/blogs/`.
 - `post_documents` — только один тип публикационного документа внутри домена publications. Рядом с ним в базе знаний остаются `research_publication` и `quote`.
 
 ## Зеркало сайта
@@ -22,14 +22,11 @@
 ## Домены
 
 - `docs/ecosystem/...` — документация экосистемы
+- `docs/publications/blogs/...` — блоговые post documents с двух сайтов
 - `docs/publications/quotes/...` — экземпляры quote-документов
-- `docs/policies/...` — человекочитаемые политики
-- `docs/schemas/post_documents/...` — JSON-реестры и технические схемы для `post`
+- `docs/publications/Research_Publication/...` — научные публикации
 
-## Отдельно про blog storage
+## Связанные слои
 
-Временные папки `detai_site_blog` и `personal_site_blog` больше не считаются частью document-layer.
-Они лежат в:
-
-- `knowledge_core/source_of_truth/storage/publications/blogs/detai_site_blog/`
-- `knowledge_core/source_of_truth/storage/publications/blogs/personal_site_blog/`
+- `../schemas/publications/post_documents/...` — JSON-реестры и технические схемы для `post`
+- `../policies/shared/...` — человекочитаемые политики для публикационных документов

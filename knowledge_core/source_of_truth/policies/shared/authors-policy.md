@@ -1,6 +1,6 @@
 # Authors Policy
 
-Технический JSON-источник: [authors.json](../../schemas/authors.json)
+Технический JSON-источник: [authors.json](../../schemas/publications/authors.json)
 
 ## Правило
 
@@ -28,4 +28,4 @@
 
 ## Описательная копия
 
-Эта политика описывает [authors.json](../../schemas/authors.json), но не является источником данных. Если меняется имя, роль, slug, avatar или набор авторов, менять нужно JSON, а эту таблицу обновлять как копию.
+Эта политика описывает [authors.json](../../schemas/publications/authors.json), но не является источником данных. Если меняется имя, роль, slug, avatar или набор авторов, менять нужно JSON, а эту таблицу обновлять как копию.

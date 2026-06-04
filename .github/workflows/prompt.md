@@ -1,9 +1,9 @@
 ## 🎯 Задача
 Появился новый пост в хранилище блог‑постов. Найди актуальный пост по правилам из
-`knowledge_core/source_of_truth/docs/policies/shared/post-creation-prompt.md` (последний файл в каждой папке,
+`knowledge_core/source_of_truth/policies/shared/post-creation-prompt.md` (последний файл в каждой папке,
 проверка на сайте, один пост на папку; если посты есть в обеих папках — публикуй на оба сайта).
 
-Сформируй все согласно инструкции из `knowledge_core/source_of_truth/docs/policies/shared/post-creation-prompt.md`.
+Сформируй все согласно инструкции из `knowledge_core/source_of_truth/policies/shared/post-creation-prompt.md`.
 
 ## ✅ Входные данные
 

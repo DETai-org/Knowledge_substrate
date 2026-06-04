@@ -2,7 +2,7 @@
 
 Этот файл — описательный индекс для post-document словарей и политик. В Knowledge Substrate `post_documents` означает блоговые посты как один тип публикационного документа внутри более широкого домена `publications`. Рядом с ним остаются `research_publication` и `quote`.
 
-JSON-источники лежат отдельно в [docs/schemas/post_documents](../../schemas/post_documents). Markdown-политики и человекочитаемые описания лежат здесь, в [docs/policies/shared](.).
+JSON-источники лежат отдельно в [schemas/publications/post_documents](../../schemas/publications/post_documents). Markdown-политики и человекочитаемые описания лежат здесь, в [policies/shared](.).
 
 Эти файлы являются зеркалом сайта:
 
@@ -16,13 +16,13 @@ JSON-источники лежат отдельно в [docs/schemas/post_docume
 
 | JSON | Назначение |
 | --- | --- |
-| [categories.json](../../schemas/post_documents/categories.json) | Канонический словарь категорий, emoji, scope и landing-page флагов. |
-| [rubrics.json](../../schemas/post_documents/rubrics.json) | Канонический словарь рубрик, локализованных route slugs, описаний и site availability. |
-| [cycle.json](../../schemas/post_documents/cycle.json) | Канонический словарь тематических циклов. |
-| [sizes.json](../../schemas/post_documents/sizes.json) | Канонический словарь размеров постов. Сейчас используются только M и L. |
-| [keywords.json](../../schemas/post_documents/keywords.json) | Канонический словарь ключевых слов. |
+| [categories.json](../../schemas/publications/post_documents/categories.json) | Канонический словарь категорий, emoji, scope и landing-page флагов. |
+| [rubrics.json](../../schemas/publications/post_documents/rubrics.json) | Канонический словарь рубрик, локализованных route slugs, описаний и site availability. |
+| [cycle.json](../../schemas/publications/post_documents/cycle.json) | Канонический словарь тематических циклов. |
+| [sizes.json](../../schemas/publications/post_documents/sizes.json) | Канонический словарь размеров постов. Сейчас используются только M и L. |
+| [keywords.json](../../schemas/publications/post_documents/keywords.json) | Канонический словарь ключевых слов. |
 
-Общий справочник авторов не является post-document словарём, но используется блоговой публикацией: [authors.json](../../schemas/authors.json).
+Общий справочник авторов не является post-document словарём, но используется блоговой публикацией: [authors.json](../../schemas/publications/authors.json).
 
 ## Markdown-политики
 
@@ -45,6 +45,6 @@ JSON-источники лежат отдельно в [docs/schemas/post_docume
 
 Копии в Knowledge Substrate:
 
-- JSON schemas mirror: `knowledge_core/source_of_truth/docs/schemas/post_documents`
-- Publications schema mirror: `knowledge_core/source_of_truth/schemas/publications/post_documents`
-- Markdown policies mirror: `knowledge_core/source_of_truth/docs/policies/shared`
+- JSON schemas mirror: `knowledge_core/source_of_truth/schemas/publications/post_documents`
+- Authors mirror: `knowledge_core/source_of_truth/schemas/publications/authors.json`
+- Markdown policies mirror: `knowledge_core/source_of_truth/policies/shared`
