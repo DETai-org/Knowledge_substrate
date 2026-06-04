@@ -4,6 +4,17 @@
 
 Ниже — **3 отдельных JSON** (по типам документов).
 
+## Контекст post_documents
+
+`post_documents` — это блоговый подслой типа `post`, связанный с DETai/personal-site публикациями. Он не заменяет весь домен publications: `research_publication` и `quote` остаются отдельными типами документов.
+
+JSON-словари и Markdown-политики для `post_documents` в Knowledge Substrate являются зеркалом сайта:
+
+- [sites/docs/schemas/post_documents](https://github.com/DETai-org/sites/tree/main/docs/schemas/post_documents)
+- [sites/docs/policies/shared](https://github.com/DETai-org/sites/tree/main/docs/policies/shared)
+
+При расхождении сначала синхронизируется operational-слой сайта, затем зеркало в Knowledge Substrate.
+
 
 ---
 
@@ -48,7 +59,7 @@
 }
 ```
 
-`administrative.channels` может содержать **один или несколько** сайтов. Если указано несколько, файл публикуется в каждой соответствующей папке `docs/publications/blogs/<TARGET_SITE>/`.
+`administrative.channels` может содержать **один или несколько** сайтов. Если указано несколько, файл публикуется в каждой соответствующей папке `storage/publications/blogs/<TARGET_SITE>/`.
 
 ---
 
@@ -200,7 +211,7 @@ _____
 
 Канал размещения для постов: это **градация применяется только к типу документа `post`**.  
 Пост в данном контексте — это публикация в социальных сетях, которая может быть размещена **либо в блоге профессионального сайта, либо в блоге персонального сайта**.  
-Именно по этой метке можно определить, в какой из двух папок внутри `knowledge_core/source_of_truth/docs/publications/blogs` лежит конкретный пост.
+Именно по этой метке можно определить, в какой из двух папок внутри `knowledge_core/source_of_truth/storage/publications/blogs` лежит конкретный пост.
 
 Допустимые значения:
 

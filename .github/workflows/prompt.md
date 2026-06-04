@@ -1,9 +1,9 @@
 ## 🎯 Задача
 Появился новый пост в хранилище блог‑постов. Найди актуальный пост по правилам из
-`packages/static-data/post_documents/post_creation_prompt.md` (последний файл в каждой папке,
+`knowledge_core/source_of_truth/docs/policies/shared/post-creation-prompt.md` (последний файл в каждой папке,
 проверка на сайте, один пост на папку; если посты есть в обеих папках — публикуй на оба сайта).
 
-Сформируй все согласно инструкции из `packages/static-data/post_documents/post_creation_prompt.md`.
+Сформируй все согласно инструкции из `knowledge_core/source_of_truth/docs/policies/shared/post-creation-prompt.md`.
 
 ## ✅ Входные данные
 
@@ -18,7 +18,7 @@ coverImageScale:
 ____
 
 
-⚠️ Перед завершением работы сверься со всеми пунктами из `post_creation_prompt.md`
+⚠️ Перед завершением работы сверься со всеми пунктами из `post-creation-prompt.md`
 
 ⚠️ Важно: В описании PR укажи magic word вида: Fixes <ID текущей задачи Linear>
 

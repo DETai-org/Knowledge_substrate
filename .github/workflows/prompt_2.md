@@ -19,23 +19,22 @@ alt:
 
 Опирайся на:
 
-- `packages/static-data/post_documents/` (каноны рубрик/категорий/ключей и шаблоны)
-    
-- `packages/static-data/policies/` 
-- packages/static-data/post_documents/post_creation_prompt.md (Здесь Смотри и ищи инструкции и ссылки внутри этого файла на то что делать в данном случае с входными данными: coverImage: coverLayout: coverImageScale: alt:)
+- `knowledge_core/source_of_truth/docs/schemas/post_documents/` (зеркальная копия JSON-канонов рубрик/категорий/ключей из sites)
+- `knowledge_core/source_of_truth/docs/policies/` (человекочитаемые политики)
+- `knowledge_core/source_of_truth/docs/policies/shared/post-creation-prompt.md` (инструкции и ссылки для работы с `coverImage`, `coverLayout`, `coverImageScale`, `alt`)
   
 
 ## 1) Где лежит исходный пост
 
 Я (пользователь) **уже добавлю** исходный пост **на русском** в одну из папок:
 
-- `docs/publications/blogs/personal_site_blog/`
+- `storage/publications/blogs/personal_site_blog/`
     
-- `docs/publications/blogs/detai_site_blog/`
+- `storage/publications/blogs/detai_site_blog/`
     
 
 Возможны оба варианта сразу.  
-Твоя задача — **взять frontmatter оригинала** (RU) из docs‑поста и **перенести/нормализовать** его в инфраструктуру нужного сайта(ов).
+Твоя задача — **взять frontmatter оригинала** (RU) из storage‑поста и **перенести/нормализовать** его в инфраструктуру нужного сайта(ов).
 
 ## 2) Что именно делаем
 
@@ -57,7 +56,7 @@ alt:
         
     - `status`
         
-    - `rubric`, `category`, `keywords`, `keywordsRaw`
+    - `rubric`, `categories`/`category`, `keywords`, `keywordsRaw`
         
     - `coverImage` (если есть)
         
@@ -113,7 +112,7 @@ alt:
 
 - `coverImage` заполнен или соответствует политике (см. Каноничные источники)
 
-- Поддержаны оба сайта, если исходные посты лежали в двух папках в docs/.      
+- Поддержаны оба сайта, если исходные посты лежали в двух папках в `storage/publications/blogs/`.
 ____
 
 ⚠️ Важно: В описании PR укажи magic word вида: Fixes <ID текущей задачи Linear>
