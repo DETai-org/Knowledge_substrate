@@ -1,0 +1,118 @@
+{
+  "type": "quote",
+  "id": "telegram-preview-20260529192347",
+  "administrative": {
+    "curated_by": "Anton",
+    "date_ymd": "2026-05-29",
+    "status": "draft"
+  },
+  "verification": {
+    "state": "verified",
+    "submitted_by_role": "admin",
+    "verified_by": "Anton",
+    "verified_at": "2026-05-29T19:24:17.382Z"
+  },
+  "texts": {
+    "ru": {
+      "text": "\"Абсолютно все люди, достигшее самоактуализации, увлечены чем-то, что выходит за рамки их непосредственной личности и прибывает вовне. Они самозабвенно преданны какому-то делу, они работают над чем-то сокровенным,❗️– они отдаются призванию или служению, в старом, религиозном смысле этого слова. Они трудятся по зову судьбы и настолько любят своё дело , что мучительного выбора \"работа или отдых\" для них не существует\"",
+      "status": "source"
+    },
+    "en": {
+      "text": "\"Absolutely all people who have reached self-actualization are passionate about something beyond their immediate personality and external. They are selflessly devoted to some cause, they work on something heartfelt,❗️– they dedicate themselves to a calling or service, in the old, religious sense of the word. They work by destiny's call and love their work so much that the agonizing choice of \"work or rest\" does not exist for them\"",
+      "status": "translated"
+    },
+    "de": {
+      "text": "\"Absolut alle Menschen, die Selbstverwirklichung erreicht haben, sind von etwas begeistert, das über ihre unmittelbare Persönlichkeit hinausgeht und außerhalb liegt. Sie sind selbstlos einer Sache ergeben, sie arbeiten an etwas Herzliches,❗️– sie widmen sich einer Berufung oder einem Dienst, im alten religiösen Sinne des Wortes. Sie arbeiten nach dem Ruf des Schicksals und lieben ihre Arbeit so sehr, dass die quälende Wahl zwischen \"Arbeit oder Ruhe\" für sie nicht existiert\"",
+      "status": "translated"
+    },
+    "fi": {
+      "text": "\"Täysin kaikki itsekrealisaation saavuttaneet ihmiset ovat intohimoisesti kiinnostuneita jostakin, joka ylittää heidän välittömän persoonallisuutensa ja on ulkopuolella. He ovat itsetietoisesti omistautuneet jollekin asialle, he työskentelevät jossakin sydämellisessä,❗️– he antautuvat kutsumukselle tai palvelemiselle, vanhassa uskonnollisessa merkityksessä. He työskentelevät kohtalon kutsusta ja rakastavat työtään niin paljon, että tuskallinen valinta \"työ tai lepo\" ei ole heidän kohdallaan olemassa\"",
+      "status": "translated"
+    },
+    "cn": {
+      "text": "\"所有达到自我实现的人，都热衷于超越其直接个性并存在于外部的某种事物。他们无私地献身于某项事业，他们致力于某些内心深处的东西，❗️——他们奉献于一种使命或服务，按照旧时宗教的意义。他们遵从命运的召唤，且如此热爱他们的事业，以至于对他们来说痛苦的选择“工作还是休息”根本不存在\"",
+      "status": "translated"
+    }
+  },
+  "taxonomy": {
+    "rubric_ids": [],
+    "category_ids": [],
+    "keyword_ids": [],
+    "keywords_raw": []
+  },
+  "attribution": {
+    "quote_author": {
+      "canonical_name": "Абрахам Маслоу",
+      "display_name": {
+        "ru": "Абрахам Маслоу",
+        "en": "Abraham Maslow",
+        "de": "Abraham Maslow",
+        "fi": "Abraham Maslow",
+        "cn": "亚伯拉罕·马斯洛"
+      }
+    },
+    "source": {
+      "title_display": {
+        "ru": "Дальние пределы человеческой психики",
+        "en": "The Farther Reaches of Human Nature",
+        "de": "Die fernen Grenzen der menschlichen Psyche",
+        "fi": "Ihmisen mielen kaukaiset rajat",
+        "cn": "人类心理的遥远边界"
+      },
+      "page": "74"
+    },
+    "source_display": {
+      "ru": "Абрахам Маслоу, Дальние пределы человеческой психики, с. 74",
+      "en": "Abraham Maslow, The Farther Reaches of Human Nature, p. 74",
+      "de": "Abraham Maslow, Die fernen Grenzen der menschlichen Psyche, S. 74",
+      "fi": "Abraham Maslow, Ihmisen mielen kaukaiset rajat, s. 74",
+      "cn": "亚伯拉罕·马斯洛，人类心理的遥远边界，第74页"
+    },
+    "citations": {
+      "apa": "",
+      "gost": ""
+    }
+  },
+  "assets": {
+    "ru": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/ru/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/ru/black.webp"
+      }
+    },
+    "en": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/en/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/en/black.webp"
+      }
+    },
+    "de": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/de/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/de/black.webp"
+      }
+    },
+    "fi": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/fi/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/fi/black.webp"
+      }
+    },
+    "cn": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/cn/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260529192347/assets/cn/black.webp"
+      }
+    }
+  },
+  "external_links": [
+    {
+      "type": "website",
+      "url": ""
+    },
+    {
+      "type": "telegram",
+      "url": ""
+    }
+  ]
+}

@@ -1,50 +1,35 @@
 # `docs/` — слой документов
 
-`docs/` хранит **сами документы**, а не их схемы.
+`docs/` в `Knowledge_substrate` хранит только документы и их человекочитаемые описания.
 
-Внутри этого слоя есть два логических домена:
-- `ecosystem`
-- `publications`
+## Что важно после реструктуризации
 
-## Как читать текущую структуру
+- Документы и policies остаются в `docs/`.
+- Машинно-читаемые реестры для blog post documents лежат в `docs/schemas/post_documents/` как зеркало operational-слоя сайта.
+- Временное хранилище входящих блог-постов вынесено из `docs/` в `../storage/publications/blogs/`.
+- `post_documents` — только один тип публикационного документа внутри домена publications. Рядом с ним в базе знаний остаются `research_publication` и `quote`.
 
-### Домен `ecosystem`
+## Зеркало сайта
 
-`ecosystem` хранится в мультиязычном виде:
-- `docs/ecosystem/ru/ecosystem/...`
-- `docs/ecosystem/en/ecosystem/...`
-- `docs/ecosystem/de/ecosystem/...`
-- `docs/ecosystem/fi/ecosystem/...`
-- `docs/ecosystem/cn/ecosystem/...`
+Словари и policies для blog post documents синхронизируются с репозиторием сайта:
 
-Важно: языковые папки не являются отдельными сущностями верхнего уровня.
-Это языковые рельсы одного и того же домена `ecosystem`.
+- [sites/docs/schemas/post_documents](https://github.com/DETai-org/sites/tree/main/docs/schemas/post_documents)
+- [sites/docs/schemas/authors.json](https://github.com/DETai-org/sites/blob/main/docs/schemas/authors.json)
+- [sites/docs/policies/shared](https://github.com/DETai-org/sites/tree/main/docs/policies/shared)
 
-Русская версия является дефолтной и задаёт опорную структуру путей.
+В `Knowledge_substrate` эти файлы нужны для согласования базы знаний, ingest/RAG и будущих связей между постами, research publications и quotes. Изменения taxonomy/policy сначала фиксируются в `sites`, затем зеркалируются сюда.
 
-Для MkDocs эта ветка публикуется отдельно через `docs_dir = knowledge_core/source_of_truth/docs/ecosystem`, поэтому публичные URL сохраняют language-first формат `/ru/...`, `/en/...`.
+## Домены
 
-### Домен `publications`
+- `docs/ecosystem/...` — документация экосистемы
+- `docs/publications/quotes/...` — экземпляры quote-документов
+- `docs/policies/...` — человекочитаемые политики
+- `docs/schemas/post_documents/...` — JSON-реестры и технические схемы для `post`
 
-`publications` хранится отдельно и описывает публикационные материалы основного сайта:
-- посты в блоге `docs/publications/blogs/...`
-- научные публикации `docs/publications/Research_Publication/...`
-- цитаты, создаваемые через проект `psychology-in-quotes` — `docs/publications/quotes/...`
+## Отдельно про blog storage
 
-`publications` сейчас не разнесён по языковым папкам, потому что этот домен обслуживается отдельно от мультиязычной ecosystem-витрины.
+Временные папки `detai_site_blog` и `personal_site_blog` больше не считаются частью document-layer.
+Они лежат в:
 
-## Принцип зеркальности
-
-Документы живут в `docs/`, а их контракты должны находиться в зеркальном домене `schemas/`.
-
-Пример:
-- документы публикаций -> `docs/publications/...`
-- контракты публикаций -> `schemas/publications/...`
-- документы экосистемы -> `docs/ecosystem/{lang}/ecosystem/...`
-- контракты экосистемы -> `schemas/ecosystem/...`
-
-## Правило
-
-Если файл отвечает на вопрос "что является материалом?", он должен жить в `docs/`.
-
-Если файл отвечает на вопрос "по какому контракту этот материал устроен?", он должен жить в `schemas/`.
+- `knowledge_core/source_of_truth/storage/publications/blogs/detai_site_blog/`
+- `knowledge_core/source_of_truth/storage/publications/blogs/personal_site_blog/`

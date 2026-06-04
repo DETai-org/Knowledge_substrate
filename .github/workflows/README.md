@@ -22,12 +22,12 @@
 ### Условия создания задачи
 Задача создаётся только при добавлении новых файлов (A) в одном из каталогов:
 
-docs/publications/blogs/personal_site_blog/\
-docs/publications/blogs/detai_site_blog/
+storage/publications/blogs/personal_site_blog/\
+storage/publications/blogs/detai_site_blog/
 
-Дополнительно используется список `knowledge_core/source_of_truth/docs/publications/blogs/list_publication_blogs.json`: если новый файл уже есть в списке, workflow завершится без создания задачи. При успешной отправке задачи в Linear имя обнаруженного файла автоматически добавляется в JSON-список.
+Дополнительно используется список `knowledge_core/source_of_truth/storage/publications/blogs/list_publication_blogs.json`: если новый файл уже есть в списке, workflow завершится без создания задачи. При успешной отправке задачи в Linear имя обнаруженного файла автоматически добавляется в JSON-список.
 
-Помимо фиксации нового имени в списке, этот workflow обеспечивает актуализацию данных для сайта: обновлённый [`list_publication_blogs.json`](../../knowledge_core/source_of_truth/docs/publications/blogs/list_publication_blogs.json) попадает в репозиторий сайта (копируется в [`packages/blog-index/`](https://github.com/DETai-org/sites/tree/main/packages/blog-index) в рамках синхронизации блогов). Таким образом, процесс одновременно обновляет реестр публикаций и подготавливает JSON-индекс для сайта.
+Помимо фиксации нового имени в списке, этот workflow обеспечивает актуализацию данных для сайта: обновлённый [`list_publication_blogs.json`](../../knowledge_core/source_of_truth/storage/publications/blogs/list_publication_blogs.json) попадает в репозиторий сайта (копируется в [`packages/blog-index/`](https://github.com/DETai-org/sites/tree/main/packages/blog-index) в рамках синхронизации блогов). Таким образом, процесс одновременно обновляет реестр публикаций и подготавливает JSON-индекс для сайта.
 
 ### Что передаётся в Linear
 📌 Передаёт в Linear `LINEAR_TEAM_ID`, `LINEAR_PROJECT_ID`, `LINEAR_LABEL_ID_POST_TO_BLOG`, `LINEAR_ASSIGNEE_ID`, а также контекст `repo`, `sha`, `actor` для описания задачи.
