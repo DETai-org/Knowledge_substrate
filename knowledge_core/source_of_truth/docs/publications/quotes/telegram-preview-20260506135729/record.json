@@ -4,7 +4,7 @@
   "administrative": {
     "curated_by": "Anton",
     "date_ymd": "2026-05-06",
-    "status": "draft"
+    "status": "published"
   },
   "texts": {
     "ru": {
@@ -46,6 +46,7 @@
       }
     },
     "source": {
+      "title_original": "Lying on the Couch",
       "title_display": {
         "ru": "Лжец на кушетке",
         "en": "Liar on the Couch",
@@ -53,6 +54,9 @@
         "fi": "Valehtelija sohvalla",
         "cn": "心理咨询师的谎言"
       },
+      "original_language": "en",
+      "original_year": 1996,
+      "publisher": "Basic Books",
       "page": "303"
     },
     "source_display": {
@@ -63,8 +67,8 @@
       "cn": "欧文·亚隆，《心理咨询师的谎言》，第303页"
     },
     "citations": {
-      "apa": "",
-      "gost": ""
+      "apa": "Yalom, I. D. (1996). Lying on the couch. Basic Books.",
+      "gost": "Yalom I. D. Lying on the couch. New York: Basic Books, 1996."
     }
   },
   "assets": {

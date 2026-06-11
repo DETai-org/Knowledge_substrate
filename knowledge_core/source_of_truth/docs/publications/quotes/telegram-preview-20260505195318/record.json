@@ -4,7 +4,7 @@
   "administrative": {
     "curated_by": "Anton",
     "date_ymd": "2026-05-05",
-    "status": "draft"
+    "status": "published"
   },
   "texts": {
     "ru": {
@@ -46,6 +46,7 @@
       }
     },
     "source": {
+      "title_original": "Тайм-драйв: как успевать жить и работать",
       "title_display": {
         "ru": "Тайм-драйв: как успевать жить и работать",
         "en": "Time Drive: How to Manage to Live and Work",
@@ -53,6 +54,9 @@
         "fi": "Time Drive: Kuinka ehtiä elää ja työskennellä",
         "cn": "Time Drive: 如何既能生活又能工作"
       },
+      "original_language": "ru",
+      "original_year": 2008,
+      "publisher": "Манн, Иванов и Фербер",
       "page": "197"
     },
     "source_display": {
@@ -63,8 +67,8 @@
       "cn": "ж је€—еёѓВ·йїе…°ж је°”ж–ЇеџєпјЊгЂЉTime Drive: е¦‚дЅ•ж—ўиѓЅз”џжґ»еЏ€иѓЅе·ҐдЅњгЂ‹пјЊз¬¬197йЎµ"
     },
     "citations": {
-      "apa": "",
-      "gost": ""
+      "apa": "Arhangelsky, G. (2008). Taym-drayv: Kak uspevat zhit i rabotat. Mann, Ivanov and Ferber.",
+      "gost": "Архангельский Г. Тайм-драйв: как успевать жить и работать. М.: Манн, Иванов и Фербер, 2008."
     }
   },
   "assets": {

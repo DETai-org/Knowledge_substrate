@@ -4,7 +4,7 @@
   "administrative": {
     "curated_by": "Anton",
     "date_ymd": "2026-05-03",
-    "status": "draft"
+    "status": "published"
   },
   "texts": {
     "ru": {
@@ -51,13 +51,17 @@
       }
     },
     "source": {
+      "title_original": "The Art of Loving: An Enquiry into the Nature of Love",
       "title_display": {
         "ru": "Искусство любить",
         "en": "The Art of Loving",
         "de": "Die Kunst des Liebens",
         "fi": "Rakastamisen taito",
         "cn": "爱的艺术"
-      }
+      },
+      "original_language": "en",
+      "original_year": 1956,
+      "publisher": "Harper & Brothers"
     },
     "source_display": {
       "ru": "Эрих Фромм, Искусство любить",
@@ -67,8 +71,8 @@
       "cn": "埃里希·弗洛姆，《爱的艺术》"
     },
     "citations": {
-      "apa": "",
-      "gost": ""
+      "apa": "Fromm, E. (1956). The art of loving: An enquiry into the nature of love. Harper & Brothers.",
+      "gost": "Fromm E. The art of loving: An enquiry into the nature of love. New York: Harper & Brothers, 1956."
     }
   },
   "assets": {
