@@ -1,5 +1,6 @@
 ---
 type: ecosystem
+title: sites
 classification:
   scope: DETai_cluster
   context: platform
@@ -9,16 +10,16 @@ descriptive:
   id: detai-platform-detai-e2-brand-sites-index
   version: v1
   status: active
-  date_ymd: 2026-03-25
+  date_ymd: 2026-06-12
 links:
   external_links:
     - type: "MkDocs_ru"
       url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/"
-  document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
-title: sites
+    - type: "GitHub"
+      url: "https://github.com/DETai-org/sites"
+    - type: "website"
+      url: "https://detai.ai/"
+  document_links: null
 ---
 
 # sites

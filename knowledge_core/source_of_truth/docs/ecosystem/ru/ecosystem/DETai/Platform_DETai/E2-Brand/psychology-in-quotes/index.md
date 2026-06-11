@@ -1,24 +1,31 @@
 ---
 type: ecosystem
+title: Psychology in Quotes
 classification:
   scope: DETai_cluster
   context: platform
   layer: null
-  function: explanation
+  function: index
 descriptive:
-  id: detai-platform-detai-e2-brand-psychology-in-quotes-explanation
+  id: detai-platform-detai-e2-brand-psychology-in-quotes-index
   version: v1
   status: active
-  date_ymd: 2026-06-11
+  date_ymd: 2026-06-12
 links:
   external_links:
     - type: "MkDocs_ru"
       url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/"
-  document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
-title: Psychology in Quotes
+    - type: "GitHub"
+      url: "https://github.com/DETai-org/psychology-in-quotes"
+    - type: "website"
+      url: "https://detai.ai/detai/platform/psychology-in-quotes"
+    - type: "telegram"
+      url: "https://t.me/DET_psy_in_quotes_bot"
+    - type: "privacy"
+      url: "https://detai.ai/detai/platform/psychology-in-quotes/privacy"
+    - type: "terms"
+      url: "https://detai.ai/detai/platform/psychology-in-quotes/terms"
+  document_links: null
 ---
 
 # Psychology in Quotes
