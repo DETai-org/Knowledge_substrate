@@ -150,7 +150,8 @@ sorting-spec: |
 
     news-agent
     Telegram
-    Сайт
+    sites
+    psychology-in-quotes
 
 
   target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/Telegram
@@ -169,7 +170,12 @@ sorting-spec: |
     index
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/Сайт
+  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/sites
+
+    index
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes
 
     index
 

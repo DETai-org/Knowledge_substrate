@@ -100,12 +100,14 @@ nav:
           - ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
           - UserControl — Модуль управления Telegram-процессами:
             - ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
-        - '**Сайт** — Визитная карточка экосистемы DET/DETai':
-          - ru/ecosystem/DETai/Platform_DETai/E2-Brand/Сайт/index.md
+        - sites:
+          - ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
+        - Psychology in Quotes:
+          - ru/ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/index.md
       - E3-Infra:
         - gpt_promt_engine:
           - ru/ecosystem/DETai/Platform_DETai/E3-Infra/gpt_promt_engine/index.md
-        - Проект Knowledge Substrate — Каноническая структура знаний и данных:
+        - Knowledge Substrate:
           - ru/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md
       - R&D:
         - ru/ecosystem/DETai/Platform_DETai/R&D/index.md
