@@ -87,9 +87,15 @@ nav:
       - E1-Core:
         - Francis Galton:
           - ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md
+        - DETai Pulse — эмоциональная амплитуда:
+          - ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse/index.md
+        - DETai Matrix — матрица дня:
+          - ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md
         - Psykhḗ AI:
           - ru/ecosystem/DETai/Platform_DETai/E1-Core/🌀Psykhḗ AI/index.md
       - E2-Brand:
+        - Новостной агент:
+          - ru/ecosystem/DETai/Platform_DETai/E2-Brand/news-agent/index.md
         - Telegram:
           - ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
           - UserControl — Модуль управления Telegram-процессами:
