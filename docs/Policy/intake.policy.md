@@ -229,6 +229,23 @@ Suggested fields:
 - `country_city` — country/city;
 
 Conditional fields for `participation_role = speaker`:
+- `speaker_current_status` — select: bachelor, specialist, master,
+  postgraduate, educator, researcher, psychotherapist, technical_specialist,
+  other;
+- `speaker_status_other` — text, shown when speaker status is other;
+- `speaker_bachelor_course` — select: 1, 2, 3, 4;
+- `speaker_specialist_course` — select: 1, 2, 3, 4, 5, 6;
+- `speaker_master_course` — select: 1, 2;
+- `speaker_postgraduate_course` — select: 1, 2, 3;
+- `speaker_research_area` — textarea, shown when speaker is researcher;
+- `speaker_psychotherapy_format` — select: private_practice, organization,
+  both, other;
+- `speaker_psychotherapy_organization` — text, shown when psychotherapy format
+  involves organization or other;
+- `speaker_technical_area` — textarea, shown for technical / AI specialists;
+- `speaker_affiliation` — text, organization / university / professional
+  environment where relevant;
+- `speaker_specialization` — text;
 - `talk_topic` — textarea;
 - `talk_summary` — textarea;
 - `speaker_background` — textarea.
@@ -236,7 +253,11 @@ Conditional fields for `participation_role = speaker`:
 Conditional fields for `participation_role = listener`:
 - `degree_level` — select: bachelor, specialist, master, postgraduate,
   professional, other;
-- `study_course` — text;
+- `degree_level_other` — text, shown when degree level is other;
+- `bachelor_course` — select: 1, 2, 3, 4;
+- `specialist_course` — select: 1, 2, 3, 4, 5, 6;
+- `master_course` — select: 1, 2;
+- `postgraduate_course` — select: 1, 2, 3;
 - `field_of_study` — text;
 - `listener_expectations` — textarea;
 - `referral_source` — text.
@@ -301,6 +322,25 @@ These are current `detai-site` UI surfaces aligned with the draft presets.
 Intake forms must not include notification subscription choices such as
 "receive announcements". Notification preferences belong to the `notifications`
 schema and should be managed through a separate subscription flow.
+
+## Website wizard boundary
+
+The current `detai-site` implementation may render intake presets as wizard
+steps. This is a UI flow only. It must not change the canonical submission
+envelope:
+
+- `kind`
+- `source_channel`
+- `source_app`
+- `source_surface`
+- `target_key`
+- `locale`
+- `payload_json`
+- `contact_snapshot`
+- `consent`
+
+Conditional fields that are hidden in the current UI path should not be included
+as meaningful answers in `payload_json`.
 
 ## Инварианты черновика
 

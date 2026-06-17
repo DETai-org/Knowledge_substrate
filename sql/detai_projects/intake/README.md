@@ -186,7 +186,16 @@ Recent field decisions:
   field;
 - `section_participation` uses conditional fields for `listener` and `speaker`
   roles;
-- listener section fields include `degree_level`, `study_course`,
-  `field_of_study`, `listener_expectations`, and `referral_source`;
-- speaker section fields include `talk_topic`, `talk_summary`, and
-  `speaker_background`.
+- listener section fields include `degree_level`, `degree_level_other`,
+  `bachelor_course`, `specialist_course`, `master_course`,
+  `postgraduate_course`, `field_of_study`, `listener_expectations`, and
+  `referral_source`;
+- speaker section fields include `speaker_current_status`,
+  `speaker_status_other`, `speaker_bachelor_course`,
+  `speaker_specialist_course`, `speaker_master_course`,
+  `speaker_postgraduate_course`, `speaker_research_area`,
+  `speaker_psychotherapy_format`, `speaker_psychotherapy_organization`,
+  `speaker_technical_area`, `speaker_affiliation`, `speaker_specialization`,
+  `talk_topic`, `talk_summary`, and `speaker_background`;
+- website forms may be rendered as wizard steps, but still submit one common
+  `intake.submissions` envelope.
