@@ -186,9 +186,11 @@ Recent field decisions:
   field;
 - `section_participation` uses conditional fields for `listener` and `speaker`
   roles;
-- listener section fields include `degree_level`, `degree_level_other`,
-  `bachelor_course`, `specialist_course`, `master_course`,
-  `postgraduate_course`, `field_of_study`, `listener_expectations`, and
+- listener section fields include `professional_role`,
+  `professional_role_other`, `bachelor_course`, `specialist_course`,
+  `master_course`, `postgraduate_course`, `listener_research_area`,
+  `listener_psychotherapy_format`, `listener_psychotherapy_organization`,
+  `listener_technical_area`, `field_of_study`, `listener_expectations`, and
   `referral_source`;
 - speaker section fields include `speaker_current_status`,
   `speaker_status_other`, `speaker_bachelor_course`,

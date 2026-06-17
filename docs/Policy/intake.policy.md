@@ -198,8 +198,9 @@ Suggested fields:
   not sure, other;
 - `attendance_mode` — select: offline in Saint Petersburg, online, either;
 - `topics_of_interest` — textarea;
-- `professional_role` — select: practicing psychotherapist, psychologist,
-  student, researcher, educator, other;
+- `professional_role` — select: psychotherapist, psychologist, bachelor,
+  specialist, master, postgraduate, researcher, educator,
+  technical_specialist, other;
 - `education_background` — text, free-form education/professional background
   such as psychologist, psychology student, doctor, educator, economist;
 - `field_of_study` — text;
@@ -251,13 +252,20 @@ Conditional fields for `participation_role = speaker`:
 - `speaker_background` — textarea.
 
 Conditional fields for `participation_role = listener`:
-- `degree_level` — select: bachelor, specialist, master, postgraduate,
-  professional, other;
-- `degree_level_other` — text, shown when degree level is other;
+- `professional_role` — select: bachelor, specialist, master, postgraduate,
+  educator, researcher, psychotherapist, psychologist, technical_specialist,
+  other;
+- `professional_role_other` — text, shown when professional role is other;
 - `bachelor_course` — select: 1, 2, 3, 4;
 - `specialist_course` — select: 1, 2, 3, 4, 5, 6;
 - `master_course` — select: 1, 2;
 - `postgraduate_course` — select: 1, 2, 3;
+- `listener_research_area` — textarea, shown when listener is researcher;
+- `listener_psychotherapy_format` — select: private_practice, organization,
+  both, other;
+- `listener_psychotherapy_organization` — text, shown when psychotherapy
+  format involves organization or other;
+- `listener_technical_area` — textarea, shown for technical / AI specialists;
 - `field_of_study` — text;
 - `listener_expectations` — textarea;
 - `referral_source` — text.
