@@ -4,16 +4,18 @@
 
 ## Основная идея layout
 
-Здесь одна папка верхнего уровня должна означать одно из двух:
+Здесь одна папка верхнего уровня должна означать одно из трёх:
 
 - либо database-wide asset;
+- либо shared runtime schema;
 - либо конкретную project schema.
 
 То есть git-структура здесь должна отражать реальную модель PostgreSQL:
 
 - одна database `detai_projects`;
+- внутри неё shared runtime schemas для общих operational-доменов;
 - внутри неё несколько project schemas;
-- у каждой project schema свой собственный SQL-контур.
+- у каждой schema свой собственный SQL-контур.
 
 ## Как читать структуру
 
@@ -27,6 +29,23 @@ Root-level каталоги и файлы относятся ко всей datab
 - `apply_all_migrations.sh` — накатить migrations всех project schemas в этой database
 - `README.md` — правила и навигация по database-контуру
 
+### Shared runtime schema folders
+
+Shared runtime schemas не принадлежат одному продукту. Они обслуживают
+экосистемные operational-домены, на которые могут ссылаться разные project
+schemas.
+
+Сейчас как draft-contours зафиксированы:
+
+- `identity/` — общий слой пользовательской идентичности;
+- `access/` — общий слой прав, ролей, подписок и доступов.
+- `ecosystem_events/` — календарный и событийный слой экосистемы;
+- `intake/` — входящие формы, заявки, регистрации, предложения и жалобы;
+- `notifications/` — подписки, dispatch jobs и delivery logs.
+
+Эти каталоги пока являются черновыми контурами. Production migrations должны
+появиться только после отдельного согласования schema contract.
+
 ### Project schema folders
 
 Каждая project schema получает собственную папку прямо в root:
@@ -34,7 +53,7 @@ Root-level каталоги и файлы относятся ко всей datab
 - `psychology_in_quotes/`
 - будущие project folders по тому же правилу
 
-Внутри такой папки должны жить:
+Внутри project schema folder должны жить:
 
 - `migrations/`
 - `seeds/`
@@ -84,12 +103,28 @@ seed и его источник зависят от schema, а не от databas
 - runtime audit
 - другие project-scoped private operational данные
 
+Общие пользовательские и access-данные должны постепенно выделяться из
+project-local таблиц в shared runtime schemas:
+
+- `identity`
+- `access`
+- `ecosystem_events`
+- `intake`
+- `notifications`
+
 ## Что она не хранит
 
 - канонические ecosystem documents
 - канонические publications documents
 - system-owned defaults, которые должны жить рядом с кодом
 - product output files как primary layer
+
+## Boundary policy
+
+Общая карта ответственности между `Knowledge_substrate`, `detai_core`,
+`detai_projects`, `ecosystem-runtime` и `sites` зафиксирована в:
+
+- [Policy: Runtime Boundary Map](../../docs/Policy/runtime-boundaries.policy.md)
 
 ## Переходный принцип seed
 
