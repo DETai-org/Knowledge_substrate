@@ -1,148 +1,25 @@
 # detai_projects
 
-`sql/detai_projects/` — SQL-контур private project runtime database `detai_projects`.
+`sql/detai_projects/` больше не является source of truth для общих платформенных runtime-миграций.
 
-## Основная идея layout
+Рабочие миграции DETai runtime-платформы перенесены в [`DETai-org/ecosystem-runtime/db/schemas`](https://github.com/DETai-org/ecosystem-runtime/tree/main/db/schemas):
 
-Здесь одна папка верхнего уровня должна означать одно из трёх:
+- [`identity`](https://github.com/DETai-org/ecosystem-runtime/tree/main/db/schemas/identity)
+- [`access`](https://github.com/DETai-org/ecosystem-runtime/tree/main/db/schemas/access)
+- [`ecosystem_events`](https://github.com/DETai-org/ecosystem-runtime/tree/main/db/schemas/ecosystem_events)
+- [`intake`](https://github.com/DETai-org/ecosystem-runtime/tree/main/db/schemas/intake)
+- [`notifications`](https://github.com/DETai-org/ecosystem-runtime/tree/main/db/schemas/notifications)
 
-- либо database-wide asset;
-- либо shared runtime schema;
-- либо конкретную project schema.
+`Knowledge_substrate` оставляет за собой:
 
-То есть git-структура здесь должна отражать реальную модель PostgreSQL:
+- `detai_core` knowledge/query database;
+- knowledge/document/publication ingest pipeline;
+- навигационную карту SQL-контуров;
+- переходные SQL-контуры проектов, пока они не перенесены в собственные product repositories.
 
-- одна database `detai_projects`;
-- внутри неё shared runtime schemas для общих operational-доменов;
-- внутри неё несколько project schemas;
-- у каждой schema свой собственный SQL-контур.
+## Что Осталось Здесь
 
-## Как читать структуру
+- [`bootstrap`](bootstrap) — создание database `detai_projects`.
+- [`psychology_in_quotes`](psychology_in_quotes) — временный project-specific SQL-контур первого продукта.
 
-### Database-wide assets
-
-Root-level каталоги и файлы относятся ко всей database, а не к одному проекту.
-
-Сейчас сюда относятся:
-
-- `bootstrap/` — создание database `detai_projects`
-- `apply_all_migrations.sh` — накатить migrations всех project schemas в этой database
-- `README.md` — правила и навигация по database-контуру
-
-### Shared runtime schema folders
-
-Shared runtime schemas не принадлежат одному продукту. Они обслуживают
-экосистемные operational-домены, на которые могут ссылаться разные project
-schemas.
-
-Сейчас как draft-contours зафиксированы:
-
-- `identity/` — общий слой пользовательской идентичности;
-- `access/` — общий слой прав, ролей, подписок и доступов.
-- `ecosystem_events/` — календарный и событийный слой экосистемы;
-- `intake/` — входящие формы, заявки, регистрации, предложения и жалобы;
-- `notifications/` — подписки, dispatch jobs и delivery logs.
-
-Эти каталоги пока являются черновыми контурами. Production migrations должны
-появиться только после отдельного согласования schema contract.
-
-### Project schema folders
-
-Каждая project schema получает собственную папку прямо в root:
-
-- `psychology_in_quotes/`
-- будущие project folders по тому же правилу
-
-Внутри project schema folder должны жить:
-
-- `migrations/`
-- `seeds/`
-- `apply_migrations.sh`
-- schema-specific runbook/README
-
-## Кто что накатывает
-
-### Database-level entrypoints
-
-- `bootstrap/` — создаёт саму database `detai_projects`.
-- `apply_all_migrations.sh` — проходит по всем project schema folders и запускает
-  их локальные `apply_migrations.sh`.
-
-### Project schema entrypoints
-
-Каждая project schema отвечает только за свой собственный SQL layer:
-
-- `<project>/apply_migrations.sh` — накатывает migrations только этой schema;
-- `<project>/seeds/*.sql` — загружает initial seed или schema-specific data import;
-- `<project>/README.md` — описывает runbook и границы ответственности проекта.
-
-Иными словами:
-
-- root-level entrypoints управляют database `detai_projects` целиком;
-- project folders управляют только своим schema-level контуром.
-
-## Базовый порядок запуска
-
-```bash
-cd /srv/Knowledge_substrate/sql/detai_projects
-bash bootstrap/create_database.sh
-bash apply_all_migrations.sh
-```
-
-После этого initial seed накатывается уже на уровне конкретного проекта, потому что
-seed и его источник зависят от schema, а не от database целиком.
-
-## Что хранит database `detai_projects`
-
-- users
-- user_plans
-- moderation
-- channel bindings
-- user-owned brand kits
-- user-owned templates
-- runtime audit
-- другие project-scoped private operational данные
-
-Общие пользовательские и access-данные должны постепенно выделяться из
-project-local таблиц в shared runtime schemas:
-
-- `identity`
-- `access`
-- `ecosystem_events`
-- `intake`
-- `notifications`
-
-## Что она не хранит
-
-- канонические ecosystem documents
-- канонические publications documents
-- system-owned defaults, которые должны жить рядом с кодом
-- product output files как primary layer
-
-## Boundary policy
-
-Общая карта ответственности между `Knowledge_substrate`, `detai_core`,
-`detai_projects`, `ecosystem-runtime` и `sites` зафиксирована в:
-
-- [Policy: Runtime Boundary Map](../../docs/Policy/runtime-boundaries.policy.md)
-
-## Переходный принцип seed
-
-JSON-файлы из `psychology-in-quotes/apps/telegram-bot/runtime-db-seed/` рассматриваются
-здесь только как переходный источник initial import.
-
-После перевода runtime-слоя проекта на PostgreSQL:
-
-- JSON seed перестаёт быть primary runtime source;
-- bot runtime должен читать и писать напрямую в `detai_projects.psychology_in_quotes`;
-- code-owned system defaults остаются в репозитории `psychology-in-quotes`.
-
-## Текущая первая project schema
-
-Первая итерация сейчас реализована для:
-
-- `psychology_in_quotes`
-
-Её runbook находится в:
-
-- `sql/detai_projects/psychology_in_quotes/README.md`
+Product-specific схемы в дальнейшем должны жить в репозиториях конкретных продуктов.

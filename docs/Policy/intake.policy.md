@@ -1,9 +1,12 @@
-# Policy: intake schema draft
+# Policy: intake
 
 ## Назначение
 
-Эта политика относится к будущей PostgreSQL schema `intake` внутри database
-`detai_projects`.
+Эта политика описывает смысловую модель PostgreSQL schema `intake` внутри database `detai_projects`.
+
+Рабочие runtime-миграции и текущий source of truth перенесены в [`DETai-org/ecosystem-runtime/db/schemas/intake`](https://github.com/DETai-org/ecosystem-runtime/tree/main/db/schemas/intake).
+
+Операционная политика хранения форм находится в [`DETai-org/ecosystem-runtime/docs/intake-form-storage-policy.md`](https://github.com/DETai-org/ecosystem-runtime/blob/main/docs/intake-form-storage-policy.md).
 
 `intake` отвечает за входящие формы, заявки, регистрации, предложения и жалобы.
 Эта schema должна отвечать на вопрос: что пользователь или внешний участник
@@ -82,15 +85,15 @@
 - `visibility`
 - `created_at`
 
-## First runtime migration
+## Runtime Migrations
 
-The first runtime migration is:
+Рабочие migration-файлы находятся в:
 
 ```txt
-sql/detai_projects/intake/migrations/0001_intake_runtime.sql
+DETai-org/ecosystem-runtime/db/schemas/intake/migrations/
 ```
 
-It creates:
+Первая runtime migration создает:
 
 - `intake.submissions` — common envelope for all public and future account
   intake records;

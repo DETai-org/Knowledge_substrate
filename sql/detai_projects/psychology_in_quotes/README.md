@@ -60,7 +60,6 @@ Database bootstrap находится уровнем выше, потому чт
 
 - `sql/detai_projects/bootstrap/0000_create_database.sql`
 - `sql/detai_projects/bootstrap/create_database.sh`
-- `sql/detai_projects/apply_all_migrations.sh`
 
 ## Порядок применения на сервере
 
@@ -76,14 +75,6 @@ bash bootstrap/create_database.sh
 ```bash
 cd /srv/Knowledge_substrate/sql/detai_projects/psychology_in_quotes
 bash apply_migrations.sh
-```
-
-Если нужно накатить все project schemas database целиком, используется root-level
-entrypoint:
-
-```bash
-cd /srv/Knowledge_substrate/sql/detai_projects
-bash apply_all_migrations.sh
 ```
 
 ### 3. Загрузить initial seed
