@@ -197,6 +197,10 @@ Suggested fields:
 - `education_format` — multiselect: workshop, seminar, course, networking,
   not sure, other;
 - `attendance_mode` — select: offline in Saint Petersburg, online, either;
+- `preferred_duration` — select: two_hours, half_day, full_day,
+  multi_day_intensive, not_sure;
+- `learning_mode` — select: theory, theory_and_cases, practice, discussion,
+  not_sure;
 - `topics_of_interest` — textarea;
 - `professional_role` — select: psychotherapist, psychologist, bachelor,
   specialist, master, postgraduate, researcher, educator,
@@ -256,6 +260,9 @@ Conditional fields for `participation_role = listener`:
   educator, researcher, psychotherapist, psychologist, technical_specialist,
   other;
 - `professional_role_other` — text, shown when professional role is other;
+- `listener_affiliation` — text, university / organization / project when
+  relevant;
+- `listener_department` — text, department / unit when relevant;
 - `bachelor_course` — select: 1, 2, 3, 4;
 - `specialist_course` — select: 1, 2, 3, 4, 5, 6;
 - `master_course` — select: 1, 2;
@@ -271,7 +278,8 @@ Conditional fields for `participation_role = listener`:
 - `referral_source` — text.
 
 Shared closing fields:
-- `contact` — name, email, Telegram, preferred contact channel;
+- `contact` — formal section contact snapshot: last name, required first name,
+  optional patronymic, email, Telegram, country/city;
 - `personal_data_consent` — checkbox.
 
 ### `team_application`
@@ -279,11 +287,15 @@ Shared closing fields:
 Purpose: collect applications for joining ecosystem work.
 
 Suggested fields:
-- `participation_area` — multiselect;
+- `participation_area` — select: design_creative, vibe_coding,
+  content_channels, events_education, research_methodology,
+  community_operations, not_sure;
 - `competencies` — textarea;
-- `experience_background` — textarea;
 - `links` — textarea;
-- `motivation` — textarea;
+- `has_telegram_channel` — select: yes, no;
+- `telegram_channel` — text, required when `has_telegram_channel = yes`;
+- `motivation` — textarea, motivational letter style, up to 5000 characters
+  in the current site UI;
 - `country_city` — country/city;
 - `contact` — name, email, Telegram, preferred contact channel;
 - `personal_data_consent` — checkbox.

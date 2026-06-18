@@ -182,13 +182,28 @@ Recent field decisions:
   intervision;
 - `education_interest.attendance_mode` captures offline Saint Petersburg,
   online, or either;
+- `education_interest.preferred_duration` captures whether a short two-hour
+  meeting, half-day format, full-day format, multi-day intensive, or undecided
+  duration is preferable;
+- `education_interest.learning_mode` captures whether theory, theory with
+  practical cases, practical work, discussion, or an undecided mode is
+  preferable;
 - `education_interest.education_background` is a free-form education/profession
   field;
+- `team_application.participation_area` uses user-facing ecosystem roles:
+  `design_creative`, `vibe_coding`, `content_channels`, `events_education`,
+  `research_methodology`, `community_operations`, or `not_sure`;
+- `team_application.has_telegram_channel` and
+  `team_application.telegram_channel` capture public channel context separately
+  from general portfolio links;
+- `team_application.motivation` may be a longer motivational letter; current
+  site UI limits it to 5000 characters;
 - `section_participation` uses conditional fields for `listener` and `speaker`
   roles;
 - listener section fields include `professional_role`,
-  `professional_role_other`, `bachelor_course`, `specialist_course`,
-  `master_course`, `postgraduate_course`, `listener_research_area`,
+  `professional_role_other`, `listener_affiliation`, `listener_department`,
+  `bachelor_course`, `specialist_course`, `master_course`,
+  `postgraduate_course`, `listener_research_area`,
   `listener_psychotherapy_format`, `listener_psychotherapy_organization`,
   `listener_technical_area`, `field_of_study`, `listener_expectations`, and
   `referral_source`;
@@ -199,5 +214,8 @@ Recent field decisions:
   `speaker_psychotherapy_format`, `speaker_psychotherapy_organization`,
   `speaker_technical_area`, `speaker_affiliation`, `speaker_specialization`,
   `talk_topic`, `talk_summary`, and `speaker_background`;
+- `section_participation` uses a formal contact snapshot with `last_name`,
+  required `name`, optional `patronymic`, `email`, `telegram`, and
+  `country_city`;
 - website forms may be rendered as wizard steps, but still submit one common
   `intake.submissions` envelope.
