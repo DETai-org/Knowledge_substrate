@@ -287,9 +287,11 @@ Shared closing fields:
 Purpose: collect applications for joining ecosystem work.
 
 Suggested fields:
-- `participation_area` — select: design_creative, vibe_coding,
+- `participation_area` — multiselect: design_creative, vibe_coding,
   content_channels, events_education, research_methodology,
-  community_operations, not_sure;
+  community_operations, not_sure. The value is stored in `payload_json` as an
+  array of selected option keys because a person may be interested in several
+  contribution directions at the same time;
 - `competencies` — textarea;
 - `links` — textarea;
 - `has_telegram_channel` — select: yes, no;

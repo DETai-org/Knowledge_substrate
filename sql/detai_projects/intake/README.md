@@ -190,7 +190,8 @@ Recent field decisions:
   preferable;
 - `education_interest.education_background` is a free-form education/profession
   field;
-- `team_application.participation_area` uses user-facing ecosystem roles:
+- `team_application.participation_area` is a multiselect array in
+  `payload_json` and uses user-facing ecosystem roles:
   `design_creative`, `vibe_coding`, `content_channels`, `events_education`,
   `research_methodology`, `community_operations`, or `not_sure`;
 - `team_application.has_telegram_channel` and
