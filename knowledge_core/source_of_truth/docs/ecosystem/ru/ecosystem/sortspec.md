@@ -121,10 +121,22 @@ sorting-spec: |
   target-folder: Ecosystem/DETai/Platform_DETai/E1-Core
 
     Francis Galton
+    detai-pulse
+    detai-matrix
     🌀Psykhḗ AI
 
 
   target-folder: Ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton
+
+    index
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse
+
+    index
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix
 
     index
 
@@ -136,8 +148,10 @@ sorting-spec: |
 
   target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand
 
+    news-agent
     Telegram
-    Сайт
+    sites
+    psychology-in-quotes
 
 
   target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/Telegram
@@ -151,7 +165,17 @@ sorting-spec: |
     index
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/Сайт
+  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/news-agent
+
+    index
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/sites
+
+    index
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes
 
     index
 
