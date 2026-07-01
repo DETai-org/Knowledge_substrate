@@ -1,0 +1,118 @@
+{
+  "type": "quote",
+  "id": "telegram-preview-20260701141915",
+  "administrative": {
+    "curated_by": "Anton",
+    "date_ymd": "2026-07-01",
+    "status": "draft"
+  },
+  "verification": {
+    "state": "verified",
+    "submitted_by_role": "admin",
+    "verified_by": "Anton",
+    "verified_at": "2026-07-01T14:19:55.660Z"
+  },
+  "texts": {
+    "ru": {
+      "text": "\"Каков смысл ненависти? Это не абсолютная противоположность любви; таковой было бы безразличие, отсутствие интереса к данному человеку, нежелание вступать с ним во взаимоотношения и поэтому отсутствие какой-либо причины для любви или ненависти, полное отсутствие чувств по отношению к нему. Ненависть это любовь, ставшая «сердитой» из-за отвержения. Мы можем действительно ненавидеть людей, если желаем их любви. Ненависть является выражением фрустрированных потребностей любви, попыткой разрушить плохую, отвергающую сторону человека в надежде оставить хорошую, откликающуюся сторону доступной, борьбой за их изменение\"",
+      "status": "source"
+    },
+    "en": {
+      "text": "\"What is the meaning of hatred? It is not the absolute opposite of love; that would be indifference, a lack of interest in a given person, unwillingness to engage with them and therefore no reason for either love or hatred, a complete absence of feeling toward them. Hate is love that has become \"angry\" because of rejection. We can truly hate people if we desire their love. Hatred is an expression of frustrated love needs, an attempt to destroy the bad, rejecting side of a person in hopes of leaving the good, responsive side accessible, a struggle to change them\"",
+      "status": "translated"
+    },
+    "de": {
+      "text": "\"Was ist der Sinn von Hass? Er ist nicht die absolute Gegensätzlichkeit zur Liebe; das wäre Gleichgültigkeit, kein Interesse an der betreffenden Person, die Weigerung, mit ihr eine Beziehung einzugehen, und deshalb kein Grund für Liebe oder Hass, das vollständige Fehlen von Gefühlen ihr gegenüber. Hass ist Liebe, die durch Ablehnung „wütend“ geworden ist. Wir können Menschen wirklich hassen, wenn wir ihre Liebe wünschen. Hass ist ein Ausdruck frustrierter Liebesbedürfnisse, der Versuch, die schlechte, ablehnende Seite eines Menschen zu zerstören, in der Hoffnung, die gute, responsive Seite zugänglich zu lassen, ein Kampf um ihre Veränderung\"",
+      "status": "translated"
+    },
+    "fi": {
+      "text": "\"Mikä on vihan merkitys? Se ei ole rakkauden ehdoton vastakohta; se olisi välinpitämättömyys, kiinnostuksen puute tiettyä henkilöä kohtaan, haluttomuus ryhtyä suhteisiin hänen kanssaan ja siten ei minkäänlaista syytä rakkauteen tai vihaan, täydellinen tunteettomuus häntä kohtaan. Viha on rakkautta, joka on muuttunut ”vihastuneeksi” hylkäämisen vuoksi. Voimme todella vihata ihmisiä, jos haluamme heidän rakkauttaan. Viha on turhautuneiden rakkaustarpeiden ilmentymä, yritys tuhota ihmisen paha, hylkäävä puoli toivoen, että hyvä, vastaava puoli jäisi saavutettavaksi, taistelu heidän muuttamisekseen\"",
+      "status": "translated"
+    },
+    "cn": {
+      "text": "\"憎恨的意义是什么？它并不是爱的绝对对立；那将是冷漠，对某个人缺乏兴趣，不愿与他建立关系，因此既没有爱也没有恨的理由，对他完全没有感觉。 憎恨是因被拒绝而变得“愤怒”的爱。 我们确实会憎恨那些我们渴望得到他们爱的人。憎恨是对受挫爱情需求的表达，是试图摧毁一个人身上拒绝的一面，希望留下善良、回应的一面可被接近，是一场为改变他们而进行的斗争\"",
+      "status": "translated"
+    }
+  },
+  "taxonomy": {
+    "rubric_ids": [],
+    "category_ids": [],
+    "keyword_ids": [],
+    "keywords_raw": []
+  },
+  "attribution": {
+    "quote_author": {
+      "canonical_name": "Шизоидные явления",
+      "display_name": {
+        "ru": "Шизоидные явления",
+        "en": "Schizoid Phenomena",
+        "de": "Schizoide Phänomene",
+        "fi": "Skitsoidiset ilmiöt",
+        "cn": "分裂样现象"
+      }
+    },
+    "source": {
+      "title_display": {
+        "ru": "объектные отношения и самость, Г. Гантрип",
+        "en": "object relations and the self, G. Gundrup",
+        "de": "Objektbeziehungen und das Selbst, G. Gundrup",
+        "fi": "objektisuhteet ja minuus, G. Gundrup",
+        "cn": "客体关系与自性, G. 甘德鲁普"
+      },
+      "page": "25-26"
+    },
+    "source_display": {
+      "ru": "Шизоидные явления, объектные отношения и самость, Г. Гантрип, с. 25-26",
+      "en": "Schizoid Phenomena, object relations and the self, G. Gundrup, p. 25-26",
+      "de": "Schizoide Phänomene, Objektbeziehungen und das Selbst, G. Gundrup, S. 25-26",
+      "fi": "Skitsoidiset ilmiöt, objektisuhteet ja minuus, G. Gundrup, s. 25-26",
+      "cn": "分裂样现象, 客体关系与自性, G. 甘德鲁普, 第25-26页"
+    },
+    "citations": {
+      "apa": "",
+      "gost": ""
+    }
+  },
+  "assets": {
+    "ru": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/ru/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/ru/black.webp"
+      }
+    },
+    "en": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/en/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/en/black.webp"
+      }
+    },
+    "de": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/de/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/de/black.webp"
+      }
+    },
+    "fi": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/fi/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/fi/black.webp"
+      }
+    },
+    "cn": {
+      "black": {
+        "png": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/cn/black.png",
+        "webp": "knowledge_core/source_of_truth/docs/publications/quotes/telegram-preview-20260701141915/assets/cn/black.webp"
+      }
+    }
+  },
+  "external_links": [
+    {
+      "type": "website",
+      "url": ""
+    },
+    {
+      "type": "telegram",
+      "url": ""
+    }
+  ]
+}
