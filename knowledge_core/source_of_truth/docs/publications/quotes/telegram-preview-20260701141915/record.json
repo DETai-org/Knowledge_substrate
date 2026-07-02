@@ -10,7 +10,7 @@
     "state": "verified",
     "submitted_by_role": "admin",
     "verified_by": "Anton",
-    "verified_at": "2026-07-02T19:38:22.749Z"
+    "verified_at": "2026-07-02T19:45:45.568Z"
   },
   "texts": {
     "ru": {
@@ -18,19 +18,19 @@
       "status": "source"
     },
     "en": {
-      "text": "\"What is the meaning of hatred? It is not the absolute opposite of love; that would be indifference, a lack of interest in the person in question, an unwillingness to engage with them, and therefore no reason for love or hatred, a complete absence of feelings towards them. Hatred is love that has become \"angry\" because of rejection. We can truly hate people if we desire their love. Hatred is an expression of frustrated needs for love, an attempt to destroy the bad, rejecting side of a person in the hope of leaving the good, responsive side accessible, a struggle to change them.\"",
+      "text": "\"What is the meaning of hatred? It is not the absolute opposite of love; that would be indifference, a lack of interest in the given person, an unwillingness to engage with them, and therefore no reason for love or hatred, a complete absence of feelings toward them. Hatred is love that has become \"angry\" due to rejection. We can truly hate people if we desire their love. Hatred is an expression of frustrated needs for love, an attempt to destroy the bad, rejecting side of a person in hopes of leaving the good, responsive side accessible, a struggle to change them.\"",
       "status": "translated"
     },
     "de": {
-      "text": "\"Was ist der Sinn des Hasses? Er ist nicht das absolute Gegenteil von Liebe; das wäre Gleichgültigkeit, kein Interesse an der betreffenden Person, keine Bereitschaft, mit ihr in Beziehung zu treten, und daher kein Grund für Liebe oder Hass, ein vollständiges Fehlen von Gefühlen ihr gegenüber. Hass ist Liebe, die durch Ablehnung „böse“ geworden ist. Wir können Menschen wirklich hassen, wenn wir ihre Liebe wünschen. Hass ist ein Ausdruck frustrierter Liebesbedürfnisse, ein Versuch, die schlechte, ablehnende Seite eines Menschen zu zerstören in der Hoffnung, die gute, ansprechbare Seite zugänglich zu lassen, ein Kampf um ihre Veränderung.\"",
+      "text": "\"Was ist der Sinn von Hass? Er ist nicht das absolute Gegenteil von Liebe; das wäre Gleichgültigkeit, ein Mangel an Interesse an der betreffenden Person, die Unwilligkeit, eine Beziehung mit ihr einzugehen, und daher kein Grund für Liebe oder Hass, das völlige Fehlen von Gefühlen ihr gegenüber. Hass ist Liebe, die durch Zurückweisung „wütend“ geworden ist. Wir können Menschen wahrhaftig hassen, wenn wir ihre Liebe wünschen. Hass ist ein Ausdruck frustrierter Liebesbedürfnisse, ein Versuch, die schlechte, ablehnende Seite einer Person zu zerstören in der Hoffnung, die gute, ansprechbare Seite zugänglich zu lassen, ein Kampf, sie zu verändern.\"",
       "status": "translated"
     },
     "fi": {
-      "text": "\"Mikä on vihan merkitys? Se ei ole rakkauden täydellinen vastakohta; se olisi välinpitämättömyys, kiinnostuksen puute kyseistä henkilöä kohtaan, haluttomuus solmia suhdetta, eikä siksi mitään syytä rakkaudelle tai vihalle, täydellinen tunteiden puute häntä kohtaan. Viha on rakkautta, joka on tullut \"vihastuneeksi\" hylkäämisen takia. Voimme todella vihata ihmisiä, jos haluamme heidän rakkauttaan. Viha on turhautuneiden rakkauden tarpeiden ilmentymä, yritys tuhota ihmisen huono, hylkäävä puoli toivossa, että hyvä, vastaava puoli jäisi saavutettavaksi, kamppailu niiden muuttamiseksi.\"",
+      "text": "\"Mikä on vihan merkitys? Se ei ole rakkauden absoluuttinen vastakohta; sellainen olisi välinpitämättömyys, kiinnostuksen puute kyseistä henkilöä kohtaan, haluttomuus olla suhteessa häneen ja siksi syyn puuttuminen rakkauteen tai vihaan, täydellinen tunteiden poissaolo häntä kohtaan. Viha on rakkautta, joka on tullut \"vihaseksi\" hylkäyksen vuoksi. Voimme todella vihata ihmisiä, jos haluamme heidän rakkauttaan. Viha on ilmentymä turhautuneista rakkauden tarpeista, yritys tuhota ihmisen huono, torjuva puoli siinä toivossa, että hyvä, vastaava puoli jää saavutettavaksi, kamppailu muuttaa heitä.\"",
       "status": "translated"
     },
     "cn": {
-      "text": "\"憎恨的意义是什么？它并非爱的绝对对立面；那将是冷漠，对该人的缺乏兴趣，不愿与其建立关系，因此既无爱也无恨的理由，对其完全没有情感。憎恨是因被拒绝而变得“愤怒”的爱。如果我们渴望他们的爱，我们确实可能憎恨他们。憎恨是对受挫爱的需求的表达，是试图摧毁一个人恶劣、拒绝的一面，希望保留良好、回应的一面可接近，是争取改变他们的斗争。\"",
+      "text": "“仇恨的意义何在？它并不是爱的绝对对立；那将是冷漠，对特定人的缺乏兴趣，不愿与其建立关系，因此对爱或恨都没有任何理由，对其毫无感情。仇恨是因被拒绝而变得“愤怒”的爱。只有当我们渴望别人的爱时，才会真的恨人。仇恨是对爱受挫需求的表达，是试图摧毁一个人糟糕、拒绝的一面，希望留下那善良、回应的一面可接近，为改变他们而斗争。”",
       "status": "translated"
     }
   },
@@ -45,28 +45,28 @@
       "canonical_name": "Шизоидные явления объектные отношения и самость",
       "display_name": {
         "ru": "Шизоидные явления объектные отношения и самость",
-        "en": "H. Gantrip",
-        "de": "H. Gantrip",
-        "fi": "H. Gantrip",
-        "cn": "H. 甘特里普"
+        "en": "G. Guntrip",
+        "de": "G. Guntrip",
+        "fi": "G. Guntrip",
+        "cn": "G·冈特里普"
       }
     },
     "source": {
       "title_display": {
         "ru": "Г. Гантрип",
-        "en": "Schizoid Phenomena, Object Relations and the Self",
-        "de": "Schizoide Phänomene, Objektbeziehungen und das Selbst",
-        "fi": "Schizoid Phenomena, Object Relations and the Self",
-        "cn": "Schizoid Phenomena, Object Relations and the Self"
+        "en": "Schizoid Phenomena, Object Relations, and the Self",
+        "de": "Schizoid Phenomena, Object Relations, and the Self",
+        "fi": "Schizoid Phenomena, Object Relations, and the Self",
+        "cn": "Schizoid Phenomena, Object Relations, and the Self"
       },
       "page": "25-26"
     },
     "source_display": {
       "ru": "Шизоидные явления объектные отношения и самость, Г. Гантрип, с. 25-26",
-      "en": "Schizoid Phenomena, Object Relations and the Self, H. Gantrip, p. 25-26",
-      "de": "Schizoide Phänomene, Objektbeziehungen und das Selbst, H. Gantrip, S. 25-26",
-      "fi": "Schizoid Phenomena, Object Relations and the Self, H. Gantrip, s. 25-26",
-      "cn": "Schizoid Phenomena, Object Relations and the Self, H. 甘特里普, 第25-26页"
+      "en": "Schizoid Phenomena, Object Relations, and the Self, G. Guntrip, p. 25-26",
+      "de": "Schizoid Phenomena, Object Relations, and the Self, G. Guntrip, S. 25-26",
+      "fi": "Schizoid Phenomena, Object Relations, and the Self, G. Guntrip, s. 25-26",
+      "cn": "Schizoid Phenomena, Object Relations, and the Self, G·冈特里普, 第25-26页"
     },
     "citations": {
       "apa": "",
