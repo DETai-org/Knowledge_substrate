@@ -8,7 +8,7 @@ classification:
 descriptive:
   id: vision
   version: 1st-edition
-  status: active
+  status: draft
   date_ymd: 2026-02-17
 links:
   external_links:

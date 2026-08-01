@@ -1,6 +1,24 @@
 ---
+type: ecosystem
+classification:
+  scope: ecosystem
+  context: null
+  layer: null
+  function: index
+descriptive:
+  id: ecosystem-index
+  version: v1
+  status: draft
+  date_ymd: 2026-02-18
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/"
+  document_links:
+    - schema: ""
+      link_type: ""
+      linked_document_id: ""
 title: Ecosystem DET
-date_ymd: 2026-02-18
 ---
 # Ecosystem DET
 
