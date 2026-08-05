@@ -24,8 +24,20 @@
     return `${trimmed}/${targetLang}/${search}${hash}`.replace(/\/+/g, "/");
   }
 
+  function buildLanguageRoot(targetLang) {
+    const { pathname } = window.location;
+    const match = pathname.match(/^(.*)\/(ru|en|de|fi|cn)\//i);
+    return `${match ? match[1] : ""}/${targetLang}/`.replace(/\/+/g, "/");
+  }
+
   function normalizeText(element) {
     return element.textContent.replace(/\s+/g, " ").trim();
+  }
+
+  function hasLocalizedEquivalent(pathname) {
+    const match = pathname.match(/\/(ru|en|de|fi|cn)(\/.*)?$/i);
+    const languagePath = match ? (match[2] || "/") : "/";
+    return languagePath === "/" || languagePath === "/ecosystem/";
   }
 
   function updateLanguageLinks() {
@@ -48,7 +60,12 @@
         return;
       }
 
-      link.setAttribute("href", buildLocalizedUrl(targetLang));
+      link.setAttribute(
+        "href",
+        hasLocalizedEquivalent(window.location.pathname)
+          ? buildLocalizedUrl(targetLang)
+          : buildLanguageRoot(targetLang)
+      );
     });
   }
 

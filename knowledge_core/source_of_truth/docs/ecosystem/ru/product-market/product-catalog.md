@@ -1,0 +1,76 @@
+---
+type: ecosystem
+classification:
+  scope: DETai_ecosystem
+  context: product-market-system
+  layer: cross-cutting-system
+  function: index
+  system: product-market
+  domain: product-catalog
+  audiences: [public, team, product, agents]
+descriptive:
+  id: detai-product-catalog
+  version: v2
+  status: draft
+  date_ymd: 2026-08-05
+governance:
+  canonicality: working
+  visibility: public
+  owner_role: product-market-owner
+  approver_role: founder
+  review_date: 2026-08-20
+links:
+  external_links: []
+  document_links:
+    - schema: ecosystem
+      link_type: part-of
+      linked_document_id: product-market-index
+    - schema: ecosystem
+      link_type: governed-by
+      linked_document_id: product-object-model
+title: Каталог продуктов и предложений DETai
+---
+
+# Каталог продуктов и предложений DETai
+
+Каталог даёт единый вход в продуктовый портфель DETai, но **не переносит сюда документацию каждого продукта**. Каноническая страница продукта живёт рядом с системой, которая им владеет; каталог показывает статус, тип и маршрут к ней.
+
+## Технологические продукты и сервисы
+
+| Продукт или сервис | Текущая роль | Каноническая документация |
+|---|---|---|
+| Психология в цитатах | Публичный пользовательский продукт и брендовая поверхность | [Открыть](../ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/index.md) |
+| Francis Galton | Психологический и исследовательский продукт | [Открыть](../ecosystem/DETai/Platform_DETai/E1-Core/Francis%20Galton/index.md) |
+| DETai Pulse | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse/index.md) |
+| DETai Matrix | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md) |
+| Psykhḗ AI | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/E1-Core/%F0%9F%8C%80Psykh%E1%B8%97%20AI/index.md) |
+
+Текущая группировка отражает состояние документации на дату версии каталога. Наличие страницы не означает завершённость продукта, клиническую готовность или подтверждённый product–market fit.
+
+## Приоритетная discovery hypothesis
+
+`DETai Insight Workspace` пока не имеет статуса действующего продукта и отдельного product node. Он является приоритетной гипотезой исследования с personal insight и non-clinical professional workflow modes. Условия перехода к Product Charter, прототипу и controlled pilot описаны в [решении о lead product](lead-product-decision.md).
+
+Такое размещение делает гипотезу видимой, не ставя её в один ряд с уже существующими пользовательскими поверхностями.
+
+## Институциональные предложения
+
+Психотерапевтические услуги, супервизия, образовательные программы и исследовательские форматы становятся элементами каталога только после появления собственного Product Object или Service Object, владельца, границ компетентности, условий доступа и необходимого Trust/Evidence-контура.
+
+До этого [институциональная жизнь DET](../method/institutional-layer.md) описывает архитектуру функций, а не готовый коммерческий каталог.
+
+## Что показывает зрелая карточка
+
+Для каждой единицы каталог должен указывать:
+
+- тип: продукт, услуга, программа, capability или эксперимент;
+- аудиторию и основную задачу;
+- владельца и owning system;
+- стадию жизненного цикла и дату проверки;
+- ссылку на собственное ценностное предложение;
+- intended use и ключевые ограничения;
+- пользовательскую, Trust и техническую документацию;
+- доступность, предложение или основание бесплатного доступа;
+- evidence и следующее portfolio decision.
+
+Структура полного комплекта определена в [модели документации продукта](product-documentation-model.md).
