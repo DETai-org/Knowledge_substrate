@@ -1,70 +1,87 @@
 ---
 type: ecosystem
 classification:
-  scope: ecosystem
-  context: management-layer
-  layer: philosophy
-  function: explanation
+  scope: DETai_ecosystem
+  context: product-market-system
+  layer: principles
+  function: principle
+  system: product-market
+  domain: value-proposition
+  audiences: [public, team, product, agents]
 descriptive:
   id: management-layer-1-philosophy-product-and-service-value-proposition
-  version: v1
+  version: v3
   status: active
-  date_ymd: 2026-03-25
+  date_ymd: 2026-08-05
+governance:
+  canonicality: canonical
+  visibility: public
+  owner_role: product-market-owner
+  approver_role: operating-model-owner
+  review_date: 2026-09-05
 links:
   external_links:
     - type: "MkDocs_ru"
       url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/1_Philosophy/product-and-service-value-proposition/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
-title: Product & Service Value Proposition
+    - schema: ecosystem
+      link_type: part-of
+      linked_document_id: product-market-index
+title: Стандарт ценностного предложения продукта
 ---
 
-# Product & Service Value Proposition
+# Стандарт ценностного предложения продукта
 
-
-Данный документ фиксирует ответственность Management Layer за формирование ценностных предложений конкретных продуктов и услуг Экосистемы DET.
+Этот документ **не формулирует одно ценностное предложение всей DETai и не заменяет ценностное предложение конкретного продукта**. Он устанавливает общий стандарт: каждый Product Object или Service Object должен иметь собственную проверяемую формулировку ценности для своей аудитории.
 
 Экосистема как целое не является продаваемым объектом.  
-Продаваемыми единицами выступают конкретные:
+Самостоятельными единицами предложения выступают конкретные:
 
 - терапевтические услуги,
     
 - образовательные программы,
     
-- цифровые продукты 
-- и другой сервис кластеров DET и DETai.
+- цифровые продукты;
+
+- иные оформленные сервисы институционального или технологического слоя.
 
 
-Именно для них формируются прикладные ценностные предложения.
+Именно для них формируются прикладные ценностные предложения. Umbrella Brand создаёт общее происхождение и доверие, но не переносит обещание одного продукта на остальные.
 
 ---
 
-## Роль Management Layer
+## Распределение ответственности
 
-Management Layer отвечает за:
+Product–Market owner совместно с владельцем продукта отвечает за:
 
-- формулирование и утверждение ценностных предложений конкретных продуктов и услуг;
+- исследование и формулирование ценностного предложения;
     
 - определение целевой аудитории;
     
-- выстраивание логики монетизации и ценообразования;
+- различение пользователя, покупателя, плательщика и бенефициара;
+
+- подготовку проверяемых гипотез монетизации и ценообразования;
     
 - проверку соответствия предложения Mission, Vision и Values экосистемы;
     
-- согласование позиционирования между кластерами.
+- согласование позиционирования между системами DETai.
+
+Management Layer назначает владельца, приоритет и review. Методические, Trust, Evidence и Legal роли применяют собственные границы и gates.
 
 ---
 
-## Принцип
+## Стандарт
 
-Каждый продукт или услуга внутри Экосистемы DET должен иметь:
+Каждый продукт или услуга внутри DETai должны иметь:
 
 - чётко сформулированную ценность для конкретной аудитории;
     
 - понятный результат, который получает пользователь;
     
-- обоснованную модель монетизации.
+- понятную роль плательщика или явное основание бесплатной / субсидируемой доступности;
+
+- ссылку на [Product Charter](../../../product-market/product-object-model.md) и evidence проверки.
+
+Ценностное предложение не является научным или клиническим claim само по себе. Сила публичной формулировки ограничивается [Evidence System](../../../evidence/index.md) и правилами [Trust](../../../trust/human-oversight-and-claims.md).
 
 ---
