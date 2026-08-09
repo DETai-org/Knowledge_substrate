@@ -143,24 +143,27 @@ nav:
       - Общий README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md
       - Release Fixation: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md
       - Версионность в U.L.I.: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md
-  - Platform DETai — интеграция и доставка:
+  - Platform DETai:
     - Обзор платформы: ru/ecosystem/DETai/Platform_DETai/index.md
-    - Продукты Platform DETai:
-      - Психология в цитатах: ru/ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/index.md
-      - Francis Galton: ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md
-      - DETai Pulse: ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse/index.md
-      - DETai Matrix: ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md
-      - Psykhḗ AI: ru/ecosystem/DETai/Platform_DETai/E1-Core/🌀Psykhḗ AI/index.md
-    - Публичные и сервисные поверхности:
-      - Новостной агент: ru/ecosystem/DETai/Platform_DETai/E2-Brand/news-agent/index.md
-      - Telegram-контур:
-        - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
-        - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
-      - Сайты DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
-    - Общие возможности:
-      - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/E3-Infra/gpt_promt_engine/index.md
+    - Продукты:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/products/index.md
+      - Психология в цитатах: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md
+      - Francis Galton: ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md
+      - DETai Pulse: ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md
+      - DETai Matrix: ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md
+      - Psykhḗ AI: ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md
+    - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
+    - Telegram-контур:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
+      - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
+    - Внутренние технологии:
       - Knowledge Substrate capability: ru/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md
-    - R&D: ru/ecosystem/DETai/Platform_DETai/R&D/index.md
+    - Приостановленные проекты:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
+      - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
+      - News Agent: ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md
+    - R&D:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/R&D/index.md
   - Архитектура ресурсов:
     - Логика эшелонов: ru/ecosystem/DETai/logic-of-echelons.md
     - Таблица ресурсов: ru/ecosystem/DETai/table-of-resources.md
@@ -201,7 +204,7 @@ nav:
     - "Приоритет customer discovery: DETai Insight Workspace": ru/product-market/portfolio-decisions/insight-workspace-customer-discovery.md
   - Каталог продуктов и предложений: ru/product-market/product-catalog.md
   - Модель документации продукта: ru/product-market/product-documentation-model.md
-  - Стандарт ценностного предложения продукта: ru/ecosystem/Management_layer/1_Philosophy/product-and-service-value-proposition.md
+  - Стандарт ценностного предложения продукта: ru/product-market/value-proposition-standard.md
   - Модель продуктового объекта: ru/product-market/product-object-model.md
   - Рыночный и портфельный цикл: ru/product-market/market-operations.md
   - Бизнес-модель и портфель: ru/product-market/business-model-and-portfolio.md

@@ -40,11 +40,11 @@ title: Каталог продуктов и предложений DETai
 
 | Продукт или сервис | Текущая роль | Каноническая документация |
 |---|---|---|
-| Психология в цитатах | Публичный пользовательский продукт и брендовая поверхность | [Открыть](../ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/index.md) |
-| Francis Galton | Психологический и исследовательский продукт | [Открыть](../ecosystem/DETai/Platform_DETai/E1-Core/Francis%20Galton/index.md) |
-| DETai Pulse | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse/index.md) |
-| DETai Matrix | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md) |
-| Psykhḗ AI | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/E1-Core/%F0%9F%8C%80Psykh%E1%B8%97%20AI/index.md) |
+| Психология в цитатах | Публичный пользовательский продукт и брендовая поверхность | [Открыть](../ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md) |
+| Francis Galton | Психологический и исследовательский продукт | [Открыть](../ecosystem/DETai/Platform_DETai/products/francis-galton/index.md) |
+| DETai Pulse | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md) |
+| DETai Matrix | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md) |
+| Psykhḗ AI | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md) |
 
 Текущая группировка отражает состояние документации на дату версии каталога. Наличие страницы не означает завершённость продукта, клиническую готовность или подтверждённый product–market fit.
 

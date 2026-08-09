@@ -10,9 +10,10 @@ classification:
   audiences: [public, team, brand, product, agents]
 descriptive:
   id: brand-and-communications-domain
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-08-05
+  date_update: 2026-08-09
 governance:
   canonicality: canonical
   visibility: public
@@ -33,6 +34,9 @@ links:
     - schema: ecosystem
       link_type: implements
       linked_document_id: detai-umbrella-brand
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: storytelling-index
 title: Brand & Communications
 ---
 
@@ -74,6 +78,8 @@ Brand & Communications вправе самостоятельно принима�
 - публичная реализация — основной сайт и каналы;
 - approved wording и основания — Claim–Evidence Graph;
 - технические компоненты — соответствующие продуктовые и технологические репозитории.
+
+Самостоятельный проект [Storytelling](../ecosystem/STORYTELLING/index.md) реализует редакционный процесс и публикационную бизнес-логику. Его поставляемые результаты — посты, серии и подготовленные публикационные пакеты. Основной сайт, Telegram, VK и возможный будущий YouTube являются каналами доставки: Brand & Communications отвечает за редакционную и брендовую согласованность, Storytelling — за подготовку результата, а владельцы каналов — за техническую публикацию.
 
 ## Минимальный operating cycle
 

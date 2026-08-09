@@ -15,7 +15,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/"
+      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/"
     - type: "GitHub"
       url: "https://github.com/DETai-org/psychology-in-quotes"
     - type: "website"

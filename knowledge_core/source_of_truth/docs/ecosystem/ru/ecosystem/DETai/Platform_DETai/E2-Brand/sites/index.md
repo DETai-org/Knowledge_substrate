@@ -1,6 +1,6 @@
 ---
 type: ecosystem
-title: Sites
+title: Сайт DETai
 classification:
   scope: DETai_ecosystem
   context: platform
@@ -8,7 +8,7 @@ classification:
   function: index
 descriptive:
   id: detai-platform-detai-e2-brand-sites-index
-  version: v3
+  version: v4
   status: active
   date_ymd: 2026-06-12
   date_update: 2026-08-09
@@ -24,9 +24,15 @@ links:
     - schema: "ecosystem"
       link_type: "public-interface"
       linked_document_id: "detai-index"
+    - schema: "ecosystem"
+      link_type: "publishes"
+      linked_document_id: "storytelling-index"
+    - schema: "ecosystem"
+      link_type: "implements"
+      linked_document_id: "brand-and-communications-domain"
 ---
 
-# Sites
+# Сайт DETai
 
 **`sites` — публичный web-слой экосистемы DETai: набор Next.js-поверхностей, через которые экосистема объясняет и показывает себя, доставляет пользовательские маршруты и связывает бренд, людей, знания и продукты.**
 
@@ -59,6 +65,17 @@ links:
 Пользовательский путь строится по формуле:
 
 > Увидел → заинтересовался → понял взаимосвязи → нашёл свой маршрут → попробовал продукт, углубился в знания или присоединился.
+
+## Связь со Storytelling и Brand & Communications
+
+Сайт принадлежит Platform DETai как технологический проект и публичная витрина. Содержание его редакционных поверхностей имеет отдельный проектный контур:
+
+- [Storytelling](../../../../STORYTELLING/index.md) хранит процессы, кодовую бизнес-логику и автоматизацию подготовки публикаций;
+- [Brand & Communications](../../../../../governance/brand-and-communications.md) определяет аудитории, редакционную согласованность, каналы и применение бренда;
+- раздел **«Блог»** принимает и публикует подготовленные Storytelling посты на сайте;
+- Telegram, VK и в будущем YouTube могут доставлять тот же материал или его канал-специфическую версию.
+
+Публикации являются поставляемым продуктовым результатом Storytelling, а блог — каналом их web-доставки. Код блога, рендеринг, SEO, structured data и deployment принадлежат проекту `sites`; подготовка текста, metadata и media-пакета — проекту `Storytelling`.
 
 ## Граница сайта и документации
 

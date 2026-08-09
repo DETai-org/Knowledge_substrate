@@ -61,7 +61,7 @@ Product–Market System оформляет публичную ценность �
 
 В технологическом контуре один репозиторий соответствует одному проекту. Не каждый проект становится продуктом: внутренняя инфраструктура и capabilities могут создавать значимый ресурс экосистемы без отдельного внешнего предложения. Переход проекта к публичному `v1.0` и [Product Object](product-object-model.md) описывается отдельно от производственного цикла U.L.I.
 
-Umbrella Brand DETai объединяет происхождение и доверие, но не создаёт общего ценностного предложения вместо конкретных продуктов. Принцип описан в [стандарте ценностного предложения продукта](../ecosystem/Management_layer/1_Philosophy/product-and-service-value-proposition.md).
+Umbrella Brand DETai объединяет происхождение и доверие, но не создаёт общего ценностного предложения вместо конкретных продуктов. Принцип описан в [стандарте ценностного предложения продукта](value-proposition-standard.md).
 
 [Business Thesis DETai](business-thesis.md) удерживает гипотезу предпринимательского целого. Она не заменяет ценностные предложения продуктов: `Psychology in Quotes`, психотерапевтическая услуга, образовательная программа и возможный будущий цифровой workspace отвечают на разные пользовательские ситуации.
 
@@ -99,7 +99,7 @@ Umbrella Brand DETai объединяет происхождение и дове
 - [Портфельное решение: приоритет customer discovery](portfolio-decisions/insight-workspace-customer-discovery.md)
 - [Каталог продуктов и предложений](product-catalog.md)
 - [Модель документации продукта](product-documentation-model.md)
-- [Стандарт ценностного предложения продукта](../ecosystem/Management_layer/1_Philosophy/product-and-service-value-proposition.md)
+- [Стандарт ценностного предложения продукта](value-proposition-standard.md)
 - [Модель продуктового объекта](product-object-model.md)
 - [Рыночный и портфельный цикл](market-operations.md)
 - [Бизнес-модель и портфель](business-model-and-portfolio.md)
