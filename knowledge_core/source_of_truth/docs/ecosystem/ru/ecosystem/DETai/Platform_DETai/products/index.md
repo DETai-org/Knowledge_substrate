@@ -10,9 +10,10 @@ classification:
   audiences: [public, team, product, agents]
 descriptive:
   id: detai-platform-detai-products-index
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-08-09
+  date_update: 2026-08-09
 governance:
   canonicality: canonical
   visibility: public
@@ -30,6 +31,9 @@ links:
     - schema: ecosystem
       link_type: instantiates
       linked_document_id: product-object-model
+    - schema: ecosystem
+      link_type: related-to
+      linked_document_id: detai-product-catalog
 title: Продукты Platform DETai
 ---
 
@@ -64,9 +68,12 @@ title: Продукты Platform DETai
 ## Текущие продуктовые узлы
 
 - [Psychology in Quotes](psychology-in-quotes/index.md)
-- [Francis Galton](francis-galton/index.md)
+- [Francis Galton](francis-galton/index.md) — продуктовая гипотеза; проектный контур не подтверждён
 - [DETai Pulse](detai-pulse/index.md)
 - [DETai Matrix](detai-matrix/index.md)
 - [Psykhḗ AI](psykhe-ai/index.md)
 
-Общие требования задают [модель продуктового объекта](../../../../product-market/product-object-model.md), [модель документации продукта](../../../../product-market/product-documentation-model.md) и [стандарт ценностного предложения](../../../../product-market/value-proposition-standard.md). Сквозной портфель всей экосистемы, включая будущие образовательные и психотерапевтические предложения вне Platform DETai, находится в [каталоге продуктов](../../../../product-market/product-catalog.md).
+> [!TIP] Весь портфель DETai — в одной сводной таблице
+> Этот индекс показывает только цифровые продуктовые узлы Platform DETai. Чтобы увидеть их рядом с будущими образовательными, психотерапевтическими и другими предложениями экосистемы, откройте [красивую сводную таблицу всего портфеля DETai](../../../../product-market/product-catalog.md).
+
+Общие требования задают [модель продуктового объекта](../../../../product-market/product-object-model.md), [модель документации продукта](../../../../product-market/product-documentation-model.md) и [стандарт ценностного предложения](../../../../product-market/value-proposition-standard.md).

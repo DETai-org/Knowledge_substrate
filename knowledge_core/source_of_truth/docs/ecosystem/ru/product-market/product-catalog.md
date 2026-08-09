@@ -10,7 +10,7 @@ classification:
   audiences: [public, team, product, agents]
 descriptive:
   id: detai-product-catalog
-  version: v3
+  version: v4
   status: draft
   date_ymd: 2026-08-05
   date_update: 2026-08-09
@@ -29,6 +29,9 @@ links:
     - schema: ecosystem
       link_type: governed-by
       linked_document_id: product-object-model
+    - schema: ecosystem
+      link_type: related-to
+      linked_document_id: detai-platform-detai-products-index
 title: Каталог продуктов и предложений DETai
 ---
 
@@ -36,12 +39,15 @@ title: Каталог продуктов и предложений DETai
 
 Каталог даёт единый вход в продуктовый портфель DETai, но **не переносит сюда документацию каждого продукта**. Каноническая страница продукта живёт рядом с системой, которая им владеет; каталог показывает статус, тип и маршрут к ней.
 
+> [!TIP] Нужны только продукты Platform DETai?
+> Перейдите в [индекс продуктов Platform DETai](../ecosystem/DETai/Platform_DETai/products/index.md): там объяснено, что означает продуктовый узел, чем Product Candidate отличается от выпущенного продукта и где проходит граница с R&D, внутренними технологиями и остановленными проектами.
+
 ## Технологические продукты и сервисы
 
 | Продукт или сервис | Текущая роль | Каноническая документация |
 |---|---|---|
 | Психология в цитатах | Публичный пользовательский продукт и брендовая поверхность | [Открыть](../ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md) |
-| Francis Galton | Психологический и исследовательский продукт | [Открыть](../ecosystem/DETai/Platform_DETai/products/francis-galton/index.md) |
+| Francis Galton | Продуктовая гипотеза; проект и evidence не подтверждены | [Открыть](../ecosystem/DETai/Platform_DETai/products/francis-galton/index.md) |
 | DETai Pulse | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md) |
 | DETai Matrix | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md) |
 | Psykhḗ AI | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md) |

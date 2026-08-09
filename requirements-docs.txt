@@ -3,3 +3,4 @@ mkdocs-material
 mkdocs-callouts
 mkdocs-awesome-pages-plugin
 mkdocs-simple-hooks
+mkdocs-redirects==1.2.3
