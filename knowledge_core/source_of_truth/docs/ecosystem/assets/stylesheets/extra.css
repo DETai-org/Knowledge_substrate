@@ -159,3 +159,55 @@
     margin-top: 1.9rem;
   }
 }
+
+/* Навигационный путь из nav в mkdocs.yml */
+.md-path {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.15rem;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--md-default-fg-color) 24%, transparent) transparent;
+  touch-action: pan-x;
+}
+
+.md-path__list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  min-width: 100%;
+}
+
+.md-path .md-path__item {
+  flex: 0 0 auto;
+  max-width: min(22rem, 72vw);
+  white-space: nowrap;
+}
+
+.md-path__link {
+  border-radius: 0.2rem;
+  outline-offset: 0.1rem;
+}
+
+.md-path__link:hover,
+.md-path__link:focus-visible {
+  color: var(--md-accent-fg-color);
+}
+
+.md-path::-webkit-scrollbar {
+  height: 0.16rem;
+}
+
+.md-path::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: color-mix(in srgb, var(--md-default-fg-color) 24%, transparent);
+}
+
+@media (max-width: 44.9375em) {
+  .md-path {
+    font-size: 0.64rem;
+  }
+
+  .md-path .md-path__item {
+    max-width: 76vw;
+  }
+}
