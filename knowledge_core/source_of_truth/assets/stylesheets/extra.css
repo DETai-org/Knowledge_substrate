@@ -201,6 +201,16 @@
   color: var(--md-accent-fg-color);
 }
 
+.md-path__item--active {
+  color: var(--md-default-fg-color);
+  font-weight: 650;
+}
+
+.md-path__link--active {
+  color: inherit;
+  cursor: default;
+}
+
 .md-path::-webkit-scrollbar {
   height: 0.16rem;
 }
@@ -212,7 +222,12 @@
 
 @media (max-width: 44.9375em) {
   .md-path {
+    direction: rtl;
     font-size: 0.64rem;
+  }
+
+  .md-path__list {
+    direction: ltr;
   }
 
   .md-path .md-path__item {

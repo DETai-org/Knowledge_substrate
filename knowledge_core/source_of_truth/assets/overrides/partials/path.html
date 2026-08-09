@@ -1,0 +1,39 @@
+{# Extend Material's navigation path with the active leaf from mkdocs.yml. #}
+{% import "partials/path-item.html" as item with context %}
+
+{% macro render_active(items) %}
+  {% for nav_item in items %}
+    {% if nav_item.active %}
+      {% if nav_item.children %}
+        {{ render_active(nav_item.children) }}
+      {% else %}
+        <li class="md-path__item md-path__item--active">
+          <span class="md-path__link md-path__link--active" aria-current="page">
+            <span class="md-ellipsis">{{ nav_item.title }}</span>
+          </span>
+        </li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% if page.meta and page.meta.hide %}
+  {% set hidden = "hidden" if "path" in page.meta.hide %}
+{% endif %}
+{% set depth = page.ancestors | length %}
+{% if nav.homepage %}
+  {% set depth = depth + 1 %}
+{% endif %}
+{% if depth > 1 %}
+  <nav class="md-path" aria-label="{{ lang.t('nav') }}" {{ hidden }}>
+    <ol class="md-path__list">
+      {% if nav.homepage %}
+        {{ item.render(nav.homepage) }}
+      {% endif %}
+      {% for nav_item in page.ancestors | reverse %}
+        {{ item.render(nav_item) }}
+      {% endfor %}
+      {{ render_active(nav) }}
+    </ol>
+  </nav>
+{% endif %}
