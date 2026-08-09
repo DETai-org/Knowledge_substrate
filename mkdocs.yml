@@ -197,7 +197,8 @@ nav:
 - Продукты и рынок:
   - Обзор Product–Market System: ru/product-market/index.md
   - Business Thesis: ru/product-market/business-thesis.md
-  - Выбор lead product: ru/product-market/lead-product-decision.md
+  - Портфельные решения:
+    - "Приоритет customer discovery: DETai Insight Workspace": ru/product-market/portfolio-decisions/insight-workspace-customer-discovery.md
   - Каталог продуктов и предложений: ru/product-market/product-catalog.md
   - Модель документации продукта: ru/product-market/product-documentation-model.md
   - Стандарт ценностного предложения продукта: ru/ecosystem/Management_layer/1_Philosophy/product-and-service-value-proposition.md

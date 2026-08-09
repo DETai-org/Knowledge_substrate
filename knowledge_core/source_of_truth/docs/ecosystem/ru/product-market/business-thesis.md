@@ -10,9 +10,10 @@ classification:
   audiences: [team, founders, product, partners, agents]
 descriptive:
   id: detai-business-thesis
-  version: v1
+  version: v2
   status: draft
   date_ymd: 2026-08-05
+  date_update: 2026-08-09
 governance:
   canonicality: working
   visibility: public
@@ -58,10 +59,10 @@ DETai строит методоориентированную экосистем
 ## Продуктовая точка входа
 
 - `Psychology in Quotes` — существующий публичный продукт и источник фактического product evidence.
-- `DETai Insight Workspace` — приоритетная гипотеза customer discovery, объединяющая добровольную психологическую саморефлексию и non-clinical professional workflow support.
+- `DETai Insight Workspace` — сохранённая гипотеза, объединяющая добровольную психологическую саморефлексию и non-clinical professional workflow support; её приоритет действует только если команда отдельно запускает customer discovery и не задаёт текущую разработку.
 - professional knowledge capabilities — возможный модуль или соседняя продуктовая линия, а не автоматически отдельный lead product.
 
-Статус lead product определяется в [отдельном решении](lead-product-decision.md).
+Статус гипотезы и ограниченный смысл её исследовательского приоритета сохранены в [отдельном портфельном решении](portfolio-decisions/insight-workspace-customer-discovery.md).
 
 ## Первые вопросы discovery
 

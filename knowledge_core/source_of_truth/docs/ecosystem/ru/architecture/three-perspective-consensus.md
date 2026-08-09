@@ -10,9 +10,10 @@ classification:
   audiences: [public, team, founders, partners, agents]
 descriptive:
   id: detai-three-perspective-consensus
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-08-05
+  date_update: 2026-08-09
 governance:
   canonicality: canonical
   visibility: public
@@ -113,7 +114,7 @@ Task tools, код, U.L.I., Team OS, Knowledge Substrate, runtime и Corporate V
 
 ### 8. Продуктовая ясность достигается через gate
 
-`Psychology in Quotes` остаётся существующим продуктом. `DETai Insight Workspace` принимается как **приоритетная гипотеза customer discovery**, а не как уже утверждённый lead product или готовое клиническое решение. Решение принимается через [Lead Product Decision](../product-market/lead-product-decision.md).
+`Psychology in Quotes` остаётся существующим продуктом. `DETai Insight Workspace` принимается как **приоритетная гипотеза customer discovery**, а не как уже утверждённый lead product или готовое клиническое решение. Смысл и ограниченное действие гипотезы сохранены в [портфельном решении](../product-market/portfolio-decisions/insight-workspace-customer-discovery.md).
 
 ### 9. Публичные claims ограничены evidence
 

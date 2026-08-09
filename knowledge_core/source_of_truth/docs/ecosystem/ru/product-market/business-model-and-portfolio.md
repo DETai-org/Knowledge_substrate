@@ -10,9 +10,10 @@ classification:
   audiences: [public, team, partners, agents]
 descriptive:
   id: business-model-and-portfolio
-  version: v2
+  version: v3
   status: concept
   date_ymd: 2026-08-05
+  date_update: 2026-08-09
 governance:
   canonicality: working
   visibility: public
@@ -62,4 +63,4 @@ DETai при этом рассматривается как интегриров
 
 Финальные модели собственности, распределения дохода и юридической структуры фиксируются в [право-экономическом контуре](../legal-economic/index.md), а не выводятся из этой концептуальной карты автоматически.
 
-Текущая гипотеза направления и её критерии проверки описаны в [Business Thesis](business-thesis.md); конкретный lead product проходит отдельный [portfolio gate](lead-product-decision.md).
+Текущая гипотеза направления описана в [Business Thesis](business-thesis.md); сохранённое решение о возможном фокусе исследования находится среди [портфельных решений](portfolio-decisions/insight-workspace-customer-discovery.md).

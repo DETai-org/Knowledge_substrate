@@ -10,9 +10,10 @@ classification:
   audiences: [public, team, product, agents]
 descriptive:
   id: detai-product-catalog
-  version: v2
+  version: v3
   status: draft
   date_ymd: 2026-08-05
+  date_update: 2026-08-09
 governance:
   canonicality: working
   visibility: public
@@ -47,11 +48,11 @@ title: Каталог продуктов и предложений DETai
 
 Текущая группировка отражает состояние документации на дату версии каталога. Наличие страницы не означает завершённость продукта, клиническую готовность или подтверждённый product–market fit.
 
-## Приоритетная discovery hypothesis
+## Гипотеза вне действующего каталога
 
-`DETai Insight Workspace` пока не имеет статуса действующего продукта и отдельного product node. Он является приоритетной гипотезой исследования с personal insight и non-clinical professional workflow modes. Условия перехода к Product Charter, прототипу и controlled pilot описаны в [решении о lead product](lead-product-decision.md).
+`DETai Insight Workspace` не имеет статуса действующего продукта, отдельного проекта или product node. Это сохранённая гипотеза с personal insight и non-clinical professional workflow modes. Если команда запустит отдельный customer discovery, смысл исходного приоритета и границы исследования описаны в [портфельном решении](portfolio-decisions/insight-workspace-customer-discovery.md).
 
-Такое размещение делает гипотезу видимой, не ставя её в один ряд с уже существующими пользовательскими поверхностями.
+Запись не задаёт текущий производственный приоритет и не ставит гипотезу в один ряд с существующими проектами и пользовательскими поверхностями.
 
 ## Институциональные предложения
 
