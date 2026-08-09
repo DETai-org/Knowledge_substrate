@@ -47,7 +47,7 @@ title: Каталог продуктов и предложений DETai
 | Продукт или сервис | Текущая роль | Каноническая документация |
 |---|---|---|
 | Психология в цитатах | Публичный пользовательский продукт и брендовая поверхность | [Открыть](../ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md) |
-| Francis Galton | Продуктовая гипотеза; проект и evidence не подтверждены | [Открыть](../ecosystem/DETai/Platform_DETai/products/francis-galton/index.md) |
+| Francis Galton | Психологический и исследовательский продукт | [Открыть](../ecosystem/DETai/Platform_DETai/products/francis-galton/index.md) |
 | DETai Pulse | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md) |
 | DETai Matrix | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md) |
 | Psykhḗ AI | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md) |

@@ -68,7 +68,7 @@ title: Продукты Platform DETai
 ## Текущие продуктовые узлы
 
 - [Psychology in Quotes](psychology-in-quotes/index.md)
-- [Francis Galton](francis-galton/index.md) — продуктовая гипотеза; проектный контур не подтверждён
+- [Francis Galton](francis-galton/index.md)
 - [DETai Pulse](detai-pulse/index.md)
 - [DETai Matrix](detai-matrix/index.md)
 - [Psykhḗ AI](psykhe-ai/index.md)
