@@ -91,17 +91,6 @@ nav:
   - Brand & Communications:
     - Границы и ответственность домена: ru/governance/brand-and-communications.md
     - Публичные коммуникации: ru/ecosystem/STORYTELLING/index.md
-  - Операционные инструменты:
-    - ClickUp:
-      - Обзор: ru/ecosystem/Tools/🎯ClickUp/index.md
-      - Структура и принципы: ru/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md
-    - Airtable:
-      - Обзор: ru/ecosystem/Tools/📦 Airtable/index.md
-      - Airtable в DETai: ru/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md
-      - ADR working-context: ru/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md
-    - Linear:
-      - Обзор: ru/ecosystem/Tools/Linear/index.md
-      - GitHub → Linear: ru/ecosystem/Tools/Linear/github-linear-automation-architecture.md
   - Общие рабочие правила:
     - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
     - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
@@ -176,36 +165,6 @@ nav:
   - Архитектура ресурсов:
     - Логика эшелонов: ru/ecosystem/DETai/logic-of-echelons.md
     - Таблица ресурсов: ru/ecosystem/DETai/table-of-resources.md
-  - Общая техническая инфраструктура:
-    - Обзор инфраструктуры: ru/ecosystem/Infrastructure/index.md
-    - Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
-    - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
-    - Knowledge Substrate runtime: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
-  - Инструменты разработки и delivery:
-    - Codex:
-      - Обзор: ru/ecosystem/Tools/🧭Codex/index.md
-      - Форма взаимодействия: ru/ecosystem/Tools/🧭Codex/codex-interaction-format.md
-      - Манифест: ru/ecosystem/Tools/🧭Codex/codex-manifest.md
-      - Create Epic Issue Release: ru/ecosystem/Tools/🧭Codex/create-epic-issue-release.md
-      - Взаимодействие с Codex: ru/ecosystem/Tools/🧭Codex/interaction-with-codex.md
-      - Связь с GitHub: ru/ecosystem/Tools/🧭Codex/integration-with-github.md
-    - GitHub:
-      - Обзор: ru/ecosystem/Tools/🛠GitHub/index.md
-      - Подключить репозиторий: ru/ecosystem/Tools/🛠GitHub/connect-repository.md
-      - GitHub App — бот: ru/ecosystem/Tools/🛠GitHub/github-app-bot.md
-      - Git для начинающих: ru/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md
-      - Как вникнуть в проект: ru/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md
-      - Как убрать секреты: ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md
-      - Переход на Organization: ru/ecosystem/Tools/🛠GitHub/transition-to-organization.md
-    - VS Code:
-      - Обзор: ru/ecosystem/Tools/VS_Code/index.md
-      - Установка: ru/ecosystem/Tools/VS_Code/installation-and-initial-setup.md
-      - Git, GitHub и VS Code: ru/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md
-    - Make: ru/ecosystem/Tools/Ⓜ️Make/index.md
-    - Telegram Bots: ru/ecosystem/Tools/🤖 Telegram_Bots/index.md
-    - FileZilla:
-      - Обзор: ru/ecosystem/Tools/FileZilla/index.md
-      - Настройки: ru/ecosystem/Tools/FileZilla/filezilla-settings.md
 - Продукты и рынок:
   - Обзор Product–Market System: ru/product-market/index.md
   - Business Thesis: ru/product-market/business-thesis.md
@@ -231,6 +190,54 @@ nav:
     - Граф claim → evidence → decision: ru/evidence/claim-evidence-graph.md
     - External Readiness: ru/evidence/external-readiness.md
     - Venture Execution View: ru/evidence/venture-execution-view.md
+- Infrastructure:
+  - Обзор: ru/ecosystem/Infrastructure/index.md
+  - Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
+  - Home Lab: ru/ecosystem/Infrastructure/home-lab/index.md
+  - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
+  - Knowledge Substrate runtime: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
+- Tools:
+  - Обзор: ru/ecosystem/Tools/index.md
+  - GPT и кураторы:
+    - Обзор GPT: ru/ecosystem/Tools/🤖 GPT/index.md
+    - Правила META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md
+    - База знаний META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md
+    - Стиль META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md
+  - ClickUp:
+    - Обзор: ru/ecosystem/Tools/🎯ClickUp/index.md
+    - Структура и принципы: ru/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md
+  - Codex:
+    - Обзор: ru/ecosystem/Tools/🧭Codex/index.md
+    - Форма взаимодействия: ru/ecosystem/Tools/🧭Codex/codex-interaction-format.md
+    - Манифест: ru/ecosystem/Tools/🧭Codex/codex-manifest.md
+    - Create Epic Issue Release: ru/ecosystem/Tools/🧭Codex/create-epic-issue-release.md
+    - Взаимодействие с Codex: ru/ecosystem/Tools/🧭Codex/interaction-with-codex.md
+    - Связь с GitHub: ru/ecosystem/Tools/🧭Codex/integration-with-github.md
+  - GitHub:
+    - Обзор: ru/ecosystem/Tools/🛠GitHub/index.md
+    - Подключить репозиторий: ru/ecosystem/Tools/🛠GitHub/connect-repository.md
+    - GitHub App — бот: ru/ecosystem/Tools/🛠GitHub/github-app-bot.md
+    - Git для начинающих: ru/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md
+    - Как вникнуть в проект: ru/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md
+    - Как убрать секреты: ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md
+    - Переход на Organization: ru/ecosystem/Tools/🛠GitHub/transition-to-organization.md
+  - Linear:
+    - Обзор: ru/ecosystem/Tools/Linear/index.md
+    - GitHub → Linear: ru/ecosystem/Tools/Linear/github-linear-automation-architecture.md
+  - VS Code:
+    - Обзор: ru/ecosystem/Tools/VS_Code/index.md
+    - Установка: ru/ecosystem/Tools/VS_Code/installation-and-initial-setup.md
+    - Git, GitHub и VS Code: ru/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md
+  - Make: ru/ecosystem/Tools/Ⓜ️Make/index.md
+  - Airtable:
+    - Обзор: ru/ecosystem/Tools/📦 Airtable/index.md
+    - Airtable в DETai: ru/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md
+    - ADR working-context: ru/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md
+  - Telegram Bots: ru/ecosystem/Tools/🤖 Telegram_Bots/index.md
+  - Obsidian: ru/ecosystem/Tools/Obsidian/index.md
+  - FileZilla:
+    - Обзор: ru/ecosystem/Tools/FileZilla/index.md
+    - Настройки: ru/ecosystem/Tools/FileZilla/filezilla-settings.md
 - Система знаний:
   - Обзор системы знаний: ru/knowledge/index.md
   - Архитектура знания:
@@ -246,13 +253,6 @@ nav:
     - Документационная архитектура: ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md
     - Исполняемый интерфейс для агентов: ru/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md
   - Публикация и доставка знаний: ru/knowledge/knowledge-delivery.md
-  - Инструменты знания:
-    - GPT и кураторы:
-      - Обзор GPT: ru/ecosystem/Tools/🤖 GPT/index.md
-      - Правила META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md
-      - База знаний META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md
-      - Стиль META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md
-    - Obsidian: ru/ecosystem/Tools/Obsidian/index.md
   - Глоссарий: ru/ecosystem/glossary.md
 - English: en/index.md
 - Deutsch: de/index.md

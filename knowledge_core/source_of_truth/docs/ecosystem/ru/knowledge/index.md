@@ -10,9 +10,10 @@ classification:
   audiences: [public, team, agents]
 descriptive:
   id: knowledge-system-index
-  version: v3
+  version: v4
   status: active
   date_ymd: 2026-08-05
+  date_update: 2026-08-10
 governance:
   canonicality: canonical
   visibility: public
@@ -50,7 +51,7 @@ title: Система знаний и Knowledge Substrate
 - **[модель представлений](representation-model.md)** определяет разные функции сайта, документации, книги, runtime и закрытых хранилищ;
 - **[модель статусов](object-status-model.md)** не позволяет смешивать зрелость документа, архитектуры, реализации и evidence.
 
-Техническая инфраструктура принадлежит технологическому слою, operating tools — Management Layer, development tools — U.L.I., а Corporate Vault — Legal–Economic. Система знаний может ссылаться на них, но не становится их общим владельцем.
+`Infrastructure` и `Tools` имеют самостоятельные верхнеуровневые маршруты как сквозные обеспечивающие области экосистемы. При этом ответственность за конкретный инфраструктурный компонент или инструмент остаётся у его owning domain, а Corporate Vault — у Legal–Economic. Система знаний взаимодействует с ними, но не становится их общим владельцем.
 
 ## Слои знания
 
