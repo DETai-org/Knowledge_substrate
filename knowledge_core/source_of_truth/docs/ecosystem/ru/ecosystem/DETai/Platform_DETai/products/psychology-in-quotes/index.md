@@ -11,7 +11,7 @@ descriptive:
   version: v1
   status: active
   date_ymd: 2026-06-12
-  date_update: 2026-06-26
+  date_update: 2026-08-09
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -19,13 +19,13 @@ links:
     - type: "GitHub"
       url: "https://github.com/DETai-org/psychology-in-quotes"
     - type: "website"
-      url: "https://detai.ai/detai/platform/psychology-in-quotes"
+      url: "https://detai.ai/ru/technology/platform/psychology-in-quotes"
     - type: "telegram"
       url: "https://t.me/DET_psy_in_quotes_bot"
     - type: "privacy"
-      url: "https://detai.ai/detai/platform/psychology-in-quotes/privacy"
+      url: "https://detai.ai/ru/technology/platform/psychology-in-quotes/privacy"
     - type: "terms"
-      url: "https://detai.ai/detai/platform/psychology-in-quotes/terms"
+      url: "https://detai.ai/ru/technology/platform/psychology-in-quotes/terms"
   document_links: null
 ---
 
@@ -77,7 +77,7 @@ Knowledge Substrate играет роль канонического слоя д
 
 ## Связь с sites
 
-Репозиторий `sites` даёт проекту публичную поверхность: страницу `/detai/platform/psychology-in-quotes`, gallery опубликованных карточек, страницы отдельных цитат, sitemap и проектные legal-страницы.
+Репозиторий `sites` даёт проекту публичную поверхность: страницу `/ru/technology/platform/psychology-in-quotes`, gallery опубликованных карточек, страницы отдельных цитат, sitemap и проектные legal-страницы.
 
 На сайте проект Psychology in Quotes представлен как pilot app: посетитель видит готовые цитаты, понимает обещание продукта и получает вход в Telegram-бота. При этом сайт не забирает на себя production-логику создания цитат; он показывает уже опубликованные и подготовленные материалы.
 
