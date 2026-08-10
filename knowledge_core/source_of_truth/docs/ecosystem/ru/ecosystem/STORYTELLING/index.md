@@ -10,10 +10,10 @@ classification:
   audiences: [team, brand, authors, developers, agents]
 descriptive:
   id: storytelling-index
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-03-25
-  date_update: 2026-08-09
+  date_update: 2026-08-11
 governance:
   canonicality: canonical
   visibility: public
@@ -38,33 +38,52 @@ links:
     - schema: ecosystem
       link_type: published-through
       linked_document_id: detai-platform-detai-e2-brand-sites-index
-title: Storytelling
+    - schema: ecosystem
+      link_type: interfaces-with
+      linked_document_id: team-os-contribution-ledger
+    - schema: ecosystem
+      link_type: delivered-by
+      linked_document_id: detai-platform-detai-index
+title: Storytelling — Publication Core
 ---
 
-# Storytelling
+# Storytelling — Publication Core
 
-**Storytelling — самостоятельный редакционно-технологический проект DETai с [собственным репозиторием](https://github.com/DETai-org/Storytelling). Он превращает идеи и исходные материалы в подготовленные публикации и доставляет их в публичные каналы.**
+**Storytelling — самостоятельный редакционно-технологический проект и Publication Core DETai с [собственным репозиторием](https://github.com/DETai-org/Storytelling). Он принимает подготовленные материалы, проводит их через обогащение и review, собирает версионированные публикационные пакеты и доставляет утверждённый результат в выбранные публичные каналы.**
 
-Проект относится к операционному домену [Brand & Communications](../../governance/brand-and-communications.md), но не сводится к общему разговору о бренде. В репозитории живут процессы, интеграции, автоматизация и кодовая бизнес-логика публикационного контура.
+Storytelling является внутренним сервисом [Platform DETai](../DETai/Platform_DETai/index.md), но его результаты обращены во внешнюю среду. Проект относится к операционному домену [Brand & Communications](../../governance/brand-and-communications.md): домен определяет аудитории, редакционные рамки и согласованность, а Storytelling воплощает публикационный процесс в повторяемой рабочей и технической системе.
 
-## Проект, результат и канал
+## Редакционная среда, Publication Core и каналы
 
 | Уровень | Роль |
 |---|---|
-| **Storytelling как проект** | Репозиторий, редакционные процессы, интеграции и автоматизация |
+| **Редакционная рабочая среда** | Идея, черновик, обсуждение, автор, назначение и подготовка материала; сейчас Storytelling принимает материалы из папки ClickUp [STORYTELLING (TimeOS) для текстов](https://app.clickup.com/90152202658/v/f/901515038276/901510140866), а в дальнейшем этот контур может стать частью TimeOS / [Team OS](../../governance/team-os.md) |
+| **Storytelling как Publication Core** | Репозиторий, оркестрация, интеграции, обогащение, локализация, review, версионирование и сборка публикационного пакета |
 | **Продуктовый результат проекта** | Пост, серия постов, публикационный пакет, Markdown, metadata и media assets |
-| **Канал доставки** | Блог основного или персонального сайта, Telegram, VK, а в будущем YouTube или другой канал |
+| **Площадка публикации** | Блог основного или персонального сайта, Telegram, VK, а в будущем YouTube, Habr или другой внешний канал |
 
 Публикация является продуктовым результатом Storytelling. При этом отдельный пост не становится самостоятельным Product Object DETai автоматически: отдельный Product Object нужен только для поддерживаемого публичного предложения с собственной аудиторией, ценностью, владельцем и показателями.
 
-## Что создаёт Storytelling
+```text
+идея и черновик в редакционной рабочей среде
+→ подготовленный исходный материал
+→ Storytelling / Publication Core
+→ enrichment, локализация, review и публикационный пакет
+→ адаптеры площадок
+→ сайт, Telegram, VK, YouTube, Habr и другие каналы
+→ обратная связь в редакционную среду
+```
 
-- идеи, сюжеты и смысловые линии;
-- черновики постов и серий публикаций;
-- истории о проектах, людях, исследованиях и развитии DETai;
+[Рабочая среда участника](../../start/working-environment.md) связывает знания, задачи, код и runtime как маршрут, но не переносит их в один общий контейнер. Аналогично TimeOS может стать местом совместной редакционной работы, не забирая у Storytelling публикационную бизнес-логику и код.
+
+На текущем этапе операционной точкой передачи исходного материала является папка ClickUp [STORYTELLING (TimeOS) для текстов](https://app.clickup.com/90152202658/v/f/901515038276/901510140866). Эта ссылка фиксирует действующий вход в процесс, а не постоянную техническую зависимость Publication Core от ClickUp.
+
+## Что поставляет Storytelling
+
 - локализованные Markdown-материалы и metadata;
 - обложки и другие media assets;
 - публикационные пакеты для сайта и социальных каналов;
+- версии, результаты review и машинно-проверяемые контракты доставки;
 - заготовки, которые после отдельного научного review могут стать Research Papers.
 
 Переход текста в научную публикацию не происходит автоматически: research claim, evidence и формат публикации проверяются соответствующими научными и Evidence-ролями.
@@ -72,8 +91,9 @@ title: Storytelling
 ## Редакционная и техническая эстафета
 
 ```text
-идея или наблюдение
-→ разработка материала в Storytelling
+идея или наблюдение в редакционной рабочей среде
+→ подготовка исходного материала
+→ передача в Storytelling
 → редакционное и предметное review
 → сборка публикационного пакета
 → выбор одного или нескольких каналов
@@ -85,7 +105,9 @@ title: Storytelling
 
 ## Связь с сайтом
 
-[Сайт DETai](../DETai/Platform_DETai/E2-Brand/sites/index.md) принимает подготовленный post object, Markdown и media-файлы. Затем `sites` самостоятельно собирает страницу, SEO, Open Graph, structured data и deployment.
+[Сайт DETai](../DETai/Platform_DETai/E2-Brand/sites/index.md) — одна из площадок публикации и один из потребителей Storytelling. Он принимает подготовленный post object, Markdown и media-файлы, после чего репозиторий `sites` самостоятельно собирает страницу, маршруты, SEO, Open Graph, structured data и deployment. Сайт не выполняет enrichment, переводы, редакционное review и сборку исходного публикационного пакета.
+
+Та же публикационная версия может передаваться в Telegram, VK, YouTube, Habr и будущие площадки через их адаптеры. Storytelling остаётся единым Publication Core, а техническая доставка и отображение на каждой площадке принадлежат владельцу соответствующего канала.
 
 Граница ответственности:
 
