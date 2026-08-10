@@ -193,7 +193,7 @@ nav:
 - Infrastructure:
   - Обзор: ru/ecosystem/Infrastructure/index.md
   - Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
-  - Home Lab:
+  - Home Ψ Lab:
     - Обзор: ru/ecosystem/Infrastructure/home-lab/index.md
     - Архитектура и состав: ru/ecosystem/Infrastructure/home-lab/architecture.md
   - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
