@@ -38,6 +38,8 @@
 }
 
 /* Верхний уровень боковой навигации остаётся визуальными разделами */
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__container > .md-nav__link,
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__container > .md-nav__link .md-ellipsis,
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link,
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link .md-ellipsis {
   font-weight: 700;
