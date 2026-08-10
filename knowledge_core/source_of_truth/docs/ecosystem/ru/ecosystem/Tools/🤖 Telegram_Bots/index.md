@@ -82,4 +82,4 @@ Telegram-бот — это программа, которая висит на с
 
 Если вы планируете разрабатывать или дорабатывать бота — обязательно ознакомьтесь с единым стандартом:
 
-📘 [**Стандарт по написанию ботов**](Ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index)
+📘 [**Стандарт по написанию ботов**](../../DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md)
