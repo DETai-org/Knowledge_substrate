@@ -250,10 +250,11 @@ nav:
     - Навигация для людей и агентов: ru/knowledge/agent-navigation.md
     - Миграция информационной архитектуры: ru/knowledge/navigation-migration.md
     - Предметная архитектура навигации: ru/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md
-    - Политика metadata: ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md
-    - Функции документов: ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md
-    - Документационная архитектура: ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md
     - Исполняемый интерфейс для агентов: ru/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md
+  - Правила документации:
+    - Документационная архитектура: ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md
+    - Функции документов: ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md
+    - Политика metadata: ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md
   - Публикация и доставка знаний: ru/knowledge/knowledge-delivery.md
   - Глоссарий: ru/ecosystem/glossary.md
 - English: en/index.md
