@@ -7,9 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: detai-u-l-i-2-architecture-and-logic-documentation-architecture-u-l-i
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-03-25
+  date_update: 2026-08-10
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -34,11 +35,15 @@ U.L.I. является **environment-уровнем** внутри класте
 
 Типы документов, их базовые атрибуты и общая логика документационной системы задаются на уровне всей экосистемы DET / DETai в документе:
 
-**[Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)**
+**[Документационная архитектура экосистемы](../../../Management_layer/Docs-Ecosystem/documentation-architecture.md)**
 
-Дополнительно обязательные метаполя документов определяются в документе:
+Допустимые функции документов — `index`, `explanation`, `standard`, `policy`, `guide` и другие — определяются в справочнике:
 
-**[Политика метаданных документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Archive/document_metadata_policy/)**
+**[Функции документов](../../../Management_layer/Docs-Ecosystem/functions_of_documents.md)**
+
+Обязательные metadata-поля документов определяются в документе:
+
+**[Политика metadata документов](../../../Management_layer/Docs-Ecosystem/document_metadata_policy.md)**
 
 Таким образом, данный документ не вводит новую общую систему типов документов, а показывает, **как экосистемная документационная архитектура применяется внутри среды U.L.I.**
 
@@ -124,7 +129,7 @@ U.L.I. является **environment-уровнем** внутри класте
 ## Как читать эту таблицу правильно
 
 Эта таблица **не заменяет** документ  
-**[Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)**.
+**[Документационная архитектура экосистемы](../../../Management_layer/Docs-Ecosystem/documentation-architecture.md)**.
 
 Она показывает не общую теорию типов документов, а **их локальное применение внутри U.L.I.**
 
@@ -196,11 +201,11 @@ ecosystem → cluster → environment → project
 Документы среды U.L.I. подчиняются общему процессу версионности, принятому в экосистеме.
 
 См. документ:
-[♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/)
+[♻️ Процесс версионности](../3_Technical_Standards/Versioning-in-U.L.I.md)
 
 
 Также документы U.L.I. используют общую систему метаданных
 
 См. документ:
-**[Политика метаданных документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Archive/document_metadata_policy/)**
+**[Политика metadata документов](../../../Management_layer/Docs-Ecosystem/document_metadata_policy.md)**
 

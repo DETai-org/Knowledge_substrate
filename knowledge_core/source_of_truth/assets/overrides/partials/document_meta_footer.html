@@ -1,38 +1,54 @@
-{#
-  Встроенный блок метаданных документа внизу статьи.
-  Выводит только descriptive.version, descriptive.date_ymd и descriptive.status.
-#}
+{# Компактная карточка существующих metadata из front matter. #}
+{% set classification = page.meta.classification if page and page.meta and page.meta.classification else {} %}
 {% set descriptive = page.meta.descriptive if page and page.meta and page.meta.descriptive else {} %}
-{% set document_version = descriptive.version if descriptive and descriptive.version else none %}
-{% set document_date = descriptive.date_ymd if descriptive and descriptive.date_ymd else none %}
-{% set document_status = descriptive.status if descriptive and descriptive.status else none %}
+{% set governance = page.meta.governance if page and page.meta and page.meta.governance else {} %}
+{% set object_state = page.meta.object_state if page and page.meta and page.meta.object_state else {} %}
+{% set document_status = descriptive.status if descriptive.status else none %}
 
-{% if document_version or document_date or document_status %}
+{% if classification.system or classification.domain or classification.function or document_status or descriptive.version or governance.canonicality or governance.visibility or governance.owner_role or governance.review_date or object_state.architecture_status or object_state.implementation_status or object_state.evidence_status or object_state.visibility_status %}
   <aside class="doc-meta-footer" aria-label="Метаданные документа">
-    {% if document_version %}
-      <div class="doc-meta-footer__item">♻️ version: {{ document_version }}</div>
+    <div class="doc-meta-footer__title">Metadata</div>
+    <dl class="doc-meta-footer__grid">
+    {% if classification.system %}
+      <div class="doc-meta-footer__item"><dt>system</dt><dd>{{ classification.system }}</dd></div>
     {% endif %}
-
-    {% if document_date %}
-      <div class="doc-meta-footer__item">📅 date: {{ document_date }}</div>
+    {% if classification.domain %}
+      <div class="doc-meta-footer__item"><dt>domain</dt><dd>{{ classification.domain }}</dd></div>
     {% endif %}
-
+    {% if classification.function %}
+      <div class="doc-meta-footer__item"><dt>function</dt><dd>{{ classification.function }}</dd></div>
+    {% endif %}
     {% if document_status %}
       {% set status_normalized = document_status|string|lower %}
-      {% if status_normalized == "active" %}
-        {% set status_label = "🟢 Active" %}
-      {% elif status_normalized == "draft" %}
-        {% set status_label = "🟡 Draft" %}
-      {% elif status_normalized == "review" %}
-        {% set status_label = "🟣 Review" %}
-      {% elif status_normalized == "deprecated" %}
-        {% set status_label = "🔴 Deprecated" %}
-      {% elif status_normalized == "archived" %}
-        {% set status_label = "⚫ Archived" %}
-      {% else %}
-        {% set status_label = "⚪ Unknown" %}
-      {% endif %}
-      <div class="doc-meta-footer__item">🚦 status: {{ status_label }}</div>
+      <div class="doc-meta-footer__item"><dt>status</dt><dd><span class="doc-meta-footer__status doc-meta-footer__status--{{ status_normalized }}" aria-hidden="true"></span>{{ document_status }}</dd></div>
     {% endif %}
+    {% if descriptive.version %}
+      <div class="doc-meta-footer__item"><dt>version</dt><dd>{{ descriptive.version }}</dd></div>
+    {% endif %}
+    {% if governance.canonicality %}
+      <div class="doc-meta-footer__item"><dt>canonicality</dt><dd>{{ governance.canonicality }}</dd></div>
+    {% endif %}
+    {% if governance.visibility %}
+      <div class="doc-meta-footer__item"><dt>visibility</dt><dd>{{ governance.visibility }}</dd></div>
+    {% endif %}
+    {% if governance.owner_role %}
+      <div class="doc-meta-footer__item"><dt>owner role</dt><dd>{{ governance.owner_role }}</dd></div>
+    {% endif %}
+    {% if governance.review_date %}
+      <div class="doc-meta-footer__item"><dt>review date</dt><dd>{{ governance.review_date }}</dd></div>
+    {% endif %}
+    {% if object_state.architecture_status %}
+      <div class="doc-meta-footer__item"><dt>architecture</dt><dd>{{ object_state.architecture_status }}</dd></div>
+    {% endif %}
+    {% if object_state.implementation_status %}
+      <div class="doc-meta-footer__item"><dt>implementation</dt><dd>{{ object_state.implementation_status }}</dd></div>
+    {% endif %}
+    {% if object_state.evidence_status %}
+      <div class="doc-meta-footer__item"><dt>evidence</dt><dd>{{ object_state.evidence_status }}</dd></div>
+    {% endif %}
+    {% if object_state.visibility_status %}
+      <div class="doc-meta-footer__item"><dt>object visibility</dt><dd>{{ object_state.visibility_status }}</dd></div>
+    {% endif %}
+    </dl>
   </aside>
 {% endif %}

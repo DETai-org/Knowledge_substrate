@@ -1,6 +1,7 @@
 mkdocs
 mkdocs-material
 mkdocs-callouts
+mkdocs-redirects==1.2.3
 pymdown-extensions
 PyYAML
 psycopg2-binary

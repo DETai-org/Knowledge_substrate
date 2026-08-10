@@ -52,7 +52,6 @@ sorting-spec: |
 
     index
     Participation_principles
-    product-and-service-value-proposition
 
 
   target-folder: Ecosystem/Management_layer/2_Architecture_and_Logic
@@ -112,46 +111,52 @@ sorting-spec: |
   target-folder: Ecosystem/DETai/Platform_DETai
 
     index
-    E1-Core
+    products
     E2-Brand
     E3-Infra
+    dormant-projects
     R&D
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E1-Core
+  target-folder: Ecosystem/DETai/Platform_DETai/products
 
-    Francis Galton
+    index
+    psychology-in-quotes
+    francis-galton
     detai-pulse
     detai-matrix
-    🌀Psykhḗ AI
+    psykhe-ai
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton
-
-    index
-
-
-  target-folder: Ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse
+  target-folder: Ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
     index
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix
+  target-folder: Ecosystem/DETai/Platform_DETai/products/francis-galton
 
     index
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E1-Core/🌀Psykhḗ AI
+  target-folder: Ecosystem/DETai/Platform_DETai/products/detai-pulse
+
+    index
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/products/detai-matrix
+
+    index
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/products/psykhe-ai
 
     index
 
 
   target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand
 
-    news-agent
     Telegram
     sites
-    psychology-in-quotes
 
 
   target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/Telegram
@@ -165,7 +170,7 @@ sorting-spec: |
     index
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/news-agent
+  target-folder: Ecosystem/DETai/Platform_DETai/R&D/news-agent
 
     index
 
@@ -175,23 +180,29 @@ sorting-spec: |
     index
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes
-
-    index
-
-
   target-folder: Ecosystem/DETai/Platform_DETai/E3-Infra
 
-    gpt_promt_engine
     Knowledge_Substrate
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E3-Infra/gpt_promt_engine
+  target-folder: Ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate
 
     index
 
 
-  target-folder: Ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate
+  target-folder: Ecosystem/DETai/Platform_DETai/dormant-projects
+
+    index
+    gpt-prompt-engine
+    news-agent
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine
+
+    index
+
+
+  target-folder: Ecosystem/DETai/Platform_DETai/dormant-projects/news-agent
 
     index
 

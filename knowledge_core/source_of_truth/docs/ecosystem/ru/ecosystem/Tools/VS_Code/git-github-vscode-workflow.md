@@ -18,7 +18,7 @@ links:
     - schema: ""
       link_type: ""
       linked_document_id: ""
-title: Git, GitHub и VS Code: рабочая модель с участием агента (Codex)
+title: "Git, GitHub и VS Code: рабочая модель с участием агента (Codex)"
 ---
 
 # Git, GitHub и VS Code: рабочая модель с участием агента (Codex)
