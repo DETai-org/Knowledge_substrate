@@ -6,10 +6,9 @@ theme:
   name: material
   custom_dir: knowledge_core/source_of_truth/assets/overrides
   features:
-  - navigation.sections
+  - navigation.instant
   - navigation.indexes
   - navigation.path
-  - toc.integrate
   - search.suggest
   - search.highlight
 plugins:
@@ -42,6 +41,7 @@ extra_css:
 extra_javascript:
 - assets/javascripts/chatgpt-prompt.js
 - assets/javascripts/chatgpt-button.js
+- assets/javascripts/nav-state.js
 - assets/javascripts/language-switcher.js
 exclude_docs: |
   ru/ecosystem/sortspec.md
