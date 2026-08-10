@@ -6,7 +6,6 @@ theme:
   name: material
   custom_dir: knowledge_core/source_of_truth/assets/overrides
   features:
-  - navigation.tabs
   - navigation.sections
   - navigation.indexes
   - navigation.path
