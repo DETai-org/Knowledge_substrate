@@ -37,6 +37,12 @@
   letter-spacing: 0.01em;
 }
 
+/* Верхний уровень боковой навигации остаётся визуальными разделами */
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link,
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link .md-ellipsis {
+  font-weight: 700;
+}
+
 /* Унификация callout/admonition стиля (Obsidian semantic parity) */
 .md-typeset .admonition,
 .md-typeset details {
