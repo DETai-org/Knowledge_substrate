@@ -101,7 +101,8 @@ Metadata размещается в начале ClickUp description как YAML-
 |---|---|---|
 | `Tools` | конкретный командный инструмент | `codex`, `github`, `clickup` |
 | `Infrastructure` | конкретный инфраструктурный контур | `home-psi-lab`, `proxmox`, `vpn-psi` |
-| `Governance` | конкретный governance- или delivery-контур | `onboarding`, `management-layer` |
+| `Onboarding` | прохождение onboarding новым участником | `participant-onboarding` |
+| `Governance` | конкретный управляющий или delivery-контур | `onboarding-management`, `management-layer` |
 | `Projects` | стабильный идентификатор конкретного проекта | `storytelling`, `sites` |
 
 Новое значение `scope` или новый класс `context` добавляется в этот реестр. Конкретный project-level `AGENTS.md` или route configuration должен фиксировать известные `list_id`, `scope` и `context`, чтобы skill не искал основной контейнер по всему ClickUp.
@@ -114,6 +115,8 @@ Metadata размещается в начале ClickUp description как YAML-
 4. отсутствие маршрута к соседнему List не разрешает подменять его локальным Markdown-файлом.
 
 Обзор всей структуры ClickUp может использоваться как fallback для cross-project маршрута, но не заменяет локально известный основной List.
+
+Space `Onboarding` и Folder `Management Layer / Onboarding` являются разными контейнерами: первый использует `scope: Onboarding` / `context: participant-onboarding`, второй — `scope: Governance` / `context: onboarding-management`. Их назначение и правило раздельных логов объясняет раздел [«Два ClickUp-контейнера Onboarding»](documentation-architecture.md#два-clickup-контейнера-onboarding).
 
 ### Provenance
 
