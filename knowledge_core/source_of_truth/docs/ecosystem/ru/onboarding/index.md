@@ -7,22 +7,22 @@ classification:
   function: guide
   system: governance-operating-model
   domain: onboarding
-  audiences: [candidates, team, managers, onboarding-owners, agents]
+  audiences: [candidates, team, managers, onboarding-coordinators, agents]
 descriptive:
   id: onboarding-system
   version: v1
-  status: active
+  status: draft
   date_ymd: 2026-08-14
 governance:
-  canonicality: canonical
+  canonicality: working
   visibility: public
-  owner_role: onboarding-owner
-  approver_role: operating-model-owner
+  owner_role: onboarding-coordinator
+  approver_role: onboarding-owner
   review_date: 2026-09-14
 object_state:
-  architecture_status: canonical
-  implementation_status: operational
-  evidence_status: not-applicable
+  architecture_status: hypothesis
+  implementation_status: in-design
+  evidence_status: preliminary-support
   visibility_status: public
 links:
   external_links:
@@ -42,97 +42,40 @@ title: Onboarding DETai
 
 # Onboarding DETai
 
+!!! warning "Черновик для review"
+
+    Архитектура раздела восстановлена из рабочих материалов и ожидает проверки ответственного за onboarding. До согласования страницы имеют статус `draft` и не задают окончательный регламент.
+
 ## Назначение
 
-Onboarding — сквозная функция перехода человека от первого доступа к осмысленному участию в DETai. Он связывает понимание экосистемы, настройку рабочей среды, освоение инструментов, прохождение tutorial-задач, обратную связь и переход к реальной роли.
+Onboarding — путь перехода человека от первого знакомства с DETai к осмысленному участию в экосистеме. Он помогает последовательно понять смысл и устройство системы, освоить её знания и инструменты, определить возможную роль и сделать первый реальный вклад.
 
-Onboarding не является только папкой инструкций или списком обязательных действий. Он реализует принцип [осмысленного участия](../governance/meaningful-participation.md): новый участник должен понимать, куда он входит, зачем выполняет шаг, где задавать вопросы, как увидеть прогресс и как повлиять на следующую версию маршрута.
+Это не единый список обязательных действий и не только ввод в должность. Маршрут соединяет самостоятельное изучение, живые встречи, практику, обратную связь и постепенное расширение ответственности.
 
-## Аудитория и владельцы
+## Карта раздела
 
-| Перспектива | Потребность или ответственность |
+| Документ | Что в нём находится |
 |---|---|
-| кандидат или новый участник | получить ранний доступ, понять целое, настроить среду и пройти подходящие tutorials |
-| действующий участник | вернуться к маршруту при освоении новой роли, системы или инструмента |
-| mentor / сопровождающий | помочь пройти маршрут, увидеть затруднение и направить обратную связь |
-| onboarding owner | проектировать последовательность, поддерживать tutorials и принимать улучшения |
-| Management Layer | согласовывать onboarding с ролями, доступами, рабочими системами и действующим Operating Model |
+| [Путь участника](onboarding-path.md) | четыре этапа onboarding, их продолжительность, содержание и ожидаемые результаты |
+| [Контуры знаний и исполнения](execution-contours.md) | роли Knowledge Substrate, GitHub, Issues, ClickUp и локальной среды Codex |
+| [Сопровождение и развитие](coordination-and-evolution.md) | роль onboarding-координатора, обратная связь, сезонные итерации и архивирование маршрута |
 
-Владельцы управляют качеством маршрута, но не подменяют участника в прохождении. Участнический прогресс и работа над самой системой onboarding являются разными потоками.
+## Четыре этапа
 
-## Где живут знания и исполнение
+| Этап | Что формируется | Ориентировочная продолжительность |
+|---|---|---|
+| **0. Pre-Onboarding** | взаимный интерес, резонанс и готовность продолжить знакомство | 3–5 дней |
+| **1. Organizational Onboarding** | общее понимание философии DET и архитектуры DETai | 2 дня |
+| **2. Knowledge Immersion** | самостоятельная ориентация в знаниях и возможных ролях | 2–4 недели |
+| **3. Tooling Integration + Ownership** | уверенная работа с инструментами и первый осмысленный вклад | 4–8 недель |
 
-| Контур | Роль |
-|---|---|
-| Knowledge Substrate | канонически объясняет назначение, границы и архитектуру onboarding |
-| [GitHub-репозиторий onboarding](https://github.com/DETai-org/onboarding) | хранит tutorial issues, общие материалы, командные Codex skills и локально доступные представления |
-| GitHub Issues | действующие tutorials и how-to, их обсуждение, обратная связь и история изменений |
-| ClickUp Space `Onboarding` | выдача раннего доступа, участническое прохождение и видимый прогресс нового участника |
-| Folder `Management Layer / Onboarding` | проектирование, обновление и координация onboarding владельцами процесса |
+Полная логика и границы этапов описаны в [пути участника](onboarding-path.md). Конкретные tutorial-задачи могут меняться между итерациями и поэтому живут не на этой странице, а в рабочих контурах onboarding.
 
-Ни один контейнер не заменяет остальные: Knowledge Substrate не ведёт персональный прогресс, GitHub repository не становится task runtime, а ClickUp не является каноническим источником концептуальной модели.
+## Для кого этот раздел
 
-## Фактическая структура репозитория
+- Новый участник использует раздел как карту пути и понимает, что будет происходить дальше.
+- Сопровождающий видит назначение этапов и не подменяет прохождение участника ручным управлением.
+- Onboarding-координатор поддерживает связность маршрута, собирает обратную связь и готовит следующую итерацию.
+- Management Layer согласует маршрут с ролями, доступами и действующим Operating Model.
 
-Публичный источник материалов: [DETai-org/onboarding](https://github.com/DETai-org/onboarding).
-
-- GitHub Issues содержат живые tutorials и how-to. Комментарии участника являются частью обратной связи и помогают улучшать маршрут.
-- `.codex-skills/` хранит версионированный командный реестр Codex skills и manifest их установки.
-- `archive/issues/spring-2026/` хранит датированный Markdown-snapshot существовавших GitHub Issues по состоянию на 2026-06-02, включая issue body, metadata и комментарии. Это локально читаемое и редактируемое архивное представление, а не автоматически синхронизируемая копия текущего состояния Issues.
-- `Sandbox/` используется для учебных проектов; `Obsidian/` содержит материалы и заготовки локальной рабочей среды.
-
-Изменение snapshot-файла не следует считать изменением действующего tutorial без отдельной синхронизации с GitHub Issue.
-
-## Два ClickUp-контура
-
-### Прохождение участником
-
-Space `Onboarding` предназначен новому участнику. Здесь ему можно выдать ограниченный ранний доступ, назначить маршрут, увидеть прохождение и зафиксировать участнический результат.
-
-Лог этого контура использует:
-
-```yaml
-classification:
-  scope: Onboarding
-  context: participant-onboarding
-```
-
-### Управление onboarding
-
-Folder `Management Layer / Onboarding` предназначена onboarding owners и сопровождающим. Здесь проектируют tutorials, обновляют prompts и материалы, координируют доступы и улучшают процесс по обратной связи.
-
-Лог этого контура использует:
-
-```yaml
-classification:
-  scope: Governance
-  context: onboarding-management
-```
-
-Lists `logs` этих контуров не взаимозаменяемы. Участническое исполнение записывается в participant-контейнер, а изменение системы onboarding — в management-контейнер. Если одно materially связано с другим, создаются две короткие записи в соответствующих дневных логах и добавляются взаимные ссылки.
-
-Конкретные ClickUp ID хранятся в operational navigation map и локальных routes, а не на этой концептуальной странице. Общий metadata contract определён в [реестре schemas](../ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md#contract-log-summary).
-
-## Локальный Codex workspace владельца
-
-Владелец может клонировать onboarding repository и открыть его как отдельный локальный Codex project. Repository-level `AGENTS.md` служит исполняемым мостом между четырьмя источниками:
-
-1. этой канонической страницей Knowledge Substrate;
-2. GitHub repository и Issues;
-3. operational navigation map ClickUp;
-4. основным Folder-local маршрутом `log-summary` для management-работы.
-
-Основной List задаётся локально, поэтому обычная запись лога не требует сканировать весь ClickUp. Глобальная navigation map используется только при реальном cross-project результате. AGENTS.md может содержать operational ID и локальные пути; публичная архитектура фиксирует их назначение и отношения, но не копирует изменяемые идентификаторы.
-
-## Цикл развития
-
-```text
-владелец проектирует маршрут
-→ участник получает доступ и проходит tutorials
-→ вопросы и обратная связь возвращаются в Issues
-→ владелец обновляет материалы и последовательность
-→ изменения фиксируются в management log
-→ следующая итерация onboarding становится понятнее
-```
-
-Для первого входа продолжите с [маршрутами по ролям](../start/role-routes.md), [рабочей средой](../start/working-environment.md) и [Operating Model DETai](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md).
+Для первого входа начните с [пути участника](onboarding-path.md), затем откройте [контуры знаний и исполнения](execution-contours.md).

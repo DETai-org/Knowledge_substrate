@@ -55,7 +55,6 @@ nav:
   - Карта знаний: ru/start/knowledge-map.md
   - Маршруты по ролям: ru/start/role-routes.md
   - Рабочая среда: ru/start/working-environment.md
-- Onboarding: ru/onboarding/index.md
 - DETai как целое:
   - Обзор: ru/architecture/index.md
   - Трёхсторонний архитектурный консенсус: ru/architecture/three-perspective-consensus.md
@@ -259,6 +258,11 @@ nav:
     - Реестр metadata schemas: ru/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md
   - Публикация и доставка знаний: ru/knowledge/knowledge-delivery.md
   - Глоссарий: ru/ecosystem/glossary.md
+- Onboarding:
+  - Обзор: ru/onboarding/index.md
+  - Путь участника: ru/onboarding/onboarding-path.md
+  - Контуры знаний и исполнения: ru/onboarding/execution-contours.md
+  - Сопровождение и развитие: ru/onboarding/coordination-and-evolution.md
 - English: en/index.md
 - Deutsch: de/index.md
 - Suomi: fi/index.md
