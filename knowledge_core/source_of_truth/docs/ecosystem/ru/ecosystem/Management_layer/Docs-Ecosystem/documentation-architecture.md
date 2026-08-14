@@ -7,9 +7,9 @@ classification:
   function: explanation
 descriptive:
   id: management-layer-docs-ecosystem-documentation-architecture
-  version: v1
+  version: v2
   status: active
-  date_ymd: 2026-03-25
+  date_ymd: 2026-08-14
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -62,6 +62,8 @@ ___
 - **References** → это “операционная конкретика команды” → **ClickUp**
     
 - **Tutorial / How-to** → это маршрут входа → **репозиторий Onboarding (issues)**
+
+- **Log Summary** → это распределённая история исполнения → **Folder-local ClickUp List `logs`**
     
 - **Explanation** → в **MkDocs (GitHub)**  
     (как часть общей базы знаний по экосистеме или по крупному кластеру).
@@ -99,6 +101,13 @@ Visibility определяет уровень доступности докум
 | **Reference**   | Technical Standards ⚙️   | ClickUp                  | ❌ Нет                   | ⚠️ Internal          |
 | **Tutorial**🎓  | null                     | Onboarding repo (issues) | **v1, v2, v3 …**        | Public               |
 | **How-to**🎒    | null                     | Onboarding repo (issues) | ❌ Нет                   | Public               |
+| **Log Summary** 🧾 | null                  | ClickUp Folder/List `logs` | одна запись на дату   | ⚠️ Internal          |
+
+#### Распределённые Log Summary
+
+Каждая проектная Folder хранит собственную дневную историю в List `logs`. Человек читает изменения прямо в области, с которой работает, а агент может агрегировать распределённые записи по metadata.
+
+Самостоятельный cross-project результат фиксируется отдельно в каждом затронутом контейнере; связанные записи ссылаются друг на друга. Полный contract `type: log-summary`, classification и provenance определены в [реестре metadata schemas](metadata_schema_registry.md#contract-log-summary).
 
 ### Слои + Поперечные сущности 🤔
 

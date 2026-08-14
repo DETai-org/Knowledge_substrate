@@ -254,6 +254,7 @@ nav:
     - Документационная архитектура: ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md
     - Функции документов: ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md
     - Политика metadata: ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md
+    - Реестр metadata schemas: ru/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md
   - Публикация и доставка знаний: ru/knowledge/knowledge-delivery.md
   - Глоссарий: ru/ecosystem/glossary.md
 - English: en/index.md

@@ -10,10 +10,10 @@ classification:
   audiences: [team, editors, developers, agents]
 descriptive:
   id: management-layer-docs-ecosystem-index
-  version: v3
+  version: v4
   status: active
   date_ymd: 2026-03-25
-  date_update: 2026-08-05
+  date_update: 2026-08-14
 governance:
   canonicality: reference
   visibility: public
@@ -45,5 +45,6 @@ title: Governance документации
 
 - [Предметная архитектура навигации Knowledge Substrate](knowledge-information-architecture.md);
 - [Политика metadata документов](document_metadata_policy.md);
+- [Реестр metadata schemas](metadata_schema_registry.md);
 - [Функции документов](functions_of_documents.md);
 - [Документационная архитектура экосистемы](documentation-architecture.md).
