@@ -10,9 +10,9 @@ classification:
   audiences: [public, team, editors, agents]
 descriptive:
   id: management-layer-docs-ecosystem-functions-of-documents
-  version: v2
+  version: v3
   status: active
-  date_ymd: 2026-08-05
+  date_ymd: 2026-08-14
 governance:
   canonicality: canonical
   visibility: public
@@ -102,7 +102,7 @@ title: Функции документов
 
 ### `log-summary` 🧾
 
-Сохраняет датированный итог действий или состояния. Он является свидетельством истории, но не инструкцией и не текущей policy.
+Сохраняет датированный итог действий или состояния. Он является свидетельством истории, но не инструкцией и не текущей policy. Переносимый формат, provenance и Folder-local ClickUp route определяет [contract `type: log-summary`](metadata_schema_registry.md#contract-log-summary).
 
 ### `note` ✍️
 
