@@ -27,6 +27,7 @@ plugins:
       'ru/ecosystem/DETai/Platform_DETai/E2-Brand/news-agent/index.md': 'ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md'
       'ru/ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md'
       'ru/ecosystem/DETai/Platform_DETai/E3-Infra/gpt_promt_engine/index.md': 'ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md'
+      'ru/ecosystem/Tools/🤖 GPT/index.md': 'ru/ecosystem/Tools/🧭Codex/index.md'
 - search
 markdown_extensions:
 - admonition
@@ -199,21 +200,21 @@ nav:
   - Knowledge Substrate runtime: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
 - Tools:
   - Обзор: ru/ecosystem/Tools/index.md
-  - GPT и кураторы:
-    - Обзор GPT: ru/ecosystem/Tools/🤖 GPT/index.md
-    - Правила META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md
-    - База знаний META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md
-    - Стиль META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md
+  - 🧭 Codex / GPT:
+    - Обзор: ru/ecosystem/Tools/🧭Codex/index.md
+    - Codex Skills: ru/ecosystem/Tools/🧭Codex/codex-skills.md
+    - Формат взаимодействия: ru/ecosystem/Tools/🧭Codex/codex-interaction-format.md
+    - Манифест: ru/ecosystem/Tools/🧭Codex/codex-manifest.md
+    - Взаимодействие с Codex: ru/ecosystem/Tools/🧭Codex/interaction-with-codex.md
+    - Связь с GitHub: ru/ecosystem/Tools/🧭Codex/integration-with-github.md
+    - Create Epic Issue Release: ru/ecosystem/Tools/🧭Codex/create-epic-issue-release.md
+    - GPT-кураторы:
+      - Правила META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md
+      - База знаний META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md
+      - Стиль META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md
   - ClickUp:
     - Обзор: ru/ecosystem/Tools/🎯ClickUp/index.md
     - Структура и принципы: ru/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md
-  - Codex:
-    - Обзор: ru/ecosystem/Tools/🧭Codex/index.md
-    - Форма взаимодействия: ru/ecosystem/Tools/🧭Codex/codex-interaction-format.md
-    - Манифест: ru/ecosystem/Tools/🧭Codex/codex-manifest.md
-    - Create Epic Issue Release: ru/ecosystem/Tools/🧭Codex/create-epic-issue-release.md
-    - Взаимодействие с Codex: ru/ecosystem/Tools/🧭Codex/interaction-with-codex.md
-    - Связь с GitHub: ru/ecosystem/Tools/🧭Codex/integration-with-github.md
   - GitHub:
     - Обзор: ru/ecosystem/Tools/🛠GitHub/index.md
     - Подключить репозиторий: ru/ecosystem/Tools/🛠GitHub/connect-repository.md
