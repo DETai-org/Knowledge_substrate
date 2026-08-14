@@ -10,9 +10,9 @@ classification:
   audiences: [team, editors, developers, agents]
 descriptive:
   id: management-layer-docs-ecosystem-document-metadata-policy
-  version: v4
+  version: v5
   status: active
-  date_ymd: 2026-08-05
+  date_ymd: 2026-08-14
 governance:
   canonicality: canonical
   visibility: public
@@ -32,6 +32,9 @@ links:
     - schema: ecosystem
       link_type: implements
       linked_document_id: knowledge-document-model
+    - schema: ecosystem
+      link_type: governs
+      linked_document_id: management-layer-docs-ecosystem-metadata-schema-registry
 title: Политика metadata документов
 ---
 
@@ -39,7 +42,7 @@ title: Политика metadata документов
 
 Metadata делает документ частью управляемой системы знаний: показывает его предмет, функцию, статус, каноничность, видимость, владельца и связи. Порядок пунктов в меню и расположение файла не заменяют эти сведения.
 
-Политика определяет целевой contract для документов `type: ecosystem`. Старые документы мигрируют только после содержательного review; неизвестное значение не заполняется предположением.
+Политика определяет общие правила metadata и управляет contracts зарегистрированных типов. Поля конкретного типа, их обязательность и допустимые значения задаёт [реестр metadata schemas](metadata_schema_registry.md). Старые документы мигрируют только после содержательного review; неизвестное значение не заполняется предположением.
 
 ## Полный целевой блок
 
@@ -86,7 +89,9 @@ title: Человекочитаемое название
 
 ### `type`
 
-Определяет schema metadata. Эта политика регулирует только `ecosystem`. Для книги, публикаций, проектов и runtime-объектов используются собственные contracts.
+Определяет schema metadata. Общие правила идентичности, классификации, связей и честного заполнения задаёт эта политика; типовые поля и ограничения — [реестр metadata schemas](metadata_schema_registry.md).
+
+Сейчас зарегистрированы contracts `ecosystem` и `log-summary`. Для книг, публикаций, проектов и runtime-объектов используются собственные зарегистрированные contracts. Значение `type` нельзя вводить только в отдельном документе или prompt: оно сначала добавляется в реестр.
 
 ### `title`
 
@@ -100,11 +105,11 @@ title: Человекочитаемое название
 
 ### `classification.scope`
 
-Граница действия документа. Базовое значение общего канона — `DETai_ecosystem`; более узкие значения вводятся реестром схемы, а не свободно.
+Граница действия документа. Базовое значение общего канона — `DETai_ecosystem`; более узкие значения вводятся реестром соответствующей schema, а не свободно. Например, contract `log-summary` регистрирует операционные области `Tools`, `Infrastructure` и `Governance`.
 
 ### `classification.context`
 
-Среда, в которой документ читается: например `ecosystem-architecture`, `technology-layer`, `governance-operating-model`, `product-market-system` или `knowledge-system`.
+Среда или конкретный контейнер, к которому относится документ. Contract определяет кардинальность поля. Для `ecosystem` это одно значение вроде `ecosystem-architecture`, `technology-layer`, `governance-operating-model`, `product-market-system` или `knowledge-system`. Для `log-summary` это один конкретный контекст Folder/List, например `codex` или `onboarding`.
 
 ### `classification.system`
 

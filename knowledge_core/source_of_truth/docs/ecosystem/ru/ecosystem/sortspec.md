@@ -298,7 +298,6 @@ sorting-spec: |
 
   target-folder: Ecosystem/Tools/🤖 GPT
 
-    index
     Кастомные GPT (Кураторы)
 
 
@@ -323,6 +322,7 @@ sorting-spec: |
   target-folder: Ecosystem/Tools/🧭Codex
 
     index
+    codex-skills
     codex-interaction-format
     codex-manifest
     create-epic-issue-release
