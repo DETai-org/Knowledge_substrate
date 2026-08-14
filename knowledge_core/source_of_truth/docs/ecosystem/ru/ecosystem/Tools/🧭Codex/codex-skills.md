@@ -31,6 +31,6 @@ Codex может подключить skill по прямой просьбе ч�
 
 В экосистеме DETai skills являются общими командными инструментами. Их канонический версионированный реестр хранится в папке [`.codex-skills/` репозитория onboarding](https://github.com/DETai-org/onboarding/tree/main/.codex-skills).
 
-Связь реестра skills с tutorial-задачами, GitHub и ClickUp описана на странице [Onboarding DETai](../../../onboarding/index.md).
+Связь реестра skills с tutorial-задачами, GitHub и ClickUp описана на странице [Onboarding DETai](https://detai-org.github.io/Knowledge_substrate/ru/onboarding/).
 
 Подробнее о техническом формате: [официальная документация OpenAI о Skills](https://learn.chatgpt.com/docs/build-skills).
