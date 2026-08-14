@@ -116,7 +116,7 @@ Metadata размещается в начале ClickUp description как YAML-
 
 Обзор всей структуры ClickUp может использоваться как fallback для cross-project маршрута, но не заменяет локально известный основной List.
 
-Space `Onboarding` и Folder `Management Layer / Onboarding` являются разными контейнерами: первый использует `scope: Onboarding` / `context: participant-onboarding`, второй — `scope: Governance` / `context: onboarding-management`. Их назначение и правило раздельных логов объясняет раздел [«Два ClickUp-контейнера Onboarding»](documentation-architecture.md#два-clickup-контейнера-onboarding).
+Space `Onboarding` и Folder `Management Layer / Onboarding` являются разными контейнерами: первый использует `scope: Onboarding` / `context: participant-onboarding`, второй — `scope: Governance` / `context: onboarding-management`. Их назначение и правило раздельных логов определяет каноническая страница [Onboarding DETai](../../../onboarding/index.md#два-clickup-контура).
 
 ### Provenance
 
