@@ -73,7 +73,7 @@ descriptive:
   date_ymd: YYYY-MM-DD
 provenance:
   performed_by:
-    person_id: 12345678
+    person_id: github-user-<numeric-github-id>
     display_name: Антон
     github_username: Anton-Psy
     clickup_username: Anton-Psy
@@ -119,7 +119,7 @@ Metadata размещается в начале ClickUp description как YAML-
 
 `provenance` обязателен только для `log-summary` и фиксирует человека, выполнившего работу, и агента, записавшего итог.
 
-- `performed_by.person_id` — numeric GitHub user ID;
+- `performed_by.person_id` — стабильная namespaced-строка `github-user-<numeric-github-id>`, основанная на numeric GitHub user ID;
 - `display_name` — подтверждённое отображаемое имя;
 - `github_username` — GitHub login;
 - `clickup_username` — соответствующий ClickUp username;
