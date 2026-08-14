@@ -10,9 +10,9 @@ classification:
   audiences: [team, candidates, agents]
 descriptive:
   id: role-routes
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-08-05
+  date_ymd: 2026-08-14
 governance:
   canonicality: guide
   visibility: public
@@ -34,7 +34,7 @@ title: Маршруты по ролям
 
 | Роль или перспектива | Сначала прочитать | Затем углубиться |
 |---|---|---|
-| Новый участник | [Operating Model](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md) | [Осмысленное участие](../governance/meaningful-participation.md), [рабочая среда](working-environment.md), [домены и решения](../governance/domains-and-decision-rights.md) |
+| Новый участник | [Onboarding DETai](../onboarding/index.md) | [Operating Model](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md), [осмысленное участие](../governance/meaningful-participation.md), [рабочая среда](working-environment.md) |
 | Основатель / Anchor | [Канон экосистемы](../architecture/ecosystem-canon.md) | Governance, портфель, evidence и внешняя готовность |
 | Менеджер / владелец домена | [Governance и Operating Model](../governance/index.md) | Product–Market, Team OS, source-of-truth map |
 | Технический лидер | [Технологический слой](../technology/index.md) | U.L.I., Platform DETai, Trust и product assurance |

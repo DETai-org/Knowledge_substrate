@@ -7,10 +7,10 @@ classification:
   function: index
 descriptive:
   id: management-layer-index
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-03-25
-  date_update: 2026-08-05
+  date_update: 2026-08-14
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -55,6 +55,8 @@ Management Layer не является отдельным продуктом, п
 - способы координации и принятия решений.
 
 Этот уровень организует исполнение, но не выполняет работу вместо профессиональных и технологических доменов.
+
+[Onboarding](../../onboarding/index.md) является сквозной функцией входа и участия. Management Layer владеет проектированием и сопровождением маршрута, но участническое прохождение живёт в отдельном operational-контуре и не смешивается с management-работой.
 
 ### 3. Операционная
 

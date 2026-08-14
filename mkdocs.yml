@@ -54,6 +54,7 @@ nav:
   - Карта знаний: ru/start/knowledge-map.md
   - Маршруты по ролям: ru/start/role-routes.md
   - Рабочая среда: ru/start/working-environment.md
+- Onboarding: ru/onboarding/index.md
 - DETai как целое:
   - Обзор: ru/architecture/index.md
   - Трёхсторонний архитектурный консенсус: ru/architecture/three-perspective-consensus.md
