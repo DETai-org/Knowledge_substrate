@@ -129,6 +129,12 @@ Onboarding — это коллекция How-to и Tutorials, упакованн
     
 - 🎓 **Tutorial** (первый проход/обучение)
 
+#### Два ClickUp-контейнера Onboarding
+
+Каноническая модель назначения, репозитория, владельцев, локального Codex workspace и двух ClickUp-контейнеров описана на странице [Onboarding DETai](../../../onboarding/index.md). Эта документационная архитектура фиксирует только маршрут: tutorial / how-to доставляются через onboarding repository и Issues, а участнический и management operational-контуры не подменяют друг друга.
+
+Contract классификации и связей для дневных записей определён в [реестре metadata schemas](metadata_schema_registry.md#contract-log-summary).
+
 *Но мы ещё не дошли до того чтобы сделать из этого действительно слой поэтому сейчас он просто если мыслить в категориях слоёв то эти файлы будут обозначаться как null* 
 ___
  
