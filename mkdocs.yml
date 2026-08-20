@@ -35,11 +35,17 @@ markdown_extensions:
     permalink: true
     slugify: !!python/name:markdown.extensions.toc.slugify_unicode
     separator: "-"
-- pymdownx.superfences
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid-source
+      format: !!python/name:pymdownx.superfences.fence_code_format
 - pymdownx.details
 extra_css:
 - assets/stylesheets/extra.css
 extra_javascript:
+- https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
+- assets/javascripts/mermaid.js
 - assets/javascripts/chatgpt-prompt.js
 - assets/javascripts/chatgpt-button.js
 - assets/javascripts/nav-state.js
@@ -90,7 +96,6 @@ nav:
     - Team OS / Contribution Ledger: ru/governance/team-os.md
   - Brand & Communications:
     - Границы и ответственность домена: ru/governance/brand-and-communications.md
-    - Публичные коммуникации: ru/ecosystem/STORYTELLING/index.md
   - Общие рабочие правила:
     - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
     - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
@@ -150,12 +155,17 @@ nav:
       - DETai Pulse: ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md
       - DETai Matrix: ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md
       - Psykhḗ AI: ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md
-    - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
-    - Telegram-контур:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
-      - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
-    - Внутренние технологии:
-      - Knowledge Substrate capability: ru/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md
+    - Бренд и внешние коммуникации:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md
+      - Storytelling:
+        - Обзор Publication Core: ru/ecosystem/STORYTELLING/index.md
+        - Связь с технологической основой: ru/ecosystem/STORYTELLING/technology-foundation.md
+      - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
+      - Telegram-контур:
+        - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
+        - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
+    - Технологическая основа:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
     - Приостановленные проекты:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
       - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
@@ -193,11 +203,17 @@ nav:
 - Infrastructure:
   - Обзор: ru/ecosystem/Infrastructure/index.md
   - Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
-  - Home Ψ Lab:
-    - Обзор: ru/ecosystem/Infrastructure/home-lab/index.md
-    - Архитектура и состав: ru/ecosystem/Infrastructure/home-lab/architecture.md
-  - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
-  - Knowledge Substrate runtime: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
+  - Инфраструктурные системы:
+    - Обзор: ru/ecosystem/Infrastructure/infrastructure-systems/index.md
+    - ecosystem-runtime: ru/ecosystem/Infrastructure/ecosystem-runtime/index.md
+    - intelligence-runtime: ru/ecosystem/Infrastructure/intelligence-runtime/index.md
+    - Knowledge Substrate: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
+  - Среды исполнения:
+    - Обзор: ru/ecosystem/Infrastructure/execution-environments/index.md
+    - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
+    - Home Ψ Lab:
+      - Обзор: ru/ecosystem/Infrastructure/home-lab/index.md
+      - Архитектура и состав: ru/ecosystem/Infrastructure/home-lab/architecture.md
 - Tools:
   - Обзор: ru/ecosystem/Tools/index.md
   - 🧭 Codex / GPT:
