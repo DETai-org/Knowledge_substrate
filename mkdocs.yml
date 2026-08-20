@@ -96,7 +96,6 @@ nav:
     - Team OS / Contribution Ledger: ru/governance/team-os.md
   - Brand & Communications:
     - Границы и ответственность домена: ru/governance/brand-and-communications.md
-    - Публичные коммуникации: ru/ecosystem/STORYTELLING/index.md
   - Общие рабочие правила:
     - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
     - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
@@ -156,12 +155,17 @@ nav:
       - DETai Pulse: ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md
       - DETai Matrix: ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md
       - Psykhḗ AI: ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md
-    - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
-    - Telegram-контур:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
-      - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
-    - Внутренние технологии:
-      - Knowledge Substrate capability: ru/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md
+    - Бренд и внешние коммуникации:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md
+      - Storytelling:
+        - Обзор Publication Core: ru/ecosystem/STORYTELLING/index.md
+        - Связь с технологической основой: ru/ecosystem/STORYTELLING/technology-foundation.md
+      - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
+      - Telegram-контур:
+        - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
+        - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
+    - Технологическая основа:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
     - Приостановленные проекты:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
       - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
