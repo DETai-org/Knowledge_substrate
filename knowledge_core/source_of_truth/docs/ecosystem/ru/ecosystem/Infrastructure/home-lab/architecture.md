@@ -9,14 +9,14 @@ descriptive:
   id: infrastructure-home-lab-architecture
   version: v2
   status: active
-  date_ymd: 2026-08-15
+  date_ymd: 2026-08-16
 governance:
   canonicality: canonical
   visibility: public
 object_state:
   architecture_status: canonical
   implementation_status: operational
-  evidence_status: not-applicable
+  evidence_status: validated-within-scope
   visibility_status: public
 links:
   external_links:
@@ -83,6 +83,50 @@ Psi Gateway и DETai Nexus различаются не только назван
 общая лаборатория отвечает за физическую основу и Proxmox, Psi Gateway — за
 сеть и защищённую связность, DETai Nexus — за вычислительную и агентную среду.
 
+## Внутренняя архитектура DETai Nexus
+
+DETai Nexus является функциональным контуром, а не отдельным репозиторием-
+контейнером. Его слои имеют разных владельцев:
+
+| Слой | Владелец | Содержимое |
+| --- | --- | --- |
+| Product semantics | соответствующий продукт | Prompts, request/response contracts, human review и product-specific schemas |
+| Intelligence runtime | `intelligence-runtime` | Model orchestration, routing, deterministic validators, provider roles и scenario manifests |
+| Shared application runtime | `ecosystem-runtime` | Общие operational services и schemas экосистемы |
+| Knowledge | Knowledge Substrate | Канонические документы, retrieval-ready knowledge и `detai_core` |
+| Machine deployment | Infrastructure | systemd, порты, GPU/RAM, модели, inference runtime, PostgreSQL/Qdrant и backup |
+| Mutable scenario state | исполняемый сценарий | Runs, resumable cache, traces и archive вне Git |
+
+Репозитории остаются самостоятельными источниками истины, а Infrastructure
+связывает их на конкретной машине.
+
+### Канонический сценарий Storytelling
+
+Первый рабочий сценарий имеет идентичность
+`storytelling/translator-metadata`. Storytelling передаёт собственные contracts
+и staged prompts; Qwen выполняет routing и advisory audit; GPT-OSS выполняет
+переводы, адресный repair, SEO/metadata, source-first Russian GEO с последующим
+переводом и semantic classification. Детерминированные validators остаются
+авторитетными, а результат возвращается в Storytelling на human review.
+
+Resumable cache является состоянием сценария и не переносится в SQL.
+
+### Данные и память
+
+PostgreSQL и Qdrant имеют отдельные постоянные области данных и не смешиваются
+с Git checkout или scenario cache.
+
+- `detai_core` принадлежит Knowledge Substrate;
+- общие operational schemas `detai_projects` принадлежат
+  `ecosystem-runtime`;
+- product-specific schemas принадлежат соответствующим продуктам;
+- Qdrant хранит векторные проекции по versioned retrieval contracts, а не
+  неструктурированные копии runtime cache.
+
+Веса моделей и inference binaries являются общими машинными ресурсами. Код
+сценария ссылается на model roles, поэтому физическую модель можно менять через
+конфигурацию и benchmark без переноса продуктовой семантики.
+
 ## Архитектурные принципы
 
 ### Собственная основа без изоляционизма
@@ -109,6 +153,11 @@ Psi Gateway и DETai Nexus различаются не только назван
 резервного копирования, проверки восстановления, управления доступом и
 документирования изменений. Эти процессы относятся к эксплуатации и не
 раскрываются на публичной странице.
+
+Home Ψ Lab остаётся частью распределённой Infrastructure. Перенос stateful-
+сервиса включает проверяемый backup, изолированный restore, отдельный cutover и
+ограниченный период read-only fallback; создание копии данных само по себе не
+является cutover.
 
 ## Граница документа
 
