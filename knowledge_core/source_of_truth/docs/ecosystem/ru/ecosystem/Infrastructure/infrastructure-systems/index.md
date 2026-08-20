@@ -27,9 +27,9 @@ GitHub-репозиторием, границей ответственности
 
 | Система | За что отвечает |
 | --- | --- |
-| [ecosystem-runtime](../ecosystem-runtime/index.md) | Общие живые процессы: API, боты, workers и runtime-данные |
-| [intelligence-runtime](../intelligence-runtime/index.md) | Повторно используемое исполнение LLM-сценариев |
-| [Knowledge Substrate](../Knowledge_Substrate/index.md) | Каноническое знание и его машинные представления |
+| [ecosystem-runtime](../ecosystem-runtime/index.md) | Общий backend DETai: API, Telegram-боты, workers и runtime-данные пользователей, доступа, событий, заявок и уведомлений |
+| [intelligence-runtime](../intelligence-runtime/index.md) | Связывает правила продуктов с LLM, выполняет многошаговые сценарии, проверяет ответы и возвращает результат продукту |
+| [Knowledge Substrate](../Knowledge_Substrate/index.md) | Хранит документы, описывающие экосистему DETai, и собирает из них этот сайт базы знаний на MkDocs, структурированные записи и индексы для машинной обработки |
 
 Их репозитории могут взаимодействовать и развёртываться рядом, но не
 поглощают друг друга. Каждая система остаётся владельцем своей логики и данных.

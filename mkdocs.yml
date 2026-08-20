@@ -35,11 +35,17 @@ markdown_extensions:
     permalink: true
     slugify: !!python/name:markdown.extensions.toc.slugify_unicode
     separator: "-"
-- pymdownx.superfences
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid-source
+      format: !!python/name:pymdownx.superfences.fence_code_format
 - pymdownx.details
 extra_css:
 - assets/stylesheets/extra.css
 extra_javascript:
+- https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
+- assets/javascripts/mermaid.js
 - assets/javascripts/chatgpt-prompt.js
 - assets/javascripts/chatgpt-button.js
 - assets/javascripts/nav-state.js

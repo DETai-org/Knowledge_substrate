@@ -59,12 +59,16 @@ flowchart TB
 Это самостоятельные versioned-контуры, которые владеют технической логикой и
 данными. В текущей архитектуре таких систем три:
 
-- [ecosystem-runtime](ecosystem-runtime/index.md) обеспечивает общие живые
-  процессы экосистемы: API, ботов, workers и runtime-данные;
-- [intelligence-runtime](intelligence-runtime/index.md) обеспечивает
-  повторно используемое исполнение LLM-сценариев;
-- [Knowledge Substrate](Knowledge_Substrate/index.md) хранит и материализует
-  каноническое знание экосистемы.
+- [ecosystem-runtime](ecosystem-runtime/index.md) содержит общий backend DETai:
+  API, Telegram-ботов, фоновые workers и схемы runtime-данных для пользователей,
+  доступа, событий, заявок и уведомлений;
+- [intelligence-runtime](intelligence-runtime/index.md) подключает правила
+  продуктов к LLM: проводит запрос через нужные шаги, проверяет и исправляет
+  технические ошибки ответа, записывает ход выполнения и возвращает результат;
+- [Knowledge Substrate](Knowledge_Substrate/index.md) хранит канонические
+  документы, которые описывают экосистему DETai — включая страницу, которую вы
+  сейчас читаете, — и собирает из них этот сайт базы знаний на MkDocs, а также
+  структурированные записи и индексы для машинной обработки.
 
 Их общая граница раскрыта в разделе
 [«Инфраструктурные системы»](infrastructure-systems/index.md).
