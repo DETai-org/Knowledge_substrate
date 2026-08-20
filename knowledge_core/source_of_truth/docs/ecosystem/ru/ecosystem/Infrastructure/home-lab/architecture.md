@@ -7,9 +7,9 @@ classification:
   function: explanation
 descriptive:
   id: infrastructure-home-lab-architecture
-  version: v2
+  version: v3
   status: active
-  date_ymd: 2026-08-16
+  date_ymd: 2026-08-20
 governance:
   canonicality: canonical
   visibility: public
@@ -100,14 +100,19 @@ DETai Nexus является функциональным контуром, а �
 Репозитории остаются самостоятельными источниками истины, а Infrastructure
 связывает их на конкретной машине.
 
-### Канонический сценарий Storytelling
+### Контур обработки Storytelling
 
-Первый рабочий сценарий имеет идентичность
-`storytelling/translator-metadata`. Storytelling передаёт собственные contracts
-и staged prompts; Qwen выполняет routing и advisory audit; GPT-OSS выполняет
-переводы, адресный repair, SEO/metadata, source-first Russian GEO с последующим
-переводом и semantic classification. Детерминированные validators остаются
-авторитетными, а результат возвращается в Storytelling на human review.
+Storytelling передаёт в DETai Nexus собственные contracts и staged prompts.
+Intelligence runtime распределяет функциональные роли между доступными LLM:
+routing, enrichment, перевод, адресный repair, SEO/metadata и semantic
+classification. Детерминированные validators остаются авторитетными, а
+результат возвращается в Storytelling на human review.
+
+Конкретные семейства и количество моделей, а также текущее распределение ролей
+между ними не являются частью канонической архитектуры: эти параметры меняются
+по результатам benchmark и фиксируются в versioned scenario manifests и
+конфигурации `intelligence-runtime`. Развёрнутые inference runtime и модели
+учитываются в операционной документации Infrastructure.
 
 Resumable cache является состоянием сценария и не переносится в SQL.
 
