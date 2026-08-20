@@ -194,11 +194,12 @@ nav:
   - Обзор: ru/ecosystem/Infrastructure/index.md
   - Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
   - Инфраструктурные системы:
+    - Обзор: ru/ecosystem/Infrastructure/infrastructure-systems/index.md
     - ecosystem-runtime: ru/ecosystem/Infrastructure/ecosystem-runtime/index.md
     - intelligence-runtime: ru/ecosystem/Infrastructure/intelligence-runtime/index.md
     - Knowledge Substrate: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
-  - Серверы и Home Ψ Lab:
-    - Обзор: ru/ecosystem/Infrastructure/servers-and-home-lab/index.md
+  - Среды исполнения:
+    - Обзор: ru/ecosystem/Infrastructure/execution-environments/index.md
     - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
     - Home Ψ Lab:
       - Обзор: ru/ecosystem/Infrastructure/home-lab/index.md
