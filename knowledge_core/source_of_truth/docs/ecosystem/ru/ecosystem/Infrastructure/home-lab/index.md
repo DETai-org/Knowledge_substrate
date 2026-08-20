@@ -7,9 +7,9 @@ classification:
   function: index
 descriptive:
   id: infrastructure-home-lab
-  version: v2
+  version: v3
   status: active
-  date_ymd: 2026-08-16
+  date_ymd: 2026-08-20
 governance:
   canonicality: canonical
   visibility: public
@@ -88,19 +88,18 @@ Home Ψ Lab входит в общую [Infrastructure](../index.md) и допо
 связность отказов: изменения прикладной среды не должны становиться изменениями
 сетевого шлюза.
 
-## DETai Nexus как функциональный контур
+## DETai Nexus как среда исполнения
 
-DETai Nexus — не отдельный Git-репозиторий и не вся операционная система. Он
-собирается из самостоятельных источников истины:
+DETai Nexus — не отдельный Git-репозиторий и не четвёртая инфраструктурная
+система. Это Linux-среда, в которой могут исполняться компоненты
+[intelligence-runtime](../intelligence-runtime/index.md),
+[ecosystem-runtime](../ecosystem-runtime/index.md) и
+[Knowledge Substrate](../Knowledge_Substrate/index.md).
 
-- `intelligence-runtime` владеет model orchestration, routing, validators,
-  provider roles и versioned scenario manifests;
-- продуктовые проекты владеют своей бизнес-семантикой: например, Storytelling
-  хранит prompts, contracts и границу human review;
-- `ecosystem-runtime` владеет общими operational services и schemas;
-- Knowledge Substrate владеет каноническим знанием и `detai_core`;
-- Infrastructure владеет машиной и deployment: systemd, ресурсами, моделями,
-  stateful-сервисами, backup и связью с внешними серверами.
+В Nexus размещаются локальные LLM, inference runtime, индексы и stateful-
+сервисы. При этом код, конфигурация сценариев и каноническое знание сохраняют
+собственных владельцев в GitHub. Infrastructure отвечает за привязку этих
+систем к машине: ресурсы, сервисы, данные, backup и восстановление.
 
 Изменяемые runs, cache, traces и archive не хранятся в Git и принадлежат
 состоянию конкретного сценария.

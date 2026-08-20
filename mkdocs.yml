@@ -193,11 +193,16 @@ nav:
 - Infrastructure:
   - Обзор: ru/ecosystem/Infrastructure/index.md
   - Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
-  - Home Ψ Lab:
-    - Обзор: ru/ecosystem/Infrastructure/home-lab/index.md
-    - Архитектура и состав: ru/ecosystem/Infrastructure/home-lab/architecture.md
-  - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
-  - Knowledge Substrate runtime: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
+  - Инфраструктурные системы:
+    - ecosystem-runtime: ru/ecosystem/Infrastructure/ecosystem-runtime/index.md
+    - intelligence-runtime: ru/ecosystem/Infrastructure/intelligence-runtime/index.md
+    - Knowledge Substrate: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
+  - Серверы и Home Ψ Lab:
+    - Обзор: ru/ecosystem/Infrastructure/servers-and-home-lab/index.md
+    - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
+    - Home Ψ Lab:
+      - Обзор: ru/ecosystem/Infrastructure/home-lab/index.md
+      - Архитектура и состав: ru/ecosystem/Infrastructure/home-lab/architecture.md
 - Tools:
   - Обзор: ru/ecosystem/Tools/index.md
   - 🧭 Codex / GPT:
