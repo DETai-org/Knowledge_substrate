@@ -7,16 +7,16 @@ classification:
   function: index
 descriptive:
   id: infrastructure-home-lab
-  version: v2
+  version: v3
   status: active
-  date_ymd: 2026-08-15
+  date_ymd: 2026-08-20
 governance:
   canonicality: canonical
   visibility: public
 object_state:
   architecture_status: canonical
   implementation_status: operational
-  evidence_status: not-applicable
+  evidence_status: validated-within-scope
   visibility_status: public
 links:
   external_links:
@@ -80,13 +80,29 @@ Home Ψ Lab входит в общую [Infrastructure](../index.md) и допо
 - **Psi Gateway** отвечает за сетевой периметр, доступ и связь лаборатории с
   внешним миром;
 - **DETai Nexus** предоставляет отдельную Linux-среду для локальных моделей,
-  знаний, retrieval, enrichment и будущих агентных runtime-компонентов.
+  знаний, retrieval, enrichment и агентных runtime-компонентов.
 
 Базовая платформа Home Ψ Lab v1.0 считается готовой. Дальнейшее развитие идёт
 двумя самостоятельными линиями: сетевой контур развивается как Psi Gateway, а
 вычислительный и агентно-контекстный — как DETai Nexus. Их разделение снижает
 связность отказов: изменения прикладной среды не должны становиться изменениями
 сетевого шлюза.
+
+## DETai Nexus как среда исполнения
+
+DETai Nexus — не отдельный Git-репозиторий и не четвёртая инфраструктурная
+система. Это Linux-среда, в которой могут исполняться компоненты
+[intelligence-runtime](../intelligence-runtime/index.md),
+[ecosystem-runtime](../ecosystem-runtime/index.md) и
+[Knowledge Substrate](../Knowledge_Substrate/index.md).
+
+В Nexus размещаются локальные LLM, inference runtime, индексы и stateful-
+сервисы. При этом код, конфигурация сценариев и каноническое знание сохраняют
+собственных владельцев в GitHub. Infrastructure отвечает за привязку этих
+систем к машине: ресурсы, сервисы, данные, backup и восстановление.
+
+Изменяемые runs, cache, traces и archive не хранятся в Git и принадлежат
+состоянию конкретного сценария.
 
 Подробное публичное устройство описано на странице
 [«Архитектура и состав Home Ψ Lab»](architecture.md).

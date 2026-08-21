@@ -10,9 +10,9 @@ classification:
   audiences: [team, candidates, managers, agents]
 descriptive:
   id: detai-working-environment-route
-  version: v1
+  version: v2
   status: active
-  date_ymd: 2026-08-05
+  date_ymd: 2026-08-14
 governance:
   canonicality: guide
   visibility: public
@@ -34,6 +34,7 @@ title: Рабочая среда участника
 
 | Мне нужно | Основной контур | Почему именно там |
 |---|---|---|
+| Войти в экосистему и настроить первый рабочий маршрут | [Onboarding](../onboarding/index.md) | tutorials, ранний доступ, настройка среды и обратная связь |
 | Понять смысл, архитектуру или действующее правило | Knowledge Substrate | канонические объяснения, policies, standards и связи |
 | Увидеть приоритет, задачу, срок и ответственного | Management runtime / task system | текущее исполнение и координация |
 | Создать или проверить технологическое решение | U.L.I. и GitHub | код, технические контракты, review и release evidence |

@@ -7,16 +7,16 @@ classification:
   function: explanation
 descriptive:
   id: infrastructure-home-lab-architecture
-  version: v2
+  version: v4
   status: active
-  date_ymd: 2026-08-15
+  date_ymd: 2026-08-20
 governance:
   canonicality: canonical
   visibility: public
 object_state:
   architecture_status: canonical
   implementation_status: operational
-  evidence_status: not-applicable
+  evidence_status: validated-within-scope
   visibility_status: public
 links:
   external_links:
@@ -83,6 +83,47 @@ Psi Gateway и DETai Nexus различаются не только назван
 общая лаборатория отвечает за физическую основу и Proxmox, Psi Gateway — за
 сеть и защищённую связность, DETai Nexus — за вычислительную и агентную среду.
 
+## DETai Nexus как вычислительная среда
+
+DETai Nexus размещает компоненты нескольких самостоятельных систем. Он не
+объединяет их репозитории и не забирает их ответственность:
+
+| Слой | Владелец | Содержимое |
+| --- | --- | --- |
+| Продуктовый смысл | соответствующий продукт | Правила, contracts и human review |
+| LLM-исполнение | [intelligence-runtime](../intelligence-runtime/index.md) | Сценарии, model roles, adapters, validators и traces |
+| Общие живые процессы | [ecosystem-runtime](../ecosystem-runtime/index.md) | API, боты, workers и runtime-данные |
+| Каноническое знание | [Knowledge Substrate](../Knowledge_Substrate/index.md) | Документы, knowledge pipelines, retrieval и `detai_core` |
+| Машина и deployment | Infrastructure | Ресурсы, сервисы, модели, данные и backup |
+
+Репозитории остаются самостоятельными источниками истины, а Infrastructure
+связывает их на конкретной машине.
+
+### Как продукты подключаются к LLM
+
+Продукт передаёт собственные правила и contracts. Intelligence Runtime создаёт
+для него проектную проекцию: технический сценарий, который связывает эти
+правила с доступными LLM и проверками. Модели и inference runtime размещаются в
+Nexus, а результат возвращается продукту для предусмотренного human review.
+
+Подробнее эта граница объяснена на странице
+[intelligence-runtime](../intelligence-runtime/index.md).
+
+### Данные и память
+
+PostgreSQL и Qdrant имеют отдельные постоянные области данных и не смешиваются
+с Git checkout или scenario cache.
+
+- knowledge-данные принадлежат Knowledge Substrate;
+- общие operational schemas принадлежат `ecosystem-runtime`;
+- product-specific schemas принадлежат соответствующим продуктам;
+- Qdrant хранит векторные проекции по versioned retrieval contracts, а не
+  неструктурированные копии runtime cache.
+
+Веса моделей и inference binaries являются общими машинными ресурсами. Код
+сценария ссылается на model roles, поэтому физическую модель можно менять через
+конфигурацию и benchmark без переноса продуктовой семантики.
+
 ## Архитектурные принципы
 
 ### Собственная основа без изоляционизма
@@ -109,6 +150,11 @@ Psi Gateway и DETai Nexus различаются не только назван
 резервного копирования, проверки восстановления, управления доступом и
 документирования изменений. Эти процессы относятся к эксплуатации и не
 раскрываются на публичной странице.
+
+Home Ψ Lab остаётся частью распределённой Infrastructure. Перенос stateful-
+сервиса включает проверяемый backup, изолированный restore, отдельный cutover и
+ограниченный период read-only fallback; создание копии данных само по себе не
+является cutover.
 
 ## Граница документа
 

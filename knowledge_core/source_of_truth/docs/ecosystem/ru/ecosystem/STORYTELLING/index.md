@@ -10,10 +10,10 @@ classification:
   audiences: [team, brand, authors, developers, agents]
 descriptive:
   id: storytelling-index
-  version: v3
+  version: v4
   status: active
   date_ymd: 2026-03-25
-  date_update: 2026-08-11
+  date_update: 2026-08-20
 governance:
   canonicality: canonical
   visibility: public
@@ -51,7 +51,9 @@ title: Storytelling — Publication Core
 
 **Storytelling — самостоятельный редакционно-технологический проект и Publication Core DETai с [собственным репозиторием](https://github.com/DETai-org/Storytelling). Он принимает подготовленные материалы, проводит их через обогащение и review, собирает версионированные публикационные пакеты и доставляет утверждённый результат в выбранные публичные каналы.**
 
-Storytelling является внутренним сервисом [Platform DETai](../DETai/Platform_DETai/index.md), но его результаты обращены во внешнюю среду. Проект относится к операционному домену [Brand & Communications](../../governance/brand-and-communications.md): домен определяет аудитории, редакционные рамки и согласованность, а Storytelling воплощает публикационный процесс в повторяемой рабочей и технической системе.
+Storytelling относится к направлению [«Бренд и внешние коммуникации»](../DETai/Platform_DETai/brand-and-external-communications/index.md) и является его внутренней производственной системой. Он не является публичной поверхностью или самостоятельным пользовательским продуктом: система может участвовать в создании продукта, публикации или другого результата, но пользователь получает этот результат через сайт, Telegram или другую площадку.
+
+Организационно Storytelling остаётся самостоятельным E2-проектом с собственным репозиторием, версиями и циклом развития. Проект относится к операционному домену [Brand & Communications](../../governance/brand-and-communications.md): домен определяет аудитории, редакционные рамки и согласованность, а Storytelling воплощает публикационный процесс в повторяемой рабочей и технической системе.
 
 ## Редакционная среда, Publication Core и каналы
 
@@ -102,6 +104,8 @@ Storytelling является внутренним сервисом [Platform DE
 ```
 
 Текущая реализация репозитория включает контур навигации и публикации для Telegram и VK, циклы постов и интеграции с Google Docs. Целевой блоговый pipeline должен готовить Markdown, frontmatter и media, совместимые с контрактами репозитория `sites`.
+
+Техническое выполнение LLM-шагов не делает Storytelling частью LLM-инфраструктуры. Предметные правила и публикационный процесс остаются в Storytelling, а общая техническая оркестрация моделей принадлежит intelligence-runtime. Эта граница подробно показана на странице [«Как Storytelling использует технологическую основу»](technology-foundation.md).
 
 ## Связь с сайтом
 

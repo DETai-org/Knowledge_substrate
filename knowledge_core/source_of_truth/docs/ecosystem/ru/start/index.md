@@ -10,9 +10,9 @@ classification:
   audiences: [public, team, agents]
 descriptive:
   id: start-index
-  version: v2
+  version: v3
   status: active
-  date_ymd: 2026-08-05
+  date_ymd: 2026-08-14
 governance:
   canonicality: guide
   visibility: public
@@ -46,11 +46,12 @@ Knowledge Substrate — версионная память и документа�
 
 ### Я участник или хочу присоединиться
 
-1. [Маршруты по ролям](role-routes.md)
-2. [Operating Model DETai](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md)
-3. [Осмысленное участие](../governance/meaningful-participation.md)
-4. [Рабочая среда](working-environment.md)
-5. [Домены и права решений](../governance/domains-and-decision-rights.md)
+1. [Onboarding DETai](../onboarding/index.md)
+2. [Маршруты по ролям](role-routes.md)
+3. [Operating Model DETai](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md)
+4. [Осмысленное участие](../governance/meaningful-participation.md)
+5. [Рабочая среда](working-environment.md)
+6. [Домены и права решений](../governance/domains-and-decision-rights.md)
 
 ### Мне нужен конкретный документ
 
