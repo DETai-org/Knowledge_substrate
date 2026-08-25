@@ -1,0 +1,158 @@
+name: DETai Public Epoch 2026
+
+on:
+  schedule:
+    # 00:05 Europe/Helsinki on 1 September 2026 = 21:05 UTC on 31 August 2026.
+    # The date guard below makes this effectively one-time even though cron has no year field.
+    - cron: "5 21 31 8 *"
+  workflow_dispatch:
+    inputs:
+      recovery:
+        description: "Allow manual recovery outside the target date if the scheduled run was missed"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: detai-public-epoch-2026
+  cancel-in-progress: false
+
+jobs:
+  public-epoch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check target date
+        id: gate
+        env:
+          TZ: Europe/Helsinki
+          RECOVERY: ${{ github.event_name == 'workflow_dispatch' && inputs.recovery || 'false' }}
+        run: |
+          TARGET_DATE="2026-09-01"
+          LOCAL_DATE="$(date +%Y-%m-%d)"
+
+          if [ "$LOCAL_DATE" = "$TARGET_DATE" ] || [ "$RECOVERY" = "true" ]; then
+            SHOULD_RUN=true
+          else
+            SHOULD_RUN=false
+          fi
+
+          {
+            echo "target_date=$TARGET_DATE"
+            echo "local_date=$LOCAL_DATE"
+            echo "should_run=$SHOULD_RUN"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Skip outside Public Epoch window
+        if: steps.gate.outputs.should_run != 'true'
+        run: |
+          echo "Public Epoch automation skipped outside its target date."
+          {
+            echo "## DETai Public Epoch 2026"
+            echo
+            echo "- Target date: \`${{ steps.gate.outputs.target_date }}\`"
+            echo "- Local date (Europe/Helsinki): \`${{ steps.gate.outputs.local_date }}\`"
+            echo "- Result: skipped"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Checkout main
+        if: steps.gate.outputs.should_run == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Fetch tags
+        if: steps.gate.outputs.should_run == 'true'
+        run: git fetch --tags --force
+
+      - name: Inspect pre-epoch monthly snapshot
+        if: steps.gate.outputs.should_run == 'true'
+        id: snapshot
+        run: |
+          SNAPSHOT_TAG="docs-ecosystem-2026-08"
+          if git rev-parse --verify --quiet "refs/tags/$SNAPSHOT_TAG" >/dev/null; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "tag=$SNAPSHOT_TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Create annotated Public Epoch tag
+        if: steps.gate.outputs.should_run == 'true'
+        id: tag
+        run: |
+          TAG="detai-public-epoch-2026-09-01"
+          echo "name=$TAG" >> "$GITHUB_OUTPUT"
+
+          if git rev-parse --verify --quiet "refs/tags/$TAG" >/dev/null; then
+            echo "created=false" >> "$GITHUB_OUTPUT"
+            echo "Tag $TAG already exists."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "DETai Public Epoch — 1 September 2026"
+          git push origin "$TAG"
+          echo "created=true" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare historical milestone notes
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          cat > public-epoch-notes.md <<'EOF'
+          # DETai Public Epoch — 1 September 2026
+
+          **1 September 2026 marks the beginning of the DETai Public Epoch.**
+
+          This GitHub Release is a historical milestone attached to the state of the DETai Knowledge Substrate at the beginning of that public epoch.
+
+          It is **not a software-version release** and does not replace project-specific Release Fixation, semantic versioning, or release gates in other DETai repositories.
+
+          ## Historical context
+
+          - Public Epoch: `2026-09-01`
+          - Historical tag: `detai-public-epoch-2026-09-01`
+          - Pre-epoch monthly documentation snapshot: `docs-ecosystem-2026-08`
+          EOF
+
+          if [ "${{ steps.snapshot.outputs.present }}" = "true" ]; then
+            printf '\nThe pre-epoch monthly snapshot was present when this milestone was created.\n' >> public-epoch-notes.md
+          else
+            printf '\nThe pre-epoch monthly snapshot was not yet visible when this milestone was created; the Public Epoch marker remains independent of monthly snapshot timing.\n' >> public-epoch-notes.md
+          fi
+
+      - name: Publish GitHub Release
+        if: steps.gate.outputs.should_run == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ steps.tag.outputs.name }}"
+          TITLE="DETai Public Epoch — 1 September 2026"
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release for $TAG already exists."
+            exit 0
+          fi
+
+          gh release create "$TAG" \
+            --verify-tag \
+            --title "$TITLE" \
+            --notes-file public-epoch-notes.md
+
+      - name: Publish run summary
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          {
+            echo "## DETai Public Epoch 2026"
+            echo
+            echo "- Local date (Europe/Helsinki): \`${{ steps.gate.outputs.local_date }}\`"
+            echo "- Historical tag: \`${{ steps.tag.outputs.name }}\`"
+            echo "- Tag created in this run: \`${{ steps.tag.outputs.created }}\`"
+            echo "- Pre-epoch monthly snapshot: \`${{ steps.snapshot.outputs.tag }}\`"
+            echo "- Monthly snapshot present at runtime: \`${{ steps.snapshot.outputs.present }}\`"
+            echo "- GitHub Release: ensured"
+          } >> "$GITHUB_STEP_SUMMARY"
