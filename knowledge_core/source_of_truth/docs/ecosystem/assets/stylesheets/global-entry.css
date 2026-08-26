@@ -1,0 +1,190 @@
+html.detai-language-choice-active,
+html.detai-language-choice-active body {
+  overflow: hidden;
+}
+
+.global-entry-page {
+  display: grid;
+  min-height: min(62vh, 40rem);
+  align-content: center;
+  padding: clamp(2rem, 7vw, 6rem) 0;
+}
+
+.global-entry-page__eyebrow,
+.language-choice__eyebrow {
+  margin: 0;
+  color: var(--md-accent-fg-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.md-typeset .global-entry-page h1 {
+  max-width: 11ch;
+  margin: 0.45rem 0 0;
+  color: var(--md-default-fg-color);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 6.8rem);
+  font-weight: 500;
+  line-height: 0.94;
+  letter-spacing: -0.055em;
+}
+
+.md-typeset .global-entry-page__lead {
+  max-width: 40rem;
+  margin: 1.4rem 0 0;
+  color: var(--md-default-fg-color--light);
+  font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+  line-height: 1.6;
+}
+
+.global-entry-page__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.8rem;
+}
+
+.global-entry-page__topics span {
+  padding: 0.48rem 0.76rem;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 16%, transparent);
+  border-radius: 999px;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.75rem;
+}
+
+.language-choice-backdrop {
+  position: fixed;
+  z-index: 90;
+  inset: 0;
+  background: rgba(4, 8, 16, 0.68);
+  backdrop-filter: blur(10px) saturate(115%);
+}
+
+.language-choice {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  width: min(40rem, calc(100% - 2rem));
+  max-height: calc(100vh - 2rem);
+  padding: clamp(1.2rem, 4vw, 2rem);
+  overflow-y: auto;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(174, 199, 247, 0.24);
+  border-radius: 1.5rem;
+  background: linear-gradient(155deg, rgba(22, 34, 58, 0.99), rgba(12, 20, 35, 0.99));
+  color: #eef3ff;
+  box-shadow: 0 2.5rem 7rem rgba(0, 0, 0, 0.56), inset 0 1px rgba(255, 255, 255, 0.07);
+}
+
+.md-typeset .language-choice h2 {
+  margin: 0.35rem 0 0;
+  color: #eef3ff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 6vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.md-typeset #language-choice-description {
+  margin: 0.8rem 0 0;
+  color: #aab8d2;
+  line-height: 1.5;
+}
+
+.language-choice__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 1.4rem;
+}
+
+.md-typeset .language-choice__link {
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr) auto;
+  min-height: 4.7rem;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(177, 202, 248, 0.15);
+  border-radius: 0.9rem;
+  background: rgba(206, 220, 255, 0.035);
+  color: #eef3ff;
+  text-decoration: none;
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.md-typeset .language-choice__link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(129, 174, 255, 0.58);
+  background: rgba(117, 158, 237, 0.11);
+}
+
+.md-typeset .language-choice__link:focus-visible {
+  outline: 3px solid #8eb2f6;
+  outline-offset: 3px;
+}
+
+.language-choice__link--last {
+  grid-column: 1 / -1;
+  width: calc(50% - 0.325rem);
+  justify-self: center;
+}
+
+.language-choice__code {
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  place-items: center;
+  border-radius: 0.7rem;
+  background: rgba(139, 175, 245, 0.1);
+  color: #a9c5fa;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.language-choice__link strong,
+.language-choice__link small {
+  display: block;
+}
+
+.language-choice__link strong {
+  color: #eef3ff;
+  font-size: 1rem;
+}
+
+.language-choice__link small {
+  margin-top: 0.14rem;
+  color: #92a2c0;
+  font-size: 0.76rem;
+}
+
+.language-choice__arrow {
+  color: #8eb2f6;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 36rem) {
+  .global-entry-page {
+    align-content: end;
+  }
+
+  .language-choice__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .language-choice__link--last {
+    grid-column: auto;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .language-choice__link {
+    transition: none;
+  }
+}

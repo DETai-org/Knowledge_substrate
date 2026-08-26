@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/"
   document_links:
     - schema: ""
       link_type: ""
@@ -214,8 +214,8 @@ Work Packages и Acceptance Tasks формулируются так, чтобы 
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — показывает место Work Model Planning в полном цикле.
-- [Методология проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет, как мысль становится проектным намерением.
-- [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — задаёт структуру Work Model и её сущности.
-- [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — описывает этапы Work Model Planning и Implementation.
-- [Функция документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents/) — объясняет, почему этот материал относится к типу `explanation`.
+- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — показывает место Work Model Planning в полном цикле.
+- [Методология проектного цикла DETai](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет, как мысль становится проектным намерением.
+- [Модель работы](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — задаёт структуру Work Model и её сущности.
+- [Work Model](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — описывает этапы Work Model Planning и Implementation.
+- [Функция документов](https://docs.detai-x.com/ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents/) — объясняет, почему этот материал относится к типу `explanation`.

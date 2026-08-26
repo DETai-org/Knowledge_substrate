@@ -27,7 +27,7 @@ object_state:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai/"
   document_links:
     - schema: "ecosystem"
       link_type: "explains"

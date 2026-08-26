@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/"
   document_links:
     - schema: ""
       link_type: ""

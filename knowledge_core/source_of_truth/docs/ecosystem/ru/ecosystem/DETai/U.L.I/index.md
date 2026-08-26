@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/"
   document_links:
     - schema: "ecosystem"
       link_type: "part-of"

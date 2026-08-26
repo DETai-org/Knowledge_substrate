@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter/"
   document_links:
     - schema: ""
       link_type: ""
@@ -87,7 +87,7 @@ _Качество кода = качество метода в проде; для
 | 🐝 Философия и установки    | Основание улья — миссия, смыслы, намерения. | 👤 Человек      | Эшелон / Экосистема           |
 | 🕸️ Логика и инфраструктура | Организация связей и процессов.             | 🤝 Человек + ИИ | Модуль / Проект               |
 | ⚙️ Технические стандарты    | Формальные структуры, код, файлы.           | 🤖 ИИ           | Строчка кода / Функция        |
-См. [ChatGPT Image 2 нояб. 2025 г., 13_55_31.png](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/ChatGPT Image 2 нояб. 2025 г., 13_55_31.png/)
+См. [ChatGPT Image 2 нояб. 2025 г., 13_55_31.png](https://docs.detai-x.com/ru/ecosystem/ChatGPT Image 2 нояб. 2025 г., 13_55_31.png/)
 
 ---
 

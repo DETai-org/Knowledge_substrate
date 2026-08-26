@@ -63,7 +63,7 @@ flowchart TD
 - Guide: [Guide: Semantic Similarity Graph for Posts](../docs/guides/guide-semantic-graph-posts.md)
 - Policy: [Policy: Semantic Graph for Posts](../docs/Policy/policy-semantic-graph-posts.md)
 - Sub-Issue (Work Package): [1-sub-issue-semantic-graph-posts.md](../issue/1-sub-issue-semantic-graph-posts.md)
-- **Концептуальная задумка** размещена в базе знаний на MkDocs: [Semantic Similarity Graph — Explanation](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/Explanation/)
+- **Концептуальная задумка** размещена в базе знаний на MkDocs: [Semantic Similarity Graph — Explanation](https://docs.detai-x.com/ru/ecosystem/Infrastructure/Knowledge_Substrate/knowledge_core/Explanation/)
 
 ### 3. Operational Store — рабочие представления
 - Каталог `operational_store/` хранит модели и структуры данных,

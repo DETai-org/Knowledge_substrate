@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide/"
   document_links:
     - schema: ""
       link_type: ""

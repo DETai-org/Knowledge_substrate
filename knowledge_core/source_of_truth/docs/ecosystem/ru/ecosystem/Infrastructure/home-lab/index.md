@@ -21,7 +21,7 @@ object_state:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/home-lab/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Infrastructure/home-lab/"
   document_links:
     - schema: ecosystem
       link_type: explains

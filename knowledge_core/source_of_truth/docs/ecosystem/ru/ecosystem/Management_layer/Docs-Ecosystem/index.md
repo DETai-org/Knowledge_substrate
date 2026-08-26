@@ -23,7 +23,7 @@ governance:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Management_layer/Docs-Ecosystem/"
   document_links:
     - schema: ecosystem
       link_type: part-of

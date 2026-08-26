@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/table-of-resources/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/table-of-resources/"
   document_links:
     - schema: ""
       link_type: ""

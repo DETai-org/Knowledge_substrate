@@ -22,7 +22,7 @@ governance:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://detai-org.github.io/Knowledge_substrate/ru/architecture/ecosystem-canon/
+      url: https://docs.detai-x.com/ru/architecture/ecosystem-canon/
   document_links:
     - schema: ecosystem
       link_type: defines

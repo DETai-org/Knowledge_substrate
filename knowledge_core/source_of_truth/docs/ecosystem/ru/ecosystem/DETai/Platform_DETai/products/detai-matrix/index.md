@@ -15,7 +15,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/"
   document_links: null
 ---
 

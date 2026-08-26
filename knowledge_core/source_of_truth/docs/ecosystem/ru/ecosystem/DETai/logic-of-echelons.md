@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/logic-of-echelons/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/logic-of-echelons/"
   document_links:
     - schema: ""
       link_type: ""
@@ -109,4 +109,4 @@ title: 🪽 Логика эшелонов
 
 ---
 
-Смотри также:  [💰 Ресурсы экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/ecosystem-resource/)
+Смотри также:  [💰 Ресурсы экосистемы](https://docs.detai-x.com/ru/ecosystem/Management_layer/ecosystem-resource/)

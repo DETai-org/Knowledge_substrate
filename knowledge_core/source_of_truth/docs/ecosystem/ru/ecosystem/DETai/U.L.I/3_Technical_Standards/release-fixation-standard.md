@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/"
   document_links:
     - schema: ""
       link_type: ""
@@ -139,6 +139,6 @@ Release Summary должен подводить итог фактическом�
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — показывает место Release Fixation как 4-го этапа цикла.
-- [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — описывает выполнение Work Package до этапа фиксации релиза.
-- [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/) — объясняет смысл версий проектов в U.L.I.
+- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — показывает место Release Fixation как 4-го этапа цикла.
+- [Work Model](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — описывает выполнение Work Package до этапа фиксации релиза.
+- [♻️ Процесс версионности в U.L.I.](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/) — объясняет смысл версий проектов в U.L.I.

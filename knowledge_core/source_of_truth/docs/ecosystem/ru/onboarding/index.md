@@ -27,7 +27,7 @@ object_state:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://detai-org.github.io/Knowledge_substrate/ru/onboarding/
+      url: https://docs.detai-x.com/ru/onboarding/
     - type: GitHub
       url: https://github.com/DETai-org/onboarding
   document_links:

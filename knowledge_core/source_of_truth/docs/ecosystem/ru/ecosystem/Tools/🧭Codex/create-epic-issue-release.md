@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🧭Codex/create-epic-issue-release/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/🧭Codex/create-epic-issue-release/"
   document_links:
     - schema: ""
       link_type: ""

@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/"
   document_links:
     - schema: ""
       link_type: ""
@@ -33,9 +33,9 @@ title: Модель работы
 
 ## Состав связки
 
-- [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — explanation-документ: объясняет общий процесс Epic Issue -> Sub-Issue / Work Package -> PR.
-- [Epic Issue Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract/) — стандарт / контракт верхнеуровневого блока смысла и навигации.
-- [Sub-Issue / Work Package Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/) — стандарт / контракт поставляемого фрагмента работы.
+- [Work Model](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — explanation-документ: объясняет общий процесс Epic Issue -> Sub-Issue / Work Package -> PR.
+- [Epic Issue Contract](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract/) — стандарт / контракт верхнеуровневого блока смысла и навигации.
+- [Sub-Issue / Work Package Contract](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/) — стандарт / контракт поставляемого фрагмента работы.
 
 ## Как читать эту папку
 
@@ -47,6 +47,6 @@ title: Модель работы
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — карта полного цикла от идеи до документационной обвязки.
-- [Методология проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет, как мысль становится проектным намерением.
-- [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/) — объясняет, как версии проектов формируются и завершаются.
+- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — карта полного цикла от идеи до документационной обвязки.
+- [Методология проектного цикла DETai](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет, как мысль становится проектным намерением.
+- [♻️ Процесс версионности в U.L.I.](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/) — объясняет, как версии проектов формируются и завершаются.

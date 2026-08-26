@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/"
   document_links:
     - schema: ""
       link_type: ""
@@ -57,7 +57,7 @@ title: Производственный цикл проектов и карта 
 
 Если идея ещё не созрела, она фиксируется как импульс. Для этого в нашей системе есть место, оно называется "🧠 Еще мысль", это материал/хаб для будущего развития. Если из неё уже сформировался вектор, он может перейти в Epic Issue.
 
-Смысловую методологию этого перехода описывает документ [Методология проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/).
+Смысловую методологию этого перехода описывает документ [Методология проектного цикла DETai](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/).
 
 ## 2. Work Model Planning
 
@@ -70,9 +70,9 @@ title: Производственный цикл проектов и карта 
 - Acceptance Tasks как проверяемые результаты;
 - критерии завершения и связи с будущим PR.
 
-Этот этап уже относится к Work Model. Производственный цикл только показывает место этапа в общей траектории, а конкретные правила структуры задаются связкой [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) и [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/).
+Этот этап уже относится к Work Model. Производственный цикл только показывает место этапа в общей траектории, а конкретные правила структуры задаются связкой [Модель работы](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) и [Work Model](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/).
 
-Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — документ о распределении high-level и low-level ролей между человеком и агентом.
+Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — документ о распределении high-level и low-level ролей между человеком и агентом.
 
 ## 3. Implementation
 
@@ -107,7 +107,7 @@ Release Fixation отвечает за момент, когда результа
 
 `v1.0` фиксирует готовность проекта к публичной ответственности, но не делает продуктом внутренний технический проект автоматически. Для перехода в продукт одновременно нужны публичный доступ, ценностная значимость, владелец поддержки и будущие показатели наблюдения.
 
-Этот этап описан отдельным стандартом [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) и не смешивается с Work Model.
+Этот этап описан отдельным стандартом [Release Fixation Standard](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) и не смешивается с Work Model.
 
 ## 5. Documentation Architecture
 
@@ -169,7 +169,7 @@ Release Fixation отвечает за момент, когда результа
 
 На уровне Work Model Planning и Implementation ключевым становится агент, который умеет работать внутри Epic Issue / Work Package, удерживать scope, выполнять checklist и готовить PR.
 
-Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/).
+Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/).
 
 ## Граница документа
 
@@ -187,10 +187,10 @@ Release Fixation отвечает за момент, когда результа
 
 ## Связанные документы
 
-- [Методология проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет переход от мысли к проектному намерению.
-- [Совместное планирование человека и агента в Work Model Planning](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
-- [Модель работы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — индекс связки Work Model.
-- [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — процесс этапов Work Model Planning и Implementation.
-- [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) — стандарт фиксации версии проекта.
-- [Versioning Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/) — стандарт версионности документов.
-- [♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/) — объяснение процесса версионности.
+- [Методология проектного цикла DETai](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/) — объясняет переход от мысли к проектному намерению.
+- [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning/) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
+- [Модель работы](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/) — индекс связки Work Model.
+- [Work Model](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — процесс этапов Work Model Planning и Implementation.
+- [Release Fixation Standard](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) — стандарт фиксации версии проекта.
+- [Versioning Standard](https://docs.detai-x.com/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/) — стандарт версионности документов.
+- [♻️ Процесс версионности](https://docs.detai-x.com/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/) — объяснение процесса версионности.

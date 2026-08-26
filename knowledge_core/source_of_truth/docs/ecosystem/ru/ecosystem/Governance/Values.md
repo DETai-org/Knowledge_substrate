@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Governance/Values/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Governance/Values/"
     - type: ""
       url: ""
   document_links:
@@ -69,7 +69,7 @@ title: Ценности
 
 ## Основание ценностей
 
-Ценности DET вытекают из **трех постулатов** теоретической модели DET. Cм. 👉 [Concept-DET](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/Concept/Concept-DET/). 
+Ценности DET вытекают из **трех постулатов** теоретической модели DET. Cм. 👉 [Concept-DET](https://docs.detai-x.com/ru/ecosystem/DET/Concept/Concept-DET/).
 
 Эти постулаты являются основанием нашей теоретической модели и философской рамкой, которая задаёт внутреннюю структуру всей экосистемы.
 

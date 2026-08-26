@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/Ⓜ️Make/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/Ⓜ️Make/"
   document_links:
     - schema: ""
       link_type: ""
