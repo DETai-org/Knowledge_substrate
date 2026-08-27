@@ -19,7 +19,7 @@ links:
     - type: "GitHub"
       url: "https://github.com/DETai-org/sites"
     - type: "website"
-      url: "https://detai.ai/"
+      url: "https://detai-x.com/"
   document_links:
     - schema: "ecosystem"
       link_type: "public-interface"

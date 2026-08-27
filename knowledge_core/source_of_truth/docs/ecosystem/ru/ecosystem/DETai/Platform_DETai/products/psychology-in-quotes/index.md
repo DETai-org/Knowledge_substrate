@@ -19,13 +19,13 @@ links:
     - type: "GitHub"
       url: "https://github.com/DETai-org/psychology-in-quotes"
     - type: "website"
-      url: "https://detai.ai/ru/technology/platform/psychology-in-quotes"
+      url: "https://detai-x.com/ru/technology/platform/psychology-in-quotes"
     - type: "telegram"
       url: "https://t.me/DET_psy_in_quotes_bot"
     - type: "privacy"
-      url: "https://detai.ai/ru/technology/platform/psychology-in-quotes/privacy"
+      url: "https://detai-x.com/ru/technology/platform/psychology-in-quotes/privacy"
     - type: "terms"
-      url: "https://detai.ai/ru/technology/platform/psychology-in-quotes/terms"
+      url: "https://detai-x.com/ru/technology/platform/psychology-in-quotes/terms"
   document_links: null
 ---
 

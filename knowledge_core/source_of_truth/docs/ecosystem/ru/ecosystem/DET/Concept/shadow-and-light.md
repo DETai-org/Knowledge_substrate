@@ -37,11 +37,11 @@ title: Тень и свет
 
 ___
 
-### [Читать полное описание на сайте](https://detai-site.vercel.app/det/concept/shadow-and-light)
+### [Читать полное описание на сайте](https://detai-x.com/ru/det/research/concept/shadow-and-light)
 
 ➕
 
-🔗 [Связь с рубрикой на сайте](https://detai-site.vercel.app/ru/blog/ten-i-svet)
+🔗 [Связь с рубрикой на сайте](https://detai-x.com/ru/blog/ten-i-svet)
 
 
 
