@@ -29,7 +29,7 @@ object_state:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/"
     - type: "GitHub"
       url: "https://github.com/DETai-org/news_agent"
   document_links:

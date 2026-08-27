@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/at-the-crossroads-of-three-worlds/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DET/at-the-crossroads-of-three-worlds/"
     - type: ""
       url: ""
   document_links:

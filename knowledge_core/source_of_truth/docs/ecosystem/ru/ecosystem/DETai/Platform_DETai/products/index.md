@@ -23,7 +23,7 @@ governance:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/products/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/products/"
   document_links:
     - schema: ecosystem
       link_type: part-of

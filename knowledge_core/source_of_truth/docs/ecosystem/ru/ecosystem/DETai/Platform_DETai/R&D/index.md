@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/R&D/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/R&D/"
   document_links:
     - schema: ""
       link_type: ""
@@ -31,7 +31,7 @@ R&D (Research & Development) — зона **свободного разви�
 
 Каждая такая идея попадает в лист **Idea Lab**, который служит пространством для будущих проектов и прототипов. Здесь собираются новые концепции, которые не входят в существующие проекты и которым нужно место для свободного роста.
 
-Если же идея касается уже существующего проекта или продукта, то она помещается в лист «🧠Ещё мысль», который есть у каждого нашего проекта или продукта. См. связь с [Методологией проектного цикла DETai](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/).
+Если же идея касается уже существующего проекта или продукта, то она помещается в лист «🧠Ещё мысль», который есть у каждого нашего проекта или продукта. См. связь с [Методологией проектного цикла DETai](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai/).
 
 ---
 
@@ -39,7 +39,7 @@ R&D (Research & Development) — зона **свободного разви�
 
 Идея не обязана проходить формальный market gate, иметь Product Charter или заранее доказывать спрос. На раннем этапе важно не подавить инициативу избыточными требованиями.
 
-Единственная начальная граница для работы от имени DETai — идея не должна противоречить миссии, ценностям и принципам экосистемы. По мере развития автор также обозначает, какой [ресурс экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/ecosystem-resource/) может возникнуть: финансовый, командный, технологический, ресурс узнаваемости или аналитический.
+Единственная начальная граница для работы от имени DETai — идея не должна противоречить миссии, ценностям и принципам экосистемы. По мере развития автор также обозначает, какой [ресурс экосистемы](https://docs.detai-x.com/ru/ecosystem/Management_layer/ecosystem-resource/) может возникнуть: финансовый, командный, технологический, ресурс узнаваемости или аналитический.
 
 Рабочая траектория включает три состояния:
 
@@ -76,7 +76,7 @@ R&D (Research & Development) — зона **свободного разви�
 
     
 
-Когда инициатива становится проектом и интегрируется в один из эшелонов, фиксируется, какой [💰 ресурс экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/ecosystem-resource/) она создаёт или усиливает.
+Когда инициатива становится проектом и интегрируется в один из эшелонов, фиксируется, какой [💰 ресурс экосистемы](https://docs.detai-x.com/ru/ecosystem/Management_layer/ecosystem-resource/) она создаёт или усиливает.
 
 ---
 
@@ -92,6 +92,6 @@ R&D (Research & Development) — зона **свободного разви�
 
 она переходит в статус полноценного проекта и становится частью экосистемной структуры.
 
-Дальше проект развивается через [производственный цикл U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/). Версии `v0.x` могут оставаться внутренними. Если проект готовится к публичному `v1.0`, он может получить статус Product Candidate и подключить Product–Market для формулирования ценностной значимости, доступности и будущих показателей. Переход описан в [модели продуктового объекта](../../../../product-market/product-object-model.md).
+Дальше проект развивается через [производственный цикл U.L.I.](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/). Версии `v0.x` могут оставаться внутренними. Если проект готовится к публичному `v1.0`, он может получить статус Product Candidate и подключить Product–Market для формулирования ценностной значимости, доступности и будущих показателей. Переход описан в [модели продуктового объекта](../../../../product-market/product-object-model.md).
 
 ---

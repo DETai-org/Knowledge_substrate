@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Management_layer/2_Architecture_and_Logic/"
   document_links:
     - schema: ""
       link_type: ""

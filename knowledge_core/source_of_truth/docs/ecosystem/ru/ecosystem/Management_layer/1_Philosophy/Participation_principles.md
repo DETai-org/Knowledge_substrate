@@ -22,7 +22,7 @@ governance:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/1_Philosophy/Participation_principles/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Management_layer/1_Philosophy/Participation_principles/"
   document_links:
     - schema: ecosystem
       link_type: part-of

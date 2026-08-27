@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/"
   document_links:
     - schema: ""
       link_type: ""
@@ -55,9 +55,9 @@ MAJOR.MINOR.PATCH -> например, 1.4.2
 - состояние процесса;
 - состояние смысловой рамки, по которой работают люди и AI-агенты.
 
-Практические форматы версий и обязательные правила повышения версии описывает [Versioning Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/).
+Практические форматы версий и обязательные правила повышения версии описывает [Versioning Standard](https://docs.detai-x.com/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/).
 
-Проектная логика версий описана отдельно в [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/).
+Проектная логика версий описана отдельно в [♻️ Процесс версионности в U.L.I.](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/).
 
 ## Версия как этап развития
 
@@ -112,7 +112,7 @@ MAJOR.MINOR.PATCH -> например, 1.4.2
 
 ## Связанные документы
 
-- [Versioning Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/)
-- [Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)
-- [Политика metadata документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy/)
-- [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/)
+- [Versioning Standard](https://docs.detai-x.com/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/)
+- [Документационная архитектура экосистемы](https://docs.detai-x.com/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)
+- [Политика metadata документов](https://docs.detai-x.com/ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy/)
+- [♻️ Процесс версионности в U.L.I.](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/)

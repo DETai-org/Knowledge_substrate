@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config/"
   document_links:
     - schema: ""
       link_type: ""

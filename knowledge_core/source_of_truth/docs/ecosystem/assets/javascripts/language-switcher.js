@@ -1,12 +1,13 @@
 (function () {
-  const SUPPORTED_LANGS = ["ru", "en", "de", "fi", "cn"];
+  const SUPPORTED_LANGS = ["en", "fi", "ru", "de", "cn"];
+  const STORAGE_KEY = "detai_docs_preferred_locale";
 
   function getCurrentLanguage(pathname) {
     const langMatch = pathname.match(/\/(ru|en|de|fi|cn)\//i);
     if (langMatch) {
       return langMatch[1].toLowerCase();
     }
-    return "ru";
+    return null;
   }
 
   function buildLocalizedUrl(targetLang) {
@@ -25,9 +26,18 @@
   }
 
   function buildLanguageRoot(targetLang) {
-    const { pathname } = window.location;
+    const { pathname, search, hash } = window.location;
     const match = pathname.match(/^(.*)\/(ru|en|de|fi|cn)\//i);
-    return `${match ? match[1] : ""}/${targetLang}/`.replace(/\/+/g, "/");
+    const root = `${match ? match[1] : ""}/${targetLang}/`.replace(/\/+/g, "/");
+    return root + search + hash;
+  }
+
+  function persistPreferredLocale(targetLang) {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, targetLang);
+    } catch (_error) {
+      // Persistence is progressive enhancement; navigation must still work.
+    }
   }
 
   function normalizeText(element) {
@@ -66,8 +76,20 @@
           ? buildLocalizedUrl(targetLang)
           : buildLanguageRoot(targetLang)
       );
+      link.setAttribute("target", "_self");
+
+      if (link.dataset.detaiLocalePersistence !== "true") {
+        link.dataset.detaiLocalePersistence = "true";
+        link.addEventListener("click", () => persistPreferredLocale(targetLang));
+      }
     });
   }
 
-  document.addEventListener("DOMContentLoaded", updateLanguageLinks);
+  if (typeof document$ !== "undefined" && document$ && typeof document$.subscribe === "function") {
+    document$.subscribe(updateLanguageLinks);
+  } else if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updateLanguageLinks);
+  } else {
+    updateLanguageLinks();
+  }
 })();

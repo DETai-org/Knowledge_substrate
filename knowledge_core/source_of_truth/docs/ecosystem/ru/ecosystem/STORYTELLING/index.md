@@ -28,7 +28,7 @@ object_state:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/STORYTELLING/"
+      url: "https://docs.detai-x.com/ru/ecosystem/STORYTELLING/"
     - type: "GitHub"
       url: "https://github.com/DETai-org/Storytelling"
   document_links:

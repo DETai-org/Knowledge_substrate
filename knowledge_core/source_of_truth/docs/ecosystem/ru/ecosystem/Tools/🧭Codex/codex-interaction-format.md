@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🧭Codex/codex-interaction-format/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/🧭Codex/codex-interaction-format/"
   document_links:
     - schema: ecosystem
       link_type: related-to

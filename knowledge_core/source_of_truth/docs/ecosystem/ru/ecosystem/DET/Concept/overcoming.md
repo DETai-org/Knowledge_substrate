@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/Concept/overcoming/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DET/Concept/overcoming/"
     - type: ""
       url: ""
   document_links:

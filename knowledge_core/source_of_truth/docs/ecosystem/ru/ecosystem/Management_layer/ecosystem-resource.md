@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/ecosystem-resource/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Management_layer/ecosystem-resource/"
   document_links:
     - schema: ""
       link_type: ""
@@ -79,7 +79,7 @@ title: 💰 Ресурсы экосистемы
 **Фишка:** мультипликатор — ускоряет создание проектов и рост остальных ресурсов.  В идеале чтобы за каждый ресурс отвечал 1 человек который формирует вокруг себя небольшую команду. Это создаёт аналог «отделов» внутри ИМПЕРИИ 😄
 **Как меряем:** FTE/ролей закрыто, скорость спринтов, bus-factor, % внешней помощи.
 
-См. [bee-roles](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles/)
+См. [bee-roles](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles/)
 
 ## ⚙️ Технологии
 

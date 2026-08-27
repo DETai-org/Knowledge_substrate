@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/VS_Code/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/VS_Code/"
   document_links:
     - schema: ""
       link_type: ""

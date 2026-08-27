@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DET/5-characteristics-of-det-as-culture/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DET/5-characteristics-of-det-as-culture/"
     - type: ""
       url: ""
   document_links:

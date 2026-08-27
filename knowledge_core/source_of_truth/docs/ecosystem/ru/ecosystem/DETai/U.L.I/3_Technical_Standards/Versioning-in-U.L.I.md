@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/"
   document_links:
     - schema: ""
       link_type: ""
@@ -26,7 +26,7 @@ title: ♻️ Процесс версионности в U.L.I.
 
 Этот документ объясняет, как в U.L.I. понимается и применяется версионность проектов.
 
-Он не описывает версионность документов Knowledge Substrate. Для документов используются отдельные документы Management Layer: [Versioning Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/) и [♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/).
+Он не описывает версионность документов Knowledge Substrate. Для документов используются отдельные документы Management Layer: [Versioning Standard](https://docs.detai-x.com/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/) и [♻️ Процесс версионности](https://docs.detai-x.com/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/).
 
 В U.L.I. версия проекта фиксирует не просто набор изменений, а новое устойчивое состояние проекта, репозитория или продукта.
 
@@ -95,7 +95,7 @@ Release Fixation — это стандартный gate перед призна�
 
 Он отвечает на вопрос: можно ли действительно считать текущее состояние проекта новой устойчивой версией?
 
-Подробные правила описаны в [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/).
+Подробные правила описаны в [Release Fixation Standard](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/).
 
 ## 7. Где фиксируется версия
 
@@ -141,8 +141,8 @@ MAJOR.MINOR
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — описывает полный цикл от идеи до документационной обвязки.
-- [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — описывает этапы Work Model Planning и Implementation.
-- [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) — задаёт gate и порядок фиксации версии проекта.
-- [Versioning Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/) — описывает общий стандарт версионности, включая документы.
+- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/) — описывает полный цикл от идеи до документационной обвязки.
+- [Work Model](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — описывает этапы Work Model Planning и Implementation.
+- [Release Fixation Standard](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) — задаёт gate и порядок фиксации версии проекта.
+- [Versioning Standard](https://docs.detai-x.com/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/) — описывает общий стандарт версионности, включая документы.
 - [Модель продуктового объекта](../../../../product-market/product-object-model.md) — определяет, когда публичный релиз проекта получает продуктовый статус.

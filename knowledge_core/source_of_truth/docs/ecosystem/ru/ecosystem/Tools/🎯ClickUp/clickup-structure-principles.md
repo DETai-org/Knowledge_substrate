@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/🎯ClickUp/clickup-structure-principles/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/🎯ClickUp/clickup-structure-principles/"
   document_links:
     - schema: ""
       link_type: ""

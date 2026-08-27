@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Governance/Mission/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Governance/Mission/"
     - type: ""
       url: ""
   document_links:

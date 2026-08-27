@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Tools/VS_Code/installation-and-initial-setup/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Tools/VS_Code/installation-and-initial-setup/"
   document_links:
     - schema: ""
       link_type: ""

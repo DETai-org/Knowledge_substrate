@@ -22,7 +22,7 @@ governance:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://detai-org.github.io/Knowledge_substrate/ru/method/
+      url: https://docs.detai-x.com/ru/method/
   document_links:
     - schema: ecosystem
       link_type: reframes

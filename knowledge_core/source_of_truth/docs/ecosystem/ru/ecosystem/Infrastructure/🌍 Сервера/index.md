@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/🌍 Сервера/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Infrastructure/🌍 Сервера/"
   document_links:
     - schema: ""
       link_type: ""

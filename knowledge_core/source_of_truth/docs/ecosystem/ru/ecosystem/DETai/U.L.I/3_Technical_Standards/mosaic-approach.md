@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach/"
   document_links:
     - schema: ""
       link_type: ""
@@ -188,7 +188,7 @@ utils/
 
 Ниже приведена полная структура проекта, который реализует мозаичный подход.  
 Она отражает базовый стандарт организации директорий и файлов, принятый в рамках **Технического стандарта U.L.I.**
-Каждый элемент этой структуры соотносится с компонентами, описанными выше: пеплайном, этапами, сервисами, роутером и утилитами. Для оформления описания проекта рекомендуется использовать шаблон 📄 [README-template](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template/)
+Каждый элемент этой структуры соотносится с компонентами, описанными выше: пеплайном, этапами, сервисами, роутером и утилитами. Для оформления описания проекта рекомендуется использовать шаблон 📄 [README-template](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template/)
 
  **Основная структура проекта (база)**
 ```
@@ -293,7 +293,7 @@ project/
 - **CI/CD-процессах** — этапы сборки, тестирования и деплоя выполняются последовательно и автономно.
 - **Тестировании** — от юнит-тестов (проверка отдельных функций) к интеграционным (проверка связей).
 
-Для унификации описаний проектов рекомендуется использовать шаблон 📄 [README-template](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template/), основанный на том что описано в этом документе.
+Для унификации описаний проектов рекомендуется использовать шаблон 📄 [README-template](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template/), основанный на том что описано в этом документе.
 
 
 

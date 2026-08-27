@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Infrastructure/Infrastructure_Principles/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Infrastructure/Infrastructure_Principles/"
   document_links:
     - schema: ""
       link_type: ""

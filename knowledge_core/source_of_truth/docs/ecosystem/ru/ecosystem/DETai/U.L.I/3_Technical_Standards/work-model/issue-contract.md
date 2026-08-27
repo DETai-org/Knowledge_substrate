@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract/"
   document_links:
     - schema: ""
       link_type: ""
@@ -112,8 +112,8 @@ Epic Issue считается завершённой, когда:
 
 ## Related Documents
 
-- [Work Model](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/)
-- [Sub-Issue (Work Package) Contract](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/)
-- [Release Fixation Standard](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/)
-- [Производственный цикл проектов и карта ролей вокруг него](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/)
+- [Work Model](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/)
+- [Sub-Issue (Work Package) Contract](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract/)
+- [Release Fixation Standard](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/)
+- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle/)
 - Migration Notice: переход Epic Issue / Sub-Issue из Markdown-файлов репозитория в ClickUp

@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/"
+      url: "https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/"
   document_links:
     - schema: ""
       link_type: ""

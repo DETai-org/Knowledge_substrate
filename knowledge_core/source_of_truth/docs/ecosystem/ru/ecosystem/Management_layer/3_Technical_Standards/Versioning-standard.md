@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/"
+      url: "https://docs.detai-x.com/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/"
   document_links:
     - schema: ""
       link_type: ""
@@ -30,7 +30,7 @@ title: Versioning Standard
 
 ## Версии проектов
 
-Проектная логика версий подробно описана в [♻️ Процесс версионности в U.L.I.](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/).
+Проектная логика версий подробно описана в [♻️ Процесс версионности в U.L.I.](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I/).
 
 ## Версии документов
 
@@ -106,6 +106,6 @@ descriptive:
 
 ## Связанные документы
 
-- [♻️ Процесс версионности](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/)
-- [Документационная архитектура экосистемы](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)
-- [Политика metadata документов](https://detai-org.github.io/Knowledge_substrate/ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy/)
+- [♻️ Процесс версионности](https://docs.detai-x.com/ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process/)
+- [Документационная архитектура экосистемы](https://docs.detai-x.com/ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture/)
+- [Политика metadata документов](https://docs.detai-x.com/ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy/)
