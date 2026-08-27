@@ -37,11 +37,11 @@ title: Установка на преодоление
 
 ___
 
-### [Читать полное описание на сайте](https://detai-site.vercel.app/det/concept/overcoming)
+### [Читать полное описание на сайте](https://detai-x.com/ru/det/research/concept/overcoming)
 
 ➕
 
-🔗 [Связь с рубрикой на сайте](https://detai-site.vercel.app/ru/blog/ustanovka-na-preodolenie)
+🔗 [Связь с рубрикой на сайте](https://detai-x.com/ru/blog/ustanovka-na-preodolenie)
 
 
 ---

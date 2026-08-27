@@ -36,11 +36,11 @@ title: Типы личности
 
 ___
 
-### [Читать полное описание на сайте](https://detai-site.vercel.app/det/concept/personality-types)
+### [Читать полное описание на сайте](https://detai-x.com/ru/det/research/concept/personality-types)
 
 ➕
 
-🔗 [Связь с рубрикой на сайте](https://detai-site.vercel.app/ru/blog/tipy-lichnosti)
+🔗 [Связь с рубрикой на сайте](https://detai-x.com/ru/blog/tipy-lichnosti)
 
 
 
