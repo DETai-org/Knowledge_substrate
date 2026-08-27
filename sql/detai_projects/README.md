@@ -4,18 +4,16 @@
 
 ## Основная идея layout
 
-Здесь одна папка верхнего уровня должна означать одно из трёх:
+Здесь одна папка верхнего уровня должна означать одно из двух:
 
 - либо database-wide asset;
-- либо shared runtime schema;
-- либо конкретную project schema.
+- либо shared runtime schema.
 
 То есть git-структура здесь должна отражать реальную модель PostgreSQL:
 
 - одна database `detai_projects`;
-- внутри неё shared runtime schemas для общих operational-доменов;
-- внутри неё несколько project schemas;
-- у каждой schema свой собственный SQL-контур.
+- в этом репозитории — shared runtime schemas для общих operational-доменов;
+- исполняемый SQL конкретного продукта хранится в owning repository этого продукта.
 
 ## Как читать структуру
 
@@ -46,40 +44,28 @@ schemas.
 Эти каталоги пока являются черновыми контурами. Production migrations должны
 появиться только после отдельного согласования schema contract.
 
-### Project schema folders
+### Project-owned schemas
 
-Каждая project schema получает собственную папку прямо в root:
+Project schema может физически находиться в database `detai_projects`, но её
+исполняемые migrations, seeds, проверки и runbook принадлежат продукту и не
+дублируются в `Knowledge_substrate`.
 
-- `psychology_in_quotes/`
-- будущие project folders по тому же правилу
-
-Внутри project schema folder должны жить:
-
-- `migrations/`
-- `seeds/`
-- `apply_migrations.sh`
-- schema-specific runbook/README
+Для `psychology_in_quotes` канонический контур находится в owning repository
+[`DETai-org/psychology-in-quotes`](https://github.com/DETai-org/psychology-in-quotes),
+в каталоге `db/psychology_in_quotes/`.
 
 ## Кто что накатывает
 
 ### Database-level entrypoints
 
 - `bootstrap/` — создаёт саму database `detai_projects`.
-- `apply_all_migrations.sh` — проходит по всем project schema folders и запускает
-  их локальные `apply_migrations.sh`.
+- `apply_all_migrations.sh` — запускает локальные migration entrypoints только
+  для schema-контуров, которыми владеет этот репозиторий.
 
 ### Project schema entrypoints
 
-Каждая project schema отвечает только за свой собственный SQL layer:
-
-- `<project>/apply_migrations.sh` — накатывает migrations только этой schema;
-- `<project>/seeds/*.sql` — загружает initial seed или schema-specific data import;
-- `<project>/README.md` — описывает runbook и границы ответственности проекта.
-
-Иными словами:
-
-- root-level entrypoints управляют database `detai_projects` целиком;
-- project folders управляют только своим schema-level контуром.
+Project-specific migrations запускаются по runbook owning repository. Root-level
+entrypoints этого каталога не являются источником migrations продуктов.
 
 ## Базовый порядок запуска
 
@@ -89,8 +75,8 @@ bash bootstrap/create_database.sh
 bash apply_all_migrations.sh
 ```
 
-После этого initial seed накатывается уже на уровне конкретного проекта, потому что
-seed и его источник зависят от schema, а не от database целиком.
+После этого project-specific migrations и seed накатываются из owning repository
+проекта по его собственному runbook.
 
 ## Что хранит database `detai_projects`
 
@@ -126,23 +112,10 @@ project-local таблиц в shared runtime schemas:
 
 - [Policy: Runtime Boundary Map](../../docs/Policy/runtime-boundaries.policy.md)
 
-## Переходный принцип seed
+## Ownership проекта Psychology in Quotes
 
-JSON-файлы из `psychology-in-quotes/apps/telegram-bot/runtime-db-seed/` рассматриваются
-здесь только как переходный источник initial import.
-
-После перевода runtime-слоя проекта на PostgreSQL:
-
-- JSON seed перестаёт быть primary runtime source;
-- bot runtime должен читать и писать напрямую в `detai_projects.psychology_in_quotes`;
-- code-owned system defaults остаются в репозитории `psychology-in-quotes`.
-
-## Текущая первая project schema
-
-Первая итерация сейчас реализована для:
-
-- `psychology_in_quotes`
-
-Её runbook находится в:
-
-- `sql/detai_projects/psychology_in_quotes/README.md`
+Старая исполняемая копия migrations и seed для `psychology_in_quotes`, основанная
+на Telegram ID, удалена из этого репозитория. Актуальная модель идентичности,
+migrations, роли, проверки и runbook поддерживаются в owning repository
+[`DETai-org/psychology-in-quotes`](https://github.com/DETai-org/psychology-in-quotes),
+в каталоге `db/psychology_in_quotes/`.

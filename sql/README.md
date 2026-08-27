@@ -47,14 +47,18 @@ Git-структура внутри каждого database-контура до�
 - user-owned templates;
 - runtime audit и другие project-scoped operational данные.
 
-Внутри `detai_projects` каждая схема должна называться по проекту:
-- `psychology_in_quotes`
-- будущие project schemas по тому же правилу.
+Внутри `detai_projects` project schema называется по проекту, например
+`psychology_in_quotes`. Исполняемые migrations такой schema принадлежат самому
+проекту и хранятся в его owning repository.
 
 Ожидаемая раскладка внутри `sql/detai_projects/`:
 - root-level файлы и каталоги — database-wide assets (`bootstrap/`, `apply_all_migrations.sh`, `README.md`);
-- `psychology_in_quotes/` — SQL-контур конкретной project schema;
-- будущие project folders по тому же правилу.
+- shared runtime schemas — общие operational-контуры экосистемы;
+- project-specific migrations — только в owning repository соответствующего проекта.
+
+Канонический SQL-контур `psychology_in_quotes` находится в owning repository
+[`DETai-org/psychology-in-quotes`](https://github.com/DETai-org/psychology-in-quotes),
+в каталоге `db/psychology_in_quotes/`.
 
 ## Текущее состояние репозитория
 
