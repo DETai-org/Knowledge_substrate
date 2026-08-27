@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.meta and page.meta.robots %}
+    <meta name="robots" content="{{ page.meta.robots }}">
+  {% endif %}
+{% endblock %}
+
 {% block content %}
   {{ super() }}
   {% include "partials/document_meta_footer.html" %}

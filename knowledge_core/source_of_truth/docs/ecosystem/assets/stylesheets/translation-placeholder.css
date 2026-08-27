@@ -1,0 +1,80 @@
+.translation-placeholder-page {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 3rem) 0;
+}
+
+.md-typeset .translation-placeholder-page__eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--md-accent-fg-color);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.md-typeset .translation-placeholder-page > h1 {
+  max-width: 14ch;
+  margin-bottom: 0.8rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 7vw, 4.8rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.md-typeset .translation-placeholder-page__lead {
+  max-width: 38rem;
+  margin-bottom: 2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.md-typeset .translation-placeholder-page .admonition {
+  margin: 1rem 0;
+  padding: 0 1.1rem 1.1rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+  border-left-width: 1px;
+  border-radius: 1rem;
+  box-shadow: 0 0.9rem 2.4rem rgba(0, 0, 0, 0.09);
+}
+
+.md-typeset .translation-placeholder-page .admonition.warning {
+  background: linear-gradient(135deg, rgba(237, 108, 2, 0.1), rgba(237, 108, 2, 0.025));
+}
+
+.md-typeset .translation-placeholder-page .admonition.info {
+  background: linear-gradient(135deg, rgba(2, 136, 209, 0.1), rgba(2, 136, 209, 0.025));
+}
+
+.md-typeset .translation-placeholder-page .admonition-title {
+  margin: 0 -1.1rem 0.85rem;
+  padding: 0.9rem 1.1rem 0.9rem 2.6rem;
+  background: transparent;
+  font-size: 0.92rem;
+}
+
+.md-typeset .translation-placeholder-page .md-button {
+  margin-top: 0.65rem;
+  border-radius: 999px;
+}
+
+.translation-placeholder-page__status {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.76rem;
+}
+
+.translation-placeholder-page__status::before {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #ed6c02;
+  content: "";
+  box-shadow: 0 0 0 0.25rem rgba(237, 108, 2, 0.12);
+}

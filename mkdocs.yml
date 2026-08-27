@@ -31,6 +31,8 @@ plugins:
 - search
 markdown_extensions:
 - admonition
+- attr_list
+- md_in_html
 - toc:
     permalink: true
     slugify: !!python/name:markdown.extensions.toc.slugify_unicode
@@ -44,6 +46,7 @@ markdown_extensions:
 extra_css:
 - assets/stylesheets/extra.css
 - assets/stylesheets/global-entry.css
+- assets/stylesheets/translation-placeholder.css
 extra_javascript:
 - assets/javascripts/global-entry.js
 - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
