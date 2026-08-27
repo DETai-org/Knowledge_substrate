@@ -17,7 +17,10 @@ plugins:
     breakless_lists: true
 - mkdocs-simple-hooks:
     hooks:
+      on_files: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:generate_translation_placeholders
       on_page_markdown: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:convert_obsidian_wikilinks
+      on_page_context: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:set_translation_placeholder_canonical
+      on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
       'ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md'
@@ -44,7 +47,7 @@ markdown_extensions:
       format: !!python/name:pymdownx.superfences.fence_code_format
 - pymdownx.details
 extra:
-  alternate:
+  detai_languages:
   - name: English
     link: /en/
     lang: en
@@ -66,10 +69,10 @@ extra:
     path: de
     icon: assets/images/flags/de.svg
   - name: 中文
-    link: /cn/
+    link: /zh/
     lang: zh
-    path: cn
-    icon: assets/images/flags/cn.svg
+    path: zh
+    icon: assets/images/flags/zh.svg
 extra_css:
 - assets/stylesheets/extra.css
 - assets/stylesheets/global-entry.css

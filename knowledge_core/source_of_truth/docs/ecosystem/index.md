@@ -84,7 +84,7 @@ hide:
       <span><strong>Deutsch</strong><small>German</small></span>
       <span class="language-choice__arrow" aria-hidden="true">→</span>
     </a>
-    <a class="language-choice__link" href="./cn/" target="_self" data-locale="cn">
+    <a class="language-choice__link" href="./zh/" target="_self" data-locale="zh">
       <span class="language-choice__code" aria-hidden="true">中文</span>
       <span><strong>中文</strong><small>Chinese</small></span>
       <span class="language-choice__arrow" aria-hidden="true">→</span>

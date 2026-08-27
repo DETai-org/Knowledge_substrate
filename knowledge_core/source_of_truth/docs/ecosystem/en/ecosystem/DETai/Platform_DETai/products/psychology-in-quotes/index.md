@@ -2,6 +2,8 @@
 title: Psychology in Quotes
 description: Translation placeholder preview for the Psychology in Quotes documentation page.
 robots: noindex, follow
+translation_placeholder: true
+canonical_original: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/
 descriptive:
   status: draft
 hide:

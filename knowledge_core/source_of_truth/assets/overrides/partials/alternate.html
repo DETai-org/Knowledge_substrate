@@ -1,6 +1,6 @@
 {% set current_path = page.url.split('/')[0] if page and page.url else 'en' %}
-{% set active = namespace(icon=config.extra.alternate[0].icon, name=config.extra.alternate[0].name) %}
-{% for alt in config.extra.alternate %}
+{% set active = namespace(icon=config.extra.detai_languages[0].icon, name=config.extra.detai_languages[0].name) %}
+{% for alt in config.extra.detai_languages %}
   {% if alt.path == current_path %}
     {% set active.icon = alt.icon %}
     {% set active.name = alt.name %}
@@ -14,9 +14,9 @@
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
-        {% for alt in config.extra.alternate %}
+        {% for alt in config.extra.detai_languages %}
           <li class="md-select__item">
-            <a href="{{ alt.link | url }}" hreflang="{{ alt.lang }}" class="md-select__link" data-locale="{{ alt.path }}">
+            <a href="{{ alt.link | url }}" class="md-select__link" data-locale="{{ alt.path }}">
               <img class="detai-language-menu__flag" src="{{ alt.icon | url }}" alt="">
               <span>{{ alt.name }}</span>
             </a>
