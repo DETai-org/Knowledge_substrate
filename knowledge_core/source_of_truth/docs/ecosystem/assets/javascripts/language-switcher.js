@@ -61,26 +61,42 @@
     };
 
     const menuLinks = document.querySelectorAll(
-      ".md-tabs__link, .md-nav__link"
+      ".md-tabs__link, .md-nav__link, .md-select__link[data-locale]"
     );
 
     menuLinks.forEach((link) => {
-      const targetLang = targetByLabel[normalizeText(link)];
+      const targetLang = link.dataset.locale || targetByLabel[normalizeText(link)];
       if (!targetLang || targetLang === currentLang) {
+        if (targetLang === currentLang) {
+          link.setAttribute("aria-current", "true");
+        }
         return;
       }
 
-      link.setAttribute(
-        "href",
-        hasLocalizedEquivalent(window.location.pathname)
-          ? buildLocalizedUrl(targetLang)
-          : buildLanguageRoot(targetLang)
-      );
+      const localizedUrl = buildLocalizedUrl(targetLang);
+      const fallbackUrl = buildLanguageRoot(targetLang);
+
+      link.setAttribute("href", localizedUrl);
       link.setAttribute("target", "_self");
 
       if (link.dataset.detaiLocalePersistence !== "true") {
         link.dataset.detaiLocalePersistence = "true";
-        link.addEventListener("click", () => persistPreferredLocale(targetLang));
+        link.addEventListener("click", async (event) => {
+          event.preventDefault();
+          persistPreferredLocale(targetLang);
+
+          if (hasLocalizedEquivalent(window.location.pathname)) {
+            window.location.assign(localizedUrl);
+            return;
+          }
+
+          try {
+            const response = await window.fetch(localizedUrl, { method: "HEAD" });
+            window.location.assign(response.ok ? localizedUrl : fallbackUrl);
+          } catch (_error) {
+            window.location.assign(fallbackUrl);
+          }
+        });
       }
     });
   }

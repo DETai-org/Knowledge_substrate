@@ -43,10 +43,38 @@ markdown_extensions:
       class: mermaid-source
       format: !!python/name:pymdownx.superfences.fence_code_format
 - pymdownx.details
+extra:
+  alternate:
+  - name: English
+    link: /en/
+    lang: en
+    path: en
+    icon: assets/images/flags/gb.svg
+  - name: Suomi
+    link: /fi/
+    lang: fi
+    path: fi
+    icon: assets/images/flags/fi.svg
+  - name: Русский
+    link: /ru/
+    lang: ru
+    path: ru
+    icon: assets/images/flags/ru.svg
+  - name: Deutsch
+    link: /de/
+    lang: de
+    path: de
+    icon: assets/images/flags/de.svg
+  - name: 中文
+    link: /cn/
+    lang: zh
+    path: cn
+    icon: assets/images/flags/cn.svg
 extra_css:
 - assets/stylesheets/extra.css
 - assets/stylesheets/global-entry.css
 - assets/stylesheets/translation-placeholder.css
+- assets/stylesheets/language-menu.css
 extra_javascript:
 - assets/javascripts/global-entry.js
 - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
@@ -284,7 +312,3 @@ nav:
   - Путь участника: ru/onboarding/onboarding-path.md
   - Контуры знаний и исполнения: ru/onboarding/execution-contours.md
   - Сопровождение и развитие: ru/onboarding/coordination-and-evolution.md
-- English: en/index.md
-- Deutsch: de/index.md
-- Suomi: fi/index.md
-- 中文: cn/index.md
