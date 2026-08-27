@@ -2,6 +2,8 @@
 title: Psychology in Quotes
 description: Translation placeholder preview for the Psychology in Quotes documentation page.
 robots: noindex, follow
+descriptive:
+  status: draft
 hide:
   - navigation
   - toc
@@ -27,8 +29,6 @@ This route is ready, while the full English edition of the document is still bei
 
     Be the first to know when DETai documentation is available in English. Follow our Telegram channel for release updates.
 
-    [🇬🇧 Follow @detai_en](https://t.me/detai_en){ .md-button }
-
-<p class="translation-placeholder-page__status">English translation in progress</p>
+    <a class="md-button translation-placeholder-page__telegram" href="https://t.me/detai_en"><img src="/assets/images/flags/gb.svg" alt="" aria-hidden="true">Subscribe on Telegram</a>
 
 </section>
