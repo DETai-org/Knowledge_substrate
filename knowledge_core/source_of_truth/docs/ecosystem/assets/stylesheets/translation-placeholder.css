@@ -95,3 +95,24 @@
   height: 1.15rem;
   margin: 0;
 }
+
+@media screen and (max-width: 30rem) {
+  .md-typeset .translation-placeholder-page .translation-placeholder-page__telegram {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding-inline: 0.75rem;
+    gap: 0.4rem;
+    white-space: normal;
+  }
+
+  .md-typeset .translation-placeholder-page .translation-placeholder-page__telegram span {
+    min-width: 0;
+    line-height: 1.25;
+  }
+
+  .md-typeset .translation-placeholder-page .translation-placeholder-page__telegram-flag,
+  .md-typeset .translation-placeholder-page .translation-placeholder-page__telegram-mark {
+    flex: 0 0 auto;
+  }
+}

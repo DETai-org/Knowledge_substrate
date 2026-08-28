@@ -23,16 +23,16 @@
 }
 
 .detai-language-menu .md-select__list {
-  padding: 0.35rem;
+  padding: 0.25rem;
   border-radius: 0.65rem;
 }
 
 .detai-language-menu .md-select__link {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  min-height: 2.2rem;
-  padding: 0.45rem 0.65rem;
+  gap: 0.6rem;
+  min-height: 1.85rem;
+  padding: 0.28rem 0.65rem;
   border-radius: 0.45rem;
 }
 
