@@ -17,7 +17,10 @@ plugins:
     breakless_lists: true
 - mkdocs-simple-hooks:
     hooks:
+      on_files: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:generate_translation_placeholders
       on_page_markdown: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:convert_obsidian_wikilinks
+      on_page_context: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:set_page_semantics
+      on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
       'ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md'
@@ -31,6 +34,8 @@ plugins:
 - search
 markdown_extensions:
 - admonition
+- attr_list
+- md_in_html
 - toc:
     permalink: true
     slugify: !!python/name:markdown.extensions.toc.slugify_unicode
@@ -41,9 +46,38 @@ markdown_extensions:
       class: mermaid-source
       format: !!python/name:pymdownx.superfences.fence_code_format
 - pymdownx.details
+extra:
+  detai_languages:
+  - name: English
+    link: /en/
+    lang: en
+    path: en
+    icon: assets/images/flags/gb.svg
+  - name: Suomi
+    link: /fi/
+    lang: fi
+    path: fi
+    icon: assets/images/flags/fi.svg
+  - name: Русский
+    link: /ru/
+    lang: ru
+    path: ru
+    icon: assets/images/flags/ru.svg
+  - name: Deutsch
+    link: /de/
+    lang: de
+    path: de
+    icon: assets/images/flags/de.svg
+  - name: 中文
+    link: /zh/
+    lang: zh
+    path: zh
+    icon: assets/images/flags/zh.svg
 extra_css:
 - assets/stylesheets/extra.css
 - assets/stylesheets/global-entry.css
+- assets/stylesheets/translation-placeholder.css
+- assets/stylesheets/language-menu.css
 extra_javascript:
 - assets/javascripts/global-entry.js
 - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
@@ -281,7 +315,3 @@ nav:
   - Путь участника: ru/onboarding/onboarding-path.md
   - Контуры знаний и исполнения: ru/onboarding/execution-contours.md
   - Сопровождение и развитие: ru/onboarding/coordination-and-evolution.md
-- English: en/index.md
-- Deutsch: de/index.md
-- Suomi: fi/index.md
-- 中文: cn/index.md

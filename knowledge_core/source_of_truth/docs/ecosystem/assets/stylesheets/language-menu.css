@@ -1,0 +1,53 @@
+.detai-language-menu__button {
+  display: grid;
+  place-items: center;
+}
+
+.detai-language-menu__flag {
+  display: block;
+  width: 1.35rem;
+  height: 0.9rem;
+  margin: 0;
+  border-radius: 0.12rem;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.28);
+}
+
+.detai-language-menu .md-select__inner {
+  min-width: 10.5rem;
+}
+
+.detai-language-menu .md-select:focus-within .md-select__inner,
+.detai-language-menu .md-select:hover .md-select__inner {
+  max-height: 13rem;
+}
+
+.detai-language-menu .md-select__list {
+  padding: 0.25rem;
+  border-radius: 0.65rem;
+}
+
+.detai-language-menu .md-select__link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 1.85rem;
+  padding: 0.28rem 0.65rem;
+  border-radius: 0.45rem;
+}
+
+.detai-language-menu .md-select__link:hover,
+.detai-language-menu .md-select__link:focus-visible {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 12%, transparent);
+}
+
+.detai-language-menu .md-select__link[aria-current="true"] {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}
+
+@media (max-width: 44.9375em) {
+  .detai-language-menu {
+    margin-left: auto;
+  }
+}

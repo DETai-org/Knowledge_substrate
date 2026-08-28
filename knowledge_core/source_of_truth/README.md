@@ -15,7 +15,7 @@
 - `docs/ecosystem/{lang}/ecosystem/` — документы домена `ecosystem`.
 - `docs/publications/` — документы домена `publications`.
 
-Важно: языковые папки `ru/`, `en/`, `de/`, `fi/`, `cn/` не являются отдельными доменами знания.
+Важно: языковые папки `ru/`, `en/`, `de/`, `fi/`, `zh/` не являются отдельными доменами знания.
 Это presentation/localization rails внутри `docs/ecosystem/`.
 
 ### 2. `schemas/` — контракты, словари и naming rules

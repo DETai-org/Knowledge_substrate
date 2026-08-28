@@ -1,12 +1,13 @@
 (function () {
-  const SUPPORTED_LANGS = ["ru", "en", "de", "fi", "cn"];
+  const SUPPORTED_LANGS = ["en", "fi", "ru", "de", "zh"];
+  const STORAGE_KEY = "detai_docs_preferred_locale";
 
   function getCurrentLanguage(pathname) {
-    const langMatch = pathname.match(/\/(ru|en|de|fi|cn)\//i);
+    const langMatch = pathname.match(/\/(ru|en|de|fi|zh)\//i);
     if (langMatch) {
       return langMatch[1].toLowerCase();
     }
-    return "ru";
+    return null;
   }
 
   function buildLocalizedUrl(targetLang) {
@@ -16,28 +17,24 @@
       return pathname + search + hash;
     }
 
-    if (/\/(ru|en|de|fi|cn)\//i.test(pathname)) {
-      return pathname.replace(/\/(ru|en|de|fi|cn)\//i, `/${targetLang}/`) + search + hash;
+    if (/\/(ru|en|de|fi|zh)\//i.test(pathname)) {
+      return pathname.replace(/\/(ru|en|de|fi|zh)\//i, `/${targetLang}/`) + search + hash;
     }
 
     const trimmed = pathname.replace(/\/+$/, "");
     return `${trimmed}/${targetLang}/${search}${hash}`.replace(/\/+/g, "/");
   }
 
-  function buildLanguageRoot(targetLang) {
-    const { pathname } = window.location;
-    const match = pathname.match(/^(.*)\/(ru|en|de|fi|cn)\//i);
-    return `${match ? match[1] : ""}/${targetLang}/`.replace(/\/+/g, "/");
+  function persistPreferredLocale(targetLang) {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, targetLang);
+    } catch (_error) {
+      // Persistence is progressive enhancement; navigation must still work.
+    }
   }
 
   function normalizeText(element) {
     return element.textContent.replace(/\s+/g, " ").trim();
-  }
-
-  function hasLocalizedEquivalent(pathname) {
-    const match = pathname.match(/\/(ru|en|de|fi|cn)(\/.*)?$/i);
-    const languagePath = match ? (match[2] || "/") : "/";
-    return languagePath === "/" || languagePath === "/ecosystem/";
   }
 
   function updateLanguageLinks() {
@@ -47,27 +44,43 @@
       "Русский": "ru",
       Deutsch: "de",
       Suomi: "fi",
-      中文: "cn",
+      中文: "zh",
     };
 
     const menuLinks = document.querySelectorAll(
-      ".md-tabs__link, .md-nav__link"
+      ".md-tabs__link, .md-nav__link, .md-select__link[data-locale]"
     );
 
     menuLinks.forEach((link) => {
-      const targetLang = targetByLabel[normalizeText(link)];
-      if (!targetLang || targetLang === currentLang) {
+      const targetLang = link.dataset.locale || targetByLabel[normalizeText(link)];
+      if (!targetLang) {
         return;
       }
 
-      link.setAttribute(
-        "href",
-        hasLocalizedEquivalent(window.location.pathname)
-          ? buildLocalizedUrl(targetLang)
-          : buildLanguageRoot(targetLang)
-      );
+      const localizedUrl = buildLocalizedUrl(targetLang);
+      link.setAttribute("href", localizedUrl);
+      link.setAttribute("target", "_self");
+
+      if (targetLang === currentLang) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+
+      if (link.dataset.detaiLocalePersistence !== "true") {
+        link.dataset.detaiLocalePersistence = "true";
+        link.addEventListener("click", () => {
+          persistPreferredLocale(targetLang);
+        });
+      }
     });
   }
 
-  document.addEventListener("DOMContentLoaded", updateLanguageLinks);
+  if (typeof document$ !== "undefined" && document$ && typeof document$.subscribe === "function") {
+    document$.subscribe(updateLanguageLinks);
+  } else if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updateLanguageLinks);
+  } else {
+    updateLanguageLinks();
+  }
 })();

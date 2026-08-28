@@ -1,7 +1,40 @@
 (function () {
   const STORAGE_KEY = "detai_docs_preferred_locale";
   const chooser = document.querySelector(".language-choice");
+  const backdrop = document.querySelector(".language-choice-backdrop");
+  const openButton = document.querySelector("[data-language-choice-open]");
+  const closeButton = document.querySelector("[data-language-choice-close]");
+  const entryLink = document.querySelector("[data-language-entry]");
   const links = Array.from(document.querySelectorAll(".language-choice__link"));
+  const supportedLocales = new Set(links.map((link) => link.dataset.locale));
+
+  function readPreferredLocale() {
+    try {
+      const locale = window.localStorage.getItem(STORAGE_KEY);
+      return supportedLocales.has(locale) ? locale : null;
+    } catch (_error) {
+      return null;
+    }
+  }
+
+  function showChooser() {
+    if (!chooser) {
+      return;
+    }
+
+    chooser.setAttribute("aria-hidden", "false");
+    document.documentElement.classList.add("detai-language-choice-active");
+  }
+
+  function hideChooser() {
+    if (!chooser) {
+      return;
+    }
+
+    chooser.setAttribute("aria-hidden", "true");
+    document.documentElement.classList.remove("detai-language-choice-active");
+    openButton?.focus({ preventScroll: true });
+  }
 
   links.forEach((link) => {
     link.addEventListener("click", () => {
@@ -13,32 +46,28 @@
     });
   });
 
-  if (!chooser || links.length === 0) {
+  if (!chooser || !backdrop || links.length === 0) {
     return;
   }
 
-  document.documentElement.classList.add("detai-language-choice-active");
-  links[0].focus({ preventScroll: true });
+  const preferredLocale = readPreferredLocale();
 
-  chooser.addEventListener("keydown", (event) => {
+  if (preferredLocale) {
+    if (entryLink) {
+      entryLink.href = `./${preferredLocale}/`;
+    }
+    hideChooser();
+  } else {
+    showChooser();
+  }
+
+  openButton?.addEventListener("click", showChooser);
+  closeButton?.addEventListener("click", hideChooser);
+
+  document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-      event.preventDefault();
+      hideChooser();
       return;
-    }
-
-    if (event.key !== "Tab") {
-      return;
-    }
-
-    const firstLink = links[0];
-    const lastLink = links[links.length - 1];
-
-    if (event.shiftKey && document.activeElement === firstLink) {
-      event.preventDefault();
-      lastLink.focus();
-    } else if (!event.shiftKey && document.activeElement === lastLink) {
-      event.preventDefault();
-      firstLink.focus();
     }
   });
 })();
