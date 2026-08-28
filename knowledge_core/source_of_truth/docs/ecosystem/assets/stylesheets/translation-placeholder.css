@@ -63,7 +63,7 @@
   border-radius: 999px;
 }
 
-.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram {
+.md-typeset .detai-telegram-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -75,29 +75,29 @@
   box-shadow: 0 0.45rem 1rem rgba(34, 158, 217, 0.24);
 }
 
-.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram:hover,
-.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram:focus-visible {
+.md-typeset .detai-telegram-button:hover,
+.md-typeset .detai-telegram-button:focus-visible {
   border-color: #1c8fc5;
   background: #1c8fc5;
   color: #fff;
   box-shadow: 0 0.55rem 1.2rem rgba(34, 158, 217, 0.34);
 }
 
-.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram-flag {
+.md-typeset .detai-telegram-button .translation-placeholder-page__telegram-flag {
   width: 1.25rem;
   height: auto;
   margin: 0;
   border-radius: 0.15rem;
 }
 
-.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram-mark {
+.md-typeset .detai-telegram-button .translation-placeholder-page__telegram-mark {
   width: 1.15rem;
   height: 1.15rem;
   margin: 0;
 }
 
 @media screen and (max-width: 30rem) {
-  .md-typeset .translation-placeholder-page .translation-placeholder-page__telegram {
+  .md-typeset .detai-telegram-button {
     width: 100%;
     min-width: 0;
     max-width: 100%;
@@ -106,13 +106,13 @@
     white-space: normal;
   }
 
-  .md-typeset .translation-placeholder-page .translation-placeholder-page__telegram span {
+  .md-typeset .detai-telegram-button span {
     min-width: 0;
     line-height: 1.25;
   }
 
-  .md-typeset .translation-placeholder-page .translation-placeholder-page__telegram-flag,
-  .md-typeset .translation-placeholder-page .translation-placeholder-page__telegram-mark {
+  .md-typeset .detai-telegram-button .translation-placeholder-page__telegram-flag,
+  .md-typeset .detai-telegram-button .translation-placeholder-page__telegram-mark {
     flex: 0 0 auto;
   }
 }

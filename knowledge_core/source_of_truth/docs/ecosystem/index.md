@@ -14,7 +14,7 @@ hide:
       Canonical documentation and knowledge architecture for the DET / DETai ecosystem.
     </p>
     <div class="global-entry-page__actions">
-      <a class="global-entry-page__primary" href="./en/">Enter documentation</a>
+      <a class="global-entry-page__primary" href="./en/" data-language-entry>Enter documentation</a>
       <button class="global-entry-page__language" type="button" data-language-choice-open>
         Change language
       </button>

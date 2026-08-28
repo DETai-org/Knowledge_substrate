@@ -1,48 +1,51 @@
-# **欢迎来到 DET 生态系统！** 🌍
-
-这里是 **DET**（Dialectical Existential Therapy）与 **DETai**（Platform DETai）生态系统的**规范知识库**，并托管在 **GitHub** 上！
-😎 在这里，前沿心理治疗方法与最先进的 **AI** 技术相融合。🚀
-
-🗣 **支持多语言**——英语、俄语、德语、芬兰语和中文——该生态系统面向全球开放，为各大洲的心理学工作者与来访者提供我们的方法与工具。🌍💡
-
-#### 为什么选择 GitHub？ 🤖
-
-我们选择 GitHub，因为它非常适合 **开放协作**、**团队共建** 与 **持续发展**！这是一个面向希望站在技术变革前沿、并积极参与新事物创造的人们的空间。💪
-
+---
+title: DETai Knowledge Substrate
+description: DETai 生态系统规范且版本化的知识库，涵盖架构、DET 方法、治理、产品、标准与工作流程。
+robots: index, follow
+structured_data: docs-home
+descriptive:
+  id: knowledge-substrate-zh-index
+  version: v4
+  status: active
+  date_ymd: 2026-08-28
 ---
 
-## **Knowledge substrate** 📚✨
+# 欢迎来到 DETai Knowledge Substrate
 
-**什么是 Knowledge_substrate？**
+**Knowledge Substrate 是 DETai 生态系统规范且版本化的知识库。** 它描述生态系统的使命、架构与治理，以及 DET 心理治疗方法、技术层、产品、标准和工作流程。
 
-**Knowledge_substrate** 不只是信息存储位置——它是一座**知识图书馆**，汇集了我们正在进行的一切工作！🚀 在这里，你可以了解我们的工作方式，并访问相关链接与代码仓库，其中一部分是公开开放的。对于任何希望理解 DET 生态如何演进、以及我们的方法如何落地的人来说，这里都是一个重要空间。🔥
+DETai 将独立的心理治疗方法、其制度化发展、自有技术层与协调一致的创业实践连接起来。这里不仅呈现单篇文档，也帮助读者理解人员、组织、产品、证据与执行之间的关系。
 
----
+## 从哪里开始
 
-## **导航与结构** 🧭
+1. [阅读指南](start/index.md)——进入知识库的三条主要路径。
+2. [知识地图](start/knowledge-map.md)——集中查看主要系统及其关系。
+3. [三方视角共识](architecture/three-perspective-consensus.md)——系统、人本与创业视角如何相互衔接。
+4. [架构规范](architecture/ecosystem-canon.md)——关于生态系统整体的稳定定义。
+5. [角色阅读路径](start/role-routes.md)——面向参与者、专业人员、开发者与合作伙伴的阅读路线。
+6. [工作环境](start/working-environment.md)——查找知识、任务、代码、数据与原始资料的位置。
 
-#### 便捷的导航菜单
-在左侧你会看到一个**便捷菜单**，可用于浏览整个知识库。你可以按从上到下的逻辑与结构顺序阅读，也可以直接点击你感兴趣的章节！内容已进行清晰组织，便于快速定位。📑
+## 这里保存什么
 
-#### 知识库搜索 🔍
-默认情况下，站点支持按**任意词语、短语和符号**进行搜索。只需使用**右上角搜索框**，即可快速找到所需表述。当你有明确问题时，这会非常高效！🏃‍♂️
+Knowledge Substrate 包含：
 
----
+- 架构规范、实体本体与权威来源地图；
+- 生态系统的理念、使命与价值观；
+- 标准与政策；
+- DET、制度层、Platform DETai 与 U.L.I. 的文档；
+- 产品、市场、法律、信任、证据、执行与团队系统之间的明确边界；
+- 与代码仓库、项目和公共服务的连接。
 
-### **语言可用性与翻译** 🌍
+本知识库不会取代任务系统、代码仓库、Corporate Vault 或运行时数据库。文档负责解释与规范，任务负责协调当前工作，代码负责实现决策，数据库负责提供实时数据。
 
-**多语言支持**
+## 导航、语言与搜索
 
-你可以在顶部菜单中切换到其他语言。目前**基础语言为俄语**，我们也在积极将整个知识库翻译为五种已确认语言（英语、德语、芬兰语、俄语和中文）。🌐
+主导航按照业务与知识系统组织，而不是按照文件类型组织。文档元数据用于说明功能、状态、版本与规范性。俄语是内容的规范语言；完成的译文会陆续发布，尚未完成的页面会明确标记为翻译预览。
 
----
+你可以使用页眉中的搜索框检索整个知识库。每个公共页面底部的 **Open in ChatGPT** 会携带当前页面的公开链接打开 ChatGPT，便于结合上下文讨论内容。
 
-### **与 ChatGPT 的互动** 🤖
+## 文档更新
 
-**在 ChatGPT 中打开页面**
+目前尚无中文 Telegram 频道。你可以关注 DETai 的英文频道，获取新文档、翻译进度和生态系统重要更新。
 
-在知识库每个页面底部都有一个 **"Open in ChatGPT"** 按钮，使用起来非常方便！
-
-点击后，你将进入 ChatGPT，并自动携带该页面的直达链接。由于页面是公开的，GPT 可以直接访问；同时提示词中也预置了说明，GPT 能立即解释页面内容。🔄
-
-现在你可以**一边阅读知识库，一边即时与 ChatGPT 讨论**，获得更完整的解释与问题支持，让交互更加轻松高效！🤝
+<a class="md-button detai-telegram-button" href="https://t.me/detai_en"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/gb.svg" alt="" aria-hidden="true"><span>关注英文 Telegram 频道</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>

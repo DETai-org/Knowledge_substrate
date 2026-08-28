@@ -10,9 +10,9 @@ classification:
   audiences: [public, team, agents]
 descriptive:
   id: knowledge-substrate-ru-index
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-08-05
+  date_ymd: 2026-08-28
 governance:
   canonicality: canonical
   visibility: public
@@ -20,12 +20,16 @@ governance:
   approver_role: ecosystem-architect
   review_date: 2026-09-05
 links:
-  external_links: []
+  external_links:
+    - https://t.me/detai_ru
   document_links:
     - schema: ecosystem
       link_type: routes
       linked_document_id: knowledge-system-index
 title: Knowledge Substrate DETai
+description: "Каноническая версионная база знаний экосистемы DETai: архитектура, метод DET, управление, продукты, стандарты и рабочие процессы."
+robots: index, follow
+structured_data: docs-home
 ---
 
 # Добро пожаловать в Knowledge Substrate DETai
@@ -62,3 +66,9 @@ Knowledge Substrate содержит:
 Верхнее меню ведёт по предметным системам, а не по типам файлов. Функция, статус, версия и каноничность задаются metadata самого документа. Русская версия является базовым содержательным контуром; другие языковые версии синхронизируются отдельными процессами.
 
 Внизу публичных страниц доступен переход «Open in ChatGPT», позволяющий открыть выбранный документ вместе с его ссылкой и обсудить содержание в контексте.
+
+## Новости документации
+
+Следите за русскоязычным Telegram-каналом DETai, чтобы узнавать о новых документах, переводах и важных обновлениях экосистемы.
+
+<a class="md-button detai-telegram-button" href="https://t.me/detai_ru"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/ru.svg" alt="" aria-hidden="true"><span>Подписаться в Telegram</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>

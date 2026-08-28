@@ -4,6 +4,7 @@
   const backdrop = document.querySelector(".language-choice-backdrop");
   const openButton = document.querySelector("[data-language-choice-open]");
   const closeButton = document.querySelector("[data-language-choice-close]");
+  const entryLink = document.querySelector("[data-language-entry]");
   const links = Array.from(document.querySelectorAll(".language-choice__link"));
   const supportedLocales = new Set(links.map((link) => link.dataset.locale));
 
@@ -49,7 +50,12 @@
     return;
   }
 
-  if (readPreferredLocale()) {
+  const preferredLocale = readPreferredLocale();
+
+  if (preferredLocale) {
+    if (entryLink) {
+      entryLink.href = `./${preferredLocale}/`;
+    }
     hideChooser();
   } else {
     showChooser();

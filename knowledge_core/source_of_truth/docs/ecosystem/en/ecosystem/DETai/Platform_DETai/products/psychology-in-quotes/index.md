@@ -31,6 +31,6 @@ This route is ready, while the full English edition of the document is still bei
 
     Be the first to know when DETai documentation is available in English. Follow our Telegram channel for release updates.
 
-    <a class="md-button translation-placeholder-page__telegram" href="https://t.me/detai_en"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/gb.svg" alt="" aria-hidden="true"><span>Subscribe on Telegram</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>
+    <a class="md-button detai-telegram-button translation-placeholder-page__telegram" href="https://t.me/detai_en"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/gb.svg" alt="" aria-hidden="true"><span>Subscribe on Telegram</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>
 
 </section>

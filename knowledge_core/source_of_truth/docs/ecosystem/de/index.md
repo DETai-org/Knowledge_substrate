@@ -1,48 +1,51 @@
-# **Willkommen im DET-Ökosystem!** 🌍
-
-Dies ist die **kanonische Wissensbasis** des Ökosystems **DET** (Dialectical Existential Therapy) und **DETai** (Platform DETai), und sie wird auf **GitHub** gehostet!
-😎 Hier werden fortschrittliche psychotherapeutische Methoden und modernste **KI**-Technologien zusammengeführt. 🚀
-
-🗣 **Mit mehreren Sprachen** — Englisch, Russisch, Deutsch, Finnisch und Chinesisch — ist das Ökosystem weltweit verfügbar und bietet offenen Zugang zu unseren Methoden und Werkzeugen für Psycholog:innen und Klient:innen auf allen Kontinenten! 🌍💡
-
-#### Warum GitHub? 🤖
-
-Wir haben GitHub gewählt, weil es ideal für **offene Zusammenarbeit**, **Teamarbeit** und **kontinuierliche Weiterentwicklung** ist! Es ist ein Raum für Menschen, die im Zentrum des technologischen Wandels bleiben und aktiv an etwas Neuem mitwirken möchten. 💪
-
+---
+title: DETai Knowledge Substrate
+description: "Die kanonische, versionierte Wissensbasis des DETai-Ökosystems: Architektur, DET-Methode, Governance, Produkte, Standards und Arbeitsprozesse."
+robots: index, follow
+structured_data: docs-home
+descriptive:
+  id: knowledge-substrate-de-index
+  version: v4
+  status: active
+  date_ymd: 2026-08-28
 ---
 
-## **Knowledge substrate** 📚✨
+# Willkommen im DETai Knowledge Substrate
 
-**Was ist Knowledge_substrate?**
+**Das Knowledge Substrate ist die kanonische, versionierte Wissensbasis des DETai-Ökosystems.** Es beschreibt die Mission, Architektur und Governance des Ökosystems ebenso wie die psychotherapeutische DET-Methode, die Technologieschicht, Produkte, Standards und Arbeitsprozesse.
 
-**Knowledge_substrate** ist nicht nur ein Ort zur Speicherung von Informationen — es ist eine **Wissensbibliothek**, in der wir alles sammeln, woran wir arbeiten! 🚀 Hier finden Sie Informationen darüber, wie wir arbeiten, sowie Links und Repositorien, von denen ein Teil öffentlich und offen ist. Das ist ein Raum für alle, die verstehen möchten, wie sich das DET-Ökosystem entwickelt und wie unsere Methoden angewendet werden. 🔥
+DETai verbindet eine eigenständige psychotherapeutische Methode, ihr institutionelles Leben, eine eigene Technologieschicht und eine abgestimmte unternehmerische Umsetzung. Die Wissensbasis macht nicht nur einzelne Dokumente verständlich, sondern auch die Beziehungen zwischen Menschen, Organisation, Produkten, Evidenz und Umsetzung.
 
----
+## Einstieg
 
-## **Navigation und Struktur** 🧭
+1. [Wegweiser](start/index.md) — drei Einstiegswege in die Wissensbasis.
+2. [Wissenslandkarte](start/knowledge-map.md) — die wichtigsten Systeme und Beziehungen auf einer Seite.
+3. [Konsens aus drei Perspektiven](architecture/three-perspective-consensus.md) — das Zusammenspiel der systemischen, humanistischen und unternehmerischen Perspektive.
+4. [Architekturkanon](architecture/ecosystem-canon.md) — beständige Definitionen des Ökosystems als Ganzes.
+5. [Rollenbasierte Wege](start/role-routes.md) — Lesepfade für Mitwirkende, Fachpersonen, Entwickler:innen und Partner:innen.
+6. [Arbeitsumgebung](start/working-environment.md) — wo Wissen, Aufgaben, Code, Daten und Originalquellen zu finden sind.
 
-#### Komfortables Navigationsmenü
-Links finden Sie ein **komfortables Menü** zur Navigation durch die gesamte Wissensbibliothek. Sie können die Inhalte von oben nach unten lesen und dabei der Logik und Struktur folgen oder direkt den Abschnitt öffnen, der Sie interessiert! Alles ist so organisiert, dass die Orientierung leichter fällt. 📑
+## Was hier gespeichert wird
 
-#### Suche in der Wissensbasis 🔍
-Standardmäßig unterstützt die Website die Suche nach **beliebigen Wörtern, Phrasen und Symbolen**. Nutzen Sie einfach das **Suchfeld oben rechts**, um schnell die gewünschte Formulierung in unserer Wissensbibliothek zu finden. Das ist superpraktisch, wenn Sie eine konkrete Anfrage haben! 🏃‍♂️
+Das Knowledge Substrate enthält:
 
----
+- den Architekturkanon, die Ontologie und die Karte der maßgeblichen Quellen;
+- Philosophie, Mission und Werte des Ökosystems;
+- Standards und Richtlinien;
+- Dokumentation zu DET, der institutionellen Ebene, Platform DETai und U.L.I.;
+- klare Grenzen zwischen Produkt-, Markt-, Rechts-, Vertrauens-, Evidenz-, Umsetzungs- und Teamsystemen;
+- Verbindungen zu Repositorien, Projekten und öffentlichen Angeboten.
 
-### **Sprachverfügbarkeit und Übersetzungen** 🌍
+Die Wissensbasis ersetzt weder das Aufgabensystem noch Code-Repositorien, den Corporate Vault oder Laufzeitdatenbanken. Dokumentation erklärt und normiert, Aufgaben koordinieren die aktuelle Arbeit, Code setzt Entscheidungen um und Datenbanken stellen aktuelle Daten bereit.
 
-**Mehrsprachigkeit**
+## Navigation, Sprachen und Suche
 
-Im oberen Menü können Sie zu anderen Sprachen wechseln. Derzeit ist **Russisch die Basissprache**, und wir arbeiten aktiv daran, die gesamte Wissensbasis in alle fünf bestätigten Sprachen zu übersetzen (Englisch, Deutsch, Finnisch, Russisch und Chinesisch). 🌐
+Die Hauptnavigation folgt fachlichen Systemen und nicht Dateitypen. Metadaten zeigen Funktion, Status, Version und Kanonizität eines Dokuments. Russisch ist die kanonische Inhaltssprache. Fertige Übersetzungen werden veröffentlicht, sobald sie vorliegen; unfertige Routen sind eindeutig als Übersetzungsvorschau gekennzeichnet.
 
----
+Über das Suchfeld in der Kopfzeile können Sie die gesamte Wissensbasis durchsuchen. Am Ende öffentlicher Seiten öffnet die Funktion **Open in ChatGPT** das ausgewählte Dokument zusammen mit seiner öffentlichen URL, damit Sie es im richtigen Kontext besprechen können.
 
-### **Interaktive Arbeit mit ChatGPT** 🤖
+## Aktualisierungen der Dokumentation
 
-**Seite in ChatGPT öffnen**
+Folgen Sie dem deutschsprachigen Telegram-Kanal von DETai, um über neue Dokumente, Übersetzungen und wichtige Aktualisierungen des Ökosystems informiert zu werden.
 
-Unten auf jeder Seite unserer Wissensbasis gibt es die Schaltfläche **"Open in ChatGPT"**. Das ist sehr praktisch!
-
-Wenn Sie darauf klicken, wird ChatGPT mit einem direkten Link auf diese Seite geöffnet. Da die Seite öffentlich ist, kann GPT darauf zugreifen, und im Prompt ist bereits eine Anweisung hinterlegt, damit GPT sofort erklären kann, worum es geht. 🔄
-
-Jetzt können Sie **unsere Wissensbibliothek lesen und sofort mit ChatGPT besprechen**, um ausführliche Erklärungen und Hilfe zu allen Fragen zu erhalten. Das macht die Interaktion noch einfacher und bequemer! 🤝
+<a class="md-button detai-telegram-button" href="https://t.me/detai_de"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/de.svg" alt="" aria-hidden="true"><span>Auf Telegram folgen</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>

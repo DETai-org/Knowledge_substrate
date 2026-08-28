@@ -19,7 +19,7 @@ plugins:
     hooks:
       on_files: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:generate_translation_placeholders
       on_page_markdown: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:convert_obsidian_wikilinks
-      on_page_context: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:set_translation_placeholder_canonical
+      on_page_context: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:set_page_semantics
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:

@@ -73,6 +73,23 @@ PLACEHOLDER_LOCALES = {
     },
 }
 
+HOME_LOCALES = ("ru", "en", "fi", "de", "zh")
+HOME_LANGUAGE_NAMES = {
+    "ru": "Русский",
+    "en": "English",
+    "fi": "Suomi",
+    "de": "Deutsch",
+    "zh": "中文",
+}
+DETAI_ORGANIZATION_ID = "https://detai-x.com/#organization"
+DETAI_ORGANIZATION_SAME_AS = [
+    "https://t.me/detai_ru",
+    "https://t.me/detai_en",
+    "https://t.me/detai_fi",
+    "https://t.me/detai_de",
+    "https://www.youtube.com/@Ecosystem-DET",
+    "https://github.com/DETai-org",
+]
 GENERATED_PLACEHOLDER_URLS: set[str] = set()
 SITEMAP_NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
 
@@ -144,6 +161,8 @@ description: {json.dumps(copy["lead"], ensure_ascii=False)}
 robots: noindex, follow
 translation_placeholder: true
 canonical_original: {original_url}
+search:
+  exclude: true
 descriptive:
   status: draft
 hide:
@@ -171,7 +190,7 @@ hide:
 
     {copy["info_body"]}
 
-    <a class="md-button translation-placeholder-page__telegram" href="{copy["telegram_url"]}"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/{copy["flag"]}.svg" alt="" aria-hidden="true"><span>{copy["telegram_button"]}</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>
+    <a class="md-button detai-telegram-button translation-placeholder-page__telegram" href="{copy["telegram_url"]}"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/{copy["flag"]}.svg" alt="" aria-hidden="true"><span>{copy["telegram_button"]}</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>
 
 </section>
 '''
@@ -247,18 +266,107 @@ def generate_translation_placeholders(files: Files, /, *, config) -> Files:
     return files
 
 
-def set_translation_placeholder_canonical(context: dict, /, *, page, config, nav) -> dict:
-    """Canonical заглушки указывает на русский оригинал, а не на noindex route."""
+def _home_locale(page_url: str) -> str | None:
+    normalized = page_url.strip("/")
+    return normalized if normalized in HOME_LOCALES else None
+
+
+def _home_structured_data(page, config, locale: str | None) -> dict:
+    """Строит минимальный связный граф документации и основной DETai Organization."""
+    page_url = urljoin(config.site_url, page.url)
+    docs_website_id = urljoin(config.site_url, "#website")
+    page_id = f"{page_url}#webpage"
+    title = page.meta.get("title", page.title)
+    description = page.meta.get("description", config.site_description or "")
+
+    organization = {
+        "@type": "Organization",
+        "@id": DETAI_ORGANIZATION_ID,
+        "name": "DETai",
+        "url": "https://detai-x.com/",
+        "logo": "https://detai-x.com/logo/logo.png",
+        "sameAs": DETAI_ORGANIZATION_SAME_AS,
+    }
+    website = {
+        "@type": "WebSite",
+        "@id": docs_website_id,
+        "name": "DETai Documentation",
+        "alternateName": "DETai Knowledge Substrate",
+        "url": config.site_url,
+        "publisher": {"@id": DETAI_ORGANIZATION_ID},
+        "about": {"@id": DETAI_ORGANIZATION_ID},
+        "inLanguage": list(HOME_LOCALES),
+    }
+    webpage = {
+        "@type": "CollectionPage" if locale else "WebPage",
+        "@id": page_id,
+        "url": page_url,
+        "name": title,
+        "description": description,
+        "isPartOf": {"@id": docs_website_id},
+        "publisher": {"@id": DETAI_ORGANIZATION_ID},
+        "about": [
+            {"@id": DETAI_ORGANIZATION_ID},
+            {"@id": "https://detai-x.com/#det"},
+            {"@id": "https://detai-x.com/#ai-augmented-psychotherapy"},
+        ],
+    }
+
+    graph = [organization, website, webpage]
+    if locale:
+        webpage["inLanguage"] = locale
+        if locale != "ru":
+            webpage["translationOfWork"] = {
+                "@id": f"{urljoin(config.site_url, 'ru/')}#webpage"
+            }
+    else:
+        language_list_id = f"{page_url}#language-options"
+        webpage["inLanguage"] = list(HOME_LOCALES)
+        webpage["mainEntity"] = {"@id": language_list_id}
+        graph.append(
+            {
+                "@type": "ItemList",
+                "@id": language_list_id,
+                "name": "Available DETai documentation languages",
+                "numberOfItems": len(HOME_LOCALES),
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": position,
+                        "name": HOME_LANGUAGE_NAMES[language],
+                        "url": urljoin(config.site_url, f"{language}/"),
+                    }
+                    for position, language in enumerate(HOME_LOCALES, start=1)
+                ],
+            }
+        )
+
+    return {"@context": "https://schema.org", "@graph": graph}
+
+
+def set_page_semantics(context: dict, /, *, page, config, nav) -> dict:
+    """Устанавливает canonical заглушек и семантику индексируемых home pages."""
     original = page.meta.get("canonical_original") if page.meta else None
     if page.meta and page.meta.get("translation_placeholder") and original:
         page.canonical_url = urljoin(config.site_url, original.lstrip("/"))
+
+    locale = _home_locale(page.url)
+    if page.url == "" or locale:
+        structured_data = _home_structured_data(page, config, locale)
+        context["detai_structured_data"] = json.dumps(
+            structured_data, ensure_ascii=False, separators=(",", ":")
+        ).replace("</", "<\\/")
+        context["detai_hreflang"] = [
+            {"lang": language, "url": urljoin(config.site_url, f"{language}/")}
+            for language in HOME_LOCALES
+        ] + [{"lang": "x-default", "url": config.site_url}]
     return context
 
 
 def remove_translation_placeholders_from_sitemap(*, config) -> None:
-    """Не публикует noindex placeholders в sitemap до появления перевода."""
+    """Фильтрует noindex routes и создаёт locale sitemaps для instant navigation."""
     sitemap_path = Path(config.site_dir) / "sitemap.xml"
-    if not sitemap_path.exists() or not GENERATED_PLACEHOLDER_URLS:
+    if not sitemap_path.exists():
         return
 
     ElementTree.register_namespace("", SITEMAP_NAMESPACE)
@@ -272,7 +380,26 @@ def remove_translation_placeholders_from_sitemap(*, config) -> None:
             root.remove(url_element)
 
     tree.write(sitemap_path, encoding="utf-8", xml_declaration=True)
-    with sitemap_path.open("rb") as source, gzip.open(
-        sitemap_path.with_suffix(".xml.gz"), "wb"
-    ) as destination:
+    _gzip_file(sitemap_path)
+
+    site_url = config.site_url.rstrip("/")
+    serialized_root = ElementTree.tostring(root, encoding="utf-8")
+    for locale in HOME_LOCALES:
+        locale_root = ElementTree.fromstring(serialized_root)
+        locale_prefix = f"{site_url}/{locale}/"
+        for url_element in list(locale_root):
+            location = url_element.find(location_tag)
+            if location is None or not (location.text or "").startswith(locale_prefix):
+                locale_root.remove(url_element)
+
+        locale_sitemap = Path(config.site_dir) / locale / "sitemap.xml"
+        locale_sitemap.parent.mkdir(parents=True, exist_ok=True)
+        ElementTree.ElementTree(locale_root).write(
+            locale_sitemap, encoding="utf-8", xml_declaration=True
+        )
+        _gzip_file(locale_sitemap)
+
+
+def _gzip_file(path: Path) -> None:
+    with path.open("rb") as source, gzip.open(path.with_suffix(".xml.gz"), "wb") as destination:
         destination.write(source.read())

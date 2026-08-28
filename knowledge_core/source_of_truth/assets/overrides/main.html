@@ -5,6 +5,12 @@
   {% if page and page.meta and page.meta.robots %}
     <meta name="robots" content="{{ page.meta.robots }}">
   {% endif %}
+  {% for alternate in detai_hreflang | default([]) %}
+    <link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.url }}">
+  {% endfor %}
+  {% if detai_structured_data %}
+    <script type="application/ld+json">{{ detai_structured_data | safe }}</script>
+  {% endif %}
 {% endblock %}
 
 {% block content %}

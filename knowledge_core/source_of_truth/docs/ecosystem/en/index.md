@@ -1,48 +1,51 @@
-# **Welcome to the DET Ecosystem!** 🌍
-
-This is the **canonical knowledge base** for the **DET** (Dialectical Existential Therapy) and **DETai** (DETai Platform) ecosystem, and it is hosted on **GitHub**!
-😎 This is the place where advanced psychotherapy methods and cutting-edge **AI** technologies are brought together. 🚀
-
-🗣 **With multiple languages** — English, Russian, German, Finnish, and Chinese — the ecosystem is available worldwide, ensuring open access to our methods and tools for psychologists and clients on every continent! 🌍💡
-
-#### Why GitHub? 🤖
-
-We chose GitHub because it is ideal for **open collaboration**, **teamwork**, and **continuous development**! It is a space for people who want to stay at the center of technological change and actively participate in creating something new. 💪
-
+---
+title: DETai Knowledge Substrate
+description: "The canonical, versioned knowledge base of the DETai ecosystem: its architecture, the DET method, governance, products, standards, and operating processes."
+robots: index, follow
+structured_data: docs-home
+descriptive:
+  id: knowledge-substrate-en-index
+  version: v4
+  status: active
+  date_ymd: 2026-08-28
 ---
 
-## **Knowledge substrate** 📚✨
+# Welcome to the DETai Knowledge Substrate
 
-**What is Knowledge_substrate?**
+**The Knowledge Substrate is the canonical, versioned knowledge base of the DETai ecosystem.** It describes the ecosystem’s mission, architecture, and governance, as well as the DET psychotherapeutic method, the technology layer, products, standards, and operating processes.
 
-**Knowledge_substrate** is not just a place to store information — it is a **knowledge library** where we gather everything we work on! 🚀 Here you will find information about how we operate, as well as links and repositories, some of which are public and open. This is a space for everyone who wants to understand how the DET ecosystem evolves and how our methods are applied. 🔥
+DETai connects an independent psychotherapeutic method, its institutional life, its own technology layer, and coordinated entrepreneurial execution. This knowledge base helps readers understand not only individual documents but also the relationships between people, the organization, products, evidence, and implementation.
 
----
+## Where to start
 
-## **Navigation and Structure** 🧭
+1. [Guide](start/index.md) — three entry routes into the knowledge base.
+2. [Knowledge map](start/knowledge-map.md) — the main systems and relationships in one place.
+3. [Three-perspective consensus](architecture/three-perspective-consensus.md) — how the systemic, humanistic, and entrepreneurial perspectives fit together.
+4. [Architecture canon](architecture/ecosystem-canon.md) — stable definitions of the ecosystem as a whole.
+5. [Role-based routes](start/role-routes.md) — reading paths for participants, practitioners, developers, and partners.
+6. [Working environment](start/working-environment.md) — where to find knowledge, tasks, code, data, and source materials.
 
-#### Convenient navigation menu
-On the left, you will find a **convenient menu** to navigate through the entire knowledge library. You can read information from top to bottom following the logic and structure, or click into any section that interests you! Everything is organized to make orientation easier. 📑
+## What is stored here
 
-#### Knowledge base search 🔍
-By default, the site supports searching by **any words, phrases, and symbols**. Just use the **search field in the top-right corner** to quickly find the wording you need in our knowledge library. It is super convenient when you have a specific request! 🏃‍♂️
+The Knowledge Substrate contains:
 
----
+- the architecture canon, ontology, and source-of-truth map;
+- the ecosystem’s philosophy, mission, and values;
+- standards and policies;
+- documentation for DET, the institutional layer, Platform DETai, and U.L.I.;
+- explicit boundaries between product, market, legal, trust, evidence, execution, and team systems;
+- links to repositories, projects, and public surfaces.
 
-### **Language availability and translations** 🌍
+It does not replace the task system, code repositories, the Corporate Vault, or runtime databases. Documentation explains and governs; tasks coordinate current work; code implements decisions; databases serve live data.
 
-**Multilingual support**
+## Navigation, languages, and search
 
-In the top menu, you can switch to other languages. At the moment, the **base language is Russian**, and we are actively translating the entire knowledge base into all five approved languages (English, German, Finnish, Russian, and Chinese). 🌐
+The main navigation is organized around subject systems rather than file types. Document metadata communicates function, status, version, and canonicality. Russian is the canonical content language; real translations are published as they become available, while unfinished routes are clearly marked as translation previews.
 
----
+Use the search field in the header to search the complete knowledge base. At the bottom of public pages, **Open in ChatGPT** opens the selected document with its public URL so that you can discuss it in context.
 
-### **Interactive work with ChatGPT** 🤖
+## Documentation updates
 
-**Open page in ChatGPT**
+Follow the English-language DETai Telegram channel for new documents, translations, and important ecosystem updates.
 
-At the bottom of every page in our knowledge base, there is an **"Open in ChatGPT"** button. It is very convenient!
-
-If you click it, you will open ChatGPT with a direct link to this page. Since the page is public, GPT can access it, and the prompt includes a preset instruction so GPT can immediately explain what is what. 🔄
-
-Now you can **read our knowledge library and discuss it with ChatGPT right away**, getting detailed explanations and help with any questions. This makes interaction even easier and more convenient! 🤝
+<a class="md-button detai-telegram-button" href="https://t.me/detai_en"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/gb.svg" alt="" aria-hidden="true"><span>Subscribe on Telegram</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>
