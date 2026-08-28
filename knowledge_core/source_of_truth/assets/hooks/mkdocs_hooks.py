@@ -171,7 +171,7 @@ hide:
 
     {copy["info_body"]}
 
-    <a class="md-button translation-placeholder-page__telegram" href="{copy["telegram_url"]}"><img src="/assets/images/flags/{copy["flag"]}.svg" alt="" aria-hidden="true">{copy["telegram_button"]}</a>
+    <a class="md-button translation-placeholder-page__telegram" href="{copy["telegram_url"]}"><img class="translation-placeholder-page__telegram-flag" src="/assets/images/flags/{copy["flag"]}.svg" alt="" aria-hidden="true"><span>{copy["telegram_button"]}</span><img class="translation-placeholder-page__telegram-mark" src="/assets/images/telegram-mark.svg" alt="" aria-hidden="true"></a>
 
 </section>
 '''

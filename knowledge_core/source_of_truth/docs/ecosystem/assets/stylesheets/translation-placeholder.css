@@ -67,12 +67,31 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  min-width: 13rem;
+  border-color: #229ed9;
+  background: linear-gradient(180deg, #2aabee 0%, #229ed9 100%);
+  color: #fff;
+  box-shadow: 0 0.45rem 1rem rgba(34, 158, 217, 0.24);
 }
 
-.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram img {
+.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram:hover,
+.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram:focus-visible {
+  border-color: #1c8fc5;
+  background: #1c8fc5;
+  color: #fff;
+  box-shadow: 0 0.55rem 1.2rem rgba(34, 158, 217, 0.34);
+}
+
+.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram-flag {
   width: 1.25rem;
   height: auto;
   margin: 0;
   border-radius: 0.15rem;
+}
+
+.md-typeset .translation-placeholder-page .translation-placeholder-page__telegram-mark {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin: 0;
 }
