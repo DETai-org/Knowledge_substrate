@@ -7,9 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: infrastructure-home-lab-architecture
-  version: v4
+  version: v5
   status: active
   date_ymd: 2026-08-20
+  date_update: 2026-09-07
 governance:
   canonicality: canonical
   visibility: public
@@ -82,6 +83,39 @@ Psi Gateway и DETai Nexus различаются не только назван
 После фиксации Home Ψ Lab v1.0 эти контуры имеют отдельные циклы развития:
 общая лаборатория отвечает за физическую основу и Proxmox, Psi Gateway — за
 сеть и защищённую связность, DETai Nexus — за вычислительную и агентную среду.
+
+## Gateway как provider, Nexus как environment
+
+Разделение Gateway и Nexus становится ещё яснее через
+[provider–consumer модель Infrastructure](../Infrastructure_Principles.md#5-принцип-infrastructure-capabilities-и-стабильных-контрактов).
+
+Psi Gateway может предоставлять **Network capability** другим runtime-компонентам:
+regional egress, private network endpoints, routing, network health, tunnels и
+другие сетевые возможности. Consumer зависит от стабильного network contract,
+а не от конкретной внутренней реализации Gateway.
+
+DETai Nexus при этом остаётся execution environment. Если Telegram-facing
+компонент работает на Nexus и использует сетевую capability Gateway, это не
+создаёт цепочку ownership `component → Nexus → Gateway`.
+
+```mermaid
+flowchart LR
+    consumer["Consumer @ DETai Nexus"]
+    contract["Network capability contract"]
+    gateway["Psi Gateway"]
+
+    consumer --> contract --> gateway
+```
+
+Nexus отвечает за размещение и ресурсы consumer, но не становится обязательным
+логическим middleware только потому, что процесс запущен внутри него. При
+переносе consumer на другую execution environment network contract может
+сохраниться без переноса чужой ответственности.
+
+Network provider также не должен знать бизнес-контекст consumer. Например,
+Gateway может оперировать logical network profile, его health и routing state,
+но ему не требуется знать конкретный Telegram account, публикацию Storytelling
+или другую предметную сущность.
 
 ## DETai Nexus как вычислительная среда
 
