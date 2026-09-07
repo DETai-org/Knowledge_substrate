@@ -7,10 +7,10 @@ classification:
   function: index
 descriptive:
   id: infrastructure-index
-  version: v4
+  version: v5
   status: active
   date_ymd: 2026-03-25
-  date_update: 2026-08-20
+  date_update: 2026-09-07
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -80,8 +80,43 @@ flowchart TB
 и общая эксплуатационная граница раскрыты в разделе
 [«Среды исполнения»](execution-environments/index.md).
 
+## Capabilities как связи между владельцами
+
+Инфраструктурные системы и среды исполнения остаются двумя классами объектов,
+но этого недостаточно, чтобы описать зависимости между ними. Для этого
+используется понятие **Infrastructure Capability**: стабильная техническая
+возможность, которую provider предоставляет consumer через контракт.
+
+Capability не является третьим типом машины или новой организационной
+иерархией. Это способ описать зависимость так, чтобы consumer зависел от смысла
+и интерфейса возможности, а не от конкретного host, proxy stack или другой
+сменяемой реализации.
+
+Например, Psi Gateway может предоставлять reusable Network capability, которую
+используют Telegram-facing runtime и другие компоненты. То, что consumer сегодня
+размещён на DETai Nexus, не делает Nexus обязательным логическим посредником и
+не передаёт ему ownership consumer-логики.
+
+Подробно provider–consumer pattern, logical Network Profile, разделение policy
+и роль operational repository описаны в
+[«Принципах инфраструктуры»](Infrastructure_Principles.md#5-принцип-infrastructure-capabilities-и-стабильных-контрактов).
+
+## Канон и operational source of truth
+
+Эта база знаний хранит устойчивую концептуальную модель Infrastructure.
+Отдельный `DETai-org/Infrastructure` repository является version-controlled
+**operational source of truth** инфраструктурного домена: в нём могут храниться
+reviewable operational-карты, инвентаризация, scripts, эксплуатационная
+документация и подходящие для Git deployment/configuration assets.
+
+Сам факт существования этого repository не создаёт четвёртую Infrastructure
+System. Repository и Linux machine — разные объекты, так же как repository и
+runtime system — не синонимы.
+
 ## Где проходит граница
 
 Эта база знаний объясняет устойчивую структуру и связи понятным языком.
 Конкретные адреса, регионы, провайдеры, пути, сервисы, конфигурации и текущее
 размещение репозиториев относятся к операционным источникам Infrastructure.
+Текущая внутренняя структура `DETai-org/Infrastructure` также является
+изменяемой implementation detail и не канонизируется как вечное дерево.
