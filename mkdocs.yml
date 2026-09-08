@@ -199,6 +199,8 @@ nav:
       - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
       - Telegram-контур:
         - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
+        - Как устроен Account Manager: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md
+        - Зачем нужны управляемые аккаунты: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md
         - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
     - Технологическая основа:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md

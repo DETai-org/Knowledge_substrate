@@ -7,13 +7,15 @@ classification:
   function: index
 descriptive:
   id: detai-platform-detai-e2-brand-telegram-index
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-09-08
 links:
   external_links:
     - type: MkDocs_ru
       url: https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/
+    - type: MkDocs_ru
+      url: https://docs.detai-x.com/ru/governance/brand-and-communications/
   document_links:
     - schema: ecosystem
       link_type: explains
@@ -21,48 +23,48 @@ links:
     - schema: ecosystem
       link_type: explains
       linked_document_id: detai-platform-telegram-account-manager-philosophy
+    - schema: ecosystem
+      link_type: relates-to
+      linked_document_id: brand-and-communications-domain
 title: Telegram
 ---
 
 # Telegram
 
-**Telegram** — внутренний технологический контур DETai для управляемой работы с авторизованными Telegram-аккаунтами и Telegram-workflow. Репозиторий исторически объединял отдельные инструменты — сессии, реакции, комментарии, личные сообщения и другие операции; текущая архитектура доводит этот замысел до связного операционного слоя для команды.
+**Telegram** — внутренний технологический контур DETai для работы с Telegram-аккаунтами и Telegram-workflow. Репозиторий исторически объединяет инструменты авторизации и управления аккаунтами с прикладными сценариями: реакциями, комментариями, личными сообщениями, каналами и другими операциями.
 
-Ключевая идея проста: **авторизованный аккаунт и его сессия — это ресурс**. Реакция, публикация, комментарий, модерация, ручная настройка профиля или другой workflow — это действия, которые используют этот ресурс, а не определяют его архитектуру.
+Сегодня внутри контура особенно важно различать две части.
 
-```text
-Authorized Telegram accounts
-          ↓
-     Account Registry
-          ↓
-     Session Runtime
-          ↓
- ┌────────┼─────────┬───────────┐
- ↓        ↓         ↓           ↓
-Publish  Reaction  Comment   Moderation / DM / other workflows
-```
+| Контур | За что отвечает |
+|---|---|
+| **Account Manager** | жизненный цикл managed accounts: добавление, регистрация, automation session, Network Profile, Visual Profile, readiness и командный интерфейс |
+| **UserControl** | прикладные workflow над уже подготовленными аккаунтами: comments, reactions, personal messages, channel operations и другие сценарии |
 
-## Два действующих контура
+## Account Manager
 
-### Account Manager
+Account Manager отвечает на практические вопросы: какие managed accounts существуют, к какому командному профилю относятся, какая automation session является канонической, какой Network Profile закреплён и доступен ли Visual Profile.
 
-**Account Manager** отвечает за жизненный цикл managed accounts: добавление существующего Telegram-аккаунта, регистрацию нового аккаунта, каноническую automation session, закреплённый Network Profile, Visual Profile и понятный интерфейс управления через внутреннего Telegram-бота.
+Связанные документы:
 
-Это слой, который отвечает на вопросы: **какие аккаунты есть у команды, кому они принадлежат, где и через какое сетевое подключение работают, какие сессии созданы и готовы ли они к использованию**.
+- [Как устроен Account Manager](account-manager.md) — объектная модель, жизненный цикл и архитектурные границы.
+- [Зачем нужны управляемые аккаунты](account-manager-philosophy.md) — философия разрешённого ресурса, управления вниманием и роли такого механизма на ранней стадии.
 
-Подробнее:
+## UserControl
 
-- [Account Manager — как устроена система](account-manager.md) 🔍
-- [Account Manager — зачем мы строим её именно так](account-manager-philosophy.md) 🌿
-
-### UserControl
-
-**UserControl** — контур прикладных Telegram-workflow, которые используют уже авторизованные аккаунты и сессии как ресурс. В нём исторически возникли comment chains, like/repost flows, personal messages, channel operations и другие инструменты. Часть этих возможностей постепенно переносится из набора отдельных скриптов в управляемые действия Account Manager и связанных сервисов.
+**UserControl** — контур конкретных Telegram-workflow, использующих уже подготовленные аккаунты и сессии. Здесь исторически развивались comment chains, like/repost flows, personal messages, channel operations и другие инструменты.
 
 - [UserControl](UserControl/index.md)
 
+## Связь с E2-Brand и Brand & Communications
+
+Telegram находится внутри E2-Brand как **техническая коммуникационная поверхность и исполнительный контур**, но сам по себе не создаёт бренд и не является владельцем репутации DETai.
+
+Бренд возникает из смысла, качества, повторяемого опыта, доверия и согласованной публичной коммуникации. Ответственность за эту более широкую рамку описана в домене [Brand & Communications](https://docs.detai-x.com/ru/governance/brand-and-communications/). Telegram предоставляет ему одну из площадок и набор технических возможностей, но не подменяет бренд-стратегию.
+
 ## Граница проекта
 
-Telegram-контур владеет Telegram-специфичной логикой аккаунтов, сессий и действий. Сетевую инфраструктуру и фактические egress endpoint предоставляет Infrastructure через Network Provider contract; Telegram выбирает capacity, priority и sticky assignment для своих managed accounts. Другие продукты DETai могут использовать Telegram как исполнительную capability, не становясь владельцами Telegram-сессий или сетевой инфраструктуры.
+Telegram владеет Telegram-specific логикой managed accounts, sessions и действий. Сетевую инфраструктуру и фактические egress endpoint предоставляет Infrastructure через Network Provider contract; Telegram хранит только свою capacity/priority policy и sticky assignment.
+
+Другие продукты DETai могут использовать Telegram как исполнительную capability, не становясь владельцами Telegram-сессий, Desktop profiles или сетевой инфраструктуры.
 
 **Проект Telegram** функционирует как **проект второго эшелона** в рамках экосистемы DET/DETai.
