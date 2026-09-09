@@ -7,9 +7,9 @@ classification:
   function: index
 descriptive:
   id: detai-platform-detai-e2-brand-telegram-index
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-09-08
+  date_ymd: 2026-09-09
 links:
   external_links:
     - type: MkDocs_ru
@@ -54,6 +54,14 @@ Account Manager отвечает на практические вопросы: �
 **UserControl** — контур конкретных Telegram-workflow, использующих уже подготовленные аккаунты и сессии. Здесь исторически развивались comment chains, like/repost flows, personal messages, channel operations и другие инструменты.
 
 - [UserControl](UserControl/index.md)
+
+## DETai Media Library { #detai-media-library }
+
+**DETai Media Library** — закрытая Telegram-native медиатека экосистемы: единый источник переиспользуемых изображений, GIF/анимаций, стикеров и других media assets для managed accounts и Telegram-workflow DETai.
+
+Для управляемого аккаунта доступ к медиатеке может входить в базовый Telegram-контур вместе с публичными каналами DETai. Это не ещё один канал, за лентой которого нужно следить: медиатека нужна, чтобы один и тот же материал можно было сохранить один раз и затем использовать повторно в комментариях, ботах и других Telegram-сценариях.
+
+Для интеграций действует явная модель доступа: Account Manager управляет доступом к закрытой медиатеке, а конкретный DETai-бот или сервис подключается к ней отдельно и получает только необходимые права. Telegram `file_id` привязан к конкретному боту и не считается универсальным идентификатором media; устойчивой сущностью остаётся сам asset и его семантическая идентичность, а нужную Telegram-ссылку или идентификатор consumer получает в собственном контексте.
 
 ## Связь с E2-Brand и Brand & Communications
 
