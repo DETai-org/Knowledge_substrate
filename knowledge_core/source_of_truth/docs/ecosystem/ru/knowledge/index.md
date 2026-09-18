@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, agents]
 descriptive:
   id: knowledge-system-index
-  version: v4
+  version: v5
   status: active
   date_ymd: 2026-08-05
-  date_update: 2026-08-10
+  date_update: 2026-09-19
 governance:
   canonicality: canonical
   visibility: public
@@ -35,6 +35,9 @@ links:
     - schema: ecosystem
       link_type: contains
       linked_document_id: detai-object-status-model
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: knowledge-publication-relations-sync
 title: Система знаний и Knowledge Substrate
 ---
 
@@ -70,6 +73,7 @@ title: Система знаний и Knowledge Substrate
 - [Навигация для людей и агентов](agent-navigation.md)
 - [Миграция информационной архитектуры](navigation-migration.md)
 - [Публикация и доставка знаний](knowledge-delivery.md)
+- [Связи публикаций с Knowledge Substrate](publication-relations-sync.md)
 - [Действующая политика metadata](../ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md)
 - [Функции документов](../ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md)
 - [Документация как исполняемый интерфейс](../ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md)

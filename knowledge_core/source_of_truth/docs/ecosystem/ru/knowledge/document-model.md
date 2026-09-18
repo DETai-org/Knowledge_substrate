@@ -10,9 +10,10 @@ classification:
   audiences: [team, editors, developers, agents]
 descriptive:
   id: knowledge-document-model
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-08-05
+  date_update: 2026-09-19
 governance:
   canonicality: canonical
   visibility: public
@@ -67,6 +68,27 @@ title: Модель документа и видимая функция
 - `historical` — сохранённый контекст, не выражающий текущую позицию.
 
 `status: active` не означает автоматически `canonicality: canonical`.
+
+## Межкорпусные document relations
+
+`links.document_links` может связывать Knowledge Substrate document не только с другим `schema: ecosystem` document, но и с устойчивым first-party объектом другого owning corpus.
+
+В таком relation:
+
+- `schema` определяет namespace / resolver объекта;
+- `link_type` выражает смысл связи;
+- `linked_document_id` хранит stable identity, а не locale URL.
+
+Для опубликованного Site post используется:
+
+```text
+schema: site-publication
+linked_document_id: site:<detai|personal>:id:<postId>
+```
+
+Эта identity разрешается через owning Site blog index. Она не делает публикацию частью Knowledge Substrate и не требует копировать её Markdown сюда.
+
+Автоматическая projection publication-originated relations описана в [«Связи публикаций с Knowledge Substrate»](publication-relations-sync.md).
 
 ## Обязательное поведение при изменении
 
