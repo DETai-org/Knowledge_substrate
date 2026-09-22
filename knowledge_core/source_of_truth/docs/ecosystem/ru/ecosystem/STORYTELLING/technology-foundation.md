@@ -20,48 +20,30 @@ title: Как Storytelling использует технологическую �
 
 # Как Storytelling использует технологическую основу
 
-[Storytelling](index.md) владеет предметной логикой публикационного процесса, а общие технические системы предоставляют ему отдельные replaceable capabilities. Наличие интеграции не переносит ownership публикации в инфраструктуру.
+[Storytelling](index.md) отвечает за сам публикационный процесс: как из исходного материала получается согласованная публикация и какие версии этой публикации нужны для разных площадок. Другие технические системы DETai помогают выполнить отдельные части этой работы, но не определяют содержание и редакционные решения Storytelling.
 
 ## Intelligence Runtime
 
-Storytelling определяет структуру материала, редакционную последовательность, правила enrichment и локализации, human review, Representation и delivery intent.
+Когда Storytelling использует AI для обогащения текста, перевода или другой обработки материала, он задаёт цель и правила результата. [intelligence-runtime](../Infrastructure/intelligence-runtime/index.md) выполняет техническую работу с моделями: запускает нужные шаги, проверяет формат ответа и при необходимости повторяет неудачную попытку.
 
-[intelligence-runtime](../Infrastructure/intelligence-runtime/index.md) определяет, как технически выполнить LLM-шаг: выбрать модель, проверить формат, выполнить repair/retry и вернуть trace.
-
-```text
-Storytelling rules + source
-→ Intelligence Runtime execution
-→ proposal + trace
-→ Storytelling human review
-→ approved content version
-```
-
-Модель или runtime не становятся source of truth редакционного смысла.
+Проще говоря, **Storytelling определяет, что нужно получить, а Intelligence Runtime помогает технически получить этот результат от моделей**. Финальное редакционное решение и подтверждение материала остаются внутри процесса Storytelling.
 
 ## Sites
 
-Storytelling передаёт Site Representation и утверждённый destination intent. Проект `sites` владеет web-runtime: маршрутами, HTML, SEO, Open Graph, structured data и deployment. Storytelling не должен знать внутреннее устройство Next.js, а Sites не должен присваивать себе enrichment, локализацию или publication approval.
+После того как web-версия публикации подготовлена и согласована, Storytelling передаёт её проекту сайта. Дальше `sites` отвечает уже за то, чтобы материал стал web-страницей и корректно работал на сайте.
 
-## Telegram execution
+Подробно граница между подготовкой публикации и работой самого сайта описана в разделе [«Связь со Storytelling и Brand & Communications»](../DETai/Platform_DETai/E2-Brand/sites/index.md#связь-со-storytelling-и-brand-communications). Здесь важно только разделение ответственности: Storytelling готовит публикацию, а `sites` публикует её в web-среде.
 
-Telegram Representation и Telegram execution разделены. Storytelling владеет target, immutable artifact, approval, idempotency identity, delivery intent и выбранной logical execution identity как operator preference.
+## Telegram
 
-Проект [Telegram](../DETai/Platform_DETai/E2-Brand/Telegram/index.md) владеет managed accounts, authorization и sessions, Premium state, network profiles, Telegram API clients и техническим transport resolution.
+Для Telegram действует такое же разделение. Storytelling определяет содержание, внешний вид сообщения и подтверждённый вариант публикации. [Проект Telegram](../DETai/Platform_DETai/E2-Brand/Telegram/index.md) предоставляет техническую возможность выполнить отправку через подходящего бота или пользовательский аккаунт.
 
-Для каналов DETai Standard и Rich без Typography исполняются через Bot API, а Typography требует user execution. Storytelling не получает session-файлы, authorization key, телефон, 2FA или network credentials.
+Storytelling может выбрать, какой доступный аккаунт использовать, если конкретное оформление требует отправки от пользователя. Но авторизация, сессии, Premium-статус и другие технические данные аккаунтов остаются внутри проекта Telegram. Благодаря этому редакционный процесс не зависит от того, какой именно Telegram-клиент или аккаунт используется для отправки.
 
-```text
-Storytelling
-→ exact target + immutable artifact + execution requirements
-→ Telegram Service
-→ identity + transport OR capability conflict
-→ Telegram API
-```
+## Nexus и среда исполнения
 
-Это позволяет заменить Telethon или конкретный managed account без изменения Publication domain и Telegram Representation.
+[DETai Nexus](../Infrastructure/home-lab/index.md#detai-nexus-как-среда-исполнения) — одна из сред, где могут работать технические компоненты Storytelling и связанных систем. Проще говоря, это место, где часть программ может быть запущена в реальной эксплуатации.
 
-## Nexus и runtime
+При этом Nexus не определяет правила Storytelling и не становится владельцем публикационного процесса. Если компонент позже будет перенесён на другую машину или сервер, смысл и логика Storytelling должны остаться теми же.
 
-Nexus является production execution environment, а не владельцем Storytelling. Runtime-размещение и deployment не меняют ownership предметной логики.
-
-Главный принцип: **Storytelling описывает, что должно быть создано и утверждено; инфраструктурные системы исполняют отдельные технические capabilities за явными границами.**
+Главный принцип простой: **Storytelling определяет содержание и ход публикационной работы, а общая инфраструктура помогает технически выполнить отдельные шаги.**
