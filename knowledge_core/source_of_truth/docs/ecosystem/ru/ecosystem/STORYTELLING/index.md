@@ -10,16 +10,16 @@ classification:
   audiences: [team, brand, authors, developers, agents]
 descriptive:
   id: storytelling-index
-  version: v4
+  version: v5
   status: active
   date_ymd: 2026-03-25
-  date_update: 2026-08-20
+  date_update: 2026-09-23
 governance:
   canonicality: canonical
   visibility: public
   owner_role: brand-communications-owner
   approver_role: founder
-  review_date: 2026-09-09
+  review_date: 2026-10-23
 object_state:
   architecture_status: canonical
   implementation_status: operational
@@ -27,10 +27,10 @@ object_state:
   visibility_status: public
 links:
   external_links:
-    - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/ecosystem/STORYTELLING/"
-    - type: "GitHub"
-      url: "https://github.com/DETai-org/Storytelling"
+    - type: MkDocs_ru
+      url: https://docs.detai-x.com/ru/ecosystem/STORYTELLING/
+    - type: GitHub
+      url: https://github.com/DETai-org/Storytelling
   document_links:
     - schema: ecosystem
       link_type: part-of
@@ -41,86 +41,111 @@ links:
     - schema: ecosystem
       link_type: interfaces-with
       linked_document_id: team-os-contribution-ledger
-    - schema: ecosystem
-      link_type: delivered-by
-      linked_document_id: detai-platform-detai-index
 title: Storytelling — Publication Core
 ---
 
 # Storytelling — Publication Core
 
-**Storytelling — самостоятельный редакционно-технологический проект и Publication Core DETai с [собственным репозиторием](https://github.com/DETai-org/Storytelling). Он принимает подготовленные материалы, проводит их через обогащение и review, собирает версионированные публикационные пакеты и доставляет утверждённый результат в выбранные публичные каналы.**
+**Storytelling — самостоятельный редакционно-технологический проект и Publication Core DETai с [собственным репозиторием](https://github.com/DETai-org/Storytelling). Он владеет процессом создания, review, версионирования и доставки публикаций, но не является архивом опубликованного корпуса.**
 
-Storytelling относится к направлению [«Бренд и внешние коммуникации»](../DETai/Platform_DETai/brand-and-external-communications/index.md) и является его внутренней производственной системой. Он не является публичной поверхностью или самостоятельным пользовательским продуктом: система может участвовать в создании продукта, публикации или другого результата, но пользователь получает этот результат через сайт, Telegram или другую площадку.
+Storytelling относится к направлению [«Бренд и внешние коммуникации»](../DETai/Platform_DETai/brand-and-external-communications/index.md) и является его внутренней производственной системой. Пользователь получает результат через сайт, Telegram или другую публичную площадку, а не через сам Publication Core.
 
-Организационно Storytelling остаётся самостоятельным E2-проектом с собственным репозиторием, версиями и циклом развития. Проект относится к операционному домену [Brand & Communications](../../governance/brand-and-communications.md): домен определяет аудитории, редакционные рамки и согласованность, а Storytelling воплощает публикационный процесс в повторяемой рабочей и технической системе.
-
-## Редакционная среда, Publication Core и каналы
+## Место в публикационном процессе
 
 | Уровень | Роль |
 |---|---|
-| **Редакционная рабочая среда** | Идея, черновик, обсуждение, автор, назначение и подготовка материала; сейчас Storytelling принимает материалы из папки ClickUp [STORYTELLING (TimeOS) для текстов](https://app.clickup.com/90152202658/v/f/901515038276/901510140866), а в дальнейшем этот контур может стать частью TimeOS / [Team OS](../../governance/team-os.md) |
-| **Storytelling как Publication Core** | Репозиторий, оркестрация, интеграции, обогащение, локализация, review, версионирование и сборка публикационного пакета |
-| **Продуктовый результат проекта** | Пост, серия постов, публикационный пакет, Markdown, metadata и media assets |
-| **Площадка публикации** | Блог основного или персонального сайта, Telegram, VK, а в будущем YouTube, Habr или другой внешний канал |
+| **Редакционная рабочая среда** | Идея, черновик, обсуждение, автор и подготовка исходного материала |
+| **Storytelling / Publication Core** | Оркестрация, enrichment, локализация, review, версионирование и approval |
+| **Representation** | Независимое представление канонического материала для конкретной площадки |
+| **Публичная площадка** | Сайт, Telegram и будущие B17, Instagram, YouTube или другие каналы |
+| **Архив / knowledge projection** | Downstream-системы, которые сохраняют опубликованный результат после завершения lifecycle Storytelling |
 
-Публикация является продуктовым результатом Storytelling. При этом отдельный пост не становится самостоятельным Product Object DETai автоматически: отдельный Product Object нужен только для поддерживаемого публичного предложения с собственной аудиторией, ценностью, владельцем и показателями.
+Текущей операционной точкой передачи исходного материала остаётся папка ClickUp [STORYTELLING (TimeOS) для текстов](https://app.clickup.com/90152202658/v/f/901515038276/901510140866). Это действующий вход в процесс, а не постоянная техническая зависимость.
 
-```text
-идея и черновик в редакционной рабочей среде
-→ подготовленный исходный материал
-→ Storytelling / Publication Core
-→ enrichment, локализация, review и публикационный пакет
-→ адаптеры площадок
-→ сайт, Telegram, VK, YouTube, Habr и другие каналы
-→ обратная связь в редакционную среду
-```
+## Мозаичная архитектура
 
-[Рабочая среда участника](../../start/working-environment.md) связывает знания, задачи, код и runtime как маршрут, но не переносит их в один общий контейнер. Аналогично TimeOS может стать местом совместной редакционной работы, не забирая у Storytelling публикационную бизнес-логику и код.
-
-На текущем этапе операционной точкой передачи исходного материала является папка ClickUp [STORYTELLING (TimeOS) для текстов](https://app.clickup.com/90152202658/v/f/901515038276/901510140866). Эта ссылка фиксирует действующий вход в процесс, а не постоянную техническую зависимость Publication Core от ClickUp.
-
-## Что поставляет Storytelling
-
-- локализованные Markdown-материалы и metadata;
-- обложки и другие media assets;
-- публикационные пакеты для сайта и социальных каналов;
-- версии, результаты review и машинно-проверяемые контракты доставки;
-- заготовки, которые после отдельного научного review могут стать Research Papers.
-
-Переход текста в научную публикацию не происходит автоматически: research claim, evidence и формат публикации проверяются соответствующими научными и Evidence-ролями.
-
-## Редакционная и техническая эстафета
+Storytelling следует [мозаичному подходу DETai](../DETai/U.L.I/3_Technical_Standards/mosaic-approach.md): части системы имеют явные границы и развиваются независимо.
 
 ```text
-идея или наблюдение в редакционной рабочей среде
-→ подготовка исходного материала
-→ передача в Storytelling
-→ редакционное и предметное review
-→ сборка публикационного пакета
-→ выбор одного или нескольких каналов
-→ публикация
-→ обратная связь и следующая версия материала
+Content kind
+→ canonical content
+→ Representation
+→ Strategy
+→ Format
+→ Features
+→ immutable artifact
+→ execution requirements
+→ transport / execution identity
 ```
 
-Текущая реализация репозитория включает контур навигации и публикации для Telegram и VK, циклы постов и интеграции с Google Docs. Целевой блоговый pipeline должен готовить Markdown, frontmatter и media, совместимые с контрактами репозитория `sites`.
+Эти сущности не являются синонимами. Telegram Representation может использовать Strategy `Basic` или `Custom`, Format `Standard` или `Rich`, а Typography является отдельной Feature. Transport выбирается позже и не становится частью самого Representation.
 
-Техническое выполнение LLM-шагов не делает Storytelling частью LLM-инфраструктуры. Предметные правила и публикационный процесс остаются в Storytelling, а общая техническая оркестрация моделей принадлежит intelligence-runtime. Эта граница подробно показана на странице [«Как Storytelling использует технологическую основу»](technology-foundation.md).
+Такое разделение позволяет развивать B17, Instagram или другой Representation без риска затронуть Telegram, а изменение Telegram Format не должно менять Site Representation.
+
+## Full Publication и канонический материал
+
+Для Full Publication основной канонический результат — публикация на Site. Site и Telegram при этом являются независимыми Representation одной логической публикации.
+
+```text
+логическая публикация
+├── Site Representation
+└── Telegram Representation
+    ├── Strategy
+    ├── Format
+    └── Features
+```
+
+Одна логическая публикация имеет устойчивый `publicationId` и `contentVersion`. Destination-specific идентификаторы принадлежат своим Representation: Site использует `sitePostId` и URL, Telegram — chat/message receipts.
+
+В дальнейшем Storytelling может работать не только со статьями. Например, Event является отдельным content kind со своими типами событий — обновление проекта, месячный отчёт, новый участник команды и другие. Event может иметь Site и Telegram Representation, переиспользуя общие мозаики доставки, но не превращаясь в разновидность Article.
+
+## Publication Workspace: процесс, а не архив
+
+Storytelling хранит durable рабочее состояние только на время активного lifecycle публикации. Publication Workspace содержит текущий `contentVersion`, drafts Representation, approvals, delivery attempts и working media.
+
+Это состояние нужно для restart/recovery, idempotency и reconciliation, но после безопасной финализации становится purgeable. Опубликованный корпус и долгосрочные knowledge projections принадлежат downstream-системам.
+
+## Кодовые границы Publication Core
+
+- `telegram_bot/` — operator interface и Telegram UI;
+- `publication_core/domain/` — publication identity, state и transport-neutral contracts;
+- `publication_core/application/`, `publication_core/workflows/` — use cases и orchestration;
+- `publication_core/representations/` — Site, Telegram и будущие Representation projections;
+- `publication_core/ports/` — стабильные границы внешних возможностей;
+- `publication_core/adapters/` — реализации внешних execution systems;
+- `publication_core/infrastructure/` — persistence и runtime infrastructure.
+
+Направление зависимостей остаётся односторонним: interface вызывает application/workflows, доменная модель не зависит от operator UI, а Representation не знает устройство конкретного transport. `publication_core.channels` является переходным compatibility seam и не считается целевым местом для новой Representation-логики.
+
+## Telegram Representation и execution
+
+| Telegram Representation | Execution |
+|---|---|
+| Standard | Bot API |
+| Rich без Typography | Bot API |
+| Rich + Typography | user execution |
+| Artifact, который текущий user transport не может воспроизвести exactly | capability conflict |
+
+Fragment / collectible-username сценарий Bot API custom emoji не используется как поддерживаемая ветка Storytelling. Для channel Typography действует инвариант: **Typography требует user execution**.
+
+Storytelling владеет publication intent: точной целью, immutable artifact, human approval и delivery intent. Проект [Telegram](../DETai/Platform_DETai/E2-Brand/Telegram/index.md) владеет managed accounts, authorization, sessions, Premium state, network profiles и Telegram API clients.
+
+Storytelling может показывать оператору logical execution identity, например `Anton-Psy-01`, и позволять выбрать другую доступную identity. Путь к Telethon session, authorization key, телефон, 2FA и network credentials остаются внутренними деталями проекта Telegram.
+
+Текущий Premium MTProto owner является compatibility bridge. Целевая граница — private Telegram Service API: Storytelling передаёт exact target, immutable artifact и execution requirements, а Telegram Service возвращает identity/transport либо capability conflict.
+
+## Operator / Process Settings
+
+Настройки самого процесса образуют отдельную мозаику и не являются частью Publication или конкретного Representation. Например, выбор Telegram execution identity относится к operator/runtime settings: он влияет на техническое исполнение, но не меняет утверждённый контент.
 
 ## Связь с сайтом
 
-[Сайт DETai](../DETai/Platform_DETai/E2-Brand/sites/index.md) — одна из площадок публикации и один из потребителей Storytelling. Он принимает подготовленный post object, Markdown и media-файлы, после чего репозиторий `sites` самостоятельно собирает страницу, маршруты, SEO, Open Graph, structured data и deployment. Сайт не выполняет enrichment, переводы, редакционное review и сборку исходного публикационного пакета.
+[Сайт DETai](../DETai/Platform_DETai/E2-Brand/sites/index.md) — основная публичная web-поверхность и потребитель Site Representation. Storytelling готовит утверждённый материал и destination intent; репозиторий `sites` самостоятельно отвечает за route, HTML, SEO, Open Graph, structured data и deployment.
 
-Та же публикационная версия может передаваться в Telegram, VK, YouTube, Habr и будущие площадки через их адаптеры. Storytelling остаётся единым Publication Core, а техническая доставка и отображение на каждой площадке принадлежат владельцу соответствующего канала.
+## Технологическая основа
 
-Граница ответственности:
+Storytelling сохраняет собственную предметную публикационную логику, даже когда использует общие технические системы. Intelligence Runtime исполняет LLM-сценарии, Telegram — Telegram execution, Sites — web runtime. Подробная карта этих границ находится на странице [«Как Storytelling использует технологическую основу»](technology-foundation.md).
 
-- изменение кода подготовки публикационного пакета маршрутизируется владельцу Storytelling;
-- изменение редакционного процесса маршрутизируется Brand & Communications;
-- изменение runtime-кода блога маршрутизируется владельцу проекта `sites`;
-- изменение смысла конкретного материала возвращается его автору и предметному owner;
-- публикация одного материала в нескольких каналах проверяется на согласованность формулировок, ссылок и CTA.
+## Рабочее состояние и управление
 
-## Рабочее состояние
-
-Автор, редактор, срок, статус и набор каналов фиксируются в ClickUp или утверждённой management runtime. Эта страница хранит устойчивое определение проекта и его связей, а не текущий редакционный календарь.
+Текущие задачи, сроки и Work Packages живут в ClickUp и management runtime. Эта страница фиксирует устойчивую модель Storytelling и его системные границы, а не текущий план разработки.
