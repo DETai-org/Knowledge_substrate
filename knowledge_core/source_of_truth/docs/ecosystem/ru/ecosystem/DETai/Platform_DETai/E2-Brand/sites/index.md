@@ -30,6 +30,9 @@ links:
     - schema: "ecosystem"
       link_type: "implements"
       linked_document_id: "brand-and-communications-domain"
+    - schema: site-publication
+      link_type: related-publication
+      linked_document_id: site:detai:id:site-b0337ebc25e34117
 ---
 
 # Сайт DETai
