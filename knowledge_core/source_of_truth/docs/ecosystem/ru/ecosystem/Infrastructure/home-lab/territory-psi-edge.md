@@ -24,6 +24,8 @@ links:
       url: "https://docs.detai-x.com/ru/ecosystem/Infrastructure/home-lab/territory-psi-edge/"
     - type: "GitHub"
       url: "https://github.com/DETai-org/Infrastructure/tree/main/home-psi-lab/territory-psyche"
+    - type: "website"
+      url: "https://detai-x.com/p/territory-psyche"
   document_links:
     - schema: ecosystem
       link_type: belongs-to
