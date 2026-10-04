@@ -252,6 +252,7 @@ nav:
     - Home Ψ Lab:
       - Обзор: ru/ecosystem/Infrastructure/home-lab/index.md
       - Архитектура и состав: ru/ecosystem/Infrastructure/home-lab/architecture.md
+      - Territory Ψ Edge: ru/ecosystem/Infrastructure/home-lab/territory-psi-edge.md
 - Tools:
   - Обзор: ru/ecosystem/Tools/index.md
   - 🧭 Codex / GPT:
