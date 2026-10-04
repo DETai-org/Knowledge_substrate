@@ -30,6 +30,9 @@ links:
     - schema: ecosystem
       link_type: belongs-to
       linked_document_id: infrastructure-home-lab
+    - schema: site-publication
+      link_type: related-publication
+      linked_document_id: site:detai:id:site-cc96cf1cd6ab4c6a
 title: Territory Ψ Edge — дачный контур Home Ψ Lab
 ---
 

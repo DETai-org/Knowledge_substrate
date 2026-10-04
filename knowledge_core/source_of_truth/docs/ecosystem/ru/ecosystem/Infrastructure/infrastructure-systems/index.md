@@ -15,6 +15,14 @@ governance:
   canonicality: canonical
   visibility: public
 title: Инфраструктурные системы
+links:
+  external_links:
+    - type: "MkDocs_ru"
+      url: "https://docs.detai-x.com/ru/ecosystem/Infrastructure/infrastructure-systems/"
+  document_links:
+    - schema: site-publication
+      link_type: related-publication
+      linked_document_id: site:detai:id:site-cc96cf1cd6ab4c6a
 ---
 
 # Инфраструктурные системы
