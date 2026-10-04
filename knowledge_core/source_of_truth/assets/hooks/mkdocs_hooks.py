@@ -363,9 +363,32 @@ def set_page_semantics(context: dict, /, *, page, config, nav) -> dict:
     return context
 
 
+def _validate_locale_route_coverage(site_dir: Path) -> None:
+    """Проверяет, что каждый русский HTML route имеет эквивалент во всех locale."""
+    ru_root = site_dir / "ru"
+    if not ru_root.exists():
+        return
+
+    missing: list[str] = []
+    for ru_page in ru_root.rglob("index.html"):
+        relative_path = ru_page.relative_to(ru_root)
+        for locale in PLACEHOLDER_LOCALES:
+            localized_page = site_dir / locale / relative_path
+            if not localized_page.exists():
+                missing.append(localized_page.relative_to(site_dir).as_posix())
+
+    if missing:
+        routes = "\n".join(f"- {path}" for path in sorted(missing))
+        raise RuntimeError(
+            "Missing localized routes for Russian documentation pages:\n" + routes
+        )
+
+
 def remove_translation_placeholders_from_sitemap(*, config) -> None:
-    """Фильтрует noindex routes и создаёт locale sitemaps для instant navigation."""
-    sitemap_path = Path(config.site_dir) / "sitemap.xml"
+    """Проверяет locale routes, фильтрует placeholders и создаёт locale sitemaps."""
+    site_dir = Path(config.site_dir)
+    _validate_locale_route_coverage(site_dir)
+    sitemap_path = site_dir / "sitemap.xml"
     if not sitemap_path.exists():
         return
 
