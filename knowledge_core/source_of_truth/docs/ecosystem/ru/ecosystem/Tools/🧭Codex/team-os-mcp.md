@@ -47,9 +47,9 @@ title: Team OS MCP
 
 Пример целевого взаимодействия:
 
-> «Покажи незавершённые задачи Management Layer»  
-> → ChatGPT вызывает Team OS MCP  
-> → MCP обращается к Team OS API  
+> «Покажи незавершённые задачи Management Layer»
+> → ChatGPT вызывает Team OS MCP
+> → MCP обращается к Team OS API
 > → пользователь получает данные из того же operational core, которое показывает web-интерфейс.
 
 ## Архитектурная граница
