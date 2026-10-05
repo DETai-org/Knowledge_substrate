@@ -7,9 +7,10 @@ classification:
   function: index
 descriptive:
   id: tools-codex-index
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-08-14
+  date_update: 2026-10-05
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -75,4 +76,5 @@ title: 🧭 Codex / GPT
 - [Формат взаимодействия](codex-interaction-format.md) — как вести сложную работу без потери контекста.
 - [Взаимодействие с Codex](interaction-with-codex.md) — как ставить задачи и проверять результат.
 - [Связь с GitHub](integration-with-github.md) — как Codex работает рядом с репозиториями, Issues и Pull Requests.
+- [Team OS MCP](team-os-mcp.md) — как ChatGPT/Codex должен получать разрешённый доступ к суверенному operational core Team OS.
 - [Официальная документация OpenAI](https://learn.chatgpt.com/docs) — актуальные возможности интерфейсов ChatGPT и Codex.

@@ -88,7 +88,7 @@ Governance и Operating Model образуют две связанные, но �
 
 ## Team OS
 
-[Team OS / Contribution Ledger](team-os.md) является будущим внутренним продуктом отображения ролей, решений и подтверждённого вклада. Он не является юридическим или финансовым реестром.
+[Team OS — governance и модель вклада](team-os.md) описывает правила visibility, оценки вклада, recognition, economic rights и human accountability. Сам технологический E3-проект описан отдельно на странице [Team OS в Platform DETai](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md).
 
 [Рабочая среда участника](../start/working-environment.md) связывает Team OS, task systems, Knowledge Substrate, U.L.I., продуктовые runtime и Corporate Vault как маршрут, не смешивая их владельцев и режимы доступа.
 
