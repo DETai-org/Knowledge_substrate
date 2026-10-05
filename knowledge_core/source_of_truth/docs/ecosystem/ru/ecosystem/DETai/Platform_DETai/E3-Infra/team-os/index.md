@@ -8,7 +8,7 @@ classification:
   function: index
 descriptive:
   id: detai-platform-detai-e3-infra-team-os-index
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-10-05
 links:
@@ -31,11 +31,15 @@ links:
 
 # Team OS
 
-**Team OS — внутренний E3-Infra проект DETai и суверенный операционный слой, который должен хранить состояние работы экосистемы независимо от конкретного внешнего task-сервиса.**
+**Team OS — внутренний E3-Infra проект DETai и суверенный операционный слой, который хранит состояние работы экосистемы независимо от конкретного внешнего task-сервиса.**
 
 Проект развивается как собственная система с репозиторием, версией, API и моделью данных. Его задача — не воспроизвести ClickUp или Notion один в один, а дать DETai устойчивое operational core, к которому могут подключаться разные интерфейсы: web, ChatGPT/Codex через MCP, агенты и будущие представления.
 
 Технический источник: [DETai-org/team-os](https://github.com/DETai-org/team-os).
+
+Рабочий интерфейс: [team.detai-x.com](https://team.detai-x.com/).
+
+Текущий зафиксированный release: [Team OS v0.2.0 — First Operational Release](https://github.com/DETai-org/team-os/releases/tag/v0.2.0).
 
 ## Почему Team OS относится к E3
 
@@ -54,21 +58,25 @@ Team OS функционально используется как инстру�
 
 Проект разделяет **ядро** и **представления**.
 
-Операционное ядро владеет устойчивыми сущностями и связями. Первый pilot использует отдельную PostgreSQL schema team_os внутри общей operational database detai_projects; локальная разработка работает с detai_projects_dev.
+Операционное ядро владеет устойчивыми сущностями и связями. Production хранится в PostgreSQL schema `team_os` внутри общей operational database `detai_projects` на Nexus; локальная разработка работает с `detai_projects_dev`.
 
-Поверх ядра могут существовать разные интерфейсы:
+Поверх ядра существуют разные интерфейсы:
 
-- team.detai-x.com — целевой web-интерфейс команды;
-- ChatGPT/Codex — естественно-языковой интерфейс через [Team OS MCP](../../../../Tools/🧭Codex/team-os-mcp.md);
+- [team.detai-x.com](https://team.detai-x.com/) — canonical operational web-интерфейс команды на Vercel;
+- ChatGPT — естественно-языковой read/write интерфейс через подключённый [Team OS MCP](../../../../Tools/🧭Codex/team-os-mcp.md);
 - ChatGPT Space и Pages — совместная среда анализа и временных представлений;
-- ChatGPT Sites или собственные web-поверхности — устойчивые визуальные dashboards и приложения;
+- ChatGPT Sites — возможные устойчивые analytical dashboards и report projections;
 - другие агенты и сервисы — через API и разрешённые интеграции.
+
+Production web обращается к защищённому Team OS API через server-side proxy. Core API и PostgreSQL находятся на Nexus; PostgreSQL не публикуется наружу.
+
+Private ChatGPT path отделён от web: OpenAI Secure MCP Tunnel приходит в `tunnel-client` на London, затем через private SSH loopback — в Team OS MCP на Nexus, далее в Core API и PostgreSQL. London не хранит operational state и не становится вторым runtime Team OS.
 
 Ни один из этих интерфейсов не должен становиться вторым источником истины для тех же operational objects.
 
-## Базовая модель пилота
+## Базовая модель
 
-Первый vertical slice фиксирует минимальные сущности:
+Первый vertical slice закрепил минимальные сущности:
 
 - **Container** — иерархический рабочий контейнер;
 - **WorkItem** — единица работы, не привязанная по смыслу к конкретному SaaS;
@@ -85,7 +93,11 @@ ClickUp Mirror используется как источник первично
 - представление для Telegram;
 - визуальный dashboard или ChatGPT Site.
 
-Публичная web-проекция относится к существующему Events-контуру сайта, например /ru/events/reports/2026-09. Публикационный lifecycle и доставка остаются ответственностью Storytelling и owning surfaces; Team OS не подменяет их.
+Внутренний сентябрьский отчёт доступен на [team.detai-x.com/reports/2026-09](https://team.detai-x.com/reports/2026-09).
+
+Публичная web-проекция относится к существующему Events-контуру сайта, например `/ru/events/reports/2026-09`. Storytelling владеет publication lifecycle и материализует только allowlisted public projection; публичный runtime не должен получать `internalPayload` и не зависит от Team OS API.
+
+ChatGPT Site может быть дополнительной интерактивной или аналитической проекцией того же ReportRecord, но не вторым источником истины.
 
 ## Граница с Governance
 
@@ -101,17 +113,21 @@ ClickUp Mirror используется как источник первично
 
 U.L.I. отвечает на вопрос **«как люди и AI создают?»**, Team OS — **«что сейчас существует, делается и изменилось?»**.
 
-## Текущий этап
+## Текущий статус
 
-На 5 октября 2026 года Team OS находится в активном pilot-развитии.
+На 5 октября 2026 года первый operational release Team OS зафиксирован как [v0.2.0](https://github.com/DETai-org/team-os/releases/tag/v0.2.0).
 
-Первый pilot:
+Приняты:
 
-1. импортирует Management Layer из ClickUp Mirror;
-2. хранит объекты в собственной PostgreSQL schema;
-3. даёт CRUD API и web-представление;
-4. использует сентябрьский ecosystem report как первый ReportRecord;
-5. после стабилизации API должен получить [MCP-интерфейс для ChatGPT/Codex](../../../../Tools/🧭Codex/team-os-mcp.md);
-6. затем может быть развёрнут на Nexus и получить team.detai-x.com.
+1. production PostgreSQL schema `team_os` на Nexus;
+2. Core API v0.2;
+3. Work Management Web на [team.detai-x.com](https://team.detai-x.com/);
+4. приватный ChatGPT plugin `Team OS` через MCP;
+5. read/write MCP v0.2 с confirmation/version gate;
+6. September ReportRecord как первая внутренняя и публичная отчётная identity;
+7. production backup/restore и deployment evidence;
+8. вывод дублирующего standalone WorkItem v1 runtime из эксплуатации.
 
-До production acceptance ClickUp остаётся действующим operational source для существующих процессов, а Team OS развивается как его будущая суверенная замена/надстройка, а не объявляется внедрённым заранее.
+ClickUp Mirror остаётся import/evidence source и provenance для внешних ID, но не runtime source of truth для уже импортированных объектов Team OS.
+
+Дальнейшее развитие относится к расширению продукта: saved views, relations/dependencies, identity/ACL, analytical projections и последующие ежемесячные отчёты.
