@@ -129,7 +129,7 @@ nav:
   - Ресурсы экосистемы: ru/ecosystem/Management_layer/ecosystem-resource.md
   - Команда и участие:
     - Принципы участия: ru/ecosystem/Management_layer/1_Philosophy/Participation_principles.md
-    - Team OS / Contribution Ledger: ru/governance/team-os.md
+    - Team OS — governance и модель вклада: ru/governance/team-os.md
   - Brand & Communications:
     - Границы и ответственность домена: ru/governance/brand-and-communications.md
   - Общие рабочие правила:
@@ -204,6 +204,8 @@ nav:
         - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
     - Технологическая основа:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
+    - E3 Infra:
+      - Team OS: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
     - Приостановленные проекты:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
       - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
@@ -262,6 +264,7 @@ nav:
     - Манифест: ru/ecosystem/Tools/🧭Codex/codex-manifest.md
     - Взаимодействие с Codex: ru/ecosystem/Tools/🧭Codex/interaction-with-codex.md
     - Связь с GitHub: ru/ecosystem/Tools/🧭Codex/integration-with-github.md
+    - Team OS MCP: ru/ecosystem/Tools/🧭Codex/team-os-mcp.md
     - Create Epic Issue Release: ru/ecosystem/Tools/🧭Codex/create-epic-issue-release.md
     - GPT-кураторы:
       - Правила META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md
