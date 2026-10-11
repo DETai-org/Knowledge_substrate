@@ -7,20 +7,28 @@
 
 ## Операционный log-summary
 
-```yaml
-log_summary:
-  list_id: "901523604300"
-  list_url: "https://app.clickup.com/90152202658/v/li/901523604300"
-  scope: Infrastructure
-  context: knowledge-substrate
-  navigation_key: knowledge_substrate
-  global_navigation: D:\dev\DETai-org\Management_Layer\docs\clickup-navigation\index.yaml
-```
+Основной маршрут — [WorkLog List Knowledge Substrate](https://team.detai-x.com/task-center/lists/c83e66a9-b3b7-5759-9a6d-cab349a2121b)
+контура Knowledge Substrate в Scope Infrastructure. Не подменяй его одноимённым проектом или удалённым
+legacy List из Projects. Датированные итоги сохраняй через `log-summary` как
+WorkLog с явной workDate/timezone и отдельный personal checkpoint; локальные
+`*log-summary.md` не создавай.
 
-Основной маршрут — живой List `logs` в Folder `📦 Knowledge Substrate`
-в Space `Infrastructure`. Не используй одноимённую удалённую Folder из
-Space `Projects` и её List `901523603652`. Датированные итоги записывай только
-в ClickUp через skill `log-summary`; локальные `*log-summary.md` не создавай.
+Используй Team-OS App: точный URL/UUID сначала разрешается через
+`resolve_resource`, проект и Tasks/Notes/Logs — через `resolve_project` и live
+Core registry. Проверь kind/contentKind родительского List перед create,
+актуальную version и expectedVersion перед patch. UUID/название/иконка не
+определяют тип и не дают прав.
+
+Новая запись без уточнённого типа — Task в однозначном Tasks route; явная
+заметка — Note; сводка — WorkLog и короткий personal checkpoint. При правке
+выбранной Note/WorkLog сохраняется её тип. Task completion/assignees к Notes
+и WorkLogs не относятся. Начальный контекст читается один раз по направлению,
+а обычный CRUD не загружает полный Home повторно.
+
+При OAuth отказе нужен reconnect/rescan, при отсутствующем маршруте — draft
+и конкретная причина. ClickUp API, старый navigation YAML, mirror, DB и server
+bearer не являются fallback. Исторические source IDs — provenance, не адрес
+новой записи; текущий путь, тип и доступ подтверждает Core.
 
 ## Правила работы со ссылками на базу знаний (MkDocs)
 
