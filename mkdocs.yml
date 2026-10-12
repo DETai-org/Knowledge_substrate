@@ -129,7 +129,10 @@ nav:
   - Ресурсы экосистемы: ru/ecosystem/Management_layer/ecosystem-resource.md
   - Команда и участие:
     - Принципы участия: ru/ecosystem/Management_layer/1_Philosophy/Participation_principles.md
-    - Team OS — governance и модель вклада: ru/governance/team-os.md
+    - Team OS — governance и модель вклада:
+      - Обзор: ru/governance/team-os.md
+      - Роли, права и возможности: ru/governance/team-os/access.md
+      - Публичный профиль и авторство: ru/governance/team-os/public-profile.md
   - Brand & Communications:
     - Границы и ответственность домена: ru/governance/brand-and-communications.md
   - Общие рабочие правила:
@@ -205,7 +208,10 @@ nav:
     - Технологическая основа:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
     - E3 Infra:
-      - Team OS: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
+      - Team OS:
+        - Обзор: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
+        - Web — сайт команды: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md
+        - Plugin — работа с ChatGPT: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md
     - Приостановленные проекты:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
       - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
