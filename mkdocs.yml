@@ -207,7 +207,10 @@ nav:
     - Технологическая основа:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
     - E3 Infra:
-      - Team OS: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
+      - Team OS:
+        - Обзор: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
+        - Web — сайт команды: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md
+        - Plugin — работа с ChatGPT: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md
     - Приостановленные проекты:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
       - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
