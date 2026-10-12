@@ -129,7 +129,9 @@ nav:
   - Ресурсы экосистемы: ru/ecosystem/Management_layer/ecosystem-resource.md
   - Команда и участие:
     - Принципы участия: ru/ecosystem/Management_layer/1_Philosophy/Participation_principles.md
-    - Team OS — governance и модель вклада: ru/governance/team-os.md
+    - Team OS — governance и модель вклада:
+      - Обзор: ru/governance/team-os.md
+      - Роли, права и возможности: ru/governance/team-os/access.md
   - Brand & Communications:
     - Границы и ответственность домена: ru/governance/brand-and-communications.md
   - Общие рабочие правила:
