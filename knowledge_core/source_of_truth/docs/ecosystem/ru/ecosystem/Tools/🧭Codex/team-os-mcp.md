@@ -7,9 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: tools-codex-team-os-mcp
-  version: v2
+  version: v3
   status: active
-  date_ymd: 2026-10-05
+  date_ymd: 2026-10-12
+  date_update: 2026-10-12
 links:
   external_links:
     - type: MkDocs_ru
@@ -23,84 +24,24 @@ links:
     - schema: ecosystem
       link_type: interfaces-with
       linked_document_id: detai-platform-detai-e3-infra-team-os-index
+    - schema: ecosystem
+      link_type: interfaces-with
+      linked_document_id: detai-platform-team-os-plugin
 title: Team OS MCP
 ---
 
 # Team OS MCP
 
-**Team OS MCP — production-интерфейс доступа ChatGPT к операционному ядру Team OS.**
+**Team OS MCP — способ подключения ChatGPT к Team OS через плагин команды DETai.** Здесь он представлен как часть инструментов GPT/Codex; основное описание возможностей вынесено в [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md).
 
-Он находится в разделе Codex / GPT, потому что его пользовательский смысл — дать ChatGPT разрешённые операции над Team OS так же, как подключённый коннектор сегодня даёт доступ к внешнему сервису.
+MCP даёт AI разрешённые операции чтения и изменения рабочих данных. Он не является самостоятельной базой данных и не выдаёт дополнительных прав: полномочия проверяет Core Team OS в рамках персонального подключения.
 
-Сам MCP **не является Team OS**. [Team OS](../../DETai/Platform_DETai/E3-Infra/team-os/index.md) — самостоятельный E3-проект с собственной моделью данных, API и runtime. MCP — один из его интерфейсов.
+**Что где читать:**
 
-## Что даёт MCP
+- [Team OS — обзор проекта](../../DETai/Platform_DETai/E3-Infra/team-os/index.md): зачем существует система и как связаны её интерфейсы.
+- [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md): как участник работает с ChatGPT, MCP и Skills.
+- [Team OS Web](../../DETai/Platform_DETai/E3-Infra/team-os/web.md): сайт, на котором человек работает с теми же объектами.
+- [Роли и права](../../../governance/team-os/access.md): границы командного и личного доступа.
+- [Исходники MCP и актуальные контракты](https://github.com/DETai-org/team-os/tree/main/packages/mcp): точные инструменты и особенности реализации.
 
-Production-контракт позволяет ChatGPT:
-
-- получать Space, Folder и List;
-- находить и читать WorkItem v0.2;
-- создавать WorkItem;
-- изменять разрешённые поля WorkItem с optimistic version gate;
-- работать со state, priority, dates, labels и bound custom properties;
-- получать ReportRecord и другие разрешённые operational views.
-
-Пример целевого взаимодействия:
-
-> «Покажи незавершённые задачи Management Layer»
-> → ChatGPT вызывает Team OS MCP
-> → MCP обращается к Team OS API
-> → пользователь получает данные из того же operational core, которое показывает web-интерфейс.
-
-## Архитектурная граница
-
-Production path:
-
-    ChatGPT
-          ↓
-    Team OS plugin
-          ↓
-    OpenAI Secure MCP Tunnel
-          ↓
-    tunnel-client on London
-          ↓
-    private SSH loopback
-          ↓
-    Team OS MCP on Nexus
-          ↓
-    Team OS Core API
-          ↓
-    PostgreSQL team_os
-
-MCP и Core API остаются loopback-only на Nexus. Публичный MCP endpoint не создаётся. London хранит только tunnel-client, runtime credential и loopback-конец private SSH-forward; operational data остаются на Nexus.
-
-MCP не создаёт параллельную бизнес-логику или собственную копию состояния. Проверка прав, инварианты и запись остаются внутри Team OS Core API.
-
-## Чтение и запись
-
-Read и write capabilities разделены по разрешениям.
-
-Production-контракт сохраняет:
-
-- минимально необходимые scopes;
-- явные ограничения на bulk/destructive writes;
-- подтверждение чувствительных действий;
-- аудит изменений;
-- сохранение стабильных Team OS IDs;
-- external source IDs только как provenance metadata.
-
-## Связь с ChatGPT Space и Sites
-
-MCP даёт доступ к данным и действиям, но не определяет визуальное представление.
-
-- **Space / Pages** могут использовать данные Team OS для совместного анализа, обсуждения и временных trackers;
-- **Sites** или собственный web-интерфейс могут строить устойчивые dashboards и приложения;
-- все такие поверхности должны читать один operational core через разрешённый контракт.
-
-## Текущий статус
-
-На 5 октября 2026 года Team OS MCP является принятой production-интеграцией.
-
-Release [Team OS v0.2.0](https://github.com/DETai-org/team-os/releases/tag/v0.2.0) включает WorkItem v0.2 и приватную ChatGPT integration. Подключённый plugin `Team OS` использует тот же production Core API, что и web-интерфейс; live read/write acceptance выполнен с confirmation/version gate.
-
-Проектная архитектура и текущий production status описаны на странице [Team OS](../../DETai/Platform_DETai/E3-Infra/team-os/index.md). Governance-правила работы с вкладом и персональными данными описаны отдельно в [Team OS — governance и модель вклада](../../../governance/team-os.md).
+Актуальная схема MCP и ответы Core имеют приоритет при выполнении операций. Публичная документация поясняет смысл, а не заменяет проверки доступа или подтверждение записи.

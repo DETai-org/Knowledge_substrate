@@ -10,10 +10,10 @@ classification:
   audiences: [team, managers, agents]
 descriptive:
   id: team-os-contribution-ledger
-  version: v3
+  version: v4
   status: draft
-  date_ymd: 2026-08-05
-  date_update: 2026-10-05
+  date_ymd: 2026-10-12
+  date_update: 2026-10-12
 governance:
   canonicality: working
   visibility: public
@@ -39,9 +39,11 @@ title: Team OS — governance и модель вклада
 
 # Team OS — governance и модель вклада
 
-Эта страница описывает **не техническую архитектуру Team OS, а правила управления людьми, вкладом, видимостью и правами внутри этой системы**.
+**Team OS — внутренняя операционная система DETai:** здесь команда организует задачи, работу по направлениям, сохраняет результаты и индивидуальный вклад.
 
-Сам Team OS как технологический E3-проект описан отдельно: [Team OS в Platform DETai](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md).
+Эта страница описывает **не устройство сайта, а правила ответственности, участия, видимости и принятия решений**. Конкретные полномочия участников Team OS объясняются отдельно в [«Роли, права и возможности»](team-os/access.md) — эту справку можно открыть и из профиля участника.
+
+Как устроена сама система и как ею пользоваться: [обзор Team OS](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md), [сайт Web](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md) и [Plugin для ChatGPT](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md).
 
 Разделение принципиально: интерфейс, база данных или конкретная технология могут меняться, но правила оценки вклада, доступа и human accountability не должны незаметно следовать за технической реализацией.
 
@@ -130,7 +132,7 @@ Team OS может связывать участников, проекты и ac
 
 ChatGPT/Codex должен работать с Team OS через ограниченный интерфейс, а не через произвольный прямой доступ к базе данных.
 
-Целевой инструмент описан отдельно: [Team OS MCP](../ecosystem/Tools/🧭Codex/team-os-mcp.md).
+Возможности работы через AI описаны в [Team OS Plugin](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md); техническая точка входа в разделе Codex — [Team OS MCP](../ecosystem/Tools/🧭Codex/team-os-mcp.md).
 
 ## Ворота развития governance
 
