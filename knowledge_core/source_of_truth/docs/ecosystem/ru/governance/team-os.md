@@ -10,10 +10,10 @@ classification:
   audiences: [team, managers, agents]
 descriptive:
   id: team-os-contribution-ledger
-  version: v4
+  version: v5
   status: draft
-  date_ymd: 2026-10-12
-  date_update: 2026-10-12
+  date_ymd: 2026-10-13
+  date_update: 2026-10-13
 governance:
   canonicality: working
   visibility: public
@@ -41,7 +41,7 @@ title: Team OS — governance и модель вклада
 
 **Team OS — внутренняя операционная система DETai:** здесь команда организует задачи, работу по направлениям, сохраняет результаты и индивидуальный вклад.
 
-Эта страница описывает **не устройство сайта, а правила ответственности, участия, видимости и принятия решений**. Конкретные полномочия участников Team OS объясняются отдельно в [«Роли, права и возможности»](team-os/access.md) — эту справку можно открыть и из профиля участника.
+Эта страница описывает **не устройство сайта, а правила ответственности, участия, видимости и принятия решений**. Конкретные полномочия участников Team OS объясняются отдельно в [«Роли, права и возможности»](team-os/access.md) — эту справку можно открыть и из профиля участника. [Политика видимости данных](team-os/profile-data-and-visibility.md) отдельно определяет правила командного, AI- и публичного использования профиля.
 
 Как устроена сама система и как ею пользоваться: [обзор Team OS](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md), [сайт Web](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md) и [Plugin для ChatGPT](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md).
 
