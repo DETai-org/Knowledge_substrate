@@ -197,6 +197,14 @@ URL становится минимальным архивом. Account, лич�
 Механизмы internal access, AI, Team Profile и Personal Profile независимы.
 Personal Profile остаётся ранней beta/noindex, без обещанной синхронизации.
 Согласованная реализация: [Team OS Draft #105](https://github.com/DETai-org/team-os/pull/105).
+
+В этом Draft планируется единое английское отображение ролей во всём UI:
+Organization — **Owner, Admin, Member**; Scope — **Owner, Admin, Editor, Viewer**;
+отсутствие grant — **No access**. API идентификатор Scope `member` сохраняется и
+отображается как Editor. Это смена терминов, без изменения прав и сохранённых
+назначений. Ниже русские пояснения описывают смысл уровней; до выпуска прежние
+production подписи могут оставаться русскими.
+
 Renderer и JSON-LD: [Sites Draft #608](https://github.com/DETai-org/sites/pull/608).
 
 Планируемое уточнение: командное публичное имя и контакты хранятся в отдельной
