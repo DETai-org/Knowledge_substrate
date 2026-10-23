@@ -3,22 +3,22 @@ type: ecosystem
 title: Team OS Web — сайт для работы команды
 classification:
   scope: DETai_ecosystem
-  context: platform
-  layer: technology
+  context: governance-operating-model
+  layer: public-interface
   function: explanation
-  system: technology
+  system: governance-operating-model
   domain: team-os-web
   audiences: [public, team, agents]
 descriptive:
   id: detai-platform-team-os-web
-  version: v2
+  version: v3
   status: draft
-  date_ymd: 2026-10-12
-  date_update: 2026-10-14
+  date_ymd: 2026-10-23
+  date_update: 2026-10-23
 governance:
   canonicality: working
   visibility: public
-  owner_role: platform-owner
+  owner_role: operating-model-owner
   approver_role: founder
 links:
   external_links:
@@ -36,7 +36,7 @@ links:
 
 ## Что находится на сайте
 
-- **Пространства (Scope), папки и списки (List)** помогают разложить работу по направлениям и проектам.
+- **Пространства (Scope), папки, проекты и списки (List)** помогают разложить работу по ответственности. Проект имеет собственный паспорт внутри выбранного Scope; общий раздел «Проекты» собирает доступные проекты из разных Scope.
 - **Задачи и подзадачи (Tasks)** показывают, что нужно сделать, кто отвечает, каков приоритет и текущий результат.
 - **Заметки (Notes)** сохраняют мысли и информацию; **рабочие журналы (WorkLogs)** фиксируют выполненную работу. Это разные типы записей — не каждое наблюдение становится задачей.
 - **Команда, роли и права** определяют, какие пространства видит человек и что в них может менять.

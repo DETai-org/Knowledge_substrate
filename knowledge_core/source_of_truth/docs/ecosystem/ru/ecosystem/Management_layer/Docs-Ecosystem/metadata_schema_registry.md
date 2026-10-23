@@ -10,9 +10,9 @@ classification:
   audiences: [team, editors, developers, agents]
 descriptive:
   id: management-layer-docs-ecosystem-metadata-schema-registry
-  version: v1
+  version: v2
   status: active
-  date_ymd: 2026-08-14
+  date_ymd: 2026-10-23
 governance:
   canonicality: canonical
   visibility: public
@@ -47,7 +47,7 @@ title: Реестр metadata schemas
 | `type` | Назначение | Физический контейнер | Contract |
 |---|---|---|---|
 | `ecosystem` | канонические и объясняющие документы экосистемы | Markdown в Knowledge Substrate | [Contract `ecosystem`](#contract-ecosystem) |
-| `log-summary` | короткий датированный итог выполненной работы | task в Folder-local ClickUp List `logs` | [Contract `log-summary`](#contract-log-summary) |
+| `log-summary` | переносимые и импортированные дневные сводки | legacy ClickUp task / Markdown export | [Legacy/import contract `log-summary`](#contract-log-summary) |
 
 Новый тип добавляется через review этого реестра. Локальный prompt, skill, AGENTS.md или интеграция могут применять зарегистрированный contract, но не расширять его самостоятельно.
 
@@ -55,9 +55,21 @@ title: Реестр metadata schemas
 
 Полный целевой блок, правила governance, object state и связей определены в [политике metadata документов](document_metadata_policy.md). Базовый `classification.scope` — `DETai_ecosystem`; допустимые `context`, `system`, `domain`, `layer` и `function` выбираются по предмету документа.
 
+## Новые WorkLogs Team OS
+
+Новые операционные сводки сохраняются как WorkLog Team OS. Проект и semantic route `logs` разрешаются через актуальную навигацию Core; целевой List должен иметь `contentKind=work_log`. Рабочая дата задаётся `workDate` и timezone. Идентичность, авторство, версия, статус draft/final и ссылки обслуживаются Core. Название записи и вручную редактируемый YAML не являются ключом или вторым источником истины; переносимый экспорт формируется из typed данных.
+
+WorkLog — самостоятельный тип рабочей записи. К нему не применяются назначение исполнителя и task completion. Неизвестный или недоступный Logs route не разрешает создавать похожий List, писать в Task/Note List или возвращаться к ClickUp.
+
+Назначение объясняет [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md), а действующую процедуру и формат определяет [log-summary skill owning-репозитория](https://github.com/DETai-org/team-os/blob/main/plugins/team-os/skills/log-summary/SKILL.md). Этот раздел не регистрирует новую YAML schema с именем `work_log`: runtime-тип и тип переносимого документа различаются.
+
 ## Contract `log-summary`
 
-`log-summary` — переносимый тип дневного операционного документа. ClickUp сейчас является его контейнером, но не частью идентичности schema.
+### Область применения: legacy/import
+
+Следующий contract сохраняет идентичность и интерпретацию исторических записей ClickUp и их переносимых экспортов. Он не задаёт storage schema, workflow или маршрутизацию новых WorkLogs Team OS. Legacy ID, scope/context и provenance сохраняются при чтении и контролируемом импорте; они не являются реестром действующих Scope.
+
+Ниже описан прежний формат. Его правила создания ClickUp task не применяются к новым операционным записям.
 
 ### Минимальный metadata-блок
 
@@ -82,7 +94,7 @@ links:
   related_logs: []
 ```
 
-Metadata размещается в начале ClickUp description как YAML-блок, пригодный для экспорта в Markdown без потери имён полей и значений. Содержимое description передаётся через Markdown-aware интерфейс ClickUp; визуальное форматирование не должно заменять сам переносимый блок.
+В прежнем формате metadata размещалась в начале ClickUp description как YAML-блок, пригодный для экспорта в Markdown без потери имён полей и значений. При чтении и экспорте сохраняется сам переносимый блок; визуальное форматирование не заменяет его поля.
 
 ### Идентичность и дата
 
@@ -95,7 +107,7 @@ Metadata размещается в начале ClickUp description как YAML-
 
 `classification.scope` выбирается только из зарегистрированных областей. `classification.context` всегда содержит ровно одно значение и обозначает конкретный предметный контейнер, в чей List `logs` записан итог.
 
-Начальный реестр областей и контекстов:
+Исторический реестр областей и контекстов:
 
 | `scope` | Допустимый смысл `context` | Примеры |
 |---|---|---|
@@ -105,16 +117,16 @@ Metadata размещается в начале ClickUp description как YAML-
 | `Governance` | конкретный управляющий или delivery-контур | `onboarding-management`, `management-layer` |
 | `Projects` | стабильный идентификатор конкретного проекта | `storytelling`, `sites` |
 
-Новое значение `scope` или новый класс `context` добавляется в этот реестр. Конкретный project-level `AGENTS.md` или route configuration должен фиксировать известные `list_id`, `scope` и `context`, чтобы skill не искал основной контейнер по всему ClickUp.
+При чтении legacy-записей сохраняются исходные `scope`, `context` и source IDs. Переименование текущего Scope или перенос Project не переписывают их историческое значение. Текущие маршруты определяются Core, а не этим реестром.
 
-Если работа дала самостоятельный результат в соседнем проекте или инструменте:
+Исторический формат распределённых сводок предусматривал:
 
 1. каждый результат записывается в дневной лог своего Folder-local List;
 2. записи не смешивают несколько `context` в одном metadata-блоке;
 3. связанные записи указывают друг на друга в `links.related_logs`;
 4. отсутствие маршрута к соседнему List не разрешает подменять его локальным Markdown-файлом.
 
-Обзор всей структуры ClickUp может использоваться как fallback для cross-project маршрута, но не заменяет локально известный основной List.
+Историческая структура ClickUp сохраняет происхождение записей и не служит fallback для новых операций Team OS.
 
 Space `Onboarding` и Folder `Management Layer / Onboarding` являются разными контейнерами: первый использует `scope: Onboarding` / `context: participant-onboarding`, второй — `scope: Governance` / `context: onboarding-management`. Их назначение и правило раздельных логов описывает draft-документ [«Контуры знаний и исполнения»](../../../onboarding/execution-contours.md#два-clickup-контура).
 
@@ -128,7 +140,7 @@ Space `Onboarding` и Folder `Management Layer / Onboarding` являются р
 - `clickup_username` — соответствующий ClickUp username;
 - `recorded_by` — `Codex`, когда запись сформировал Codex.
 
-GitHub username является основой машинного сопоставления, а ClickUp username — перекрёстной проверкой. Skill не угадывает identity по тексту разговора: он читает подтверждённый локальный профиль участника. В видимой части лога username может показываться просто как `@username`.
+GitHub username является основой машинного сопоставления, а ClickUp username — перекрёстной проверкой. Эти legacy-поля сохраняют подтверждённое исходное авторство и не используются для угадывания текущей identity Team OS. В видимой части лога username может показываться просто как `@username`.
 
 Токены, email, cookies, пароли и другие секреты в metadata не сохраняются.
 

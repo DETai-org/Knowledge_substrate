@@ -10,10 +10,10 @@ classification:
   audiences: [team, editors, developers, agents]
 descriptive:
   id: knowledge-navigation-migration
-  version: v4
+  version: v5
   status: active
-  date_ymd: 2026-08-05
-  date_update: 2026-08-10
+  date_ymd: 2026-10-23
+  date_update: 2026-10-23
 governance:
   canonicality: working
   visibility: public
@@ -53,6 +53,8 @@ title: Миграция информационной архитектуры
 | `/ru/ecosystem/Management_layer/Docs-Ecosystem/` | `/ru/knowledge/` | сохранённый documentation-governance overview внутри Knowledge System |
 
 Маршруты U.L.I., Platform DETai, Infrastructure и отдельных инструментов не менялись: новая навигация ссылается на существующие URL напрямую, поэтому redirect или alias для них не требуется.
+
+Team OS, Web и Plugin находятся в навигации **«Управление и участие → Management Layer»**. Их опубликованные пути `Platform_DETai/E3-Infra/team-os/` и стабильные document IDs сохраняются; owning system отражена в metadata и ссылках. Эшелон E3 описывает вклад системы и не определяет родителя в меню.
 
 ## Статус языковых версий
 

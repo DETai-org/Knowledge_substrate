@@ -7,10 +7,10 @@ classification:
   function: index
 descriptive:
   id: management-layer-index
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-03-25
-  date_update: 2026-08-14
+  date_ymd: 2026-10-23
+  date_update: 2026-10-23
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -19,6 +19,9 @@ links:
     - schema: "ecosystem"
       link_type: "operating-model"
       linked_document_id: "management-layer-2-architecture-and-logic-operating-model-detai"
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: detai-platform-detai-e3-infra-team-os-index
 title: Ecosystem Management Layer
 ---
 
@@ -67,6 +70,12 @@ Management Layer не является отдельным продуктом, п
 - запусками проектов и команд;
 - приоритетами и перераспределением ресурсов;
 - наблюдением за результатами и препятствиями.
+
+### Team OS — рабочая система управления
+
+[Team OS](../DETai/Platform_DETai/E3-Infra/team-os/index.md) поддерживает эту операционную функцию: связывает проекты, задачи, заметки, рабочие журналы, назначения и персональный контекст людей и AI-агентов. Web и Plugin являются интерфейсами одной системы с независимо фиксируемыми выпусками.
+
+Система развивается в рабочем Scope Management Layer. Её E3-роль описывает обеспечивающий вклад, а возможный статус внутреннего продукта определяется отдельно. Правила распределения работы по Scope и независимые поля проектного паспорта описаны в [Operating Model](2_Architecture_and_Logic/operating-model-detai.md#рабочие-scope-и-паспорта-проектов).
 
 ## Экосистемное и локальное управление
 
