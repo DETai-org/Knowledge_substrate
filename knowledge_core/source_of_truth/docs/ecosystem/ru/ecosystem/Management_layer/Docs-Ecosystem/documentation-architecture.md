@@ -7,9 +7,9 @@ classification:
   function: explanation
 descriptive:
   id: management-layer-docs-ecosystem-documentation-architecture
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-09-08
+  date_ymd: 2026-10-23
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -46,7 +46,7 @@ ___
 
 ### Где хранится
 
-Этот атрибут указывает место размещения документа: в каком репозитории, системе или среде он находится — MkDocs, GitHub-репозитории, ClickUp и т. д.
+Этот атрибут указывает место размещения документа: в каком репозитории, системе или среде он находится — MkDocs, GitHub-репозитории, Team OS и owning runtime.
 
 Место хранения не случайно: оно отражает характер знания и подсказывает, кто владеет его изменением. При этом **функция документа и место хранения — разные атрибуты**. Например, tutorial остаётся tutorial независимо от того, доставляется ли он через Onboarding Issue или хранится рядом с кодом конкретного проекта.
 
@@ -54,11 +54,11 @@ ___
 
 - **Standards** → библиотека знаний → **MkDocs (GitHub)**.
 - **Policies** → политики уровня экосистемы → **MkDocs (GitHub)**.
-- **References** → операционная конкретика команды → **ClickUp** или owning-система, если reference является runtime-конфигурацией.
+- **References** → операционная конкретика → **owning system**, включая Team OS для рабочей среды; runtime-конфигурация хранится у своего владельца.
 - **Tutorial / How-to общего onboarding-маршрута** → **репозиторий Onboarding (issues)**.
 - **Project-specific Tutorial / How-to** → **owning repository проекта**, когда текст относится к конкретному инструменту и должен версионироваться вместе с его реализацией.
 - **Embedded runtime tutorial** → owning repository проекта; такой документ может быть **source of truth для встроенной помощи интерфейса**, чтобы текст в Git и UI не расходился.
-- **Log Summary** → распределённая история исполнения → **Folder-local ClickUp List `logs`**.
+- **Log Summary** → распределённая история исполнения → **WorkLog в разрешённом Logs route Team OS**.
 - **Explanation** → **MkDocs (GitHub)** как часть базы знаний по экосистеме или крупному кластеру.
 
 > [!TIP]
@@ -92,10 +92,10 @@ Visibility определяет уровень доступности докум
 | **Explanation** | Architecture & Logic 🕸️ | MkDocs (GitHub)                                  | **v1, v2, v3 …**        | Public               |
 | **Standard**    | Technical Standards ⚙️   | MkDocs (GitHub)                                  | **v1, v2, v3 …**        | Public               |
 | **Policy**      | Technical Standards ⚙️   | MkDocs (GitHub)                                  | **v1, v2, v3 …**        | Public / Semi-public |
-| **Reference**   | Technical Standards ⚙️   | ClickUp / owning system                          | ❌ / по contract         | ⚠️ Internal          |
+| **Reference**   | Technical Standards ⚙️   | Team OS / owning system                         | ❌ / по contract         | ⚠️ Internal          |
 | **Tutorial**🎓  | null                     | Onboarding **или owning repository проекта**     | **v1, v2, v3 …**        | Public / Internal    |
 | **How-to**🎒    | null                     | Onboarding **или owning repository проекта**     | по локальному contract  | Public / Internal    |
-| **Log Summary** 🧾 | null                  | ClickUp Folder/List `logs`                       | одна запись на дату     | ⚠️ Internal          |
+| **Log Summary** 🧾 | null                  | WorkLog List Team OS                             | по runtime contract     | ⚠️ Internal          |
 
 #### Project-specific и embedded tutorials
 
@@ -112,9 +112,9 @@ Project-specific tutorial особенно уместно хранить ряд�
 
 #### Распределённые Log Summary
 
-Каждая проектная Folder хранит собственную дневную историю в List `logs`. Человек читает изменения прямо в области, с которой работает, а агент может агрегировать распределённые записи по metadata.
+Рабочий контур хранит дневную историю через разрешённый Logs route Team OS. Перед записью проверяется актуальный целевой List с `contentKind=work_log`, доступ и дата работы с timezone. Наличие Folder или Project само по себе не подтверждает существование Logs route.
 
-Самостоятельный cross-project результат фиксируется отдельно в каждом затронутом контейнере; связанные записи ссылаются друг на друга. Полный contract `type: log-summary`, classification и provenance определены в [реестре metadata schemas](metadata_schema_registry.md#contract-log-summary).
+Самостоятельные результаты разных направлений фиксируются в соответствующих рабочих контурах и связываются с учётом видимости. Текущие правила определяются [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md) и [log-summary skill](https://github.com/DETai-org/team-os/blob/main/plugins/team-os/skills/log-summary/SKILL.md). [Реестр metadata schemas](metadata_schema_registry.md#contract-log-summary) отдельно сохраняет legacy/import contract исторических переносимых сводок; он не заменяет typed metadata Core.
 
 ## Слои + поперечные сущности
 
@@ -136,11 +136,11 @@ Onboarding — это **один из каналов доставки** Tutorial
 
 Project-specific tutorial может жить в owning repository и при необходимости быть связан с onboarding issue, который лишь маршрутизирует участника к нему.
 
-### Два ClickUp-контейнера Onboarding
+### Два рабочих контура Onboarding
 
-Каноническая модель назначения, репозитория, владельцев, локального Codex workspace и двух ClickUp-контейнеров описана на странице [Onboarding DETai](../../../onboarding/index.md). Эта документационная архитектура фиксирует маршрут участия и не подменяет локальную документацию конкретных проектов.
+[Onboarding DETai](../../../onboarding/index.md) связывает прохождение участника и проектирование самого маршрута. В Team OS для этих функций существуют отдельные рабочие контуры; их актуальные контейнеры, типы и маршруты проверяются через Core. Исторические описания ClickUp не подтверждают текущую конфигурацию.
 
-Contract классификации и связей для дневных записей определён в [реестре metadata schemas](metadata_schema_registry.md#contract-log-summary).
+Эта документационная архитектура фиксирует назначение маршрута участия. Локальная документация конкретного проекта и текущая процедура WorkLog остаются у соответствующих владельцев.
 
 *Но мы ещё не дошли до того, чтобы сделать из onboarding полноценный смысловой слой, поэтому при классификации слоя эти файлы пока могут обозначаться как `null`.*
 

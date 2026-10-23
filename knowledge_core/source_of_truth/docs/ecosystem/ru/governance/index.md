@@ -10,9 +10,9 @@ classification:
   audiences: [public, team, managers, agents]
 descriptive:
   id: governance-operating-model-index
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-08-05
+  date_ymd: 2026-10-23
 governance:
   canonicality: canonical
   visibility: public
@@ -88,7 +88,7 @@ Governance и Operating Model образуют две связанные, но �
 
 ## Team OS
 
-[Team OS — governance и модель вклада](team-os.md) описывает правила visibility, оценки вклада, recognition, economic rights и human accountability. Сам технологический E3-проект описан отдельно на странице [Team OS в Platform DETai](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md).
+[Team OS — governance и модель вклада](team-os.md) описывает правила visibility, оценки вклада, recognition, economic rights и human accountability. Сама внутренняя управленческая система принадлежит Management Layer и описана отдельно на странице [Team OS — операционная среда DETai](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md). E3 обозначает её обеспечивающую роль, а не отдельный контур владения.
 
 [Рабочая среда участника](../start/working-environment.md) связывает Team OS, task systems, Knowledge Substrate, U.L.I., продуктовые runtime и Corporate Vault как маршрут, не смешивая их владельцев и режимы доступа.
 

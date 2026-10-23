@@ -10,9 +10,9 @@ classification:
   audiences: [team, editors, developers, agents]
 descriptive:
   id: management-layer-docs-ecosystem-document-metadata-policy
-  version: v5
+  version: v6
   status: active
-  date_ymd: 2026-08-14
+  date_ymd: 2026-10-23
 governance:
   canonicality: canonical
   visibility: public
@@ -91,7 +91,7 @@ title: Человекочитаемое название
 
 Определяет schema metadata. Общие правила идентичности, классификации, связей и честного заполнения задаёт эта политика; типовые поля и ограничения — [реестр metadata schemas](metadata_schema_registry.md).
 
-Сейчас зарегистрированы contracts `ecosystem` и `log-summary`. Для книг, публикаций, проектов и runtime-объектов используются собственные зарегистрированные contracts. Значение `type` нельзя вводить только в отдельном документе или prompt: оно сначала добавляется в реестр.
+Сейчас зарегистрированы contract `ecosystem` и legacy/import contract `log-summary` для переносимых исторических дневных сводок. Новые WorkLogs Team OS используют typed metadata Core; переносимый экспорт формируется из неё по актуальному контракту owning system. Для книг, публикаций, проектов и runtime-объектов используются собственные зарегистрированные contracts. Значение `type` нельзя вводить только в отдельном документе или prompt: оно сначала добавляется в реестр.
 
 ### `title`
 
@@ -105,11 +105,11 @@ title: Человекочитаемое название
 
 ### `classification.scope`
 
-Граница действия документа. Базовое значение общего канона — `DETai_ecosystem`; более узкие значения вводятся реестром соответствующей schema, а не свободно. Например, contract `log-summary` регистрирует операционные области `Tools`, `Infrastructure` и `Governance`.
+Граница действия документа. Базовое значение общего канона — `DETai_ecosystem`; более узкие значения вводятся реестром соответствующей schema, а не свободно. Например, legacy/import contract `log-summary` сохраняет исторические области `Tools`, `Infrastructure` и `Governance`; эти значения не являются реестром действующих Scope Team OS.
 
 ### `classification.context`
 
-Среда или конкретный контейнер, к которому относится документ. Contract определяет кардинальность поля. Для `ecosystem` это одно значение вроде `ecosystem-architecture`, `technology-layer`, `governance-operating-model`, `product-market-system` или `knowledge-system`. Для `log-summary` это один конкретный контекст Folder/List, например `codex` или `onboarding`.
+Среда или конкретный контейнер, к которому относится документ. Contract определяет кардинальность поля. Для `ecosystem` это одно значение вроде `ecosystem-architecture`, `technology-layer`, `governance-operating-model`, `product-market-system` или `knowledge-system`. Для legacy/import `log-summary` сохраняется один исходный контекст Folder/List, например `codex` или `onboarding`; он не задаёт текущий маршрут записи WorkLog.
 
 ### `classification.system`
 

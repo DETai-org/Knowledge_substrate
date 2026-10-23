@@ -3,22 +3,22 @@ type: ecosystem
 title: Team OS Plugin — работа с ChatGPT
 classification:
   scope: DETai_ecosystem
-  context: platform
-  layer: technology
+  context: governance-operating-model
+  layer: public-interface
   function: explanation
-  system: technology
+  system: governance-operating-model
   domain: team-os-plugin
   audiences: [public, team, agents]
 descriptive:
   id: detai-platform-team-os-plugin
-  version: v1
+  version: v2
   status: draft
-  date_ymd: 2026-10-12
-  date_update: 2026-10-12
+  date_ymd: 2026-10-23
+  date_update: 2026-10-23
 governance:
   canonicality: working
   visibility: public
-  owner_role: platform-owner
+  owner_role: operating-model-owner
   approver_role: founder
 links:
   external_links:

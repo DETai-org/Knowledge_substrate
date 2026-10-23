@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, brand, product, agents]
 descriptive:
   id: brand-and-communications-domain
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-08-05
-  date_update: 2026-08-11
+  date_ymd: 2026-10-23
+  date_update: 2026-10-23
 governance:
   canonicality: canonical
   visibility: public
@@ -81,7 +81,7 @@ Brand & Communications вправе самостоятельно принима�
 
 Самостоятельный проект [Storytelling — Publication Core](../ecosystem/STORYTELLING/index.md) реализует публикационную бизнес-логику. Он принимает материалы из редакционной рабочей среды, выполняет enrichment, локализацию, review и версионирование и поставляет утверждённые публикационные пакеты. Основной сайт, Telegram, VK, возможные будущие YouTube и Habr являются независимыми площадками: Brand & Communications отвечает за редакционную и брендовую согласованность, Storytelling — за подготовку результата, а владельцы каналов — за техническую публикацию и отображение.
 
-Текущая редакционная работа и передача материала в Publication Core происходят через папку ClickUp [STORYTELLING (TimeOS) для текстов](https://app.clickup.com/90152202658/v/f/901515038276/901510140866), а будущая TimeOS / [Team OS](team-os.md) может связать роли, назначения и подтверждённые результаты. Ни рабочая среда, ни Team OS не подменяют Publication Core и не становятся владельцами его кода и контрактов.
+Редакционная работа, назначения и рабочие материалы организуются в Scope **Brand & Communications** системы [Team OS](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md). Точный путь передачи материала в Publication Core определяется актуальными контрактами Storytelling и канала; перенос рабочей структуры из ClickUp сам по себе не подтверждает миграцию каждой интеграции. Team OS хранит рабочий контекст, а Publication Core сохраняет собственные код и контракты подготовки публикаций.
 
 ## Минимальный operating cycle
 

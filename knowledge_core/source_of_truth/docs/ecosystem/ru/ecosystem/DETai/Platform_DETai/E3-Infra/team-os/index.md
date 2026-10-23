@@ -3,15 +3,18 @@ type: ecosystem
 title: Team OS
 classification:
   scope: DETai_ecosystem
-  context: platform
-  layer: technology
+  context: governance-operating-model
+  layer: operating-model
   function: index
+  system: governance-operating-model
+  domain: team-os
+  audiences: [public, team, managers, agents]
 descriptive:
   id: detai-platform-detai-e3-infra-team-os-index
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-10-12
-  date_update: 2026-10-12
+  date_ymd: 2026-10-23
+  date_update: 2026-10-23
 links:
   external_links:
     - type: MkDocs_ru
@@ -21,7 +24,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: part-of
-      linked_document_id: detai-platform-detai-index
+      linked_document_id: management-layer-index
     - schema: ecosystem
       link_type: contains
       linked_document_id: detai-platform-team-os-web
@@ -53,7 +56,7 @@ Web и Plugin читают и меняют **один operational state**. Пр�
 
 ## Что хранит Team OS
 
-- **Рабочая структура:** Scope → Folder → List; задачи, подзадачи, статусы, назначения, сроки и дополнительные поля.
+- **Рабочая структура:** Scope → Folder / Project → List. Проект является самостоятельной сущностью внутри Scope; папки группируют работу без проектного паспорта. Lists хранят задачи, заметки или рабочие журналы.
 - **Знания о работе:** Notes и WorkLogs — мысли, материалы и проверяемые итоги действий.
 - **Участие и права:** члены команды, организационные и локальные роли, отдельные границы закрытых проектов.
 - **Личный контекст:** Home, фокус, ориентиры и контрольные точки, позволяющие продолжать работу.
@@ -63,7 +66,13 @@ Team OS хранит operational state в PostgreSQL. Сайт обращает�
 
 ## Место в экосистеме
 
-Как E3-Infra проект Team OS создаёт общую технологическую возможность для других направлений DETai. Она **не заменяет** [U.L.I.](../../../U.L.I/index.md) как среду разработки и **не подменяет** решения людей о полномочиях, вкладе или вознаграждении.
+Team OS принадлежит [Management Layer](../../../../Management_layer/index.md): это внутренняя управленческая система для работы обоих слоёв DETai. Её рабочий Scope определяется этой ответственностью, а E3 описывает обеспечивающий вклад в экосистему. Технологическая реализация не делает систему частью Platform DETai или Scope Infrastructure.
+
+Team OS может быть оформлена как внутренний продукт по [модели продуктового объекта](../../../../../product-market/product-object-model.md), когда явно определены аудитория, обещанный результат, поддержка, наблюдение и стабильное поставляемое состояние. Перемещение между Scope и уточнение E3 сами по себе не меняют продуктовый статус.
+
+[U.L.I.](../../../U.L.I/index.md) обеспечивает процесс технического создания и развития системы. Решения о полномочиях, оценке вклада и вознаграждении остаются у ответственных людей.
+
+Путь страницы и стабильный document ID сохранены для совместимости ссылок. Исторический сегмент `Platform_DETai/E3-Infra` не определяет текущего владельца системы.
 
 Эти правила определяются отдельно: [Governance и модель вклада](../../../../../governance/team-os.md) · [Роли, права и возможности](../../../../../governance/team-os/access.md).
 

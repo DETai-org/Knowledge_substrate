@@ -122,6 +122,10 @@ nav:
   - Management Layer:
     - Обзор: ru/ecosystem/Management_layer/index.md
     - Operating Model DETai: ru/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md
+    - Team OS:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
+      - Web — сайт команды: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md
+      - Plugin — работа с ChatGPT: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md
     - Домены и права решений: ru/governance/domains-and-decision-rights.md
     - Распределённая архитектура: ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md
     - Уровни работы: ru/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md
@@ -208,11 +212,6 @@ nav:
         - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
     - Технологическая основа:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
-    - E3 Infra:
-      - Team OS:
-        - Обзор: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
-        - Web — сайт команды: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md
-        - Plugin — работа с ChatGPT: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md
     - Приостановленные проекты:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
       - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
