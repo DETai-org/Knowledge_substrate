@@ -194,7 +194,12 @@ nav:
     - Обзор платформы: ru/ecosystem/DETai/Platform_DETai/index.md
     - Продукты:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/products/index.md
-      - Психология в цитатах: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md
+      - Психология в цитатах:
+        - Обзор: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md
+        - Начало работы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md
+        - Коллекция и тарифы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md
+        - Вопросы и проблемы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md
+        - Устройство и доверие: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md
       - Francis Galton: ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md
       - DETai Pulse: ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md
       - DETai Matrix: ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md
