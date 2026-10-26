@@ -46,7 +46,7 @@ title: Каталог продуктов и предложений DETai
 
 | Продукт или сервис | Текущая роль | Каноническая документация |
 |---|---|---|
-| Психология в цитатах | Публичный пользовательский продукт и брендовая поверхность | [Открыть](../ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md) |
+| Психология в цитатах | Образование и просвещение; дополнительно публикация и творчество. Роль: E2 Brand | [Открыть](../ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md) |
 | Francis Galton | Психологический и исследовательский продукт | [Открыть](../ecosystem/DETai/Platform_DETai/products/francis-galton/index.md) |
 | DETai Pulse | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md) |
 | DETai Matrix | Продукт технологического портфеля | [Открыть](../ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md) |
@@ -71,7 +71,8 @@ title: Каталог продуктов и предложений DETai
 Для каждой единицы каталог должен указывать:
 
 - тип: продукт, услуга, программа, capability или эксперимент;
-- аудиторию и основную задачу;
+- аудиторию, **основную и дополнительные пользовательские функции**;
+- отдельно **эшелон и ресурсную роль** продукта в DETai;
 - владельца и owning system;
 - стадию жизненного цикла и дату проверки;
 - ссылку на собственное ценностное предложение;
