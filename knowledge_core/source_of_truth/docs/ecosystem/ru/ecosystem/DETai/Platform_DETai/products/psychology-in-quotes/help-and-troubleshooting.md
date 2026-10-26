@@ -5,7 +5,7 @@ classification:
   scope: DETai_ecosystem
   context: platform
   layer: product
-  function: guide
+  function: explanation
   system: platform-detai
   domain: psychology-in-quotes
   audiences: [public, product, support, agents]
@@ -16,7 +16,7 @@ descriptive:
   date_ymd: 2026-10-27
   date_update: 2026-10-27
 governance:
-  canonicality: product-guide
+  canonicality: canonical
   visibility: public
   owner_role: product-owner
   approver_role: product-owner
