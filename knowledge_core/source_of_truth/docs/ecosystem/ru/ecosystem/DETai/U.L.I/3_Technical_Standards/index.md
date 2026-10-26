@@ -23,3 +23,4 @@ title: ⚙️ Technical Standards
 
 # ⚙️ Technical Standards
 
+- [DETai Testing & Feedback Loop Standard](./testing-feedback-loop-standard.md) — смысловые контракты, рационализация тестов, риск-ориентированная проверка и быстрый feedback loop.
