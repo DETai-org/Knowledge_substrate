@@ -16,7 +16,7 @@ descriptive:
   date_ymd: 2026-06-12
   date_update: 2026-10-27
 governance:
-  canonicality: product-guide
+  canonicality: canonical
   visibility: public
   owner_role: product-owner
   approver_role: product-owner
