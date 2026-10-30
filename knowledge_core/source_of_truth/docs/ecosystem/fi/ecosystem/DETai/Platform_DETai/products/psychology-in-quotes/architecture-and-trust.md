@@ -35,6 +35,7 @@ Erottelu perustuu [tuoteobjektin malliin](../../../../../product-market/product-
 | PiQ:n Telegram-botti | Sitaattien luonti, kokoelma, vuorovaikutus ja julkaisut | Omat irralliset maksusäännöt tai DETai Account -rekisteröinti |
 | DETai Hub | Account-tilin luomisen tai yhdistämisen valinta, Telegram-yhteyden vahvistus ja Hubin kieliasetus | Erilliset PiQ-tilit tai PiQ-tilausten oikeudet |
 | PiQ-API ja tuotteen palvelinpuolen käytännöt | Hankintaoikeus, aktiiviset tasot, kiintiöt, tilat, PNG-valmius ja julkiset osoitteet | Koko ekosysteemin yleiset säännöt |
+| Ecosystem Runtime / Commerce Core | Kaupalliset tarjoukset, vahvistetut maksut ja tilaushistoria | PiQ:n tuoteominaisuuksia tai viikoittaisia rajoituksia |
 | Knowledge Substrate | Julkiset käsitteet, ohjeet, dokumentaatiolinkit ja standardit | Reaaliaikainen käyttäjätietokanta, salaisuudet tai maksun suorittaminen |
 | DETai Account / Identity | Käyttäjän yhdistäminen tuotteiden välillä | Automaattisesti hankitut sitaatit |
 
@@ -67,6 +68,6 @@ Sitaatti ei ole vain kuva. Sillä on pysyvä `quoteId`, lainattujen sanojen teki
 
 Kuvakaappausta tulkitessa tekoälyn on erotettava, mitä dokumentaatio vahvistaa, mitä ruudulla todella näkyy ja mitä ei voi tietää ilman ajantasaista Account- tai taustajärjestelmän tietoa. Maksuja, oikeuksia, puuttuvan PNG:n syytä tai lähetyksen onnistumista ei pidä arvata.
 
-**Päivitetty:** 30.10.2026. **Saatavuus:** tuotantopilotti; Telegram Stars on käytössä vain suljetussa pilotissa eikä julkisiin ostoihin. Sitovat oikeudelliset ehdot ja ajantasaiset dynaamiset kiintiöt ovat aina ensisijaisia vanhentuneisiin ohjekopioihin nähden.
+**Päivitetty:** 30.10.2026. Tarkista ajantasaiset ominaisuudet ja tarjoukset [PiQ:n sivulta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans) ja botista. Voimassa olevat oikeudelliset ehdot, hinnat ja rajoitukset ovat ensisijaisia vanhentuneisiin ohjekopioihin nähden.
 
 [← Yleiskatsaus](index.md) · [Kokoelma ja tilaustasot](collection-and-plans.md)

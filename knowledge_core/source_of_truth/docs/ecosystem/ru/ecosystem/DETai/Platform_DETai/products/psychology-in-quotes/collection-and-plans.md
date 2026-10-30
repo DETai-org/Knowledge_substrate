@@ -11,7 +11,7 @@ classification:
   audiences: [public, product, support, agents]
 descriptive:
   id: piq-collection-plans
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-10-27
   date_update: 2026-10-30
@@ -67,7 +67,9 @@ governance:
 
 ## Доступность и цена
 
-В PiQ предусмотрены уровни Free, Plus и Pro и соответствующие серверные права, но **Telegram Stars доступен только внутри закрытого пилота, а публичная самообслуживаемая оплата не включена**. Описание планов не является предложением приобрести подписку по конкретной цене. В доступном платёжном сценарии цену, валюту, период, автопродление, отмену и порядок возврата показывают **до подтверждения платежа**; конкретные условия задаются действующим предложением и [Terms](https://detai-x.com/ru/technology/platform/psychology-in-quotes/terms).
+Подписки **Plus и Pro** оформляются в Telegram Stars на **30 дней с автопродлением**. Для покупки нужен завершённый DETai Account, связанный с Telegram. Точная сумма Stars и период показываются до подтверждения платежа; долларовая сумма на сайте — ориентир, поскольку стоимость приобретения Stars зависит от региона и способа пополнения. [Актуальные предложения и цены](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-plans) публикуются на сайте и в боте.
+
+Отключение автопродления сохраняет доступ до конца оплаченного периода. **Launch Offer** — специальные условия запуска, которые могут быть завершены с предварительным уведомлением. Продолжение по новой цене требует отдельного оформления и подтверждения платежа пользователем. Действующие правила, сроки уведомления и порядок возвратов определены в [Условиях использования PiQ](https://detai-x.com/ru/technology/platform/psychology-in-quotes/terms).
 
 [Актуальная страница и сравнение тарифов](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-plans) · [Мой доступ](https://detai-x.com/ru/account/products/psychology-in-quotes#piq-access)
 

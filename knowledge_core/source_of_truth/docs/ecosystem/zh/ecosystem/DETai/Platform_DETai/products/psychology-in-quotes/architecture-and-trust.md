@@ -35,6 +35,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 | PiQ Telegram 机器人 | 创建向导、收藏、互动和发布 | 独立商业政策或 DETai Account 注册 |
 | DETai Hub | 新建或连接 Account 的选择、验证 Telegram 绑定、Hub 的语言设置 | 独立 PiQ 账户或套餐权限 |
 | PiQ API 与产品服务端政策 | 语录获取权、有效套餐、额度、状态、PNG 准备情况、公开地址 | 整个生态系统的统一治理规则 |
+| Ecosystem Runtime / Commerce Core | 商业报价、已确认的付款和订阅历史 | PiQ 的产品功能或每周限额 |
 | Knowledge Substrate | 公开定义、使用说明、文档关联及标准 | 实时用户数据库、机密或付款结算 |
 | DETai Account / Identity | 关联不同产品中的用户身份 | 自动获取语录 |
 
@@ -67,6 +68,6 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 AI 解读截图时，必须区分文档能够证明的事实、屏幕上实际显示的信息，以及没有当前 Account 或后端数据就无法确认的事项。不要猜测付款、权限、PNG 缺失原因或发送是否成功。
 
-**更新日期：2026 年 10 月 30 日。****可用状态：**生产环境试点。Telegram Stars 仅供封闭试点使用，公众尚不能购买。具有约束力的法律条款及动态限额，始终优先于过时的帮助文档副本。
+**更新日期：2026 年 10 月 30 日。** 请在 [PiQ 页面](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)及机器人中查看当前功能和报价。现行法律条款、价格及限额优先于过时的帮助文档副本。
 
 [← 产品概览](index.md) · [收藏与套餐](collection-and-plans.md)

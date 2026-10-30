@@ -50,7 +50,9 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 ## 可用性与价格
 
-PiQ 设有 Free、Plus 和 Pro 层级及对应的服务端权限，但**Telegram Stars 目前仅在封闭试点中提供，公众自助付费尚未开放**。套餐介绍不构成以某个固定价格购买订阅的要约。在允许付款的流程中，应当**在确认付款前**显示价格、币种、周期、自动续订、取消和退款方式。具体条件以当时有效的报价及[使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms)为准。
+**Plus 和 Pro 订阅**使用 Telegram Stars 购买，**每个周期为 30 天，并自动续订**。购买前需完成 DETai Account 的设置并关联 Telegram。确切的 Stars 数量和订阅周期会在确认付款前显示。网站上的美元金额仅供参考，因为购买 Stars 的成本因地区和充值方式而异。[当前报价与价格](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)在网站和机器人中显示。
+
+关闭自动续订后，使用权限仍保留至已付费周期结束。**Launch Offer** 上线特别优惠可在提前通知后结束。若要按新价格继续订阅，用户需要另行订阅并确认付款。现行规则、通知期限及退款流程以 [PiQ 使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms)为准。
 
 [最新产品页面和套餐对比](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans) · [我的权限](https://detai-x.com/zh/account/products/psychology-in-quotes#piq-access)
 

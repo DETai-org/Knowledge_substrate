@@ -45,9 +45,9 @@ The same approach is gradually being adopted by other DETai products: **first ex
 | Why an image has a watermark, a PNG is missing or publication is unconfirmed | [Help and troubleshooting](help-and-troubleshooting.md) |
 | How the ecosystem, platform, Account, site, bot, documentation and API fit together | [Architecture, trust and boundaries](architecture-and-trust.md) |
 
-## What's working and what's still being prepared
+## Features and access
 
-As of **30 October 2026**, the production pilot supports creating and moderating quotes, the catalogue, favourites, “My collection”, obtaining other people's quotes, prepared language editions, publishing flows and Stories, subject to current policy restrictions. Capabilities differ across **Free / Plus / Pro**. **Telegram Stars are available only in a closed commercial pilot** for admitted participants with verified DETai Accounts; public purchasing is not yet open. Check current guest limits in the bot and [Free / Plus / Pro limits in the live comparison on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Check the running product for current feature availability.
+Psychology in Quotes works in Telegram and on the Platform DETai website. Quote creation and moderation, the catalogue, favourites, “My collection”, prepared language editions, publishing and Stories are available according to **Free / Plus / Pro** entitlements and the current product policy. Plus and Pro subscriptions are purchased with Telegram Stars; checkout requires a completed DETai Account linked to Telegram. Check current guest limits in the bot and [current offers, prices and plan limits on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). The running product shows whether purchasing and individual features are available.
 
 The [collection and plans guide](collection-and-plans.md) explains entitlements; **current numerical limits are published only in the [website's plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans)**. Your effective access is determined by **DETai Account and PiQ server policy**, not an outdated copied table.
 

@@ -35,6 +35,7 @@ This distinction is defined in the [product object model](../../../../../product
 | PiQ Telegram bot | Quote creation wizard, collections, interactions and publishing | Separate commercial rules or DETai Account registration |
 | DETai Hub | Choosing to create or connect an Account, verifying Telegram linkage and managing Hub's language | Independent PiQ Accounts or its plan entitlements |
 | PiQ API and product server policy | Quote obtain rights, current plans, quotas, statuses, PNG readiness and public addresses | Policies governing the whole ecosystem |
+| Ecosystem Runtime / Commerce Core | Commercial offers, confirmed payments and subscription history | PiQ product capabilities or weekly limits |
 | Knowledge Substrate | Public definitions, instructions, documentation links and standards | A live user database, secrets or payment checkout |
 | DETai Account / Identity | Linking a person's identity between products | Automatically obtaining quotes |
 
@@ -67,6 +68,6 @@ A quote is more than a picture. It has a persistent `quoteId`, the author of the
 
 When answering a screenshot, an AI assistant must distinguish what the documentation establishes, what the screen actually shows and what cannot be established without the current Account or backend. Do not guess about payments, entitlements, why a PNG is missing or whether sending succeeded.
 
-**Updated:** 30 October 2026. **Availability:** production pilot; Telegram Stars is available only within a closed pilot, not for public purchases. Binding legal terms and dynamic limits always prevail over outdated copies of user guidance.
+**Updated:** 30 October 2026. Check current features and offers on the [PiQ page](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans) and in the bot. Current legal terms, prices and limits take precedence over outdated copies of user guidance.
 
 [← Overview](index.md) · [Collection and plans](collection-and-plans.md)

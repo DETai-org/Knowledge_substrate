@@ -35,6 +35,7 @@ Diese Trennung ist im [Produktobjektmodell](../../../../../product-market/produc
 | PiQ-Telegram-Bot | Erstellungsassistent, Sammlung, Interaktionen und Veröffentlichungen | Separaten Geschäftsregeln oder Registrierung von DETai Accounts |
 | DETai Hub | Wahl zwischen Erstellen und Verbinden eines Accounts, Bestätigung der Telegram-Verknüpfung, Spracheinstellungen des Hubs | Eigenständigen PiQ-Accounts oder PiQ-Tarifrechten |
 | PiQ-API und serverseitige Produkt-Policy | Erhaltsrechte, aktuelle Tarife, Kontingente, Status, PNG-Bereitschaft und öffentliche Adressen | Übergreifenden Regeln des gesamten Ökosystems |
+| Ecosystem Runtime / Commerce Core | Kommerzielle Angebote, bestätigte Zahlungen und Abonnementverlauf | Produktfunktionen oder wöchentlichen Limits von PiQ |
 | Knowledge Substrate | Öffentliche Definitionen, Anleitungen, Dokumentationsverknüpfungen, Standards | Aktiven Nutzerdaten, Geheimnissen oder Checkout |
 | DETai Account / Identity | Nutzeridentität produktübergreifend verknüpfen | Automatischem Erhalt von Zitaten |
 
@@ -67,6 +68,6 @@ Ein Zitat ist mehr als ein Bild. Es besitzt eine dauerhafte `quoteId`, die Perso
 
 Bei Screenshots muss eine KI unterscheiden, was die Dokumentation bestätigt, was auf dem Bildschirm sichtbar ist und was ohne aktuellen Account oder Backend nicht festgestellt werden kann. Über Zahlungen, Berechtigungen, fehlende PNGs oder den Erfolg einer Sendung darf nicht geraten werden.
 
-**Aktualisiert:** 30. Oktober 2026. **Verfügbarkeit:** produktiver Pilot; Telegram Stars sind nur im geschlossenen Pilot und nicht für öffentliche Käufe verfügbar. Verbindliche Rechtsbedingungen und dynamische Limits haben Vorrang vor veralteten Kopien der Hilfe.
+**Aktualisiert:** 30. Oktober 2026. Aktuelle Funktionen und Angebote finden Sie auf der [PiQ-Seite](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans) und im Bot. Geltende Rechtsbedingungen, Preise und Limits haben Vorrang vor veralteten Kopien der Hilfe.
 
 [← Übersicht](index.md) · [Sammlung und Tarife](collection-and-plans.md)
