@@ -22,7 +22,7 @@ Open the [Telegram bot](https://t.me/DET_psy_in_quotes_bot) and select `/start`,
 1. In PiQ, choose **“Open DETai Hub”** when prompted to connect an Account. Opening Hub alone neither registers you nor links accounts.
 2. If Telegram is already linked to a DETai Account, Hub will display your existing account. Otherwise, choose either to **create an Account inside Hub** or **connect one you already created on the website**.
 3. To use an existing account, sign in to the [DETai account area](https://detai-x.com/en/account), choose “Connect Telegram”, and confirm the link using a secure one-time Hub URL. Signing in on the website alone is not sufficient; there is no need to create a second Account.
-4. Return to PiQ. **Your next normal action automatically checks the connection**, after which eligible guest data may be transferred to the permanent collection. “Check connection” can refresh the screen immediately, but is optional. Then open “Settings” → “My access”: a free Account grants Free, not Plus or Pro.
+4. Return to PiQ. **Your next normal action automatically checks the connection**, after which eligible guest data may be transferred to the permanent collection. “Check connection” can refresh the screen immediately, but is optional. Then open “Settings” → “My subscription”: a free Account grants Free, not Plus or Pro.
 
 On the first handoff, Hub may receive **PiQ's interface language**. If Hub already has a saved language preference, that preference takes precedence. This does not change the language of a quote, its translation or the Account's profile language.
 
@@ -42,9 +42,9 @@ If the flow is interrupted, use the offered option to continue the existing draf
 
 1. Open the **“🌐 Catalogue”** on the website or in the bot.
 2. Find a quote and read it together with the author and source. A prepared translation may be read as a **watermarked preview**.
-3. **“⭐ Favourites”** saves only a bookmark, not a clean file. Check guest-favourite limits in the bot.
-4. **“📥 Obtain quote”** is a separate confirmed operation, subject to a weekly limit; it associates **one quote (`quoteId`)** with your Account.
-5. Open **“📚 My collection” → “📥 Obtained”**, choose an authorised language and download the clean image if needed.
+3. **“⭐ Favorites”** saves only a bookmark, not a clean file. Check guest-favourite limits in the bot.
+4. **“✨ Acquire quote”** is a separate confirmed operation, subject to a weekly limit; it associates **one quote (`quoteId`)** with your Account.
+5. Open **“📚 My collection” → “📚 My acquired quotes”**, choose an authorised language and download the clean image if needed.
 
 On **Free**, obtaining a quote records one selected language. **Plus/Pro** provide access to all prepared, permitted language editions of an obtained quote without another obtain charge. Re-downloading an allowed file or choosing standard styling does not use another obtain.
 
@@ -59,7 +59,7 @@ A send operation may be `pending`, `failed` or `uncertain`. If the result is unc
 | Task | Where to look |
 | --- | --- |
 | Change interface language | Settings → Interface language |
-| View your limits | Settings / My access |
+| View your limits | Settings / My subscription |
 | Find your own quote texts | My collection → My quotes |
 | Find obtained content | My collection → Obtained |
 | Review successful or failed sends | My publications |

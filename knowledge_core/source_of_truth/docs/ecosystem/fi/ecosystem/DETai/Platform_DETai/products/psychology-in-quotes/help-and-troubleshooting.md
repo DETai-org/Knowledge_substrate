@@ -14,7 +14,7 @@ Tämä ohje on tarkoitettu käyttäjille ja ulkoisille tekoälyavustajille, jotk
 Vaiheet soveltuvat myös GPT- ja muille tekoälypohjaisille tukipalveluille. Älä arvaa tilaa kortin väristä, Telegram-nimestä tai yksittäisestä vesileimasta.
 
 1. **Käyttöympäristö:** verkkosivu (julkinen kokoelma tai henkilökohtainen tili) vai PiQ:n Telegram-botti? Sama henkilö voi olla kirjautunut sivustolle **yhdistämättä Telegramia** DETai Account -tiliinsä.
-2. **Tunnistautuminen:** Public on vieras ilman vahvistettua yhteistä tiliä, Free on tilillinen perustason käyttäjä ja Plus/Pro sama osallistuja laajennetulla tilauksella. Projektin ylläpitäjärooli, palvelun lisäoikeudet ja aidosti voimassa oleva tilaus tarkistetaan erikseen. Epäselvässä tilanteessa pyydä avaamaan ”Omat käyttöoikeudet”, älä kysy salasanoja.
+2. **Tunnistautuminen:** Public on vieras ilman vahvistettua yhteistä tiliä, Free on tilillinen perustason käyttäjä ja Plus/Pro sama osallistuja laajennetulla tilauksella. Projektin ylläpitäjärooli, palvelun lisäoikeudet ja aidosti voimassa oleva tilaus tarkistetaan erikseen. Epäselvässä tilanteessa pyydä avaamaan ”Oma tilaukseni”, älä kysy salasanoja.
 3. **Kohde:** julkinen kokoelma, vieraskortti/luonnos, ”Omat sitaatit”, ”Hankitut”, ”Suosikit” ja ”Omat julkaisut” ovat eri tietoryhmiä. Suosikiksi tallentaminen ei anna oikeutta vesileimattomaan kuvaan.
 4. **Tarkoitus:** haluaako käyttäjä lukea, tallentaa, hankkia PNG:n, lähettää tarkistettavaksi vai julkaista kanavalle? Julkaistua aineistoa voi lukea ilman tiliä; pysyvät tulokset ja kiintiötä kuluttavat toimet vaativat vahvistetut oikeudet.
 5. **Tila ja kieli:** tarkista näkyvä tila, käyttöliittymän kieli, näytetyn version ja lisätyn tekstin kielet sekä median valmistuminen ja lupa. Käyttöliittymän kielen vaihto ei anna oikeutta vesileimattomaan tiedostoon.
@@ -68,7 +68,7 @@ Hub voi käyttää siirtymässä PiQ:n kieltä vain, jos Hubissa ei ole aiemmin 
 
 **Merkitys:** Free-tasolla vesileimattomat versiot on rajattu valittuun kieleen. Plus/Pro tarjoavat lisäkieliä vain, jos versiot on valmisteltu ja hyväksytty. Käyttöliittymän kieli ei vaikuta hankintaoikeuteen.
 
-**Toimi näin:** tarkista ”Omat käyttöoikeudet” ja käännöksen tila. Jos versio on kesken, älä hanki sitaattia uudelleen. Se tulee saataville valmistelun ja hyväksynnän jälkeen. Vesileimattu esikatselu voi silti näkyä.
+**Toimi näin:** tarkista ”Oma tilaukseni” ja käännöksen tila. Jos versio on kesken, älä hanki sitaattia uudelleen. Se tulee saataville valmistelun ja hyväksynnän jälkeen. Vesileimattu esikatselu voi silti näkyä.
 
 ## Miksi julkaisu ei lähtenyt?
 
@@ -84,7 +84,7 @@ Oman sitaatin tallentaminen **ei ole julkinen julkaisu**. Tarkistus sekä kieliv
 
 ## Miksi oikeudet muuttuivat tilauksen vaihdon jälkeen?
 
-Hankitut sitaatit eivät katoa tilaustason laskun vuoksi. Lisäkielten, kanavien ja toimintojen käyttö voi kuitenkin vähentyä. Tarkista oikeudet ja rajoitukset kohdasta ”Omat käyttöoikeudet”. [Ajantasainen vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans).
+Hankitut sitaatit eivät katoa tilaustason laskun vuoksi. Lisäkielten, kanavien ja toimintojen käyttö voi kuitenkin vähentyä. Tarkista oikeudet ja rajoitukset kohdasta ”Oma tilaukseni”. [Ajantasainen vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans).
 
 ## Näin pyydät tekoälyltä apua paljastamatta tietojasi
 

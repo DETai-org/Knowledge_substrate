@@ -7,7 +7,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 # PiQ:n kokoelma, kielet ja tilaustasot
 
-**Päivitetty:** 30. lokakuuta 2026. Tällä sivulla selitetään kokoelman rakenne ja käyttöoikeustasot, mutta **ei kopioida tilausten hinta- tai kiintiötaulukkoa**. Free / Plus / Pro -tasojen ajantasaiset ominaisuudet ja kiintiöt määräytyvät PiQ:n käytäntöjen perusteella ja näkyvät [virallisen sivuston päivittyvässä vertailussa](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Tarkista jäljellä olevat kiintiösi, lisäoikeudet ja voimassa oleva tilauksesi ”Omat käyttöoikeudet” -kohdasta.
+**Päivitetty:** 30. lokakuuta 2026. Tällä sivulla selitetään kokoelman rakenne ja käyttöoikeustasot, mutta **ei kopioida tilausten hinta- tai kiintiötaulukkoa**. Free / Plus / Pro -tasojen ajantasaiset ominaisuudet ja kiintiöt määräytyvät PiQ:n käytäntöjen perusteella ja näkyvät [virallisen sivuston päivittyvässä vertailussa](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Tarkista jäljellä olevat kiintiösi, lisäoikeudet ja voimassa oleva tilauksesi ”Oma tilaukseni” -kohdasta.
 
 ## Vieras, osallistuja ja tilaaja ovat eri asioita
 
@@ -35,7 +35,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 Verkkosivun taulukko hakee voimassa olevan tuotekäytännön rajapinnan kautta. Tähän ohjeeseen **ei tarkoituksella kirjoiteta pysyviä lukuarvoja** sitaattien hankinnalle, julkaisuille, Stories-sisällöille, kielille, kanaville, kuvateksteille, BrandKitille tai muille tilausominaisuuksille. Näin julkinen dokumentaatio ei erkaannu sovelluksen todellisista rajoituksista.
 
-Henkilökohtaiset oikeudet ja kiintiöt näet [”Omat käyttöoikeudet” -osiosta](https://detai-x.com/fi/account/products/psychology-in-quotes#piq-access). Kiintiötä voidaan varata toimenpiteelle ennen sen lopullista vahvistusta, joten jäljellä olevan määrän kertoo sovellus. Toisen sitaatin hankkiminen, julkaiseminen ja Stories-sisällön luominen ovat eri toimintoja. Oman sitaatin luominen ei ole toisen sitaatin hankkimista.
+Henkilökohtaiset oikeudet ja kiintiöt näet [”Oma tilaukseni” -osiosta](https://detai-x.com/fi/account/products/psychology-in-quotes#piq-access). Kiintiötä voidaan varata toimenpiteelle ennen sen lopullista vahvistusta, joten jäljellä olevan määrän kertoo sovellus. Toisen sitaatin hankkiminen, julkaiseminen ja Stories-sisällön luominen ovat eri toimintoja. Oman sitaatin luominen ei ole toisen sitaatin hankkimista.
 
 ## Kielet ja tilauksen vaihtaminen
 
@@ -52,7 +52,7 @@ Henkilökohtaiset oikeudet ja kiintiöt näet [”Omat käyttöoikeudet” -osio
 
 PiQ:ssa on Free-, Plus- ja Pro-tasot ja niitä vastaavat palvelinpuolen oikeudet, mutta **Telegram Stars on käytössä vain suljetussa pilotissa eikä julkinen itsepalvelumaksaminen ole käytössä**. Tilaustasojen kuvaus ei ole tarjous ostaa tilausta tietyllä hinnalla. Kun maksaminen on käytettävissä, hinta, valuutta, tilausjakso, automaattinen uusiminen, peruminen ja hyvityskäytännöt näytetään **ennen maksun vahvistamista**. Tarkat ehdot määräytyvät voimassa olevan tarjouksen ja [käyttöehtojen](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms) mukaan.
 
-[Ajantasainen tuotesivu ja vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans) · [Omat käyttöoikeudet](https://detai-x.com/fi/account/products/psychology-in-quotes#piq-access)
+[Ajantasainen tuotesivu ja vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans) · [Oma tilaukseni](https://detai-x.com/fi/account/products/psychology-in-quotes#piq-access)
 
 ## Oikeudellinen huomautus
 

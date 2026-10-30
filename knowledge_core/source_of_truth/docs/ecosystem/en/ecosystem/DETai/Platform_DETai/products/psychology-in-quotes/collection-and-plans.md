@@ -7,7 +7,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 # PiQ collections, languages and plans
 
-**Updated:** 30 October 2026. This page explains collections and access levels, **but does not reproduce the pricing or quota matrix**. Current Free / Plus / Pro features and quotas are defined by PiQ policy and displayed in the [live plan comparison on the official website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Check “My access” for your remaining allowances, additional entitlements and active plan.
+**Updated:** 30 October 2026. This page explains collections and access levels, **but does not reproduce the pricing or quota matrix**. Current Free / Plus / Pro features and quotas are defined by PiQ policy and displayed in the [live plan comparison on the official website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Check “My subscription” for your remaining allowances, additional entitlements and active plan.
 
 ## Guest, participant and subscriber are different states
 
@@ -23,7 +23,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 - **My quotes** — records you created, regardless of whether they have passed public moderation. As their owner, you can access the current prepared PNGs without separately obtaining your own quotes.
 - **Obtained** — quotes by others from the catalogue associated with your DETai Account after confirmation.
-- **Favourites** — bookmarks. They neither remove watermarks nor grant download rights.
+- **Favorites** — bookmarks. They neither remove watermarks nor grant download rights.
 - **My publications** — the history of actual sends through PiQ. Creating Stories does not itself mean that anything was published externally.
 - **Obtaining** — occurs once per Account and **`quoteId`**, not once per PNG, language, revision or design template.
 - **Downloading** — retrieves an authorised file; it is not, by itself, another purchase or obtain operation.
@@ -35,7 +35,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 The website obtains the live product policy through its API. This document intentionally contains **no static numerical limits** for obtaining quotes, publishing, Stories, languages, channels, captions, BrandKit or other plan features; otherwise, the public guide could become inconsistent with the application.
 
-Check [“My access”](https://detai-x.com/en/account/products/psychology-in-quotes#piq-access) for your own entitlements and quotas. Usage operations may be reserved until their outcomes are confirmed, so the application is the source of truth for your remaining balance. Obtaining another person's quote, publishing and creating Stories are distinct operations. Creating your own quote is not the same as obtaining somebody else's.
+Check [“My subscription”](https://detai-x.com/en/account/products/psychology-in-quotes#piq-access) for your own entitlements and quotas. Usage operations may be reserved until their outcomes are confirmed, so the application is the source of truth for your remaining balance. Obtaining another person's quote, publishing and creating Stories are distinct operations. Creating your own quote is not the same as obtaining somebody else's.
 
 ## Languages and subscription changes
 
@@ -52,7 +52,7 @@ Check [“My access”](https://detai-x.com/en/account/products/psychology-in-qu
 
 PiQ defines Free, Plus and Pro access levels and corresponding server-side entitlements, but **Telegram Stars are available only in the closed pilot; public self-service payments are not enabled**. Describing plans is not an offer to buy a subscription at a stated price. Where checkout is available, the price, currency, period, auto-renewal, cancellation and refund process must be shown **before payment confirmation**. The applicable offer and [Terms](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms) determine the exact conditions.
 
-[Current product page and plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans) · [My access](https://detai-x.com/en/account/products/psychology-in-quotes#piq-access)
+[Current product page and plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans) · [My subscription](https://detai-x.com/en/account/products/psychology-in-quotes#piq-access)
 
 ## Legal note
 

@@ -14,8 +14,8 @@ This guide is for people and external AI assistants reviewing a PiQ screenshot. 
 These steps also apply to GPT/AI support assistants. Do not guess the user's status from the card's colour, Telegram username or a single watermark.
 
 1. **Surface:** the website (public catalogue or personal account area) or the PiQ Telegram bot. Someone can be signed in on the website but **not have linked Telegram** to their DETai Account.
-2. **Identity:** Public means a guest without a verified shared Account; Free means someone with a shared Account and baseline access; Plus/Pro means the same participant with an extended subscription. Project administrator roles, service grants and the currently active plan are checked separately. If uncertain, ask the user to open “My access” — never request credentials.
-3. **Object:** public catalogue, guest card/draft, “My quotes”, “Obtained”, “Favourites” and “My publications” are different data categories. Bookmarking a quote does not confer access to its clean image.
+2. **Identity:** Public means a guest without a verified shared Account; Free means someone with a shared Account and baseline access; Plus/Pro means the same participant with an extended subscription. Project administrator roles, service grants and the currently active plan are checked separately. If uncertain, ask the user to open “My subscription” — never request credentials.
+3. **Object:** public catalogue, guest card/draft, “My quotes”, “Acquired”, “Favorites” and “My publications” are different data categories. Bookmarking a quote does not confer access to its clean image.
 4. **Intent:** is the user trying to read, save, obtain a PNG, submit for review or publish to a channel? A published quote can be read without an Account; permanent results and quota-consuming operations require verified entitlements.
 5. **Status and language:** inspect the displayed status, interface language, displayed edition language, submitted passage language, media readiness and authorisation. Changing interface language does not grant a clean-file entitlement.
 6. **Next action:** suggest one specific button or navigation path. If linking is needed, explain registration and the separate Telegram connection. Do not promise instant publication or recovery of expired guest data.
@@ -40,7 +40,7 @@ On handoff, Hub uses the PiQ language only when it has no saved preference. If t
 
 ## What do the collection sections mean?
 
-**My quotes** are authored by the user; **Obtained** contains other people's catalogue quotes obtained under their Account; **Favourites** are bookmarks; **My publications** records sends. The same quote may appear in several sections for different reasons.
+**My quotes** are authored by the user; **Obtained** contains other people's catalogue quotes obtained under their Account; **Favorites** are bookmarks; **My publications** records sends. The same quote may appear in several sections for different reasons.
 
 [More about collection terminology](collection-and-plans.md#piq-collection-terms).
 
@@ -68,7 +68,7 @@ On handoff, Hub uses the PiQ language only when it has no saved preference. If t
 
 **Meaning:** on Free, clean versions are restricted to the selected language. Plus/Pro provide only additional languages whose files are prepared and authorised. The interface language does not affect obtain rights.
 
-**Next step:** check “My access” and the translation's status. If a version is still being prepared, do not obtain the quote again. It becomes available after preparation and authorisation. You may still be able to preview it with a watermark.
+**Next step:** check “My subscription” and the translation's status. If a version is still being prepared, do not obtain the quote again. It becomes available after preparation and authorisation. You may still be able to preview it with a watermark.
 
 ## Why wasn't my publication sent?
 
@@ -84,7 +84,7 @@ Saving your own quote **does not automatically publish it publicly**. Review and
 
 ## Why did my capabilities change after a subscription change?
 
-Obtained quotes do not disappear when a plan is downgraded. Access to additional prepared languages, channels and functions may decrease. Check your entitlements and limits in “My access”. [Current website comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans).
+Obtained quotes do not disappear when a plan is downgraded. Access to additional prepared languages, channels and functions may decrease. Check your entitlements and limits in “My subscription”. [Current website comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans).
 
 ## How to ask an AI assistant for help without sharing sensitive data
 

@@ -7,7 +7,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 # PiQ: Sammlung, Sprachen und Tarife
 
-**Aktualisiert:** 30. Oktober 2026. Diese Seite erläutert die Sammlungsstruktur und die Zugangsstufen, **wiederholt aber nicht die Tarif- und Kontingenttabelle**. Aktuelle Funktionen und Kontingente von Free / Plus / Pro ergeben sich aus der PiQ-Policy und stehen im [dynamischen Tarifvergleich auf der offiziellen Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Persönliche Restkontingente, zusätzliche Rechte und den aktiven Tarif finden Sie unter „Mein Zugang“.
+**Aktualisiert:** 30. Oktober 2026. Diese Seite erläutert die Sammlungsstruktur und die Zugangsstufen, **wiederholt aber nicht die Tarif- und Kontingenttabelle**. Aktuelle Funktionen und Kontingente von Free / Plus / Pro ergeben sich aus der PiQ-Policy und stehen im [dynamischen Tarifvergleich auf der offiziellen Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Persönliche Restkontingente, zusätzliche Rechte und den aktiven Tarif finden Sie unter „Mein Abonnement“.
 
 ## Gast, Teilnehmende und Abonnierende sind verschiedene Zustände
 
@@ -35,7 +35,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 Die Tabelle auf der Website ruft die tatsächlich geltende Produkt-Policy über die API ab. Hier stehen bewusst **keine unveränderlichen Zahlen** zum Erhalt von Zitaten, zu Veröffentlichungen, Stories, Sprachen, Kanälen, Bildunterschriften, BrandKit oder anderen Tarifleistungen. Sonst könnte die öffentliche Dokumentation von der Anwendung abweichen.
 
-Persönliche Rechte und Kontingente stehen unter [„Mein Zugang“](https://detai-x.com/de/account/products/psychology-in-quotes#piq-access). Kontingente können bis zur Bestätigung einer Operation reserviert sein; deshalb ist die Anwendung für den verbleibenden Stand maßgeblich. Der Erhalt eines fremden Zitats, eine Veröffentlichung und das Erstellen von Stories sind unterschiedliche Aktionen. Das Erstellen eines eigenen Zitats ist kein Erhalt eines fremden Zitats.
+Persönliche Rechte und Kontingente stehen unter [„Mein Abonnement“](https://detai-x.com/de/account/products/psychology-in-quotes#piq-access). Kontingente können bis zur Bestätigung einer Operation reserviert sein; deshalb ist die Anwendung für den verbleibenden Stand maßgeblich. Der Erhalt eines fremden Zitats, eine Veröffentlichung und das Erstellen von Stories sind unterschiedliche Aktionen. Das Erstellen eines eigenen Zitats ist kein Erhalt eines fremden Zitats.
 
 ## Sprachen und Tarifwechsel
 
@@ -52,7 +52,7 @@ Persönliche Rechte und Kontingente stehen unter [„Mein Zugang“](https://det
 
 PiQ kennt Free, Plus und Pro und entsprechende serverseitige Rechte. **Telegram Stars sind jedoch ausschließlich im geschlossenen Pilotversuch verfügbar; öffentliche Zahlungen zur Selbstbuchung sind deaktiviert.** Eine Tarifbeschreibung ist kein Angebot, zu einem bestimmten Preis ein Abonnement abzuschließen. Im verfügbaren Bezahlablauf werden Preis, Währung, Laufzeit, automatische Verlängerung, Kündigung und Rückerstattung **vor Bestätigung der Zahlung** angezeigt. Die konkreten Bedingungen ergeben sich aus dem gültigen Angebot und den [Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms).
 
-[Aktuelle Produktseite und Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans) · [Mein Zugang](https://detai-x.com/de/account/products/psychology-in-quotes#piq-access)
+[Aktuelle Produktseite und Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans) · [Mein Abonnement](https://detai-x.com/de/account/products/psychology-in-quotes#piq-access)
 
 ## Rechtlicher Hinweis
 

@@ -14,7 +14,7 @@ Diese Hilfe richtet sich an Nutzende sowie externe KI-Assistenten, die einen PiQ
 Die Reihenfolge gilt auch für GPT-/KI-Assistenten im Support. Raten Sie den Status nicht anhand der Kartenfarbe, des Telegram-Namens oder eines einzelnen Wasserzeichens.
 
 1. **Oberfläche:** Website (öffentlicher Katalog oder persönlicher Bereich) oder PiQ-Telegram-Bot. Eine Person kann auf der Website angemeldet sein, **ohne Telegram** mit dem DETai Account verbunden zu haben.
-2. **Identität:** Public = Gast ohne bestätigten gemeinsamen Account; Free = Teilnehmende mit gemeinsamem Account und Basisrechten; Plus/Pro = dieselben Teilnehmenden mit erweitertem Abonnement. Projektadministrator-Rollen, Serviceberechtigungen und der tatsächlich aktive Tarif sind getrennt zu prüfen. Im Zweifel „Mein Zugang“ öffnen lassen, ohne Geheimnisse abzufragen.
+2. **Identität:** Public = Gast ohne bestätigten gemeinsamen Account; Free = Teilnehmende mit gemeinsamem Account und Basisrechten; Plus/Pro = dieselben Teilnehmenden mit erweitertem Abonnement. Projektadministrator-Rollen, Serviceberechtigungen und der tatsächlich aktive Tarif sind getrennt zu prüfen. Im Zweifel „Mein Abonnement“ öffnen lassen, ohne Geheimnisse abzufragen.
 3. **Objekt:** öffentlicher Katalog, Gastkarte/Entwurf, „Meine Zitate“, „Erhalten“, „Favoriten“ und „Meine Veröffentlichungen“ sind verschiedene Datenbereiche. Ein Favorit berechtigt nicht zum sauberen Bild.
 4. **Absicht:** Möchte jemand lesen, speichern, eine PNG erhalten, zur Prüfung einreichen oder in einem Kanal veröffentlichen? Für öffentliches Lesen ist kein Account nötig; dauerhafte Ergebnisse und kontingentierte Vorgänge erfordern bestätigte Rechte.
 5. **Status und Sprache:** prüfen Sie Statusbezeichnung, Oberflächensprache, Sprache der angezeigten Fassung und des eingereichten Fragments sowie Medienbereitschaft und Freigabe. Ein Sprachwechsel der Oberfläche gibt kein Recht auf eine Datei ohne Wasserzeichen.
@@ -58,7 +58,7 @@ Beim Wechsel übernimmt Hub die Sprache von PiQ nur, wenn noch keine eigene Spra
 
 **Katalog:** öffentliche Vorschauen fremder Zitate tragen absichtlich Wasserzeichen. Ein DETai Account allein entfernt diese nicht.
 
-**Erhalten:** nach bestätigtem Erhalt kann eine Datei ohne Wasserzeichen in einer berechtigten Sprache bezogen werden. Mit Free gilt dies für die ausgewählte und zuvor bestätigte historische Sprachrechte.
+**Erhalten:** nach bestätigtem Erhalt kann eine Datei ohne Wasserzeichen in einer berechtigten Sprache bezogen werden. Mit Free gilt dies für die ausgewählte Sprache sowie für bereits zuvor erworbene und weiterhin gültige Sprachrechte.
 
 **Meine Zitate:** bestätigte Eigentümer mit Account können ihre eigenen fertigen PNGs auch im Free-Tarif ohne Wasserzeichen sehen. Eine Probe-Gastkarte bleibt mit Wasserzeichen versehen, soweit der Gasteditor verfügbar ist. Falls in „Meine Zitate“ auf der Website weiterhin PREVIEW steht, prüfen Sie die authentifizierte Ansicht; erhalten Sie Ihr eigenes Zitat nicht erneut.
 
@@ -68,7 +68,7 @@ Beim Wechsel übernimmt Hub die Sprache von PiQ nur, wenn noch keine eigene Spra
 
 **Bedeutung:** Mit Free sind Versionen ohne Wasserzeichen auf die ausgewählte Sprache begrenzt. Plus/Pro gewähren nur zusätzliche Sprachen, für die fertige und freigegebene Versionen vorliegen. Die Oberflächensprache beeinflusst den Erhalt nicht.
 
-**Was tun:** „Mein Zugang“ und den Status der Übersetzung prüfen. Ist die Version noch in Vorbereitung, nicht erneut auf „Erhalten“ drücken. Nach Fertigstellung und Freigabe wird sie verfügbar. Eine Ansicht mit Wasserzeichen kann vorher möglich sein.
+**Was tun:** „Mein Abonnement“ und den Status der Übersetzung prüfen. Ist die Version noch in Vorbereitung, nicht erneut auf „Erhalten“ drücken. Nach Fertigstellung und Freigabe wird sie verfügbar. Eine Ansicht mit Wasserzeichen kann vorher möglich sein.
 
 ## Warum wurde die Veröffentlichung nicht gesendet?
 
@@ -84,7 +84,7 @@ Das Speichern eines eigenen Zitats **ist keine öffentliche Veröffentlichung**.
 
 ## Warum haben sich die Rechte nach einem Tarifwechsel verändert?
 
-Erhaltene Zitate verschwinden bei einem Downgrade nicht. Der Zugriff auf zusätzliche fertige Sprachen, Kanäle und Funktionen kann jedoch eingeschränkt werden. Persönliche Rechte und Limits finden Sie unter „Mein Zugang“. [Aktueller Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans).
+Erhaltene Zitate verschwinden bei einem Downgrade nicht. Der Zugriff auf zusätzliche fertige Sprachen, Kanäle und Funktionen kann jedoch eingeschränkt werden. Persönliche Rechte und Limits finden Sie unter „Mein Abonnement“. [Aktueller Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans).
 
 ## KI um Hilfe bitten, ohne persönliche Daten offenzulegen
 

@@ -22,7 +22,7 @@ Avaa [Telegram-botti](https://t.me/DET_psy_in_quotes_bot) ja käytä komentoa `/
 1. Valitse PiQ:n tilin yhdistämistä koskevasta kehotteesta **”Avaa DETai Hub”**. Pelkkä siirtyminen Hubiin ei rekisteröi käyttäjää eikä yhdistä tilejä.
 2. Jos Telegram on jo yhdistetty DETai Account -tiliin, Hub näyttää nykyisen tilin. Muussa tapauksessa voit **luoda Account-tilin Hubissa** tai **yhdistää verkkosivulla aiemmin luodun tilin**.
 3. Jos sinulla on jo tili, kirjaudu [DETai-tilisivulle](https://detai-x.com/fi/account), valitse ”Yhdistä Telegram” ja vahvista yhteys Hubin suojatulla kertakäyttölinkillä. Pelkkä verkkosivulle kirjautuminen ei riitä, eikä toista tiliä tarvitse luoda.
-4. Palaa PiQ:hun: **seuraava tavallinen toiminto tarkistaa yhteyden automaattisesti**, minkä jälkeen soveltuvat vierastiedot voidaan siirtää pysyvään kokoelmaan. ”Tarkista yhteys” päivittää näkymän heti mutta ei ole pakollinen vaihe. Avaa sitten ”Asetukset” → ”Omat käyttöoikeudet”: maksuton Account antaa Free-tason, ei Plus- tai Pro-tasoa.
+4. Palaa PiQ:hun: **seuraava tavallinen toiminto tarkistaa yhteyden automaattisesti**, minkä jälkeen soveltuvat vierastiedot voidaan siirtää pysyvään kokoelmaan. ”Tarkista yhteys” päivittää näkymän heti mutta ei ole pakollinen vaihe. Avaa sitten ”Asetukset” → ”Oma tilaukseni”: maksuton Account antaa Free-tason, ei Plus- tai Pro-tasoa.
 
 Ensimmäisellä siirtymällä Hub voi vastaanottaa **PiQ:n käyttöliittymän kielen**. Jos Hubiin on tallennettu oma kielivalinta, se on ensisijainen. Tämä ei muuta sitaatin, sen käännöksen tai Account-profiilin kieltä.
 
@@ -40,11 +40,11 @@ Jos luonti keskeytyy, käytä tarjottua painiketta olemassa olevan luonnoksen ja
 
 ## 3. Etsi ja hanki toisen luoma sitaatti
 
-1. Avaa verkkosivun tai botin **”🌐 Kokoelma”**.
+1. Avaa verkkosivun tai botin **”🌐 Luettelo”**.
 2. Etsi sitaatti ja lue sen tekijä- ja lähdetiedot. Valmista käännöstä voi katsella **vesileimattuna esikatseluna**.
 3. **”⭐ Suosikit”** tallentaa kirjanmerkin, ei vesileimatonta tiedostoa. Vierassuosikkien rajoitukset näet botista.
 4. **”📥 Hanki sitaatti”** on erillinen vahvistettava toimenpide, johon sovelletaan viikkorajoitusta. Se liittää **yhden sitaatin (`quoteId`)** Account-tiliisi.
-5. Avaa **”📚 Oma kokoelma” → ”📥 Hankitut”**, valitse sallittu kieli ja lataa tarvittaessa vesileimaton kuva.
+5. Avaa **”📚 Oma kokoelma” → ”📚 Hankitut sitaattini”**, valitse sallittu kieli ja lataa tarvittaessa vesileimaton kuva.
 
 **Free-tasolla** hankintaan liitetään yksi valittu kieli. **Plus/Pro** antavat käyttöön kaikki hankitun sitaatin valmiit ja sallitut kieliversiot ilman uutta hankintaveloitusta. Sallitun tiedoston lataaminen uudelleen tai vakioulkoasun valinta ei kuluta uutta hankintaa.
 
@@ -59,7 +59,7 @@ Lähetys voi olla tilassa `pending`, `failed` tai `uncertain`. Jos tulosta ei ol
 | Tarve | Sijainti |
 | --- | --- |
 | Käyttöliittymän kielen vaihto | Asetukset → Käyttöliittymän kieli |
-| Kiintiöiden tarkistus | Asetukset / Omat käyttöoikeudet |
+| Kiintiöiden tarkistus | Asetukset / Oma tilaukseni |
 | Omien tekstien etsiminen | Oma kokoelma → Omat sitaatit |
 | Hankitun aineiston etsiminen | Oma kokoelma → Hankitut |
 | Onnistuneiden ja epäonnistuneiden lähetysten tarkistus | Omat julkaisut |

@@ -22,7 +22,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 1. Wählen Sie in PiQ **„DETai Hub öffnen“**, wenn Sie zum Verbinden eines Accounts eingeladen werden. Der Wechsel zum Hub allein registriert niemanden und verbindet keine Konten.
 2. Ist Telegram bereits mit einem DETai Account verknüpft, zeigt Hub dieses Konto. Andernfalls wählen Sie: **Account direkt im Hub erstellen** oder **ein bereits auf der Website angelegtes Konto verbinden**.
 3. Melden Sie sich für ein bestehendes Konto im [DETai-Kontobereich](https://detai-x.com/de/account) an, wählen Sie „Telegram verbinden“ und bestätigen Sie die Verknüpfung über einen geschützten Einmallink im Hub. Die Anmeldung auf der Website allein genügt nicht; ein zweiter Account ist unnötig.
-4. Kehren Sie zu PiQ zurück. **Bei Ihrer nächsten normalen Aktion wird die Verknüpfung automatisch geprüft**; zulässige Gastdaten können dann in die dauerhafte Sammlung übernommen werden. „Verbindung prüfen“ aktualisiert die Ansicht sofort, ist aber optional. Öffnen Sie anschließend „Einstellungen“ → „Mein Zugang“: Ein kostenloser Account bietet Free, nicht Plus oder Pro.
+4. Kehren Sie zu PiQ zurück. **Bei Ihrer nächsten normalen Aktion wird die Verknüpfung automatisch geprüft**; zulässige Gastdaten können dann in die dauerhafte Sammlung übernommen werden. „Verbindung prüfen“ aktualisiert die Ansicht sofort, ist aber optional. Öffnen Sie anschließend „Einstellungen“ → „Mein Abonnement“: Ein kostenloser Account bietet Free, nicht Plus oder Pro.
 
 Beim ersten Übergang kann Hub die **Oberflächensprache von PiQ** übernehmen. Hat Hub bereits eine gespeicherte Spracheinstellung, bleibt diese vorrangig. Weder die Sprache des Zitats oder seiner Übersetzung noch die Profilsprache des Accounts ändert sich dadurch.
 
@@ -34,7 +34,7 @@ Beim ersten Übergang kann Hub die **Oberflächensprache von PiQ** übernehmen. 
 
 Wählen Sie im Bot **„✨ Zitat erstellen“**. Geben Sie den Zitattext, die zitierte Person, den Titel der Quelle und gegebenenfalls Seitenzahl und Ausgabe an. Prüfen Sie Sprache des eingegebenen Textes und Gestaltung. Folgen Sie dem Assistenten, bis das Speichern bestätigt wurde.
 
-Ein neu erstelltes Zitat erscheint unter **„📚 Meine Sammlung“ → „✍️ Meine Zitate“**, selbst wenn es noch nicht im öffentlichen Katalog steht. Bei Gästen handelt es sich um ein **temporäres, ungeprüftes Ergebnis**, das ohne bestätigten Account und vorgeschriebene Prüfung nicht im öffentlichen Katalog erscheinen darf. Wer einen Account besitzt, kann das fertige eigene Bild ohne Wasserzeichen abrufen, ohne das Kontingent für den Erhalt fremder Zitate zu belasten – auch im Free-Tarif.
+Ein neu erstelltes Zitat erscheint unter **„📚 Sammlung“ → „✍️ Meine Zitate“**, selbst wenn es noch nicht im öffentlichen Katalog steht. Bei Gästen handelt es sich um ein **temporäres, ungeprüftes Ergebnis**, das ohne bestätigten Account und vorgeschriebene Prüfung nicht im öffentlichen Katalog erscheinen darf. Wer einen Account besitzt, kann das fertige eigene Bild ohne Wasserzeichen abrufen, ohne das Kontingent für den Erhalt fremder Zitate zu belasten – auch im Free-Tarif.
 
 Wurde der Vorgang unterbrochen, nutzen Sie die angebotene Schaltfläche zum Fortsetzen des vorhandenen Entwurfs. Gäste haben nur ein aktives Projekt mit begrenzter Laufzeit; das genaue Ablaufdatum zeigt der Bot. Erstellen Sie nicht vorsorglich eine Kopie. Fehlt die aktuelle PNG-Datei, lesen Sie die [Fehlerhilfe](help-and-troubleshooting.md#piq-image-not-ready).
 
@@ -44,7 +44,7 @@ Wurde der Vorgang unterbrochen, nutzen Sie die angebotene Schaltfläche zum Fort
 2. Lesen Sie das Zitat mitsamt zitierter Person und Quelle. Eine fertige Übersetzung kann als **Vorschau mit Wasserzeichen** erscheinen.
 3. **„⭐ Favoriten“** legt nur ein Lesezeichen an und verschafft noch keine saubere Datei; Gastlimits stehen im Bot.
 4. **„📥 Zitat erhalten“** ist eine gesondert zu bestätigende Aktion mit Wochenlimit. Sie ordnet Ihrem Account **ein Zitat (`quoteId`)** zu.
-5. Öffnen Sie **„📚 Meine Sammlung“ → „📥 Erhalten“**, wählen Sie eine berechtigte Sprache und laden Sie das Bild ohne Wasserzeichen herunter.
+5. Öffnen Sie **„📚 Sammlung“ → „📚 Meine erhaltenen Zitate“**, wählen Sie eine berechtigte Sprache und laden Sie das Bild ohne Wasserzeichen herunter.
 
 Mit **Free** wird beim Erhalt eine ausgewählte Sprache festgelegt. **Plus/Pro** erlauben alle vorbereiteten und freigegebenen Sprachfassungen eines erhaltenen Zitats, ohne das Erhalt-Kontingent erneut zu belasten. Erneutes Herunterladen erlaubter Dateien und die Wahl eines Standarddesigns kosten keinen weiteren Erhalt.
 
@@ -59,7 +59,7 @@ Eine Sendung kann den Status `pending`, `failed` oder `uncertain` erhalten. Ist 
 | Aufgabe | Wo? |
 | --- | --- |
 | Oberflächensprache ändern | Einstellungen → Oberflächensprache |
-| Limits ansehen | Einstellungen / Mein Zugang |
+| Limits ansehen | Einstellungen / Mein Abonnement |
 | Eigene Texte finden | Meine Sammlung → Meine Zitate |
 | Erhaltenes Material finden | Meine Sammlung → Erhalten |
 | Erfolgreiche und gescheiterte Sendungen ansehen | Meine Veröffentlichungen |

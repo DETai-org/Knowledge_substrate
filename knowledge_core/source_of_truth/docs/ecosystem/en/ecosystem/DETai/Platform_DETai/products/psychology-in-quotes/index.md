@@ -41,7 +41,7 @@ The same approach is gradually being adopted by other DETai products: **first ex
 | I want to know | Open |
 | --- | --- |
 | How to sign in, link Telegram, create and publish a quote | [Getting started](getting-started.md) |
-| What “My quotes”, “Obtained”, “Favourites”, languages and subscriptions mean | [Collection and plans](collection-and-plans.md) |
+| What “My quotes”, “Acquired”, “Favorites”, languages and subscriptions mean | [Collection and plans](collection-and-plans.md) |
 | Why an image has a watermark, a PNG is missing or publication is unconfirmed | [Help and troubleshooting](help-and-troubleshooting.md) |
 | How the ecosystem, platform, Account, site, bot, documentation and API fit together | [Architecture, trust and boundaries](architecture-and-trust.md) |
 
