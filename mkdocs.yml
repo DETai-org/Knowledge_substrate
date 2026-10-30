@@ -185,6 +185,7 @@ nav:
         - Обзор: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md
         - Policy Layer: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md
         - Стандарт создания: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md
+        - Передача языка между ботами: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md
         - README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme.md
       - Мозаический подход: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md
       - Общий README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md
