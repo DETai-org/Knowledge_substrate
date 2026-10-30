@@ -11,6 +11,8 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Psychology in Quotes（PiQ）** 是 [Platform DETai](../../index.md) 旗下的数字化**教育与知识传播产品**，属于 [DETai 生态系统](../../../index.md)。它帮助人们接触心理学思想，连同作者、出处和上下文一起保存书籍中的重要片段，发现他人的观点，并建立自己的知识收藏。
 
+**1.0 版公开发布：2026 年 10 月 31 日。**
+
 DETai 生态系统连接心理治疗、研究、教育、技术与社群，致力于推动 21 世纪心理治疗的发展。**Platform DETai** 将数字产品、用户账户和技术能力连接起来。**PiQ 将自主学习、阅读文化与数字创作结合在一起：**用户可以选择、思考、保存和发布有意义的语录。
 
 **主要用户功能：**教育和知识传播。**附加功能：**发布内容与数字创作。**生态系统角色：**E2 Brand，即传播心理学知识、提升 DETai 的知名度和信任度。这是相互独立的分类维度。PiQ 不是包含教学计划和证书的正规教育项目，也不提供心理治疗、诊断或医疗服务。
@@ -45,9 +47,9 @@ DETai 生态系统连接心理治疗、研究、教育、技术与社群，致�
 | 为什么出现水印、PNG 文件缺失或发布未获确认 | [常见问题与故障排查](help-and-troubleshooting.md) |
 | 生态系统、平台、Account、网站、机器人、文档和 API 如何协作 | [架构、信任与边界](architecture-and-trust.md) |
 
-## 已经可用的功能与仍在准备的功能
+## 功能与使用方式
 
-截至 **2026 年 10 月 30 日**，生产环境试点支持创建和审核语录、公共目录、收藏夹、“我的合集”、获取他人的语录、已制作的语言版本、发布流程和 Stories，但均受当前产品政策限制。**Free / Plus / Pro** 的功能有所区别。**Telegram Stars 付款目前仅对已通过准入审核并完成 DETai Account 验证的封闭商业试点参与者开放**，公众尚不能自行购买。访客功能（收藏、带水印的临时卡片和可重复的体验周期）已在 10 月 27 日合并的 [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) 中实现。访客限额请查看机器人界面；[Free / Plus / Pro 限额以网站动态对比表为准](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。具体功能是否在生产环境启用仍需单独验证：代码合并不等于部署上线。
+Psychology in Quotes 可通过 Telegram 和 Platform DETai 网站使用。语录创建与审核、公共目录、收藏夹、“我的合集”、已制作的语言版本、发布和 Stories 功能均按 **Free / Plus / Pro** 套餐及当前产品政策提供。Plus 和 Pro 订阅使用 Telegram Stars 购买；购买前需完成 DETai Account 的设置并关联 Telegram。访客限额请查看机器人界面，[当前报价、价格及套餐限额请查看网站](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。能否购买以及具体功能是否可用，以当前产品界面为准。
 
 有关权限的详细说明见[收藏与套餐](collection-and-plans.md)；**最新数值限额仅以[网站上的动态套餐对比表](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)为准**。个人的实际权限取决于 **DETai Account 和 PiQ 服务端政策**，不能依据已经过时的静态表格判断。
 
@@ -58,6 +60,5 @@ DETai 生态系统连接心理治疗、研究、教育、技术与社群，致�
 - [Telegram 机器人](https://t.me/DET_psy_in_quotes_bot)
 - [使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms)
 - [隐私声明](https://detai-x.com/zh/technology/platform/psychology-in-quotes/privacy)
-- [应用代码仓库及技术契约](https://github.com/DETai-org/psychology-in-quotes)
 
 **关于文档导航：**此页面是面向公众的产品介绍，也是用户和 AI 助手的入口。法律义务以网站上的法律文件为准；实际权限由 PiQ 政策/API 决定；操作方法见下列章节。文档不会授予访问他人账户的权限，也不能代替对应用实时状态的核实。

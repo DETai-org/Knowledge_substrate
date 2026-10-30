@@ -17,7 +17,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Explore first; create an Account when needed.** [Compare Free / Plus / Pro on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Opening the account area or linking an account does not subscribe you to marketing or publish your private quotes without your intention.
 
-**About guest mode:** favourites, a temporary card and repeat cycles were implemented in [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37). The product itself shows the current limits; merging a PR does not prove that its functionality is deployed to a particular bot.
+**About guest mode:** the running product displays the available guest features and their current limits, which may differ between bot versions.
 
 ## Terms worth distinguishing {#piq-collection-terms}
 
@@ -50,7 +50,9 @@ Check [“My subscription”](https://detai-x.com/en/account/products/psychology
 
 ## Availability and price
 
-PiQ defines Free, Plus and Pro access levels and corresponding server-side entitlements, but **Telegram Stars are available only in the closed pilot; public self-service payments are not enabled**. Describing plans is not an offer to buy a subscription at a stated price. Where checkout is available, the price, currency, period, auto-renewal, cancellation and refund process must be shown **before payment confirmation**. The applicable offer and [Terms](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms) determine the exact conditions.
+**Plus and Pro** subscriptions are purchased with Telegram Stars for **30 days, with automatic renewal**. Checkout requires a completed DETai Account linked to Telegram. The exact Stars amount and period are shown before payment confirmation. The USD amount on the website is a reference, since the cost of acquiring Stars varies by region and top-up method. [Current offers and prices](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans) are shown on the website and in the bot.
+
+Turning off automatic renewal preserves access until the end of the paid period. **Launch Offer** terms may be discontinued with advance notice. Continuing at a new price requires a separate subscription and the user’s payment confirmation. The current rules, notice periods and refund process are set out in the [PiQ Terms of Use](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms).
 
 [Current product page and plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans) · [My subscription](https://detai-x.com/en/account/products/psychology-in-quotes#piq-access)
 

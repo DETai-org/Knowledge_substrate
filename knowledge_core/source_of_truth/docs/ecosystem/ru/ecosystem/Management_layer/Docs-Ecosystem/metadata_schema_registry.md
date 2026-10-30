@@ -61,7 +61,7 @@ title: Реестр metadata schemas
 
 WorkLog — самостоятельный тип рабочей записи. К нему не применяются назначение исполнителя и task completion. Неизвестный или недоступный Logs route не разрешает создавать похожий List, писать в Task/Note List или возвращаться к ClickUp.
 
-Назначение объясняет [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md), а действующую процедуру и формат определяет [log-summary skill owning-репозитория](https://github.com/DETai-org/team-os/blob/main/plugins/team-os/skills/log-summary/SKILL.md). Этот раздел не регистрирует новую YAML schema с именем `work_log`: runtime-тип и тип переносимого документа различаются.
+Назначение объясняет [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md), а актуальная процедура определяется доступным WorkLog-интерфейсом и правилами Team OS. Этот раздел не регистрирует новую YAML schema с именем `work_log`: runtime-тип и тип переносимого документа различаются.
 
 ## Contract `log-summary`
 

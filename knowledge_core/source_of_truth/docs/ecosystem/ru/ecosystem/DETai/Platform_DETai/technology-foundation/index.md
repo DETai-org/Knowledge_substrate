@@ -8,9 +8,10 @@ classification:
   domain: technology-foundation
 descriptive:
   id: detai-platform-technology-foundation
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-08-20
+  date_update: 2026-10-30
 governance:
   canonicality: canonical
   visibility: public
@@ -35,4 +36,4 @@ title: Технологическая основа
 
 На примере [Storytelling](../../../STORYTELLING/technology-foundation.md) можно увидеть, как предметная производственная система сохраняет собственные правила публикации, а intelligence-runtime берёт на себя только техническое исполнение LLM-шагов.
 
-Для Psychology in Quotes такая связь пока не описывается как действующая: участие ecosystem-runtime в его контуре ещё не реализовано. Документация должна показывать фактическую архитектуру, а планируемые связи — появляться только с явной пометкой о будущем состоянии.
+[Psychology in Quotes](../products/psychology-in-quotes/architecture-and-trust.md) использует ecosystem-runtime для общей идентичности DETai Account и коммерческого учёта в Commerce Core: предложений, платежей и подписок. Возможности продукта, недельные лимиты, работа с цитатами и пользовательские сценарии остаются ответственностью PiQ.

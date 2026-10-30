@@ -11,6 +11,8 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Psychology in Quotes (PiQ)** is a digital **educational and knowledge-sharing product** of [Platform DETai](../../index.md), part of the [DETai ecosystem](../../../index.md). It helps people explore psychological ideas, preserve meaningful passages from books together with their authors, sources and context, discover other people's insights, and build a personal collection of knowledge.
 
+**Public release of version 1.0 — 31 October 2026.**
+
 The DETai ecosystem brings together psychotherapy, research, education, technology and community to advance psychotherapy in the twenty-first century. **Platform DETai** connects digital products, accounts and technological capabilities. **PiQ brings together self-directed learning, reading culture and digital creativity:** people can select, reflect on, save and share meaningful quotations.
 
 **Primary user function:** education and public knowledge-sharing. **Additional functions:** publishing and digital creativity. **Role in the ecosystem:** E2 Brand — spreading psychological knowledge, building awareness and trust in DETai. These are independent dimensions. PiQ is not a formal education programme with a curriculum or certification, nor is it psychotherapy, diagnosis or medical care.
@@ -45,9 +47,9 @@ The same approach is gradually being adopted by other DETai products: **first ex
 | Why an image has a watermark, a PNG is missing or publication is unconfirmed | [Help and troubleshooting](help-and-troubleshooting.md) |
 | How the ecosystem, platform, Account, site, bot, documentation and API fit together | [Architecture, trust and boundaries](architecture-and-trust.md) |
 
-## What's working and what's still being prepared
+## Features and access
 
-As of **30 October 2026**, the production pilot supports creating and moderating quotes, the catalogue, favourites, “My collection”, obtaining other people's quotes, prepared language editions, publishing flows and Stories, subject to current policy restrictions. Capabilities differ across **Free / Plus / Pro**. **Telegram Stars are available only in a closed commercial pilot** for admitted participants with verified DETai Accounts; public purchasing is not yet open. Guest features (favourites, a temporary watermarked card and repeat cycles) were implemented in [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37), merged on 27 October. Check current guest limits in the bot and [Free / Plus / Pro limits in the live comparison on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Features must be verified in the actual production environment: a merged PR is not the same as a deployment.
+Psychology in Quotes works in Telegram and on the Platform DETai website. Quote creation and moderation, the catalogue, favourites, “My collection”, prepared language editions, publishing and Stories are available according to **Free / Plus / Pro** entitlements and the current product policy. Plus and Pro subscriptions are purchased with Telegram Stars; checkout requires a completed DETai Account linked to Telegram. Check current guest limits in the bot and [current offers, prices and plan limits on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). The running product shows whether purchasing and individual features are available.
 
 The [collection and plans guide](collection-and-plans.md) explains entitlements; **current numerical limits are published only in the [website's plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans)**. Your effective access is determined by **DETai Account and PiQ server policy**, not an outdated copied table.
 
@@ -58,6 +60,5 @@ The [collection and plans guide](collection-and-plans.md) explains entitlements;
 - [Telegram bot](https://t.me/DET_psy_in_quotes_bot)
 - [Terms of use](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms)
 - [Privacy notice](https://detai-x.com/en/technology/platform/psychology-in-quotes/privacy)
-- [Application repository and technical contracts](https://github.com/DETai-org/psychology-in-quotes)
 
 **About documentation navigation:** this page is a public product description and an entry point for people and AI assistants. Legal obligations are defined by the website documents; live entitlements by PiQ policy/API; and user instructions by the sections linked above. Documentation neither grants access to another person's account nor replaces checking the application's current state.

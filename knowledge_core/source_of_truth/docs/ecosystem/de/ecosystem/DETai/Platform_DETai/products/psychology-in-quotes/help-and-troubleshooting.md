@@ -22,7 +22,7 @@ Die Reihenfolge gilt auch für GPT-/KI-Assistenten im Support. Raten Sie den Sta
 
 [Visueller Vergleich Public und Account](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-access) · [Erste Schritte](getting-started.md) · [Tarife und Limits](collection-and-plans.md).
 
-**Zum Versionsstand:** Gasteditor, Favoriten, wiederholbare Gastzyklen und die Übertragung von Daten nach der Verknüpfung wurden in [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) implementiert. Aktuelle Gastgrenzen zeigt der Bot, [Free / Plus / Pro-Limits stehen auf der Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). PR-Merge und Bereitstellung sind nicht dasselbe; bei Abweichungen zählt die Oberfläche des tatsächlich laufenden Bots.
+**Zur Verfügbarkeit:** Aktuelle Gastfunktionen und Grenzen zeigt der laufende Bot; [Free / Plus / Pro-Limits stehen auf der Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Bei Abweichungen zwischen Hilfe und Oberfläche zählt der aktuelle Zustand des Produkts.
 
 ## DETai Account und Telegram ohne Doppelaccount verbinden
 

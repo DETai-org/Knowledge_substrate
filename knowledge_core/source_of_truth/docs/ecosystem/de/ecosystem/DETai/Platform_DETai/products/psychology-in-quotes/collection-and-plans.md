@@ -17,7 +17,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Zuerst kennenlernen, bei Bedarf einen Account erstellen.** [Free / Plus / Pro auf der Website vergleichen](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Das Öffnen des Kontobereichs oder Verbinden eines Accounts gilt weder als Zustimmung zu Marketing noch veröffentlicht es private Zitate ohne Willen der betroffenen Person.
 
-**Zum Gastmodus:** Favoriten, temporäre Karten und wiederholbare Nutzungszyklen wurden mit [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) implementiert. Das Produkt zeigt die aktuellen Grenzen selbst an; ein zusammengeführter PR belegt noch keine Bereitstellung im jeweiligen Bot.
+**Zum Gastmodus:** Die verfügbaren Gastfunktionen und ihre Grenzen werden im laufenden Produkt angezeigt und können je nach Bot-Version variieren.
 
 ## Begriffe, die auseinandergehalten werden müssen {#piq-collection-terms}
 
@@ -50,7 +50,9 @@ Persönliche Rechte und Kontingente stehen unter [„Mein Abonnement“](https:/
 
 ## Verfügbarkeit und Preis
 
-PiQ kennt Free, Plus und Pro und entsprechende serverseitige Rechte. **Telegram Stars sind jedoch ausschließlich im geschlossenen Pilotversuch verfügbar; öffentliche Zahlungen zur Selbstbuchung sind deaktiviert.** Eine Tarifbeschreibung ist kein Angebot, zu einem bestimmten Preis ein Abonnement abzuschließen. Im verfügbaren Bezahlablauf werden Preis, Währung, Laufzeit, automatische Verlängerung, Kündigung und Rückerstattung **vor Bestätigung der Zahlung** angezeigt. Die konkreten Bedingungen ergeben sich aus dem gültigen Angebot und den [Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms).
+**Plus- und Pro-Abonnements** werden mit Telegram Stars für **30 Tage mit automatischer Verlängerung** abgeschlossen. Dafür ist ein vollständig eingerichteter, mit Telegram verknüpfter DETai Account erforderlich. Der genaue Betrag in Stars und die Laufzeit werden vor der Zahlungsbestätigung angezeigt. Der USD-Betrag auf der Website ist ein Richtwert, da die Kosten für den Kauf von Stars je nach Region und Aufladeweg variieren. [Aktuelle Angebote und Preise](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans) stehen auf der Website und im Bot.
+
+Das Abschalten der automatischen Verlängerung erhält den Zugang bis zum Ende des bezahlten Zeitraums. Die besonderen Einführungsbedingungen des **Launch Offer** können nach vorheriger Benachrichtigung beendet werden. Für die Fortsetzung zu einem neuen Preis sind ein gesonderter Abschluss und eine neue Zahlungsbestätigung durch die nutzende Person erforderlich. Die geltenden Regeln, Benachrichtigungsfristen und Erstattungsverfahren stehen in den [PiQ-Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms).
 
 [Aktuelle Produktseite und Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans) · [Mein Abonnement](https://detai-x.com/de/account/products/psychology-in-quotes#piq-access)
 

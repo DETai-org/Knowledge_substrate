@@ -22,7 +22,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 [Public 与 Account 的视觉对比](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-access) · [入门指南](getting-started.md) · [套餐与限额](collection-and-plans.md)。
 
-**关于版本：**访客编辑器、收藏、可重复的临时周期，以及绑定账户后的数据迁移已在 [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) 中实现。实际访客限制以机器人界面为准；[Free / Plus / Pro 的套餐限额以网站为准](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。PR 合并与部署上线是两回事；如有差异，以运行中的机器人为准。
+**关于可用性：**访客功能及其限制以运行中的机器人为准；[Free / Plus / Pro 的套餐限额以网站为准](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。若文档与界面存在差异，请以产品当前状态为准。
 
 ## 如何绑定 DETai Account 与 Telegram，同时避免重复创建账户？
 

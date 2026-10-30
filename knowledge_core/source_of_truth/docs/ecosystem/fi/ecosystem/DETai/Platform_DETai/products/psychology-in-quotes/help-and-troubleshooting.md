@@ -22,7 +22,7 @@ Vaiheet soveltuvat myös GPT- ja muille tekoälypohjaisille tukipalveluille. Äl
 
 [Public- ja Account-tilojen visuaalinen vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-access) · [Aloittaminen](getting-started.md) · [Tasot ja kiintiöt](collection-and-plans.md).
 
-**Versioista:** vierasmuokkain, suosikit, toistuvat väliaikaiset jaksot ja tulosten siirto tilin yhdistämisen jälkeen toteutettiin [PiQ:n PR:ssä #37](https://github.com/DETai-org/psychology-in-quotes/pull/37). Ajantasaiset vierasrajat näet botista ja [Free / Plus / Pro -rajat verkkosivulta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). PR:n yhdistäminen ja käyttöönotto ovat eri asioita. Ristiriitatilanteessa noudata toimivan botin käyttöliittymää.
+**Saatavuudesta:** vierastoiminnot ja niiden rajat näkyvät toimivassa botissa, ja [Free / Plus / Pro -rajat verkkosivulla](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Jos ohje ja käyttöliittymä eroavat, noudata tuotteen ajantasaista tilaa.
 
 ## Yhdistä DETai Account ja Telegram luomatta toista tiliä
 

@@ -16,8 +16,6 @@ links:
   external_links:
     - type: "MkDocs_ru"
       url: "https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/"
-    - type: "GitHub"
-      url: "https://github.com/DETai-org/sites"
     - type: "website"
       url: "https://detai-x.com/"
   document_links:
@@ -44,7 +42,7 @@ links:
 - `detai-site` — основной профессиональный сайт экосистемы DETai;
 - `personal-site` — персональный сайт Антона Колхонена.
 
-Технический источник: [DETai-org/sites](https://github.com/DETai-org/sites).
+Публичная точка входа: [сайт DETai](https://detai-x.com/).
 
 ## Статус проекта и граница продукта
 

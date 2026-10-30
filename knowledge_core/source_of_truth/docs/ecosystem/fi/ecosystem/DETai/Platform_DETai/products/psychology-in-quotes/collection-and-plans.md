@@ -17,7 +17,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Tutustu ensin ja luo Account tarvittaessa.** [Vertaile Free / Plus / Pro -tasoja verkkosivulla](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Käyttäjätilin avaaminen tai yhdistäminen ei tarkoita markkinointitilausta eikä julkaise yksityisiä sitaatteja ilman käyttäjän tahtoa.
 
-**Vierastilasta:** suosikit, väliaikainen kortti ja toistuvat kokeilujaksot toteutettiin [PiQ:n PR:ssä #37](https://github.com/DETai-org/psychology-in-quotes/pull/37). Tuote ilmoittaa ajantasaiset rajoitukset; PR:n yhdistäminen ei yksin osoita, että ominaisuus on otettu käyttöön tietyssä botissa.
+**Vierastilasta:** käytössä olevat vierastoiminnot ja niiden ajantasaiset rajoitukset näytetään suoraan tuotteessa. Ne voivat vaihdella bottiversioittain.
 
 ## Käsitteet, jotka on hyvä erottaa toisistaan {#piq-collection-terms}
 
@@ -50,7 +50,9 @@ Henkilökohtaiset oikeudet ja kiintiöt näet [”Oma tilaukseni” -osiosta](ht
 
 ## Saatavuus ja hinta
 
-PiQ:ssa on Free-, Plus- ja Pro-tasot ja niitä vastaavat palvelinpuolen oikeudet, mutta **Telegram Stars on käytössä vain suljetussa pilotissa eikä julkinen itsepalvelumaksaminen ole käytössä**. Tilaustasojen kuvaus ei ole tarjous ostaa tilausta tietyllä hinnalla. Kun maksaminen on käytettävissä, hinta, valuutta, tilausjakso, automaattinen uusiminen, peruminen ja hyvityskäytännöt näytetään **ennen maksun vahvistamista**. Tarkat ehdot määräytyvät voimassa olevan tarjouksen ja [käyttöehtojen](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms) mukaan.
+**Plus- ja Pro-tilaukset** ostetaan Telegram Stars -tähdillä **30 päiväksi automaattisella uusimisella**. Ostaminen edellyttää viimeisteltyä DETai Accountia, joka on yhdistetty Telegramiin. Tarkka tähtimäärä ja tilausjakso näytetään ennen maksun vahvistamista. Sivuston dollarimäärä on suuntaa antava, sillä Stars-tähtien hankintahinta vaihtelee alueen ja lataustavan mukaan. [Voimassa olevat tarjoukset ja hinnat](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans) näkyvät sivustolla ja botissa.
+
+Automaattisen uusimisen poistaminen käytöstä säilyttää käyttöoikeuden maksetun jakson loppuun. **Launch Offer** -aloitustarjouksen erityisehdot voidaan päättää ennakkoilmoituksella. Jatkaminen uudella hinnalla edellyttää erillistä tilausta ja käyttäjän vahvistamaa maksua. Voimassa olevat säännöt, ilmoitusajat ja hyvitysmenettely määritellään [PiQ:n käyttöehdoissa](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms).
 
 [Ajantasainen tuotesivu ja vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans) · [Oma tilaukseni](https://detai-x.com/fi/account/products/psychology-in-quotes#piq-access)
 

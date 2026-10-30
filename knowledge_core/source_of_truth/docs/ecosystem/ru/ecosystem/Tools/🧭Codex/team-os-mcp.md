@@ -15,8 +15,6 @@ links:
   external_links:
     - type: MkDocs_ru
       url: https://docs.detai-x.com/ru/ecosystem/Tools/🧭Codex/team-os-mcp/
-    - type: GitHub
-      url: https://github.com/DETai-org/team-os
   document_links:
     - schema: ecosystem
       link_type: part-of
@@ -42,6 +40,6 @@ MCP даёт AI разрешённые операции чтения и изме
 - [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md): как участник работает с ChatGPT, MCP и Skills.
 - [Team OS Web](../../DETai/Platform_DETai/E3-Infra/team-os/web.md): сайт, на котором человек работает с теми же объектами.
 - [Роли и права](../../../governance/team-os/access.md): границы командного и личного доступа.
-- [Исходники MCP и актуальные контракты](https://github.com/DETai-org/team-os/tree/main/packages/mcp): точные инструменты и особенности реализации.
+- [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md): возможности подключённого интерфейса и границы его использования.
 
 Актуальная схема MCP и ответы Core имеют приоритет при выполнении операций. Публичная документация поясняет смысл, а не заменяет проверки доступа или подтверждение записи.

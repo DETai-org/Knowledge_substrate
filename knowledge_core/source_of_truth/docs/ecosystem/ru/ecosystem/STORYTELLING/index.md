@@ -29,8 +29,6 @@ links:
   external_links:
     - type: MkDocs_ru
       url: https://docs.detai-x.com/ru/ecosystem/STORYTELLING/
-    - type: GitHub
-      url: https://github.com/DETai-org/Storytelling
   document_links:
     - schema: ecosystem
       link_type: part-of
@@ -46,7 +44,7 @@ title: Storytelling — Publication Core
 
 # Storytelling — Publication Core
 
-**Storytelling — самостоятельный редакционно-технологический проект DETai и центр подготовки публикаций с [собственным репозиторием](https://github.com/DETai-org/Storytelling). Он помогает пройти путь от исходного материала до согласованной публикации для сайта, Telegram и других площадок.**
+**Storytelling — самостоятельный редакционно-технологический проект DETai и центр подготовки публикаций. Он помогает пройти путь от исходного материала до согласованной публикации для сайта, Telegram и других площадок.**
 
 Storytelling относится к направлению [«Бренд и внешние коммуникации»](../DETai/Platform_DETai/brand-and-external-communications/index.md) и является его внутренней производственной системой. Пользователь видит результат работы Storytelling уже на публичной площадке — например, на сайте или в Telegram.
 

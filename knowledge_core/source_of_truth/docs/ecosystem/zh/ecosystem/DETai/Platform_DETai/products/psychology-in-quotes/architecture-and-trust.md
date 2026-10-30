@@ -34,15 +34,16 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 | `detai-x.com` 网站 | 产品介绍、网站账户、语录、目录、SEO、法律文件 | 独立的套餐权限或私有 SQL 数据 |
 | PiQ Telegram 机器人 | 创建向导、收藏、互动和发布 | 独立商业政策或 DETai Account 注册 |
 | DETai Hub | 新建或连接 Account 的选择、验证 Telegram 绑定、Hub 的语言设置 | 独立 PiQ 账户或套餐权限 |
-| PiQ API 与 PostgreSQL `psychology_in_quotes` | 语录获取权、有效套餐、额度、状态、PNG 准备情况、公开地址 | 整个生态系统的统一治理规则 |
+| PiQ API 与产品服务端政策 | 语录获取权、有效套餐、额度、状态、PNG 准备情况、公开地址 | 整个生态系统的统一治理规则 |
+| Ecosystem Runtime / Commerce Core | 商业报价、已确认的付款和订阅历史 | PiQ 的产品功能或每周限额 |
 | Knowledge Substrate | 公开定义、使用说明、文档关联及标准 | 实时用户数据库、机密或付款结算 |
 | DETai Account / Identity | 关联不同产品中的用户身份 | 自动获取语录 |
 
 **跳转如何完成：**PiQ 向 Hub 传递目标（“创建或连接 Account”）及界面语言提示。Hub 首先检查 Telegram 是否已经绑定统一 DETai Account：若已绑定则显示该账户，否则提供在 Telegram 创建账户，或通过可验证链接连接网站现有账户两种选择。Hub 先前保存的语言偏好不会被覆盖。此过程不会自动创建账户，也不会授予 Plus/Pro 权限。
 
-对于开发者，通用的[机器人间语言传递规范](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover/)和[声明式配置标准](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard/)（当前仅有俄语版本）与 PiQ 自己的路径和文件分开管理。有通用规范并不能证明 PiQ 的配置加载器迁移已完成。
+通用的[机器人间语言传递规范](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover/)和[配置标准](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard/)另有公开说明（目前为俄语）。本页解释用户可依赖的产品边界，而非内部开发流程。
 
-实际运行的契约和产品改动位于 [PiQ 代码仓库](https://github.com/DETai-org/psychology-in-quotes)：`contracts/piq-product/`、`config/piq-policy.v1.json`、`db/psychology_in_quotes/`、`docs/ADR/`。此处向用户和 AI 提供的是**权威模型的导航**，并非 Nexus 私有配置的副本。
+本文档描述**稳定的用户规则与责任边界**。内部工作文件及运营配置不属于公共帮助资料。
 
 ## 语录内容与来源
 
@@ -63,10 +64,10 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 ## 供支持团队和 AI 助手使用
 
-**支持路径：**[开始使用](getting-started.md) → [权限模型](collection-and-plans.md) → [常见问题](help-and-troubleshooting.md) → [实际生效的 API/政策](https://github.com/DETai-org/psychology-in-quotes)。此路径不授权任何人替未经验证的用户执行操作。
+**支持路径：**[开始使用](getting-started.md) → [权限模型](collection-and-plans.md) → [常见问题](help-and-troubleshooting.md) → [PiQ 当前产品页面](https://detai-x.com/zh/technology/platform/psychology-in-quotes)。此路径不授权任何人替未经验证的用户执行操作。
 
 AI 解读截图时，必须区分文档能够证明的事实、屏幕上实际显示的信息，以及没有当前 Account 或后端数据就无法确认的事项。不要猜测付款、权限、PNG 缺失原因或发送是否成功。
 
-**更新日期：2026 年 10 月 30 日。****可用状态：**生产环境试点。Telegram Stars 仅供封闭试点使用，公众尚不能购买。具有约束力的法律条款及动态限额，始终优先于过时的帮助文档副本。
+**更新日期：2026 年 10 月 30 日。** 请在 [PiQ 页面](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)及机器人中查看当前功能和报价。现行法律条款、价格及限额优先于过时的帮助文档副本。
 
 [← 产品概览](index.md) · [收藏与套餐](collection-and-plans.md)

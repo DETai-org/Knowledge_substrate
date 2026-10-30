@@ -11,6 +11,8 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Psychology in Quotes (PiQ)** on [Platform DETain](../../index.md) digitaalinen **oppimista ja psykologisen tiedon jakamista tukeva tuote** osana [DETai-ekosysteemiä](../../../index.md). Sen avulla voi tutustua psykologisiin ajatuksiin, tallentaa merkityksellisiä kirjakatkelmia tekijä- ja lähdetietoineen, löytää muiden oivalluksia sekä rakentaa oman tietokokoelman.
 
+**Version 1.0 julkinen julkaisu — 31. lokakuuta 2026.**
+
 DETai-ekosysteemi yhdistää psykoterapian, tutkimuksen, koulutuksen, teknologian ja yhteisön tavoitteenaan kehittää 2000-luvun psykoterapiaa. **Platform DETai** yhdistää digitaaliset tuotteet, käyttäjätilit ja tekniset mahdollisuudet. **PiQ yhdistää omaehtoisen oppimisen, lukemisen kulttuurin ja digitaalisen luovuuden:** käyttäjä voi valita, pohtia, tallentaa ja julkaista itselleen merkityksellisiä sitaatteja.
 
 **Ensisijainen käyttötarkoitus:** oppiminen ja tiedon välittäminen. **Täydentävät toiminnot:** julkaiseminen ja digitaalinen luova työ. **Rooli ekosysteemissä:** E2 Brand – psykologisen tiedon levittäminen sekä DETain tunnettuuden ja luottamuksen vahvistaminen. Nämä ovat toisistaan riippumattomia ulottuvuuksia. PiQ ei ole opetussuunnitelmaan tai sertifiointiin perustuva virallinen koulutusohjelma eikä psykoterapia-, diagnostiikka- tai terveydenhuoltopalvelu.
@@ -45,9 +47,9 @@ Samaa periaatetta sovelletaan vähitellen muihinkin DETai-tuotteisiin: **ensin t
 | Miksi kuvassa on vesileima, PNG puuttuu tai julkaisua ei ole vahvistettu | [Ohjeet ja ongelmanratkaisu](help-and-troubleshooting.md) |
 | Miten ekosysteemi, alusta, Account, sivusto, botti, dokumentaatio ja API liittyvät toisiinsa | [Arkkitehtuuri, luottamus ja rajat](architecture-and-trust.md) |
 
-## Mikä toimii ja mikä on vielä valmistelussa
+## Ominaisuudet ja käyttö
 
-**30. lokakuuta 2026** tuotantoympäristön pilotissa ovat käytössä sitaattien luonti ja moderointi, julkinen kokoelma, suosikit, ”Oma kokoelma”, muiden sitaattien hankkiminen, valmiit kieliversiot, julkaisutoiminnot ja Stories voimassa olevien käytäntöjen rajoissa. Ominaisuudet eroavat tasoilla **Free / Plus / Pro**. **Telegram Stars on käytössä vain suljetussa kaupallisessa pilotissa** hyväksytyille osallistujille, joilla on vahvistettu DETai Account; julkinen ostaminen ei ole vielä avointa. Vierastoiminnot (suosikit, määräaikainen vesileimattu kortti ja uudet kokeilujaksot) toteutettiin [PiQ:n PR:ssä #37](https://github.com/DETai-org/psychology-in-quotes/pull/37), joka yhdistettiin 27. lokakuuta. Vierasrajoitukset näet botista ja [Free / Plus / Pro -rajoitukset sivuston päivittyvästä vertailusta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Kunkin toiminnon saatavuus tuotannossa on tarkistettava erikseen: koodin yhdistäminen ei ole sama asia kuin käyttöönotto.
+Psychology in Quotes toimii Telegramissa ja Platform DETain verkkosivustolla. Sitaattien luonti ja moderointi, julkinen kokoelma, suosikit, ”Oma kokoelma”, valmiit kieliversiot, julkaiseminen ja Stories ovat käytettävissä **Free / Plus / Pro** -tasojen ja voimassa olevien tuotekäytäntöjen mukaisesti. Plus- ja Pro-tilaukset maksetaan Telegram Stars -tähdillä; ostaminen edellyttää viimeisteltyä DETai Accountia, joka on yhdistetty Telegramiin. Ajantasaiset vierasrajoitukset näkyvät botissa ja [voimassa olevat tarjoukset, hinnat ja tilaustasojen rajoitukset sivustolla](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Käytössä oleva tuote näyttää, ovatko ostaminen ja yksittäiset toiminnot saatavilla.
 
 [Kokoelman ja tilaustasojen opas](collection-and-plans.md) kuvaa oikeuksien logiikan; **ajantasaiset numeeriset rajoitukset löytyvät vain [sivuston vertailutaulukosta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans)**. Todelliset käyttöoikeutesi määräytyvät **DETai Account -tilin ja PiQ:n palvelinpuolen käytäntöjen** mukaan, eivät vanhentuneesta taulukkokopiosta.
 
@@ -58,6 +60,5 @@ Samaa periaatetta sovelletaan vähitellen muihinkin DETai-tuotteisiin: **ensin t
 - [Telegram-botti](https://t.me/DET_psy_in_quotes_bot)
 - [Käyttöehdot](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms)
 - [Tietosuojailmoitus](https://detai-x.com/fi/technology/platform/psychology-in-quotes/privacy)
-- [Sovelluksen lähdekoodi ja tekniset sopimukset](https://github.com/DETai-org/psychology-in-quotes)
 
 **Dokumentaation navigoinnista:** tämä sivu kuvaa tuotetta julkisesti ja toimii lähtökohtana ihmisille ja tekoälyavustajille. Oikeudelliset velvoitteet määritellään sivuston asiakirjoissa, voimassa olevat oikeudet PiQ:n käytännöissä ja rajapinnassa sekä käyttöohjeet seuraavissa osioissa. Dokumentaatio ei anna pääsyä muiden käyttäjien tileille eikä korvaa sovelluksen ajantasaisen tilanteen tarkistamista.

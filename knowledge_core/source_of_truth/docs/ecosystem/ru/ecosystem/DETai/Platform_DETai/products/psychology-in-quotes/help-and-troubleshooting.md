@@ -39,7 +39,7 @@ governance:
 
 [Визуальное сравнение Public и Account](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-access) · [Как начать](getting-started.md) · [Лимиты и тарифы](collection-and-plans.md).
 
-**О версии:** гостевой редактор, избранное, повторяемые временные циклы и перенос результатов после связи реализованы в [PiQ #37](https://github.com/DETai-org/psychology-in-quotes/pull/37). Текущие гостевые ограничения показывает бот; [тарифные лимиты Free / Plus / Pro — на сайте](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-plans). Merge PR и фактическая выкладка различаются: при расхождении ориентируйтесь на интерфейс работающего бота.
+**О доступности:** гостевые функции и их ограничения проверяйте в работающем боте, а [тарифные лимиты Free / Plus / Pro — на сайте](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-plans). При расхождении справки с интерфейсом ориентируйтесь на актуальное состояние продукта.
 
 ## Как связать DETai Account и Telegram, не создавая второй аккаунт
 

@@ -11,6 +11,8 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Psychology in Quotes (PiQ)** ist ein digitales Produkt für **Bildung und Wissensvermittlung** der [Platform DETai](../../index.md), die zum [DETai-Ökosystem](../../../index.md) gehört. Es ermöglicht, psychologische Gedanken kennenzulernen, wichtige Buchpassagen mitsamt Verfasser, Quelle und Kontext zu bewahren, Ideen anderer Menschen zu entdecken und eine eigene Wissenssammlung aufzubauen.
 
+**Öffentliche Veröffentlichung von Version 1.0 — 31. Oktober 2026.**
+
 Das DETai-Ökosystem verbindet Psychotherapie, Forschung, Bildung, Technologie und Gemeinschaft, um die Psychotherapie des 21. Jahrhunderts weiterzuentwickeln. **Platform DETai** verbindet digitale Produkte, Benutzerkonten und technische Möglichkeiten. **PiQ vereint selbstbestimmtes Lernen, Lesekultur und digitale Kreativität:** Menschen können bedeutungsvolle Zitate auswählen, reflektieren, speichern und veröffentlichen.
 
 **Primäre Nutzerfunktion:** Bildung und Wissensvermittlung. **Weitere Funktionen:** Publizieren und digitale Kreativität. **Rolle im Ökosystem:** E2 Brand – psychologisches Wissen verbreiten sowie Bekanntheit und Vertrauen in DETai stärken. Diese Dimensionen sind voneinander unabhängig. PiQ ist weder ein formales Bildungsprogramm mit Lehrplan und Zertifizierung noch Psychotherapie, Diagnostik oder medizinische Versorgung.
@@ -45,9 +47,9 @@ Derselbe Grundsatz wird schrittweise auf andere DETai-Produkte übertragen: **er
 | Warum ein Wasserzeichen erscheint, eine PNG fehlt oder die Veröffentlichung nicht bestätigt ist | [Hilfe und Problemlösung](help-and-troubleshooting.md) |
 | Wie Ökosystem, Plattform, Account, Website, Bot, Dokumentation und API zusammenhängen | [Architektur, Vertrauen und Grenzen](architecture-and-trust.md) |
 
-## Was funktioniert und was noch vorbereitet wird
+## Funktionen und Zugang
 
-Mit Stand vom **30. Oktober 2026** unterstützt der produktive Pilot die Erstellung und Moderation von Zitaten, den Katalog, Favoriten, „Meine Sammlung“, den Erwerb von Nutzungsrechten an fremden Zitaten innerhalb von PiQ, vorbereitete Sprachfassungen, Veröffentlichungsabläufe und Stories innerhalb der geltenden Richtlinien. Die Funktionen unterscheiden sich je nach **Free / Plus / Pro**. **Telegram Stars stehen nur in einem geschlossenen kommerziellen Pilotversuch** zugelassenen Personen mit bestätigtem DETai Account zur Verfügung; ein öffentlicher Kauf ist noch nicht möglich. Gastfunktionen (Favoriten, eine temporäre Karte mit Wasserzeichen und wiederholbare Zyklen) wurden mit [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) implementiert, der am 27. Oktober zusammengeführt wurde. Aktuelle Gastgrenzen zeigt der Bot, [Tariflimits für Free / Plus / Pro der dynamische Website-Vergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Ob eine Funktion in der konkreten Produktionsumgebung verfügbar ist, muss gesondert geprüft werden: Ein Merge ist kein Deployment.
+Psychology in Quotes ist über Telegram und die Website von Platform DETai nutzbar. Das Erstellen und Moderieren von Zitaten, der Katalog, Favoriten, „Meine Sammlung“, vorbereitete Sprachfassungen, Veröffentlichungen und Stories stehen entsprechend **Free / Plus / Pro** und den geltenden Produktregeln zur Verfügung. Plus- und Pro-Abonnements werden mit Telegram Stars bezahlt; der Kauf erfordert einen vollständig eingerichteten, mit Telegram verknüpften DETai Account. Die aktuellen Gastlimits zeigt der Bot, [gültige Angebote, Preise und Tariflimits die Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Ob ein Kauf oder eine bestimmte Funktion verfügbar ist, zeigt die aktuelle Produktoberfläche.
 
 Die [Erläuterung zu Sammlung und Tarifen](collection-and-plans.md) beschreibt die Berechtigungen; **aktuelle Zahlen stehen ausschließlich in der [Vergleichstabelle der Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans)**. Der tatsächliche Zugang ergibt sich aus **DETai Account und serverseitiger PiQ-Richtlinie**, nicht aus einer veralteten Kopie der Tabelle.
 
@@ -58,6 +60,5 @@ Die [Erläuterung zu Sammlung und Tarifen](collection-and-plans.md) beschreibt d
 - [Telegram-Bot](https://t.me/DET_psy_in_quotes_bot)
 - [Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms)
 - [Datenschutzhinweise](https://detai-x.com/de/technology/platform/psychology-in-quotes/privacy)
-- [Anwendungsrepository und technische Verträge](https://github.com/DETai-org/psychology-in-quotes)
 
 **Zur Dokumentationsnavigation:** Diese Seite beschreibt das Produkt öffentlich und dient Menschen wie KI-Assistenten als Einstieg. Rechtliche Verpflichtungen ergeben sich aus den Dokumenten der Website, aktive Berechtigungen aus PiQ-Policy/API und Anleitungen aus den folgenden Abschnitten. Die Dokumentation gewährt keinen Zugang zu fremden Konten und ersetzt nicht die Prüfung des aktuellen Anwendungszustands.
