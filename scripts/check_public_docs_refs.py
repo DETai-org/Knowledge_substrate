@@ -39,7 +39,7 @@ TRANSIENT_GITHUB = re.compile(
     r"(?:\d+|[a-fA-F0-9]{7,40})(?:/|$|[#?])",
     re.IGNORECASE,
 )
-PRODUCT_PR_MARKER = re.compile(
+CONCRETE_PR_MARKER = re.compile(
     r"(?:\bPR\s*#\s*\d+|\b(?:PiQ|Team\s+OS)\s*#\s*\d+)",
     re.IGNORECASE,
 )
@@ -67,8 +67,8 @@ def violations(path: Path) -> list[tuple[int, str]]:
             if match.group("repo").lower() in PRIVATE_REPOS:
                 findings.append((number, "private raw GitHub file URL"))
 
-        if product_piq and PRODUCT_PR_MARKER.search(line):
-            findings.append((number, "PR or implementation number in PiQ public copy"))
+        if CONCRETE_PR_MARKER.search(line):
+            findings.append((number, "internal PR/implementation number in public copy"))
         if product_piq and PIQ_INTERNAL_PATH.search(line):
             findings.append((number, "internal implementation path in PiQ public copy"))
 
