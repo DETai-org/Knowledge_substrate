@@ -57,7 +57,7 @@ governance:
 
 **Как проходит переход:** PiQ передаёт Hub цель («создать или подключить Account») и подсказку о языке интерфейса. Hub сначала проверяет связь Telegram с единым DETai Account: при наличии связи показывает его, иначе предлагает создание в Telegram или подключение существующего на сайте по подтверждаемой ссылке. Ранее выбранный язык Hub не перезаписывается; переход не создаёт Account автоматически и не даёт подписку Plus/Pro.
 
-Для разработчиков общий [стандарт передачи языка между Telegram-ботами](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover/) отделён от локальных маршрутов PiQ и Hub.
+Для разработчиков общие [правила передачи языка](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover/) и [стандарт декларативной конфигурации](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard/) отделены от локальных маршрутов и файлов PiQ. Наличие общего стандарта не подтверждает, что миграция загрузчика PiQ уже завершена.
 
 Исполняемые контракты и изменения продукта находятся в [репозитории PiQ](https://github.com/DETai-org/psychology-in-quotes): `contracts/piq-product/`, `config/piq-policy.v1.json`, `db/psychology_in_quotes/`, `docs/ADR/`. Здесь мы даём человеку и AI **навигацию по канону**, а не дублируем приватные настройки Nexus.
 
