@@ -7,90 +7,70 @@ classification:
   function: how-to
 descriptive:
   id: tools-github-how-to-remove-secrets-from-config
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-03-25
+  date_update: 2026-10-30
 links:
   external_links:
-    - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config/"
-  document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
-title: Как убрать секреты из config
+    - type: MkDocs_ru
+      url: https://docs.detai-x.com/ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config/
+title: Как отделить секреты от конфигурации
 ---
 
-# Как убрать секреты из config
+# Как отделить секреты от конфигурации
 
+**Функция:** `how-to`. Цель: оставить несекретные режимы и настройки доступными для ревью, но **не хранить реальные credentials в Git**. Для Telegram-ботов действует [общий стандарт декларативной конфигурации DETai](../../DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md).
 
-Как убрать секреты из `config.json`, но сохранить их доступность и на CI, и на сервере
+## 1. Определи, что является секретом
 
-## 1. Изменяем код ― читаем из ENV, а файл — только резерв
+| Несекретная конфигурация (JSON/TOML) | Приватные credentials (секретный ENV) |
+| --- | --- |
+| Имя и Telegram Bot ID, профиль DEV/Production, аудитория `pilot/public`, публичный URL, технические feature flags | Bot token, API keys, SQL-пароль/полный connection URL с credentials, Commerce signing/service tokens, OAuth secrets |
+| Режим и списки допуска **в приватном owning repository** с ограниченным доступом | Секреты **никогда** не становятся содержимым versioned JSON или README |
 
-```python
-# UserControl/utils/secrets.py  (пример единой точки доступа)
-import os, json
-from pathlib import Path
+Telegram ID или username участника — это не пароль, но идентификатор человека. Их нельзя автоматически публиковать в открытом репозитории или MkDocs.
 
-_cfg = json.loads(Path("UserControl/config.json").read_text(encoding="utf-8"))
+## 2. Загрузчик: никакого fallback к секрету в JSON
 
-def get(name: str) -> str | None:
-    """Секрет берём из переменной окружения, а если её нет — из файла."""
-    return os.getenv(name) or _cfg.get(name.lower())       # api_id → API_ID
-```
+Плохая схема: `os.getenv("API_KEY") or config_json["api_key"]`. Она позволяет «временно» вернуть ключ в Git и оставляет два источника.
 
-_Теперь любой скрипт вместо `cfg["openai_api_key"]` делает_
+Python-пример чтения **уже загруженной** переменной:
 
 ```python
-from utils.secrets import get
-openai.api_key = get("OPENAI_API_KEY")
+import os
+
+def required_secret(name: str) -> str:
+    value = os.environ.get(name)
+    if not value:
+        raise RuntimeError(f"Missing required secret: {name}")
+    return value
 ```
 
-## 2. Чистим `config.json`
+Для TypeScript/Node.js принцип тот же: один централизованный загрузчик проверяет обязательные ключи для **конкретного процесса**. JSON/TOML отдельно проходят валидацию схемы, типов и выбранного профиля. Если секрет отсутствует, защищённую операцию нельзя продолжать со случайным fallback.
 
-```json
-{
-  "openai_api_key": "",
-  "static_bot_token": "",
-  "api_id": 0,
-  "api_hash": "",
-  "session_string": "",
-  "active_accounts": []
-}
+## 3. Один источник секретов на окружение продукта
+
+- **Локально:** ignored `config/secrets.env` и tracked `config/secrets.env.example` с пустыми или явно фиктивными значениями.
+- **На сервере:** один приватный файл секретов на окружение продукта **вне checkout**, с минимально необходимыми правами доступа. Секретные значения не вписывают напрямую в `systemd` unit или командную строку.
+- **В CI:** используется защищённое хранилище secrets самого CI, передаваемое только нужному job. Не предполагайте, что какие-то ключи там уже настроены: проверяйте фактическое подключение.
+- **Несколько процессов:** единый физический файл bot/API/worker/Commerce допустим, но процесс должен получать только нужный набор ключей. Если все процессы имеют OS-доступ к общему файлу, это **одна граница доверия**; allowlist переменных сам по себе не обеспечивает OS-изоляцию.
+
+Пример **шаблона**, не настоящих значений:
+
+```dotenv
+TELEGRAM_BOT_TOKEN=REPLACE_PRIVATELY
+DATABASE_URL=REPLACE_PRIVATELY
+OPENAI_API_KEY=REPLACE_PRIVATELY
 ```
 
-> Всё чувствительное — пустые строки. Файл можно смело коммитить.
+Списки участников, режимы и Bot ID размещаются в реальной несекретной декларативной конфигурации; `secrets.env` не превращается в огромный второй `config.json`.
 
-## 3. Где храним реальные значения
+## 4. Переход без второго источника
 
-|Среда|Хранилище|Что сделать|
-|---|---|---|
-|**GitHub Actions**|_Settings ▸ Secrets_|Уже добавили `OPENAI_API_KEY`, `TELEGRAM_BOT_TOKEN`…|
-|**Codex контейнер**|Блок **Secrets** в UI|Тоже добавили ― под теми же именами|
-|**Сервер VPS**|① файл `.env` (в `/home/admin-v-rossii/Telegram`) или ② переменные в unit-файле systemd|– Создай `.env`, положи пары `KEY=value`– Добавь `.env` в `.gitignore`, чтоб не ушёл в Git|
+1. Найдите все реальные чтения старых JSON/ENV и распределите поля по `secret`, `profile selector`, `non-secret`, `retired`.
+2. Подключите новый загрузчик и шаблон, оставив реальные секреты **вне** Git. Убедитесь, что по завершении миграции нет второго приоритета из cwd/`.env.local` и неиспользуемого JSON.
+3. Проверьте недостающий/неверный секрет, соответствие Telegram `getMe` ожидаемому Bot ID, выбранный профиль и безопасное прекращение запуска. Никогда не проверяйте работу путём публикации реального ключа в логе.
+4. Отдельно подтвердите операторский cutover/restart в owning repository. Merge сам по себе не переносит секреты и не меняет работающий сервис.
 
-### Пример `.env` на сервере
-
-```
-OPENAI_API_KEY=sk-...
-TELEGRAM_BOT_TOKEN=123:ABC
-CHAT_ID_LOGS=-10012345
-```
-
-_Установи `python -m pip install python-dotenv` (добавь в `requirements.txt`) и в `utils/secrets.py` добавь вверху:_
-
-```python
-from dotenv import load_dotenv; load_dotenv()
-```
-
-## 4. Плюсы схемы
-
-- **Безопасность** — секреты никогда не попадают в репозиторий.
-    
-- **Единый код** — на CI, Codex и сервере работает одинаково.
-    
-- **Простота** — поменять токен = поправить `.env` или Secret, без рекоммита.
-    
-
----
+**Не копируйте в чат или PR содержимое приватных ENV, токены, платежные квитанции, дампы БД и полные системные журналы.** Для совместной диагностики достаточно имён ключей, маскированных свидетельств, состояний и проверяемого SHA конфигурации без приватных значений.
