@@ -46,4 +46,4 @@ links:
 
 ## Граница владения
 
-Общий контракт языка определяется этим стандартом. Детали кнопок, каналов, текстов, конкретных `source`/`intent` и кода остаются у соответствующих продуктов и Hub. Пример реализации — [Psychology in Quotes](https://github.com/DETai-org/psychology-in-quotes/blob/main/docs/standard/detai-account-engagement.md) и [Ecosystem Runtime](https://github.com/DETai-org/ecosystem-runtime).
+Общий контракт языка определяется этим стандартом. Детали кнопок, каналов, текстов, конкретных `source`/`intent` и кода остаются у соответствующих продуктов и Hub. Связанные публичные описания: [Psychology in Quotes](../../../Platform_DETai/products/psychology-in-quotes/index.md) и [Ecosystem Runtime](../../../../Infrastructure/ecosystem-runtime/index.md).

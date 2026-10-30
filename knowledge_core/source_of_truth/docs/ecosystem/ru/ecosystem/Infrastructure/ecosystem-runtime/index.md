@@ -18,9 +18,7 @@ title: ecosystem-runtime
 
 # ecosystem-runtime
 
-**ecosystem-runtime** — общий backend-контур DETai. Его
-[самостоятельный репозиторий](https://github.com/DETai-org/ecosystem-runtime)
-содержит приложения, общую доменную логику и структуру runtime-данных, которые
+**ecosystem-runtime** — общий backend-контур DETai. Этот контур содержит приложения, общую доменную логику и структуру runtime-данных, которые
 нужны сайту, Telegram-интерфейсам и фоновым процессам.
 
 Если публичный сайт или Telegram-интерфейс показывает событие, принимает

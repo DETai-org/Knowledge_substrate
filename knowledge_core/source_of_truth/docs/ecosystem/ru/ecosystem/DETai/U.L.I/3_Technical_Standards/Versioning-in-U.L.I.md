@@ -69,7 +69,7 @@ MAJOR.MINOR
 
 Компонент — это отдельная поверхность поставки или использования (например, Web, Plugin, Mobile), а **не новый самостоятельный проект**. Общие Core, API, библиотеки и база данных могут обслуживать несколько компонентов.
 
-**Пример — [DETai Team OS](https://github.com/DETai-org/team-os)**: один проект и один монорепозиторий с несколькими компонентами.
+**Пример — [DETai Team OS](../../Platform_DETai/E3-Infra/team-os/index.md)**: один проект и один монорепозиторий с несколькими компонентами.
 
 | Компонент Team OS | Назначение | Версионирование |
 | --- | --- | --- |
@@ -82,7 +82,7 @@ MAJOR.MINOR
 
 Любой Git-тег указывает на **коммит монорепозитория целиком**, даже когда обозначает выпуск одного компонента. Несколько тегов могут указывать на один SHA. Совместимость общих модулей проверяется для затронутых компонентов, но изменение Core не требует автоматически выпуска новых версий каждого интерфейса.
 
-[Локальный стандарт версионирования Team OS](https://github.com/DETai-org/team-os/blob/main/docs/standard/versioning-and-releases.md) уточняет семейства тегов, правила публикации и учёт production SHA. Общий принцип U.L.I. определяет, **когда состояние достойно версии**; локальный стандарт — **как его фиксировать технически**.
+Общий принцип U.L.I. определяет, **когда состояние достойно версии**; особенности выпуска и технической фиксации определяются правилами соответствующего продукта.
 
 ## 4. Когда и как фиксируется релиз
 
@@ -133,4 +133,4 @@ Project Intent → Work Model Planning → Implementation → Release Fixation
 - [Work Model](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model/) — организация Work Packages и приёмки.
 - [Release Fixation Standard](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard/) — gate признания новой версии.
 - [Versioning Standard](https://docs.detai-x.com/ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard/) — версионность документов Knowledge Substrate.
-- [Team OS: локальный стандарт релизов](https://github.com/DETai-org/team-os/blob/main/docs/standard/versioning-and-releases.md) — пример реализации независимых линеек в монорепозитории.
+- [Team OS](../../Platform_DETai/E3-Infra/team-os/index.md) — пример продукта с независимо выпускаемыми интерфейсами.

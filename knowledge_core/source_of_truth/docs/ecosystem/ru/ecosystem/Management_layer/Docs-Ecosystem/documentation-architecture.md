@@ -114,7 +114,7 @@ Project-specific tutorial особенно уместно хранить ряд�
 
 Рабочий контур хранит дневную историю через разрешённый Logs route Team OS. Перед записью проверяется актуальный целевой List с `contentKind=work_log`, доступ и дата работы с timezone. Наличие Folder или Project само по себе не подтверждает существование Logs route.
 
-Самостоятельные результаты разных направлений фиксируются в соответствующих рабочих контурах и связываются с учётом видимости. Текущие правила определяются [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md) и [log-summary skill](https://github.com/DETai-org/team-os/blob/main/plugins/team-os/skills/log-summary/SKILL.md). [Реестр metadata schemas](metadata_schema_registry.md#contract-log-summary) отдельно сохраняет legacy/import contract исторических переносимых сводок; он не заменяет typed metadata Core.
+Самостоятельные результаты разных направлений фиксируются в соответствующих рабочих контурах и связываются с учётом видимости. Текущие правила определяются [Team OS Plugin](../../DETai/Platform_DETai/E3-Infra/team-os/plugin.md) и действующим регламентом WorkLog Team OS. [Реестр metadata schemas](metadata_schema_registry.md#contract-log-summary) отдельно сохраняет legacy/import contract исторических переносимых сводок; он не заменяет typed metadata Core.
 
 ## Слои + поперечные сущности
 

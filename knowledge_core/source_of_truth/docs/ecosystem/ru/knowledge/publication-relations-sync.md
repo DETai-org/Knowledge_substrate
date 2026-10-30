@@ -21,10 +21,6 @@ governance:
   review_date: 2026-10-19
 links:
   external_links:
-    - type: GitHub
-      url: https://github.com/DETai-org/sites/blob/main/docs/policies/blog-posts/01_authoring/structural.md
-    - type: GitHub
-      url: https://github.com/DETai-org/Storytelling/blob/main/docs/standard/full-publication/knowledge-relations-sync.md
   document_links:
     - schema: ecosystem
       link_type: part-of
@@ -42,9 +38,9 @@ title: Связи публикаций с Knowledge Substrate
 
 Этот документ — **точка входа со стороны Knowledge Substrate** в процесс автоматической проекции связей опубликованных материалов. Он не дублирует owning contracts.
 
-Общая идея и редакционный критерий relation задаются в Site policy [`structural.md`](https://github.com/DETai-org/sites/blob/main/docs/policies/blog-posts/01_authoring/structural.md).
+Редакционные критерии связи публикации с базой знаний определяются владельцами публикационного процесса и согласованными правилами сайта.
 
-Точный lifecycle, resolver contract, reconciliation и GitHub Action описаны в Storytelling standard [`knowledge-relations-sync.md`](https://github.com/DETai-org/Storytelling/blob/main/docs/standard/full-publication/knowledge-relations-sync.md).
+Точный жизненный цикл, разрешение идентификаторов, сверка и автоматизация принадлежат редакционно-техническому контуру Storytelling; эта публичная страница фиксирует их назначение, а не внутреннюю реализацию.
 
 ## Общая схема
 
