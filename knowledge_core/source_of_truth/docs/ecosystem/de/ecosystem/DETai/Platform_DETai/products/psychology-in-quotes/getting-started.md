@@ -15,7 +15,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 Öffnen Sie den [Telegram-Bot](https://t.me/DET_psy_in_quotes_bot) und senden Sie `/start` oder beginnen Sie im [öffentlichen Webkatalog](https://detai-x.com/de/technology/platform/psychology-in-quotes). Um veröffentlichte Zitate, Quellen und vorbereitete Übersetzungen kennenzulernen, **brauchen Sie kein DETai Account**. Wasserzeichen auf öffentlichen Bildern gehören zur regulären Vorschau.
 
-**Gastmodus Public:** Favoriten und eine temporäre eigene Karte mit Wasserzeichen, begrenzten Versuchen und Aufbewahrungsdauer. Nach Ablauf eines Zyklus kann ein neuer Versuch möglich sein. Die Abläufe wurden in [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) implementiert; die tatsächlich geltenden Gastbeschränkungen zeigt der laufende Bot. Für Free / Plus / Pro gibt es einen [dynamischen Tarifvergleich auf der Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans).
+**Gastmodus Public:** Favoriten und eine temporäre eigene Karte mit Wasserzeichen, begrenzten Versuchen und Aufbewahrungsdauer. Nach Ablauf eines Zyklus kann ein neuer Versuch möglich sein. die tatsächlich geltenden Gastbeschränkungen zeigt der laufende Bot. Für Free / Plus / Pro gibt es einen [dynamischen Tarifvergleich auf der Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans).
 
 **Wann Sie ein DETai Account brauchen:** um eigene Ergebnisse über die Gastfrist hinaus zu speichern, eine PNG-Datei ohne Wasserzeichen zu erhalten, die dauerhafte Sammlung zu nutzen, Stories zu erstellen und über PiQ zu veröffentlichen. Der Account ist im Free-Tarif kostenlos; Plus/Pro regeln erweiterte Funktionen.
 

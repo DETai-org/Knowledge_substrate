@@ -34,15 +34,15 @@ Erottelu perustuu [tuoteobjektin malliin](../../../../../product-market/product-
 | Verkkosivu `detai-x.com` | Esittely, verkkotili, sitaatit, julkinen kokoelma, SEO, oikeudelliset dokumentit | Erilliset tilausten oikeudet tai yksityinen SQL |
 | PiQ:n Telegram-botti | Sitaattien luonti, kokoelma, vuorovaikutus ja julkaisut | Omat irralliset maksusäännöt tai DETai Account -rekisteröinti |
 | DETai Hub | Account-tilin luomisen tai yhdistämisen valinta, Telegram-yhteyden vahvistus ja Hubin kieliasetus | Erilliset PiQ-tilit tai PiQ-tilausten oikeudet |
-| PiQ-API ja PostgreSQL `psychology_in_quotes` | Hankintaoikeus, aktiiviset tasot, kiintiöt, tilat, PNG-valmius ja julkiset osoitteet | Koko ekosysteemin yleiset säännöt |
+| PiQ-API ja tuotteen palvelinpuolen käytännöt | Hankintaoikeus, aktiiviset tasot, kiintiöt, tilat, PNG-valmius ja julkiset osoitteet | Koko ekosysteemin yleiset säännöt |
 | Knowledge Substrate | Julkiset käsitteet, ohjeet, dokumentaatiolinkit ja standardit | Reaaliaikainen käyttäjätietokanta, salaisuudet tai maksun suorittaminen |
 | DETai Account / Identity | Käyttäjän yhdistäminen tuotteiden välillä | Automaattisesti hankitut sitaatit |
 
 **Näin siirtymä toimii:** PiQ välittää Hubille tavoitteen (”luo Account tai yhdistä olemassa oleva”) ja vihjeen käyttöliittymän kielestä. Hub tarkistaa ensin, onko Telegram jo yhdistetty yhteiseen DETai Account -tiliin. Jos on, Hub näyttää tilin. Muussa tapauksessa se tarjoaa tilin luontia Telegramissa tai verkkosivun tilin yhdistämistä vahvistettavan linkin avulla. Hubin aiempaa kielivalintaa ei korvata. Siirtymä ei luo tiliä automaattisesti eikä anna Plus/Pro-oikeuksia.
 
-Kehittäjille yleiset [bottien välisen kielivalinnan säännöt](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover/) ja [deklaratiivisen konfiguraation standardi](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard/) (toistaiseksi venäjäksi) ovat erillisiä PiQ:n omista poluista ja tiedostoista. Standardin olemassaolo ei todista, että PiQ:n konfiguraatiolataimen migraatio on jo valmis.
+Yleiset [bottien välisen kielivalinnan säännöt](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover/) ja [konfiguraatiostandardi](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard/) on dokumentoitu erikseen (toistaiseksi venäjäksi). Tämä sivu kuvaa käyttäjälle olennaiset rajat, ei sisäisiä kehitysvaiheita.
 
-Suoritettavat sopimukset ja tuotemuutokset löytyvät [PiQ:n lähdekoodivarastosta](https://github.com/DETai-org/psychology-in-quotes): `contracts/piq-product/`, `config/piq-policy.v1.json`, `db/psychology_in_quotes/`, `docs/ADR/`. Tämä sivu tarjoaa ihmisille ja tekoälylle **navigoinnin kanoniseen malliin**, ei Nexus-ympäristön yksityisten asetusten kopioita.
+Tämä dokumentaatio kuvaa **pysyviä käyttäjäperiaatteita ja vastuunjakoa**. Sisäiset työtiedostot ja käyttöympäristön asetukset eivät kuulu julkiseen ohjeeseen.
 
 ## Sitaatin sisältö ja alkuperä
 
@@ -63,7 +63,7 @@ Sitaatti ei ole vain kuva. Sillä on pysyvä `quoteId`, lainattujen sanojen teki
 
 ## Tukea ja tekoälyavustajia varten
 
-**Ohjepolku:** [aloittaminen](getting-started.md) → [käyttöoikeusmalli](collection-and-plans.md) → [ongelmanratkaisu](help-and-troubleshooting.md) → [ajantasainen API ja käytännöt](https://github.com/DETai-org/psychology-in-quotes). Polku ei anna oikeutta suorittaa toimintoja vahvistamattoman käyttäjän puolesta.
+**Ohjepolku:** [aloittaminen](getting-started.md) → [käyttöoikeusmalli](collection-and-plans.md) → [ongelmanratkaisu](help-and-troubleshooting.md) → [PiQ:n ajantasainen tuotesivu](https://detai-x.com/fi/technology/platform/psychology-in-quotes). Polku ei anna oikeutta suorittaa toimintoja vahvistamattoman käyttäjän puolesta.
 
 Kuvakaappausta tulkitessa tekoälyn on erotettava, mitä dokumentaatio vahvistaa, mitä ruudulla todella näkyy ja mitä ei voi tietää ilman ajantasaista Account- tai taustajärjestelmän tietoa. Maksuja, oikeuksia, puuttuvan PNG:n syytä tai lähetyksen onnistumista ei pidä arvata.
 

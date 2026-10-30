@@ -15,7 +15,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 Avaa [Telegram-botti](https://t.me/DET_psy_in_quotes_bot) ja käytä komentoa `/start` tai tutustu [julkiseen verkkokokoelmaan](https://detai-x.com/fi/technology/platform/psychology-in-quotes). **DETai Account -tiliä ei tarvita**, kun haluat tarkastella julkaistuja sitaatteja, niiden lähteitä tai valmiita käännöksiä. Julkisten kuvien vesileima kuuluu normaaliin esikatseluun.
 
-**Public-vierastila:** suosikit ja väliaikainen oma vesileimattu kortti, johon liittyy yritys- ja säilytysaikarajoituksia. Jakson päätyttyä voi olla mahdollista kokeilla uudestaan. Toiminnot on toteutettu [PiQ:n PR:ssä #37](https://github.com/DETai-org/psychology-in-quotes/pull/37); tarkista ajantasaiset vierasrajoitukset toimivasta botista. Free / Plus / Pro -tasojen [päivittyvä vertailu on verkkosivulla](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans).
+**Public-vierastila:** suosikit ja väliaikainen oma vesileimattu kortti, johon liittyy yritys- ja säilytysaikarajoituksia. Jakson päätyttyä voi olla mahdollista kokeilla uudestaan. tarkista ajantasaiset vierasrajoitukset toimivasta botista. Free / Plus / Pro -tasojen [päivittyvä vertailu on verkkosivulla](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans).
 
 **Milloin tarvitset DETai Account -tilin:** kun haluat säilyttää luomasi aineiston vierasjakson jälkeen, saada vesileimattoman PNG-kuvan, käyttää pysyvää kokoelmaa, luoda Stories-sisältöjä tai julkaista PiQ:n kautta. Free-tason tili on maksuton; Plus/Pro tarjoavat laajennetut ominaisuudet.
 

@@ -47,7 +47,7 @@ Samaa periaatetta sovelletaan vähitellen muihinkin DETai-tuotteisiin: **ensin t
 
 ## Mikä toimii ja mikä on vielä valmistelussa
 
-**30. lokakuuta 2026** tuotantoympäristön pilotissa ovat käytössä sitaattien luonti ja moderointi, julkinen kokoelma, suosikit, ”Oma kokoelma”, muiden sitaattien hankkiminen, valmiit kieliversiot, julkaisutoiminnot ja Stories voimassa olevien käytäntöjen rajoissa. Ominaisuudet eroavat tasoilla **Free / Plus / Pro**. **Telegram Stars on käytössä vain suljetussa kaupallisessa pilotissa** hyväksytyille osallistujille, joilla on vahvistettu DETai Account; julkinen ostaminen ei ole vielä avointa. Vierastoiminnot (suosikit, määräaikainen vesileimattu kortti ja uudet kokeilujaksot) toteutettiin [PiQ:n PR:ssä #37](https://github.com/DETai-org/psychology-in-quotes/pull/37), joka yhdistettiin 27. lokakuuta. Vierasrajoitukset näet botista ja [Free / Plus / Pro -rajoitukset sivuston päivittyvästä vertailusta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Kunkin toiminnon saatavuus tuotannossa on tarkistettava erikseen: koodin yhdistäminen ei ole sama asia kuin käyttöönotto.
+**30. lokakuuta 2026** tuotantoympäristön pilotissa ovat käytössä sitaattien luonti ja moderointi, julkinen kokoelma, suosikit, ”Oma kokoelma”, muiden sitaattien hankkiminen, valmiit kieliversiot, julkaisutoiminnot ja Stories voimassa olevien käytäntöjen rajoissa. Ominaisuudet eroavat tasoilla **Free / Plus / Pro**. **Telegram Stars on käytössä vain suljetussa kaupallisessa pilotissa** hyväksytyille osallistujille, joilla on vahvistettu DETai Account; julkinen ostaminen ei ole vielä avointa. Vierasrajoitukset näet botista ja [Free / Plus / Pro -rajoitukset sivuston päivittyvästä vertailusta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Toimintojen ajantasainen saatavuus selviää käytössä olevasta tuotteesta.
 
 [Kokoelman ja tilaustasojen opas](collection-and-plans.md) kuvaa oikeuksien logiikan; **ajantasaiset numeeriset rajoitukset löytyvät vain [sivuston vertailutaulukosta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans)**. Todelliset käyttöoikeutesi määräytyvät **DETai Account -tilin ja PiQ:n palvelinpuolen käytäntöjen** mukaan, eivät vanhentuneesta taulukkokopiosta.
 
@@ -58,6 +58,5 @@ Samaa periaatetta sovelletaan vähitellen muihinkin DETai-tuotteisiin: **ensin t
 - [Telegram-botti](https://t.me/DET_psy_in_quotes_bot)
 - [Käyttöehdot](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms)
 - [Tietosuojailmoitus](https://detai-x.com/fi/technology/platform/psychology-in-quotes/privacy)
-- [Sovelluksen lähdekoodi ja tekniset sopimukset](https://github.com/DETai-org/psychology-in-quotes)
 
 **Dokumentaation navigoinnista:** tämä sivu kuvaa tuotetta julkisesti ja toimii lähtökohtana ihmisille ja tekoälyavustajille. Oikeudelliset velvoitteet määritellään sivuston asiakirjoissa, voimassa olevat oikeudet PiQ:n käytännöissä ja rajapinnassa sekä käyttöohjeet seuraavissa osioissa. Dokumentaatio ei anna pääsyä muiden käyttäjien tileille eikä korvaa sovelluksen ajantasaisen tilanteen tarkistamista.

@@ -47,7 +47,7 @@ DETai 生态系统连接心理治疗、研究、教育、技术与社群，致�
 
 ## 已经可用的功能与仍在准备的功能
 
-截至 **2026 年 10 月 30 日**，生产环境试点支持创建和审核语录、公共目录、收藏夹、“我的合集”、获取他人的语录、已制作的语言版本、发布流程和 Stories，但均受当前产品政策限制。**Free / Plus / Pro** 的功能有所区别。**Telegram Stars 付款目前仅对已通过准入审核并完成 DETai Account 验证的封闭商业试点参与者开放**，公众尚不能自行购买。访客功能（收藏、带水印的临时卡片和可重复的体验周期）已在 10 月 27 日合并的 [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) 中实现。访客限额请查看机器人界面；[Free / Plus / Pro 限额以网站动态对比表为准](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。具体功能是否在生产环境启用仍需单独验证：代码合并不等于部署上线。
+截至 **2026 年 10 月 30 日**，生产环境试点支持创建和审核语录、公共目录、收藏夹、“我的合集”、获取他人的语录、已制作的语言版本、发布流程和 Stories，但均受当前产品政策限制。**Free / Plus / Pro** 的功能有所区别。**Telegram Stars 付款目前仅对已通过准入审核并完成 DETai Account 验证的封闭商业试点参与者开放**，公众尚不能自行购买。访客限额请查看机器人界面；[Free / Plus / Pro 限额以网站动态对比表为准](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。具体功能是否可用，请以当前产品界面为准。
 
 有关权限的详细说明见[收藏与套餐](collection-and-plans.md)；**最新数值限额仅以[网站上的动态套餐对比表](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)为准**。个人的实际权限取决于 **DETai Account 和 PiQ 服务端政策**，不能依据已经过时的静态表格判断。
 
@@ -58,6 +58,5 @@ DETai 生态系统连接心理治疗、研究、教育、技术与社群，致�
 - [Telegram 机器人](https://t.me/DET_psy_in_quotes_bot)
 - [使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms)
 - [隐私声明](https://detai-x.com/zh/technology/platform/psychology-in-quotes/privacy)
-- [应用代码仓库及技术契约](https://github.com/DETai-org/psychology-in-quotes)
 
 **关于文档导航：**此页面是面向公众的产品介绍，也是用户和 AI 助手的入口。法律义务以网站上的法律文件为准；实际权限由 PiQ 政策/API 决定；操作方法见下列章节。文档不会授予访问他人账户的权限，也不能代替对应用实时状态的核实。

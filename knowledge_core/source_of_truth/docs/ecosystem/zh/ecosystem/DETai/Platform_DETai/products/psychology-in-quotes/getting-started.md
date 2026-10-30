@@ -15,7 +15,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 打开 [Telegram 机器人](https://t.me/DET_psy_in_quotes_bot)，发送 `/start`，或从[网站公共目录](https://detai-x.com/zh/technology/platform/psychology-in-quotes)开始。浏览已发布的语录、出处和现成译文**无需 DETai Account**。公开图片上的水印属于正常的预览机制。
 
-**Public 访客模式：**提供收藏夹和限时的个人水印卡片，创建次数及保存期限受到限制。体验周期结束后，可能可以再次尝试。相关流程已在 [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) 中实现；实际访客限额请以运行中的机器人为准。Free / Plus / Pro 的[动态比较表在网站上](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。
+**Public 访客模式：**提供收藏夹和限时的个人水印卡片，创建次数及保存期限受到限制。体验周期结束后，可能可以再次尝试。实际访客限额请以运行中的机器人为准。Free / Plus / Pro 的[动态比较表在网站上](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。
 
 **何时需要 DETai Account：**如果希望超过访客期限后继续保留作品、获取无水印 PNG、使用永久收藏、制作 Stories 或通过 PiQ 发布内容，就需要账户。Free 账户免费；Plus/Pro 提供扩展功能。
 

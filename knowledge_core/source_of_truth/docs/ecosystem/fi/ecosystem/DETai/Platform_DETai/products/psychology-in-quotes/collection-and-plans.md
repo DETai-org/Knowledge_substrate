@@ -17,7 +17,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Tutustu ensin ja luo Account tarvittaessa.** [Vertaile Free / Plus / Pro -tasoja verkkosivulla](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Käyttäjätilin avaaminen tai yhdistäminen ei tarkoita markkinointitilausta eikä julkaise yksityisiä sitaatteja ilman käyttäjän tahtoa.
 
-**Vierastilasta:** suosikit, väliaikainen kortti ja toistuvat kokeilujaksot toteutettiin [PiQ:n PR:ssä #37](https://github.com/DETai-org/psychology-in-quotes/pull/37). Tuote ilmoittaa ajantasaiset rajoitukset; PR:n yhdistäminen ei yksin osoita, että ominaisuus on otettu käyttöön tietyssä botissa.
+**Vierastilasta:** käytössä olevat vierastoiminnot ja niiden ajantasaiset rajoitukset näytetään suoraan tuotteessa. Ne voivat vaihdella bottiversioittain.
 
 ## Käsitteet, jotka on hyvä erottaa toisistaan {#piq-collection-terms}
 

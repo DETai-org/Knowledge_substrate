@@ -34,15 +34,15 @@ Diese Trennung ist im [Produktobjektmodell](../../../../../product-market/produc
 | Website `detai-x.com` | Darstellung, Webbereich, Zitate, Katalog, SEO, Rechtsdokumente | Eigenständigen Tarifrechten oder privater SQL-Datenbank |
 | PiQ-Telegram-Bot | Erstellungsassistent, Sammlung, Interaktionen und Veröffentlichungen | Separaten Geschäftsregeln oder Registrierung von DETai Accounts |
 | DETai Hub | Wahl zwischen Erstellen und Verbinden eines Accounts, Bestätigung der Telegram-Verknüpfung, Spracheinstellungen des Hubs | Eigenständigen PiQ-Accounts oder PiQ-Tarifrechten |
-| PiQ-API und PostgreSQL `psychology_in_quotes` | Erhaltsrechte, aktuelle Tarife, Kontingente, Status, PNG-Bereitschaft und öffentliche Adressen | Übergreifenden Regeln des gesamten Ökosystems |
+| PiQ-API und serverseitige Produkt-Policy | Erhaltsrechte, aktuelle Tarife, Kontingente, Status, PNG-Bereitschaft und öffentliche Adressen | Übergreifenden Regeln des gesamten Ökosystems |
 | Knowledge Substrate | Öffentliche Definitionen, Anleitungen, Dokumentationsverknüpfungen, Standards | Aktiven Nutzerdaten, Geheimnissen oder Checkout |
 | DETai Account / Identity | Nutzeridentität produktübergreifend verknüpfen | Automatischem Erhalt von Zitaten |
 
 **Ablauf der Übergabe:** PiQ übermittelt Hub das Ziel („Account erstellen oder verbinden“) und einen Hinweis zur Oberflächensprache. Hub prüft zunächst, ob Telegram mit einem gemeinsamen DETai Account verknüpft ist. Ist dies der Fall, zeigt es das Konto; andernfalls bietet es die Erstellung über Telegram oder die Verbindung zu einem bestehenden Website-Account über einen bestätigten Link an. Eine zuvor gewählte Hub-Sprache wird nicht überschrieben. Der Übergang erstellt weder automatisch einen Account noch gewährt er Plus/Pro.
 
-Für Entwickler sind die gemeinsamen [Regeln zur Sprachübergabe](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover/) und der [Standard für deklarative Konfiguration](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard/) (derzeit auf Russisch) von den lokalen PiQ-Pfaden und -Dateien getrennt. Ein veröffentlichter Standard beweist nicht, dass die Migration des PiQ-Konfigurationsladers bereits abgeschlossen ist.
+Die gemeinsamen [Regeln zur Sprachübergabe](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover/) und der [Konfigurationsstandard](https://docs.detai-x.com/ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard/) sind gesondert dokumentiert (derzeit auf Russisch). Diese Seite erklärt die Nutzerperspektive, nicht interne Entwicklungsabläufe.
 
-Ausführbare Verträge und Produktänderungen liegen im [PiQ-Repository](https://github.com/DETai-org/psychology-in-quotes): `contracts/piq-product/`, `config/piq-policy.v1.json`, `db/psychology_in_quotes/`, `docs/ADR/`. Hier bieten wir Menschen und KI eine **Orientierung im kanonischen Modell**, nicht Kopien privater Nexus-Einstellungen.
+Diese Dokumentation beschreibt **dauerhafte Nutzerprinzipien und Zuständigkeiten**. Interne Arbeitsdateien und Betriebsdetails gehören nicht zur öffentlichen Hilfe.
 
 ## Inhalt und Herkunft von Zitaten
 
@@ -63,7 +63,7 @@ Ein Zitat ist mehr als ein Bild. Es besitzt eine dauerhafte `quoteId`, die Perso
 
 ## Für Support und KI-Agenten
 
-**Hilfepfad:** [Erste Schritte](getting-started.md) → [Berechtigungsmodell](collection-and-plans.md) → [häufige Probleme](help-and-troubleshooting.md) → [aktive API/Policy](https://github.com/DETai-org/psychology-in-quotes). Dies berechtigt nicht dazu, ohne bestätigte Nutzeridentität Aktionen auszuführen.
+**Hilfepfad:** [Erste Schritte](getting-started.md) → [Berechtigungsmodell](collection-and-plans.md) → [häufige Probleme](help-and-troubleshooting.md) → [aktuelle PiQ-Produktseite](https://detai-x.com/de/technology/platform/psychology-in-quotes). Dies berechtigt nicht dazu, ohne bestätigte Nutzeridentität Aktionen auszuführen.
 
 Bei Screenshots muss eine KI unterscheiden, was die Dokumentation bestätigt, was auf dem Bildschirm sichtbar ist und was ohne aktuellen Account oder Backend nicht festgestellt werden kann. Über Zahlungen, Berechtigungen, fehlende PNGs oder den Erfolg einer Sendung darf nicht geraten werden.
 

@@ -17,7 +17,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **先体验，再按需创建 Account。**[在网站比较 Free / Plus / Pro](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。打开账户中心或完成绑定，并不表示订阅营销消息，也不会未经用户同意发布私人语录。
 
-**关于访客模式：**收藏、临时卡片和可重复的体验周期已在 [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) 中实现。当前限制由产品实际界面展示；合并 PR 本身不能证明相关功能已部署到某个机器人。
+**关于访客模式：**实际可用的访客功能与限制由当前产品界面展示，具体情况可能因机器人版本而异。
 
 ## 必须区分的术语 {#piq-collection-terms}
 

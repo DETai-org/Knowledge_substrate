@@ -22,7 +22,7 @@ These steps also apply to GPT/AI support assistants. Do not guess the user's sta
 
 [Visual comparison of Public and Account](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-access) · [Getting started](getting-started.md) · [Plans and limits](collection-and-plans.md).
 
-**About versions:** the guest editor, favourites, repeatable temporary cycles and transfer of results after linking were implemented in [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37). Current guest restrictions are shown in the bot; [Free / Plus / Pro limits are on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Merging a PR and deploying it are different events. When they differ, follow the behaviour of the running bot.
+**Availability:** check the running bot for guest features and restrictions, and [the website for Free / Plus / Pro limits](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). When the documentation and interface differ, follow the current product state.
 
 ## Link DETai Account and Telegram without creating a second account
 

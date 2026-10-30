@@ -17,7 +17,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Explore first; create an Account when needed.** [Compare Free / Plus / Pro on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Opening the account area or linking an account does not subscribe you to marketing or publish your private quotes without your intention.
 
-**About guest mode:** favourites, a temporary card and repeat cycles were implemented in [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37). The product itself shows the current limits; merging a PR does not prove that its functionality is deployed to a particular bot.
+**About guest mode:** the running product displays the available guest features and their current limits, which may differ between bot versions.
 
 ## Terms worth distinguishing {#piq-collection-terms}
 

@@ -47,7 +47,7 @@ The same approach is gradually being adopted by other DETai products: **first ex
 
 ## What's working and what's still being prepared
 
-As of **30 October 2026**, the production pilot supports creating and moderating quotes, the catalogue, favourites, “My collection”, obtaining other people's quotes, prepared language editions, publishing flows and Stories, subject to current policy restrictions. Capabilities differ across **Free / Plus / Pro**. **Telegram Stars are available only in a closed commercial pilot** for admitted participants with verified DETai Accounts; public purchasing is not yet open. Guest features (favourites, a temporary watermarked card and repeat cycles) were implemented in [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37), merged on 27 October. Check current guest limits in the bot and [Free / Plus / Pro limits in the live comparison on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Features must be verified in the actual production environment: a merged PR is not the same as a deployment.
+As of **30 October 2026**, the production pilot supports creating and moderating quotes, the catalogue, favourites, “My collection”, obtaining other people's quotes, prepared language editions, publishing flows and Stories, subject to current policy restrictions. Capabilities differ across **Free / Plus / Pro**. **Telegram Stars are available only in a closed commercial pilot** for admitted participants with verified DETai Accounts; public purchasing is not yet open. Check current guest limits in the bot and [Free / Plus / Pro limits in the live comparison on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Check the running product for current feature availability.
 
 The [collection and plans guide](collection-and-plans.md) explains entitlements; **current numerical limits are published only in the [website's plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans)**. Your effective access is determined by **DETai Account and PiQ server policy**, not an outdated copied table.
 
@@ -58,6 +58,5 @@ The [collection and plans guide](collection-and-plans.md) explains entitlements;
 - [Telegram bot](https://t.me/DET_psy_in_quotes_bot)
 - [Terms of use](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms)
 - [Privacy notice](https://detai-x.com/en/technology/platform/psychology-in-quotes/privacy)
-- [Application repository and technical contracts](https://github.com/DETai-org/psychology-in-quotes)
 
 **About documentation navigation:** this page is a public product description and an entry point for people and AI assistants. Legal obligations are defined by the website documents; live entitlements by PiQ policy/API; and user instructions by the sections linked above. Documentation neither grants access to another person's account nor replaces checking the application's current state.

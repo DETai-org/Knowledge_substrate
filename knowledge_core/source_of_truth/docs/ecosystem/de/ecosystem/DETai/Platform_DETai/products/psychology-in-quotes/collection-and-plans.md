@@ -17,7 +17,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Zuerst kennenlernen, bei Bedarf einen Account erstellen.** [Free / Plus / Pro auf der Website vergleichen](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Das Öffnen des Kontobereichs oder Verbinden eines Accounts gilt weder als Zustimmung zu Marketing noch veröffentlicht es private Zitate ohne Willen der betroffenen Person.
 
-**Zum Gastmodus:** Favoriten, temporäre Karten und wiederholbare Nutzungszyklen wurden mit [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37) implementiert. Das Produkt zeigt die aktuellen Grenzen selbst an; ein zusammengeführter PR belegt noch keine Bereitstellung im jeweiligen Bot.
+**Zum Gastmodus:** Die verfügbaren Gastfunktionen und ihre Grenzen werden im laufenden Produkt angezeigt und können je nach Bot-Version variieren.
 
 ## Begriffe, die auseinandergehalten werden müssen {#piq-collection-terms}
 

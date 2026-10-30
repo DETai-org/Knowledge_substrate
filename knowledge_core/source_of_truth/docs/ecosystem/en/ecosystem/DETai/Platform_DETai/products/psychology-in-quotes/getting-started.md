@@ -15,7 +15,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 Open the [Telegram bot](https://t.me/DET_psy_in_quotes_bot) and select `/start`, or begin with the [public web catalogue](https://detai-x.com/en/technology/platform/psychology-in-quotes). **You do not need a DETai Account** to explore published quotes, their sources or prepared translations. Watermarks on public images are a normal part of the preview experience.
 
-**Public guest mode:** favourites and a temporary personal watermarked card, with limits on attempts and retention. You may be able to try again once the cycle ends. These flows were implemented in [PiQ PR #37](https://github.com/DETai-org/psychology-in-quotes/pull/37); check the running bot for the current guest restrictions. See the [live Free / Plus / Pro comparison on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans).
+**Public guest mode:** favourites and a temporary personal watermarked card, with limits on attempts and retention. You may be able to try again once the cycle ends. check the running bot for the current guest restrictions. See the [live Free / Plus / Pro comparison on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans).
 
 **When you need a DETai Account:** to retain your own creations beyond the guest expiry date, obtain a clean PNG, use a permanent collection, create Stories and publish through PiQ. An Account is free at the Free tier; Plus/Pro govern extended capabilities.
 
