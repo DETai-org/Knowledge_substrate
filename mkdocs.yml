@@ -23,6 +23,7 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      'ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme.md': 'ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md'
       'ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md'
       'ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md'
       'ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md'
@@ -187,7 +188,6 @@ nav:
         - Стандарт создания: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md
         - Декларативная конфигурация: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md
         - Передача языка между ботами: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md
-        - README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme.md
       - Мозаический подход: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md
       - Общий README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md
       - Release Fixation: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md
