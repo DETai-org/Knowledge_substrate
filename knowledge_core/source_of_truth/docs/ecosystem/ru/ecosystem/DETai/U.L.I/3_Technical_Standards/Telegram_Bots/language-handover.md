@@ -2,13 +2,10 @@
 type: ecosystem
 title: Стандарт передачи языка между Telegram-ботами DETai
 classification:
-  scope: DETai_ecosystem
+  scope: DETai_cluster
   context: uli
   layer: technical-standards
   function: standard
-  system: telegram-bots
-  domain: language-handover
-  audiences: [developers, product, agents]
 descriptive:
   id: detai-telegram-bots-language-handover
   version: v1
