@@ -22,11 +22,11 @@ governance:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/management-layer/team-os/governance/access/
+      url: https://docs.detai-x.com/ru/management-layer/team-os/access/
   document_links:
     - schema: ecosystem
       link_type: part-of
-      linked_document_id: team-os-contribution-ledger
+      linked_document_id: detai-platform-detai-e3-infra-team-os-index
 ---
 
 # Team OS — роли, права и возможности
@@ -513,7 +513,7 @@ patch; история сохраняется. WorkLogs редактируютс�
 
 ## Как устроена система
 
-Эта справка объясняет **кто и что вправе делать** в Team OS. Если хочется подробнее понять само рабочее пространство и его развитие, см. [обзор проекта Team OS](../index.md), [Team OS Web — сайт команды](../web.md) и [Team OS Plugin — работа с ChatGPT](../plugin.md). Правила оценки вклада и человеческой ответственности описаны отдельно в [Governance](index.md).
+Эта справка объясняет **кто и что вправе делать** в Team OS. Если хочется подробнее понять само рабочее пространство и его развитие, см. [обзор проекта Team OS](index.md), [Team OS Web — сайт команды](web.md) и [Team OS Plugin — работа с ChatGPT](plugin.md). Правила оценки вклада и человеческой ответственности описаны отдельно в [обзоре Team OS](index.md).
 
 
 ## Персональная роль в проекте

@@ -23,6 +23,26 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      "de/management-layer/team-os/governance/access.md": "de/management-layer/team-os/access.md"
+      "de/management-layer/team-os/governance/index.md": "de/management-layer/team-os/index.md"
+      "de/management-layer/team-os/governance/profile-data-and-visibility.md": "de/management-layer/team-os/profile-data-and-visibility.md"
+      "de/management-layer/team-os/governance/public-profile.md": "de/management-layer/team-os/public-profile.md"
+      "en/management-layer/team-os/governance/access.md": "en/management-layer/team-os/access.md"
+      "en/management-layer/team-os/governance/index.md": "en/management-layer/team-os/index.md"
+      "en/management-layer/team-os/governance/profile-data-and-visibility.md": "en/management-layer/team-os/profile-data-and-visibility.md"
+      "en/management-layer/team-os/governance/public-profile.md": "en/management-layer/team-os/public-profile.md"
+      "fi/management-layer/team-os/governance/access.md": "fi/management-layer/team-os/access.md"
+      "fi/management-layer/team-os/governance/index.md": "fi/management-layer/team-os/index.md"
+      "fi/management-layer/team-os/governance/profile-data-and-visibility.md": "fi/management-layer/team-os/profile-data-and-visibility.md"
+      "fi/management-layer/team-os/governance/public-profile.md": "fi/management-layer/team-os/public-profile.md"
+      "ru/management-layer/team-os/governance/access.md": "ru/management-layer/team-os/access.md"
+      "ru/management-layer/team-os/governance/index.md": "ru/management-layer/team-os/index.md"
+      "ru/management-layer/team-os/governance/profile-data-and-visibility.md": "ru/management-layer/team-os/profile-data-and-visibility.md"
+      "ru/management-layer/team-os/governance/public-profile.md": "ru/management-layer/team-os/public-profile.md"
+      "zh/management-layer/team-os/governance/access.md": "zh/management-layer/team-os/access.md"
+      "zh/management-layer/team-os/governance/index.md": "zh/management-layer/team-os/index.md"
+      "zh/management-layer/team-os/governance/profile-data-and-visibility.md": "zh/management-layer/team-os/profile-data-and-visibility.md"
+      "zh/management-layer/team-os/governance/public-profile.md": "zh/management-layer/team-os/public-profile.md"
       "de/knowledge/documentation-architecture.md": "de/technology/documentation-rules/index.md"
       "de/knowledge/documentation-functions.md": "de/technology/documentation-rules/documentation-functions.md"
       "de/knowledge/metadata-policy.md": "de/technology/documentation-rules/metadata-policy.md"
@@ -184,10 +204,10 @@ plugins:
       "de/governance/domains-and-decision-rights.md": "de/management-layer/domains-and-decision-rights.md"
       "de/governance/management-strategy.md": "de/management-layer/management-strategy.md"
       "de/governance/meaningful-participation.md": "de/management-layer/meaningful-participation.md"
-      "de/governance/team-os.md": "de/management-layer/team-os/governance/index.md"
-      "de/governance/team-os/access.md": "de/management-layer/team-os/governance/access.md"
-      "de/governance/team-os/profile-data-and-visibility.md": "de/management-layer/team-os/governance/profile-data-and-visibility.md"
-      "de/governance/team-os/public-profile.md": "de/management-layer/team-os/governance/public-profile.md"
+      "de/governance/team-os.md": "de/management-layer/team-os/index.md"
+      "de/governance/team-os/access.md": "de/management-layer/team-os/access.md"
+      "de/governance/team-os/profile-data-and-visibility.md": "de/management-layer/team-os/profile-data-and-visibility.md"
+      "de/governance/team-os/public-profile.md": "de/management-layer/team-os/public-profile.md"
       "de/product-market/business-model-and-portfolio.md": "de/brand-and-communications/product-market/business-model-and-portfolio.md"
       "de/product-market/business-thesis.md": "de/brand-and-communications/product-market/business-thesis.md"
       "de/product-market/index.md": "de/brand-and-communications/product-market/index.md"
@@ -374,10 +394,10 @@ plugins:
       "en/governance/domains-and-decision-rights.md": "en/management-layer/domains-and-decision-rights.md"
       "en/governance/management-strategy.md": "en/management-layer/management-strategy.md"
       "en/governance/meaningful-participation.md": "en/management-layer/meaningful-participation.md"
-      "en/governance/team-os.md": "en/management-layer/team-os/governance/index.md"
-      "en/governance/team-os/access.md": "en/management-layer/team-os/governance/access.md"
-      "en/governance/team-os/profile-data-and-visibility.md": "en/management-layer/team-os/governance/profile-data-and-visibility.md"
-      "en/governance/team-os/public-profile.md": "en/management-layer/team-os/governance/public-profile.md"
+      "en/governance/team-os.md": "en/management-layer/team-os/index.md"
+      "en/governance/team-os/access.md": "en/management-layer/team-os/access.md"
+      "en/governance/team-os/profile-data-and-visibility.md": "en/management-layer/team-os/profile-data-and-visibility.md"
+      "en/governance/team-os/public-profile.md": "en/management-layer/team-os/public-profile.md"
       "en/product-market/business-model-and-portfolio.md": "en/brand-and-communications/product-market/business-model-and-portfolio.md"
       "en/product-market/business-thesis.md": "en/brand-and-communications/product-market/business-thesis.md"
       "en/product-market/index.md": "en/brand-and-communications/product-market/index.md"
@@ -564,10 +584,10 @@ plugins:
       "fi/governance/domains-and-decision-rights.md": "fi/management-layer/domains-and-decision-rights.md"
       "fi/governance/management-strategy.md": "fi/management-layer/management-strategy.md"
       "fi/governance/meaningful-participation.md": "fi/management-layer/meaningful-participation.md"
-      "fi/governance/team-os.md": "fi/management-layer/team-os/governance/index.md"
-      "fi/governance/team-os/access.md": "fi/management-layer/team-os/governance/access.md"
-      "fi/governance/team-os/profile-data-and-visibility.md": "fi/management-layer/team-os/governance/profile-data-and-visibility.md"
-      "fi/governance/team-os/public-profile.md": "fi/management-layer/team-os/governance/public-profile.md"
+      "fi/governance/team-os.md": "fi/management-layer/team-os/index.md"
+      "fi/governance/team-os/access.md": "fi/management-layer/team-os/access.md"
+      "fi/governance/team-os/profile-data-and-visibility.md": "fi/management-layer/team-os/profile-data-and-visibility.md"
+      "fi/governance/team-os/public-profile.md": "fi/management-layer/team-os/public-profile.md"
       "fi/product-market/business-model-and-portfolio.md": "fi/brand-and-communications/product-market/business-model-and-portfolio.md"
       "fi/product-market/business-thesis.md": "fi/brand-and-communications/product-market/business-thesis.md"
       "fi/product-market/index.md": "fi/brand-and-communications/product-market/index.md"
@@ -771,10 +791,10 @@ plugins:
       "ru/governance/management-strategy.md": "ru/management-layer/management-strategy.md"
       "ru/governance/meaningful-participation.md": "ru/management-layer/meaningful-participation.md"
       "ru/governance/product-market-cycle.md": "ru/brand-and-communications/product-market-cycle.md"
-      "ru/governance/team-os.md": "ru/management-layer/team-os/governance/index.md"
-      "ru/governance/team-os/access.md": "ru/management-layer/team-os/governance/access.md"
-      "ru/governance/team-os/profile-data-and-visibility.md": "ru/management-layer/team-os/governance/profile-data-and-visibility.md"
-      "ru/governance/team-os/public-profile.md": "ru/management-layer/team-os/governance/public-profile.md"
+      "ru/governance/team-os.md": "ru/management-layer/team-os/index.md"
+      "ru/governance/team-os/access.md": "ru/management-layer/team-os/access.md"
+      "ru/governance/team-os/profile-data-and-visibility.md": "ru/management-layer/team-os/profile-data-and-visibility.md"
+      "ru/governance/team-os/public-profile.md": "ru/management-layer/team-os/public-profile.md"
       "ru/governance/umbrella-brand.md": "ru/brand-and-communications/umbrella-brand.md"
       "ru/method/education.md": "ru/institutional-layer/education.md"
       "ru/method/index.md": "ru/institutional-layer/index.md"
@@ -968,10 +988,10 @@ plugins:
       "zh/governance/domains-and-decision-rights.md": "zh/management-layer/domains-and-decision-rights.md"
       "zh/governance/management-strategy.md": "zh/management-layer/management-strategy.md"
       "zh/governance/meaningful-participation.md": "zh/management-layer/meaningful-participation.md"
-      "zh/governance/team-os.md": "zh/management-layer/team-os/governance/index.md"
-      "zh/governance/team-os/access.md": "zh/management-layer/team-os/governance/access.md"
-      "zh/governance/team-os/profile-data-and-visibility.md": "zh/management-layer/team-os/governance/profile-data-and-visibility.md"
-      "zh/governance/team-os/public-profile.md": "zh/management-layer/team-os/governance/public-profile.md"
+      "zh/governance/team-os.md": "zh/management-layer/team-os/index.md"
+      "zh/governance/team-os/access.md": "zh/management-layer/team-os/access.md"
+      "zh/governance/team-os/profile-data-and-visibility.md": "zh/management-layer/team-os/profile-data-and-visibility.md"
+      "zh/governance/team-os/public-profile.md": "zh/management-layer/team-os/public-profile.md"
       "zh/product-market/business-model-and-portfolio.md": "zh/brand-and-communications/product-market/business-model-and-portfolio.md"
       "zh/product-market/business-thesis.md": "zh/brand-and-communications/product-market/business-thesis.md"
       "zh/product-market/index.md": "zh/brand-and-communications/product-market/index.md"
@@ -1106,6 +1126,9 @@ nav:
     - Обзор: ru/management-layer/team-os/index.md
     - Web — сайт команды: ru/management-layer/team-os/web.md
     - Plugin — работа с ChatGPT: ru/management-layer/team-os/plugin.md
+    - Роли, права и возможности: ru/management-layer/team-os/access.md
+    - Публичный профиль и авторство: ru/management-layer/team-os/public-profile.md
+    - Видимость данных, AI и публикация: ru/management-layer/team-os/profile-data-and-visibility.md
   - Домены и права решений: ru/management-layer/domains-and-decision-rights.md
   - Распределённая архитектура: ru/management-layer/distributed-architecture.md
   - Уровни работы: ru/management-layer/work-levels.md
@@ -1114,13 +1137,13 @@ nav:
   - Стратегия развития: ru/management-layer/development-strategy/index.md
   - Ресурсы экосистемы: ru/management-layer/ecosystem-resources.md
   - Таблица ресурсов: ru/management-layer/resource-table.md
-  - Команда и участие:
-    - Принципы участия: ru/management-layer/participation-principles.md
-    - Team OS — governance и модель вклада:
-      - Обзор: ru/management-layer/team-os/governance/index.md
-      - Роли, права и возможности: ru/management-layer/team-os/governance/access.md
-      - Публичный профиль и авторство: ru/management-layer/team-os/governance/public-profile.md
-      - Видимость данных, AI и публикация: ru/management-layer/team-os/governance/profile-data-and-visibility.md
+  - Принципы участия: ru/management-layer/participation-principles.md
+- Company & Economy:
+  - Право и экономика:
+    - Обзор: ru/legal-economic/index.md
+    - Планируемый оператор DETai Oy: ru/legal-economic/company-operator.md
+    - Карта решений: ru/legal-economic/deferred-work-map.md
+  - Slicing Pie: ru/company-and-economy/slicing-pie.md
 - Brand & Communications:
   - Продуктовый цикл Product–Market: ru/brand-and-communications/product-market-cycle.md
   - DETai как Umbrella Brand: ru/brand-and-communications/umbrella-brand.md
@@ -1207,11 +1230,6 @@ nav:
       - Обзор: ru/technology/platform/archive/index.md
       - GPT Prompt Engine: ru/technology/platform/archive/gpt-prompt-engine/index.md
       - News Agent: ru/technology/platform/archive/news-agent/index.md
-- Компания и экономика:
-  - Право и экономика:
-    - Обзор: ru/legal-economic/index.md
-    - Планируемый оператор DETai Oy: ru/legal-economic/company-operator.md
-    - Карта решений: ru/legal-economic/deferred-work-map.md
 - Infrastructure:
   - Обзор: ru/infrastructure/index.md
   - Среды исполнения:

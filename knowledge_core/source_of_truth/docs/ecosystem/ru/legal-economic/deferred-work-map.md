@@ -51,6 +51,6 @@ title: Карта юридико-экономических решений
 
 ## Связанные системы
 
-Правовые gates вызываются из [Product–Market](../brand-and-communications/product-market/index.md), [Governance](../governance/index.md) и [Team OS](../management-layer/team-os/governance/index.md). Legal & Economic System не должна становиться финальным разделом, который вспоминают после реализации.
+Правовые gates вызываются из [Product–Market](../brand-and-communications/product-market/index.md), [Governance](../governance/index.md) и [Team OS](../management-layer/team-os/index.md). Legal & Economic System не должна становиться финальным разделом, который вспоминают после реализации.
 
 Целевая роль оператора и границы разных режимов прав описаны на странице [DETai Oy](company-operator.md). Конкретные юридические конструкции не выводятся из неё без профильной проверки.

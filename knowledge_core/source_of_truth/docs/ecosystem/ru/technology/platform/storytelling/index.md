@@ -38,7 +38,7 @@ links:
       linked_document_id: detai-platform-detai-e2-brand-sites-index
     - schema: ecosystem
       link_type: interfaces-with
-      linked_document_id: team-os-contribution-ledger
+      linked_document_id: detai-platform-detai-e3-infra-team-os-index
 title: Storytelling — Publication Core
 ---
 

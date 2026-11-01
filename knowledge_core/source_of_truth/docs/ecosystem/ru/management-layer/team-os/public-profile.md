@@ -18,7 +18,7 @@ descriptive:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/management-layer/team-os/governance/public-profile/
+      url: https://docs.detai-x.com/ru/management-layer/team-os/public-profile/
   document_links:
     - schema: ecosystem
       link_type: related

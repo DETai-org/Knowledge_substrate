@@ -23,11 +23,11 @@ governance:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/management-layer/team-os/governance/profile-data-and-visibility/
+      url: https://docs.detai-x.com/ru/management-layer/team-os/profile-data-and-visibility/
   document_links:
     - schema: ecosystem
       link_type: part-of
-      linked_document_id: team-os-contribution-ledger
+      linked_document_id: detai-platform-detai-e3-infra-team-os-index
     - schema: ecosystem
       link_type: governs
       linked_document_id: public-profile
@@ -107,4 +107,4 @@ Personal Profile — пока ранняя beta-поверхность с огр
 
 ## Связанные страницы
 
-[Team OS: governance](index.md) · [Роли и права](access.md) · [Публичный профиль и авторство](public-profile.md) · [Обзор Team OS](../index.md)
+[Team OS: governance](index.md) · [Роли и права](access.md) · [Публичный профиль и авторство](public-profile.md) · [Обзор Team OS](index.md)

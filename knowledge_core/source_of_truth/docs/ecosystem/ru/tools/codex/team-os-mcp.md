@@ -39,7 +39,7 @@ MCP даёт AI разрешённые операции чтения и изме
 - [Team OS — обзор проекта](../../management-layer/team-os/index.md): зачем существует система и как связаны её интерфейсы.
 - [Team OS Plugin](../../management-layer/team-os/plugin.md): как участник работает с ChatGPT, MCP и Skills.
 - [Team OS Web](../../management-layer/team-os/web.md): сайт, на котором человек работает с теми же объектами.
-- [Роли и права](../../management-layer/team-os/governance/access.md): границы командного и личного доступа.
+- [Роли и права](../../management-layer/team-os/access.md): границы командного и личного доступа.
 - [Team OS Plugin](../../management-layer/team-os/plugin.md): возможности подключённого интерфейса и границы его использования.
 
 Актуальная схема MCP и ответы Core имеют приоритет при выполнении операций. Публичная документация поясняет смысл, а не заменяет проверки доступа или подтверждение записи.
