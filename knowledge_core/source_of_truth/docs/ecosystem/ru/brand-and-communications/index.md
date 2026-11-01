@@ -4,16 +4,16 @@ classification:
   scope: DETai_ecosystem
   context: governance-operating-model
   layer: operating-model
-  function: explanation
+  function: index
   system: governance-operating-model
   domain: brand-and-communications
   audiences: [public, team, brand, product, agents]
 descriptive:
   id: brand-and-communications-domain
-  version: v5
+  version: v6
   status: active
   date_ymd: 2026-10-23
-  date_update: 2026-11-01
+  date_update: 2026-11-02
 governance:
   canonicality: canonical
   visibility: public
@@ -35,13 +35,13 @@ links:
       link_type: coordinates-with
       linked_document_id: detai-platform-detai-index
     - schema: ecosystem
-      link_type: part-of
+      link_type: coordinates-with
       linked_document_id: management-layer-index
     - schema: ecosystem
       link_type: implements
       linked_document_id: detai-umbrella-brand
     - schema: ecosystem
-      link_type: contains
+      link_type: interfaces-with
       linked_document_id: storytelling-index
 title: Brand & Communications
 ---
@@ -50,7 +50,7 @@ title: Brand & Communications
 
 ## Назначение домена
 
-Brand & Communications делает DETai узнаваемой, понятной и связной для разных аудиторий. Это операционный домен Management Layer, который превращает утверждённую архитектуру бренда, продуктовые позиции и claims в согласованную публичную коммуникацию.
+**Brand & Communications** — направление экосистемы DETai, отвечающее за развитие бренда, формирование ценностных предложений, маркетинг, продвижение и коммуникацию с аудиторией. Связывает продукты и услуги технологического и институционального слоёв с потребностями людей и рынка.
 
 ## Product–Market и два слоя экосистемы
 
@@ -68,24 +68,28 @@ Management Layer организует передачу готовности и �
 
 ## Ответственность
 
-- применение бренд-системы и контроль согласованности;
+- развитие бренда, применение бренд-системы и контроль согласованности;
+- формирование ценностных предложений и маркетинг;
 - аудитории и публичные маршруты;
 - редакционный календарь;
 - мультиязычная коммуникация;
-- каналы, кампании и релизы;
+- маркетинговые кампании, продвижение и коммуникация запусков;
 - согласованность сайта, Telegram, презентаций, публикаций и иных поверхностей;
 - сбор обратной связи из публичного пространства;
 - связь публичной страницы с каноническим документом и evidence.
 
-## Что домен не определяет единолично
+## Границы ответственности и взаимодействие
 
 | Предмет | Owning domain |
 |---|---|
 | Миссия, ценности и определение DETai | Governance |
 | Профессиональная истина и границы DET | Method & Professional Standards |
-| Сегмент, offer, pricing и product positioning | Направление Product–Market внутри Brand & Communications совместно с командой продукта |
+| Аудитория, ценностное предложение, маркетинг и позиционирование | Направление Product–Market внутри Brand & Communications совместно с командой продукта |
+| Финансы, коммерческая деятельность, собственность, инвестиции и распределение экономических ресурсов | [Company & Economy](../company-and-economy/index.md) |
 | Разработка сайта и платформенных сервисов | Technology Layer: U.L.I. создаёт решения, Platform DETai обеспечивает их доставку и эксплуатацию |
-| Юридически обязательные disclosures | Legal–Economic |
+| Юридические вопросы и обязательные disclosures | [Company & Economy](../company-and-economy/index.md), раздел [«Право и экономика»](../legal-economic/index.md) |
+
+Brand & Communications связывает предложения с потребностями аудитории и рынка. Экономические и корпоративные условия согласуются с [Company & Economy](../company-and-economy/index.md); междоменное взаимодействие организуется через Management Layer.
 
 Brand & Communications вправе самостоятельно принимать редакционные и канал-специфические решения внутри утверждённого бренда, claims, позиционирования, профессиональных и правовых ограничений и бюджета.
 
@@ -106,6 +110,7 @@ Brand & Communications вправе самостоятельно принима�
 
 ```text
 цель и аудитория
+→ ценностное предложение и маркетинговая задача
 → утверждённые claims и ограничения
 → формат и канал
 → выпуск

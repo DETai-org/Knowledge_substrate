@@ -25,6 +25,9 @@ links:
       url: https://slicingpie.com/learn-slicing-pie-model/
   document_links:
     - schema: ecosystem
+      link_type: part-of
+      linked_document_id: company-economy-index
+    - schema: ecosystem
       link_type: related-to
       linked_document_id: governance-index
 title: Slicing Pie
