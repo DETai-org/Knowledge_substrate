@@ -46,8 +46,6 @@ plugins:
       "de/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "de/technology/platform/dormant-projects/index.md"
       "de/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "de/technology/platform/dormant-projects/news-agent/index.md"
       "de/ecosystem/DETai/Platform_DETai/index.md": "de/technology/platform/index.md"
-      "de/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "de/technology/platform/products/detai-matrix/index.md"
-      "de/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "de/technology/platform/products/detai-pulse/index.md"
       "de/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "de/technology/platform/products/francis-galton/index.md"
       "de/ecosystem/DETai/Platform_DETai/products/index.md": "de/technology/platform/products/index.md"
       "de/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "de/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
@@ -221,8 +219,6 @@ plugins:
       "en/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "en/technology/platform/dormant-projects/index.md"
       "en/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "en/technology/platform/dormant-projects/news-agent/index.md"
       "en/ecosystem/DETai/Platform_DETai/index.md": "en/technology/platform/index.md"
-      "en/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "en/technology/platform/products/detai-matrix/index.md"
-      "en/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "en/technology/platform/products/detai-pulse/index.md"
       "en/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "en/technology/platform/products/francis-galton/index.md"
       "en/ecosystem/DETai/Platform_DETai/products/index.md": "en/technology/platform/products/index.md"
       "en/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "en/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
@@ -396,8 +392,6 @@ plugins:
       "fi/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "fi/technology/platform/dormant-projects/index.md"
       "fi/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "fi/technology/platform/dormant-projects/news-agent/index.md"
       "fi/ecosystem/DETai/Platform_DETai/index.md": "fi/technology/platform/index.md"
-      "fi/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "fi/technology/platform/products/detai-matrix/index.md"
-      "fi/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "fi/technology/platform/products/detai-pulse/index.md"
       "fi/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "fi/technology/platform/products/francis-galton/index.md"
       "fi/ecosystem/DETai/Platform_DETai/products/index.md": "fi/technology/platform/products/index.md"
       "fi/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "fi/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
@@ -564,8 +558,6 @@ plugins:
       "ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md": "ru/institutional-layer/det/at-the-crossroads-of-three-worlds.md"
       "ru/ecosystem/DET/index.md": "ru/institutional-layer/det/index.md"
       "ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md": "ru/technology/platform/products/francis-galton/index.md"
-      "ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md": "ru/technology/platform/products/detai-matrix/index.md"
-      "ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse/index.md": "ru/technology/platform/products/detai-pulse/index.md"
       "ru/ecosystem/DETai/Platform_DETai/E1-Core/🌀Psykhḗ AI/index.md": "ru/technology/platform/products/psykhe-ai/index.md"
       "ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md": "ru/technology/platform/communications/telegram/usercontrol/index.md"
       "ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md": "ru/technology/platform/communications/telegram/account-manager-philosophy.md"
@@ -585,8 +577,6 @@ plugins:
       "ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "ru/technology/platform/dormant-projects/index.md"
       "ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "ru/technology/platform/dormant-projects/news-agent/index.md"
       "ru/ecosystem/DETai/Platform_DETai/index.md": "ru/technology/platform/index.md"
-      "ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "ru/technology/platform/products/detai-matrix/index.md"
-      "ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "ru/technology/platform/products/detai-pulse/index.md"
       "ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "ru/technology/platform/products/francis-galton/index.md"
       "ru/ecosystem/DETai/Platform_DETai/products/index.md": "ru/technology/platform/products/index.md"
       "ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "ru/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
@@ -772,8 +762,6 @@ plugins:
       "zh/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "zh/technology/platform/dormant-projects/index.md"
       "zh/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "zh/technology/platform/dormant-projects/news-agent/index.md"
       "zh/ecosystem/DETai/Platform_DETai/index.md": "zh/technology/platform/index.md"
-      "zh/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "zh/technology/platform/products/detai-matrix/index.md"
-      "zh/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "zh/technology/platform/products/detai-pulse/index.md"
       "zh/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "zh/technology/platform/products/francis-galton/index.md"
       "zh/ecosystem/DETai/Platform_DETai/products/index.md": "zh/technology/platform/products/index.md"
       "zh/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "zh/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
@@ -1090,8 +1078,6 @@ nav:
         - Вопросы и проблемы: ru/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md
         - Устройство и доверие: ru/technology/platform/products/psychology-in-quotes/architecture-and-trust.md
       - Francis Galton: ru/technology/platform/products/francis-galton/index.md
-      - DETai Pulse: ru/technology/platform/products/detai-pulse/index.md
-      - DETai Matrix: ru/technology/platform/products/detai-matrix/index.md
       - Psykhḗ AI: ru/technology/platform/products/psykhe-ai/index.md
     - Бренд и внешние коммуникации:
       - Обзор: ru/technology/platform/communications/index.md

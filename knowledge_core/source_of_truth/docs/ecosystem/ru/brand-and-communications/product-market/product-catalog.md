@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, product, agents]
 descriptive:
   id: detai-product-catalog
-  version: v4
+  version: v5
   status: draft
-  date_ymd: 2026-08-05
-  date_update: 2026-08-09
+  date_ymd: 2026-11-01
+  date_update: 2026-11-01
 governance:
   canonicality: working
   visibility: public
@@ -48,8 +48,6 @@ title: Каталог продуктов и предложений DETai
 |---|---|---|
 | Психология в цитатах | Образование и просвещение; дополнительно публикация и творчество. Роль: E2 Brand | [Открыть](../../technology/platform/products/psychology-in-quotes/index.md) |
 | Francis Galton | Психологический и исследовательский продукт | [Открыть](../../technology/platform/products/francis-galton/index.md) |
-| DETai Pulse | Продукт технологического портфеля | [Открыть](../../technology/platform/products/detai-pulse/index.md) |
-| DETai Matrix | Продукт технологического портфеля | [Открыть](../../technology/platform/products/detai-matrix/index.md) |
 | Psykhḗ AI | Продукт технологического портфеля | [Открыть](../../technology/platform/products/psykhe-ai/index.md) |
 
 Текущая группировка отражает состояние документации на дату версии каталога. Наличие страницы не означает завершённость продукта, клиническую готовность или подтверждённый product–market fit.

@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, product, agents]
 descriptive:
   id: detai-platform-detai-products-index
-  version: v2
+  version: v3
   status: active
-  date_ymd: 2026-08-09
-  date_update: 2026-08-09
+  date_ymd: 2026-11-01
+  date_update: 2026-11-01
 governance:
   canonicality: canonical
   visibility: public
@@ -71,8 +71,6 @@ title: Продукты Platform DETai
 
 - [Psychology in Quotes](psychology-in-quotes/index.md)
 - [Francis Galton](francis-galton/index.md)
-- [DETai Pulse](detai-pulse/index.md)
-- [DETai Matrix](detai-matrix/index.md)
 - [Psykhḗ AI](psykhe-ai/index.md)
 
 > [!TIP] Весь портфель DETai — в одной сводной таблице
