@@ -46,4 +46,4 @@ links:
 
 ## Граница владения
 
-Общий контракт языка определяется этим стандартом. Детали кнопок, каналов, текстов, конкретных `source`/`intent` и кода остаются у соответствующих продуктов и Hub. Связанные публичные описания: [Psychology in Quotes](../../platform/products/psychology-in-quotes/index.md) и [Ecosystem Runtime](../../../infrastructure/ecosystem-runtime/index.md).
+Общий контракт языка определяется этим стандартом. Детали кнопок, каналов, текстов, конкретных `source`/`intent` и кода остаются у соответствующих продуктов и Hub. Связанные публичные описания: [Psychology in Quotes](../../platform/psychology-in-quotes/index.md) и [Ecosystem Runtime](../../../infrastructure/ecosystem-runtime/index.md).

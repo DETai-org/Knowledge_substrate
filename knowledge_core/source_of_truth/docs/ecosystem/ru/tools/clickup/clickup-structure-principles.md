@@ -78,7 +78,7 @@ title: Структура ClickUp и принципы организации
 | **🌍 Серверы** | Арендованные и внешние серверы, их состояние и эксплуатационные задачи | [Серверы](<../../infrastructure/servers/index.md>) |
 | **📦 Knowledge Substrate** | Задачи по базе знаний, её сборке, runtime и связанным данным | [Knowledge Substrate runtime](../../infrastructure/knowledge-substrate/index.md) |
 
-Папка **STORYTELLING (TimeOS) для текстов** является операционным входом в процесс подготовки текстов и будущую рабочую среду TimeOS. Её нахождение в Space Infrastructure не классифицирует Storytelling как инфраструктуру. Каноническое определение проекта находится на странице [Storytelling](../../technology/platform/communications/storytelling/index.md), а кодовая реализация — в его owning repository.
+Папка **STORYTELLING (TimeOS) для текстов** является операционным входом в процесс подготовки текстов и будущую рабочую среду TimeOS. Её нахождение в Space Infrastructure не классифицирует Storytelling как инфраструктуру. Каноническое определение проекта находится на странице [Storytelling](../../technology/platform/storytelling/index.md), а кодовая реализация — в его owning repository.
 
 ### Принцип создания нового Space
 

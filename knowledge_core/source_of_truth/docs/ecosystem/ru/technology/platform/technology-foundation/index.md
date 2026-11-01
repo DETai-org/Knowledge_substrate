@@ -34,6 +34,6 @@ title: Технологическая основа
 
 ## Как это выглядит в конкретном проекте
 
-На примере [Storytelling](../communications/storytelling/technology-foundation.md) можно увидеть, как предметная производственная система сохраняет собственные правила публикации, а intelligence-runtime берёт на себя только техническое исполнение LLM-шагов.
+На примере [Storytelling](../storytelling/technology-foundation.md) можно увидеть, как предметная производственная система сохраняет собственные правила публикации, а intelligence-runtime берёт на себя только техническое исполнение LLM-шагов.
 
-[Psychology in Quotes](../products/psychology-in-quotes/architecture-and-trust.md) использует ecosystem-runtime для общей идентичности DETai Account и коммерческого учёта в Commerce Core: предложений, платежей и подписок. Возможности продукта, недельные лимиты, работа с цитатами и пользовательские сценарии остаются ответственностью PiQ.
+[Psychology in Quotes](../psychology-in-quotes/architecture-and-trust.md) использует ecosystem-runtime для общей идентичности DETai Account и коммерческого учёта в Commerce Core: предложений, платежей и подписок. Возможности продукта, недельные лимиты, работа с цитатами и пользовательские сценарии остаются ответственностью PiQ.

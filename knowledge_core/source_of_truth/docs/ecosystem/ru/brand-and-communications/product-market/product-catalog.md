@@ -31,7 +31,7 @@ links:
       linked_document_id: product-object-model
     - schema: ecosystem
       link_type: related-to
-      linked_document_id: detai-platform-detai-products-index
+      linked_document_id: detai-platform-detai-index
 title: Каталог продуктов и предложений DETai
 ---
 
@@ -40,15 +40,15 @@ title: Каталог продуктов и предложений DETai
 Каталог даёт единый вход в продуктовый портфель DETai, но **не переносит сюда документацию каждого продукта**. Каноническая страница продукта живёт рядом с системой, которая им владеет; каталог показывает статус, тип и маршрут к ней.
 
 > [!TIP] Нужны только продукты Platform DETai?
-> Перейдите в [индекс продуктов Platform DETai](../../technology/platform/products/index.md): там объяснено, что означает продуктовый узел, чем пилот отличается от выпущенного продукта и где проходит граница с R&D, внутренними технологиями и остановленными проектами.
+> Перейдите в [обзор Platform DETai](../../technology/platform/index.md): там перечислены цифровые проекты, объяснены продуктовый статус и пилот, а также связи с R&D, технологической основой и Archive.
 
 ## Технологические продукты и сервисы
 
 | Продукт или сервис | Текущая роль | Каноническая документация |
 |---|---|---|
-| Психология в цитатах | Образование и просвещение; дополнительно публикация и творчество. Роль: E2 Brand | [Открыть](../../technology/platform/products/psychology-in-quotes/index.md) |
-| Francis Galton | Психологический и исследовательский продукт | [Открыть](../../technology/platform/products/francis-galton/index.md) |
-| Psykhḗ AI | Продукт технологического портфеля | [Открыть](../../technology/platform/products/psykhe-ai/index.md) |
+| Психология в цитатах | Образование и просвещение; дополнительно публикация и творчество. Роль: E2 Brand | [Открыть](../../technology/platform/psychology-in-quotes/index.md) |
+| Francis Galton | Психологический и исследовательский продукт | [Открыть](../../technology/platform/francis-galton/index.md) |
+| Psykhḗ AI | Продукт технологического портфеля | [Открыть](../../technology/platform/psykhe-ai/index.md) |
 
 Текущая группировка отражает состояние документации на дату версии каталога. Наличие страницы не означает завершённость продукта, клиническую готовность или подтверждённый product–market fit.
 
