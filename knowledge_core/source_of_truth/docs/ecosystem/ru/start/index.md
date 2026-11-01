@@ -40,7 +40,7 @@ Knowledge Substrate — версионная память и документа�
 
 1. [Карта знаний](knowledge-map.md)
 2. [Экосистема DETai](../ecosystem/DETai/index.md)
-3. [Метод DET и институциональная жизнь](../method/index.md)
+3. [Метод DET и институциональная жизнь](../institutional-layer/index.md)
 4. [Технологический слой](../technology/index.md)
 5. [Management Layer](../ecosystem/Management_layer/index.md)
 

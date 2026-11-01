@@ -25,7 +25,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 | 对 DETai 的主要贡献是什么？ | 传播知识、建立信任和知名度，即 **E2 Brand** |
 | PiQ 不承诺什么？ | 正式教育课程、资质证书、心理诊断或心理治疗 |
 
-这种区分见于[产品对象模型](../../../../../product-market/product-object-model.md)及[梯队逻辑](../../../logic-of-echelons.md)。主要功能属于教育，并不意味着该项目自动划入 E1。
+这种区分见于[产品对象模型](../../../../../product-market/product-object-model.md)及[梯队逻辑](../../../../../technology/logic-of-echelons.md)。主要功能属于教育，并不意味着该项目自动划入 E1。
 
 ## 职责边界
 

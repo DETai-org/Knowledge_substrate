@@ -41,8 +41,8 @@ title: Маршруты по ролям
 | Разработчик | [U.L.I.](../ecosystem/DETai/U.L.I/index.md) | production cycle, work model и technical standards |
 | Продуктовая роль | [Product–Market](../product-market/index.md) | Product Object Model, Market Operations, показатели результата |
 | Brand & Communications | [Описание домена](../brand-and-communications/index.md) | Umbrella Brand, product positioning, approved claims и публичные поверхности |
-| Психотерапевт / супервизор | [Метод и институциональная жизнь](../method/index.md) | профессиональные границы и исследование |
-| Преподаватель | [Институциональный слой](../method/institutional-layer.md) | образование, публикации и доказательная база |
+| Психотерапевт / супервизор | [Метод и институциональная жизнь](../institutional-layer/index.md) | профессиональные границы и исследование |
+| Преподаватель | [Институциональный слой](../institutional-layer/institutional-layer.md) | образование, публикации и доказательная база |
 | Legal / Finance / Finland venture | [Компания и экономика](../legal-economic/index.md) | planned operator, Venture Execution View, restricted originals и external readiness |
 | Knowledge architect / агент | [Knowledge Substrate](../knowledge/index.md) | metadata, source map, knowledge delivery и agent navigation |
 

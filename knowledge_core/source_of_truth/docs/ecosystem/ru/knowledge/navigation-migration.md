@@ -47,7 +47,7 @@ title: Миграция информационной архитектуры
 | --- | --- | --- |
 | `/ru/ecosystem/` | `/ru/ecosystem/DETai/` | перенаправление на обзор экосистемы |
 | `/ru/architecture/` | `/ru/ecosystem/DETai/` | перенаправление на обзор экосистемы |
-| `/ru/ecosystem/DET/` | `/ru/method/` | сохранённый корпус метода со ссылкой на предметный вход |
+| `/ru/ecosystem/DET/` | `/ru/institutional-layer/` | сохранённый корпус метода со ссылкой на предметный вход |
 | `/ru/governance/` | `/ru/ecosystem/Governance/` | перенаправление на индекс Governance |
 | `/ru/ecosystem/Management_layer/` | `/ru/ecosystem/Management_layer/` | самостоятельный индекс Management Layer |
 | `/ru/ecosystem/Management_layer/Docs-Ecosystem/` | `/ru/knowledge/` | сохранённый documentation-governance overview внутри Knowledge System |

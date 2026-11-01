@@ -22,7 +22,7 @@ governance:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/method/
+      url: https://docs.detai-x.com/ru/institutional-layer/
   document_links:
     - schema: ecosystem
       link_type: reframes

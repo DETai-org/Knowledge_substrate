@@ -23,6 +23,12 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      'ru/method/education.md': 'ru/institutional-layer/education.md'
+      'ru/method/index.md': 'ru/institutional-layer/index.md'
+      'ru/method/institutional-layer.md': 'ru/institutional-layer/institutional-layer.md'
+      'ru/method/psychotherapy-and-supervision.md': 'ru/institutional-layer/psychotherapy-and-supervision.md'
+      'ru/method/research.md': 'ru/institutional-layer/research.md'
+      'ru/ecosystem/DETai/logic-of-echelons.md': 'ru/technology/logic-of-echelons.md'
       'ru/governance/brand-and-communications.md': 'ru/brand-and-communications/index.md'
       'ru/governance/umbrella-brand.md': 'ru/brand-and-communications/umbrella-brand.md'
       'ru/governance/product-market-cycle.md': 'ru/brand-and-communications/product-market-cycle.md'
@@ -189,11 +195,11 @@ nav:
     - R&D:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/R&D/index.md
 - Institutional Layer:
-  - Метод DET и институциональная жизнь: ru/method/index.md
-  - Институциональный слой: ru/method/institutional-layer.md
-  - Психотерапия и супервизия: ru/method/psychotherapy-and-supervision.md
-  - Образование: ru/method/education.md
-  - Исследование: ru/method/research.md
+  - Метод DET и институциональная жизнь: ru/institutional-layer/index.md
+  - Институциональный слой: ru/institutional-layer/institutional-layer.md
+  - Психотерапия и супервизия: ru/institutional-layer/psychotherapy-and-supervision.md
+  - Образование: ru/institutional-layer/education.md
+  - Исследование: ru/institutional-layer/research.md
   - Корпус метода DET:
     - Обзор DET: ru/ecosystem/DET/index.md
     - Концептуальный корпус — редакционная синхронизация:
@@ -206,7 +212,7 @@ nav:
     - На стыке трёх миров: ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md
 - Technology Layer:
   - Обзор: ru/technology/index.md
-  - Логика эшелонов: ru/ecosystem/DETai/logic-of-echelons.md
+  - Логика эшелонов: ru/technology/logic-of-echelons.md
   - U.L.I., Platform и цикл продукта: ru/technology/system-interface.md
   - Общие рабочие правила:
     - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md

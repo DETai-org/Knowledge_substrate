@@ -144,7 +144,7 @@ Front matter остаётся машинным источником, но его
 ```text
 /ru/start/
 /ru/ecosystem/DETai/
-/ru/method/
+/ru/institutional-layer/
 /ru/technology/platform/
 /ru/technology/uli/
 /ru/governance/

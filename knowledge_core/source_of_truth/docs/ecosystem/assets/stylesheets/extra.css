@@ -169,7 +169,7 @@
 }
 
 /* Compact brand labels above the two top-level layers in the primary menu. */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a[href$="method/"] {
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a[href$="institutional-layer/"] {
   --detai-layer-brand: "DET";
 }
 
@@ -178,12 +178,12 @@
 }
 
 @media screen and (max-width: 76.234375em) {
-  .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container:has(> a:is([href$="method/"], [href$="technology/"])) {
+  .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container:has(> a:is([href$="institutional-layer/"], [href$="technology/"])) {
     padding-top: 0.3rem;
   }
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a:is([href$="method/"], [href$="technology/"]) > .md-ellipsis::before {
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a:is([href$="institutional-layer/"], [href$="technology/"]) > .md-ellipsis::before {
   content: var(--detai-layer-brand);
   display: table;
   margin-bottom: 0.14rem;
