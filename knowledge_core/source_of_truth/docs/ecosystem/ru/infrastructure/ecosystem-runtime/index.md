@@ -7,12 +7,21 @@ classification:
   function: explanation
 descriptive:
   id: infrastructure-ecosystem-runtime
-  version: v1
+  version: v2
   status: active
   date_ymd: 2026-08-20
+  date_update: 2026-11-02
 governance:
   canonicality: canonical
   visibility: public
+links:
+  external_links:
+    - type: MkDocs_ru
+      url: https://docs.detai-x.com/ru/infrastructure/ecosystem-runtime/
+  document_links:
+    - schema: ecosystem
+      link_type: coordinates-with
+      linked_document_id: company-economy-index
 title: ecosystem-runtime
 ---
 
@@ -44,7 +53,7 @@ ecosystem-runtime.
 ### Общая логика
 
 Packages описывают повторно используемые части backend: identity, access,
-events, intake, notifications и platform contracts. Благодаря этому сайт и
+commerce, events, intake, notifications и platform contracts. Благодаря этому сайт и
 разные боты не создают собственные несовместимые правила для одних данных.
 
 ### Runtime-данные
@@ -53,6 +62,14 @@ events, intake, notifications и platform contracts. Благодаря этом
 пользователя, прав доступа, событий, заявок и уведомлений. Боты и сайт не
 становятся источниками истины: они читают и изменяют эти данные через API и
 общую application-логику.
+
+### Commerce Core — общая техническая возможность
+
+**Commerce Core** обслуживает коммерческие операции разных продуктов DETai: каталог предложений, заказы, проверенные платёжные события, платные периоды и возвраты. Первые сценарии реализованы для Psychology in Quotes и Telegram Stars; развитие Core как общего сервиса позволяет добавлять другие продукты и способы оплаты без независимых платёжных реестров.
+
+Технический код, платёжные адаптеры, SQL-данные, API и их эксплуатация принадлежат **ecosystem-runtime** внутри Infrastructure. Целевая PostgreSQL-схема `commerce` отделяет коммерческие факты от `access`, который отвечает за основания доступа, и от `identity`, который владеет учётными записями. Это целевая граница: существующая реализация Commerce пока использует объекты `access`, а не самостоятельную схему `commerce`. Продукты продолжают самостоятельно определять возможности и ограничения полученного доступа.
+
+Экономические условия, результаты и устойчивость рассматриваются через [Company & Economy](https://docs.detai-x.com/ru/company-and-economy/). Это **предметная перспектива**, не перенос Commerce Core из Infrastructure и не подмена его технического владельца.
 
 ## Как проходит действие
 
