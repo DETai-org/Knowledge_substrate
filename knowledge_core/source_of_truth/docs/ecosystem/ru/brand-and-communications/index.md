@@ -87,7 +87,7 @@ Management Layer организует передачу готовности и �
 | Аудитория, ценностное предложение, маркетинг и позиционирование | Направление Product–Market внутри Brand & Communications совместно с командой продукта |
 | Финансы, коммерческая деятельность, собственность, инвестиции и распределение экономических ресурсов | [Company & Economy](../company-and-economy/index.md) |
 | Разработка сайта и платформенных сервисов | Technology Layer: U.L.I. создаёт решения, Platform DETai обеспечивает их доставку и эксплуатацию |
-| Юридические вопросы и обязательные disclosures | [Company & Economy](../company-and-economy/index.md), раздел [«Право и экономика»](../legal-economic/index.md) |
+| Юридические вопросы и обязательные disclosures | [Company & Economy](../company-and-economy/index.md) |
 
 Brand & Communications связывает предложения с потребностями аудитории и рынка. Экономические и корпоративные условия согласуются с [Company & Economy](../company-and-economy/index.md); междоменное взаимодействие организуется через Management Layer.
 
