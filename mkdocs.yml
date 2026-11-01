@@ -181,9 +181,8 @@ nav:
 - Technology Layer:
   - Обзор: ru/technology/index.md
   - Логика эшелонов: ru/technology/logic-of-echelons.md
-  - Общие рабочие правила:
-    - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
-    - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
+  - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
+  - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
   - U.L.I. — среда создания:
     - Обзор U.L.I.: ru/ecosystem/DETai/U.L.I/index.md
     - Смысл и командная среда:
