@@ -27,7 +27,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: part-of
-      linked_document_id: governance-operating-model-index
+      linked_document_id: management-layer-index
     - schema: ecosystem
       link_type: governs
       linked_document_id: detai-platform-detai-e3-infra-team-os-index

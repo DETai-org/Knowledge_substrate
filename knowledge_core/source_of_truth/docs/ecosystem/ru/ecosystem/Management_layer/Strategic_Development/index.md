@@ -26,7 +26,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: implements
-      linked_document_id: governance-operating-model-index
+      linked_document_id: management-layer-index
     - schema: ecosystem
       link_type: constrained-by
       linked_document_id: detai-management-strategy

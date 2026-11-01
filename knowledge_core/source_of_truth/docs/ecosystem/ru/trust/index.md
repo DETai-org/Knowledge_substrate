@@ -55,7 +55,7 @@ Trust System удерживает условия, при которых людя
 - [U.L.I.](../technology/index.md) реализует controls и создаёт release evidence.
 - [Evidence](../evidence/index.md) связывает claims, проверки и ограничения.
 - [Право](../legal-economic/index.md) определяет обязательные основания и договорные формы.
-- [Governance](../governance/index.md) назначает risk acceptance и escalation authority.
+- [Governance](../ecosystem/Governance/index.md) назначает risk acceptance и escalation authority.
 
 ## Где продолжить
 

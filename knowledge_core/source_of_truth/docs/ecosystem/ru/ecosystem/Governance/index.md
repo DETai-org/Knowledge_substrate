@@ -7,10 +7,10 @@ classification:
   function: index
 descriptive:
   id: governance-index
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-02-18
-  date_update: 2026-08-05
+  date_update: 2026-11-01
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -19,12 +19,10 @@ links:
     - schema: "ecosystem"
       link_type: "coordinates-with"
       linked_document_id: "management-layer-index"
-title: DETai Ecosystem Governance
+title: Governance
 ---
 
-# DETai Ecosystem Governance
-
-> **Текущий предметный вход:** [управление и участие](../../governance/index.md). Эта страница сохраняет опубликованный URL конституционного корпуса Governance.
+# Governance
 
 **Governance — конституционный уровень экосистемы DETai, который удерживает миссию, ценности, источник полномочий, предельные границы и правила изменения системы.**
 
@@ -38,6 +36,10 @@ title: DETai Ecosystem Governance
 - каким образом изменяется сама система управления.
 
 Governance не выполняет ежедневную работу и не подменяет профессиональную компетенцию. Его решения переводятся в стратегию, роли, домены, ресурсы и процессы через [Ecosystem Management Layer](../Management_layer/index.md).
+
+## Смысловая рамка
+
+[Миссия, видение, ценности, BHAG и принципы участия](../../governance/purpose-and-principles.md) задают основание совместной деятельности. Они направляют политики и решения, но не заменяют их.
 
 ## Конституционное ядро
 
@@ -74,4 +76,8 @@ Values не являются отдельным шагом иерархии: о�
 | Удерживает зарезервированные решения | Координирует портфель, ресурсы и работу |
 | Определяет правила изменения системы | Реализует изменения через процессы и проекты |
 
-Краткую карту всей системы см. в [Operating Model DETai](../Management_layer/2_Architecture_and_Logic/operating-model-detai.md).
+Краткую карту всей системы см. в [модели управления DETai](../Management_layer/2_Architecture_and_Logic/operating-model-detai.md).
+
+## Корпоративные полномочия
+
+Внутреннее самоуправление не отменяет полномочия будущих акционеров, совета директоров и управляющего директора. Делегирование действует в пределах закона, корпоративных документов и профессиональных ограничений.

@@ -23,6 +23,7 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      'ru/governance/index.md': 'ru/ecosystem/Governance/index.md'
       'ru/architecture/index.md': 'ru/ecosystem/DETai/index.md'
       'ru/architecture/three-perspective-consensus.md': 'ru/ecosystem/DETai/index.md'
       'ru/architecture/ecosystem-canon.md': 'ru/ecosystem/DETai/index.md'
@@ -107,28 +108,26 @@ nav:
   - Маршруты по ролям: ru/start/role-routes.md
   - Рабочая среда: ru/start/working-environment.md
 - Экосистема DETai: ru/ecosystem/DETai/index.md
-- Управление и участие:
-  - Обзор управления: ru/governance/index.md
+- Governance:
+  - Обзор: ru/ecosystem/Governance/index.md
+  - Зачем существует DETai: ru/governance/purpose-and-principles.md
+  - Конституция: ru/ecosystem/Governance/Constitution.md
+  - Миссия: ru/ecosystem/Governance/Mission.md
+  - Видение: ru/ecosystem/Governance/Vision.md
+  - Ценности: ru/ecosystem/Governance/Values.md
+  - BHAG: ru/ecosystem/Governance/BHAG.md
+- Management Layer:
+  - Обзор: ru/ecosystem/Management_layer/index.md
+  - Модель управления DETai: ru/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md
+  - Team OS:
+    - Обзор: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
+    - Web — сайт команды: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md
+    - Plugin — работа с ChatGPT: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md
+  - Домены и права решений: ru/governance/domains-and-decision-rights.md
+  - Распределённая архитектура: ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md
+  - Уровни работы: ru/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md
   - Осмысленное участие: ru/governance/meaningful-participation.md
-  - Governance:
-    - Зачем существует DETai: ru/governance/purpose-and-principles.md
-    - Обзор конституционного Governance: ru/ecosystem/Governance/index.md
-    - Конституция: ru/ecosystem/Governance/Constitution.md
-    - Миссия: ru/ecosystem/Governance/Mission.md
-    - Видение: ru/ecosystem/Governance/Vision.md
-    - Ценности: ru/ecosystem/Governance/Values.md
-    - BHAG: ru/ecosystem/Governance/BHAG.md
   - Стратегия управления: ru/governance/management-strategy.md
-  - Management Layer:
-    - Обзор: ru/ecosystem/Management_layer/index.md
-    - Operating Model DETai: ru/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md
-    - Team OS:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
-      - Web — сайт команды: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md
-      - Plugin — работа с ChatGPT: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md
-    - Домены и права решений: ru/governance/domains-and-decision-rights.md
-    - Распределённая архитектура: ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md
-    - Уровни работы: ru/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md
   - Стратегия развития: ru/ecosystem/Management_layer/Strategic_Development/index.md
   - Ресурсы экосистемы: ru/ecosystem/Management_layer/ecosystem-resource.md
   - Команда и участие:
@@ -138,12 +137,9 @@ nav:
       - Роли, права и возможности: ru/governance/team-os/access.md
       - Публичный профиль и авторство: ru/governance/team-os/public-profile.md
       - Видимость данных, AI и публикация: ru/governance/team-os/profile-data-and-visibility.md
-  - Brand & Communications:
-    - DETai как Umbrella Brand: ru/governance/umbrella-brand.md
-    - Границы и ответственность домена: ru/governance/brand-and-communications.md
-  - Общие рабочие правила:
-    - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
-    - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
+- Brand & Communications:
+  - DETai как Umbrella Brand: ru/governance/umbrella-brand.md
+  - Границы и ответственность домена: ru/governance/brand-and-communications.md
 - DET и институциональная жизнь:
   - Метод DET и институциональная жизнь: ru/method/index.md
   - Институциональный слой: ru/method/institutional-layer.md
@@ -163,6 +159,9 @@ nav:
 - Технологический слой:
   - Обзор: ru/technology/index.md
   - U.L.I., Platform и цикл продукта: ru/technology/system-interface.md
+  - Общие рабочие правила:
+    - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
+    - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
   - U.L.I. — среда создания:
     - Обзор U.L.I.: ru/ecosystem/DETai/U.L.I/index.md
     - Смысл и командная среда:

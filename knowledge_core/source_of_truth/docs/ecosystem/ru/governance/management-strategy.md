@@ -24,7 +24,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: part-of
-      linked_document_id: governance-operating-model-index
+      linked_document_id: management-layer-index
     - schema: ecosystem
       link_type: constrains
       linked_document_id: management-layer-strategic-development-index

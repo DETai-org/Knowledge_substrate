@@ -24,7 +24,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: elaborates
-      linked_document_id: governance-operating-model-index
+      linked_document_id: management-layer-index
 title: Домены и права решений
 ---
 
