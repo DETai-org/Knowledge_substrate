@@ -143,6 +143,6 @@ Release Summary должен подводить итог фактическом�
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/technology/uli/production/production-cycle/) — показывает место Release Fixation как 4-го этапа цикла.
-- [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/) — описывает выполнение Work Package до этапа фиксации релиза.
-- [♻️ Процесс версионности в U.L.I.](https://docs.detai-x.com/ru/technology/uli/standards/project-versioning/) — объясняет смысл версий проектов в U.L.I.
+- [Производственный цикл проектов и карта ролей вокруг него](../../production-cycle/index.md) — показывает место Release Fixation как 4-го этапа цикла.
+- [Work Model](../../production-cycle/work-model.md) — описывает выполнение Work Package до этапа фиксации релиза.
+- [♻️ Процесс версионности в U.L.I.](project-versioning.md) — объясняет смысл версий проектов в U.L.I.

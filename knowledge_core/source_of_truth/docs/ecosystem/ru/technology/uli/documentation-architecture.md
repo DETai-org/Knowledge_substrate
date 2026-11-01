@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/production/documentation-architecture/"
+      url: "https://docs.detai-x.com/ru/technology/uli/documentation-architecture/"
   document_links:
     - schema: ""
       link_type: ""
@@ -35,15 +35,15 @@ U.L.I. является **environment-уровнем** внутри класте
 
 Типы документов, их базовые атрибуты и общая логика документационной системы задаются на уровне всей экосистемы DET / DETai в документе:
 
-**[Документационная архитектура экосистемы](../../../knowledge/documentation-architecture.md)**
+**[Документационная архитектура экосистемы](../../knowledge/documentation-architecture.md)**
 
 Допустимые функции документов — `index`, `explanation`, `standard`, `policy`, `guide` и другие — определяются в справочнике:
 
-**[Функции документов](../../../knowledge/documentation-functions.md)**
+**[Функции документов](../../knowledge/documentation-functions.md)**
 
 Обязательные metadata-поля документов определяются в документе:
 
-**[Политика metadata документов](../../../knowledge/metadata-policy.md)**
+**[Политика metadata документов](../../knowledge/metadata-policy.md)**
 
 Таким образом, данный документ не вводит новую общую систему типов документов, а показывает, **как экосистемная документационная архитектура применяется внутри среды U.L.I.**
 
@@ -129,7 +129,7 @@ U.L.I. является **environment-уровнем** внутри класте
 ## Как читать эту таблицу правильно
 
 Эта таблица **не заменяет** документ  
-**[Документационная архитектура экосистемы](../../../knowledge/documentation-architecture.md)**.
+**[Документационная архитектура экосистемы](../../knowledge/documentation-architecture.md)**.
 
 Она показывает не общую теорию типов документов, а **их локальное применение внутри U.L.I.**
 
@@ -201,11 +201,11 @@ ecosystem → cluster → environment → project
 Документы среды U.L.I. подчиняются общему процессу версионности, принятому в экосистеме.
 
 См. документ:
-[♻️ Процесс версионности](../standards/project-versioning.md)
+[♻️ Процесс версионности](standards/project-versioning.md)
 
 
 Также документы U.L.I. используют общую систему метаданных
 
 См. документ:
-**[Политика metadata документов](../../../knowledge/metadata-policy.md)**
+**[Политика metadata документов](../../knowledge/metadata-policy.md)**
 

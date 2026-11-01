@@ -14,11 +14,11 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/"
+      url: "https://docs.detai-x.com/ru/technology/production-cycle/work-model/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
+    - schema: ecosystem
+      link_type: part-of
+      linked_document_id: production-cycle
 title: Work Model
 ---
 
@@ -31,7 +31,7 @@ Work Model — это процессная модель выполнения р�
 - 2. Work Model Planning — проектное намерение переводится в структуру работы;
 - 3. Implementation — Work Package выполняется через branch, PR, checklist и финальную проверку.
 
-Конкретные обязательные поля, шаблоны и форматы оформления живут в контрактах: [Epic Issue Contract](https://docs.detai-x.com/ru/technology/uli/standards/work-model/issue-contract/) и [Sub-Issue / Work Package Contract](https://docs.detai-x.com/ru/technology/uli/standards/work-model/sub-issue-contract/).
+Конкретные обязательные поля, шаблоны и форматы оформления живут в контрактах: [Epic Issue Contract](epic-issue-contract.md) и [Sub-Issue / Work Package Contract](work-package-contract.md).
 
 ## Purpose
 
@@ -138,13 +138,12 @@ Work Model получает вход из этапа Project Intent: уже ес
 
 Таким образом, Work Model является рабочим мостом между намерением и поставкой результата.
 
-Распределение ролей между человеком и агентом внутри этапа Work Model Planning подробнее раскрыто в документе [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning/).
+Распределение ролей между человеком и агентом внутри этапа Work Model Planning подробнее раскрыто в документе [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md).
 
 ## Связанные документы
 
-- [Модель работы](https://docs.detai-x.com/ru/technology/uli/standards/work-model/) — индекс связки Work Model.
-- [Epic Issue Contract](https://docs.detai-x.com/ru/technology/uli/standards/work-model/issue-contract/) — контракт Epic Issue.
-- [Sub-Issue / Work Package Contract](https://docs.detai-x.com/ru/technology/uli/standards/work-model/sub-issue-contract/) — контракт Work Package.
-- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/technology/uli/production/production-cycle/) — карта полного цикла DETai.
-- [Методология проектного цикла DETai](https://docs.detai-x.com/ru/technology/uli/production/project-cycle-methodology/) — объясняет переход от мысли к проектному намерению.
-- [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning/) — объясняет совместную форму planning между человеком и агентом.
+- [Epic Issue Contract](epic-issue-contract.md) — контракт Epic Issue.
+- [Sub-Issue / Work Package Contract](work-package-contract.md) — контракт Work Package.
+- [Производственный цикл проектов и карта ролей вокруг него](index.md) — карта полного цикла DETai.
+- [Методология проектного цикла DETai](project-cycle-methodology.md) — объясняет переход от мысли к проектному намерению.
+- [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md) — объясняет совместную форму planning между человеком и агентом.

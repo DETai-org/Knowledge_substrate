@@ -85,17 +85,13 @@ U.L.I. реализует продуктовые и технические ре�
 
 ## Документационная архитектура U.L.I.
 
-Раздел знаний организован в три слоя:
-
-1. [Философия и установки](philosophy/index.md)
-2. [Архитектура и логика](production/index.md)
-3. [Технические стандарты](standards/index.md)
+Практические правила разработки объединены в [технических стандартах](standards/index.md). Их назначение объясняет документ [«Почему стандарты U.L.I. важны»](../why-uli-standards-matter.md), а организацию знаний — [документационная архитектура U.L.I.](documentation-architecture.md).
 
 Ключевые практические документы:
 
-- [производственный цикл проектов](production/production-cycle.md);
-- [методология проектного цикла](production/project-cycle-methodology.md);
-- [модель работы](standards/work-model/index.md);
+- [производственный цикл проектов](../production-cycle/index.md);
+- [методология проектного цикла](../production-cycle/project-cycle-methodology.md);
+- [Work Model](../production-cycle/work-model.md) и контракты Epic Issue и Work Package;
 - [процесс версионности](standards/project-versioning.md).
 
 ## Связь с управлением

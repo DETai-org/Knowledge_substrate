@@ -14,11 +14,11 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/production/project-cycle-methodology/"
+      url: "https://docs.detai-x.com/ru/technology/production-cycle/project-cycle-methodology/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
+    - schema: ecosystem
+      link_type: part-of
+      linked_document_id: production-cycle
 title: Методология проектного цикла DETai
 ---
 
@@ -71,10 +71,9 @@ title: Методология проектного цикла DETai
 
 См. также:
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/technology/uli/production/production-cycle/)
-- [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning/)
-- [Модель работы](https://docs.detai-x.com/ru/technology/uli/standards/work-model/)
-- [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/)
+- [Производственный цикл проектов и карта ролей вокруг него](index.md)
+- [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md)
+- [Work Model](work-model.md)
 
 ## 4. Версионность как эволюция
 
@@ -106,9 +105,8 @@ title: Методология проектного цикла DETai
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/technology/uli/production/production-cycle/) — описывает этапы производственного цикла, роли и участие Codex skills.
-- [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning/) — объясняет, как человек и агент распределяют роли на переходе от намерения к структуре работы.
-- [Модель работы](https://docs.detai-x.com/ru/technology/uli/standards/work-model/) — связывает сложную работу с Epic Issue, Sub-Issue и документальным результатом.
-- [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/) — описывает операционную механику Epic Issue, Work Package, Acceptance Tasks и PR.
-- [♻️ Процесс версионности в U.L.I.](https://docs.detai-x.com/ru/technology/uli/standards/project-versioning/) — объясняет, как версии проектов формируются и завершаются.
-- [💰 Ресурсы экосистемы](https://docs.detai-x.com/ru/management-layer/ecosystem-resources/) — фиксирует типы ресурсов, через которые оценивается вклад проекта в развитие экосистемы.
+- [Производственный цикл проектов и карта ролей вокруг него](index.md) — описывает этапы производственного цикла, роли и участие Codex skills.
+- [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md) — объясняет, как человек и агент распределяют роли на переходе от намерения к структуре работы.
+- [Work Model](work-model.md) — описывает операционную механику Epic Issue, Work Package, Acceptance Tasks и PR.
+- [♻️ Процесс версионности в U.L.I.](../uli/standards/project-versioning.md) — объясняет, как версии проектов формируются и завершаются.
+- [💰 Ресурсы экосистемы](../../management-layer/ecosystem-resources.md) — фиксирует типы ресурсов, через которые оценивается вклад проекта в развитие экосистемы.

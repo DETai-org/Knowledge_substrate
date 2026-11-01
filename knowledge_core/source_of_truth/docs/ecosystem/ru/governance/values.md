@@ -69,7 +69,7 @@ title: Ценности
 
 ## Основание ценностей
 
-Ценности DET вытекают из **трех постулатов** теоретической модели DET. Cм. 👉 [Concept-DET](https://docs.detai-x.com/ru/institutional-layer/det/concept/concept-det/).
+Ценности DET вытекают из **трех постулатов** теоретической модели DET. Cм. 👉 [Concept-DET](../institutional-layer/det/concept/concept-det.md).
 
 Эти постулаты являются основанием нашей теоретической модели и философской рамкой, которая задаёт внутреннюю структуру всей экосистемы.
 

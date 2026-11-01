@@ -102,4 +102,4 @@ Psychology in Quotes сохраняет E2 при образовательно-�
 
 ---
 
-Смотри также:  [💰 Ресурсы экосистемы](https://docs.detai-x.com/ru/management-layer/ecosystem-resources/)
+Смотри также:  [💰 Ресурсы экосистемы](../management-layer/ecosystem-resources.md)

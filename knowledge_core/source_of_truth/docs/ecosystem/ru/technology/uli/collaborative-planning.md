@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning/"
+      url: "https://docs.detai-x.com/ru/technology/uli/collaborative-planning/"
   document_links:
     - schema: ""
       link_type: ""
@@ -214,8 +214,7 @@ Work Packages и Acceptance Tasks формулируются так, чтобы 
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/technology/uli/production/production-cycle/) — показывает место Work Model Planning в полном цикле.
-- [Методология проектного цикла DETai](https://docs.detai-x.com/ru/technology/uli/production/project-cycle-methodology/) — объясняет, как мысль становится проектным намерением.
-- [Модель работы](https://docs.detai-x.com/ru/technology/uli/standards/work-model/) — задаёт структуру Work Model и её сущности.
-- [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/) — описывает этапы Work Model Planning и Implementation.
-- [Функция документов](https://docs.detai-x.com/ru/knowledge/documentation-functions/) — объясняет, почему этот материал относится к типу `explanation`.
+- [Производственный цикл проектов и карта ролей вокруг него](../production-cycle/index.md) — показывает место Work Model Planning в полном цикле.
+- [Методология проектного цикла DETai](../production-cycle/project-cycle-methodology.md) — объясняет, как мысль становится проектным намерением.
+- [Work Model](../production-cycle/work-model.md) — описывает этапы Work Model Planning и Implementation.
+- [Функция документов](../../knowledge/documentation-functions.md) — объясняет, почему этот материал относится к типу `explanation`.

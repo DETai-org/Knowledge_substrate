@@ -56,13 +56,13 @@ title: Документация как исполняемый интерфейс
 Мы  думаем в логике v0.1, v0.2, стандартов, evolving docs. Это критично, потому что агент должен знать не просто “правило”, а **какая версия правила сейчас действующая**. OpenAI отдельно рекомендует pinning и evals при изменении моделей и промптов, а это та же логика: поведение системы должно быть воспроизводимым и управляемым по версиям. 
 
 Мировой тренд смотри в ([OpenAI Разработчики](https://developers.openai.com/api/docs/guides/prompt-engineering/?utm_source=chatgpt.com "Prompt engineering | OpenAI API")) 
-У нас смотри в [♻️ Процесс версионности в U.L.I.](https://docs.detai-x.com/ru/technology/uli/standards/project-versioning/)
+У нас смотри в [♻️ Процесс версионности в U.L.I.](../technology/uli/standards/project-versioning.md)
 
 **3. Таксономия и схемы**  
 Наши distinctions между document / concept / rubric / category / schema — это не бюрократия. Для агента это способ понять, что перед ним: policy, reference, workflow, draft, canonical definition, publication metadata или operational playbook. Чем яснее тип сущности, тем лучше agent routing и меньше галлюцинаций на уровне процесса. Это согласуется с общим движением в сторону structured outputs, tool schemas и context engineering.
 
 Мировой тренд смотри в ([OpenAI Разработчики](https://developers.openai.com/tracks/building-agents/?utm_source=chatgpt.com "Building agents"))
-У нас смотри в [Документационная архитектура U.L.I.](https://docs.detai-x.com/ru/technology/uli/production/documentation-architecture/)
+У нас смотри в [Документационная архитектура U.L.I.](../technology/uli/documentation-architecture.md)
 
 **4. Документы как рамка действия**  
 Мы уже строим governance-документы, onboarding, процессы, роли, стандарты. Это почти буквально то, что OpenAI в руководстве по governed AI agents называет scaffolding и governance: агентам нужны рамки, в которых они действуют безопасно и масштабируемо. ([OpenAI Разработчики](https://developers.openai.com/cookbook/examples/partners/agentic_governance_guide/agentic_governance_cookbook/?utm_source=chatgpt.com "Building Governed AI Agents - A Practical Guide to ..."))
@@ -157,7 +157,7 @@ title: Документация как исполняемый интерфейс
 То есть агент получает issue, подтягивает канонические документы, выполняет работу в разрешённых границах и возвращает результат в стандартизированном формате. Это прямое продолжение идеи agents + tools + structured outputs.
 
 Мировой тренд смотри в ([OpenAI](https://openai.com/index/new-tools-for-building-agents/?utm_source=chatgpt.com "New tools for building agents"))
-У нас смотри в [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/)
+У нас смотри в [Work Model](../technology/production-cycle/work-model.md)
 
 *Т.е. уже есть стандарт о создании первых двух звеньев этой цепочки*
 

@@ -14,11 +14,11 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/standards/work-model/sub-issue-contract/"
+      url: "https://docs.detai-x.com/ru/technology/production-cycle/work-package-contract/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
+    - schema: ecosystem
+      link_type: part-of
+      linked_document_id: production-cycle
 title: Sub-Issue (Work Package) Contract
 ---
 
@@ -124,8 +124,8 @@ Sub-Issue / Work Package считается завершённым только 
 
 ## Related Documents
 
-- [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/)
-- [Epic Issue Contract](https://docs.detai-x.com/ru/technology/uli/standards/work-model/issue-contract/)
-- [Release Fixation Standard](https://docs.detai-x.com/ru/technology/uli/standards/release-fixation-standard/)
-- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/technology/uli/production/production-cycle/)
+- [Work Model](work-model.md)
+- [Epic Issue Contract](epic-issue-contract.md)
+- [Release Fixation Standard](../uli/standards/release-fixation-standard.md)
+- [Производственный цикл проектов и карта ролей вокруг него](index.md)
 - Migration Notice: переход Epic Issue / Sub-Issue из Markdown-файлов репозитория в ClickUp

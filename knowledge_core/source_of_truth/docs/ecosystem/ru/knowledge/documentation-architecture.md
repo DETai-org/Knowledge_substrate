@@ -177,4 +177,4 @@ ___
 
 #### Ссылки
 
-[Документационная архитектура U.L.I.](../technology/uli/production/documentation-architecture.md)
+[Документационная архитектура U.L.I.](../technology/uli/documentation-architecture.md)

@@ -13,11 +13,11 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/philosophy/why-uli-standards-matter/"
+      url: "https://docs.detai-x.com/ru/technology/why-uli-standards-matter/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
+    - schema: ecosystem
+      link_type: part-of
+      linked_document_id: technology-index
 title: Почему стандарты U.L.I.  важны
 ---
 

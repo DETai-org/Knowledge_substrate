@@ -4,25 +4,34 @@ classification:
   scope: DETai_cluster
   context: uli
   layer: architecture-and-logic
-  function: explanation
+  function: index
 descriptive:
   id: production-cycle
-  version: v4
+  version: v5
   status: active
-  date_ymd: 2026-10-23
-  date_update: 2026-10-23
+  date_ymd: 2026-11-01
+  date_update: 2026-11-01
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/production/production-cycle/"
+      url: "https://docs.detai-x.com/ru/technology/production-cycle/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
-title: Производственный цикл проектов и карта ролей вокруг него
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: detai-u-l-i-2-architecture-and-logic-metodologiya-proyektnogo-tsikla-detai
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: detai-u-l-i-3-technical-standards-work-model-issue-contract
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: detai-u-l-i-3-technical-standards-work-model-sub-issue-contract
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: detai-u-l-i-3-technical-standards-work-model-work-model
+title: Производственный цикл
 ---
 
-# Производственный цикл проектов и карта ролей вокруг него
+# Производственный цикл
 
 Этот документ описывает полный производственный цикл DETai: как мысль превращается в проектное намерение, затем в работу, реализацию, релизную фиксацию и документационную обвязку.
 
@@ -40,9 +49,21 @@ title: Производственный цикл проектов и карта 
 
 > Один репозиторий соответствует одному проекту.
 
-Проект может создавать внешнюю или внутреннюю ценность. Он может стать пользовательским продуктом, а может остаться инфраструктурой, внутренним инструментом, медиа-проектом или технической capability. В любом случае проект должен усиливать хотя бы один [ресурс экосистемы](../../../management-layer/ecosystem-resources.md).
+Проект может создавать внешнюю или внутреннюю ценность. Он может стать пользовательским продуктом, а может остаться инфраструктурой, внутренним инструментом, медиа-проектом или технической capability. В любом случае проект должен усиливать хотя бы один [ресурс экосистемы](../../management-layer/ecosystem-resources.md).
 
 До публичного выпуска разработка не обязана проходить customer discovery или заполнять Product Charter. Для начала движения достаточно инициативы участника и отсутствия противоречия миссии, ценностям и принципам DETai.
+
+## Модель работы внутри цикла
+
+Этапы **Work Model Planning** и **Implementation** опираются на модель работы: проектное намерение превращается в организованную работу и поставляемый результат. Её состав задают три документа:
+
+| Документ | Назначение |
+| --- | --- |
+| [Epic Issue Contract](epic-issue-contract.md) | Обязательная структура верхнеуровневого блока смысла, границ работы и критериев завершения |
+| [Work Package Contract](work-package-contract.md) | Контракт поставляемого фрагмента работы: результат, проверка и связь с branch и PR |
+| [Work Model](work-model.md) | Общий процесс от Epic Issue через Work Package до проверяемого результата |
+
+Для знакомства с моделью сначала прочитай **Work Model**; при оформлении конкретного Epic Issue или Work Package используй соответствующий контракт. Подробная механика Acceptance Tasks, Implementation Steps, PR и завершения работы описана в Work Model. Этот индекс показывает её место в полном производственном цикле.
 
 ## 1. Project Intent
 
@@ -57,7 +78,7 @@ title: Производственный цикл проектов и карта 
 
 Если идея ещё не созрела, она фиксируется как импульс. Для этого в нашей системе есть место, оно называется "🧠 Еще мысль", это материал/хаб для будущего развития. Если из неё уже сформировался вектор, он может перейти в Epic Issue.
 
-Смысловую методологию этого перехода описывает документ [Методология проектного цикла DETai](https://docs.detai-x.com/ru/technology/uli/production/project-cycle-methodology/).
+Смысловую методологию этого перехода описывает документ [Методология проектного цикла DETai](project-cycle-methodology.md).
 
 ## 2. Work Model Planning
 
@@ -70,9 +91,9 @@ title: Производственный цикл проектов и карта 
 - Acceptance Tasks как проверяемые результаты;
 - критерии завершения и связи с будущим PR.
 
-Этот этап уже относится к Work Model. Производственный цикл только показывает место этапа в общей траектории, а конкретные правила структуры задаются связкой [Модель работы](https://docs.detai-x.com/ru/technology/uli/standards/work-model/) и [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/).
+Общую механику планирования описывает [Work Model](work-model.md), а обязательные поля Epic Issue и Work Package задают соответствующие контракты.
 
-Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning/) — документ о распределении high-level и low-level ролей между человеком и агентом.
+Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md) — документ о распределении high-level и low-level ролей между человеком и агентом.
 
 ## 3. Implementation
 
@@ -110,7 +131,7 @@ Release Fixation отвечает за момент, когда результа
 
 Если проект независимо выпускает несколько компонентов, для каждого выпуска фиксируются компонент, версия, точный commit SHA, состав изменений и применимая проверка по локальному стандарту. Состояние исходников, опубликованного артефакта и production-развёртывания различается; версия пакета не доказывает доставку пользователю.
 
-Этот этап описан отдельным стандартом [Release Fixation Standard](https://docs.detai-x.com/ru/technology/uli/standards/release-fixation-standard/) и не смешивается с Work Model.
+Этот этап описан отдельным стандартом [Release Fixation Standard](../uli/standards/release-fixation-standard.md) и не смешивается с Work Model.
 
 ## 5. Documentation Architecture
 
@@ -122,7 +143,7 @@ Release Fixation отвечает за момент, когда результа
 - какие новые документы нужно создать;
 - какие старые документы стали устаревшими;
 - какие статусы и версии должны измениться;
-- какие рабочие материалы связать с Note List [«Новые версии документов»](https://team.detai-x.com/task-center/lists/ccfaa624-198d-52c8-9d40-bb6c719b0833) в Management Layer; задачи исполнения ведутся отдельно в соответствующих Task Lists.
+- какие рабочие материалы связать со списком заметок «Новые версии документов» в Management Layer; задачи исполнения ведутся отдельно в соответствующих Task Lists.
 
 Если релиз создаёт или обновляет продукт, Documentation Architecture также проверяет:
 
@@ -145,14 +166,14 @@ Release Fixation отвечает за момент, когда результа
 | Этап производственного цикла | Основной вопрос | Документ / связка |
 | --- | --- | --- |
 | 1. Project Intent | Как мысль становится проектным намерением? | Методология проектного цикла DETai |
-| 2. Work Model Planning | Как намерение разложить на структуру работы? | Модель работы и Work Model |
+| 2. Work Model Planning | Как намерение разложить на структуру работы? | Work Model, Epic Issue Contract и Work Package Contract |
 | 3. Implementation | Как выполнить Work Package через branch, PR и проверку? | Work Model, Epic Issue Contract, Sub-Issue (Work Package) Contract |
 | 4. Release Fixation | Как зафиксировать достигнутое состояние? | Release Fixation Standard, ♻️ Процесс версионности в U.L.I. |
 | 5. Documentation Architecture | Как результат становится частью Knowledge Substrate? | Версионность: процесс и стандарт; Политика metadata документов |
 
 ## Связь с продуктовым циклом
 
-[Продуктовый цикл Product–Market](../../../brand-and-communications/product-market-cycle.md) описывает пилот, публичный запуск и сопровождение пользователей в Brand & Communications. Аналитика и обратная связь обсуждаются командой продукта и превращаются в идеи улучшений; принятые изменения начинают новый производственный цикл U.L.I. После релиза обновлённая версия возвращается пользователям, а Brand & Communications сообщает об изменениях.
+[Продуктовый цикл Product–Market](../../brand-and-communications/product-market-cycle.md) описывает пилот, публичный запуск и сопровождение пользователей в Brand & Communications. Аналитика и обратная связь обсуждаются командой продукта и превращаются в идеи улучшений; принятые изменения начинают новый производственный цикл U.L.I. После релиза обновлённая версия возвращается пользователям, а Brand & Communications сообщает об изменениях.
 
 Производственный и продуктовый циклы идут параллельно и соединяются в точках публичного релиза или сознательного оформления внутреннего продукта.
 
@@ -167,7 +188,7 @@ Release Fixation отвечает за момент, когда результа
 
 В проектах с ветками `production` и `dev` поддерживаемая версия остаётся в production-контуре, пока следующая версия развивается в `dev`. После Release Fixation следующего major-релиза соответствующий owning runtime обновляет доставляемое состояние; Product–Market и владелец подтверждают ценность и показатели; Management Layer координирует синхронизацию. Для внешних продуктов Platform DETai доставку обеспечивает платформа, а Brand & Communications и владельцы затронутых каналов обновляют публичные представления.
 
-Подробная продуктовая сторона интерфейса описана в [модели продуктового объекта](../../../brand-and-communications/product-market/product-object-model.md), [стандарте ценностного предложения](../../../brand-and-communications/product-market/value-proposition-standard.md) и [рыночном и портфельном цикле](../../../brand-and-communications/product-market/market-operations.md). Явная последовательность передачи ответственности дана в [интерфейсе производственного и продуктового циклов](../../index.md#эстафета-публичного-релиза).
+Подробная продуктовая сторона интерфейса описана в [модели продуктового объекта](../../brand-and-communications/product-market/product-object-model.md), [стандарте ценностного предложения](../../brand-and-communications/product-market/value-proposition-standard.md) и [рыночном и портфельном цикле](../../brand-and-communications/product-market/market-operations.md). Явная последовательность передачи ответственности дана в [интерфейсе производственного и продуктового циклов](../index.md#эстафета-публичного-релиза).
 
 ## Роли и skills
 
@@ -177,7 +198,7 @@ Release Fixation отвечает за момент, когда результа
 
 На уровне Work Model Planning и Implementation ключевым становится агент, который умеет работать внутри Epic Issue / Work Package, удерживать scope, выполнять checklist и готовить PR.
 
-Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning/).
+Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md).
 
 ## Граница документа
 
@@ -195,9 +216,8 @@ Release Fixation отвечает за момент, когда результа
 
 ## Связанные документы
 
-- [Методология проектного цикла DETai](https://docs.detai-x.com/ru/technology/uli/production/project-cycle-methodology/) — объясняет переход от мысли к проектному намерению.
-- [Совместное планирование человека и агента в Work Model Planning](https://docs.detai-x.com/ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning/) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
-- [Модель работы](https://docs.detai-x.com/ru/technology/uli/standards/work-model/) — индекс связки Work Model.
-- [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/) — процесс этапов Work Model Planning и Implementation.
-- [Release Fixation Standard](https://docs.detai-x.com/ru/technology/uli/standards/release-fixation-standard/) — стандарт фиксации версии проекта.
-- [Версионность: процесс и стандарт](../../versioning.md) — правила номеров версий и пересмотра документов.
+- [Методология проектного цикла DETai](project-cycle-methodology.md) — объясняет переход от мысли к проектному намерению.
+- [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
+- [Work Model](work-model.md) — процесс этапов Work Model Planning и Implementation.
+- [Release Fixation Standard](../uli/standards/release-fixation-standard.md) — стандарт фиксации версии проекта.
+- [Версионность: процесс и стандарт](../versioning.md) — правила номеров версий и пересмотра документов.

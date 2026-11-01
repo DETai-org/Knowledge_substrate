@@ -80,7 +80,7 @@ Lead product DETai **не утверждён**. Если будет запуще
 
 - [Модель продуктового объекта](../product-object-model.md);
 - [Рыночный и портфельный цикл](../market-operations.md);
-- [Производственный цикл проектов](../../../technology/uli/production/production-cycle.md).
+- [Производственный цикл проектов](../../../technology/production-cycle/index.md).
 
 ## Право пересмотра
 

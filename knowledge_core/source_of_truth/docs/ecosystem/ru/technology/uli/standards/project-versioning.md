@@ -96,7 +96,7 @@ Project Intent → Work Model Planning → Implementation → Release Fixation
 
 Основанием для новой фиксации может стать завершённая архитектура, важный Epic Issue, устойчивый пользовательский сценарий, устранение критического ограничения или новый вклад в экосистему. **Ни одно из этих событий само по себе не заменяет приёмку.**
 
-Возможные решения: релиз одобрен, заблокирован или принят с документированными некритичными ограничениями. Порядок проверки и критерии определяет [Release Fixation Standard](https://docs.detai-x.com/ru/technology/uli/standards/release-fixation-standard/).
+Возможные решения: релиз одобрен, заблокирован или принят с документированными некритичными ограничениями. Порядок проверки и критерии определяет [Release Fixation Standard](release-fixation-standard.md).
 
 После одобрения для соответствующего проекта или компонента фиксируются, когда применимы:
 
@@ -129,8 +129,8 @@ Project Intent → Work Model Planning → Implementation → Release Fixation
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](https://docs.detai-x.com/ru/technology/uli/production/production-cycle/) — место Release Fixation в жизненном цикле.
-- [Work Model](https://docs.detai-x.com/ru/technology/uli/standards/work-model/work-model/) — организация Work Packages и приёмки.
-- [Release Fixation Standard](https://docs.detai-x.com/ru/technology/uli/standards/release-fixation-standard/) — gate признания новой версии.
+- [Производственный цикл проектов и карта ролей вокруг него](../../production-cycle/index.md) — место Release Fixation в жизненном цикле.
+- [Work Model](../../production-cycle/work-model.md) — организация Work Packages и приёмки.
+- [Release Fixation Standard](release-fixation-standard.md) — gate признания новой версии.
 - [Версионность: процесс и стандарт](../../versioning.md) — версионность документов Knowledge Substrate.
 - [Team OS](../../../management-layer/team-os/index.md) — пример продукта с независимо выпускаемыми интерфейсами.
