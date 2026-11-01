@@ -18,7 +18,7 @@ links:
   document_links:
     - schema: "ecosystem"
       link_type: "part-of"
-      linked_document_id: "brand-and-communications-domain"
+      linked_document_id: "technology-index"
     - schema: "ecosystem"
       link_type: "created-in"
       linked_document_id: "detai-u-l-i-index"
@@ -27,9 +27,9 @@ title: Platform DETai
 
 # Platform DETai
 
-**Platform DETai — продуктово-технологическая платформа внутри Brand & Communications, отвечающая за доставку и работу пользовательских сервисов DETai.**
+**Platform DETai — платформа цифровых продуктов экосистемы DETai, часть Technology Layer.**
 
-Организационно платформа входит в [Brand & Communications](../../../brand-and-communications/index.md) вместе с направлением Product–Market. Техническую реализацию и следующие версии создаёт U.L.I.; это взаимодействие описано в [таблице ответственности Management Layer](../../Management_layer/index.md#разделение-ответственности).
+Платформа объединяет цифровые продукты и обеспечивает доставку и работу пользовательских сервисов. Техническую реализацию и следующие версии создаёт U.L.I. Готовность продукта передаётся [Brand & Communications](../../../brand-and-communications/index.md) для продвижения и работы с аудиторией; передачу и обратную связь организует Management Layer. Связь описана в [обзоре Technology Layer](../../../technology/index.md).
 
 Она связывает общую инфраструктуру, проекты, продукты, приложения, агентов, базы знаний и публичные цифровые поверхности. Platform DETai не является всей экосистемой: за её пределами остаются метод DET, институциональная жизнь, Governance, Management, культура и сообщество.
 

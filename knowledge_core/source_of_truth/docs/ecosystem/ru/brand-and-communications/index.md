@@ -32,7 +32,7 @@ links:
       link_type: contains
       linked_document_id: product-market-index
     - schema: ecosystem
-      link_type: contains
+      link_type: coordinates-with
       linked_document_id: detai-platform-detai-index
     - schema: ecosystem
       link_type: part-of
@@ -52,14 +52,15 @@ title: Brand & Communications
 
 Brand & Communications делает DETai узнаваемой, понятной и связной для разных аудиторий. Это операционный домен Management Layer, который превращает утверждённую архитектуру бренда, продуктовые позиции и claims в согласованную публичную коммуникацию.
 
-## Внутренние направления
+## Product–Market и два слоя экосистемы
 
-В Brand & Communications входят два связанных направления:
+[Product–Market](../product-market/index.md) входит в Brand & Communications и отвечает за ценность предложений, аудиторию, показатели и рыночную работу.
 
-- [**Product–Market**](../product-market/index.md) — пользовательская ценность, аудитория, продуктовые предложения, показатели и рыночная работа.
-- [**Platform DETai**](../ecosystem/DETai/Platform_DETai/index.md) — платформа публичных продуктов, их доставка, эксплуатация и пользовательские сервисы.
+Brand & Communications принимает готовые предложения двух слоёв: цифровые продукты из [Technology Layer](../technology/index.md) и мастер-классы, тренинги, образовательные программы и групповые психотерапевтические форматы из [Institutional Layer](../institutional-layer/index.md). Домен развивает общий Umbrella Brand, продвижение и связь с аудиторией этих предложений.
 
-Это части одного домена, а не соседние с ним самостоятельные домены. Разработку и технические изменения выполняет U.L.I.; Management Layer координирует взаимодействие. Границы собраны в [таблице ответственности](../ecosystem/Management_layer/index.md#разделение-ответственности).
+[Platform DETai](../ecosystem/DETai/Platform_DETai/index.md) — платформа цифровых продуктов внутри Technology Layer. Brand & Communications работает с их брендом и аудиторией, а Улей и платформа — с цифровой реализацией и её эксплуатацией. Для институциональных форматов содержание и профессиональная готовность остаются у соответствующих специалистов.
+
+Management Layer организует передачу готовности и обратную связь: идеи цифровых улучшений возвращаются в Улей, идеи развития институционального формата — его команде. Границы собраны в [таблице ответственности](../ecosystem/Management_layer/index.md#разделение-ответственности).
 
 ## Публичный продукт и его развитие
 
@@ -83,7 +84,7 @@ Brand & Communications делает DETai узнаваемой, понятной
 | Миссия, ценности и определение DETai | Governance |
 | Профессиональная истина и границы DET | Method & Professional Standards |
 | Сегмент, offer, pricing и product positioning | Направление Product–Market внутри Brand & Communications совместно с командой продукта |
-| Разработка сайта и платформенных сервисов | U.L.I.; Platform DETai внутри Brand & Communications принимает и эксплуатирует результат |
+| Разработка сайта и платформенных сервисов | Technology Layer: U.L.I. создаёт решения, Platform DETai обеспечивает их доставку и эксплуатацию |
 | Юридически обязательные disclosures | Legal–Economic |
 
 Brand & Communications вправе самостоятельно принимать редакционные и канал-специфические решения внутри утверждённого бренда, claims, позиционирования, профессиональных и правовых ограничений и бюджета.

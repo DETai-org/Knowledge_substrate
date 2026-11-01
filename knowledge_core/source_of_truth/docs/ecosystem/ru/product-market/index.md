@@ -91,7 +91,7 @@ Umbrella Brand DETai объединяет происхождение и дове
 |---|---|
 | [Метод и институт](../institutional-layer/index.md) | Допустима ли ценность с профессиональной и методологической точки зрения? |
 | [U.L.I.](../ecosystem/DETai/U.L.I/index.md) | Как решение создать и проверить? |
-| [Platform DETai внутри Brand & Communications](../ecosystem/DETai/Platform_DETai/index.md) | Как доставить и сопровождать пользовательские сервисы? |
+| [Platform DETai в Technology Layer](../ecosystem/DETai/Platform_DETai/index.md) | Как доставить и сопровождать цифровые пользовательские сервисы? |
 | [Governance](../ecosystem/Governance/index.md) | Кто вправе определить приоритет и принять риск? |
 | [Право и экономика](../legal-economic/index.md) | На каком основании предложение существует и монетизируется? |
 

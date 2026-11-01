@@ -42,7 +42,7 @@ title: Домены и права решений
 | Product–Market внутри Brand & Communications | Находить потребности и устойчивые offers | portfolio, discovery, pricing hypotheses | профессиональные ограничения, бюджет и публичные обещания |
 | Technology / U.L.I. | Создавать безопасную технологию | architecture, standards, technical delivery | product priorities, data и release gates |
 | Operations, Finance & Corporate | Обеспечивать административную устойчивость | budgets, contracts, filings | statutory authority и confidentiality |
-| Brand & Communications | Развивать публичную ценность и связь с аудиторией; объединять Product–Market и Platform DETai | применение бренда, продукты и рынок, доставка сервисов, редакционные решения, каналы и релизы | approved claims, product positioning и профессиональная компетенция |
+| Brand & Communications | Развивать публичную ценность и связь с аудиторией; связывать Product–Market, цифровые и институциональные предложения | применение бренда, продукты и рынок, доставка сервисов, редакционные решения, каналы и релизы | approved claims, product positioning и профессиональная компетенция |
 
 Образование не растворяется в Brand & Communications. Research не подчиняется Product только потому, что создаёт evidence. Карта доменов не должна превращать человека в функцию: [модель осмысленного участия](meaningful-participation.md) задаёт обязательный интерфейс роли с контекстом, обратной связью и влиянием.
 

@@ -23,6 +23,7 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      'ru/technology/system-interface.md': 'ru/technology/index.md'
       'ru/method/education.md': 'ru/institutional-layer/education.md'
       'ru/method/index.md': 'ru/institutional-layer/index.md'
       'ru/method/institutional-layer.md': 'ru/institutional-layer/institutional-layer.md'
@@ -161,6 +162,57 @@ nav:
     - Модель продуктового объекта: ru/product-market/product-object-model.md
     - Рыночный и портфельный цикл: ru/product-market/market-operations.md
     - Бизнес-модель и портфель: ru/product-market/business-model-and-portfolio.md
+- Institutional Layer:
+  - Метод DET и институциональная жизнь: ru/institutional-layer/index.md
+  - Институциональный слой: ru/institutional-layer/institutional-layer.md
+  - Психотерапия и супервизия: ru/institutional-layer/psychotherapy-and-supervision.md
+  - Образование: ru/institutional-layer/education.md
+  - Исследование: ru/institutional-layer/research.md
+  - Корпус метода DET:
+    - Обзор DET: ru/ecosystem/DET/index.md
+    - Концептуальный корпус — редакционная синхронизация:
+      - Обзор: ru/ecosystem/DET/Concept/index.md
+      - Концепция DET: ru/ecosystem/DET/Concept/Concept-DET.md
+      - Тень и свет: ru/ecosystem/DET/Concept/shadow-and-light.md
+      - Типы личности: ru/ecosystem/DET/Concept/personality-types.md
+      - Установка на преодоление: ru/ecosystem/DET/Concept/overcoming.md
+    - DET как культура: ru/ecosystem/DET/5-characteristics-of-det-as-culture.md
+    - На стыке трёх миров: ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md
+- Technology Layer:
+  - Обзор: ru/technology/index.md
+  - Логика эшелонов: ru/technology/logic-of-echelons.md
+  - Общие рабочие правила:
+    - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
+    - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
+  - U.L.I. — среда создания:
+    - Обзор U.L.I.: ru/ecosystem/DETai/U.L.I/index.md
+    - Смысл и командная среда:
+      - Обзор: ru/ecosystem/DETai/U.L.I/1_Philosophy/index.md
+      - Роли пчёл: ru/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md
+      - Почему стандарты U.L.I. важны: ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md
+    - Проектный и производственный цикл:
+      - Обзор: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md
+      - Документационная архитектура U.L.I.: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md
+      - Методология проектного цикла: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md
+      - Производственный цикл и роли: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md
+      - Совместное планирование человека и агента: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning.md
+    - Рабочая модель и стандарты:
+      - Обзор стандартов: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md
+      - Модель работы:
+        - Обзор: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md
+        - Epic Issue Contract: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md
+        - Work Package Contract: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md
+        - Work Model: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md
+      - Telegram-боты:
+        - Обзор: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md
+        - Policy Layer: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md
+        - Стандарт создания: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md
+        - Декларативная конфигурация: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md
+        - Передача языка между ботами: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md
+      - Мозаический подход: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md
+      - Общий README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md
+      - Release Fixation: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md
+      - Версионность в U.L.I.: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md
   - Platform DETai:
     - Обзор платформы: ru/ecosystem/DETai/Platform_DETai/index.md
     - Продукты:
@@ -194,58 +246,6 @@ nav:
       - News Agent: ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md
     - R&D:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/R&D/index.md
-- Institutional Layer:
-  - Метод DET и институциональная жизнь: ru/institutional-layer/index.md
-  - Институциональный слой: ru/institutional-layer/institutional-layer.md
-  - Психотерапия и супервизия: ru/institutional-layer/psychotherapy-and-supervision.md
-  - Образование: ru/institutional-layer/education.md
-  - Исследование: ru/institutional-layer/research.md
-  - Корпус метода DET:
-    - Обзор DET: ru/ecosystem/DET/index.md
-    - Концептуальный корпус — редакционная синхронизация:
-      - Обзор: ru/ecosystem/DET/Concept/index.md
-      - Концепция DET: ru/ecosystem/DET/Concept/Concept-DET.md
-      - Тень и свет: ru/ecosystem/DET/Concept/shadow-and-light.md
-      - Типы личности: ru/ecosystem/DET/Concept/personality-types.md
-      - Установка на преодоление: ru/ecosystem/DET/Concept/overcoming.md
-    - DET как культура: ru/ecosystem/DET/5-characteristics-of-det-as-culture.md
-    - На стыке трёх миров: ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md
-- Technology Layer:
-  - Обзор: ru/technology/index.md
-  - Логика эшелонов: ru/technology/logic-of-echelons.md
-  - U.L.I., Platform и цикл продукта: ru/technology/system-interface.md
-  - Общие рабочие правила:
-    - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
-    - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
-  - U.L.I. — среда создания:
-    - Обзор U.L.I.: ru/ecosystem/DETai/U.L.I/index.md
-    - Смысл и командная среда:
-      - Обзор: ru/ecosystem/DETai/U.L.I/1_Philosophy/index.md
-      - Роли пчёл: ru/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md
-      - Почему стандарты U.L.I. важны: ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md
-    - Проектный и производственный цикл:
-      - Обзор: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md
-      - Документационная архитектура U.L.I.: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md
-      - Методология проектного цикла: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md
-      - Производственный цикл и роли: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md
-      - Совместное планирование человека и агента: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning.md
-    - Рабочая модель и стандарты:
-      - Обзор стандартов: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md
-      - Модель работы:
-        - Обзор: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md
-        - Epic Issue Contract: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md
-        - Work Package Contract: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md
-        - Work Model: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md
-      - Telegram-боты:
-        - Обзор: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md
-        - Policy Layer: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md
-        - Стандарт создания: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md
-        - Декларативная конфигурация: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md
-        - Передача языка между ботами: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md
-      - Мозаический подход: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md
-      - Общий README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md
-      - Release Fixation: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md
-      - Версионность в U.L.I.: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md
 - Компания и экономика:
   - Право и экономика:
     - Обзор: ru/legal-economic/index.md

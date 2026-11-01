@@ -70,7 +70,7 @@ Team OS, Web и Plugin находятся в навигации **«Management L
 2. Экосистема DETai;
 3. Governance;
 4. Management Layer;
-5. Brand & Communications, включая Product–Market и Platform DETai;
+5. Brand & Communications, включая Product–Market;
 6. Institutional Layer;
 7. Technology Layer;
 8. Компания и экономика;
