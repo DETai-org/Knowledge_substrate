@@ -224,4 +224,4 @@ Work Packages и Acceptance Tasks формулируются так, чтобы 
 - [Производственный цикл проектов и карта ролей вокруг него](index.md) — показывает место [Work Model Planning](work-model.md) в полном цикле.
 - [Методология проектного цикла DETai](project-cycle-methodology.md) — объясняет, как мысль становится проектным намерением.
 - [Work Model](work-model.md) — описывает этапы [Work Model Planning](work-model.md) и Implementation.
-- [Функция документов](../../knowledge/documentation-functions.md) — объясняет, почему этот материал относится к типу `explanation`.
+- [Функция документов](../documentation-rules/documentation-functions.md) — объясняет, почему этот материал относится к типу `explanation`.

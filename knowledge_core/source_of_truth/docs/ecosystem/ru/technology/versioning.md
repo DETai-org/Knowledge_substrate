@@ -141,7 +141,7 @@ Project Intent → Work Model Planning → Implementation → Release Fixation
 | Каноническая и нормативная сила | `governance.canonicality` | Определяется отдельным решением; статус `active` сам по себе не делает рабочую модель обязательной нормой |
 | Подготовка и рассмотрение новой редакции | Ветка, PR и рабочие записи Team OS | Исходное состояние, новая редакция, review, готовность к публикации и опубликованный результат |
 
-Остальные значения статусов определяет [политика metadata](../knowledge/metadata-policy.md). Статус Task, Note или PR не присваивает документу нормативную силу. Публикация файла также не переводит `draft/working` в `active/canonical` автоматически.
+Остальные значения статусов определяет [политика metadata](documentation-rules/metadata-policy.md). Статус Task, Note или PR не присваивает документу нормативную силу. Публикация файла также не переводит `draft/working` в `active/canonical` автоматически.
 
 Работа над новой редакцией не отменяет опубликованную. Пока идёт review, действующая версия остаётся исходным состоянием; её не требуется переводить в `draft` только из-за появления PR.
 
@@ -177,5 +177,5 @@ Knowledge Substrate остаётся источником версионного
 
 - [Release Fixation Standard](production-cycle/release-fixation-standard.md) — приёмка и фиксация версии проекта.
 - [Work Model](production-cycle/work-model.md) — организация Work Packages и проверки результата.
-- [Документационная архитектура](../knowledge/documentation-architecture.md).
-- [Политика metadata](../knowledge/metadata-policy.md).
+- [Правила документации](documentation-rules/index.md).
+- [Политика metadata](documentation-rules/metadata-policy.md).

@@ -2,19 +2,20 @@
 type: ecosystem
 classification:
   scope: DETai_ecosystem
-  context: knowledge-system
+  context: documentation-rules
   layer: technical-standards
   function: reference
-  system: knowledge
+  system: technology
   domain: document-functions
   audiences: [public, team, editors, agents]
 descriptive:
   id: management-layer-docs-ecosystem-functions-of-documents
-  version: v5
-  status: active
+  version: v6
+  status: draft
   date_ymd: 2026-09-08
+  date_update: 2026-11-01
 governance:
-  canonicality: canonical
+  canonicality: working
   visibility: public
   owner_role: knowledge-architect
   approver_role: ecosystem-architect
@@ -22,7 +23,7 @@ governance:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/knowledge/documentation-functions/
+      url: https://docs.detai-x.com/ru/technology/documentation-rules/documentation-functions/
   document_links:
     - schema: ecosystem
       link_type: defines
@@ -32,7 +33,19 @@ title: Функции документов
 
 # Функции документов
 
-Функция объясняет, **как читать и применять документ**. Она не определяет предмет документа, его место в главном меню, каноничность или видимость. Например, философский текст может принадлежать Governance, а standard — U.L.I. или Knowledge System.
+Функция объясняет, **как читать и применять документ**. Этот словарь используется
+в [документации MkDocs и цифровой разработки](index.md). В Улье он задаёт прикладную
+типологию документации разработки; на сайте соответствующее значение может
+указываться в `classification.function` YAML front matter.
+
+Функция не определяет предмет текста, его место в меню или полномочия владельца.
+Например, объяснение в Institutional Layer и объяснение архитектуры приложения
+могут иметь одну функцию `explanation`, сохраняя разных предметных владельцев.
+Значения ниже описывают документы; схема финансового объекта, продукта или задачи
+определяется соответствующей системой.
+
+Локальное применение и выбор места хранения собраны в
+[документационной архитектуре U.L.I.](uli-documentation-architecture.md).
 
 ## Смысл и ориентация
 
@@ -121,7 +134,10 @@ Project-specific tutorial обучает работе с **конкретным 
 
 ### `log-summary` 🧾
 
-Сохраняет датированный итог действий или состояния. Он является свидетельством истории, но не инструкцией и не текущей policy. Переносимый формат, provenance и Folder-local ClickUp route определяет [contract `type: log-summary`](metadata-schema-registry.md#contract-log-summary).
+Сохраняет датированный итог действий или состояния. Он является свидетельством
+истории, но не инструкцией и не текущей policy. [Legacy/import contract `log-summary`](metadata-schema-registry.md#contract-log-summary)
+описывает исторический переносимый формат. Новые WorkLogs Team OS используют
+собственный контракт; функция текста не назначает записи тип Task или WorkLog.
 
 ### `note` ✍️
 

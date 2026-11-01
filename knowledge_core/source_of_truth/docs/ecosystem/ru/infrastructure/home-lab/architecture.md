@@ -218,4 +218,4 @@ Home Ψ Lab остаётся частью распределённой Infrastru
 ответственности и устойчивые архитектурные принципы. Hostnames, IP-адреса,
 учётные данные, ключи, точная сетевая топология, конфигурации, команды и журналы
 работ остаются во внутренних системах ClickUp и Infrastructure согласно
-[документационной архитектуре DETai](../../knowledge/documentation-architecture.md).
+[правилам документации DETai](../../technology/documentation-rules/index.md).

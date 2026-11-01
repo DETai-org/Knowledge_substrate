@@ -42,7 +42,7 @@ title: Почему стандарты U.L.I. важны
 - проверяемые результаты релиза, воспроизводимость, rollback и change control;
 - сохранение принятых решений и опыта в Knowledge Substrate.
 
-Практические документы собраны в [«Стандартах»](standards/index.md). Рациональный объём проверки задаёт [Testing & Feedback Loop Standard](standards/testing-feedback-loop-standard.md), готовность версии — [Release Fixation Standard](production-cycle/release-fixation-standard.md), организацию знаний — [документационная архитектура U.L.I.](documentation-architecture.md).
+Практические документы собраны в [«Стандартах»](standards/index.md). Рациональный объём проверки задаёт [Testing & Feedback Loop Standard](standards/testing-feedback-loop-standard.md), готовность версии — [Release Fixation Standard](production-cycle/release-fixation-standard.md), организацию знаний — [документационная архитектура U.L.I.](documentation-rules/uli-documentation-architecture.md).
 
 > [!QUOTE] “Порядок — это форма интеллекта.  
 > Без структуры рой превращается в шум.” 🐝 

@@ -2,19 +2,20 @@
 type: ecosystem
 classification:
   scope: DETai_ecosystem
-  context: knowledge-system
+  context: documentation-rules
   layer: technical-standards
   function: policy
-  system: knowledge
+  system: technology
   domain: document-metadata
   audiences: [team, editors, developers, agents]
 descriptive:
   id: management-layer-docs-ecosystem-document-metadata-policy
-  version: v6
-  status: active
+  version: v7
+  status: draft
   date_ymd: 2026-10-23
+  date_update: 2026-11-01
 governance:
-  canonicality: canonical
+  canonicality: working
   visibility: public
   owner_role: knowledge-architect
   approver_role: ecosystem-architect
@@ -27,7 +28,7 @@ object_state:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/knowledge/metadata-policy/
+      url: https://docs.detai-x.com/ru/technology/documentation-rules/metadata-policy/
   document_links:
     - schema: ecosystem
       link_type: governs
@@ -40,6 +41,22 @@ title: Политика metadata документов
 Metadata делает документ частью управляемой системы знаний: показывает его предмет, функцию, статус, каноничность, видимость, владельца и связи. Порядок пунктов в меню и расположение файла не заменяют эти сведения.
 
 Политика определяет общие правила metadata и управляет contracts зарегистрированных типов. Поля конкретного типа, их обязательность и допустимые значения задаёт [реестр metadata schemas](metadata-schema-registry.md). Старые документы мигрируют только после содержательного review; неизвестное значение не заполняется предположением.
+
+## Область действия
+
+Политика применяется к metadata документов, публикуемых в MkDocs, и к документации
+разработки, которая использует зарегистрированный здесь контракт или согласованный
+профиль его полей. Она описывает идентичность и состояние текста, а не устройство
+всех объектов экосистемы.
+
+Для MkDocs поля размещаются в YAML front matter. В репозитории проекта формат
+выбирается по его документированному контракту: полный блок ниже не требуется
+автоматически для каждого README, ADR или инструкции. Правила локального применения
+описаны в [архитектуре U.L.I.](uli-documentation-architecture.md).
+
+Страница о финансах или продукте может пользоваться этой metadata как документ
+MkDocs. Сами финансовые операции, продуктовые решения, runtime-объекты и записи
+Team OS сохраняют схемы и правила соответствующих систем.
 
 ## Полный целевой блок
 
@@ -88,7 +105,7 @@ title: Человекочитаемое название
 
 Определяет schema metadata. Общие правила идентичности, классификации, связей и честного заполнения задаёт эта политика; типовые поля и ограничения — [реестр metadata schemas](metadata-schema-registry.md).
 
-Сейчас зарегистрированы contract `ecosystem` и legacy/import contract `log-summary` для переносимых исторических дневных сводок. Новые WorkLogs Team OS используют typed metadata Core; переносимый экспорт формируется из неё по актуальному контракту owning system. Для книг, публикаций, проектов и runtime-объектов используются собственные зарегистрированные contracts. Значение `type` нельзя вводить только в отдельном документе или prompt: оно сначала добавляется в реестр.
+Сейчас зарегистрированы contract `ecosystem` и legacy/import contract `log-summary` для переносимых исторических дневных сводок. Новые WorkLogs Team OS используют typed metadata Core; переносимый экспорт формируется из неё по актуальному контракту owning system. Для книг, публикаций, проектов и runtime-объектов действуют контракты их владельцев. Новый `type` в рамках этого документного контракта сначала описывается в реестре; локальная схема проекта регистрируется и версионируется у владельца проекта.
 
 ### `title`
 
@@ -110,19 +127,14 @@ title: Человекочитаемое название
 
 ### `classification.system`
 
-Система-владелец предмета. Базовые значения текущей архитектуры:
+Предметная система документа: например, `technology` для разработки,
+`method-institution` для институционального содержания или `product-market`
+для работы с предложениями. В опубликованном корпусе могут сохраняться исторические
+значения классификации; они сами по себе не определяют действующие разделы,
+Scope Team OS или наличие отдельной команды.
 
-- `architecture`;
-- `method-institution`;
-- `technology`;
-- `governance-operating-model`;
-- `product-market`;
-- `legal-economic`;
-- `trust`;
-- `evidence`;
-- `knowledge`.
-
-Новое значение добавляется только вместе с определением границы системы.
+Значение выбирается по содержанию и контракту документа. Размещение правил
+metadata в Technology Layer не делает этот слой владельцем предмета всех страниц.
 
 ### `classification.domain`
 
@@ -214,6 +226,17 @@ title: Человекочитаемое название
 - `projects-to`, `routes`, `explains`.
 
 Путь в Markdown помогает читателю; `document_links` строит устойчивый агентный граф.
+
+## Публичность MkDocs
+
+Все Markdown-страницы публичной сборки и их front matter доступны внешнему
+читателю независимо от `audiences`, `visibility` и поисковой индексации.
+Метка `team` или `restricted` сама по себе не закрывает файл.
+
+Публичные документы не должны содержать приватные PR, commits, Issues, внутренние
+файлы реализации или прямые ссылки на приватные репозитории. Внутренние
+подтверждения и операционные подробности остаются в закрытом контуре владельца;
+публичный текст ссылается на доступные читателю правила и устойчивые описания.
 
 ## Видимая карточка
 
