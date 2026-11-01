@@ -1200,13 +1200,6 @@ nav:
     - Карта решений: ru/legal-economic/deferred-work-map.md
 - Infrastructure:
   - Обзор: ru/infrastructure/index.md
-  - Принципы инфраструктуры: ru/infrastructure/principles.md
-  - Архивариус: ru/infrastructure/arhivarius/index.md
-  - Инфраструктурные системы:
-    - Обзор: ru/infrastructure/infrastructure-systems/index.md
-    - ecosystem-runtime: ru/infrastructure/ecosystem-runtime/index.md
-    - intelligence-runtime: ru/infrastructure/intelligence-runtime/index.md
-    - Knowledge Substrate: ru/infrastructure/knowledge-substrate/index.md
   - Среды исполнения:
     - Обзор: ru/infrastructure/execution-environments/index.md
     - Серверы: ru/infrastructure/servers/index.md
@@ -1214,6 +1207,13 @@ nav:
       - Обзор: ru/infrastructure/home-lab/index.md
       - Архитектура и состав: ru/infrastructure/home-lab/architecture.md
       - Territory Ψ Edge: ru/infrastructure/home-lab/territory-psi-edge.md
+  - Инфраструктурные системы:
+    - Обзор: ru/infrastructure/infrastructure-systems/index.md
+    - ecosystem-runtime: ru/infrastructure/ecosystem-runtime/index.md
+    - intelligence-runtime: ru/infrastructure/intelligence-runtime/index.md
+    - Knowledge Substrate: ru/infrastructure/knowledge-substrate/index.md
+  - Архивариус: ru/infrastructure/arhivarius/index.md
+  - Принципы инфраструктуры: ru/infrastructure/principles.md
 - Tools:
   - Обзор: ru/tools/index.md
   - 🧭 Codex / GPT:
