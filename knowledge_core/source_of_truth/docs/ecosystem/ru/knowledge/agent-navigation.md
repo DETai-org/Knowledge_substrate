@@ -44,7 +44,7 @@ title: Навигация для людей и агентов
 
 ## Сквозной запрос
 
-Запрос «можно ли выпустить AI-функцию для терапии?» не принадлежит одному разделу. Агент должен поднять как минимум Method, Institutional, Product–Market, Technology, Trust, Legal, Evidence и Governance. [Обзор экосистемы](../ecosystem/DETai/index.md) задаёт такую маршрутизацию.
+Запрос «можно ли выпустить AI-функцию для терапии?» не принадлежит одному разделу. Агент должен поднять как минимум Method, Institutional, Brand & Communications, Product–Market, Technology, Legal и Governance. [Обзор экосистемы](../ecosystem/DETai/index.md) задаёт такую маршрутизацию.
 
 ## Минимальные отношения графа
 

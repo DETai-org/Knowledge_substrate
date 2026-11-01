@@ -15,7 +15,7 @@ links:
     - type: MkDocs_ru
       url: https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/governance/brand-and-communications/
+      url: https://docs.detai-x.com/ru/brand-and-communications/
   document_links:
     - schema: ecosystem
       link_type: explains
@@ -67,7 +67,7 @@ Account Manager отвечает на практические вопросы: �
 
 Telegram находится внутри E2-Brand как **техническая коммуникационная поверхность и исполнительный контур**, но сам по себе не создаёт бренд и не является владельцем репутации DETai.
 
-Бренд возникает из смысла, качества, повторяемого опыта, доверия и согласованной публичной коммуникации. Ответственность за эту более широкую рамку описана в домене [Brand & Communications](https://docs.detai-x.com/ru/governance/brand-and-communications/). Telegram предоставляет ему одну из площадок и набор технических возможностей, но не подменяет бренд-стратегию.
+Бренд возникает из смысла, качества, повторяемого опыта, доверия и согласованной публичной коммуникации. Ответственность за эту более широкую рамку описана в домене [Brand & Communications](https://docs.detai-x.com/ru/brand-and-communications/). Telegram предоставляет ему одну из площадок и набор технических возможностей, но не подменяет бренд-стратегию.
 
 ## Граница проекта
 

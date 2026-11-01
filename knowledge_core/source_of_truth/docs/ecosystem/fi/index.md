@@ -32,7 +32,7 @@ Knowledge Substrate sisältää:
 - ekosysteemin filosofian, tehtävän ja arvot;
 - standardit ja käytännöt;
 - DET-menetelmän, institutionaalisen tason, Platform DETai -kokonaisuuden ja U.L.I.:n dokumentaation;
-- tuote-, markkina-, oikeudellisten, luottamus-, näyttö-, toteutus- ja tiimijärjestelmien selkeät rajat;
+- brändi-, tuote-, markkina-, alusta-, oikeudellisten ja tiimivastuiden selkeät rajat;
 - yhteydet koodivarastoihin, projekteihin ja julkisiin palveluihin.
 
 Tietopohja ei korvaa tehtäväjärjestelmää, koodivarastoja, Corporate Vaultia tai ajonaikaisia tietokantoja. Dokumentaatio selittää ja ohjaa, tehtävät koordinoivat ajankohtaista työtä, koodi toteuttaa päätökset ja tietokannat tarjoavat ajantasaista dataa.

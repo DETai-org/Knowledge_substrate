@@ -32,7 +32,7 @@ Das Knowledge Substrate enthält:
 - Philosophie, Mission und Werte des Ökosystems;
 - Standards und Richtlinien;
 - Dokumentation zu DET, der institutionellen Ebene, Platform DETai und U.L.I.;
-- klare Grenzen zwischen Produkt-, Markt-, Rechts-, Vertrauens-, Evidenz-, Umsetzungs- und Teamsystemen;
+- klare Grenzen zwischen Marken-, Produkt-, Markt-, Plattform-, Rechts- und Teamverantwortung;
 - Verbindungen zu Repositorien, Projekten und öffentlichen Angeboten.
 
 Die Wissensbasis ersetzt weder das Aufgabensystem noch Code-Repositorien, den Corporate Vault oder Laufzeitdatenbanken. Dokumentation erklärt und normiert, Aufgaben koordinieren die aktuelle Arbeit, Code setzt Entscheidungen um und Datenbanken stellen aktuelle Daten bereit.

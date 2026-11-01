@@ -32,7 +32,7 @@ The Knowledge Substrate contains:
 - the ecosystem’s philosophy, mission, and values;
 - standards and policies;
 - documentation for DET, the institutional layer, Platform DETai, and U.L.I.;
-- explicit boundaries between product, market, legal, trust, evidence, execution, and team systems;
+- explicit boundaries between brand, product, market, platform, legal, and team responsibilities;
 - links to repositories, projects, and public surfaces.
 
 It does not replace the task system, code repositories, the Corporate Vault, or runtime databases. Documentation explains and governs; tasks coordinate current work; code implements decisions; databases serve live data.

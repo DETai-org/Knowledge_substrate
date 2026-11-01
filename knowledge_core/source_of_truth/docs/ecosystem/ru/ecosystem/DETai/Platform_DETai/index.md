@@ -7,10 +7,10 @@ classification:
   function: index
 descriptive:
   id: detai-platform-detai-index
-  version: v8
+  version: v9
   status: active
   date_ymd: 2026-10-23
-  date_update: 2026-10-23
+  date_update: 2026-11-01
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -18,7 +18,7 @@ links:
   document_links:
     - schema: "ecosystem"
       link_type: "part-of"
-      linked_document_id: "detai-index"
+      linked_document_id: "brand-and-communications-domain"
     - schema: "ecosystem"
       link_type: "created-in"
       linked_document_id: "detai-u-l-i-index"
@@ -27,7 +27,9 @@ title: Platform DETai
 
 # Platform DETai
 
-**Platform DETai — продуктово-технологическая платформа и внешний контур доставки технологического слоя экосистемы DETai.**
+**Platform DETai — продуктово-технологическая платформа внутри Brand & Communications, отвечающая за доставку и работу пользовательских сервисов DETai.**
+
+Организационно платформа входит в [Brand & Communications](../../../brand-and-communications/index.md) вместе с направлением Product–Market. Техническую реализацию и следующие версии создаёт U.L.I.; это взаимодействие описано в [таблице ответственности Management Layer](../../Management_layer/index.md#разделение-ответственности).
 
 Она связывает общую инфраструктуру, проекты, продукты, приложения, агентов, базы знаний и публичные цифровые поверхности. Platform DETai не является всей экосистемой: за её пределами остаются метод DET, институциональная жизнь, Governance, Management, культура и сообщество.
 
@@ -100,7 +102,7 @@ Platform DETai — контур доставки: здесь созданные 
 
 Репозиторий, функция, эксперимент и продукт не являются синонимами. Зрелый продукт получает собственное назначение, аудиторию, владельца, жизненный цикл, метрики, риски, необходимые доказательства и release gates.
 
-Сегменты, проблемы, предложения и критерии проверки описываются в Product–Market. Реальные интервью, CRM, пилоты, продажи и customer success относятся к Product–Market runtime. Management Layer координирует его связи с разработкой, Governance, Brand & Communications и другими доменами, но не подменяет продуктовую роль.
+Сегменты, проблемы, предложения и критерии проверки описываются в Product–Market. Реальные интервью, CRM, пилоты, продажи и customer success относятся к Product–Market runtime. Management Layer координирует его связи с разработкой, Governance и другими направлениями и доменами, но не подменяет продуктовую роль.
 
 ## Платформа и бренд
 

@@ -38,14 +38,13 @@ title: Домены и права решений
 | Method & Professional Standards | Сохранять целостность DET и профессиональные границы | method claims, professional standards, clinical escalation | research, ethics и qualified authority |
 | Psychotherapy & Supervision | Развивать практику и профессиональную ответственность | practice model, supervision quality | confidentiality и professional standards |
 | Education | Передавать метод и культуру | curricula, qualification, learning quality | method authority и evidence |
-| Research & Evidence | Проверять утверждения и развивать evidence | protocols, validation, claim status | independence и research ethics |
-| Product & Market | Находить потребности и устойчивые offers | portfolio, discovery, pricing hypotheses | Trust, budget и brand claims |
+| Research | Проверять утверждения и развивать evidence | protocols, validation, claim status | independence и research ethics |
+| Product–Market внутри Brand & Communications | Находить потребности и устойчивые offers | portfolio, discovery, pricing hypotheses | профессиональные ограничения, бюджет и публичные обещания |
 | Technology / U.L.I. | Создавать безопасную технологию | architecture, standards, technical delivery | product priorities, data и release gates |
-| Trust, Safety & Data | Предотвращать предсказуемый вред | data rules, model/vendor approval, stop-release | legal/professional review |
 | Operations, Finance & Corporate | Обеспечивать административную устойчивость | budgets, contracts, filings | statutory authority и confidentiality |
-| Brand & Communications | Делать экосистему понятной, узнаваемой и связной | применение бренда, аудитории, редакционные решения, каналы и релизы | approved claims, product positioning, Trust и domain expertise |
+| Brand & Communications | Развивать публичную ценность и связь с аудиторией; объединять Product–Market и Platform DETai | применение бренда, продукты и рынок, доставка сервисов, редакционные решения, каналы и релизы | approved claims, product positioning и профессиональная компетенция |
 
-Образование не растворяется в Brand & Communications. Research не подчиняется Product только потому, что создаёт evidence. Trust может остановить релиз, но не определяет продуктовую стратегию целиком. Карта доменов не должна превращать человека в функцию: [модель осмысленного участия](meaningful-participation.md) задаёт обязательный интерфейс роли с контекстом, обратной связью и влиянием.
+Образование не растворяется в Brand & Communications. Research не подчиняется Product только потому, что создаёт evidence. Карта доменов не должна превращать человека в функцию: [модель осмысленного участия](meaningful-participation.md) задаёт обязательный интерфейс роли с контекстом, обратной связью и влиянием.
 
 ## Режимы решений
 

@@ -28,7 +28,7 @@ links:
       link_type: contains
       linked_document_id: detai-u-l-i-index
     - schema: ecosystem
-      link_type: contains
+      link_type: connects
       linked_document_id: detai-platform-detai-index
 title: Технологический слой DETai
 ---
@@ -45,9 +45,9 @@ title: Технологический слой DETai
 
 U.L.I. не является Telegram-ботом, Team OS или системой управления всей экосистемой. Бот, уведомления и resource tracker являются компонентами текущей реализации.
 
-## Platform DETai — контур доставки
+## Связь с Platform DETai в Brand & Communications
 
-[Platform DETai](../ecosystem/DETai/Platform_DETai/index.md) связывает общие capabilities, product lines, продукты и пользовательские сервисы. Она обеспечивает переиспользование инфраструктуры и доставку ценности, но не является всей экосистемой.
+[Platform DETai](../ecosystem/DETai/Platform_DETai/index.md) связывает общие capabilities, product lines, продукты и пользовательские сервисы. Платформа входит в [Brand & Communications](../brand-and-communications/index.md), где вместе с Product–Market обеспечивает работу публичных продуктов. U.L.I. разрабатывает технические решения и передаёт готовые версии платформе.
 
 ## Интерфейс двух контуров
 

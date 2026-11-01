@@ -23,13 +23,16 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      'ru/governance/brand-and-communications.md': 'ru/brand-and-communications/index.md'
+      'ru/governance/umbrella-brand.md': 'ru/brand-and-communications/umbrella-brand.md'
+      'ru/governance/product-market-cycle.md': 'ru/brand-and-communications/product-market-cycle.md'
       'ru/governance/index.md': 'ru/ecosystem/Governance/index.md'
       'ru/architecture/index.md': 'ru/ecosystem/DETai/index.md'
       'ru/architecture/three-perspective-consensus.md': 'ru/ecosystem/DETai/index.md'
       'ru/architecture/ecosystem-canon.md': 'ru/ecosystem/DETai/index.md'
       'ru/architecture/cross-cutting-systems.md': 'ru/ecosystem/DETai/index.md'
       'ru/architecture/ontology.md': 'ru/ecosystem/glossary.md'
-      'ru/architecture/umbrella-brand.md': 'ru/governance/umbrella-brand.md'
+      'ru/architecture/umbrella-brand.md': 'ru/brand-and-communications/umbrella-brand.md'
       'ru/architecture/source-of-truth-map.md': 'ru/governance/management-strategy.md'
       'ru/ecosystem/index.md': 'ru/ecosystem/DETai/index.md'
       'ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme.md': 'ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md'
@@ -138,9 +141,53 @@ nav:
       - Публичный профиль и авторство: ru/governance/team-os/public-profile.md
       - Видимость данных, AI и публикация: ru/governance/team-os/profile-data-and-visibility.md
 - Brand & Communications:
-  - Продуктовый цикл Product–Market: ru/governance/product-market-cycle.md
-  - DETai как Umbrella Brand: ru/governance/umbrella-brand.md
-  - Границы и ответственность домена: ru/governance/brand-and-communications.md
+  - Продуктовый цикл Product–Market: ru/brand-and-communications/product-market-cycle.md
+  - DETai как Umbrella Brand: ru/brand-and-communications/umbrella-brand.md
+  - Границы и ответственность домена: ru/brand-and-communications/index.md
+  - Продукты и рынок:
+    - Обзор Product–Market System: ru/product-market/index.md
+    - Business Thesis: ru/product-market/business-thesis.md
+    - Портфельные решения:
+      - "Приоритет customer discovery: DETai Insight Workspace": ru/product-market/portfolio-decisions/insight-workspace-customer-discovery.md
+    - Каталог продуктов и предложений: ru/product-market/product-catalog.md
+    - Модель документации продукта: ru/product-market/product-documentation-model.md
+    - Стандарт ценностного предложения продукта: ru/product-market/value-proposition-standard.md
+    - Модель продуктового объекта: ru/product-market/product-object-model.md
+    - Рыночный и портфельный цикл: ru/product-market/market-operations.md
+    - Бизнес-модель и портфель: ru/product-market/business-model-and-portfolio.md
+  - Platform DETai:
+    - Обзор платформы: ru/ecosystem/DETai/Platform_DETai/index.md
+    - Продукты:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/products/index.md
+      - Психология в цитатах:
+        - Обзор: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md
+        - Начало работы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md
+        - Коллекция и тарифы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md
+        - Вопросы и проблемы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md
+        - Устройство и доверие: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md
+      - Francis Galton: ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md
+      - DETai Pulse: ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md
+      - DETai Matrix: ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md
+      - Psykhḗ AI: ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md
+    - Бренд и внешние коммуникации:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md
+      - Storytelling:
+        - Обзор Publication Core: ru/ecosystem/STORYTELLING/index.md
+        - Связь с технологической основой: ru/ecosystem/STORYTELLING/technology-foundation.md
+      - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
+      - Telegram-контур:
+        - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
+        - Как устроен Account Manager: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md
+        - Зачем нужны управляемые аккаунты: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md
+        - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
+    - Технологическая основа:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
+    - Приостановленные проекты:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
+      - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
+      - News Agent: ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md
+    - R&D:
+      - Обзор: ru/ecosystem/DETai/Platform_DETai/R&D/index.md
 - Institutional Layer:
   - Метод DET и институциональная жизнь: ru/method/index.md
   - Институциональный слой: ru/method/institutional-layer.md
@@ -193,64 +240,11 @@ nav:
       - Общий README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md
       - Release Fixation: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md
       - Версионность в U.L.I.: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md
-  - Platform DETai:
-    - Обзор платформы: ru/ecosystem/DETai/Platform_DETai/index.md
-    - Продукты:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/products/index.md
-      - Психология в цитатах:
-        - Обзор: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md
-        - Начало работы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md
-        - Коллекция и тарифы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md
-        - Вопросы и проблемы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md
-        - Устройство и доверие: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md
-      - Francis Galton: ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md
-      - DETai Pulse: ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md
-      - DETai Matrix: ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md
-      - Psykhḗ AI: ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md
-    - Бренд и внешние коммуникации:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md
-      - Storytelling:
-        - Обзор Publication Core: ru/ecosystem/STORYTELLING/index.md
-        - Связь с технологической основой: ru/ecosystem/STORYTELLING/technology-foundation.md
-      - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
-      - Telegram-контур:
-        - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
-        - Как устроен Account Manager: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md
-        - Зачем нужны управляемые аккаунты: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md
-        - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
-    - Технологическая основа:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
-    - Приостановленные проекты:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
-      - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
-      - News Agent: ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md
-    - R&D:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/R&D/index.md
-- Продукты и рынок:
-  - Обзор Product–Market System: ru/product-market/index.md
-  - Business Thesis: ru/product-market/business-thesis.md
-  - Портфельные решения:
-    - "Приоритет customer discovery: DETai Insight Workspace": ru/product-market/portfolio-decisions/insight-workspace-customer-discovery.md
-  - Каталог продуктов и предложений: ru/product-market/product-catalog.md
-  - Модель документации продукта: ru/product-market/product-documentation-model.md
-  - Стандарт ценностного предложения продукта: ru/product-market/value-proposition-standard.md
-  - Модель продуктового объекта: ru/product-market/product-object-model.md
-  - Рыночный и портфельный цикл: ru/product-market/market-operations.md
-  - Бизнес-модель и портфель: ru/product-market/business-model-and-portfolio.md
-- Компания, безопасность и доказательства:
+- Компания и экономика:
   - Право и экономика:
     - Обзор: ru/legal-economic/index.md
     - Планируемый оператор DETai Oy: ru/legal-economic/company-operator.md
     - Карта решений: ru/legal-economic/deferred-work-map.md
-  - Trust, Safety, Privacy и Data:
-    - Обзор: ru/trust/index.md
-    - Product Assurance: ru/trust/product-assurance.md
-    - Human oversight и claims: ru/trust/human-oversight-and-claims.md
-  - Evidence и External Readiness:
-    - Обзор: ru/evidence/index.md
-    - Граф claim → evidence → decision: ru/evidence/claim-evidence-graph.md
-    - External Readiness: ru/evidence/external-readiness.md
-    - Venture Execution View: ru/evidence/venture-execution-view.md
 - Infrastructure:
   - Обзор: ru/ecosystem/Infrastructure/index.md
   - Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md

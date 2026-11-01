@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, brand, product, agents]
 descriptive:
   id: brand-and-communications-domain
-  version: v4
+  version: v5
   status: active
   date_ymd: 2026-10-23
-  date_update: 2026-10-23
+  date_update: 2026-11-01
 governance:
   canonicality: canonical
   visibility: public
@@ -28,6 +28,12 @@ object_state:
 links:
   external_links: []
   document_links:
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: product-market-index
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: detai-platform-detai-index
     - schema: ecosystem
       link_type: part-of
       linked_document_id: management-layer-index
@@ -45,6 +51,15 @@ title: Brand & Communications
 ## Назначение домена
 
 Brand & Communications делает DETai узнаваемой, понятной и связной для разных аудиторий. Это операционный домен Management Layer, который превращает утверждённую архитектуру бренда, продуктовые позиции и claims в согласованную публичную коммуникацию.
+
+## Внутренние направления
+
+В Brand & Communications входят два связанных направления:
+
+- [**Product–Market**](../product-market/index.md) — пользовательская ценность, аудитория, продуктовые предложения, показатели и рыночная работа.
+- [**Platform DETai**](../ecosystem/DETai/Platform_DETai/index.md) — платформа публичных продуктов, их доставка, эксплуатация и пользовательские сервисы.
+
+Это части одного домена, а не соседние с ним самостоятельные домены. Разработку и технические изменения выполняет U.L.I.; Management Layer координирует взаимодействие. Границы собраны в [таблице ответственности](../ecosystem/Management_layer/index.md#разделение-ответственности).
 
 ## Публичный продукт и его развитие
 
@@ -67,12 +82,11 @@ Brand & Communications делает DETai узнаваемой, понятной
 |---|---|
 | Миссия, ценности и определение DETai | Governance |
 | Профессиональная истина и границы DET | Method & Professional Standards |
-| Сегмент, offer, pricing и product positioning | Product–Market |
-| Научные, клинические и продуктовые claims | Evidence совместно с Trust и owning domain |
-| Техническая реализация сайта и платформенных поверхностей | U.L.I. / Platform DETai |
-| Юридически обязательные disclosures | Legal–Economic и Trust |
+| Сегмент, offer, pricing и product positioning | Направление Product–Market внутри Brand & Communications совместно с командой продукта |
+| Разработка сайта и платформенных сервисов | U.L.I.; Platform DETai внутри Brand & Communications принимает и эксплуатирует результат |
+| Юридически обязательные disclosures | Legal–Economic |
 
-Brand & Communications вправе самостоятельно принимать редакционные и канал-специфические решения внутри утверждённого бренда, claims, позиционирования, Trust-ограничений и бюджета.
+Brand & Communications вправе самостоятельно принимать редакционные и канал-специфические решения внутри утверждённого бренда, claims, позиционирования, профессиональных и правовых ограничений и бюджета.
 
 ## Где что живёт
 
@@ -80,7 +94,7 @@ Brand & Communications вправе самостоятельно принима�
 - брендовая архитектура в этом разделе — [DETai как Umbrella Brand](umbrella-brand.md);
 - операционный календарь, кампании и назначения — Management runtime;
 - публичная реализация — основной сайт и каналы;
-- approved wording и основания — Claim–Evidence Graph;
+- утверждённые формулировки и их основания — документация соответствующих продуктов;
 - технические компоненты — соответствующие продуктовые и технологические репозитории.
 
 Самостоятельный проект [Storytelling — Publication Core](../ecosystem/STORYTELLING/index.md) реализует публикационную бизнес-логику. Он принимает материалы из редакционной рабочей среды, выполняет enrichment, локализацию, review и версионирование и поставляет утверждённые публикационные пакеты. Основной сайт, Telegram, VK, возможные будущие YouTube и Habr являются независимыми площадками: Brand & Communications отвечает за редакционную и брендовую согласованность, Storytelling — за подготовку результата, а владельцы каналов — за техническую публикацию и отображение.

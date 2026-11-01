@@ -15,7 +15,7 @@ links:
     - type: MkDocs_ru
       url: https://docs.detai-x.com/ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy/
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/governance/brand-and-communications/
+      url: https://docs.detai-x.com/ru/brand-and-communications/
   document_links:
     - schema: ecosystem
       link_type: parent
@@ -54,7 +54,7 @@ title: Telegram Account Manager — разрешённый ресурс и ст�
 
 Но ускоритель — не цель полёта. По мере появления живой аудитории, устойчивых каналов распространения и репутации зависимость от такого стартового механизма должна естественно уменьшаться.
 
-Именно поэтому Account Manager нельзя путать с самим брендом. Бренд возникает из повторяемого опыта, доверия, качества, смысла и репутации. Telegram Account Manager — лишь маленький технический инструмент на самом раннем участке движения. Более широкий домен, который отвечает за согласованную публичную коммуникацию и развитие узнаваемости DETai, описан в [Brand & Communications](https://docs.detai-x.com/ru/governance/brand-and-communications/).
+Именно поэтому Account Manager нельзя путать с самим брендом. Бренд возникает из повторяемого опыта, доверия, качества, смысла и репутации. Telegram Account Manager — лишь маленький технический инструмент на самом раннем участке движения. Более широкий домен, который отвечает за согласованную публичную коммуникацию и развитие узнаваемости DETai, описан в [Brand & Communications](https://docs.detai-x.com/ru/brand-and-communications/).
 
 ## Граница разрешённого использования
 
