@@ -25,7 +25,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/architecture-and-tr
 | What is its main contribution to DETai? | Knowledge dissemination, trust and recognition — **E2 Brand** |
 | What does PiQ not promise? | A formal educational programme, certification, diagnosis or psychotherapy |
 
-This distinction is defined in the [product object model](../../../brand-and-communications/product-market/product-object-model.md) and the [echelon model](../../logic-of-echelons.md). An educational user function does not automatically reclassify a project as E1.
+This distinction is defined in the [echelon model](../../logic-of-echelons.md). An educational user function does not automatically reclassify a project as E1.
 
 ## Separation of responsibilities
 

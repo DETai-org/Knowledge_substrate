@@ -56,6 +56,5 @@ Product–Market входит в [Brand & Communications](index.md) и отве�
 
 - [Производственный цикл U.L.I.](../technology/production-cycle/index.md) — как идеи улучшений превращаются в следующие версии.
 - [Интерфейс U.L.I. и Platform DETai](../technology/index.md) — передача результатов между разработкой, платформой и другими доменами.
-- [Модель продуктового объекта](product-market/product-object-model.md) — состояния проекта, пилота и выпущенного продукта.
 - [Стандарт ценностного предложения](product-market/value-proposition-standard.md) — аудитория и обещанный результат.
 - [Рыночный и портфельный цикл](product-market/market-operations.md) — показатели продукта и портфельные решения.

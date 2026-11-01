@@ -25,7 +25,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/architecture-and-tr
 | Mikä on tärkein panos DETaille? | Tiedon levittäminen, luottamus ja tunnettuus – **E2 Brand** |
 | Mitä PiQ ei lupaa? | Virallista koulutusohjelmaa, sertifiointia, diagnostiikkaa tai psykoterapiaa |
 
-Erottelu perustuu [tuoteobjektin malliin](../../../brand-and-communications/product-market/product-object-model.md) ja [tasoluokituksen logiikkaan](../../logic-of-echelons.md). Koulutuksellinen käyttötarkoitus ei automaattisesti siirrä tuotetta E1-luokkaan.
+Erottelu perustuu [tasoluokituksen logiikkaan](../../logic-of-echelons.md). Koulutuksellinen käyttötarkoitus ei automaattisesti siirrä tuotetta E1-luokkaan.
 
 ## Vastuiden erottaminen
 

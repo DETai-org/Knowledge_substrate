@@ -194,7 +194,7 @@ Release Fixation отвечает за момент, когда результа
 
 В проектах с ветками `production` и `dev` поддерживаемая версия остаётся в production-контуре, пока следующая версия развивается в `dev`. После Release Fixation следующего major-релиза соответствующий owning runtime обновляет доставляемое состояние; Product–Market и владелец подтверждают ценность и показатели; Management Layer координирует синхронизацию. Для внешних продуктов Platform DETai доставку обеспечивает платформа, а Brand & Communications и владельцы затронутых каналов обновляют публичные представления.
 
-Подробная продуктовая сторона интерфейса описана в [модели продуктового объекта](../../brand-and-communications/product-market/product-object-model.md), [стандарте ценностного предложения](../../brand-and-communications/product-market/value-proposition-standard.md) и [рыночном и портфельном цикле](../../brand-and-communications/product-market/market-operations.md). Явная последовательность передачи ответственности дана в [интерфейсе производственного и продуктового циклов](../index.md#эстафета-публичного-релиза).
+Подробная продуктовая сторона интерфейса описана в [стандарте ценностного предложения](../../brand-and-communications/product-market/value-proposition-standard.md) и [рыночном и портфельном цикле](../../brand-and-communications/product-market/market-operations.md). Явная последовательность передачи ответственности дана в [интерфейсе производственного и продуктового циклов](../index.md#эстафета-публичного-релиза).
 
 ## Роли и skills
 

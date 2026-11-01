@@ -168,7 +168,6 @@ plugins:
       "de/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "de/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
       "de/product-market/product-catalog.md": "de/brand-and-communications/product-market/product-catalog.md"
       "de/product-market/product-documentation-model.md": "de/brand-and-communications/product-market/product-documentation-model.md"
-      "de/product-market/product-object-model.md": "de/brand-and-communications/product-market/product-object-model.md"
       "de/product-market/value-proposition-standard.md": "de/brand-and-communications/product-market/value-proposition-standard.md"
       "de/technology/collaborative-planning.md": "de/technology/production-cycle/collaborative-planning.md"
       "de/technology/platform/communications/index.md": "de/technology/platform/index.md"
@@ -362,7 +361,6 @@ plugins:
       "en/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "en/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
       "en/product-market/product-catalog.md": "en/brand-and-communications/product-market/product-catalog.md"
       "en/product-market/product-documentation-model.md": "en/brand-and-communications/product-market/product-documentation-model.md"
-      "en/product-market/product-object-model.md": "en/brand-and-communications/product-market/product-object-model.md"
       "en/product-market/value-proposition-standard.md": "en/brand-and-communications/product-market/value-proposition-standard.md"
       "en/technology/collaborative-planning.md": "en/technology/production-cycle/collaborative-planning.md"
       "en/technology/platform/communications/index.md": "en/technology/platform/index.md"
@@ -556,7 +554,6 @@ plugins:
       "fi/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "fi/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
       "fi/product-market/product-catalog.md": "fi/brand-and-communications/product-market/product-catalog.md"
       "fi/product-market/product-documentation-model.md": "fi/brand-and-communications/product-market/product-documentation-model.md"
-      "fi/product-market/product-object-model.md": "fi/brand-and-communications/product-market/product-object-model.md"
       "fi/product-market/value-proposition-standard.md": "fi/brand-and-communications/product-market/value-proposition-standard.md"
       "fi/technology/collaborative-planning.md": "fi/technology/production-cycle/collaborative-planning.md"
       "fi/technology/platform/communications/index.md": "fi/technology/platform/index.md"
@@ -773,7 +770,6 @@ plugins:
       "ru/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "ru/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
       "ru/product-market/product-catalog.md": "ru/brand-and-communications/product-market/product-catalog.md"
       "ru/product-market/product-documentation-model.md": "ru/brand-and-communications/product-market/product-documentation-model.md"
-      "ru/product-market/product-object-model.md": "ru/brand-and-communications/product-market/product-object-model.md"
       "ru/product-market/value-proposition-standard.md": "ru/brand-and-communications/product-market/value-proposition-standard.md"
       "ru/technology/collaborative-planning.md": "ru/technology/production-cycle/collaborative-planning.md"
       "ru/technology/platform/communications/index.md": "ru/technology/platform/index.md"
@@ -968,7 +964,6 @@ plugins:
       "zh/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "zh/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
       "zh/product-market/product-catalog.md": "zh/brand-and-communications/product-market/product-catalog.md"
       "zh/product-market/product-documentation-model.md": "zh/brand-and-communications/product-market/product-documentation-model.md"
-      "zh/product-market/product-object-model.md": "zh/brand-and-communications/product-market/product-object-model.md"
       "zh/product-market/value-proposition-standard.md": "zh/brand-and-communications/product-market/value-proposition-standard.md"
       "zh/technology/collaborative-planning.md": "zh/technology/production-cycle/collaborative-planning.md"
       "zh/technology/platform/communications/index.md": "zh/technology/platform/index.md"
@@ -1129,7 +1124,6 @@ nav:
     - Каталог продуктов и предложений: ru/brand-and-communications/product-market/product-catalog.md
     - Модель документации продукта: ru/brand-and-communications/product-market/product-documentation-model.md
     - Стандарт ценностного предложения продукта: ru/brand-and-communications/product-market/value-proposition-standard.md
-    - Модель продуктового объекта: ru/brand-and-communications/product-market/product-object-model.md
     - Рыночный и портфельный цикл: ru/brand-and-communications/product-market/market-operations.md
     - Бизнес-модель и портфель: ru/brand-and-communications/product-market/business-model-and-portfolio.md
 - Institutional Layer:

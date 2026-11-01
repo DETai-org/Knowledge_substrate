@@ -25,7 +25,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/architecture-and-tr
 | Was ist der wichtigste Beitrag zu DETai? | Wissensvermittlung, Vertrauen und Bekanntheit — **E2 Brand** |
 | Was verspricht PiQ nicht? | Formale Bildungsprogramme, Zertifikate, Diagnosen oder Psychotherapie |
 
-Diese Trennung ist im [Produktobjektmodell](../../../brand-and-communications/product-market/product-object-model.md) und in der [Logik der Echelons](../../logic-of-echelons.md) festgelegt. Eine Bildungsfunktion führt nicht automatisch zur Zuordnung zu E1.
+Diese Trennung ist im [Modell der Echelons](../../logic-of-echelons.md) festgelegt. Eine Bildungsfunktion führt nicht automatisch zur Zuordnung zu E1.
 
 ## Abgrenzung der Zuständigkeiten
 
