@@ -4,7 +4,7 @@
 
 Пока основная каноническая формулировка ecosystem metadata уже существует в документе:
 
-- [Document Metadata Policy](https://docs.detai-x.com/ru/knowledge/metadata-policy/)
+- [Document Metadata Policy](https://docs.detai-x.com/ru/technology/documentation-rules/metadata-policy/)
 
 Смысл этого каталога:
 - не дублировать сами ecosystem-документы;
