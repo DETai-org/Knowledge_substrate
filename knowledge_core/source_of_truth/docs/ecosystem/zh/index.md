@@ -20,7 +20,7 @@ DETai 将独立的心理治疗方法、其制度化发展、自有技术层与�
 
 1. [阅读指南](start/index.md)——进入知识库的三条主要路径。
 2. [知识地图](start/knowledge-map.md)——集中查看主要系统及其关系。
-3. [DETai 生态系统](ecosystem/DETai/index.md) — 生态系统的结构及其各部分之间的联系。
+3. [DETai 生态系统](ecosystem/index.md) — 生态系统的结构及其各部分之间的联系。
 4. [角色阅读路径](start/role-routes.md)——面向参与者、专业人员、开发者与合作伙伴的阅读路线。
 5. [工作环境](start/working-environment.md)——查找知识、任务、代码、数据与原始资料的位置。
 

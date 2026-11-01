@@ -35,7 +35,7 @@ title: Навигация для людей и агентов
 ## Стартовый маршрут агента
 
 1. Определить намерение запроса и затронутые systems.
-2. Открыть [обзор экосистемы DETai](../ecosystem/DETai/index.md).
+2. Открыть [обзор экосистемы DETai](../ecosystem/index.md).
 3. Прочитать index каждой затронутой системы.
 4. Отфильтровать документы по canonicality, status, visibility и audience.
 5. Пройти `document_links` и связанные реестры.
@@ -44,7 +44,7 @@ title: Навигация для людей и агентов
 
 ## Сквозной запрос
 
-Запрос «можно ли выпустить AI-функцию для терапии?» не принадлежит одному разделу. Агент должен поднять как минимум Method, Institutional, Brand & Communications, Product–Market, Technology, Legal и Governance. [Обзор экосистемы](../ecosystem/DETai/index.md) задаёт такую маршрутизацию.
+Запрос «можно ли выпустить AI-функцию для терапии?» не принадлежит одному разделу. Агент должен поднять как минимум Method, Institutional, Brand & Communications, Product–Market, Technology, Legal и Governance. [Обзор экосистемы](../ecosystem/index.md) задаёт такую маршрутизацию.
 
 ## Минимальные отношения графа
 

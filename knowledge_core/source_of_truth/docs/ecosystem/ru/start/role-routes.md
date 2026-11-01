@@ -34,12 +34,12 @@ title: Маршруты по ролям
 
 | Роль или перспектива | Сначала прочитать | Затем углубиться |
 |---|---|---|
-| Новый участник | [Onboarding DETai](../onboarding/index.md) | [Operating Model](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md), [осмысленное участие](../governance/meaningful-participation.md), [рабочая среда](working-environment.md) |
-| Основатель / Anchor | [Экосистема DETai](../ecosystem/DETai/index.md) | Governance, портфель, evidence и внешняя готовность |
-| Менеджер / владелец домена | [Management Layer](../ecosystem/Management_layer/index.md) | Product–Market, Team OS, source-of-truth map |
+| Новый участник | [Onboarding DETai](../onboarding/index.md) | [Operating Model](../management-layer/management-model.md), [осмысленное участие](../management-layer/meaningful-participation.md), [рабочая среда](working-environment.md) |
+| Основатель / Anchor | [Экосистема DETai](../ecosystem/index.md) | Governance, портфель, evidence и внешняя готовность |
+| Менеджер / владелец домена | [Management Layer](../management-layer/index.md) | Product–Market, Team OS, source-of-truth map |
 | Технический лидер | [Технологический слой](../technology/index.md) | U.L.I., Platform DETai и технические стандарты |
-| Разработчик | [U.L.I.](../ecosystem/DETai/U.L.I/index.md) | production cycle, work model и technical standards |
-| Продуктовая роль | [Product–Market](../product-market/index.md) | Product Object Model, Market Operations, показатели результата |
+| Разработчик | [U.L.I.](../technology/uli/index.md) | production cycle, work model и technical standards |
+| Продуктовая роль | [Product–Market](../brand-and-communications/product-market/index.md) | Product Object Model, Market Operations, показатели результата |
 | Brand & Communications | [Описание домена](../brand-and-communications/index.md) | Umbrella Brand, product positioning, approved claims и публичные поверхности |
 | Психотерапевт / супервизор | [Метод и институциональная жизнь](../institutional-layer/index.md) | профессиональные границы и исследование |
 | Преподаватель | [Институциональный слой](../institutional-layer/institutional-layer.md) | образование, публикации и доказательная база |

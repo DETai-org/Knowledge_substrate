@@ -10,10 +10,10 @@ classification:
   audiences: [team, editors, developers, agents]
 descriptive:
   id: knowledge-navigation-migration
-  version: v5
+  version: v6
   status: active
-  date_ymd: 2026-10-23
-  date_update: 2026-10-23
+  date_ymd: 2026-11-01
+  date_update: 2026-11-01
 governance:
   canonicality: working
   visibility: public
@@ -37,24 +37,32 @@ title: Миграция информационной архитектуры
 
 ## Текущая стадия
 
-Предметная архитектура и верхнеуровневый `nav` синхронизированы с ARCH-2026-001. Новые canonical homes добавлены как семантические маршруты, а опубликованные legacy-страницы сохранены по прежним URL как compatibility entry points. Они не копируют новые канонические определения и ведут к owning system.
+Предметная архитектура, верхнеуровневый `nav` и канонические пути документов согласованы: URL отражает раздел и назначение страницы. Один Markdown-файл задаёт один канонический адрес; внутренние ссылки и URL в metadata ведут прямо на него.
 
-Для объединённых и перенесённых страниц используются прямые перенаправления на текущий адрес. Остальные опубликованные маршруты сохраняют предметные входы.
+Совместимость внешних закладок на перенесённые страницы задаётся в конфигурации маршрутов MkDocs. В тексте документов и навигации используются только текущие адреса. Отдельные Markdown-страницы с перенаправлениями не создаются.
 
-## Карта совместимости URL
+## Канонические маршруты
 
-| Опубликованный legacy URL | Текущий canonical home | Режим совместимости |
-| --- | --- | --- |
-| `/ru/ecosystem/` | `/ru/ecosystem/DETai/` | перенаправление на обзор экосистемы |
-| `/ru/architecture/` | `/ru/ecosystem/DETai/` | перенаправление на обзор экосистемы |
-| `/ru/ecosystem/DET/` | `/ru/institutional-layer/` | сохранённый корпус метода со ссылкой на предметный вход |
-| `/ru/governance/` | `/ru/ecosystem/Governance/` | перенаправление на индекс Governance |
-| `/ru/ecosystem/Management_layer/` | `/ru/ecosystem/Management_layer/` | самостоятельный индекс Management Layer |
-| `/ru/ecosystem/Management_layer/Docs-Ecosystem/` | `/ru/knowledge/` | сохранённый documentation-governance overview внутри Knowledge System |
+| Раздел или объект | Корневой URL |
+| --- | --- |
+| Экосистема DETai | `/ru/ecosystem/` |
+| Governance | `/ru/governance/` |
+| Management Layer | `/ru/management-layer/` |
+| Team OS, Web и Plugin | `/ru/management-layer/team-os/` |
+| Brand & Communications | `/ru/brand-and-communications/` |
+| Product–Market | `/ru/brand-and-communications/product-market/` |
+| Institutional Layer | `/ru/institutional-layer/` |
+| Корпус метода DET | `/ru/institutional-layer/det/` |
+| Technology Layer | `/ru/technology/` |
+| U.L.I. | `/ru/technology/uli/` |
+| Platform DETai | `/ru/technology/platform/` |
+| Версионность документов | `/ru/technology/versioning/` |
+| Infrastructure | `/ru/infrastructure/` |
+| Tools | `/ru/tools/` |
+| Система знаний | `/ru/knowledge/` |
+| Onboarding | `/ru/onboarding/` |
 
-Маршруты U.L.I., Platform DETai, Infrastructure и отдельных инструментов не менялись: новая навигация ссылается на существующие URL напрямую, поэтому redirect или alias для них не требуется.
-
-Team OS, Web и Plugin находятся в навигации **«Management Layer»**. Их опубликованные пути `Platform_DETai/E3-Infra/team-os/` и стабильные document IDs сохраняются; owning system отражена в metadata и ссылках. Эшелон E3 описывает вклад системы и не определяет родителя в меню.
+При переносе обновляются файл, `nav`, входящие ссылки, относительные ссылки внутри страницы и её URL в metadata. Стабильные document IDs сохраняются. Эшелон проекта описывает его вклад в экосистему и сам по себе не определяет родителя в меню или URL.
 
 ## Статус языковых версий
 

@@ -51,7 +51,7 @@ Knowledge Substrate хранит публичную модель: что так�
 
 Вкладка Issues является частью репозитория, но выполняет отдельную роль. В Issues живут актуальные tutorial-задачи, вопросы участников и история обсуждения; в файловой части репозитория находятся материалы, архивные представления и инструменты для сопровождающей команды.
 
-- [`.codex-skills/`](https://github.com/DETai-org/onboarding/tree/main/.codex-skills) хранит общий для экосистемы версионированный реестр Codex Skills и manifest установки. Определение skills дано в документе [Codex Skills](../ecosystem/Tools/🧭Codex/codex-skills.md).
+- [`.codex-skills/`](https://github.com/DETai-org/onboarding/tree/main/.codex-skills) хранит общий для экосистемы версионированный реестр Codex Skills и manifest установки. Определение skills дано в документе [Codex Skills](../tools/codex/codex-skills.md).
 - `archive/issues/<season>/` хранит датированный Markdown-snapshot завершённой итерации Issues для сравнения изменений и поиска регрессий.
 - Изменение архивного или локального Markdown-файла само по себе не обновляет действующую Issue: актуальная задача изменяется отдельно.
 

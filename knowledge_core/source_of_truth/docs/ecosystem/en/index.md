@@ -20,7 +20,7 @@ DETai connects an independent psychotherapeutic method, its institutional life, 
 
 1. [Guide](start/index.md) — three entry routes into the knowledge base.
 2. [Knowledge map](start/knowledge-map.md) — the main systems and relationships in one place.
-3. [DETai ecosystem](ecosystem/DETai/index.md) — the structure and connections of the ecosystem.
+3. [DETai ecosystem](ecosystem/index.md) — the structure and connections of the ecosystem.
 4. [Role-based routes](start/role-routes.md) — reading paths for participants, practitioners, developers, and partners.
 5. [Working environment](start/working-environment.md) — where to find knowledge, tasks, code, data, and source materials.
 

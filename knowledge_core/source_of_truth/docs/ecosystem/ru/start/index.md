@@ -39,19 +39,19 @@ Knowledge Substrate — версионная память и документа�
 ### Я впервые вижу DETai
 
 1. [Карта знаний](knowledge-map.md)
-2. [Экосистема DETai](../ecosystem/DETai/index.md)
+2. [Экосистема DETai](../ecosystem/index.md)
 3. [Метод DET и институциональная жизнь](../institutional-layer/index.md)
 4. [Технологический слой](../technology/index.md)
-5. [Management Layer](../ecosystem/Management_layer/index.md)
+5. [Management Layer](../management-layer/index.md)
 
 ### Я участник или хочу присоединиться
 
 1. [Onboarding DETai](../onboarding/index.md)
 2. [Маршруты по ролям](role-routes.md)
-3. [Operating Model DETai](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md)
-4. [Осмысленное участие](../governance/meaningful-participation.md)
+3. [Operating Model DETai](../management-layer/management-model.md)
+4. [Осмысленное участие](../management-layer/meaningful-participation.md)
 5. [Рабочая среда](working-environment.md)
-6. [Домены и права решений](../governance/domains-and-decision-rights.md)
+6. [Домены и права решений](../management-layer/domains-and-decision-rights.md)
 
 ### Мне нужен конкретный документ
 

@@ -74,9 +74,9 @@ title: Система знаний и Knowledge Substrate
 - [Миграция информационной архитектуры](navigation-migration.md)
 - [Публикация и доставка знаний](knowledge-delivery.md)
 - [Связи публикаций с Knowledge Substrate](publication-relations-sync.md)
-- [Действующая политика metadata](../ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md)
-- [Функции документов](../ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md)
-- [Документация как исполняемый интерфейс](../ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md)
+- [Действующая политика metadata](metadata-policy.md)
+- [Функции документов](documentation-functions.md)
+- [Документация как исполняемый интерфейс](executable-interface.md)
 
 ## Связь с репозиториями
 

@@ -34,13 +34,13 @@ title: Карта знаний DETai
 
 | Система | Главный вопрос | Рекомендуемый вход |
 |---|---|---|
-| Экосистема DETai | Из чего состоит экосистема, что объединяет бренд и как связаны части? | [Экосистема DETai](../ecosystem/DETai/index.md) |
-| Governance | Как определяются миссия, полномочия и границы экосистемы? | [Governance](../ecosystem/Governance/index.md) |
-| Management Layer | Как устроены управление, две стратегии и осмысленное участие человека? | [Management Layer](../ecosystem/Management_layer/index.md) |
+| Экосистема DETai | Из чего состоит экосистема, что объединяет бренд и как связаны части? | [Экосистема DETai](../ecosystem/index.md) |
+| Governance | Как определяются миссия, полномочия и границы экосистемы? | [Governance](../governance/index.md) |
+| Management Layer | Как устроены управление, две стратегии и осмысленное участие человека? | [Management Layer](../management-layer/index.md) |
 | Brand & Communications | Как устроены зонтичный бренд и публичная коммуникация, продукты и доставка сервисов? | [Brand & Communications](../brand-and-communications/index.md) |
 | DET и институциональная жизнь | Что является профессиональным ядром и как живут практика, образование и исследование? | [Метод DET](../institutional-layer/index.md) |
 | Технологический слой | Где создаются и доставляются решения? | [Технология](../technology/index.md) |
-| Product–Market внутри Brand & Communications | Какие продукты и услуги существуют, для кого создаётся ценность и как устроен портфель? | [Продукты и рынок](../product-market/index.md) |
+| Product–Market внутри Brand & Communications | Какие продукты и услуги существуют, для кого создаётся ценность и как устроен портфель? | [Продукты и рынок](../brand-and-communications/product-market/index.md) |
 | Компания и экономика | Как устроены юридический оператор, права и экономические отношения? | [Компания и экономика](../legal-economic/index.md) |
 | Система знаний | Как знания хранятся, связываются, представляются и находятся? | [Knowledge Substrate](../knowledge/index.md) |
 

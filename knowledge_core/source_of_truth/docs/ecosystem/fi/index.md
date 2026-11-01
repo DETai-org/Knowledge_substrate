@@ -20,7 +20,7 @@ DETai yhdistää itsenäisen psykoterapeuttisen menetelmän, sen institutionaali
 
 1. [Opas](start/index.md) — kolme reittiä tietopohjaan.
 2. [Tietokartta](start/knowledge-map.md) — keskeiset järjestelmät ja niiden yhteydet yhdessä näkymässä.
-3. [DETai-ekosysteemi](ecosystem/DETai/index.md) — ekosysteemin rakenne ja osien yhteydet.
+3. [DETai-ekosysteemi](ecosystem/index.md) — ekosysteemin rakenne ja osien yhteydet.
 4. [Roolikohtaiset reitit](start/role-routes.md) — lukupolut osallistujille, ammattilaisille, kehittäjille ja kumppaneille.
 5. [Työympäristö](start/working-environment.md) — mistä löytyvät tieto, tehtävät, koodi, data ja alkuperäisaineistot.
 

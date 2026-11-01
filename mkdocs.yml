@@ -23,34 +23,782 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
-      'ru/technology/system-interface.md': 'ru/technology/index.md'
-      'ru/method/education.md': 'ru/institutional-layer/education.md'
-      'ru/method/index.md': 'ru/institutional-layer/index.md'
-      'ru/method/institutional-layer.md': 'ru/institutional-layer/institutional-layer.md'
-      'ru/method/psychotherapy-and-supervision.md': 'ru/institutional-layer/psychotherapy-and-supervision.md'
-      'ru/method/research.md': 'ru/institutional-layer/research.md'
-      'ru/ecosystem/DETai/logic-of-echelons.md': 'ru/technology/logic-of-echelons.md'
-      'ru/governance/brand-and-communications.md': 'ru/brand-and-communications/index.md'
-      'ru/governance/umbrella-brand.md': 'ru/brand-and-communications/umbrella-brand.md'
-      'ru/governance/product-market-cycle.md': 'ru/brand-and-communications/product-market-cycle.md'
-      'ru/governance/index.md': 'ru/ecosystem/Governance/index.md'
-      'ru/architecture/index.md': 'ru/ecosystem/DETai/index.md'
-      'ru/architecture/three-perspective-consensus.md': 'ru/ecosystem/DETai/index.md'
-      'ru/architecture/ecosystem-canon.md': 'ru/ecosystem/DETai/index.md'
-      'ru/architecture/cross-cutting-systems.md': 'ru/ecosystem/DETai/index.md'
-      'ru/architecture/ontology.md': 'ru/ecosystem/glossary.md'
-      'ru/architecture/umbrella-brand.md': 'ru/brand-and-communications/umbrella-brand.md'
-      'ru/architecture/source-of-truth-map.md': 'ru/governance/management-strategy.md'
-      'ru/ecosystem/index.md': 'ru/ecosystem/DETai/index.md'
-      'ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme.md': 'ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md'
-      'ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md'
-      'ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md'
-      'ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md'
-      'ru/ecosystem/DETai/Platform_DETai/E1-Core/🌀Psykhḗ AI/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md'
-      'ru/ecosystem/DETai/Platform_DETai/E2-Brand/news-agent/index.md': 'ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md'
-      'ru/ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md'
-      'ru/ecosystem/DETai/Platform_DETai/E3-Infra/gpt_promt_engine/index.md': 'ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md'
-      'ru/ecosystem/Tools/🤖 GPT/index.md': 'ru/ecosystem/Tools/🧭Codex/index.md'
+      "de/ecosystem/DET/5-characteristics-of-det-as-culture.md": "de/institutional-layer/det/5-characteristics-of-det-as-culture.md"
+      "de/ecosystem/DET/Concept/Concept-DET.md": "de/institutional-layer/det/concept/concept-det.md"
+      "de/ecosystem/DET/Concept/index.md": "de/institutional-layer/det/concept/index.md"
+      "de/ecosystem/DET/Concept/overcoming.md": "de/institutional-layer/det/concept/overcoming.md"
+      "de/ecosystem/DET/Concept/personality-types.md": "de/institutional-layer/det/concept/personality-types.md"
+      "de/ecosystem/DET/Concept/shadow-and-light.md": "de/institutional-layer/det/concept/shadow-and-light.md"
+      "de/ecosystem/DET/at-the-crossroads-of-three-worlds.md": "de/institutional-layer/det/at-the-crossroads-of-three-worlds.md"
+      "de/ecosystem/DET/index.md": "de/institutional-layer/det/index.md"
+      "de/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md": "de/technology/platform/communications/telegram/usercontrol/index.md"
+      "de/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md": "de/technology/platform/communications/telegram/account-manager-philosophy.md"
+      "de/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md": "de/technology/platform/communications/telegram/account-manager.md"
+      "de/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md": "de/technology/platform/communications/telegram/index.md"
+      "de/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md": "de/technology/platform/communications/website/index.md"
+      "de/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md": "de/infrastructure/knowledge-substrate/index.md"
+      "de/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md": "de/management-layer/team-os/index.md"
+      "de/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md": "de/management-layer/team-os/plugin.md"
+      "de/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md": "de/management-layer/team-os/web.md"
+      "de/ecosystem/DETai/Platform_DETai/R&D/index.md": "de/technology/platform/research-and-development/index.md"
+      "de/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md": "de/technology/platform/communications/index.md"
+      "de/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md": "de/technology/platform/dormant-projects/gpt-prompt-engine/index.md"
+      "de/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "de/technology/platform/dormant-projects/index.md"
+      "de/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "de/technology/platform/dormant-projects/news-agent/index.md"
+      "de/ecosystem/DETai/Platform_DETai/index.md": "de/technology/platform/index.md"
+      "de/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "de/technology/platform/products/detai-matrix/index.md"
+      "de/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "de/technology/platform/products/detai-pulse/index.md"
+      "de/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "de/technology/platform/products/francis-galton/index.md"
+      "de/ecosystem/DETai/Platform_DETai/products/index.md": "de/technology/platform/products/index.md"
+      "de/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "de/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
+      "de/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md": "de/technology/platform/products/psychology-in-quotes/collection-and-plans.md"
+      "de/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md": "de/technology/platform/products/psychology-in-quotes/getting-started.md"
+      "de/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "de/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md"
+      "de/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "de/technology/platform/products/psychology-in-quotes/index.md"
+      "de/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "de/technology/platform/products/psykhe-ai/index.md"
+      "de/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "de/technology/platform/technology-foundation/index.md"
+      "de/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md": "de/technology/uli/philosophy/bee-roles.md"
+      "de/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "de/technology/uli/philosophy/index.md"
+      "de/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "de/technology/uli/philosophy/why-uli-standards-matter.md"
+      "de/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "de/technology/uli/production/documentation-architecture.md"
+      "de/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning.md": "de/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning.md"
+      "de/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md": "de/technology/uli/production/index.md"
+      "de/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md": "de/technology/uli/production/project-cycle-methodology.md"
+      "de/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md": "de/technology/uli/production/production-cycle.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md": "de/technology/uli/standards/readme-template.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md": "de/technology/uli/standards/telegram-bots/configuration-standard.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md": "de/technology/uli/standards/telegram-bots/index.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md": "de/technology/uli/standards/telegram-bots/language-handover.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md": "de/technology/uli/standards/telegram-bots/policy-layer.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md": "de/technology/uli/standards/telegram-bots/telegram-bot-creation-standard.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md": "de/technology/uli/standards/project-versioning.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md": "de/technology/uli/standards/index.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md": "de/technology/uli/standards/mosaic-approach.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md": "de/technology/uli/standards/release-fixation-standard.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/testing-feedback-loop-standard.md": "de/technology/uli/standards/testing-feedback-loop-standard.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md": "de/technology/uli/standards/work-model/index.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md": "de/technology/uli/standards/work-model/issue-contract.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md": "de/technology/uli/standards/work-model/sub-issue-contract.md"
+      "de/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md": "de/technology/uli/standards/work-model/work-model.md"
+      "de/ecosystem/DETai/U.L.I/index.md": "de/technology/uli/index.md"
+      "de/ecosystem/DETai/index.md": "de/ecosystem/index.md"
+      "de/ecosystem/DETai/table-of-resources.md": "de/management-layer/resource-table.md"
+      "de/ecosystem/Governance/BHAG.md": "de/governance/bhag.md"
+      "de/ecosystem/Governance/Constitution.md": "de/governance/constitution.md"
+      "de/ecosystem/Governance/Mission.md": "de/governance/mission.md"
+      "de/ecosystem/Governance/Values.md": "de/governance/values.md"
+      "de/ecosystem/Governance/Vision.md": "de/governance/vision.md"
+      "de/ecosystem/Governance/index.md": "de/governance/index.md"
+      "de/ecosystem/Infrastructure/Infrastructure_Principles.md": "de/infrastructure/principles.md"
+      "de/ecosystem/Infrastructure/Knowledge_Substrate/index.md": "de/infrastructure/knowledge-substrate/index.md"
+      "de/ecosystem/Infrastructure/ecosystem-runtime/index.md": "de/infrastructure/ecosystem-runtime/index.md"
+      "de/ecosystem/Infrastructure/execution-environments/index.md": "de/infrastructure/execution-environments/index.md"
+      "de/ecosystem/Infrastructure/home-lab/architecture.md": "de/infrastructure/home-lab/architecture.md"
+      "de/ecosystem/Infrastructure/home-lab/index.md": "de/infrastructure/home-lab/index.md"
+      "de/ecosystem/Infrastructure/home-lab/territory-psi-edge.md": "de/infrastructure/home-lab/territory-psi-edge.md"
+      "de/ecosystem/Infrastructure/index.md": "de/infrastructure/index.md"
+      "de/ecosystem/Infrastructure/infrastructure-systems/index.md": "de/infrastructure/infrastructure-systems/index.md"
+      "de/ecosystem/Infrastructure/intelligence-runtime/index.md": "de/infrastructure/intelligence-runtime/index.md"
+      "de/ecosystem/Infrastructure/🌍 Сервера/index.md": "de/infrastructure/servers/index.md"
+      "de/ecosystem/Management_layer/1_Philosophy/Participation_principles.md": "de/management-layer/participation-principles.md"
+      "de/ecosystem/Management_layer/1_Philosophy/index.md": "de/management-layer/principles/index.md"
+      "de/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "de/technology/versioning.md"
+      "de/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "de/management-layer/distributed-architecture.md"
+      "de/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "de/knowledge/executable-interface.md"
+      "de/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "de/management-layer/architecture/index.md"
+      "de/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "de/management-layer/work-levels.md"
+      "de/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "de/management-layer/management-model.md"
+      "de/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md": "de/technology/versioning.md"
+      "de/ecosystem/Management_layer/3_Technical_Standards/index.md": "de/management-layer/standards/index.md"
+      "de/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "de/knowledge/metadata-policy.md"
+      "de/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "de/knowledge/documentation-architecture.md"
+      "de/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "de/knowledge/documentation-functions.md"
+      "de/ecosystem/Management_layer/Docs-Ecosystem/index.md": "de/knowledge/documentation-governance/index.md"
+      "de/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "de/knowledge/navigation-architecture.md"
+      "de/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "de/knowledge/metadata-schema-registry.md"
+      "de/ecosystem/Management_layer/Strategic_Development/index.md": "de/management-layer/development-strategy/index.md"
+      "de/ecosystem/Management_layer/ecosystem-resource.md": "de/management-layer/ecosystem-resources.md"
+      "de/ecosystem/Management_layer/index.md": "de/management-layer/index.md"
+      "de/ecosystem/STORYTELLING/index.md": "de/technology/platform/communications/storytelling/index.md"
+      "de/ecosystem/STORYTELLING/technology-foundation.md": "de/technology/platform/communications/storytelling/technology-foundation.md"
+      "de/ecosystem/Tools/FileZilla/filezilla-settings.md": "de/tools/filezilla/filezilla-settings.md"
+      "de/ecosystem/Tools/FileZilla/index.md": "de/tools/filezilla/index.md"
+      "de/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "de/tools/linear/github-linear-automation-architecture.md"
+      "de/ecosystem/Tools/Linear/index.md": "de/tools/linear/index.md"
+      "de/ecosystem/Tools/Obsidian/index.md": "de/tools/obsidian/index.md"
+      "de/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md": "de/tools/vs-code/git-github-vscode-workflow.md"
+      "de/ecosystem/Tools/VS_Code/index.md": "de/tools/vs-code/index.md"
+      "de/ecosystem/Tools/VS_Code/installation-and-initial-setup.md": "de/tools/vs-code/installation-and-initial-setup.md"
+      "de/ecosystem/Tools/index.md": "de/tools/index.md"
+      "de/ecosystem/Tools/Ⓜ️Make/index.md": "de/tools/make/index.md"
+      "de/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md": "de/tools/clickup/clickup-structure-principles.md"
+      "de/ecosystem/Tools/🎯ClickUp/index.md": "de/tools/clickup/index.md"
+      "de/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md": "de/tools/airtable/adr-2026-02-11.md"
+      "de/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md": "de/tools/airtable/airtable-in-detai-ecosystem.md"
+      "de/ecosystem/Tools/📦 Airtable/index.md": "de/tools/airtable/index.md"
+      "de/ecosystem/Tools/🛠GitHub/connect-repository.md": "de/tools/github/connect-repository.md"
+      "de/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md": "de/tools/github/git-for-dummies-but-getting-smarter.md"
+      "de/ecosystem/Tools/🛠GitHub/github-app-bot.md": "de/tools/github/github-app-bot.md"
+      "de/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md": "de/tools/github/how-to-quickly-understand-project.md"
+      "de/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md": "de/tools/github/how-to-remove-secrets-from-config.md"
+      "de/ecosystem/Tools/🛠GitHub/index.md": "de/tools/github/index.md"
+      "de/ecosystem/Tools/🛠GitHub/transition-to-organization.md": "de/tools/github/transition-to-organization.md"
+      "de/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md": "de/tools/gpt-curators/meta/rules.md"
+      "de/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md": "de/tools/gpt-curators/meta/knowledge-base.md"
+      "de/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md": "de/tools/gpt-curators/meta/style-guide.md"
+      "de/ecosystem/Tools/🤖 Telegram_Bots/index.md": "de/tools/telegram-bots/index.md"
+      "de/ecosystem/Tools/🧭Codex/codex-interaction-format.md": "de/tools/codex/codex-interaction-format.md"
+      "de/ecosystem/Tools/🧭Codex/codex-manifest.md": "de/tools/codex/codex-manifest.md"
+      "de/ecosystem/Tools/🧭Codex/codex-skills.md": "de/tools/codex/codex-skills.md"
+      "de/ecosystem/Tools/🧭Codex/create-epic-issue-release.md": "de/tools/codex/create-epic-issue-release.md"
+      "de/ecosystem/Tools/🧭Codex/index.md": "de/tools/codex/index.md"
+      "de/ecosystem/Tools/🧭Codex/integration-with-github.md": "de/tools/codex/integration-with-github.md"
+      "de/ecosystem/Tools/🧭Codex/interaction-with-codex.md": "de/tools/codex/interaction-with-codex.md"
+      "de/ecosystem/Tools/🧭Codex/team-os-mcp.md": "de/tools/codex/team-os-mcp.md"
+      "de/ecosystem/callouts-spec.md": "de/knowledge/callouts-spec.md"
+      "de/ecosystem/glossary.md": "de/knowledge/glossary.md"
+      "de/governance/domains-and-decision-rights.md": "de/management-layer/domains-and-decision-rights.md"
+      "de/governance/management-strategy.md": "de/management-layer/management-strategy.md"
+      "de/governance/meaningful-participation.md": "de/management-layer/meaningful-participation.md"
+      "de/governance/team-os.md": "de/management-layer/team-os/governance/index.md"
+      "de/governance/team-os/access.md": "de/management-layer/team-os/governance/access.md"
+      "de/governance/team-os/profile-data-and-visibility.md": "de/management-layer/team-os/governance/profile-data-and-visibility.md"
+      "de/governance/team-os/public-profile.md": "de/management-layer/team-os/governance/public-profile.md"
+      "de/product-market/business-model-and-portfolio.md": "de/brand-and-communications/product-market/business-model-and-portfolio.md"
+      "de/product-market/business-thesis.md": "de/brand-and-communications/product-market/business-thesis.md"
+      "de/product-market/index.md": "de/brand-and-communications/product-market/index.md"
+      "de/product-market/market-operations.md": "de/brand-and-communications/product-market/market-operations.md"
+      "de/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "de/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
+      "de/product-market/product-catalog.md": "de/brand-and-communications/product-market/product-catalog.md"
+      "de/product-market/product-documentation-model.md": "de/brand-and-communications/product-market/product-documentation-model.md"
+      "de/product-market/product-object-model.md": "de/brand-and-communications/product-market/product-object-model.md"
+      "de/product-market/value-proposition-standard.md": "de/brand-and-communications/product-market/value-proposition-standard.md"
+      "en/ecosystem/DET/5-characteristics-of-det-as-culture.md": "en/institutional-layer/det/5-characteristics-of-det-as-culture.md"
+      "en/ecosystem/DET/Concept/Concept-DET.md": "en/institutional-layer/det/concept/concept-det.md"
+      "en/ecosystem/DET/Concept/index.md": "en/institutional-layer/det/concept/index.md"
+      "en/ecosystem/DET/Concept/overcoming.md": "en/institutional-layer/det/concept/overcoming.md"
+      "en/ecosystem/DET/Concept/personality-types.md": "en/institutional-layer/det/concept/personality-types.md"
+      "en/ecosystem/DET/Concept/shadow-and-light.md": "en/institutional-layer/det/concept/shadow-and-light.md"
+      "en/ecosystem/DET/at-the-crossroads-of-three-worlds.md": "en/institutional-layer/det/at-the-crossroads-of-three-worlds.md"
+      "en/ecosystem/DET/index.md": "en/institutional-layer/det/index.md"
+      "en/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md": "en/technology/platform/communications/telegram/usercontrol/index.md"
+      "en/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md": "en/technology/platform/communications/telegram/account-manager-philosophy.md"
+      "en/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md": "en/technology/platform/communications/telegram/account-manager.md"
+      "en/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md": "en/technology/platform/communications/telegram/index.md"
+      "en/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md": "en/technology/platform/communications/website/index.md"
+      "en/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md": "en/infrastructure/knowledge-substrate/index.md"
+      "en/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md": "en/management-layer/team-os/index.md"
+      "en/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md": "en/management-layer/team-os/plugin.md"
+      "en/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md": "en/management-layer/team-os/web.md"
+      "en/ecosystem/DETai/Platform_DETai/R&D/index.md": "en/technology/platform/research-and-development/index.md"
+      "en/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md": "en/technology/platform/communications/index.md"
+      "en/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md": "en/technology/platform/dormant-projects/gpt-prompt-engine/index.md"
+      "en/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "en/technology/platform/dormant-projects/index.md"
+      "en/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "en/technology/platform/dormant-projects/news-agent/index.md"
+      "en/ecosystem/DETai/Platform_DETai/index.md": "en/technology/platform/index.md"
+      "en/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "en/technology/platform/products/detai-matrix/index.md"
+      "en/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "en/technology/platform/products/detai-pulse/index.md"
+      "en/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "en/technology/platform/products/francis-galton/index.md"
+      "en/ecosystem/DETai/Platform_DETai/products/index.md": "en/technology/platform/products/index.md"
+      "en/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "en/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
+      "en/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md": "en/technology/platform/products/psychology-in-quotes/collection-and-plans.md"
+      "en/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md": "en/technology/platform/products/psychology-in-quotes/getting-started.md"
+      "en/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "en/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md"
+      "en/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "en/technology/platform/products/psychology-in-quotes/index.md"
+      "en/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "en/technology/platform/products/psykhe-ai/index.md"
+      "en/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "en/technology/platform/technology-foundation/index.md"
+      "en/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md": "en/technology/uli/philosophy/bee-roles.md"
+      "en/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "en/technology/uli/philosophy/index.md"
+      "en/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "en/technology/uli/philosophy/why-uli-standards-matter.md"
+      "en/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "en/technology/uli/production/documentation-architecture.md"
+      "en/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning.md": "en/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning.md"
+      "en/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md": "en/technology/uli/production/index.md"
+      "en/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md": "en/technology/uli/production/project-cycle-methodology.md"
+      "en/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md": "en/technology/uli/production/production-cycle.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md": "en/technology/uli/standards/readme-template.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md": "en/technology/uli/standards/telegram-bots/configuration-standard.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md": "en/technology/uli/standards/telegram-bots/index.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md": "en/technology/uli/standards/telegram-bots/language-handover.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md": "en/technology/uli/standards/telegram-bots/policy-layer.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md": "en/technology/uli/standards/telegram-bots/telegram-bot-creation-standard.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md": "en/technology/uli/standards/project-versioning.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md": "en/technology/uli/standards/index.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md": "en/technology/uli/standards/mosaic-approach.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md": "en/technology/uli/standards/release-fixation-standard.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/testing-feedback-loop-standard.md": "en/technology/uli/standards/testing-feedback-loop-standard.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md": "en/technology/uli/standards/work-model/index.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md": "en/technology/uli/standards/work-model/issue-contract.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md": "en/technology/uli/standards/work-model/sub-issue-contract.md"
+      "en/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md": "en/technology/uli/standards/work-model/work-model.md"
+      "en/ecosystem/DETai/U.L.I/index.md": "en/technology/uli/index.md"
+      "en/ecosystem/DETai/index.md": "en/ecosystem/index.md"
+      "en/ecosystem/DETai/table-of-resources.md": "en/management-layer/resource-table.md"
+      "en/ecosystem/Governance/BHAG.md": "en/governance/bhag.md"
+      "en/ecosystem/Governance/Constitution.md": "en/governance/constitution.md"
+      "en/ecosystem/Governance/Mission.md": "en/governance/mission.md"
+      "en/ecosystem/Governance/Values.md": "en/governance/values.md"
+      "en/ecosystem/Governance/Vision.md": "en/governance/vision.md"
+      "en/ecosystem/Governance/index.md": "en/governance/index.md"
+      "en/ecosystem/Infrastructure/Infrastructure_Principles.md": "en/infrastructure/principles.md"
+      "en/ecosystem/Infrastructure/Knowledge_Substrate/index.md": "en/infrastructure/knowledge-substrate/index.md"
+      "en/ecosystem/Infrastructure/ecosystem-runtime/index.md": "en/infrastructure/ecosystem-runtime/index.md"
+      "en/ecosystem/Infrastructure/execution-environments/index.md": "en/infrastructure/execution-environments/index.md"
+      "en/ecosystem/Infrastructure/home-lab/architecture.md": "en/infrastructure/home-lab/architecture.md"
+      "en/ecosystem/Infrastructure/home-lab/index.md": "en/infrastructure/home-lab/index.md"
+      "en/ecosystem/Infrastructure/home-lab/territory-psi-edge.md": "en/infrastructure/home-lab/territory-psi-edge.md"
+      "en/ecosystem/Infrastructure/index.md": "en/infrastructure/index.md"
+      "en/ecosystem/Infrastructure/infrastructure-systems/index.md": "en/infrastructure/infrastructure-systems/index.md"
+      "en/ecosystem/Infrastructure/intelligence-runtime/index.md": "en/infrastructure/intelligence-runtime/index.md"
+      "en/ecosystem/Infrastructure/🌍 Сервера/index.md": "en/infrastructure/servers/index.md"
+      "en/ecosystem/Management_layer/1_Philosophy/Participation_principles.md": "en/management-layer/participation-principles.md"
+      "en/ecosystem/Management_layer/1_Philosophy/index.md": "en/management-layer/principles/index.md"
+      "en/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "en/technology/versioning.md"
+      "en/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "en/management-layer/distributed-architecture.md"
+      "en/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "en/knowledge/executable-interface.md"
+      "en/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "en/management-layer/architecture/index.md"
+      "en/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "en/management-layer/work-levels.md"
+      "en/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "en/management-layer/management-model.md"
+      "en/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md": "en/technology/versioning.md"
+      "en/ecosystem/Management_layer/3_Technical_Standards/index.md": "en/management-layer/standards/index.md"
+      "en/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "en/knowledge/metadata-policy.md"
+      "en/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "en/knowledge/documentation-architecture.md"
+      "en/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "en/knowledge/documentation-functions.md"
+      "en/ecosystem/Management_layer/Docs-Ecosystem/index.md": "en/knowledge/documentation-governance/index.md"
+      "en/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "en/knowledge/navigation-architecture.md"
+      "en/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "en/knowledge/metadata-schema-registry.md"
+      "en/ecosystem/Management_layer/Strategic_Development/index.md": "en/management-layer/development-strategy/index.md"
+      "en/ecosystem/Management_layer/ecosystem-resource.md": "en/management-layer/ecosystem-resources.md"
+      "en/ecosystem/Management_layer/index.md": "en/management-layer/index.md"
+      "en/ecosystem/STORYTELLING/index.md": "en/technology/platform/communications/storytelling/index.md"
+      "en/ecosystem/STORYTELLING/technology-foundation.md": "en/technology/platform/communications/storytelling/technology-foundation.md"
+      "en/ecosystem/Tools/FileZilla/filezilla-settings.md": "en/tools/filezilla/filezilla-settings.md"
+      "en/ecosystem/Tools/FileZilla/index.md": "en/tools/filezilla/index.md"
+      "en/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "en/tools/linear/github-linear-automation-architecture.md"
+      "en/ecosystem/Tools/Linear/index.md": "en/tools/linear/index.md"
+      "en/ecosystem/Tools/Obsidian/index.md": "en/tools/obsidian/index.md"
+      "en/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md": "en/tools/vs-code/git-github-vscode-workflow.md"
+      "en/ecosystem/Tools/VS_Code/index.md": "en/tools/vs-code/index.md"
+      "en/ecosystem/Tools/VS_Code/installation-and-initial-setup.md": "en/tools/vs-code/installation-and-initial-setup.md"
+      "en/ecosystem/Tools/index.md": "en/tools/index.md"
+      "en/ecosystem/Tools/Ⓜ️Make/index.md": "en/tools/make/index.md"
+      "en/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md": "en/tools/clickup/clickup-structure-principles.md"
+      "en/ecosystem/Tools/🎯ClickUp/index.md": "en/tools/clickup/index.md"
+      "en/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md": "en/tools/airtable/adr-2026-02-11.md"
+      "en/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md": "en/tools/airtable/airtable-in-detai-ecosystem.md"
+      "en/ecosystem/Tools/📦 Airtable/index.md": "en/tools/airtable/index.md"
+      "en/ecosystem/Tools/🛠GitHub/connect-repository.md": "en/tools/github/connect-repository.md"
+      "en/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md": "en/tools/github/git-for-dummies-but-getting-smarter.md"
+      "en/ecosystem/Tools/🛠GitHub/github-app-bot.md": "en/tools/github/github-app-bot.md"
+      "en/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md": "en/tools/github/how-to-quickly-understand-project.md"
+      "en/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md": "en/tools/github/how-to-remove-secrets-from-config.md"
+      "en/ecosystem/Tools/🛠GitHub/index.md": "en/tools/github/index.md"
+      "en/ecosystem/Tools/🛠GitHub/transition-to-organization.md": "en/tools/github/transition-to-organization.md"
+      "en/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md": "en/tools/gpt-curators/meta/rules.md"
+      "en/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md": "en/tools/gpt-curators/meta/knowledge-base.md"
+      "en/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md": "en/tools/gpt-curators/meta/style-guide.md"
+      "en/ecosystem/Tools/🤖 Telegram_Bots/index.md": "en/tools/telegram-bots/index.md"
+      "en/ecosystem/Tools/🧭Codex/codex-interaction-format.md": "en/tools/codex/codex-interaction-format.md"
+      "en/ecosystem/Tools/🧭Codex/codex-manifest.md": "en/tools/codex/codex-manifest.md"
+      "en/ecosystem/Tools/🧭Codex/codex-skills.md": "en/tools/codex/codex-skills.md"
+      "en/ecosystem/Tools/🧭Codex/create-epic-issue-release.md": "en/tools/codex/create-epic-issue-release.md"
+      "en/ecosystem/Tools/🧭Codex/index.md": "en/tools/codex/index.md"
+      "en/ecosystem/Tools/🧭Codex/integration-with-github.md": "en/tools/codex/integration-with-github.md"
+      "en/ecosystem/Tools/🧭Codex/interaction-with-codex.md": "en/tools/codex/interaction-with-codex.md"
+      "en/ecosystem/Tools/🧭Codex/team-os-mcp.md": "en/tools/codex/team-os-mcp.md"
+      "en/ecosystem/callouts-spec.md": "en/knowledge/callouts-spec.md"
+      "en/ecosystem/glossary.md": "en/knowledge/glossary.md"
+      "en/governance/domains-and-decision-rights.md": "en/management-layer/domains-and-decision-rights.md"
+      "en/governance/management-strategy.md": "en/management-layer/management-strategy.md"
+      "en/governance/meaningful-participation.md": "en/management-layer/meaningful-participation.md"
+      "en/governance/team-os.md": "en/management-layer/team-os/governance/index.md"
+      "en/governance/team-os/access.md": "en/management-layer/team-os/governance/access.md"
+      "en/governance/team-os/profile-data-and-visibility.md": "en/management-layer/team-os/governance/profile-data-and-visibility.md"
+      "en/governance/team-os/public-profile.md": "en/management-layer/team-os/governance/public-profile.md"
+      "en/product-market/business-model-and-portfolio.md": "en/brand-and-communications/product-market/business-model-and-portfolio.md"
+      "en/product-market/business-thesis.md": "en/brand-and-communications/product-market/business-thesis.md"
+      "en/product-market/index.md": "en/brand-and-communications/product-market/index.md"
+      "en/product-market/market-operations.md": "en/brand-and-communications/product-market/market-operations.md"
+      "en/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "en/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
+      "en/product-market/product-catalog.md": "en/brand-and-communications/product-market/product-catalog.md"
+      "en/product-market/product-documentation-model.md": "en/brand-and-communications/product-market/product-documentation-model.md"
+      "en/product-market/product-object-model.md": "en/brand-and-communications/product-market/product-object-model.md"
+      "en/product-market/value-proposition-standard.md": "en/brand-and-communications/product-market/value-proposition-standard.md"
+      "fi/ecosystem/DET/5-characteristics-of-det-as-culture.md": "fi/institutional-layer/det/5-characteristics-of-det-as-culture.md"
+      "fi/ecosystem/DET/Concept/Concept-DET.md": "fi/institutional-layer/det/concept/concept-det.md"
+      "fi/ecosystem/DET/Concept/index.md": "fi/institutional-layer/det/concept/index.md"
+      "fi/ecosystem/DET/Concept/overcoming.md": "fi/institutional-layer/det/concept/overcoming.md"
+      "fi/ecosystem/DET/Concept/personality-types.md": "fi/institutional-layer/det/concept/personality-types.md"
+      "fi/ecosystem/DET/Concept/shadow-and-light.md": "fi/institutional-layer/det/concept/shadow-and-light.md"
+      "fi/ecosystem/DET/at-the-crossroads-of-three-worlds.md": "fi/institutional-layer/det/at-the-crossroads-of-three-worlds.md"
+      "fi/ecosystem/DET/index.md": "fi/institutional-layer/det/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md": "fi/technology/platform/communications/telegram/usercontrol/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md": "fi/technology/platform/communications/telegram/account-manager-philosophy.md"
+      "fi/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md": "fi/technology/platform/communications/telegram/account-manager.md"
+      "fi/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md": "fi/technology/platform/communications/telegram/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md": "fi/technology/platform/communications/website/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md": "fi/infrastructure/knowledge-substrate/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md": "fi/management-layer/team-os/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md": "fi/management-layer/team-os/plugin.md"
+      "fi/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md": "fi/management-layer/team-os/web.md"
+      "fi/ecosystem/DETai/Platform_DETai/R&D/index.md": "fi/technology/platform/research-and-development/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md": "fi/technology/platform/communications/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md": "fi/technology/platform/dormant-projects/gpt-prompt-engine/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "fi/technology/platform/dormant-projects/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "fi/technology/platform/dormant-projects/news-agent/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/index.md": "fi/technology/platform/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "fi/technology/platform/products/detai-matrix/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "fi/technology/platform/products/detai-pulse/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "fi/technology/platform/products/francis-galton/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/index.md": "fi/technology/platform/products/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "fi/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md": "fi/technology/platform/products/psychology-in-quotes/collection-and-plans.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md": "fi/technology/platform/products/psychology-in-quotes/getting-started.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "fi/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "fi/technology/platform/products/psychology-in-quotes/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "fi/technology/platform/products/psykhe-ai/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "fi/technology/platform/technology-foundation/index.md"
+      "fi/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md": "fi/technology/uli/philosophy/bee-roles.md"
+      "fi/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "fi/technology/uli/philosophy/index.md"
+      "fi/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "fi/technology/uli/philosophy/why-uli-standards-matter.md"
+      "fi/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "fi/technology/uli/production/documentation-architecture.md"
+      "fi/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning.md": "fi/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning.md"
+      "fi/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md": "fi/technology/uli/production/index.md"
+      "fi/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md": "fi/technology/uli/production/project-cycle-methodology.md"
+      "fi/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md": "fi/technology/uli/production/production-cycle.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md": "fi/technology/uli/standards/readme-template.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md": "fi/technology/uli/standards/telegram-bots/configuration-standard.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md": "fi/technology/uli/standards/telegram-bots/index.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md": "fi/technology/uli/standards/telegram-bots/language-handover.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md": "fi/technology/uli/standards/telegram-bots/policy-layer.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md": "fi/technology/uli/standards/telegram-bots/telegram-bot-creation-standard.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md": "fi/technology/uli/standards/project-versioning.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md": "fi/technology/uli/standards/index.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md": "fi/technology/uli/standards/mosaic-approach.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md": "fi/technology/uli/standards/release-fixation-standard.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/testing-feedback-loop-standard.md": "fi/technology/uli/standards/testing-feedback-loop-standard.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md": "fi/technology/uli/standards/work-model/index.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md": "fi/technology/uli/standards/work-model/issue-contract.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md": "fi/technology/uli/standards/work-model/sub-issue-contract.md"
+      "fi/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md": "fi/technology/uli/standards/work-model/work-model.md"
+      "fi/ecosystem/DETai/U.L.I/index.md": "fi/technology/uli/index.md"
+      "fi/ecosystem/DETai/index.md": "fi/ecosystem/index.md"
+      "fi/ecosystem/DETai/table-of-resources.md": "fi/management-layer/resource-table.md"
+      "fi/ecosystem/Governance/BHAG.md": "fi/governance/bhag.md"
+      "fi/ecosystem/Governance/Constitution.md": "fi/governance/constitution.md"
+      "fi/ecosystem/Governance/Mission.md": "fi/governance/mission.md"
+      "fi/ecosystem/Governance/Values.md": "fi/governance/values.md"
+      "fi/ecosystem/Governance/Vision.md": "fi/governance/vision.md"
+      "fi/ecosystem/Governance/index.md": "fi/governance/index.md"
+      "fi/ecosystem/Infrastructure/Infrastructure_Principles.md": "fi/infrastructure/principles.md"
+      "fi/ecosystem/Infrastructure/Knowledge_Substrate/index.md": "fi/infrastructure/knowledge-substrate/index.md"
+      "fi/ecosystem/Infrastructure/ecosystem-runtime/index.md": "fi/infrastructure/ecosystem-runtime/index.md"
+      "fi/ecosystem/Infrastructure/execution-environments/index.md": "fi/infrastructure/execution-environments/index.md"
+      "fi/ecosystem/Infrastructure/home-lab/architecture.md": "fi/infrastructure/home-lab/architecture.md"
+      "fi/ecosystem/Infrastructure/home-lab/index.md": "fi/infrastructure/home-lab/index.md"
+      "fi/ecosystem/Infrastructure/home-lab/territory-psi-edge.md": "fi/infrastructure/home-lab/territory-psi-edge.md"
+      "fi/ecosystem/Infrastructure/index.md": "fi/infrastructure/index.md"
+      "fi/ecosystem/Infrastructure/infrastructure-systems/index.md": "fi/infrastructure/infrastructure-systems/index.md"
+      "fi/ecosystem/Infrastructure/intelligence-runtime/index.md": "fi/infrastructure/intelligence-runtime/index.md"
+      "fi/ecosystem/Infrastructure/🌍 Сервера/index.md": "fi/infrastructure/servers/index.md"
+      "fi/ecosystem/Management_layer/1_Philosophy/Participation_principles.md": "fi/management-layer/participation-principles.md"
+      "fi/ecosystem/Management_layer/1_Philosophy/index.md": "fi/management-layer/principles/index.md"
+      "fi/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "fi/technology/versioning.md"
+      "fi/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "fi/management-layer/distributed-architecture.md"
+      "fi/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "fi/knowledge/executable-interface.md"
+      "fi/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "fi/management-layer/architecture/index.md"
+      "fi/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "fi/management-layer/work-levels.md"
+      "fi/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "fi/management-layer/management-model.md"
+      "fi/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md": "fi/technology/versioning.md"
+      "fi/ecosystem/Management_layer/3_Technical_Standards/index.md": "fi/management-layer/standards/index.md"
+      "fi/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "fi/knowledge/metadata-policy.md"
+      "fi/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "fi/knowledge/documentation-architecture.md"
+      "fi/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "fi/knowledge/documentation-functions.md"
+      "fi/ecosystem/Management_layer/Docs-Ecosystem/index.md": "fi/knowledge/documentation-governance/index.md"
+      "fi/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "fi/knowledge/navigation-architecture.md"
+      "fi/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "fi/knowledge/metadata-schema-registry.md"
+      "fi/ecosystem/Management_layer/Strategic_Development/index.md": "fi/management-layer/development-strategy/index.md"
+      "fi/ecosystem/Management_layer/ecosystem-resource.md": "fi/management-layer/ecosystem-resources.md"
+      "fi/ecosystem/Management_layer/index.md": "fi/management-layer/index.md"
+      "fi/ecosystem/STORYTELLING/index.md": "fi/technology/platform/communications/storytelling/index.md"
+      "fi/ecosystem/STORYTELLING/technology-foundation.md": "fi/technology/platform/communications/storytelling/technology-foundation.md"
+      "fi/ecosystem/Tools/FileZilla/filezilla-settings.md": "fi/tools/filezilla/filezilla-settings.md"
+      "fi/ecosystem/Tools/FileZilla/index.md": "fi/tools/filezilla/index.md"
+      "fi/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "fi/tools/linear/github-linear-automation-architecture.md"
+      "fi/ecosystem/Tools/Linear/index.md": "fi/tools/linear/index.md"
+      "fi/ecosystem/Tools/Obsidian/index.md": "fi/tools/obsidian/index.md"
+      "fi/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md": "fi/tools/vs-code/git-github-vscode-workflow.md"
+      "fi/ecosystem/Tools/VS_Code/index.md": "fi/tools/vs-code/index.md"
+      "fi/ecosystem/Tools/VS_Code/installation-and-initial-setup.md": "fi/tools/vs-code/installation-and-initial-setup.md"
+      "fi/ecosystem/Tools/index.md": "fi/tools/index.md"
+      "fi/ecosystem/Tools/Ⓜ️Make/index.md": "fi/tools/make/index.md"
+      "fi/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md": "fi/tools/clickup/clickup-structure-principles.md"
+      "fi/ecosystem/Tools/🎯ClickUp/index.md": "fi/tools/clickup/index.md"
+      "fi/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md": "fi/tools/airtable/adr-2026-02-11.md"
+      "fi/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md": "fi/tools/airtable/airtable-in-detai-ecosystem.md"
+      "fi/ecosystem/Tools/📦 Airtable/index.md": "fi/tools/airtable/index.md"
+      "fi/ecosystem/Tools/🛠GitHub/connect-repository.md": "fi/tools/github/connect-repository.md"
+      "fi/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md": "fi/tools/github/git-for-dummies-but-getting-smarter.md"
+      "fi/ecosystem/Tools/🛠GitHub/github-app-bot.md": "fi/tools/github/github-app-bot.md"
+      "fi/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md": "fi/tools/github/how-to-quickly-understand-project.md"
+      "fi/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md": "fi/tools/github/how-to-remove-secrets-from-config.md"
+      "fi/ecosystem/Tools/🛠GitHub/index.md": "fi/tools/github/index.md"
+      "fi/ecosystem/Tools/🛠GitHub/transition-to-organization.md": "fi/tools/github/transition-to-organization.md"
+      "fi/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md": "fi/tools/gpt-curators/meta/rules.md"
+      "fi/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md": "fi/tools/gpt-curators/meta/knowledge-base.md"
+      "fi/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md": "fi/tools/gpt-curators/meta/style-guide.md"
+      "fi/ecosystem/Tools/🤖 Telegram_Bots/index.md": "fi/tools/telegram-bots/index.md"
+      "fi/ecosystem/Tools/🧭Codex/codex-interaction-format.md": "fi/tools/codex/codex-interaction-format.md"
+      "fi/ecosystem/Tools/🧭Codex/codex-manifest.md": "fi/tools/codex/codex-manifest.md"
+      "fi/ecosystem/Tools/🧭Codex/codex-skills.md": "fi/tools/codex/codex-skills.md"
+      "fi/ecosystem/Tools/🧭Codex/create-epic-issue-release.md": "fi/tools/codex/create-epic-issue-release.md"
+      "fi/ecosystem/Tools/🧭Codex/index.md": "fi/tools/codex/index.md"
+      "fi/ecosystem/Tools/🧭Codex/integration-with-github.md": "fi/tools/codex/integration-with-github.md"
+      "fi/ecosystem/Tools/🧭Codex/interaction-with-codex.md": "fi/tools/codex/interaction-with-codex.md"
+      "fi/ecosystem/Tools/🧭Codex/team-os-mcp.md": "fi/tools/codex/team-os-mcp.md"
+      "fi/ecosystem/callouts-spec.md": "fi/knowledge/callouts-spec.md"
+      "fi/ecosystem/glossary.md": "fi/knowledge/glossary.md"
+      "fi/governance/domains-and-decision-rights.md": "fi/management-layer/domains-and-decision-rights.md"
+      "fi/governance/management-strategy.md": "fi/management-layer/management-strategy.md"
+      "fi/governance/meaningful-participation.md": "fi/management-layer/meaningful-participation.md"
+      "fi/governance/team-os.md": "fi/management-layer/team-os/governance/index.md"
+      "fi/governance/team-os/access.md": "fi/management-layer/team-os/governance/access.md"
+      "fi/governance/team-os/profile-data-and-visibility.md": "fi/management-layer/team-os/governance/profile-data-and-visibility.md"
+      "fi/governance/team-os/public-profile.md": "fi/management-layer/team-os/governance/public-profile.md"
+      "fi/product-market/business-model-and-portfolio.md": "fi/brand-and-communications/product-market/business-model-and-portfolio.md"
+      "fi/product-market/business-thesis.md": "fi/brand-and-communications/product-market/business-thesis.md"
+      "fi/product-market/index.md": "fi/brand-and-communications/product-market/index.md"
+      "fi/product-market/market-operations.md": "fi/brand-and-communications/product-market/market-operations.md"
+      "fi/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "fi/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
+      "fi/product-market/product-catalog.md": "fi/brand-and-communications/product-market/product-catalog.md"
+      "fi/product-market/product-documentation-model.md": "fi/brand-and-communications/product-market/product-documentation-model.md"
+      "fi/product-market/product-object-model.md": "fi/brand-and-communications/product-market/product-object-model.md"
+      "fi/product-market/value-proposition-standard.md": "fi/brand-and-communications/product-market/value-proposition-standard.md"
+      "ru/architecture/cross-cutting-systems.md": "ru/ecosystem/index.md"
+      "ru/architecture/ecosystem-canon.md": "ru/ecosystem/index.md"
+      "ru/architecture/index.md": "ru/ecosystem/index.md"
+      "ru/architecture/ontology.md": "ru/knowledge/glossary.md"
+      "ru/architecture/source-of-truth-map.md": "ru/management-layer/management-strategy.md"
+      "ru/architecture/three-perspective-consensus.md": "ru/ecosystem/index.md"
+      "ru/architecture/umbrella-brand.md": "ru/brand-and-communications/umbrella-brand.md"
+      "ru/ecosystem/DET/5-characteristics-of-det-as-culture.md": "ru/institutional-layer/det/5-characteristics-of-det-as-culture.md"
+      "ru/ecosystem/DET/Concept/Concept-DET.md": "ru/institutional-layer/det/concept/concept-det.md"
+      "ru/ecosystem/DET/Concept/index.md": "ru/institutional-layer/det/concept/index.md"
+      "ru/ecosystem/DET/Concept/overcoming.md": "ru/institutional-layer/det/concept/overcoming.md"
+      "ru/ecosystem/DET/Concept/personality-types.md": "ru/institutional-layer/det/concept/personality-types.md"
+      "ru/ecosystem/DET/Concept/shadow-and-light.md": "ru/institutional-layer/det/concept/shadow-and-light.md"
+      "ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md": "ru/institutional-layer/det/at-the-crossroads-of-three-worlds.md"
+      "ru/ecosystem/DET/index.md": "ru/institutional-layer/det/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md": "ru/technology/platform/products/francis-galton/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md": "ru/technology/platform/products/detai-matrix/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-pulse/index.md": "ru/technology/platform/products/detai-pulse/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E1-Core/🌀Psykhḗ AI/index.md": "ru/technology/platform/products/psykhe-ai/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md": "ru/technology/platform/communications/telegram/usercontrol/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md": "ru/technology/platform/communications/telegram/account-manager-philosophy.md"
+      "ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md": "ru/technology/platform/communications/telegram/account-manager.md"
+      "ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md": "ru/technology/platform/communications/telegram/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E2-Brand/news-agent/index.md": "ru/technology/platform/dormant-projects/news-agent/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E2-Brand/psychology-in-quotes/index.md": "ru/technology/platform/products/psychology-in-quotes/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md": "ru/technology/platform/communications/website/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md": "ru/infrastructure/knowledge-substrate/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E3-Infra/gpt_promt_engine/index.md": "ru/technology/platform/dormant-projects/gpt-prompt-engine/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md": "ru/management-layer/team-os/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md": "ru/management-layer/team-os/plugin.md"
+      "ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md": "ru/management-layer/team-os/web.md"
+      "ru/ecosystem/DETai/Platform_DETai/R&D/index.md": "ru/technology/platform/research-and-development/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md": "ru/technology/platform/communications/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md": "ru/technology/platform/dormant-projects/gpt-prompt-engine/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "ru/technology/platform/dormant-projects/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "ru/technology/platform/dormant-projects/news-agent/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/index.md": "ru/technology/platform/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "ru/technology/platform/products/detai-matrix/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "ru/technology/platform/products/detai-pulse/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "ru/technology/platform/products/francis-galton/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/index.md": "ru/technology/platform/products/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "ru/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md": "ru/technology/platform/products/psychology-in-quotes/collection-and-plans.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md": "ru/technology/platform/products/psychology-in-quotes/getting-started.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "ru/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "ru/technology/platform/products/psychology-in-quotes/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "ru/technology/platform/products/psykhe-ai/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "ru/technology/platform/technology-foundation/index.md"
+      "ru/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md": "ru/technology/uli/philosophy/bee-roles.md"
+      "ru/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "ru/technology/uli/philosophy/index.md"
+      "ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "ru/technology/uli/philosophy/why-uli-standards-matter.md"
+      "ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "ru/technology/uli/production/documentation-architecture.md"
+      "ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning.md": "ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning.md"
+      "ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md": "ru/technology/uli/production/index.md"
+      "ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md": "ru/technology/uli/production/project-cycle-methodology.md"
+      "ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md": "ru/technology/uli/production/production-cycle.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md": "ru/technology/uli/standards/readme-template.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md": "ru/technology/uli/standards/telegram-bots/configuration-standard.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md": "ru/technology/uli/standards/telegram-bots/index.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md": "ru/technology/uli/standards/telegram-bots/language-handover.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md": "ru/technology/uli/standards/telegram-bots/policy-layer.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md": "ru/technology/uli/standards/telegram-bots/telegram-bot-creation-standard.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme.md": "ru/technology/uli/standards/telegram-bots/index.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md": "ru/technology/uli/standards/project-versioning.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md": "ru/technology/uli/standards/index.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md": "ru/technology/uli/standards/mosaic-approach.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md": "ru/technology/uli/standards/release-fixation-standard.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/testing-feedback-loop-standard.md": "ru/technology/uli/standards/testing-feedback-loop-standard.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md": "ru/technology/uli/standards/work-model/index.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md": "ru/technology/uli/standards/work-model/issue-contract.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md": "ru/technology/uli/standards/work-model/sub-issue-contract.md"
+      "ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md": "ru/technology/uli/standards/work-model/work-model.md"
+      "ru/ecosystem/DETai/U.L.I/index.md": "ru/technology/uli/index.md"
+      "ru/ecosystem/DETai/index.md": "ru/ecosystem/index.md"
+      "ru/ecosystem/DETai/logic-of-echelons.md": "ru/technology/logic-of-echelons.md"
+      "ru/ecosystem/DETai/table-of-resources.md": "ru/management-layer/resource-table.md"
+      "ru/ecosystem/Governance/BHAG.md": "ru/governance/bhag.md"
+      "ru/ecosystem/Governance/Constitution.md": "ru/governance/constitution.md"
+      "ru/ecosystem/Governance/Mission.md": "ru/governance/mission.md"
+      "ru/ecosystem/Governance/Values.md": "ru/governance/values.md"
+      "ru/ecosystem/Governance/Vision.md": "ru/governance/vision.md"
+      "ru/ecosystem/Governance/index.md": "ru/governance/index.md"
+      "ru/ecosystem/Infrastructure/Infrastructure_Principles.md": "ru/infrastructure/principles.md"
+      "ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md": "ru/infrastructure/knowledge-substrate/index.md"
+      "ru/ecosystem/Infrastructure/ecosystem-runtime/index.md": "ru/infrastructure/ecosystem-runtime/index.md"
+      "ru/ecosystem/Infrastructure/execution-environments/index.md": "ru/infrastructure/execution-environments/index.md"
+      "ru/ecosystem/Infrastructure/home-lab/architecture.md": "ru/infrastructure/home-lab/architecture.md"
+      "ru/ecosystem/Infrastructure/home-lab/index.md": "ru/infrastructure/home-lab/index.md"
+      "ru/ecosystem/Infrastructure/home-lab/territory-psi-edge.md": "ru/infrastructure/home-lab/territory-psi-edge.md"
+      "ru/ecosystem/Infrastructure/index.md": "ru/infrastructure/index.md"
+      "ru/ecosystem/Infrastructure/infrastructure-systems/index.md": "ru/infrastructure/infrastructure-systems/index.md"
+      "ru/ecosystem/Infrastructure/intelligence-runtime/index.md": "ru/infrastructure/intelligence-runtime/index.md"
+      "ru/ecosystem/Infrastructure/🌍 Сервера/index.md": "ru/infrastructure/servers/index.md"
+      "ru/ecosystem/Management_layer/1_Philosophy/Participation_principles.md": "ru/management-layer/participation-principles.md"
+      "ru/ecosystem/Management_layer/1_Philosophy/index.md": "ru/management-layer/principles/index.md"
+      "ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "ru/technology/versioning.md"
+      "ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "ru/management-layer/distributed-architecture.md"
+      "ru/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "ru/knowledge/executable-interface.md"
+      "ru/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "ru/management-layer/architecture/index.md"
+      "ru/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "ru/management-layer/work-levels.md"
+      "ru/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "ru/management-layer/management-model.md"
+      "ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md": "ru/technology/versioning.md"
+      "ru/ecosystem/Management_layer/3_Technical_Standards/index.md": "ru/management-layer/standards/index.md"
+      "ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "ru/knowledge/metadata-policy.md"
+      "ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "ru/knowledge/documentation-architecture.md"
+      "ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "ru/knowledge/documentation-functions.md"
+      "ru/ecosystem/Management_layer/Docs-Ecosystem/index.md": "ru/knowledge/documentation-governance/index.md"
+      "ru/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "ru/knowledge/navigation-architecture.md"
+      "ru/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "ru/knowledge/metadata-schema-registry.md"
+      "ru/ecosystem/Management_layer/Strategic_Development/index.md": "ru/management-layer/development-strategy/index.md"
+      "ru/ecosystem/Management_layer/ecosystem-resource.md": "ru/management-layer/ecosystem-resources.md"
+      "ru/ecosystem/Management_layer/index.md": "ru/management-layer/index.md"
+      "ru/ecosystem/STORYTELLING/index.md": "ru/technology/platform/communications/storytelling/index.md"
+      "ru/ecosystem/STORYTELLING/technology-foundation.md": "ru/technology/platform/communications/storytelling/technology-foundation.md"
+      "ru/ecosystem/Tools/FileZilla/filezilla-settings.md": "ru/tools/filezilla/filezilla-settings.md"
+      "ru/ecosystem/Tools/FileZilla/index.md": "ru/tools/filezilla/index.md"
+      "ru/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "ru/tools/linear/github-linear-automation-architecture.md"
+      "ru/ecosystem/Tools/Linear/index.md": "ru/tools/linear/index.md"
+      "ru/ecosystem/Tools/Obsidian/index.md": "ru/tools/obsidian/index.md"
+      "ru/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md": "ru/tools/vs-code/git-github-vscode-workflow.md"
+      "ru/ecosystem/Tools/VS_Code/index.md": "ru/tools/vs-code/index.md"
+      "ru/ecosystem/Tools/VS_Code/installation-and-initial-setup.md": "ru/tools/vs-code/installation-and-initial-setup.md"
+      "ru/ecosystem/Tools/index.md": "ru/tools/index.md"
+      "ru/ecosystem/Tools/Ⓜ️Make/index.md": "ru/tools/make/index.md"
+      "ru/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md": "ru/tools/clickup/clickup-structure-principles.md"
+      "ru/ecosystem/Tools/🎯ClickUp/index.md": "ru/tools/clickup/index.md"
+      "ru/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md": "ru/tools/airtable/adr-2026-02-11.md"
+      "ru/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md": "ru/tools/airtable/airtable-in-detai-ecosystem.md"
+      "ru/ecosystem/Tools/📦 Airtable/index.md": "ru/tools/airtable/index.md"
+      "ru/ecosystem/Tools/🛠GitHub/connect-repository.md": "ru/tools/github/connect-repository.md"
+      "ru/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md": "ru/tools/github/git-for-dummies-but-getting-smarter.md"
+      "ru/ecosystem/Tools/🛠GitHub/github-app-bot.md": "ru/tools/github/github-app-bot.md"
+      "ru/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md": "ru/tools/github/how-to-quickly-understand-project.md"
+      "ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md": "ru/tools/github/how-to-remove-secrets-from-config.md"
+      "ru/ecosystem/Tools/🛠GitHub/index.md": "ru/tools/github/index.md"
+      "ru/ecosystem/Tools/🛠GitHub/transition-to-organization.md": "ru/tools/github/transition-to-organization.md"
+      "ru/ecosystem/Tools/🤖 GPT/index.md": "ru/tools/codex/index.md"
+      "ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md": "ru/tools/gpt-curators/meta/rules.md"
+      "ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md": "ru/tools/gpt-curators/meta/knowledge-base.md"
+      "ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md": "ru/tools/gpt-curators/meta/style-guide.md"
+      "ru/ecosystem/Tools/🤖 Telegram_Bots/index.md": "ru/tools/telegram-bots/index.md"
+      "ru/ecosystem/Tools/🧭Codex/codex-interaction-format.md": "ru/tools/codex/codex-interaction-format.md"
+      "ru/ecosystem/Tools/🧭Codex/codex-manifest.md": "ru/tools/codex/codex-manifest.md"
+      "ru/ecosystem/Tools/🧭Codex/codex-skills.md": "ru/tools/codex/codex-skills.md"
+      "ru/ecosystem/Tools/🧭Codex/create-epic-issue-release.md": "ru/tools/codex/create-epic-issue-release.md"
+      "ru/ecosystem/Tools/🧭Codex/index.md": "ru/tools/codex/index.md"
+      "ru/ecosystem/Tools/🧭Codex/integration-with-github.md": "ru/tools/codex/integration-with-github.md"
+      "ru/ecosystem/Tools/🧭Codex/interaction-with-codex.md": "ru/tools/codex/interaction-with-codex.md"
+      "ru/ecosystem/Tools/🧭Codex/team-os-mcp.md": "ru/tools/codex/team-os-mcp.md"
+      "ru/ecosystem/callouts-spec.md": "ru/knowledge/callouts-spec.md"
+      "ru/ecosystem/glossary.md": "ru/knowledge/glossary.md"
+      "ru/governance/brand-and-communications.md": "ru/brand-and-communications/index.md"
+      "ru/governance/domains-and-decision-rights.md": "ru/management-layer/domains-and-decision-rights.md"
+      "ru/governance/management-strategy.md": "ru/management-layer/management-strategy.md"
+      "ru/governance/meaningful-participation.md": "ru/management-layer/meaningful-participation.md"
+      "ru/governance/product-market-cycle.md": "ru/brand-and-communications/product-market-cycle.md"
+      "ru/governance/team-os.md": "ru/management-layer/team-os/governance/index.md"
+      "ru/governance/team-os/access.md": "ru/management-layer/team-os/governance/access.md"
+      "ru/governance/team-os/profile-data-and-visibility.md": "ru/management-layer/team-os/governance/profile-data-and-visibility.md"
+      "ru/governance/team-os/public-profile.md": "ru/management-layer/team-os/governance/public-profile.md"
+      "ru/governance/umbrella-brand.md": "ru/brand-and-communications/umbrella-brand.md"
+      "ru/method/education.md": "ru/institutional-layer/education.md"
+      "ru/method/index.md": "ru/institutional-layer/index.md"
+      "ru/method/institutional-layer.md": "ru/institutional-layer/institutional-layer.md"
+      "ru/method/psychotherapy-and-supervision.md": "ru/institutional-layer/psychotherapy-and-supervision.md"
+      "ru/method/research.md": "ru/institutional-layer/research.md"
+      "ru/product-market/business-model-and-portfolio.md": "ru/brand-and-communications/product-market/business-model-and-portfolio.md"
+      "ru/product-market/business-thesis.md": "ru/brand-and-communications/product-market/business-thesis.md"
+      "ru/product-market/index.md": "ru/brand-and-communications/product-market/index.md"
+      "ru/product-market/market-operations.md": "ru/brand-and-communications/product-market/market-operations.md"
+      "ru/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "ru/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
+      "ru/product-market/product-catalog.md": "ru/brand-and-communications/product-market/product-catalog.md"
+      "ru/product-market/product-documentation-model.md": "ru/brand-and-communications/product-market/product-documentation-model.md"
+      "ru/product-market/product-object-model.md": "ru/brand-and-communications/product-market/product-object-model.md"
+      "ru/product-market/value-proposition-standard.md": "ru/brand-and-communications/product-market/value-proposition-standard.md"
+      "ru/technology/system-interface.md": "ru/technology/index.md"
+      "zh/ecosystem/DET/5-characteristics-of-det-as-culture.md": "zh/institutional-layer/det/5-characteristics-of-det-as-culture.md"
+      "zh/ecosystem/DET/Concept/Concept-DET.md": "zh/institutional-layer/det/concept/concept-det.md"
+      "zh/ecosystem/DET/Concept/index.md": "zh/institutional-layer/det/concept/index.md"
+      "zh/ecosystem/DET/Concept/overcoming.md": "zh/institutional-layer/det/concept/overcoming.md"
+      "zh/ecosystem/DET/Concept/personality-types.md": "zh/institutional-layer/det/concept/personality-types.md"
+      "zh/ecosystem/DET/Concept/shadow-and-light.md": "zh/institutional-layer/det/concept/shadow-and-light.md"
+      "zh/ecosystem/DET/at-the-crossroads-of-three-worlds.md": "zh/institutional-layer/det/at-the-crossroads-of-three-worlds.md"
+      "zh/ecosystem/DET/index.md": "zh/institutional-layer/det/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md": "zh/technology/platform/communications/telegram/usercontrol/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md": "zh/technology/platform/communications/telegram/account-manager-philosophy.md"
+      "zh/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md": "zh/technology/platform/communications/telegram/account-manager.md"
+      "zh/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md": "zh/technology/platform/communications/telegram/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md": "zh/technology/platform/communications/website/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/E3-Infra/Knowledge_Substrate/index.md": "zh/infrastructure/knowledge-substrate/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md": "zh/management-layer/team-os/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md": "zh/management-layer/team-os/plugin.md"
+      "zh/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md": "zh/management-layer/team-os/web.md"
+      "zh/ecosystem/DETai/Platform_DETai/R&D/index.md": "zh/technology/platform/research-and-development/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md": "zh/technology/platform/communications/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md": "zh/technology/platform/dormant-projects/gpt-prompt-engine/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/dormant-projects/index.md": "zh/technology/platform/dormant-projects/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md": "zh/technology/platform/dormant-projects/news-agent/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/index.md": "zh/technology/platform/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md": "zh/technology/platform/products/detai-matrix/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md": "zh/technology/platform/products/detai-pulse/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md": "zh/technology/platform/products/francis-galton/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/index.md": "zh/technology/platform/products/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md": "zh/technology/platform/products/psychology-in-quotes/architecture-and-trust.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md": "zh/technology/platform/products/psychology-in-quotes/collection-and-plans.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md": "zh/technology/platform/products/psychology-in-quotes/getting-started.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "zh/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "zh/technology/platform/products/psychology-in-quotes/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "zh/technology/platform/products/psykhe-ai/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "zh/technology/platform/technology-foundation/index.md"
+      "zh/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md": "zh/technology/uli/philosophy/bee-roles.md"
+      "zh/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "zh/technology/uli/philosophy/index.md"
+      "zh/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "zh/technology/uli/philosophy/why-uli-standards-matter.md"
+      "zh/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "zh/technology/uli/production/documentation-architecture.md"
+      "zh/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning.md": "zh/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning.md"
+      "zh/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md": "zh/technology/uli/production/index.md"
+      "zh/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md": "zh/technology/uli/production/project-cycle-methodology.md"
+      "zh/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md": "zh/technology/uli/production/production-cycle.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md": "zh/technology/uli/standards/readme-template.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md": "zh/technology/uli/standards/telegram-bots/configuration-standard.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md": "zh/technology/uli/standards/telegram-bots/index.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md": "zh/technology/uli/standards/telegram-bots/language-handover.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md": "zh/technology/uli/standards/telegram-bots/policy-layer.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md": "zh/technology/uli/standards/telegram-bots/telegram-bot-creation-standard.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md": "zh/technology/uli/standards/project-versioning.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md": "zh/technology/uli/standards/index.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md": "zh/technology/uli/standards/mosaic-approach.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md": "zh/technology/uli/standards/release-fixation-standard.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/testing-feedback-loop-standard.md": "zh/technology/uli/standards/testing-feedback-loop-standard.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md": "zh/technology/uli/standards/work-model/index.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md": "zh/technology/uli/standards/work-model/issue-contract.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md": "zh/technology/uli/standards/work-model/sub-issue-contract.md"
+      "zh/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md": "zh/technology/uli/standards/work-model/work-model.md"
+      "zh/ecosystem/DETai/U.L.I/index.md": "zh/technology/uli/index.md"
+      "zh/ecosystem/DETai/index.md": "zh/ecosystem/index.md"
+      "zh/ecosystem/DETai/table-of-resources.md": "zh/management-layer/resource-table.md"
+      "zh/ecosystem/Governance/BHAG.md": "zh/governance/bhag.md"
+      "zh/ecosystem/Governance/Constitution.md": "zh/governance/constitution.md"
+      "zh/ecosystem/Governance/Mission.md": "zh/governance/mission.md"
+      "zh/ecosystem/Governance/Values.md": "zh/governance/values.md"
+      "zh/ecosystem/Governance/Vision.md": "zh/governance/vision.md"
+      "zh/ecosystem/Governance/index.md": "zh/governance/index.md"
+      "zh/ecosystem/Infrastructure/Infrastructure_Principles.md": "zh/infrastructure/principles.md"
+      "zh/ecosystem/Infrastructure/Knowledge_Substrate/index.md": "zh/infrastructure/knowledge-substrate/index.md"
+      "zh/ecosystem/Infrastructure/ecosystem-runtime/index.md": "zh/infrastructure/ecosystem-runtime/index.md"
+      "zh/ecosystem/Infrastructure/execution-environments/index.md": "zh/infrastructure/execution-environments/index.md"
+      "zh/ecosystem/Infrastructure/home-lab/architecture.md": "zh/infrastructure/home-lab/architecture.md"
+      "zh/ecosystem/Infrastructure/home-lab/index.md": "zh/infrastructure/home-lab/index.md"
+      "zh/ecosystem/Infrastructure/home-lab/territory-psi-edge.md": "zh/infrastructure/home-lab/territory-psi-edge.md"
+      "zh/ecosystem/Infrastructure/index.md": "zh/infrastructure/index.md"
+      "zh/ecosystem/Infrastructure/infrastructure-systems/index.md": "zh/infrastructure/infrastructure-systems/index.md"
+      "zh/ecosystem/Infrastructure/intelligence-runtime/index.md": "zh/infrastructure/intelligence-runtime/index.md"
+      "zh/ecosystem/Infrastructure/🌍 Сервера/index.md": "zh/infrastructure/servers/index.md"
+      "zh/ecosystem/Management_layer/1_Philosophy/Participation_principles.md": "zh/management-layer/participation-principles.md"
+      "zh/ecosystem/Management_layer/1_Philosophy/index.md": "zh/management-layer/principles/index.md"
+      "zh/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "zh/technology/versioning.md"
+      "zh/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "zh/management-layer/distributed-architecture.md"
+      "zh/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "zh/knowledge/executable-interface.md"
+      "zh/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "zh/management-layer/architecture/index.md"
+      "zh/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "zh/management-layer/work-levels.md"
+      "zh/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "zh/management-layer/management-model.md"
+      "zh/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md": "zh/technology/versioning.md"
+      "zh/ecosystem/Management_layer/3_Technical_Standards/index.md": "zh/management-layer/standards/index.md"
+      "zh/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "zh/knowledge/metadata-policy.md"
+      "zh/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "zh/knowledge/documentation-architecture.md"
+      "zh/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "zh/knowledge/documentation-functions.md"
+      "zh/ecosystem/Management_layer/Docs-Ecosystem/index.md": "zh/knowledge/documentation-governance/index.md"
+      "zh/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "zh/knowledge/navigation-architecture.md"
+      "zh/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "zh/knowledge/metadata-schema-registry.md"
+      "zh/ecosystem/Management_layer/Strategic_Development/index.md": "zh/management-layer/development-strategy/index.md"
+      "zh/ecosystem/Management_layer/ecosystem-resource.md": "zh/management-layer/ecosystem-resources.md"
+      "zh/ecosystem/Management_layer/index.md": "zh/management-layer/index.md"
+      "zh/ecosystem/STORYTELLING/index.md": "zh/technology/platform/communications/storytelling/index.md"
+      "zh/ecosystem/STORYTELLING/technology-foundation.md": "zh/technology/platform/communications/storytelling/technology-foundation.md"
+      "zh/ecosystem/Tools/FileZilla/filezilla-settings.md": "zh/tools/filezilla/filezilla-settings.md"
+      "zh/ecosystem/Tools/FileZilla/index.md": "zh/tools/filezilla/index.md"
+      "zh/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "zh/tools/linear/github-linear-automation-architecture.md"
+      "zh/ecosystem/Tools/Linear/index.md": "zh/tools/linear/index.md"
+      "zh/ecosystem/Tools/Obsidian/index.md": "zh/tools/obsidian/index.md"
+      "zh/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md": "zh/tools/vs-code/git-github-vscode-workflow.md"
+      "zh/ecosystem/Tools/VS_Code/index.md": "zh/tools/vs-code/index.md"
+      "zh/ecosystem/Tools/VS_Code/installation-and-initial-setup.md": "zh/tools/vs-code/installation-and-initial-setup.md"
+      "zh/ecosystem/Tools/index.md": "zh/tools/index.md"
+      "zh/ecosystem/Tools/Ⓜ️Make/index.md": "zh/tools/make/index.md"
+      "zh/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md": "zh/tools/clickup/clickup-structure-principles.md"
+      "zh/ecosystem/Tools/🎯ClickUp/index.md": "zh/tools/clickup/index.md"
+      "zh/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md": "zh/tools/airtable/adr-2026-02-11.md"
+      "zh/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md": "zh/tools/airtable/airtable-in-detai-ecosystem.md"
+      "zh/ecosystem/Tools/📦 Airtable/index.md": "zh/tools/airtable/index.md"
+      "zh/ecosystem/Tools/🛠GitHub/connect-repository.md": "zh/tools/github/connect-repository.md"
+      "zh/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md": "zh/tools/github/git-for-dummies-but-getting-smarter.md"
+      "zh/ecosystem/Tools/🛠GitHub/github-app-bot.md": "zh/tools/github/github-app-bot.md"
+      "zh/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md": "zh/tools/github/how-to-quickly-understand-project.md"
+      "zh/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md": "zh/tools/github/how-to-remove-secrets-from-config.md"
+      "zh/ecosystem/Tools/🛠GitHub/index.md": "zh/tools/github/index.md"
+      "zh/ecosystem/Tools/🛠GitHub/transition-to-organization.md": "zh/tools/github/transition-to-organization.md"
+      "zh/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md": "zh/tools/gpt-curators/meta/rules.md"
+      "zh/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md": "zh/tools/gpt-curators/meta/knowledge-base.md"
+      "zh/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md": "zh/tools/gpt-curators/meta/style-guide.md"
+      "zh/ecosystem/Tools/🤖 Telegram_Bots/index.md": "zh/tools/telegram-bots/index.md"
+      "zh/ecosystem/Tools/🧭Codex/codex-interaction-format.md": "zh/tools/codex/codex-interaction-format.md"
+      "zh/ecosystem/Tools/🧭Codex/codex-manifest.md": "zh/tools/codex/codex-manifest.md"
+      "zh/ecosystem/Tools/🧭Codex/codex-skills.md": "zh/tools/codex/codex-skills.md"
+      "zh/ecosystem/Tools/🧭Codex/create-epic-issue-release.md": "zh/tools/codex/create-epic-issue-release.md"
+      "zh/ecosystem/Tools/🧭Codex/index.md": "zh/tools/codex/index.md"
+      "zh/ecosystem/Tools/🧭Codex/integration-with-github.md": "zh/tools/codex/integration-with-github.md"
+      "zh/ecosystem/Tools/🧭Codex/interaction-with-codex.md": "zh/tools/codex/interaction-with-codex.md"
+      "zh/ecosystem/Tools/🧭Codex/team-os-mcp.md": "zh/tools/codex/team-os-mcp.md"
+      "zh/ecosystem/callouts-spec.md": "zh/knowledge/callouts-spec.md"
+      "zh/ecosystem/glossary.md": "zh/knowledge/glossary.md"
+      "zh/governance/domains-and-decision-rights.md": "zh/management-layer/domains-and-decision-rights.md"
+      "zh/governance/management-strategy.md": "zh/management-layer/management-strategy.md"
+      "zh/governance/meaningful-participation.md": "zh/management-layer/meaningful-participation.md"
+      "zh/governance/team-os.md": "zh/management-layer/team-os/governance/index.md"
+      "zh/governance/team-os/access.md": "zh/management-layer/team-os/governance/access.md"
+      "zh/governance/team-os/profile-data-and-visibility.md": "zh/management-layer/team-os/governance/profile-data-and-visibility.md"
+      "zh/governance/team-os/public-profile.md": "zh/management-layer/team-os/governance/public-profile.md"
+      "zh/product-market/business-model-and-portfolio.md": "zh/brand-and-communications/product-market/business-model-and-portfolio.md"
+      "zh/product-market/business-thesis.md": "zh/brand-and-communications/product-market/business-thesis.md"
+      "zh/product-market/index.md": "zh/brand-and-communications/product-market/index.md"
+      "zh/product-market/market-operations.md": "zh/brand-and-communications/product-market/market-operations.md"
+      "zh/product-market/portfolio-decisions/insight-workspace-customer-discovery.md": "zh/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md"
+      "zh/product-market/product-catalog.md": "zh/brand-and-communications/product-market/product-catalog.md"
+      "zh/product-market/product-documentation-model.md": "zh/brand-and-communications/product-market/product-documentation-model.md"
+      "zh/product-market/product-object-model.md": "zh/brand-and-communications/product-market/product-object-model.md"
+      "zh/product-market/value-proposition-standard.md": "zh/brand-and-communications/product-market/value-proposition-standard.md"
 - search
 markdown_extensions:
 - admonition
@@ -120,51 +868,51 @@ nav:
   - Карта знаний: ru/start/knowledge-map.md
   - Маршруты по ролям: ru/start/role-routes.md
   - Рабочая среда: ru/start/working-environment.md
-- Экосистема DETai: ru/ecosystem/DETai/index.md
+- Экосистема DETai: ru/ecosystem/index.md
 - Governance:
-  - Обзор: ru/ecosystem/Governance/index.md
-  - Конституция: ru/ecosystem/Governance/Constitution.md
-  - Миссия: ru/ecosystem/Governance/Mission.md
-  - Видение: ru/ecosystem/Governance/Vision.md
-  - Ценности: ru/ecosystem/Governance/Values.md
-  - BHAG: ru/ecosystem/Governance/BHAG.md
+  - Обзор: ru/governance/index.md
+  - Конституция: ru/governance/constitution.md
+  - Миссия: ru/governance/mission.md
+  - Видение: ru/governance/vision.md
+  - Ценности: ru/governance/values.md
+  - BHAG: ru/governance/bhag.md
 - Management Layer:
-  - Обзор: ru/ecosystem/Management_layer/index.md
-  - Модель управления DETai: ru/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md
+  - Обзор: ru/management-layer/index.md
+  - Модель управления DETai: ru/management-layer/management-model.md
   - Team OS:
-    - Обзор: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md
-    - Web — сайт команды: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/web.md
-    - Plugin — работа с ChatGPT: ru/ecosystem/DETai/Platform_DETai/E3-Infra/team-os/plugin.md
-  - Домены и права решений: ru/governance/domains-and-decision-rights.md
-  - Распределённая архитектура: ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md
-  - Уровни работы: ru/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md
-  - Осмысленное участие: ru/governance/meaningful-participation.md
-  - Стратегия управления: ru/governance/management-strategy.md
-  - Стратегия развития: ru/ecosystem/Management_layer/Strategic_Development/index.md
-  - Ресурсы экосистемы: ru/ecosystem/Management_layer/ecosystem-resource.md
-  - Таблица ресурсов: ru/ecosystem/DETai/table-of-resources.md
+    - Обзор: ru/management-layer/team-os/index.md
+    - Web — сайт команды: ru/management-layer/team-os/web.md
+    - Plugin — работа с ChatGPT: ru/management-layer/team-os/plugin.md
+  - Домены и права решений: ru/management-layer/domains-and-decision-rights.md
+  - Распределённая архитектура: ru/management-layer/distributed-architecture.md
+  - Уровни работы: ru/management-layer/work-levels.md
+  - Осмысленное участие: ru/management-layer/meaningful-participation.md
+  - Стратегия управления: ru/management-layer/management-strategy.md
+  - Стратегия развития: ru/management-layer/development-strategy/index.md
+  - Ресурсы экосистемы: ru/management-layer/ecosystem-resources.md
+  - Таблица ресурсов: ru/management-layer/resource-table.md
   - Команда и участие:
-    - Принципы участия: ru/ecosystem/Management_layer/1_Philosophy/Participation_principles.md
+    - Принципы участия: ru/management-layer/participation-principles.md
     - Team OS — governance и модель вклада:
-      - Обзор: ru/governance/team-os.md
-      - Роли, права и возможности: ru/governance/team-os/access.md
-      - Публичный профиль и авторство: ru/governance/team-os/public-profile.md
-      - Видимость данных, AI и публикация: ru/governance/team-os/profile-data-and-visibility.md
+      - Обзор: ru/management-layer/team-os/governance/index.md
+      - Роли, права и возможности: ru/management-layer/team-os/governance/access.md
+      - Публичный профиль и авторство: ru/management-layer/team-os/governance/public-profile.md
+      - Видимость данных, AI и публикация: ru/management-layer/team-os/governance/profile-data-and-visibility.md
 - Brand & Communications:
   - Продуктовый цикл Product–Market: ru/brand-and-communications/product-market-cycle.md
   - DETai как Umbrella Brand: ru/brand-and-communications/umbrella-brand.md
   - Границы и ответственность домена: ru/brand-and-communications/index.md
   - Продукты и рынок:
-    - Обзор Product–Market System: ru/product-market/index.md
-    - Business Thesis: ru/product-market/business-thesis.md
+    - Обзор Product–Market System: ru/brand-and-communications/product-market/index.md
+    - Business Thesis: ru/brand-and-communications/product-market/business-thesis.md
     - Портфельные решения:
-      - "Приоритет customer discovery: DETai Insight Workspace": ru/product-market/portfolio-decisions/insight-workspace-customer-discovery.md
-    - Каталог продуктов и предложений: ru/product-market/product-catalog.md
-    - Модель документации продукта: ru/product-market/product-documentation-model.md
-    - Стандарт ценностного предложения продукта: ru/product-market/value-proposition-standard.md
-    - Модель продуктового объекта: ru/product-market/product-object-model.md
-    - Рыночный и портфельный цикл: ru/product-market/market-operations.md
-    - Бизнес-модель и портфель: ru/product-market/business-model-and-portfolio.md
+      - "Приоритет customer discovery: DETai Insight Workspace": ru/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md
+    - Каталог продуктов и предложений: ru/brand-and-communications/product-market/product-catalog.md
+    - Модель документации продукта: ru/brand-and-communications/product-market/product-documentation-model.md
+    - Стандарт ценностного предложения продукта: ru/brand-and-communications/product-market/value-proposition-standard.md
+    - Модель продуктового объекта: ru/brand-and-communications/product-market/product-object-model.md
+    - Рыночный и портфельный цикл: ru/brand-and-communications/product-market/market-operations.md
+    - Бизнес-модель и портфель: ru/brand-and-communications/product-market/business-model-and-portfolio.md
 - Institutional Layer:
   - Метод DET и институциональная жизнь: ru/institutional-layer/index.md
   - Институциональный слой: ru/institutional-layer/institutional-layer.md
@@ -172,163 +920,162 @@ nav:
   - Образование: ru/institutional-layer/education.md
   - Исследование: ru/institutional-layer/research.md
   - Корпус метода DET:
-    - Обзор DET: ru/ecosystem/DET/index.md
+    - Обзор DET: ru/institutional-layer/det/index.md
     - Концепция:
-      - Обзор: ru/ecosystem/DET/Concept/index.md
-      - Концепция DET: ru/ecosystem/DET/Concept/Concept-DET.md
-      - Тень и свет: ru/ecosystem/DET/Concept/shadow-and-light.md
-      - Типы личности: ru/ecosystem/DET/Concept/personality-types.md
-      - Установка на преодоление: ru/ecosystem/DET/Concept/overcoming.md
-    - DET как культура: ru/ecosystem/DET/5-characteristics-of-det-as-culture.md
-    - На стыке трёх миров: ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md
+      - Обзор: ru/institutional-layer/det/concept/index.md
+      - Концепция DET: ru/institutional-layer/det/concept/concept-det.md
+      - Тень и свет: ru/institutional-layer/det/concept/shadow-and-light.md
+      - Типы личности: ru/institutional-layer/det/concept/personality-types.md
+      - Установка на преодоление: ru/institutional-layer/det/concept/overcoming.md
+    - DET как культура: ru/institutional-layer/det/5-characteristics-of-det-as-culture.md
+    - На стыке трёх миров: ru/institutional-layer/det/at-the-crossroads-of-three-worlds.md
 - Technology Layer:
   - Обзор: ru/technology/index.md
   - Логика эшелонов: ru/technology/logic-of-echelons.md
-  - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
-  - Стандарт версий: ru/ecosystem/Management_layer/3_Technical_Standards/Versioning-standard.md
+  - Версионность: ru/technology/versioning.md
   - U.L.I. — среда создания:
-    - Обзор U.L.I.: ru/ecosystem/DETai/U.L.I/index.md
+    - Обзор U.L.I.: ru/technology/uli/index.md
     - Смысл и командная среда:
-      - Обзор: ru/ecosystem/DETai/U.L.I/1_Philosophy/index.md
-      - Роли пчёл: ru/ecosystem/DETai/U.L.I/1_Philosophy/bee-roles.md
-      - Почему стандарты U.L.I. важны: ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md
+      - Обзор: ru/technology/uli/philosophy/index.md
+      - Роли пчёл: ru/technology/uli/philosophy/bee-roles.md
+      - Почему стандарты U.L.I. важны: ru/technology/uli/philosophy/why-uli-standards-matter.md
     - Проектный и производственный цикл:
-      - Обзор: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/index.md
-      - Документационная архитектура U.L.I.: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md
-      - Методология проектного цикла: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/metodologiya-proyektnogo-tsikla-detai.md
-      - Производственный цикл и роли: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/production-cycle.md
-      - Совместное планирование человека и агента: ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/human-agent-collaborative-planning-in-work-model-planning.md
+      - Обзор: ru/technology/uli/production/index.md
+      - Документационная архитектура U.L.I.: ru/technology/uli/production/documentation-architecture.md
+      - Методология проектного цикла: ru/technology/uli/production/project-cycle-methodology.md
+      - Производственный цикл и роли: ru/technology/uli/production/production-cycle.md
+      - Совместное планирование человека и агента: ru/technology/uli/production/human-agent-collaborative-planning-in-work-model-planning.md
     - Рабочая модель и стандарты:
-      - Обзор стандартов: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/index.md
+      - Обзор стандартов: ru/technology/uli/standards/index.md
       - Модель работы:
-        - Обзор: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/index.md
-        - Epic Issue Contract: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/issue-contract.md
-        - Work Package Contract: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/sub-issue-contract.md
-        - Work Model: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/work-model/work-model.md
+        - Обзор: ru/technology/uli/standards/work-model/index.md
+        - Epic Issue Contract: ru/technology/uli/standards/work-model/issue-contract.md
+        - Work Package Contract: ru/technology/uli/standards/work-model/sub-issue-contract.md
+        - Work Model: ru/technology/uli/standards/work-model/work-model.md
       - Telegram-боты:
-        - Обзор: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md
-        - Policy Layer: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/policy-layer.md
-        - Стандарт создания: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-creation-standard.md
-        - Декларативная конфигурация: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/configuration-standard.md
-        - Передача языка между ботами: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/language-handover.md
-      - Мозаический подход: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/mosaic-approach.md
-      - Общий README-шаблон: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/README-template.md
-      - Release Fixation: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/release-fixation-standard.md
-      - Версионность в U.L.I.: ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Versioning-in-U.L.I.md
+        - Обзор: ru/technology/uli/standards/telegram-bots/index.md
+        - Policy Layer: ru/technology/uli/standards/telegram-bots/policy-layer.md
+        - Стандарт создания: ru/technology/uli/standards/telegram-bots/telegram-bot-creation-standard.md
+        - Декларативная конфигурация: ru/technology/uli/standards/telegram-bots/configuration-standard.md
+        - Передача языка между ботами: ru/technology/uli/standards/telegram-bots/language-handover.md
+      - Мозаический подход: ru/technology/uli/standards/mosaic-approach.md
+      - Общий README-шаблон: ru/technology/uli/standards/readme-template.md
+      - Release Fixation: ru/technology/uli/standards/release-fixation-standard.md
+      - Версионность в U.L.I.: ru/technology/uli/standards/project-versioning.md
   - Platform DETai:
-    - Обзор платформы: ru/ecosystem/DETai/Platform_DETai/index.md
+    - Обзор платформы: ru/technology/platform/index.md
     - Продукты:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/products/index.md
+      - Обзор: ru/technology/platform/products/index.md
       - Психология в цитатах:
-        - Обзор: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md
-        - Начало работы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/getting-started.md
-        - Коллекция и тарифы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/collection-and-plans.md
-        - Вопросы и проблемы: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md
-        - Устройство и доверие: ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/architecture-and-trust.md
-      - Francis Galton: ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md
-      - DETai Pulse: ru/ecosystem/DETai/Platform_DETai/products/detai-pulse/index.md
-      - DETai Matrix: ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md
-      - Psykhḗ AI: ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md
+        - Обзор: ru/technology/platform/products/psychology-in-quotes/index.md
+        - Начало работы: ru/technology/platform/products/psychology-in-quotes/getting-started.md
+        - Коллекция и тарифы: ru/technology/platform/products/psychology-in-quotes/collection-and-plans.md
+        - Вопросы и проблемы: ru/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md
+        - Устройство и доверие: ru/technology/platform/products/psychology-in-quotes/architecture-and-trust.md
+      - Francis Galton: ru/technology/platform/products/francis-galton/index.md
+      - DETai Pulse: ru/technology/platform/products/detai-pulse/index.md
+      - DETai Matrix: ru/technology/platform/products/detai-matrix/index.md
+      - Psykhḗ AI: ru/technology/platform/products/psykhe-ai/index.md
     - Бренд и внешние коммуникации:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/brand-and-external-communications/index.md
+      - Обзор: ru/technology/platform/communications/index.md
       - Storytelling:
-        - Обзор Publication Core: ru/ecosystem/STORYTELLING/index.md
-        - Связь с технологической основой: ru/ecosystem/STORYTELLING/technology-foundation.md
-      - Сайт DETai: ru/ecosystem/DETai/Platform_DETai/E2-Brand/sites/index.md
+        - Обзор Publication Core: ru/technology/platform/communications/storytelling/index.md
+        - Связь с технологической основой: ru/technology/platform/communications/storytelling/technology-foundation.md
+      - Сайт DETai: ru/technology/platform/communications/website/index.md
       - Telegram-контур:
-        - Обзор: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/index.md
-        - Как устроен Account Manager: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager.md
-        - Зачем нужны управляемые аккаунты: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/account-manager-philosophy.md
-        - UserControl: ru/ecosystem/DETai/Platform_DETai/E2-Brand/Telegram/UserControl/index.md
+        - Обзор: ru/technology/platform/communications/telegram/index.md
+        - Как устроен Account Manager: ru/technology/platform/communications/telegram/account-manager.md
+        - Зачем нужны управляемые аккаунты: ru/technology/platform/communications/telegram/account-manager-philosophy.md
+        - UserControl: ru/technology/platform/communications/telegram/usercontrol/index.md
     - Технологическая основа:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md
+      - Обзор: ru/technology/platform/technology-foundation/index.md
     - Приостановленные проекты:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/dormant-projects/index.md
-      - GPT Prompt Engine: ru/ecosystem/DETai/Platform_DETai/dormant-projects/gpt-prompt-engine/index.md
-      - News Agent: ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md
+      - Обзор: ru/technology/platform/dormant-projects/index.md
+      - GPT Prompt Engine: ru/technology/platform/dormant-projects/gpt-prompt-engine/index.md
+      - News Agent: ru/technology/platform/dormant-projects/news-agent/index.md
     - R&D:
-      - Обзор: ru/ecosystem/DETai/Platform_DETai/R&D/index.md
+      - Обзор: ru/technology/platform/research-and-development/index.md
 - Компания и экономика:
   - Право и экономика:
     - Обзор: ru/legal-economic/index.md
     - Планируемый оператор DETai Oy: ru/legal-economic/company-operator.md
     - Карта решений: ru/legal-economic/deferred-work-map.md
 - Infrastructure:
-  - Обзор: ru/ecosystem/Infrastructure/index.md
-  - Принципы инфраструктуры: ru/ecosystem/Infrastructure/Infrastructure_Principles.md
+  - Обзор: ru/infrastructure/index.md
+  - Принципы инфраструктуры: ru/infrastructure/principles.md
   - Инфраструктурные системы:
-    - Обзор: ru/ecosystem/Infrastructure/infrastructure-systems/index.md
-    - ecosystem-runtime: ru/ecosystem/Infrastructure/ecosystem-runtime/index.md
-    - intelligence-runtime: ru/ecosystem/Infrastructure/intelligence-runtime/index.md
-    - Knowledge Substrate: ru/ecosystem/Infrastructure/Knowledge_Substrate/index.md
+    - Обзор: ru/infrastructure/infrastructure-systems/index.md
+    - ecosystem-runtime: ru/infrastructure/ecosystem-runtime/index.md
+    - intelligence-runtime: ru/infrastructure/intelligence-runtime/index.md
+    - Knowledge Substrate: ru/infrastructure/knowledge-substrate/index.md
   - Среды исполнения:
-    - Обзор: ru/ecosystem/Infrastructure/execution-environments/index.md
-    - Серверы: ru/ecosystem/Infrastructure/🌍 Сервера/index.md
+    - Обзор: ru/infrastructure/execution-environments/index.md
+    - Серверы: ru/infrastructure/servers/index.md
     - Home Ψ Lab:
-      - Обзор: ru/ecosystem/Infrastructure/home-lab/index.md
-      - Архитектура и состав: ru/ecosystem/Infrastructure/home-lab/architecture.md
-      - Territory Ψ Edge: ru/ecosystem/Infrastructure/home-lab/territory-psi-edge.md
+      - Обзор: ru/infrastructure/home-lab/index.md
+      - Архитектура и состав: ru/infrastructure/home-lab/architecture.md
+      - Territory Ψ Edge: ru/infrastructure/home-lab/territory-psi-edge.md
 - Tools:
-  - Обзор: ru/ecosystem/Tools/index.md
+  - Обзор: ru/tools/index.md
   - 🧭 Codex / GPT:
-    - Обзор: ru/ecosystem/Tools/🧭Codex/index.md
-    - Codex Skills: ru/ecosystem/Tools/🧭Codex/codex-skills.md
-    - Формат взаимодействия: ru/ecosystem/Tools/🧭Codex/codex-interaction-format.md
-    - Манифест: ru/ecosystem/Tools/🧭Codex/codex-manifest.md
-    - Взаимодействие с Codex: ru/ecosystem/Tools/🧭Codex/interaction-with-codex.md
-    - Связь с GitHub: ru/ecosystem/Tools/🧭Codex/integration-with-github.md
-    - Team OS MCP: ru/ecosystem/Tools/🧭Codex/team-os-mcp.md
-    - Create Epic Issue Release: ru/ecosystem/Tools/🧭Codex/create-epic-issue-release.md
+    - Обзор: ru/tools/codex/index.md
+    - Codex Skills: ru/tools/codex/codex-skills.md
+    - Формат взаимодействия: ru/tools/codex/codex-interaction-format.md
+    - Манифест: ru/tools/codex/codex-manifest.md
+    - Взаимодействие с Codex: ru/tools/codex/interaction-with-codex.md
+    - Связь с GitHub: ru/tools/codex/integration-with-github.md
+    - Team OS MCP: ru/tools/codex/team-os-mcp.md
+    - Create Epic Issue Release: ru/tools/codex/create-epic-issue-release.md
     - GPT-кураторы:
-      - Правила META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/01_rules.md
-      - База знаний META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/02_knowledge_base.md
-      - Стиль META: ru/ecosystem/Tools/🤖 GPT/Кастомные GPT (Кураторы)/01_GPT_META/03_style_guide.md
+      - Правила META: ru/tools/gpt-curators/meta/rules.md
+      - База знаний META: ru/tools/gpt-curators/meta/knowledge-base.md
+      - Стиль META: ru/tools/gpt-curators/meta/style-guide.md
   - ClickUp:
-    - Обзор: ru/ecosystem/Tools/🎯ClickUp/index.md
-    - Структура и принципы: ru/ecosystem/Tools/🎯ClickUp/clickup-structure-principles.md
+    - Обзор: ru/tools/clickup/index.md
+    - Структура и принципы: ru/tools/clickup/clickup-structure-principles.md
   - GitHub:
-    - Обзор: ru/ecosystem/Tools/🛠GitHub/index.md
-    - Подключить репозиторий: ru/ecosystem/Tools/🛠GitHub/connect-repository.md
-    - GitHub App — бот: ru/ecosystem/Tools/🛠GitHub/github-app-bot.md
-    - Git для начинающих: ru/ecosystem/Tools/🛠GitHub/git-for-dummies-but-getting-smarter.md
-    - Как вникнуть в проект: ru/ecosystem/Tools/🛠GitHub/how-to-quickly-understand-project.md
-    - Как убрать секреты: ru/ecosystem/Tools/🛠GitHub/how-to-remove-secrets-from-config.md
-    - Переход на Organization: ru/ecosystem/Tools/🛠GitHub/transition-to-organization.md
+    - Обзор: ru/tools/github/index.md
+    - Подключить репозиторий: ru/tools/github/connect-repository.md
+    - GitHub App — бот: ru/tools/github/github-app-bot.md
+    - Git для начинающих: ru/tools/github/git-for-dummies-but-getting-smarter.md
+    - Как вникнуть в проект: ru/tools/github/how-to-quickly-understand-project.md
+    - Как убрать секреты: ru/tools/github/how-to-remove-secrets-from-config.md
+    - Переход на Organization: ru/tools/github/transition-to-organization.md
   - Linear:
-    - Обзор: ru/ecosystem/Tools/Linear/index.md
-    - GitHub → Linear: ru/ecosystem/Tools/Linear/github-linear-automation-architecture.md
+    - Обзор: ru/tools/linear/index.md
+    - GitHub → Linear: ru/tools/linear/github-linear-automation-architecture.md
   - VS Code:
-    - Обзор: ru/ecosystem/Tools/VS_Code/index.md
-    - Установка: ru/ecosystem/Tools/VS_Code/installation-and-initial-setup.md
-    - Git, GitHub и VS Code: ru/ecosystem/Tools/VS_Code/git-github-vscode-workflow.md
-  - Make: ru/ecosystem/Tools/Ⓜ️Make/index.md
+    - Обзор: ru/tools/vs-code/index.md
+    - Установка: ru/tools/vs-code/installation-and-initial-setup.md
+    - Git, GitHub и VS Code: ru/tools/vs-code/git-github-vscode-workflow.md
+  - Make: ru/tools/make/index.md
   - Airtable:
-    - Обзор: ru/ecosystem/Tools/📦 Airtable/index.md
-    - Airtable в DETai: ru/ecosystem/Tools/📦 Airtable/airtable-in-detai-ecosystem.md
-    - ADR working-context: ru/ecosystem/Tools/📦 Airtable/ADR-2026-02-11.md
-  - Telegram Bots: ru/ecosystem/Tools/🤖 Telegram_Bots/index.md
-  - Obsidian: ru/ecosystem/Tools/Obsidian/index.md
+    - Обзор: ru/tools/airtable/index.md
+    - Airtable в DETai: ru/tools/airtable/airtable-in-detai-ecosystem.md
+    - ADR working-context: ru/tools/airtable/adr-2026-02-11.md
+  - Telegram Bots: ru/tools/telegram-bots/index.md
+  - Obsidian: ru/tools/obsidian/index.md
   - FileZilla:
-    - Обзор: ru/ecosystem/Tools/FileZilla/index.md
-    - Настройки: ru/ecosystem/Tools/FileZilla/filezilla-settings.md
+    - Обзор: ru/tools/filezilla/index.md
+    - Настройки: ru/tools/filezilla/filezilla-settings.md
 - Система знаний:
   - Обзор системы знаний: ru/knowledge/index.md
   - Архитектура знания:
-    - Governance документации: ru/ecosystem/Management_layer/Docs-Ecosystem/index.md
+    - Governance документации: ru/knowledge/documentation-governance/index.md
     - Модель документа: ru/knowledge/document-model.md
     - Модель представлений: ru/knowledge/representation-model.md
     - Многомерная модель статусов: ru/knowledge/object-status-model.md
     - Навигация для людей и агентов: ru/knowledge/agent-navigation.md
     - Миграция информационной архитектуры: ru/knowledge/navigation-migration.md
-    - Предметная архитектура навигации: ru/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md
-    - Исполняемый интерфейс для агентов: ru/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md
+    - Предметная архитектура навигации: ru/knowledge/navigation-architecture.md
+    - Исполняемый интерфейс для агентов: ru/knowledge/executable-interface.md
   - Правила документации:
-    - Документационная архитектура: ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md
-    - Функции документов: ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md
-    - Политика metadata: ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md
-    - Реестр metadata schemas: ru/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md
+    - Документационная архитектура: ru/knowledge/documentation-architecture.md
+    - Функции документов: ru/knowledge/documentation-functions.md
+    - Политика metadata: ru/knowledge/metadata-policy.md
+    - Реестр metadata schemas: ru/knowledge/metadata-schema-registry.md
   - Публикация и доставка знаний: ru/knowledge/knowledge-delivery.md
-  - Глоссарий: ru/ecosystem/glossary.md
+  - Глоссарий: ru/knowledge/glossary.md
 - Onboarding:
   - Обзор: ru/onboarding/index.md
   - Путь участника: ru/onboarding/onboarding-path.md

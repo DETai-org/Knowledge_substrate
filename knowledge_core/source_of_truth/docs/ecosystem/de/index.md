@@ -20,7 +20,7 @@ DETai verbindet eine eigenständige psychotherapeutische Methode, ihr institutio
 
 1. [Wegweiser](start/index.md) — drei Einstiegswege in die Wissensbasis.
 2. [Wissenslandkarte](start/knowledge-map.md) — die wichtigsten Systeme und Beziehungen auf einer Seite.
-3. [DETai-Ökosystem](ecosystem/DETai/index.md) — Aufbau und Zusammenhänge des Ökosystems.
+3. [DETai-Ökosystem](ecosystem/index.md) — Aufbau und Zusammenhänge des Ökosystems.
 4. [Rollenbasierte Wege](start/role-routes.md) — Lesepfade für Mitwirkende, Fachpersonen, Entwickler:innen und Partner:innen.
 5. [Arbeitsumgebung](start/working-environment.md) — wo Wissen, Aufgaben, Code, Daten und Originalquellen zu finden sind.
 
