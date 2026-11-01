@@ -30,9 +30,6 @@ links:
       url: https://docs.detai-x.com/ru/knowledge/metadata-policy/
   document_links:
     - schema: ecosystem
-      link_type: implements
-      linked_document_id: knowledge-document-model
-    - schema: ecosystem
       link_type: governs
       linked_document_id: management-layer-docs-ecosystem-metadata-schema-registry
 title: Политика metadata документов
@@ -175,7 +172,7 @@ title: Человекочитаемое название
 - `evidence_status` — `untested`, `preliminary-support`, `supported`, `validated-within-scope`, `contested`, `contradicted` или `not-applicable`;
 - `visibility_status` — `public`, `team`, `restricted`, `legal-privileged` или `personal-data`.
 
-Действующий документ может честно описывать гипотезу или прототип. Поля не выводятся автоматически из `descriptive.status`; полная логика задана в [многомерной модели статуса](object-status-model.md).
+Действующий документ может честно описывать гипотезу или прототип. Поля не выводятся автоматически из `descriptive.status`.
 
 ## Governance
 

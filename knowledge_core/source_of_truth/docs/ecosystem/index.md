@@ -14,7 +14,7 @@ hide:
       Canonical documentation and knowledge architecture for the DET / DETai ecosystem.
     </p>
     <div class="global-entry-page__actions">
-      <a class="global-entry-page__primary" href="./en/" data-language-entry>Enter documentation</a>
+      <a class="global-entry-page__primary" href="./en/ecosystem/" data-language-entry>Enter documentation</a>
       <button class="global-entry-page__language" type="button" data-language-choice-open>
         Change language
       </button>
@@ -64,27 +64,27 @@ hide:
   </div>
 
   <nav class="language-choice__grid" aria-label="Documentation languages">
-    <a class="language-choice__link" href="./en/" target="_self" data-locale="en">
+    <a class="language-choice__link" href="./en/ecosystem/" target="_self" data-locale="en">
       <span class="language-choice__code" aria-hidden="true">EN</span>
       <span><strong>English</strong><small>English</small></span>
       <span class="language-choice__arrow" aria-hidden="true">→</span>
     </a>
-    <a class="language-choice__link" href="./fi/" target="_self" data-locale="fi">
+    <a class="language-choice__link" href="./fi/ecosystem/" target="_self" data-locale="fi">
       <span class="language-choice__code" aria-hidden="true">FI</span>
       <span><strong>Suomi</strong><small>Finnish</small></span>
       <span class="language-choice__arrow" aria-hidden="true">→</span>
     </a>
-    <a class="language-choice__link" href="./ru/" target="_self" data-locale="ru">
+    <a class="language-choice__link" href="./ru/ecosystem/" target="_self" data-locale="ru">
       <span class="language-choice__code" aria-hidden="true">RU</span>
       <span><strong>Русский</strong><small>Russian</small></span>
       <span class="language-choice__arrow" aria-hidden="true">→</span>
     </a>
-    <a class="language-choice__link" href="./de/" target="_self" data-locale="de">
+    <a class="language-choice__link" href="./de/ecosystem/" target="_self" data-locale="de">
       <span class="language-choice__code" aria-hidden="true">DE</span>
       <span><strong>Deutsch</strong><small>German</small></span>
       <span class="language-choice__arrow" aria-hidden="true">→</span>
     </a>
-    <a class="language-choice__link" href="./zh/" target="_self" data-locale="zh">
+    <a class="language-choice__link" href="./zh/ecosystem/" target="_self" data-locale="zh">
       <span class="language-choice__code" aria-hidden="true">中文</span>
       <span><strong>中文</strong><small>Chinese</small></span>
       <span class="language-choice__arrow" aria-hidden="true">→</span>

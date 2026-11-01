@@ -23,6 +23,11 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      "ru/index.md": "ru/ecosystem/index.md"
+      "en/index.md": "en/ecosystem/index.md"
+      "fi/index.md": "fi/ecosystem/index.md"
+      "de/index.md": "de/ecosystem/index.md"
+      "zh/index.md": "zh/ecosystem/index.md"
       "de/ecosystem/DET/5-characteristics-of-det-as-culture.md": "de/institutional-layer/det/5-characteristics-of-det-as-culture.md"
       "de/ecosystem/DET/Concept/Concept-DET.md": "de/institutional-layer/det/concept/concept-det.md"
       "de/ecosystem/DET/Concept/index.md": "de/institutional-layer/det/concept/index.md"
@@ -101,7 +106,6 @@ plugins:
       "de/ecosystem/Management_layer/1_Philosophy/index.md": "de/management-layer/principles/index.md"
       "de/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "de/technology/versioning.md"
       "de/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "de/management-layer/distributed-architecture.md"
-      "de/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "de/knowledge/executable-interface.md"
       "de/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "de/management-layer/architecture/index.md"
       "de/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "de/management-layer/work-levels.md"
       "de/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "de/management-layer/management-model.md"
@@ -110,8 +114,6 @@ plugins:
       "de/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "de/knowledge/metadata-policy.md"
       "de/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "de/knowledge/documentation-architecture.md"
       "de/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "de/knowledge/documentation-functions.md"
-      "de/ecosystem/Management_layer/Docs-Ecosystem/index.md": "de/knowledge/documentation-governance/index.md"
-      "de/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "de/knowledge/navigation-architecture.md"
       "de/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "de/knowledge/metadata-schema-registry.md"
       "de/ecosystem/Management_layer/Strategic_Development/index.md": "de/management-layer/development-strategy/index.md"
       "de/ecosystem/Management_layer/ecosystem-resource.md": "de/management-layer/ecosystem-resources.md"
@@ -294,7 +296,6 @@ plugins:
       "en/ecosystem/Management_layer/1_Philosophy/index.md": "en/management-layer/principles/index.md"
       "en/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "en/technology/versioning.md"
       "en/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "en/management-layer/distributed-architecture.md"
-      "en/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "en/knowledge/executable-interface.md"
       "en/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "en/management-layer/architecture/index.md"
       "en/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "en/management-layer/work-levels.md"
       "en/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "en/management-layer/management-model.md"
@@ -303,8 +304,6 @@ plugins:
       "en/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "en/knowledge/metadata-policy.md"
       "en/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "en/knowledge/documentation-architecture.md"
       "en/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "en/knowledge/documentation-functions.md"
-      "en/ecosystem/Management_layer/Docs-Ecosystem/index.md": "en/knowledge/documentation-governance/index.md"
-      "en/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "en/knowledge/navigation-architecture.md"
       "en/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "en/knowledge/metadata-schema-registry.md"
       "en/ecosystem/Management_layer/Strategic_Development/index.md": "en/management-layer/development-strategy/index.md"
       "en/ecosystem/Management_layer/ecosystem-resource.md": "en/management-layer/ecosystem-resources.md"
@@ -487,7 +486,6 @@ plugins:
       "fi/ecosystem/Management_layer/1_Philosophy/index.md": "fi/management-layer/principles/index.md"
       "fi/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "fi/technology/versioning.md"
       "fi/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "fi/management-layer/distributed-architecture.md"
-      "fi/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "fi/knowledge/executable-interface.md"
       "fi/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "fi/management-layer/architecture/index.md"
       "fi/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "fi/management-layer/work-levels.md"
       "fi/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "fi/management-layer/management-model.md"
@@ -496,8 +494,6 @@ plugins:
       "fi/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "fi/knowledge/metadata-policy.md"
       "fi/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "fi/knowledge/documentation-architecture.md"
       "fi/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "fi/knowledge/documentation-functions.md"
-      "fi/ecosystem/Management_layer/Docs-Ecosystem/index.md": "fi/knowledge/documentation-governance/index.md"
-      "fi/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "fi/knowledge/navigation-architecture.md"
       "fi/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "fi/knowledge/metadata-schema-registry.md"
       "fi/ecosystem/Management_layer/Strategic_Development/index.md": "fi/management-layer/development-strategy/index.md"
       "fi/ecosystem/Management_layer/ecosystem-resource.md": "fi/management-layer/ecosystem-resources.md"
@@ -694,7 +690,6 @@ plugins:
       "ru/ecosystem/Management_layer/1_Philosophy/index.md": "ru/management-layer/principles/index.md"
       "ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "ru/technology/versioning.md"
       "ru/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "ru/management-layer/distributed-architecture.md"
-      "ru/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "ru/knowledge/executable-interface.md"
       "ru/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "ru/management-layer/architecture/index.md"
       "ru/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "ru/management-layer/work-levels.md"
       "ru/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "ru/management-layer/management-model.md"
@@ -703,8 +698,6 @@ plugins:
       "ru/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "ru/knowledge/metadata-policy.md"
       "ru/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "ru/knowledge/documentation-architecture.md"
       "ru/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "ru/knowledge/documentation-functions.md"
-      "ru/ecosystem/Management_layer/Docs-Ecosystem/index.md": "ru/knowledge/documentation-governance/index.md"
-      "ru/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "ru/knowledge/navigation-architecture.md"
       "ru/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "ru/knowledge/metadata-schema-registry.md"
       "ru/ecosystem/Management_layer/Strategic_Development/index.md": "ru/management-layer/development-strategy/index.md"
       "ru/ecosystem/Management_layer/ecosystem-resource.md": "ru/management-layer/ecosystem-resources.md"
@@ -897,7 +890,6 @@ plugins:
       "zh/ecosystem/Management_layer/1_Philosophy/index.md": "zh/management-layer/principles/index.md"
       "zh/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md": "zh/technology/versioning.md"
       "zh/ecosystem/Management_layer/2_Architecture_and_Logic/distributed_management_architecture.md": "zh/management-layer/distributed-architecture.md"
-      "zh/ecosystem/Management_layer/2_Architecture_and_Logic/docs-as-executable-interface-for-agents.md": "zh/knowledge/executable-interface.md"
       "zh/ecosystem/Management_layer/2_Architecture_and_Logic/index.md": "zh/management-layer/architecture/index.md"
       "zh/ecosystem/Management_layer/2_Architecture_and_Logic/levels-work.md": "zh/management-layer/work-levels.md"
       "zh/ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md": "zh/management-layer/management-model.md"
@@ -906,8 +898,6 @@ plugins:
       "zh/ecosystem/Management_layer/Docs-Ecosystem/document_metadata_policy.md": "zh/knowledge/metadata-policy.md"
       "zh/ecosystem/Management_layer/Docs-Ecosystem/documentation-architecture.md": "zh/knowledge/documentation-architecture.md"
       "zh/ecosystem/Management_layer/Docs-Ecosystem/functions_of_documents.md": "zh/knowledge/documentation-functions.md"
-      "zh/ecosystem/Management_layer/Docs-Ecosystem/index.md": "zh/knowledge/documentation-governance/index.md"
-      "zh/ecosystem/Management_layer/Docs-Ecosystem/knowledge-information-architecture.md": "zh/knowledge/navigation-architecture.md"
       "zh/ecosystem/Management_layer/Docs-Ecosystem/metadata_schema_registry.md": "zh/knowledge/metadata-schema-registry.md"
       "zh/ecosystem/Management_layer/Strategic_Development/index.md": "zh/management-layer/development-strategy/index.md"
       "zh/ecosystem/Management_layer/ecosystem-resource.md": "zh/management-layer/ecosystem-resources.md"
@@ -1030,27 +1020,27 @@ markdown_extensions:
 extra:
   detai_languages:
   - name: English
-    link: /en/
+    link: /en/ecosystem/
     lang: en
     path: en
     icon: assets/images/flags/gb.svg
   - name: Suomi
-    link: /fi/
+    link: /fi/ecosystem/
     lang: fi
     path: fi
     icon: assets/images/flags/fi.svg
   - name: Русский
-    link: /ru/
+    link: /ru/ecosystem/
     lang: ru
     path: ru
     icon: assets/images/flags/ru.svg
   - name: Deutsch
-    link: /de/
+    link: /de/ecosystem/
     lang: de
     path: de
     icon: assets/images/flags/de.svg
   - name: 中文
-    link: /zh/
+    link: /zh/ecosystem/
     lang: zh
     path: zh
     icon: assets/images/flags/zh.svg
@@ -1076,12 +1066,6 @@ exclude_docs: |
   ru/ecosystem/README.md
 
 nav:
-- Начать:
-  - Главная: ru/index.md
-  - Путеводитель: ru/start/index.md
-  - Карта знаний: ru/start/knowledge-map.md
-  - Маршруты по ролям: ru/start/role-routes.md
-  - Рабочая среда: ru/start/working-environment.md
 - Экосистема DETai: ru/ecosystem/index.md
 - Governance:
   - Обзор: ru/governance/index.md
@@ -1257,24 +1241,12 @@ nav:
   - FileZilla:
     - Обзор: ru/tools/filezilla/index.md
     - Настройки: ru/tools/filezilla/filezilla-settings.md
-- Система знаний:
-  - Обзор системы знаний: ru/knowledge/index.md
-  - Архитектура знания:
-    - Governance документации: ru/knowledge/documentation-governance/index.md
-    - Модель документа: ru/knowledge/document-model.md
-    - Модель представлений: ru/knowledge/representation-model.md
-    - Многомерная модель статусов: ru/knowledge/object-status-model.md
-    - Навигация для людей и агентов: ru/knowledge/agent-navigation.md
-    - Миграция информационной архитектуры: ru/knowledge/navigation-migration.md
-    - Предметная архитектура навигации: ru/knowledge/navigation-architecture.md
-    - Исполняемый интерфейс для агентов: ru/knowledge/executable-interface.md
-  - Правила документации:
-    - Документационная архитектура: ru/knowledge/documentation-architecture.md
-    - Функции документов: ru/knowledge/documentation-functions.md
-    - Политика metadata: ru/knowledge/metadata-policy.md
-    - Реестр metadata schemas: ru/knowledge/metadata-schema-registry.md
-  - Публикация и доставка знаний: ru/knowledge/knowledge-delivery.md
-  - Глоссарий: ru/knowledge/glossary.md
+- Правила документации:
+  - Документационная архитектура: ru/knowledge/documentation-architecture.md
+  - Функции документов: ru/knowledge/documentation-functions.md
+  - Политика metadata: ru/knowledge/metadata-policy.md
+  - Реестр metadata schemas: ru/knowledge/metadata-schema-registry.md
+- Глоссарий: ru/knowledge/glossary.md
 - Onboarding:
   - Обзор: ru/onboarding/index.md
   - Путь участника: ru/onboarding/onboarding-path.md
