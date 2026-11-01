@@ -26,7 +26,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: part-of
-      linked_document_id: purpose-and-principles
+      linked_document_id: governance-index
     - schema: ecosystem
       link_type: implemented-by
       linked_document_id: meaningful-participation
