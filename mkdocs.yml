@@ -139,7 +139,7 @@ nav:
 - Brand & Communications:
   - DETai как Umbrella Brand: ru/governance/umbrella-brand.md
   - Границы и ответственность домена: ru/governance/brand-and-communications.md
-- DET и институциональная жизнь:
+- Institutional Layer:
   - Метод DET и институциональная жизнь: ru/method/index.md
   - Институциональный слой: ru/method/institutional-layer.md
   - Психотерапия и супервизия: ru/method/psychotherapy-and-supervision.md
@@ -155,7 +155,7 @@ nav:
       - Установка на преодоление: ru/ecosystem/DET/Concept/overcoming.md
     - DET как культура: ru/ecosystem/DET/5-characteristics-of-det-as-culture.md
     - На стыке трёх миров: ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md
-- Технологический слой:
+- Technology Layer:
   - Обзор: ru/technology/index.md
   - U.L.I., Platform и цикл продукта: ru/technology/system-interface.md
   - Общие рабочие правила:

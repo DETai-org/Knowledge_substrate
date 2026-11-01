@@ -168,6 +168,30 @@
   }
 }
 
+/* Compact brand labels above the two top-level layers in the primary menu. */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a[href$="method/"] {
+  --detai-layer-brand: "DET";
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a[href$="technology/"] {
+  --detai-layer-brand: "DETai";
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a:is([href$="method/"], [href$="technology/"]) > .md-ellipsis::before {
+  content: var(--detai-layer-brand);
+  display: table;
+  margin-bottom: 0.14rem;
+  padding: 0.02rem 0.24rem;
+  border: 1px solid #d8bd73;
+  border-radius: 0.2rem;
+  background: #fff6dc;
+  color: #806018;
+  font-size: 0.46rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.035em;
+}
+
 /* Навигационный путь из nav в mkdocs.yml */
 .md-path {
   overflow-x: auto;
