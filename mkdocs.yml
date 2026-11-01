@@ -129,6 +129,7 @@ nav:
   - Стратегия управления: ru/governance/management-strategy.md
   - Стратегия развития: ru/ecosystem/Management_layer/Strategic_Development/index.md
   - Ресурсы экосистемы: ru/ecosystem/Management_layer/ecosystem-resource.md
+  - Таблица ресурсов: ru/ecosystem/DETai/table-of-resources.md
   - Команда и участие:
     - Принципы участия: ru/ecosystem/Management_layer/1_Philosophy/Participation_principles.md
     - Team OS — governance и модель вклада:
@@ -158,6 +159,7 @@ nav:
     - На стыке трёх миров: ru/ecosystem/DET/at-the-crossroads-of-three-worlds.md
 - Technology Layer:
   - Обзор: ru/technology/index.md
+  - Логика эшелонов: ru/ecosystem/DETai/logic-of-echelons.md
   - U.L.I., Platform и цикл продукта: ru/technology/system-interface.md
   - Общие рабочие правила:
     - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md
@@ -224,9 +226,6 @@ nav:
       - News Agent: ru/ecosystem/DETai/Platform_DETai/dormant-projects/news-agent/index.md
     - R&D:
       - Обзор: ru/ecosystem/DETai/Platform_DETai/R&D/index.md
-  - Архитектура ресурсов:
-    - Логика эшелонов: ru/ecosystem/DETai/logic-of-echelons.md
-    - Таблица ресурсов: ru/ecosystem/DETai/table-of-resources.md
 - Продукты и рынок:
   - Обзор Product–Market System: ru/product-market/index.md
   - Business Thesis: ru/product-market/business-thesis.md
