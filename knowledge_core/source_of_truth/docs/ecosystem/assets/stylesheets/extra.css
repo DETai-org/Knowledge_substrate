@@ -199,21 +199,28 @@
 }
 
 /* Portfolio badges use the same compact shape as the DET / DETai labels. */
-.md-nav--primary a:is([href$="francis-galton/"], [href$="psykhe-ai/"]) {
+.md-nav--primary a:is([data-detai-echelon="E1"], [href$="francis-galton/"], [href$="psykhe-ai/"]) {
   --detai-echelon: "E1";
   --detai-echelon-border: #a5c9f7;
   --detai-echelon-bg: #e9f2ff;
   --detai-echelon-color: #245b9b;
 }
 
-.md-nav--primary a:is([href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"]) {
+.md-nav--primary a:is([data-detai-echelon="E2"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"]) {
   --detai-echelon: "E2";
   --detai-echelon-border: #dfbd00;
   --detai-echelon-bg: #fde047;
   --detai-echelon-color: #594b00;
 }
 
-.md-nav--primary a:is([href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"]) > .md-ellipsis::before {
+.md-nav--primary a:is([data-detai-echelon="E3"], [href$="infrastructure-foundation/"]) {
+  --detai-echelon: "E3";
+  --detai-echelon-border: #c5b2ee;
+  --detai-echelon-bg: #efe7ff;
+  --detai-echelon-color: #6742a3;
+}
+
+.md-nav--primary a:is([data-detai-echelon], [href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"], [href$="infrastructure-foundation/"]) > .md-ellipsis::before {
   content: var(--detai-echelon);
   display: table;
   box-sizing: border-box;
@@ -231,8 +238,8 @@
   letter-spacing: 0.035em;
 }
 
-.detai-docked-nav .md-nav--primary .md-nav__container:has(> a:is([href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"])),
-.detai-docked-nav .md-nav--primary .md-nav__item > a.md-nav__link:is([href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"]) {
+.detai-docked-nav .md-nav--primary .md-nav__container:has(> a:is([data-detai-echelon], [href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"], [href$="infrastructure-foundation/"])),
+.detai-docked-nav .md-nav--primary .md-nav__item > a.md-nav__link:is([data-detai-echelon], [href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"], [href$="infrastructure-foundation/"]) {
   padding-top: 0.3rem;
 }
 

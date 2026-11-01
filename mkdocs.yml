@@ -54,7 +54,7 @@ plugins:
       "de/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "de/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "de/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "de/technology/platform/psychology-in-quotes/index.md"
       "de/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "de/technology/platform/psykhe-ai/index.md"
-      "de/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "de/technology/platform/technology-foundation/index.md"
+      "de/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "de/technology/platform/infrastructure-foundation/index.md"
       "de/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "de/technology/index.md"
       "de/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "de/technology/why-uli-standards-matter.md"
       "de/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "de/technology/documentation-architecture.md"
@@ -117,7 +117,7 @@ plugins:
       "de/ecosystem/Management_layer/ecosystem-resource.md": "de/management-layer/ecosystem-resources.md"
       "de/ecosystem/Management_layer/index.md": "de/management-layer/index.md"
       "de/ecosystem/STORYTELLING/index.md": "de/technology/platform/storytelling/index.md"
-      "de/ecosystem/STORYTELLING/technology-foundation.md": "de/technology/platform/storytelling/technology-foundation.md"
+      "de/ecosystem/STORYTELLING/technology-foundation.md": "de/technology/platform/storytelling/infrastructure-and-delivery.md"
       "de/ecosystem/Tools/FileZilla/filezilla-settings.md": "de/tools/filezilla/filezilla-settings.md"
       "de/ecosystem/Tools/FileZilla/index.md": "de/tools/filezilla/index.md"
       "de/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "de/tools/linear/github-linear-automation-architecture.md"
@@ -173,7 +173,7 @@ plugins:
       "de/technology/collaborative-planning.md": "de/technology/production-cycle/collaborative-planning.md"
       "de/technology/platform/communications/index.md": "de/technology/platform/index.md"
       "de/technology/platform/communications/storytelling/index.md": "de/technology/platform/storytelling/index.md"
-      "de/technology/platform/communications/storytelling/technology-foundation.md": "de/technology/platform/storytelling/technology-foundation.md"
+      "de/technology/platform/communications/storytelling/technology-foundation.md": "de/technology/platform/storytelling/infrastructure-and-delivery.md"
       "de/technology/platform/communications/telegram/account-manager-philosophy.md": "de/technology/platform/telegram/account-manager-philosophy.md"
       "de/technology/platform/communications/telegram/account-manager.md": "de/technology/platform/telegram/account-manager.md"
       "de/technology/platform/communications/telegram/index.md": "de/technology/platform/telegram/index.md"
@@ -190,6 +190,8 @@ plugins:
       "de/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md": "de/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "de/technology/platform/products/psychology-in-quotes/index.md": "de/technology/platform/psychology-in-quotes/index.md"
       "de/technology/platform/products/psykhe-ai/index.md": "de/technology/platform/psykhe-ai/index.md"
+      "de/technology/platform/storytelling/technology-foundation.md": "de/technology/platform/storytelling/infrastructure-and-delivery.md"
+      "de/technology/platform/technology-foundation/index.md": "de/technology/platform/infrastructure-foundation/index.md"
       "de/technology/uli/collaborative-planning.md": "de/technology/production-cycle/collaborative-planning.md"
       "de/technology/uli/documentation-architecture.md": "de/technology/documentation-architecture.md"
       "de/technology/uli/index.md": "de/technology/why-uli-standards-matter.md"
@@ -246,7 +248,7 @@ plugins:
       "en/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "en/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "en/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "en/technology/platform/psychology-in-quotes/index.md"
       "en/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "en/technology/platform/psykhe-ai/index.md"
-      "en/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "en/technology/platform/technology-foundation/index.md"
+      "en/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "en/technology/platform/infrastructure-foundation/index.md"
       "en/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "en/technology/index.md"
       "en/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "en/technology/why-uli-standards-matter.md"
       "en/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "en/technology/documentation-architecture.md"
@@ -309,7 +311,7 @@ plugins:
       "en/ecosystem/Management_layer/ecosystem-resource.md": "en/management-layer/ecosystem-resources.md"
       "en/ecosystem/Management_layer/index.md": "en/management-layer/index.md"
       "en/ecosystem/STORYTELLING/index.md": "en/technology/platform/storytelling/index.md"
-      "en/ecosystem/STORYTELLING/technology-foundation.md": "en/technology/platform/storytelling/technology-foundation.md"
+      "en/ecosystem/STORYTELLING/technology-foundation.md": "en/technology/platform/storytelling/infrastructure-and-delivery.md"
       "en/ecosystem/Tools/FileZilla/filezilla-settings.md": "en/tools/filezilla/filezilla-settings.md"
       "en/ecosystem/Tools/FileZilla/index.md": "en/tools/filezilla/index.md"
       "en/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "en/tools/linear/github-linear-automation-architecture.md"
@@ -365,7 +367,7 @@ plugins:
       "en/technology/collaborative-planning.md": "en/technology/production-cycle/collaborative-planning.md"
       "en/technology/platform/communications/index.md": "en/technology/platform/index.md"
       "en/technology/platform/communications/storytelling/index.md": "en/technology/platform/storytelling/index.md"
-      "en/technology/platform/communications/storytelling/technology-foundation.md": "en/technology/platform/storytelling/technology-foundation.md"
+      "en/technology/platform/communications/storytelling/technology-foundation.md": "en/technology/platform/storytelling/infrastructure-and-delivery.md"
       "en/technology/platform/communications/telegram/account-manager-philosophy.md": "en/technology/platform/telegram/account-manager-philosophy.md"
       "en/technology/platform/communications/telegram/account-manager.md": "en/technology/platform/telegram/account-manager.md"
       "en/technology/platform/communications/telegram/index.md": "en/technology/platform/telegram/index.md"
@@ -382,6 +384,8 @@ plugins:
       "en/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md": "en/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "en/technology/platform/products/psychology-in-quotes/index.md": "en/technology/platform/psychology-in-quotes/index.md"
       "en/technology/platform/products/psykhe-ai/index.md": "en/technology/platform/psykhe-ai/index.md"
+      "en/technology/platform/storytelling/technology-foundation.md": "en/technology/platform/storytelling/infrastructure-and-delivery.md"
+      "en/technology/platform/technology-foundation/index.md": "en/technology/platform/infrastructure-foundation/index.md"
       "en/technology/uli/collaborative-planning.md": "en/technology/production-cycle/collaborative-planning.md"
       "en/technology/uli/documentation-architecture.md": "en/technology/documentation-architecture.md"
       "en/technology/uli/index.md": "en/technology/why-uli-standards-matter.md"
@@ -438,7 +442,7 @@ plugins:
       "fi/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "fi/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "fi/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "fi/technology/platform/psychology-in-quotes/index.md"
       "fi/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "fi/technology/platform/psykhe-ai/index.md"
-      "fi/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "fi/technology/platform/technology-foundation/index.md"
+      "fi/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "fi/technology/platform/infrastructure-foundation/index.md"
       "fi/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "fi/technology/index.md"
       "fi/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "fi/technology/why-uli-standards-matter.md"
       "fi/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "fi/technology/documentation-architecture.md"
@@ -501,7 +505,7 @@ plugins:
       "fi/ecosystem/Management_layer/ecosystem-resource.md": "fi/management-layer/ecosystem-resources.md"
       "fi/ecosystem/Management_layer/index.md": "fi/management-layer/index.md"
       "fi/ecosystem/STORYTELLING/index.md": "fi/technology/platform/storytelling/index.md"
-      "fi/ecosystem/STORYTELLING/technology-foundation.md": "fi/technology/platform/storytelling/technology-foundation.md"
+      "fi/ecosystem/STORYTELLING/technology-foundation.md": "fi/technology/platform/storytelling/infrastructure-and-delivery.md"
       "fi/ecosystem/Tools/FileZilla/filezilla-settings.md": "fi/tools/filezilla/filezilla-settings.md"
       "fi/ecosystem/Tools/FileZilla/index.md": "fi/tools/filezilla/index.md"
       "fi/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "fi/tools/linear/github-linear-automation-architecture.md"
@@ -557,7 +561,7 @@ plugins:
       "fi/technology/collaborative-planning.md": "fi/technology/production-cycle/collaborative-planning.md"
       "fi/technology/platform/communications/index.md": "fi/technology/platform/index.md"
       "fi/technology/platform/communications/storytelling/index.md": "fi/technology/platform/storytelling/index.md"
-      "fi/technology/platform/communications/storytelling/technology-foundation.md": "fi/technology/platform/storytelling/technology-foundation.md"
+      "fi/technology/platform/communications/storytelling/technology-foundation.md": "fi/technology/platform/storytelling/infrastructure-and-delivery.md"
       "fi/technology/platform/communications/telegram/account-manager-philosophy.md": "fi/technology/platform/telegram/account-manager-philosophy.md"
       "fi/technology/platform/communications/telegram/account-manager.md": "fi/technology/platform/telegram/account-manager.md"
       "fi/technology/platform/communications/telegram/index.md": "fi/technology/platform/telegram/index.md"
@@ -574,6 +578,8 @@ plugins:
       "fi/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md": "fi/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "fi/technology/platform/products/psychology-in-quotes/index.md": "fi/technology/platform/psychology-in-quotes/index.md"
       "fi/technology/platform/products/psykhe-ai/index.md": "fi/technology/platform/psykhe-ai/index.md"
+      "fi/technology/platform/storytelling/technology-foundation.md": "fi/technology/platform/storytelling/infrastructure-and-delivery.md"
+      "fi/technology/platform/technology-foundation/index.md": "fi/technology/platform/infrastructure-foundation/index.md"
       "fi/technology/uli/collaborative-planning.md": "fi/technology/production-cycle/collaborative-planning.md"
       "fi/technology/uli/documentation-architecture.md": "fi/technology/documentation-architecture.md"
       "fi/technology/uli/index.md": "fi/technology/why-uli-standards-matter.md"
@@ -642,7 +648,7 @@ plugins:
       "ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "ru/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "ru/technology/platform/psychology-in-quotes/index.md"
       "ru/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "ru/technology/platform/psykhe-ai/index.md"
-      "ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "ru/technology/platform/technology-foundation/index.md"
+      "ru/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "ru/technology/platform/infrastructure-foundation/index.md"
       "ru/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "ru/technology/index.md"
       "ru/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "ru/technology/why-uli-standards-matter.md"
       "ru/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "ru/technology/documentation-architecture.md"
@@ -707,7 +713,7 @@ plugins:
       "ru/ecosystem/Management_layer/ecosystem-resource.md": "ru/management-layer/ecosystem-resources.md"
       "ru/ecosystem/Management_layer/index.md": "ru/management-layer/index.md"
       "ru/ecosystem/STORYTELLING/index.md": "ru/technology/platform/storytelling/index.md"
-      "ru/ecosystem/STORYTELLING/technology-foundation.md": "ru/technology/platform/storytelling/technology-foundation.md"
+      "ru/ecosystem/STORYTELLING/technology-foundation.md": "ru/technology/platform/storytelling/infrastructure-and-delivery.md"
       "ru/ecosystem/Tools/FileZilla/filezilla-settings.md": "ru/tools/filezilla/filezilla-settings.md"
       "ru/ecosystem/Tools/FileZilla/index.md": "ru/tools/filezilla/index.md"
       "ru/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "ru/tools/linear/github-linear-automation-architecture.md"
@@ -772,7 +778,7 @@ plugins:
       "ru/technology/collaborative-planning.md": "ru/technology/production-cycle/collaborative-planning.md"
       "ru/technology/platform/communications/index.md": "ru/technology/platform/index.md"
       "ru/technology/platform/communications/storytelling/index.md": "ru/technology/platform/storytelling/index.md"
-      "ru/technology/platform/communications/storytelling/technology-foundation.md": "ru/technology/platform/storytelling/technology-foundation.md"
+      "ru/technology/platform/communications/storytelling/technology-foundation.md": "ru/technology/platform/storytelling/infrastructure-and-delivery.md"
       "ru/technology/platform/communications/telegram/account-manager-philosophy.md": "ru/technology/platform/telegram/account-manager-philosophy.md"
       "ru/technology/platform/communications/telegram/account-manager.md": "ru/technology/platform/telegram/account-manager.md"
       "ru/technology/platform/communications/telegram/index.md": "ru/technology/platform/telegram/index.md"
@@ -789,6 +795,8 @@ plugins:
       "ru/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md": "ru/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "ru/technology/platform/products/psychology-in-quotes/index.md": "ru/technology/platform/psychology-in-quotes/index.md"
       "ru/technology/platform/products/psykhe-ai/index.md": "ru/technology/platform/psykhe-ai/index.md"
+      "ru/technology/platform/storytelling/technology-foundation.md": "ru/technology/platform/storytelling/infrastructure-and-delivery.md"
+      "ru/technology/platform/technology-foundation/index.md": "ru/technology/platform/infrastructure-foundation/index.md"
       "ru/technology/system-interface.md": "ru/technology/index.md"
       "ru/technology/uli/collaborative-planning.md": "ru/technology/production-cycle/collaborative-planning.md"
       "ru/technology/uli/documentation-architecture.md": "ru/technology/documentation-architecture.md"
@@ -846,7 +854,7 @@ plugins:
       "zh/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/help-and-troubleshooting.md": "zh/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "zh/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes/index.md": "zh/technology/platform/psychology-in-quotes/index.md"
       "zh/ecosystem/DETai/Platform_DETai/products/psykhe-ai/index.md": "zh/technology/platform/psykhe-ai/index.md"
-      "zh/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "zh/technology/platform/technology-foundation/index.md"
+      "zh/ecosystem/DETai/Platform_DETai/technology-foundation/index.md": "zh/technology/platform/infrastructure-foundation/index.md"
       "zh/ecosystem/DETai/U.L.I/1_Philosophy/index.md": "zh/technology/index.md"
       "zh/ecosystem/DETai/U.L.I/1_Philosophy/why-uli-standards-matter.md": "zh/technology/why-uli-standards-matter.md"
       "zh/ecosystem/DETai/U.L.I/2_Architecture_and_Logic/documentation-architecture-U-L-I.md": "zh/technology/documentation-architecture.md"
@@ -909,7 +917,7 @@ plugins:
       "zh/ecosystem/Management_layer/ecosystem-resource.md": "zh/management-layer/ecosystem-resources.md"
       "zh/ecosystem/Management_layer/index.md": "zh/management-layer/index.md"
       "zh/ecosystem/STORYTELLING/index.md": "zh/technology/platform/storytelling/index.md"
-      "zh/ecosystem/STORYTELLING/technology-foundation.md": "zh/technology/platform/storytelling/technology-foundation.md"
+      "zh/ecosystem/STORYTELLING/technology-foundation.md": "zh/technology/platform/storytelling/infrastructure-and-delivery.md"
       "zh/ecosystem/Tools/FileZilla/filezilla-settings.md": "zh/tools/filezilla/filezilla-settings.md"
       "zh/ecosystem/Tools/FileZilla/index.md": "zh/tools/filezilla/index.md"
       "zh/ecosystem/Tools/Linear/github-linear-automation-architecture.md": "zh/tools/linear/github-linear-automation-architecture.md"
@@ -965,7 +973,7 @@ plugins:
       "zh/technology/collaborative-planning.md": "zh/technology/production-cycle/collaborative-planning.md"
       "zh/technology/platform/communications/index.md": "zh/technology/platform/index.md"
       "zh/technology/platform/communications/storytelling/index.md": "zh/technology/platform/storytelling/index.md"
-      "zh/technology/platform/communications/storytelling/technology-foundation.md": "zh/technology/platform/storytelling/technology-foundation.md"
+      "zh/technology/platform/communications/storytelling/technology-foundation.md": "zh/technology/platform/storytelling/infrastructure-and-delivery.md"
       "zh/technology/platform/communications/telegram/account-manager-philosophy.md": "zh/technology/platform/telegram/account-manager-philosophy.md"
       "zh/technology/platform/communications/telegram/account-manager.md": "zh/technology/platform/telegram/account-manager.md"
       "zh/technology/platform/communications/telegram/index.md": "zh/technology/platform/telegram/index.md"
@@ -982,6 +990,8 @@ plugins:
       "zh/technology/platform/products/psychology-in-quotes/help-and-troubleshooting.md": "zh/technology/platform/psychology-in-quotes/help-and-troubleshooting.md"
       "zh/technology/platform/products/psychology-in-quotes/index.md": "zh/technology/platform/psychology-in-quotes/index.md"
       "zh/technology/platform/products/psykhe-ai/index.md": "zh/technology/platform/psykhe-ai/index.md"
+      "zh/technology/platform/storytelling/technology-foundation.md": "zh/technology/platform/storytelling/infrastructure-and-delivery.md"
+      "zh/technology/platform/technology-foundation/index.md": "zh/technology/platform/infrastructure-foundation/index.md"
       "zh/technology/uli/collaborative-planning.md": "zh/technology/production-cycle/collaborative-planning.md"
       "zh/technology/uli/documentation-architecture.md": "zh/technology/documentation-architecture.md"
       "zh/technology/uli/index.md": "zh/technology/why-uli-standards-matter.md"
@@ -1062,6 +1072,7 @@ extra_javascript:
 - assets/javascripts/chatgpt-prompt.js
 - assets/javascripts/chatgpt-button.js
 - assets/javascripts/nav-state.js
+- assets/javascripts/portfolio-navigation.js
 - assets/vendor/split-grid/split-grid.min.js
 - assets/javascripts/docked-navigation.js
 - assets/javascripts/language-switcher.js
@@ -1175,14 +1186,13 @@ nav:
       - Устройство и доверие: ru/technology/platform/psychology-in-quotes/architecture-and-trust.md
     - Storytelling:
       - Обзор Publication Core: ru/technology/platform/storytelling/index.md
-      - Связь с технологической основой: ru/technology/platform/storytelling/technology-foundation.md
+      - Связь с инфраструктурой и каналами: ru/technology/platform/storytelling/infrastructure-and-delivery.md
     - Telegram:
       - Обзор: ru/technology/platform/telegram/index.md
       - Как устроен Account Manager: ru/technology/platform/telegram/account-manager.md
       - Зачем нужны управляемые аккаунты: ru/technology/platform/telegram/account-manager-philosophy.md
       - UserControl: ru/technology/platform/telegram/usercontrol/index.md
-    - Технологическая основа:
-      - Обзор: ru/technology/platform/technology-foundation/index.md
+    - Infrastructure Foundation: ru/technology/platform/infrastructure-foundation/index.md
     - R&D:
       - Обзор: ru/technology/platform/research-and-development/index.md
     - Archive:

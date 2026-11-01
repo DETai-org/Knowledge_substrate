@@ -2,41 +2,41 @@
 type: ecosystem
 classification:
   scope: Infrastructure
-  context: servers
-  layer: null
+  context: infrastructure
+  layer: infrastructure
   function: index
 descriptive:
   id: infrastructure-index
-  version: v5
+  version: v6
   status: active
-  date_ymd: 2026-03-25
-  date_update: 2026-09-07
+  date_ymd: 2026-11-01
+  date_update: 2026-11-01
 links:
   external_links:
     - type: "MkDocs_ru"
       url: "https://docs.detai-x.com/ru/infrastructure/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
+    - schema: ecosystem
+      link_type: related-to
+      linked_document_id: detai-platform-detai-index
 title: Infrastructure
 ---
 
 # Infrastructure
 
-Infrastructure — это специализированная оптика, через которую экосистема
-рассматривает техническую основу своей работы: исполняемый код, данные,
-вычислительные среды, связи между ними и границы ответственности. Она не
-подменяет продуктовую карту DETai и не превращает всё увиденное в один проект.
+**Infrastructure — самостоятельный инфраструктурный пласт экосистемы DETai,
+предоставляющий общие обеспечивающие системы и среды исполнения.** Он объединяет
+исполняемый код, данные, вычислительные среды, связи между ними и границы
+ответственности. Его возможности служат основой работы разных направлений экосистемы.
 
 ## Два вида объектов
 
-Внутри этой оптики есть два больших направления: **инфраструктурные системы**
+Внутри этого контура есть два больших направления: **инфраструктурные системы**
 и **среды исполнения**.
 
 ```mermaid
 flowchart TB
-    infra["Infrastructure — специализированная оптика"]
+    infra["Infrastructure — инфраструктурный пласт"]
     systems["Инфраструктурные системы"]
     environments["Среды исполнения"]
     ecosystem["ecosystem-runtime"]
@@ -79,6 +79,25 @@ flowchart TB
 использует арендованные внешние серверы и собственную Home Ψ Lab. Их различие
 и общая эксплуатационная граница раскрыты в разделе
 [«Среды исполнения»](execution-environments/index.md).
+
+## Инфраструктурные системы как проекты E3
+
+ecosystem-runtime, intelligence-runtime и Knowledge Substrate организационно
+развиваются как самостоятельные внутренние проекты: у них есть репозитории,
+версии и производственные циклы. Их обеспечивающую роль описывает
+[эшелон E3](../technology/logic-of-echelons.md).
+
+Результат такого проекта — общая инфраструктурная система, предоставляющая
+возможности другим проектам и направлениям. Проектная форма описывает способ
+её развития, а инфраструктурная принадлежность — место в архитектуре и ответственность.
+Эти системы относятся к Infrastructure и обеспечивают работу всей экосистемы.
+
+В [Platform DETai](../technology/platform/index.md) видно, как инфраструктурные
+возможности используются цифровыми проектами. Страница
+[Infrastructure Foundation](../technology/platform/infrastructure-foundation/index.md)
+связывает платформенный портфель с каноническими описаниями обеспечивающих систем.
+Предметные правила и назначение каждого проекта сохраняются у его команды,
+а инфраструктура предоставляет общие возможности через согласованные интерфейсы.
 
 ## Capabilities как связи между владельцами
 

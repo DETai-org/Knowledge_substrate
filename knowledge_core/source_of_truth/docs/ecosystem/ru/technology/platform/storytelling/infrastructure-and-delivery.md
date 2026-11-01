@@ -8,19 +8,21 @@ classification:
   domain: storytelling
 descriptive:
   id: storytelling-technology-foundation
-  version: v2
+  version: v3
   status: active
-  date_ymd: 2026-08-20
-  date_update: 2026-09-23
+  date_ymd: 2026-11-01
+  date_update: 2026-11-01
 governance:
   canonicality: canonical
   visibility: public
-title: Как Storytelling использует технологическую основу
+title: Как Storytelling использует инфраструктуру и каналы доставки
 ---
 
-# Как Storytelling использует технологическую основу
+# Как Storytelling использует инфраструктуру и каналы доставки
 
 [Storytelling](index.md) отвечает за сам публикационный процесс: как из исходного материала получается согласованная публикация и какие версии этой публикации нужны для разных площадок. Другие технические системы DETai помогают выполнить отдельные части этой работы, но не определяют содержание и редакционные решения Storytelling.
+
+Общую инфраструктурную основу предоставляет [Infrastructure](../../../infrastructure/index.md): обеспечивающие системы E3 и среды исполнения. Сайт и Telegram участвуют в этом примере как E2-проекты каналов доставки. Такое разделение сохраняет принадлежность общей инфраструктуры её собственному контуру и показывает связи между проектами.
 
 ## Intelligence Runtime
 
