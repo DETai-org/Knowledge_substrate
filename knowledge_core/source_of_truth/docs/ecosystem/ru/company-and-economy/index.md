@@ -10,7 +10,7 @@ classification:
   audiences: [public, team, managers, agents]
 descriptive:
   id: company-economy-index
-  version: v1
+  version: v2
   status: draft
   date_ymd: 2026-11-02
   date_update: 2026-11-02
@@ -24,7 +24,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: contains
-      linked_document_id: legal-economic-index
+      linked_document_id: detai-company-operator
     - schema: ecosystem
       link_type: contains
       linked_document_id: company-economy-slicing-pie
@@ -40,10 +40,8 @@ title: Company & Economy
 
 ## Состав раздела
 
-- [Право и экономика](../legal-economic/index.md) — правовые и экономические вопросы, договорённости и границы ответственности.
-- [Планируемый оператор DETai Oy](../legal-economic/company-operator.md) — роль будущего юридического и коммерческого субъекта.
-- [Карта решений](../legal-economic/deferred-work-map.md) — вопросы, требующие отдельной проработки.
-- [Slicing Pie](slicing-pie.md) — идея динамического распределения долей участия, пока рассматриваемая как рабочая концепция.
+- [Планируемый оператор DETai Oy](company-operator.md) — будущая юридическая и экономическая роль компании, финская предпринимательская среда и возможные направления её развития.
+- [Slicing Pie](slicing-pie.md) — идея динамического распределения долей участия, пока не являющаяся принятой политикой DETai.
 
 ## Связь с другими направлениями
 

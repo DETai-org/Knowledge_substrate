@@ -93,7 +93,7 @@ Umbrella Brand DETai объединяет происхождение и дове
 | [U.L.I.](../../technology/why-uli-standards-matter.md) | Как решение создать и проверить? |
 | [Platform DETai в Technology Layer](../../technology/platform/index.md) | Как доставить и сопровождать цифровые пользовательские сервисы? |
 | [Governance](../../governance/index.md) | Кто вправе определить приоритет и принять риск? |
-| [Право и экономика](../../legal-economic/index.md) | На каком основании предложение существует и монетизируется? |
+| [Company & Economy](../../company-and-economy/index.md) | На каком основании предложение существует и монетизируется? |
 
 ## Где продолжить
 
