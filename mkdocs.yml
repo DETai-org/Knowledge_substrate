@@ -23,6 +23,14 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      'ru/architecture/index.md': 'ru/ecosystem/DETai/index.md'
+      'ru/architecture/three-perspective-consensus.md': 'ru/ecosystem/DETai/index.md'
+      'ru/architecture/ecosystem-canon.md': 'ru/ecosystem/DETai/index.md'
+      'ru/architecture/cross-cutting-systems.md': 'ru/ecosystem/DETai/index.md'
+      'ru/architecture/ontology.md': 'ru/ecosystem/glossary.md'
+      'ru/architecture/umbrella-brand.md': 'ru/governance/umbrella-brand.md'
+      'ru/architecture/source-of-truth-map.md': 'ru/governance/management-strategy.md'
+      'ru/ecosystem/index.md': 'ru/ecosystem/DETai/index.md'
       'ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/telegram-bot-readme.md': 'ru/ecosystem/DETai/U.L.I/3_Technical_Standards/Telegram_Bots/index.md'
       'ru/ecosystem/DETai/Platform_DETai/E1-Core/Francis Galton/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/francis-galton/index.md'
       'ru/ecosystem/DETai/Platform_DETai/E1-Core/detai-matrix/index.md': 'ru/ecosystem/DETai/Platform_DETai/products/detai-matrix/index.md'
@@ -98,16 +106,7 @@ nav:
   - Карта знаний: ru/start/knowledge-map.md
   - Маршруты по ролям: ru/start/role-routes.md
   - Рабочая среда: ru/start/working-environment.md
-- DETai как целое:
-  - Обзор: ru/architecture/index.md
-  - Трёхсторонний архитектурный консенсус: ru/architecture/three-perspective-consensus.md
-  - Архитектурный канон: ru/architecture/ecosystem-canon.md
-  - Онтология сущностей: ru/architecture/ontology.md
-  - DETai как Umbrella Brand: ru/architecture/umbrella-brand.md
-  - Системы, соединяющие оба слоя: ru/architecture/cross-cutting-systems.md
-  - Карта источников истины: ru/architecture/source-of-truth-map.md
-  - Публичная проекция экосистемы: ru/ecosystem/index.md
-  - Экосистема DETai: ru/ecosystem/DETai/index.md
+- Экосистема DETai: ru/ecosystem/DETai/index.md
 - Управление и участие:
   - Обзор управления: ru/governance/index.md
   - Осмысленное участие: ru/governance/meaningful-participation.md
@@ -140,6 +139,7 @@ nav:
       - Публичный профиль и авторство: ru/governance/team-os/public-profile.md
       - Видимость данных, AI и публикация: ru/governance/team-os/profile-data-and-visibility.md
   - Brand & Communications:
+    - DETai как Umbrella Brand: ru/governance/umbrella-brand.md
     - Границы и ответственность домена: ru/governance/brand-and-communications.md
   - Общие рабочие правила:
     - Процесс версионности: ru/ecosystem/Management_layer/2_Architecture_and_Logic/Versioning-process.md

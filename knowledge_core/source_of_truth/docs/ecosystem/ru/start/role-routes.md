@@ -35,7 +35,7 @@ title: Маршруты по ролям
 | Роль или перспектива | Сначала прочитать | Затем углубиться |
 |---|---|---|
 | Новый участник | [Onboarding DETai](../onboarding/index.md) | [Operating Model](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md), [осмысленное участие](../governance/meaningful-participation.md), [рабочая среда](working-environment.md) |
-| Основатель / Anchor | [Канон экосистемы](../architecture/ecosystem-canon.md) | Governance, портфель, evidence и внешняя готовность |
+| Основатель / Anchor | [Экосистема DETai](../ecosystem/DETai/index.md) | Governance, портфель, evidence и внешняя готовность |
 | Менеджер / владелец домена | [Governance и Operating Model](../governance/index.md) | Product–Market, Team OS, source-of-truth map |
 | Технический лидер | [Технологический слой](../technology/index.md) | U.L.I., Platform DETai, Trust и product assurance |
 | Разработчик | [U.L.I.](../ecosystem/DETai/U.L.I/index.md) | production cycle, work model и technical standards |

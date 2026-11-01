@@ -29,7 +29,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: implements
-      linked_document_id: source-of-truth-map
+      linked_document_id: detai-management-strategy
     - schema: ecosystem
       link_type: governs
       linked_document_id: knowledge-publication-delivery

@@ -24,7 +24,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: maps
-      linked_document_id: ecosystem-canon
+      linked_document_id: detai-index
 title: Карта знаний DETai
 ---
 
@@ -34,7 +34,7 @@ title: Карта знаний DETai
 
 | Система | Главный вопрос | Рекомендуемый вход |
 |---|---|---|
-| DETai как целое | Из чего состоит экосистема, что объединяет бренд и как связаны части? | [Канон экосистемы](../architecture/ecosystem-canon.md) |
+| Экосистема DETai | Из чего состоит экосистема, что объединяет бренд и как связаны части? | [Экосистема DETai](../ecosystem/DETai/index.md) |
 | Управление и участие | Как устроены Governance, Management Layer, две стратегии и осмысленное участие человека? | [Управление](../governance/index.md) |
 | DET и институциональная жизнь | Что является профессиональным ядром и как живут практика, образование и исследование? | [Метод DET](../method/index.md) |
 | Технологический слой | Где создаются и доставляются решения? | [Технология](../technology/index.md) |

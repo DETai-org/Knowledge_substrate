@@ -39,7 +39,7 @@ Knowledge Substrate — версионная память и документа�
 ### Я впервые вижу DETai
 
 1. [Карта знаний](knowledge-map.md)
-2. [Архитектура экосистемы](../architecture/index.md)
+2. [Экосистема DETai](../ecosystem/DETai/index.md)
 3. [Метод DET и институциональная жизнь](../method/index.md)
 4. [Технологический слой](../technology/index.md)
 5. [Governance и Operating Model](../governance/index.md)

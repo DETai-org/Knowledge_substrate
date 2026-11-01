@@ -20,16 +20,15 @@ DETai connects an independent psychotherapeutic method, its institutional life, 
 
 1. [Guide](start/index.md) — three entry routes into the knowledge base.
 2. [Knowledge map](start/knowledge-map.md) — the main systems and relationships in one place.
-3. [Three-perspective consensus](architecture/three-perspective-consensus.md) — how the systemic, humanistic, and entrepreneurial perspectives fit together.
-4. [Architecture canon](architecture/ecosystem-canon.md) — stable definitions of the ecosystem as a whole.
-5. [Role-based routes](start/role-routes.md) — reading paths for participants, practitioners, developers, and partners.
-6. [Working environment](start/working-environment.md) — where to find knowledge, tasks, code, data, and source materials.
+3. [DETai ecosystem](ecosystem/DETai/index.md) — the structure and connections of the ecosystem.
+4. [Role-based routes](start/role-routes.md) — reading paths for participants, practitioners, developers, and partners.
+5. [Working environment](start/working-environment.md) — where to find knowledge, tasks, code, data, and source materials.
 
 ## What is stored here
 
 The Knowledge Substrate contains:
 
-- the architecture canon, ontology, and source-of-truth map;
+- an ecosystem overview and glossary of key concepts;
 - the ecosystem’s philosophy, mission, and values;
 - standards and policies;
 - documentation for DET, the institutional layer, Platform DETai, and U.L.I.;

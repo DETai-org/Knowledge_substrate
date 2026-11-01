@@ -25,7 +25,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: implements
-      linked_document_id: cross-cutting-systems
+      linked_document_id: detai-index
     - schema: ecosystem
       link_type: contains
       linked_document_id: detai-product-catalog

@@ -20,16 +20,15 @@ DETai yhdistää itsenäisen psykoterapeuttisen menetelmän, sen institutionaali
 
 1. [Opas](start/index.md) — kolme reittiä tietopohjaan.
 2. [Tietokartta](start/knowledge-map.md) — keskeiset järjestelmät ja niiden yhteydet yhdessä näkymässä.
-3. [Kolmen näkökulman konsensus](architecture/three-perspective-consensus.md) — systeemisen, humanistisen ja yrittäjämäisen näkökulman yhteys.
-4. [Arkkitehtuurikaanon](architecture/ecosystem-canon.md) — ekosysteemin kokonaisuutta koskevat pysyvät määritelmät.
-5. [Roolikohtaiset reitit](start/role-routes.md) — lukupolut osallistujille, ammattilaisille, kehittäjille ja kumppaneille.
-6. [Työympäristö](start/working-environment.md) — mistä löytyvät tieto, tehtävät, koodi, data ja alkuperäisaineistot.
+3. [DETai-ekosysteemi](ecosystem/DETai/index.md) — ekosysteemin rakenne ja osien yhteydet.
+4. [Roolikohtaiset reitit](start/role-routes.md) — lukupolut osallistujille, ammattilaisille, kehittäjille ja kumppaneille.
+5. [Työympäristö](start/working-environment.md) — mistä löytyvät tieto, tehtävät, koodi, data ja alkuperäisaineistot.
 
 ## Mitä täällä säilytetään
 
 Knowledge Substrate sisältää:
 
-- arkkitehtuurikaanonin, ontologian ja tiedon lähteiden kartan;
+- ekosysteemin yleiskatsauksen ja keskeisten käsitteiden sanaston;
 - ekosysteemin filosofian, tehtävän ja arvot;
 - standardit ja käytännöt;
 - DET-menetelmän, institutionaalisen tason, Platform DETai -kokonaisuuden ja U.L.I.:n dokumentaation;

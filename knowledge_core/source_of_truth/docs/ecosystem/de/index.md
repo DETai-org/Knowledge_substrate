@@ -20,16 +20,15 @@ DETai verbindet eine eigenständige psychotherapeutische Methode, ihr institutio
 
 1. [Wegweiser](start/index.md) — drei Einstiegswege in die Wissensbasis.
 2. [Wissenslandkarte](start/knowledge-map.md) — die wichtigsten Systeme und Beziehungen auf einer Seite.
-3. [Konsens aus drei Perspektiven](architecture/three-perspective-consensus.md) — das Zusammenspiel der systemischen, humanistischen und unternehmerischen Perspektive.
-4. [Architekturkanon](architecture/ecosystem-canon.md) — beständige Definitionen des Ökosystems als Ganzes.
-5. [Rollenbasierte Wege](start/role-routes.md) — Lesepfade für Mitwirkende, Fachpersonen, Entwickler:innen und Partner:innen.
-6. [Arbeitsumgebung](start/working-environment.md) — wo Wissen, Aufgaben, Code, Daten und Originalquellen zu finden sind.
+3. [DETai-Ökosystem](ecosystem/DETai/index.md) — Aufbau und Zusammenhänge des Ökosystems.
+4. [Rollenbasierte Wege](start/role-routes.md) — Lesepfade für Mitwirkende, Fachpersonen, Entwickler:innen und Partner:innen.
+5. [Arbeitsumgebung](start/working-environment.md) — wo Wissen, Aufgaben, Code, Daten und Originalquellen zu finden sind.
 
 ## Was hier gespeichert wird
 
 Das Knowledge Substrate enthält:
 
-- den Architekturkanon, die Ontologie und die Karte der maßgeblichen Quellen;
+- einen Überblick über das Ökosystem und ein Glossar der Grundbegriffe;
 - Philosophie, Mission und Werte des Ökosystems;
 - Standards und Richtlinien;
 - Dokumentation zu DET, der institutionellen Ebene, Platform DETai und U.L.I.;

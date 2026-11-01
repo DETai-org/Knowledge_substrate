@@ -187,4 +187,4 @@ Operating Model объясняет целое, но не заменяет буд
 - AI Accountability Policy;
 - Transparency and Visibility Policy.
 
-До появления этих policies действуют канонические границы [трёхстороннего консенсуса](../../../architecture/three-perspective-consensus.md), а открытые механизмы честно маркируются как target-state.
+До появления этих policies действуют канонические границы [управления экосистемой](../../DETai/index.md), а открытые механизмы честно маркируются как target-state.

@@ -30,7 +30,7 @@ links:
       linked_document_id: product-market-index
     - schema: ecosystem
       link_type: governed-by
-      linked_document_id: source-of-truth-map
+      linked_document_id: detai-management-strategy
 title: Стандарт ценностного предложения продукта
 ---
 
@@ -107,4 +107,4 @@ GEO-вопрос — не скрытая техническая фраза и н
 - SEO title и description;
 - structured data и статусом доступности, если они используют те же утверждения.
 
-Если ценностная значимость меняется в следующем релизе, эти публичные представления подлежат обязательной проверке. Product–Market подтверждает содержание, Brand & Communications и владелец сайта обновляют публичную проекцию, а Management Layer координирует и закрывает событие синхронизации по [карте источников истины](../architecture/source-of-truth-map.md).
+Если ценностная значимость меняется в следующем релизе, эти публичные представления подлежат обязательной проверке. Product–Market подтверждает содержание, Brand & Communications и владелец сайта обновляют публичную проекцию, а Management Layer координирует и закрывает событие синхронизации в рамках своей управленческой ответственности.

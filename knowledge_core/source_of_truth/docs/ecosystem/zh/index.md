@@ -20,16 +20,15 @@ DETai 将独立的心理治疗方法、其制度化发展、自有技术层与�
 
 1. [阅读指南](start/index.md)——进入知识库的三条主要路径。
 2. [知识地图](start/knowledge-map.md)——集中查看主要系统及其关系。
-3. [三方视角共识](architecture/three-perspective-consensus.md)——系统、人本与创业视角如何相互衔接。
-4. [架构规范](architecture/ecosystem-canon.md)——关于生态系统整体的稳定定义。
-5. [角色阅读路径](start/role-routes.md)——面向参与者、专业人员、开发者与合作伙伴的阅读路线。
-6. [工作环境](start/working-environment.md)——查找知识、任务、代码、数据与原始资料的位置。
+3. [DETai 生态系统](ecosystem/DETai/index.md) — 生态系统的结构及其各部分之间的联系。
+4. [角色阅读路径](start/role-routes.md)——面向参与者、专业人员、开发者与合作伙伴的阅读路线。
+5. [工作环境](start/working-environment.md)——查找知识、任务、代码、数据与原始资料的位置。
 
 ## 这里保存什么
 
 Knowledge Substrate 包含：
 
-- 架构规范、实体本体与权威来源地图；
+- 生态系统概览与核心概念词汇表；
 - 生态系统的理念、使命与价值观；
 - 标准与政策；
 - DET、制度层、Platform DETai 与 U.L.I. 的文档；

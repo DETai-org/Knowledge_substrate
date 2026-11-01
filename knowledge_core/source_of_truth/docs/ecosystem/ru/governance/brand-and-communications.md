@@ -61,7 +61,7 @@ Brand & Communications делает DETai узнаваемой, понятной
 
 | Предмет | Owning domain |
 |---|---|
-| Миссия, ценности и определение DETai | Governance и архитектурный канон |
+| Миссия, ценности и определение DETai | Governance |
 | Профессиональная истина и границы DET | Method & Professional Standards |
 | Сегмент, offer, pricing и product positioning | Product–Market |
 | Научные, клинические и продуктовые claims | Evidence совместно с Trust и owning domain |
@@ -73,7 +73,7 @@ Brand & Communications вправе самостоятельно принима�
 ## Где что живёт
 
 - каноническое определение домена — эта страница;
-- брендовая архитектура — [DETai как Umbrella Brand](../architecture/umbrella-brand.md);
+- брендовая архитектура в этом разделе — [DETai как Umbrella Brand](umbrella-brand.md);
 - операционный календарь, кампании и назначения — Management runtime;
 - публичная реализация — основной сайт и каналы;
 - approved wording и основания — Claim–Evidence Graph;
