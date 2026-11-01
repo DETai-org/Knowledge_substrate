@@ -11,7 +11,7 @@ translation_of: /ru/ecosystem/DETai/Platform_DETai/products/psychology-in-quotes
 
 **Psychology in Quotes (PiQ)** ist ein digitales Produkt für **Bildung und Wissensvermittlung** der [Platform DETai](../../index.md), die zum [DETai-Ökosystem](../../../index.md) gehört. Es ermöglicht, psychologische Gedanken kennenzulernen, wichtige Buchpassagen mitsamt Verfasser, Quelle und Kontext zu bewahren, Ideen anderer Menschen zu entdecken und eine eigene Wissenssammlung aufzubauen.
 
-**Öffentliche Veröffentlichung von Version 1.0 — 1. November 2026.**
+**Öffentliche Veröffentlichung von Version 1.0 — 31. Oktober 2026.**
 
 Das DETai-Ökosystem verbindet Psychotherapie, Forschung, Bildung, Technologie und Gemeinschaft, um die Psychotherapie des 21. Jahrhunderts weiterzuentwickeln. **Platform DETai** verbindet digitale Produkte, Benutzerkonten und technische Möglichkeiten. **PiQ vereint selbstbestimmtes Lernen, Lesekultur und digitale Kreativität:** Menschen können bedeutungsvolle Zitate auswählen, reflektieren, speichern und veröffentlichen.
 
