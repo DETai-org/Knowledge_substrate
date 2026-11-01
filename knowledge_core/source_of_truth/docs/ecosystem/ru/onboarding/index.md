@@ -33,7 +33,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: implements
-      linked_document_id: meaningful-participation
+      linked_document_id: management-layer-1-philosophy-participation-principles
     - schema: ecosystem
       link_type: part-of
       linked_document_id: management-layer-2-architecture-and-logic-operating-model-detai

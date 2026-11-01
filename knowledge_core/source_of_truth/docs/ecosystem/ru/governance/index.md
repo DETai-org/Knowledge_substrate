@@ -1,97 +1,83 @@
 ---
 type: ecosystem
 classification:
-  scope: DETai_ecosystem
-  context: governance-operating-model
-  layer: system-interface
+  scope: Governance
+  context: governance
+  layer: null
   function: index
-  system: governance-operating-model
-  domain: governance
-  audiences: [public, team, managers, agents]
 descriptive:
-  id: governance-operating-model-index
-  version: v4
+  id: governance-index
+  version: v3
   status: active
-  date_ymd: 2026-10-23
-governance:
-  canonicality: canonical
-  visibility: public
-  owner_role: governance-owner
-  approver_role: founder
-  review_date: 2026-09-05
+  date_ymd: 2026-02-18
+  date_update: 2026-11-01
 links:
   external_links:
-    - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/governance/
+    - type: "MkDocs_ru"
+      url: "https://docs.detai-x.com/ru/governance/"
   document_links:
-    - schema: ecosystem
-      link_type: reframes
-      linked_document_id: governance-index
-    - schema: ecosystem
-      link_type: reframes
-      linked_document_id: management-layer-index
-    - schema: ecosystem
-      link_type: contains
-      linked_document_id: detai-management-strategy
-    - schema: ecosystem
-      link_type: contains
-      linked_document_id: management-layer-strategic-development-index
-    - schema: ecosystem
-      link_type: contains
-      linked_document_id: meaningful-participation
-    - schema: ecosystem
-      link_type: contains
-      linked_document_id: brand-and-communications-domain
-title: Governance и Operating Model
+    - schema: "ecosystem"
+      link_type: "coordinates-with"
+      linked_document_id: "management-layer-index"
+title: Governance
 ---
 
-# Governance и Operating Model
+# Governance
 
-Governance и Operating Model образуют две связанные, но разные функции управления всей экосистемой.
+**Governance — конституционный уровень экосистемы DETai, который удерживает миссию, ценности, источник полномочий, предельные границы и правила изменения системы.**
 
-| Governance | Operating Model / Management Layer |
+Если экосистема является субъектом совместного действия, Governance образует её нормативное ядро. Он отвечает на вопросы:
+
+- зачем существует DETai;
+- куда она направляется;
+- какие ценности и ограничения обязательны;
+- кто обладает полномочиями принимать решения определённого масштаба;
+- как полномочия делегируются и отзываются;
+- каким образом изменяется сама система управления.
+
+Governance не выполняет ежедневную работу и не подменяет профессиональную компетенцию. Его решения переводятся в стратегию, роли, домены, ресурсы и процессы через [Ecosystem Management Layer](../management-layer/index.md).
+
+## Смысловая рамка
+
+[Миссия](mission.md), [видение](vision.md), [ценности](values.md), [BHAG](bhag.md) и [принципы участия](../management-layer/participation-principles.md) задают основание совместной деятельности. Они направляют политики и решения, но не заменяют их.
+
+## Конституционное ядро
+
+[Конституция](constitution.md) является верхним нормативным документом Governance. Она фиксирует действующую основатель-центрированную модель с делегируемой автономией доменов.
+
+На 5 августа 2026 года терминология действующей редакции Конституции относится к предыдущему этапу архитектуры и должна быть синхронизирована отдельной версией. До такой версии не следует автоматически объявлять внедрёнными:
+
+- управление через круги;
+- консент как универсальный способ принятия решений;
+- автоматическое влияние очков вклада на управленческий голос;
+- динамическое распределение долей;
+- право AI-агентов принимать юридически или профессионально значимые решения.
+
+Эти направления могут исследоваться, но требуют отдельных политик, пилотов и, где применимо, юридической проверки.
+
+## Смысловые документы
+
+| Документ | Функция | Горизонт |
+|---|---|---|
+| [Mission](mission.md) | Основание существования экосистемы | Вне времени |
+| [Vision](vision.md) | Качественный образ будущего | Долгосрочный |
+| [BHAG](bhag.md) | Желаемый масштаб будущего | 15–20 лет |
+| [Values](values.md) | Ценностный фильтр решений и культуры | Постоянный |
+| [Constitution](constitution.md) | Полномочия, границы, делегирование и изменение Governance | Действующая редакция |
+
+Values не являются отдельным шагом иерархии: они проходят через Governance, Management, институциональный и технологический слои.
+
+## Связь с Management Layer
+
+| Governance | Management Layer |
 |---|---|
-| Зачем существует система? | Как она организует работу? |
-| Где источник власти и границы? | Какие домены, роли и процессы действуют? |
-| Какие решения зарезервированы? | Как делегируются решения и ресурсы? |
-| Как изменяются основные правила? | Как стратегия превращается в портфель и исполнение? |
+| Определяет миссию и границы | Формирует стратегию и организационную систему |
+| Фиксирует источник полномочий | Распределяет делегированные домены и роли |
+| Удерживает зарезервированные решения | Координирует портфель, ресурсы и работу |
+| Определяет правила изменения системы | Реализует изменения через процессы и проекты |
 
-## Зачем и во имя чего
+Краткую карту всей системы см. в [модели управления DETai](../management-layer/management-model.md).
 
-[Миссия, видение, ценности, BHAG и принципы участия](purpose-and-principles.md) создают смысловую и культурную рамку. Эти документы являются предтечей policies и решений, но не заменяют их.
+## Корпоративные полномочия
 
-[Осмысленное участие](meaningful-participation.md) переводит эту рамку в требование к Operating Model: человек должен понимать целое и свою роль, видеть связь работы со стратегией и результатом, получать обратную связь и иметь путь влияния.
-
-## Действующая модель
-
-На текущем этапе финальная Governance-ответственность остаётся у основателя. Полномочия делегируются ролям и доменам. Распределённая модель, S3-паттерны и выборочная структурная грамматика Holacracy являются target-state и требуют пилота.
-
-Действующие наследуемые документы:
-
-- [Governance](../ecosystem/Governance/index.md)
-- [Конституция](../ecosystem/Governance/Constitution.md)
-- [Ecosystem Management Layer](../ecosystem/Management_layer/index.md)
-- [Operating Model DETai](../ecosystem/Management_layer/2_Architecture_and_Logic/operating-model-detai.md)
-
-## Домены и решения
-
-[Карта доменов и decision rights](domains-and-decision-rights.md) объясняет целевое разделение ответственности. Карта не утверждает, что все круги уже существуют как команды.
-
-[Brand & Communications](brand-and-communications.md) оформлен как самостоятельный операционный домен. Он отвечает за применение бренда и публичные коммуникации, но действует внутри канона, product positioning, approved claims и Trust-ограничений.
-
-## Две стратегии
-
-- [Стратегия управления](management-strategy.md) отвечает за развитие самой способности DETai управляться: власть, роли, классы решений, делегирование, review и safeguards.
-- [Стратегия развития](../ecosystem/Management_layer/Strategic_Development/index.md) отвечает за содержание движения в выбранном периоде: направления, ставки, продукты, ресурсы, метрики и условия пересмотра.
-
-Стратегия развития действует внутри управленческой рамки. Ни одна из них не заменяет оперативные проекты и задачи.
-
-## Team OS
-
-[Team OS — governance и модель вклада](team-os.md) описывает правила visibility, оценки вклада, recognition, economic rights и human accountability. Сама внутренняя управленческая система принадлежит Management Layer и описана отдельно на странице [Team OS — операционная среда DETai](../ecosystem/DETai/Platform_DETai/E3-Infra/team-os/index.md). E3 обозначает её обеспечивающую роль, а не отдельный контур владения.
-
-[Рабочая среда участника](../start/working-environment.md) связывает Team OS, task systems, Knowledge Substrate, U.L.I., продуктовые runtime и Corporate Vault как маршрут, не смешивая их владельцев и режимы доступа.
-
-## Корпоративный интерфейс
-
-Внутреннее самоуправление не отменяет полномочия будущих shareholders, Board и Managing Director. Делегирование действует только в пределах закона, корпоративных документов и профессиональных ограничений.
+Внутреннее самоуправление не отменяет полномочия будущих акционеров, совета директоров и управляющего директора. Делегирование действует в пределах закона, корпоративных документов и профессиональных ограничений.

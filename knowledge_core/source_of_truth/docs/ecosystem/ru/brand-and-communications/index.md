@@ -1,0 +1,121 @@
+---
+type: ecosystem
+classification:
+  scope: DETai_ecosystem
+  context: governance-operating-model
+  layer: operating-model
+  function: index
+  system: governance-operating-model
+  domain: brand-and-communications
+  audiences: [public, team, brand, product, agents]
+descriptive:
+  id: brand-and-communications-domain
+  version: v6
+  status: active
+  date_ymd: 2026-10-23
+  date_update: 2026-11-02
+governance:
+  canonicality: canonical
+  visibility: public
+  owner_role: brand-communications-owner
+  approver_role: founder
+  review_date: 2026-09-05
+object_state:
+  architecture_status: approved-target
+  implementation_status: in-design
+  evidence_status: not-applicable
+  visibility_status: public
+links:
+  external_links: []
+  document_links:
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: product-market-index
+    - schema: ecosystem
+      link_type: coordinates-with
+      linked_document_id: detai-platform-detai-index
+    - schema: ecosystem
+      link_type: coordinates-with
+      linked_document_id: management-layer-index
+    - schema: ecosystem
+      link_type: implements
+      linked_document_id: detai-umbrella-brand
+    - schema: ecosystem
+      link_type: interfaces-with
+      linked_document_id: storytelling-index
+title: Brand & Communications
+---
+
+# Brand & Communications
+
+## Назначение домена
+
+**Brand & Communications** — направление экосистемы DETai, отвечающее за развитие бренда, формирование ценностных предложений, маркетинг, продвижение и коммуникацию с аудиторией. Связывает продукты и услуги технологического и институционального слоёв с потребностями людей и рынка.
+
+## Product–Market и два слоя экосистемы
+
+[Product–Market](product-market/index.md) входит в Brand & Communications и отвечает за ценность предложений, аудиторию, показатели и рыночную работу.
+
+Brand & Communications принимает готовые предложения двух слоёв: цифровые продукты из [Technology Layer](../technology/index.md) и мастер-классы, тренинги, образовательные программы и групповые психотерапевтические форматы из [Institutional Layer](../institutional-layer/index.md). Домен развивает общий Umbrella Brand, продвижение и связь с аудиторией этих предложений.
+
+[Platform DETai](../technology/platform/index.md) — платформа цифровых продуктов внутри Technology Layer. Brand & Communications работает с их брендом и аудиторией, а Улей и платформа — с цифровой реализацией и её эксплуатацией. Для институциональных форматов содержание и профессиональная готовность остаются у соответствующих специалистов.
+
+Management Layer организует передачу готовности и обратную связь: идеи цифровых улучшений возвращаются в Улей, идеи развития институционального формата — его команде. Границы собраны в [таблице ответственности](../management-layer/index.md#разделение-ответственности).
+
+## Публичный продукт и его развитие
+
+После публичного `v1.0` Brand & Communications сопровождает бренд продукта и коммуникацию с пользователями, собирает обратную связь и вместе с командой продукта и Product–Market обсуждает направления развития. Принятые идеи улучшений передаются в разработку U.L.I.; после выпуска следующей версии обновляются публичное описание и сообщения аудитории. Подготовка к запуску через пилот и дальнейшая связь с разработкой описаны в [продуктовом цикле Product–Market](product-market-cycle.md).
+
+## Ответственность
+
+- развитие бренда, применение бренд-системы и контроль согласованности;
+- формирование ценностных предложений и маркетинг;
+- аудитории и публичные маршруты;
+- редакционный календарь;
+- мультиязычная коммуникация;
+- маркетинговые кампании, продвижение и коммуникация запусков;
+- согласованность сайта, Telegram, презентаций, публикаций и иных поверхностей;
+- сбор обратной связи из публичного пространства;
+- связь публичной страницы с каноническим документом и evidence.
+
+## Границы ответственности и взаимодействие
+
+| Предмет | Owning domain |
+|---|---|
+| Миссия, ценности и определение DETai | Governance |
+| Профессиональная истина и границы DET | Method & Professional Standards |
+| Аудитория, ценностное предложение, маркетинг и позиционирование | Направление Product–Market внутри Brand & Communications совместно с командой продукта |
+| Финансы, коммерческая деятельность, собственность, инвестиции и распределение экономических ресурсов | [Company & Economy](../company-and-economy/index.md) |
+| Разработка сайта и платформенных сервисов | Technology Layer: U.L.I. создаёт решения, Platform DETai обеспечивает их доставку и эксплуатацию |
+| Юридические вопросы и обязательные disclosures | [Company & Economy](../company-and-economy/index.md) |
+
+Brand & Communications связывает предложения с потребностями аудитории и рынка. Экономические и корпоративные условия согласуются с [Company & Economy](../company-and-economy/index.md); междоменное взаимодействие организуется через Management Layer.
+
+Brand & Communications вправе самостоятельно принимать редакционные и канал-специфические решения внутри утверждённого бренда, claims, позиционирования, профессиональных и правовых ограничений и бюджета.
+
+## Где что живёт
+
+- каноническое определение домена — эта страница;
+- брендовая архитектура в этом разделе — [DETai как Umbrella Brand](umbrella-brand.md);
+- операционный календарь, кампании и назначения — Management runtime;
+- публичная реализация — основной сайт и каналы;
+- утверждённые формулировки и их основания — документация соответствующих продуктов;
+- технические компоненты — соответствующие продуктовые и технологические репозитории.
+
+Самостоятельный проект [Storytelling — Publication Core](../technology/platform/storytelling/index.md) реализует публикационную бизнес-логику. Он принимает материалы из редакционной рабочей среды, выполняет enrichment, локализацию, review и версионирование и поставляет утверждённые публикационные пакеты. Основной сайт, Telegram, VK, возможные будущие YouTube и Habr являются независимыми площадками: Brand & Communications отвечает за редакционную и брендовую согласованность, Storytelling — за подготовку результата, а владельцы каналов — за техническую публикацию и отображение.
+
+Редакционная работа, назначения и рабочие материалы организуются в Scope **Brand & Communications** системы [Team OS](../management-layer/team-os/index.md). Точный путь передачи материала в Publication Core определяется актуальными контрактами Storytelling и канала; перенос рабочей структуры из ClickUp сам по себе не подтверждает миграцию каждой интеграции. Team OS хранит рабочий контекст, а Publication Core сохраняет собственные код и контракты подготовки публикаций.
+
+## Минимальный operating cycle
+
+```text
+цель и аудитория
+→ ценностное предложение и маркетинговая задача
+→ утверждённые claims и ограничения
+→ формат и канал
+→ выпуск
+→ реакция и evidence
+→ корректировка позиционирования или следующей коммуникации
+```
+
+Публичная реакция не переписывает канон автоматически. Она возвращается в owning domain как вход для review.

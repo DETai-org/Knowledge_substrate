@@ -38,6 +38,10 @@
 }
 
 /* Верхний уровень боковой навигации остаётся визуальными разделами */
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item:first-child > .md-nav__link,
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item:first-child > .md-nav__link .md-ellipsis,
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item:first-child > .md-nav__container > .md-nav__link,
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item:first-child > .md-nav__container > .md-nav__link .md-ellipsis,
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__container > .md-nav__link,
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__container > .md-nav__link .md-ellipsis,
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link,
@@ -166,6 +170,95 @@
     width: 100%;
     margin-top: 1.9rem;
   }
+}
+
+/* Compact brand labels above the two top-level layers in the primary menu. */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a[href$="institutional-layer/"] {
+  --detai-layer-brand: "DET";
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a[href$="technology/"] {
+  --detai-layer-brand: "DETai";
+}
+
+@media screen and (max-width: 76.234375em) {
+  .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container:has(> a:is([href$="institutional-layer/"], [href$="technology/"])) {
+    padding-top: 0.3rem;
+  }
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a:is([href$="institutional-layer/"], [href$="technology/"]) > .md-ellipsis::before {
+  content: var(--detai-layer-brand);
+  display: table;
+  margin-bottom: 0.14rem;
+  padding: 0.02rem 0.24rem;
+  border: 1px solid #d8bd73;
+  border-radius: 0.2rem;
+  background: #fff6dc;
+  color: #806018;
+  font-size: 0.46rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.035em;
+}
+
+/* Portfolio badges use the same compact shape as the DET / DETai labels. */
+.md-nav--primary a:is([data-detai-echelon="E1"], [href$="francis-galton/"], [href$="psykhe-ai/"]) {
+  --detai-echelon: "E1";
+  --detai-echelon-border: #a5c9f7;
+  --detai-echelon-bg: #e9f2ff;
+  --detai-echelon-color: #245b9b;
+}
+
+.md-nav--primary a:is([data-detai-echelon="E2"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"]) {
+  --detai-echelon: "E2";
+  --detai-echelon-border: #dfbd00;
+  --detai-echelon-bg: #fde047;
+  --detai-echelon-color: #594b00;
+}
+
+.md-nav--primary a:is([data-detai-echelon="E3"], [href$="infrastructure-foundation/"]) {
+  --detai-echelon: "E3";
+  --detai-echelon-border: #c5b2ee;
+  --detai-echelon-bg: #efe7ff;
+  --detai-echelon-color: #6742a3;
+}
+
+.md-nav--primary a:is([data-detai-echelon], [href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"], [href$="infrastructure-foundation/"]) > .md-ellipsis::before {
+  content: var(--detai-echelon);
+  display: table;
+  box-sizing: border-box;
+  min-width: 1.7rem;
+  text-align: center;
+  margin-bottom: 0.14rem;
+  padding: 0.02rem 0.24rem;
+  border: 1px solid var(--detai-echelon-border);
+  border-radius: 0.2rem;
+  background: var(--detai-echelon-bg);
+  color: var(--detai-echelon-color);
+  font-size: 0.46rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.035em;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__container:has(> a:is([data-detai-echelon], [href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"], [href$="infrastructure-foundation/"])),
+.detai-docked-nav .md-nav--primary .md-nav__item > a.md-nav__link:is([data-detai-echelon], [href$="francis-galton/"], [href$="psykhe-ai/"], [href$="psychology-in-quotes/"], [href$="storytelling/"], [href$="website/"], [href$="telegram/"], [href$="infrastructure-foundation/"]) {
+  padding-top: 0.3rem;
+}
+
+.md-nav--primary .md-nav__item:has(> .md-nav__container > a[href$="archive/"]) {
+  margin-top: 0.45rem;
+  border-top: 3px double color-mix(in srgb, var(--md-default-fg-color) 25%, transparent);
+}
+
+.md-nav--primary a[href$="archive/"] {
+  color: var(--md-default-fg-color--light);
+  font-weight: 500;
+}
+
+.md-nav--primary a[href$="archive/"]:is(:hover, :focus-visible) {
+  color: var(--md-default-fg-color);
 }
 
 /* Навигационный путь из nav в mkdocs.yml */

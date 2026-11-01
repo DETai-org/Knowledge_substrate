@@ -22,7 +22,7 @@
     }
 
     const trimmed = pathname.replace(/\/+$/, "");
-    return `${trimmed}/${targetLang}/${search}${hash}`.replace(/\/+/g, "/");
+    return `${trimmed}/${targetLang}/ecosystem/${search}${hash}`.replace(/\/+/g, "/");
   }
 
   function persistPreferredLocale(targetLang) {

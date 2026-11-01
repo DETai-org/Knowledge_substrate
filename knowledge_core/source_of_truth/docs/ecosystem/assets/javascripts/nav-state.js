@@ -75,6 +75,12 @@
   function bind() {
     restore();
 
+    function snapshot() {
+      var state = loadState();
+      toggles().forEach(function (input) { state[stateKey(input)] = input.checked; });
+      saveState(state);
+    }
+
     toggles().forEach(function (input) {
       if (input.dataset.detaiNavStateBound === "true") {
         return;
@@ -82,11 +88,17 @@
 
       input.dataset.detaiNavStateBound = "true";
       input.addEventListener("change", function () {
-        var state = loadState();
-        state[stateKey(input)] = input.checked;
-        saveState(state);
+        snapshot();
       });
     });
+
+    var sidebar = document.querySelector(".md-sidebar--primary");
+    if (sidebar && sidebar.dataset.detaiNavLinksBound !== "true") {
+      sidebar.dataset.detaiNavLinksBound = "true";
+      sidebar.addEventListener("click", function (event) {
+        if (event.target.closest("a[href]")) snapshot();
+      }, true);
+    }
   }
 
   if (window.document$ && typeof window.document$.subscribe === "function") {

@@ -1,0 +1,218 @@
+/* Keep Material's drill-down navigation in a resizable, separate column. */
+.detai-docked-nav .md-main__inner {
+  display: grid;
+  grid-template-columns: 260px 8px 1fr;
+  align-items: start;
+  gap: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.detai-docked-nav .md-sidebar--primary {
+  grid-column: 1;
+  grid-row: 1;
+  position: sticky !important;
+  top: var(--detai-header-height, 2.4rem) !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  height: calc(100dvh - var(--detai-header-height, 2.4rem)) !important;
+  padding: 0;
+  overflow: hidden;
+  transform: none !important;
+  visibility: visible !important;
+  background: var(--md-default-bg-color);
+  box-shadow: none;
+  z-index: 2;
+}
+
+.detai-docked-nav .md-sidebar--primary .md-sidebar__scrollwrap,
+.detai-docked-nav .md-sidebar--primary .md-sidebar__inner {
+  width: 100%;
+  height: 100% !important;
+  max-height: none !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.detai-docked-nav .md-content {
+  grid-column: 3;
+  grid-row: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.detai-docked-nav .md-content__inner {
+  max-width: 66rem;
+  margin: 0 auto;
+  padding: 1.4rem clamp(0.8rem, 3vw, 2rem);
+}
+
+.detai-docked-nav .md-sidebar--secondary {
+  display: none;
+}
+
+@media (min-width: 90em) {
+  .detai-docked-nav .md-sidebar--secondary {
+    display: block;
+    grid-column: 4;
+    grid-row: 1;
+    width: 100%;
+  }
+}
+
+.detai-docked-nav .md-header__inner { max-width: none; }
+.detai-docked-nav .md-header__button[for="__drawer"],
+.detai-docked-nav .md-overlay[for="__drawer"] { display: none !important; }
+
+.detai-nav-gutter {
+  grid-column: 2;
+  grid-row: 1;
+  position: sticky;
+  top: var(--detai-header-height, 2.4rem);
+  height: calc(100dvh - var(--detai-header-height, 2.4rem));
+  background: transparent;
+  cursor: col-resize;
+  touch-action: none;
+  z-index: 3;
+}
+
+.detai-nav-gutter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: color-mix(in srgb, var(--md-default-fg-color) 15%, transparent);
+}
+
+.detai-nav-gutter:focus-visible {
+  outline: none;
+}
+
+.detai-nav-gutter:hover::after,
+.detai-nav-gutter:focus-visible::after,
+.detai-nav-resizing .detai-nav-gutter::after {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 45%, var(--md-default-bg-color));
+}
+
+.detai-nav-resizing { cursor: col-resize; user-select: none; }
+
+/* The theme normally offers this drill-down view only below its desktop breakpoint. */
+.detai-docked-nav .md-nav--primary,
+.detai-docked-nav .md-nav--primary .md-nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  margin: 0;
+  background: var(--md-default-bg-color);
+  z-index: 1;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__list {
+  flex: 1;
+  min-height: 0;
+  padding: 0;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__item {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__link {
+  margin: 0;
+  padding: 0.6rem 0.8rem;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__container > .md-nav__link { padding: 0; }
+.detai-docked-nav .md-nav--primary .md-nav__container:has(> a:is([href$="institutional-layer/"], [href$="technology/"])) { padding-top: 0.3rem; }
+
+.detai-docked-nav .md-nav--primary .md-nav__title {
+  display: block !important;
+  flex: 0 0 auto;
+  position: relative;
+  height: auto;
+  min-height: 4rem;
+  padding: 2rem 0.8rem 0.65rem;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 0.74rem;
+  line-height: 1.5;
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.detai-docked-nav .md-nav--primary > .md-nav__title {
+  min-height: 3.4rem;
+  padding: 1rem 0.8rem;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  cursor: default;
+}
+
+.detai-docked-nav .md-nav--primary > .md-nav__title .md-logo { display: none; }
+
+.detai-docked-nav .md-nav--primary .md-nav__title .md-nav__icon {
+  display: block;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__icon::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: currentcolor;
+  mask: var(--md-nav-icon--next) center / contain no-repeat;
+  transform: none !important;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__title .md-nav__icon::after { mask-image: var(--md-nav-icon--prev); }
+
+.detai-docked-nav .md-nav--primary .md-nav__toggle ~ .md-nav {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 150ms ease, opacity 150ms ease, visibility 150ms;
+}
+
+.detai-docked-nav .md-nav--primary .md-nav__toggle:checked ~ .md-nav {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* Page links remain links; the panel's back arrows only change its navigation level. */
+.detai-docked-nav .md-nav--primary label[for="__toc"],
+.detai-docked-nav .md-nav--primary .md-nav--secondary { display: none !important; }
+.detai-docked-nav .md-nav--primary label[for="__toc"] + a.md-nav__link { display: flex !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .detai-docked-nav .md-nav--primary .md-nav__toggle ~ .md-nav { transition: none; }
+}

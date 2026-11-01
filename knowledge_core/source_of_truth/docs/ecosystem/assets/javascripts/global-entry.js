@@ -54,7 +54,7 @@
 
   if (preferredLocale) {
     if (entryLink) {
-      entryLink.href = `./${preferredLocale}/`;
+      entryLink.href = `./${preferredLocale}/ecosystem/`;
     }
     hideChooser();
   } else {

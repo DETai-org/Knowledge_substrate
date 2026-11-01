@@ -317,7 +317,7 @@ def _home_structured_data(page, config, locale: str | None) -> dict:
         webpage["inLanguage"] = locale
         if locale != "ru":
             webpage["translationOfWork"] = {
-                "@id": f"{urljoin(config.site_url, 'ru/')}#webpage"
+                "@id": f"{urljoin(config.site_url, 'ru/ecosystem/')}#webpage"
             }
     else:
         language_list_id = f"{page_url}#language-options"
@@ -334,7 +334,7 @@ def _home_structured_data(page, config, locale: str | None) -> dict:
                         "@type": "ListItem",
                         "position": position,
                         "name": HOME_LANGUAGE_NAMES[language],
-                        "url": urljoin(config.site_url, f"{language}/"),
+                        "url": urljoin(config.site_url, f"{language}/ecosystem/"),
                     }
                     for position, language in enumerate(HOME_LOCALES, start=1)
                 ],
