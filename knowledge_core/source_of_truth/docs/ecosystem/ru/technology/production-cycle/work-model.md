@@ -7,7 +7,7 @@ classification:
   function: explanation
 descriptive:
   id: detai-u-l-i-3-technical-standards-work-model-work-model
-  version: v4
+  version: v5
   status: active
   date_ymd: 2026-11-01
   date_update: 2026-11-01
@@ -138,12 +138,10 @@ Work Model получает вход из этапа Project Intent: уже ес
 
 Таким образом, Work Model является рабочим мостом между намерением и поставкой результата.
 
-Распределение ролей между человеком и агентом внутри этапа Work Model Planning подробнее раскрыто в документе [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md).
-
 ## Связанные документы
 
 - [Epic Issue Contract](epic-issue-contract.md) — контракт Epic Issue.
 - [Sub-Issue / Work Package Contract](work-package-contract.md) — контракт Work Package.
 - [Производственный цикл U.L.I.](index.md) — карта этапов разработки цифрового проекта или его следующей версии.
 - [Методология проектного цикла DETai](project-cycle-methodology.md) — объясняет переход от мысли к проектному намерению.
-- [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md) — объясняет совместную форму planning между человеком и агентом.
+- [Совместное планирование человека и агента](collaborative-planning.md) — документ функции `explanation`: объясняет идею Work Model через совместную работу человека и AI, смысловые решения и распределение ответственности на этапе планирования.

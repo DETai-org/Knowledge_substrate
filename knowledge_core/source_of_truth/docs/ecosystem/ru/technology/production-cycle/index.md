@@ -18,6 +18,9 @@ links:
   document_links:
     - schema: ecosystem
       link_type: contains
+      linked_document_id: human-agent-collaborative-planning-in-work-model-planning
+    - schema: ecosystem
+      link_type: contains
       linked_document_id: detai-u-l-i-2-architecture-and-logic-metodologiya-proyektnogo-tsikla-detai
     - schema: ecosystem
       link_type: contains
@@ -96,7 +99,7 @@ title: Производственный цикл
 
 Общую механику планирования описывает [Work Model](work-model.md), а обязательные поля Epic Issue и Work Package задают соответствующие контракты.
 
-Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md) — документ о распределении high-level и low-level ролей между человеком и агентом.
+Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](collaborative-planning.md) — документ о распределении high-level и low-level ролей между человеком и агентом.
 
 ## 3. Implementation
 
@@ -201,7 +204,7 @@ Release Fixation отвечает за момент, когда результа
 
 На уровне Work Model Planning и Implementation ключевым становится агент, который умеет работать внутри Epic Issue / Work Package, удерживать scope, выполнять checklist и готовить PR.
 
-Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md).
+Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](collaborative-planning.md).
 
 ## Граница документа
 
@@ -220,7 +223,7 @@ Release Fixation отвечает за момент, когда результа
 ## Связанные документы
 
 - [Методология проектного цикла DETai](project-cycle-methodology.md) — объясняет переход от мысли к проектному намерению.
-- [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
+- [Совместное планирование человека и агента в Work Model Planning](collaborative-planning.md) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
 - [Work Model](work-model.md) — процесс этапов Work Model Planning и Implementation.
 - [Release Fixation Standard](release-fixation-standard.md) — стандарт фиксации версии проекта.
 - [Версионность: процесс и стандарт](../versioning.md) — правила номеров версий и пересмотра документов.
