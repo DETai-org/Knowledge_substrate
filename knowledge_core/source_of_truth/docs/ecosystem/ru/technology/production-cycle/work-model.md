@@ -7,10 +7,10 @@ classification:
   function: explanation
 descriptive:
   id: detai-u-l-i-3-technical-standards-work-model-work-model
-  version: v3
+  version: v4
   status: active
-  date_ymd: 2026-03-25
-  date_update: 2026-05-29
+  date_ymd: 2026-11-01
+  date_update: 2026-11-01
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -26,7 +26,7 @@ title: Work Model
 
 Work Model — это процессная модель выполнения работы в DETai: от Epic Issue и Work Package до branch, PR и проверяемого результата.
 
-В производственном цикле проектов она покрывает этапы:
+В производственном цикле U.L.I. — dev-этапе цифрового проекта — она покрывает этапы:
 
 - 2. Work Model Planning — проектное намерение переводится в структуру работы;
 - 3. Implementation — Work Package выполняется через branch, PR, checklist и финальную проверку.
@@ -144,6 +144,6 @@ Work Model получает вход из этапа Project Intent: уже ес
 
 - [Epic Issue Contract](epic-issue-contract.md) — контракт Epic Issue.
 - [Sub-Issue / Work Package Contract](work-package-contract.md) — контракт Work Package.
-- [Производственный цикл проектов и карта ролей вокруг него](index.md) — карта полного цикла DETai.
+- [Производственный цикл U.L.I.](index.md) — карта этапов разработки цифрового проекта или его следующей версии.
 - [Методология проектного цикла DETai](project-cycle-methodology.md) — объясняет переход от мысли к проектному намерению.
 - [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md) — объясняет совместную форму planning между человеком и агентом.

@@ -115,5 +115,5 @@ Epic Issue считается завершённой, когда:
 - [Work Model](work-model.md)
 - [Sub-Issue (Work Package) Contract](work-package-contract.md)
 - [Release Fixation Standard](../uli/standards/release-fixation-standard.md)
-- [Производственный цикл проектов и карта ролей вокруг него](index.md)
+- [Производственный цикл U.L.I.](index.md)
 - Migration Notice: переход Epic Issue / Sub-Issue из Markdown-файлов репозитория в ClickUp
