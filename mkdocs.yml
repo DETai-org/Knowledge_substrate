@@ -1201,6 +1201,7 @@ nav:
 - Infrastructure:
   - Обзор: ru/infrastructure/index.md
   - Принципы инфраструктуры: ru/infrastructure/principles.md
+  - Архивариус: ru/infrastructure/arhivarius/index.md
   - Инфраструктурные системы:
     - Обзор: ru/infrastructure/infrastructure-systems/index.md
     - ecosystem-runtime: ru/infrastructure/ecosystem-runtime/index.md
