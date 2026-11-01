@@ -23,6 +23,18 @@ plugins:
       on_post_build: knowledge_core.source_of_truth.assets.hooks.mkdocs_hooks:remove_translation_placeholders_from_sitemap
 - redirects:
     redirect_maps:
+      "en/legal-economic/index.md": "en/company-and-economy/index.md"
+      "en/legal-economic/company-operator.md": "en/company-and-economy/company-operator.md"
+      "en/legal-economic/deferred-work-map.md": "en/company-and-economy/company-operator.md"
+      "fi/legal-economic/index.md": "fi/company-and-economy/index.md"
+      "fi/legal-economic/company-operator.md": "fi/company-and-economy/company-operator.md"
+      "fi/legal-economic/deferred-work-map.md": "fi/company-and-economy/company-operator.md"
+      "de/legal-economic/index.md": "de/company-and-economy/index.md"
+      "de/legal-economic/company-operator.md": "de/company-and-economy/company-operator.md"
+      "de/legal-economic/deferred-work-map.md": "de/company-and-economy/company-operator.md"
+      "zh/legal-economic/index.md": "zh/company-and-economy/index.md"
+      "zh/legal-economic/company-operator.md": "zh/company-and-economy/company-operator.md"
+      "zh/legal-economic/deferred-work-map.md": "zh/company-and-economy/company-operator.md"
       "ru/legal-economic/index.md": "ru/company-and-economy/index.md"
       "ru/legal-economic/company-operator.md": "ru/company-and-economy/company-operator.md"
       "ru/legal-economic/deferred-work-map.md": "ru/company-and-economy/company-operator.md"
