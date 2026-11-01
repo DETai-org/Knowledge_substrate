@@ -98,6 +98,7 @@ extra_css:
 - assets/stylesheets/global-entry.css
 - assets/stylesheets/translation-placeholder.css
 - assets/stylesheets/language-menu.css
+- assets/stylesheets/docked-navigation.css
 extra_javascript:
 - assets/javascripts/global-entry.js
 - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
@@ -105,6 +106,8 @@ extra_javascript:
 - assets/javascripts/chatgpt-prompt.js
 - assets/javascripts/chatgpt-button.js
 - assets/javascripts/nav-state.js
+- assets/vendor/split-grid/split-grid.min.js
+- assets/javascripts/docked-navigation.js
 - assets/javascripts/language-switcher.js
 exclude_docs: |
   ru/ecosystem/sortspec.md
@@ -170,7 +173,7 @@ nav:
   - Исследование: ru/institutional-layer/research.md
   - Корпус метода DET:
     - Обзор DET: ru/ecosystem/DET/index.md
-    - Концептуальный корпус — редакционная синхронизация:
+    - Концепция:
       - Обзор: ru/ecosystem/DET/Concept/index.md
       - Концепция DET: ru/ecosystem/DET/Concept/Concept-DET.md
       - Тень и свет: ru/ecosystem/DET/Concept/shadow-and-light.md
