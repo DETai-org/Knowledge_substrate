@@ -41,7 +41,7 @@ Diese Trennung ist im [Produktobjektmodell](../../../../brand-and-communications
 
 **Ablauf der Übergabe:** PiQ übermittelt Hub das Ziel („Account erstellen oder verbinden“) und einen Hinweis zur Oberflächensprache. Hub prüft zunächst, ob Telegram mit einem gemeinsamen DETai Account verknüpft ist. Ist dies der Fall, zeigt es das Konto; andernfalls bietet es die Erstellung über Telegram oder die Verbindung zu einem bestehenden Website-Account über einen bestätigten Link an. Eine zuvor gewählte Hub-Sprache wird nicht überschrieben. Der Übergang erstellt weder automatisch einen Account noch gewährt er Plus/Pro.
 
-Die gemeinsamen [Regeln zur Sprachübergabe](../../../../../ru/technology/uli/standards/telegram-bots/language-handover.md) und der [Konfigurationsstandard](../../../../../ru/technology/uli/standards/telegram-bots/configuration-standard.md) sind gesondert dokumentiert (derzeit auf Russisch). Diese Seite erklärt die Nutzerperspektive, nicht interne Entwicklungsabläufe.
+Die gemeinsamen [Regeln zur Sprachübergabe](../../../../../ru/technology/standards/telegram-bots/language-handover.md) und der [Konfigurationsstandard](../../../../../ru/technology/standards/telegram-bots/configuration-standard.md) sind gesondert dokumentiert (derzeit auf Russisch). Diese Seite erklärt die Nutzerperspektive, nicht interne Entwicklungsabläufe.
 
 Diese Dokumentation beschreibt **dauerhafte Nutzerprinzipien und Zuständigkeiten**. Interne Arbeitsdateien und Betriebsdetails gehören nicht zur öffentlichen Hilfe.
 

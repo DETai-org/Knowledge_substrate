@@ -24,7 +24,7 @@ links:
       linked_document_id: "detai-platform-detai-index"
     - schema: "ecosystem"
       link_type: "technology-development"
-      linked_document_id: "detai-u-l-i-index"
+      linked_document_id: "detai-u-l-i-1-philosophy-why-uli-standards-matter"
 title: Экосистема DETai
 ---
 
@@ -88,7 +88,7 @@ DETai не является новым психотерапевтическим 
 
 | Контур | Роль | Основной субъект |
 |---|---|---|
-| [**U.L.I.**](../technology/uli/index.md) | Внутренняя среда создания и коллективного Human–AI мышления | Технологическая команда во главе с техническим лидерством |
+| [**U.L.I.**](../technology/why-uli-standards-matter.md) | Внутренняя среда создания и коллективного Human–AI мышления | Технологическая команда во главе с техническим лидерством |
 | [**Platform DETai**](../technology/platform/index.md) | Доставка и работа продуктов и пользовательских сервисов | Платформа цифровых продуктов в Technology Layer; техническая разработка — U.L.I. |
 
 U.L.I. превращает идеи и знания в решения. Platform DETai соединяет результаты, обеспечивает переиспользование инфраструктуры и доставляет ценность пользователям. Обратная связь из платформы возвращается в создание только в пределах правил данных, этики и профессиональной ответственности.

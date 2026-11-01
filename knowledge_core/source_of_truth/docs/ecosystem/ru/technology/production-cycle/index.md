@@ -28,6 +28,9 @@ links:
     - schema: ecosystem
       link_type: contains
       linked_document_id: detai-u-l-i-3-technical-standards-work-model-work-model
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: detai-u-l-i-3-technical-standards-release-fixation-standard
 title: Производственный цикл
 ---
 
@@ -93,7 +96,7 @@ title: Производственный цикл
 
 Общую механику планирования описывает [Work Model](work-model.md), а обязательные поля Epic Issue и Work Package задают соответствующие контракты.
 
-Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md) — документ о распределении high-level и low-level ролей между человеком и агентом.
+Как дополнительный связанный материал к этому этапу см. [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md) — документ о распределении high-level и low-level ролей между человеком и агентом.
 
 ## 3. Implementation
 
@@ -131,7 +134,7 @@ Release Fixation отвечает за момент, когда результа
 
 Если проект независимо выпускает несколько компонентов, для каждого выпуска фиксируются компонент, версия, точный commit SHA, состав изменений и применимая проверка по локальному стандарту. Состояние исходников, опубликованного артефакта и production-развёртывания различается; версия пакета не доказывает доставку пользователю.
 
-Этот этап описан отдельным стандартом [Release Fixation Standard](../uli/standards/release-fixation-standard.md) и не смешивается с Work Model.
+Этот этап описан отдельным стандартом [Release Fixation Standard](release-fixation-standard.md) и не смешивается с Work Model.
 
 ## 5. Documentation Architecture
 
@@ -168,7 +171,7 @@ Release Fixation отвечает за момент, когда результа
 | 1. Project Intent | Как мысль становится проектным намерением? | Методология проектного цикла DETai |
 | 2. Work Model Planning | Как намерение разложить на структуру работы? | Work Model, Epic Issue Contract и Work Package Contract |
 | 3. Implementation | Как выполнить Work Package через branch, PR и проверку? | Work Model, Epic Issue Contract, Sub-Issue (Work Package) Contract |
-| 4. Release Fixation | Как зафиксировать достигнутое состояние? | Release Fixation Standard, ♻️ Процесс версионности в U.L.I. |
+| 4. Release Fixation | Как зафиксировать достигнутое состояние? | [Release Fixation Standard](release-fixation-standard.md), [Версионность: процесс и стандарт](../versioning.md) |
 | 5. Documentation Architecture | Как результат становится частью Knowledge Substrate? | Версионность: процесс и стандарт; Политика metadata документов |
 
 ## Связь с продуктовым циклом
@@ -198,7 +201,7 @@ Release Fixation отвечает за момент, когда результа
 
 На уровне Work Model Planning и Implementation ключевым становится агент, который умеет работать внутри Epic Issue / Work Package, удерживать scope, выполнять checklist и готовить PR.
 
-Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md).
+Отдельную логику совместной planning-коммуникации между человеком и агентом раскрывает документ [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md).
 
 ## Граница документа
 
@@ -217,7 +220,7 @@ Release Fixation отвечает за момент, когда результа
 ## Связанные документы
 
 - [Методология проектного цикла DETai](project-cycle-methodology.md) — объясняет переход от мысли к проектному намерению.
-- [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
+- [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md) — раскрывает распределение ролей между человеком и агентом на этапе Work Model Planning.
 - [Work Model](work-model.md) — процесс этапов Work Model Planning и Implementation.
-- [Release Fixation Standard](../uli/standards/release-fixation-standard.md) — стандарт фиксации версии проекта.
+- [Release Fixation Standard](release-fixation-standard.md) — стандарт фиксации версии проекта.
 - [Версионность: процесс и стандарт](../versioning.md) — правила номеров версий и пересмотра документов.

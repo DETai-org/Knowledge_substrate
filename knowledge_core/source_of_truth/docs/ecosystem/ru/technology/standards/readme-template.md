@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/standards/readme-template/"
+      url: "https://docs.detai-x.com/ru/technology/standards/readme-template/"
   document_links:
     - schema: ""
       link_type: ""

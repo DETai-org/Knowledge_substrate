@@ -41,7 +41,7 @@ This distinction is defined in the [product object model](../../../../brand-and-
 
 **How the handoff works:** PiQ sends Hub the purpose (“create or connect an Account”) and a hint about interface language. Hub first checks whether Telegram is linked to a shared DETai Account. If so, it displays that account; otherwise, it offers account creation in Telegram or connection to an existing website account through a verified link. Hub's previously saved language preference is preserved. The handoff does not create an Account automatically or grant Plus/Pro.
 
-The shared [language-handoff rules](../../../../../ru/technology/uli/standards/telegram-bots/language-handover.md) and [configuration standard](../../../../../ru/technology/uli/standards/telegram-bots/configuration-standard.md) are documented separately (currently in Russian). This page explains the product's user-facing boundaries, not internal development procedures.
+The shared [language-handoff rules](../../../../../ru/technology/standards/telegram-bots/language-handover.md) and [configuration standard](../../../../../ru/technology/standards/telegram-bots/configuration-standard.md) are documented separately (currently in Russian). This page explains the product's user-facing boundaries, not internal development procedures.
 
 This documentation describes **stable user-facing principles and responsibilities**. Internal work-in-progress files and operational settings are not part of the public guide.
 

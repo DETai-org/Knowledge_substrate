@@ -41,7 +41,7 @@ translation_of: /ru/technology/platform/products/psychology-in-quotes/architectu
 
 **跳转如何完成：**PiQ 向 Hub 传递目标（“创建或连接 Account”）及界面语言提示。Hub 首先检查 Telegram 是否已经绑定统一 DETai Account：若已绑定则显示该账户，否则提供在 Telegram 创建账户，或通过可验证链接连接网站现有账户两种选择。Hub 先前保存的语言偏好不会被覆盖。此过程不会自动创建账户，也不会授予 Plus/Pro 权限。
 
-通用的[机器人间语言传递规范](../../../../../ru/technology/uli/standards/telegram-bots/language-handover.md)和[配置标准](../../../../../ru/technology/uli/standards/telegram-bots/configuration-standard.md)另有公开说明（目前为俄语）。本页解释用户可依赖的产品边界，而非内部开发流程。
+通用的[机器人间语言传递规范](../../../../../ru/technology/standards/telegram-bots/language-handover.md)和[配置标准](../../../../../ru/technology/standards/telegram-bots/configuration-standard.md)另有公开说明（目前为俄语）。本页解释用户可依赖的产品边界，而非内部开发流程。
 
 本文档描述**稳定的用户规则与责任边界**。内部工作文件及运营配置不属于公共帮助资料。
 

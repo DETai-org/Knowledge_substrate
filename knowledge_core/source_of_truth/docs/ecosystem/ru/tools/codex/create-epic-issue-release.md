@@ -24,7 +24,7 @@ title: Create Epic Issue Release
 Промпт для создания архивного `Epic_issue-vX.Y.md` файла фиксации версии.  
 Опирается на `release-fixation-standard.md`, анализирует закрытые Sub-Issue и текущее состояние репозитория, синтезирует итог перехода состояния без превращения его в аудит кода.
 
-Связан с: [Release Fixation Standard](../../technology/uli/standards/release-fixation-standard.md)
+Связан с: [Release Fixation Standard](../../technology/production-cycle/release-fixation-standard.md)
 
 ---
 

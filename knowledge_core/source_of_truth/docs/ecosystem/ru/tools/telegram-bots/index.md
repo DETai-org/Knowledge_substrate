@@ -81,4 +81,4 @@ Telegram-бот — это программа, принимающая обнов
 
 Если вы планируете разрабатывать или дорабатывать бота — обязательно ознакомьтесь с единым стандартом:
 
-📘 [**Технические стандарты Telegram-ботов**](../../technology/uli/standards/telegram-bots/index.md), включая [декларативную конфигурацию](../../technology/uli/standards/telegram-bots/configuration-standard.md).
+📘 [**Технические стандарты Telegram-ботов**](../../technology/standards/telegram-bots/index.md), включая [декларативную конфигурацию](../../technology/standards/telegram-bots/configuration-standard.md).

@@ -146,7 +146,7 @@ Front matter остаётся машинным источником, но его
 /ru/ecosystem/
 /ru/institutional-layer/
 /ru/technology/platform/
-/ru/technology/uli/
+/ru/technology/why-uli-standards-matter/
 /ru/governance/
 /ru/operating-model/
 /ru/brand-and-communications/product-market/

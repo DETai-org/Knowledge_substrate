@@ -13,7 +13,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/standards/telegram-bots/"
+      url: "https://docs.detai-x.com/ru/technology/standards/telegram-bots/"
   document_links:
     - schema: ""
       link_type: ""

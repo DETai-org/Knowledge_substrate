@@ -41,7 +41,7 @@ Erottelu perustuu [tuoteobjektin malliin](../../../../brand-and-communications/p
 
 **Näin siirtymä toimii:** PiQ välittää Hubille tavoitteen (”luo Account tai yhdistä olemassa oleva”) ja vihjeen käyttöliittymän kielestä. Hub tarkistaa ensin, onko Telegram jo yhdistetty yhteiseen DETai Account -tiliin. Jos on, Hub näyttää tilin. Muussa tapauksessa se tarjoaa tilin luontia Telegramissa tai verkkosivun tilin yhdistämistä vahvistettavan linkin avulla. Hubin aiempaa kielivalintaa ei korvata. Siirtymä ei luo tiliä automaattisesti eikä anna Plus/Pro-oikeuksia.
 
-Yleiset [bottien välisen kielivalinnan säännöt](../../../../../ru/technology/uli/standards/telegram-bots/language-handover.md) ja [konfiguraatiostandardi](../../../../../ru/technology/uli/standards/telegram-bots/configuration-standard.md) on dokumentoitu erikseen (toistaiseksi venäjäksi). Tämä sivu kuvaa käyttäjälle olennaiset rajat, ei sisäisiä kehitysvaiheita.
+Yleiset [bottien välisen kielivalinnan säännöt](../../../../../ru/technology/standards/telegram-bots/language-handover.md) ja [konfiguraatiostandardi](../../../../../ru/technology/standards/telegram-bots/configuration-standard.md) on dokumentoitu erikseen (toistaiseksi venäjäksi). Tämä sivu kuvaa käyttäjälle olennaiset rajat, ei sisäisiä kehitysvaiheita.
 
 Tämä dokumentaatio kuvaa **pysyviä käyttäjäperiaatteita ja vastuunjakoa**. Sisäiset työtiedostot ja käyttöympäristön asetukset eivät kuulu julkiseen ohjeeseen.
 

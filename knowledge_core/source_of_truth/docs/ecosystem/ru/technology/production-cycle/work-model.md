@@ -138,7 +138,7 @@ Work Model получает вход из этапа Project Intent: уже ес
 
 Таким образом, Work Model является рабочим мостом между намерением и поставкой результата.
 
-Распределение ролей между человеком и агентом внутри этапа Work Model Planning подробнее раскрыто в документе [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md).
+Распределение ролей между человеком и агентом внутри этапа Work Model Planning подробнее раскрыто в документе [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md).
 
 ## Связанные документы
 
@@ -146,4 +146,4 @@ Work Model получает вход из этапа Project Intent: уже ес
 - [Sub-Issue / Work Package Contract](work-package-contract.md) — контракт Work Package.
 - [Производственный цикл U.L.I.](index.md) — карта этапов разработки цифрового проекта или его следующей версии.
 - [Методология проектного цикла DETai](project-cycle-methodology.md) — объясняет переход от мысли к проектному намерению.
-- [Совместное планирование человека и агента в Work Model Planning](../uli/collaborative-planning.md) — объясняет совместную форму planning между человеком и агентом.
+- [Совместное планирование человека и агента в Work Model Planning](../collaborative-planning.md) — объясняет совместную форму planning между человеком и агентом.

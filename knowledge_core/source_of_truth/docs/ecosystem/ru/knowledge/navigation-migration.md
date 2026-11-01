@@ -54,9 +54,11 @@ title: Миграция информационной архитектуры
 | Institutional Layer | `/ru/institutional-layer/` |
 | Корпус метода DET | `/ru/institutional-layer/det/` |
 | Technology Layer | `/ru/technology/` |
-| U.L.I. | `/ru/technology/uli/` |
+| U.L.I. | `/ru/technology/why-uli-standards-matter/` |
 | Platform DETai | `/ru/technology/platform/` |
-| Версионность документов | `/ru/technology/versioning/` |
+| Производственный цикл | `/ru/technology/production-cycle/` |
+| Стандарты разработки | `/ru/technology/standards/` |
+| Версионность проектов, компонентов и документов | `/ru/technology/versioning/` |
 | Infrastructure | `/ru/infrastructure/` |
 | Tools | `/ru/tools/` |
 | Система знаний | `/ru/knowledge/` |

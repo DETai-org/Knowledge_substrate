@@ -75,7 +75,7 @@ ___
 
 Во всех канонических документах в метаблоке указывается их тип и версия. Локальные project-specific tutorial/how-to могут использовать metadata своего owning repository, но должны явно фиксировать функцию документа, владельца и связь с runtime-проекцией, если такая связь существует.
 
-Подробнее о слоях см. в [♻️ Процесс версионности в U.L.I.](../technology/uli/standards/project-versioning.md).
+Подробнее о слоях см. в [Версионность: процесс и стандарт](../technology/versioning.md).
 
 ### Visibility
 
@@ -177,4 +177,4 @@ ___
 
 #### Ссылки
 
-[Документационная архитектура U.L.I.](../technology/uli/documentation-architecture.md)
+[Документационная архитектура U.L.I.](../technology/documentation-architecture.md)

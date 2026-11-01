@@ -126,6 +126,6 @@ Sub-Issue / Work Package считается завершённым только 
 
 - [Work Model](work-model.md)
 - [Epic Issue Contract](epic-issue-contract.md)
-- [Release Fixation Standard](../uli/standards/release-fixation-standard.md)
+- [Release Fixation Standard](release-fixation-standard.md)
 - [Производственный цикл U.L.I.](index.md)
 - Migration Notice: переход Epic Issue / Sub-Issue из Markdown-файлов репозитория в ClickUp

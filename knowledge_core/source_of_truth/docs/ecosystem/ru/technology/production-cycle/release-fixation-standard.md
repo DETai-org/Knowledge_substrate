@@ -14,11 +14,11 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/standards/release-fixation-standard/"
+      url: "https://docs.detai-x.com/ru/technology/production-cycle/release-fixation-standard/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
+    - schema: ecosystem
+      link_type: part-of
+      linked_document_id: production-cycle
 title: Release Fixation Standard
 ---
 
@@ -143,6 +143,6 @@ Release Summary должен подводить итог фактическом�
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](../../production-cycle/index.md) — показывает место Release Fixation как 4-го этапа цикла.
-- [Work Model](../../production-cycle/work-model.md) — описывает выполнение Work Package до этапа фиксации релиза.
-- [♻️ Процесс версионности в U.L.I.](project-versioning.md) — объясняет смысл версий проектов в U.L.I.
+- [Производственный цикл проектов и карта ролей вокруг него](index.md) — показывает место Release Fixation как 4-го этапа цикла.
+- [Work Model](work-model.md) — описывает выполнение Work Package до этапа фиксации релиза.
+- [Версионность: процесс и стандарт](../versioning.md) — объясняет смысл версий проектов в U.L.I.

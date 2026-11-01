@@ -19,7 +19,7 @@ governance:
 links:
   external_links:
     - type: MkDocs_ru
-      url: https://docs.detai-x.com/ru/technology/uli/standards/telegram-bots/telegram-bot-creation-standard/
+      url: https://docs.detai-x.com/ru/technology/standards/telegram-bots/telegram-bot-creation-standard/
 title: Стандарт создания Telegram-ботов
 ---
 

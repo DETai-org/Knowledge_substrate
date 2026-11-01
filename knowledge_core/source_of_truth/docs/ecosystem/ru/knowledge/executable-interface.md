@@ -56,13 +56,13 @@ title: Документация как исполняемый интерфейс
 Мы  думаем в логике v0.1, v0.2, стандартов, evolving docs. Это критично, потому что агент должен знать не просто “правило”, а **какая версия правила сейчас действующая**. OpenAI отдельно рекомендует pinning и evals при изменении моделей и промптов, а это та же логика: поведение системы должно быть воспроизводимым и управляемым по версиям. 
 
 Мировой тренд смотри в ([OpenAI Разработчики](https://developers.openai.com/api/docs/guides/prompt-engineering/?utm_source=chatgpt.com "Prompt engineering | OpenAI API")) 
-У нас смотри в [♻️ Процесс версионности в U.L.I.](../technology/uli/standards/project-versioning.md)
+У нас смотри в [Версионность: процесс и стандарт](../technology/versioning.md)
 
 **3. Таксономия и схемы**  
 Наши distinctions между document / concept / rubric / category / schema — это не бюрократия. Для агента это способ понять, что перед ним: policy, reference, workflow, draft, canonical definition, publication metadata или operational playbook. Чем яснее тип сущности, тем лучше agent routing и меньше галлюцинаций на уровне процесса. Это согласуется с общим движением в сторону structured outputs, tool schemas и context engineering.
 
 Мировой тренд смотри в ([OpenAI Разработчики](https://developers.openai.com/tracks/building-agents/?utm_source=chatgpt.com "Building agents"))
-У нас смотри в [Документационная архитектура U.L.I.](../technology/uli/documentation-architecture.md)
+У нас смотри в [Документационная архитектура U.L.I.](../technology/documentation-architecture.md)
 
 **4. Документы как рамка действия**  
 Мы уже строим governance-документы, onboarding, процессы, роли, стандарты. Это почти буквально то, что OpenAI в руководстве по governed AI agents называет scaffolding и governance: агентам нужны рамки, в которых они действуют безопасно и масштабируемо. ([OpenAI Разработчики](https://developers.openai.com/cookbook/examples/partners/agentic_governance_guide/agentic_governance_cookbook/?utm_source=chatgpt.com "Building Governed AI Agents - A Practical Guide to ..."))

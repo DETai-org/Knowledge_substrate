@@ -14,7 +14,7 @@ descriptive:
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/standards/testing-feedback-loop-standard/"
+      url: "https://docs.detai-x.com/ru/technology/standards/testing-feedback-loop-standard/"
   document_links: []
 title: DETai Testing & Feedback Loop Standard
 ---
@@ -115,5 +115,5 @@ title: DETai Testing & Feedback Loop Standard
 - [Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html): проверять на максимально низком достаточном уровне.
 - [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html): дорогие широкие UI-тесты склонны к хрупкости и задержкам.
 - [GitHub Actions manual triggers](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow): workflow_dispatch.
-- [DETai Release Fixation Standard](release-fixation-standard.md): проверка релизного exact SHA — отдельный этап, а не каждое локальное изменение.
+- [DETai Release Fixation Standard](../production-cycle/release-fixation-standard.md): проверка релизного exact SHA — отдельный этап, а не каждое локальное изменение.
 - [Storytelling Test Suite Rationalization](https://team.detai-x.com/task-center/lists/bb1582fa-5527-5b5f-a886-49f01c609d5e/items/2d92c61d-4435-5248-a579-8f9dadbf723d): исходная рационализация и acceptance criteria.

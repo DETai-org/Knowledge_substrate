@@ -27,7 +27,7 @@ links:
   document_links:
     - schema: ecosystem
       link_type: contains
-      linked_document_id: detai-u-l-i-index
+      linked_document_id: detai-u-l-i-1-philosophy-why-uli-standards-matter
     - schema: ecosystem
       link_type: contains
       linked_document_id: detai-platform-detai-index
@@ -42,7 +42,7 @@ title: Технологический слой DETai
 
 ## U.L.I. — Улей
 
-Улей — команда разработчиков и среда совместной работы людей и AI, в которой идеи превращаются в цифровые решения. Здесь проектируют архитектуру, пишут код, проверяют результат и выпускают следующие версии. Краткое определение есть в [глоссарии](../knowledge/glossary.md#uli), подробное описание — в [разделе U.L.I.](uli/index.md).
+Улей — команда разработчиков и среда совместной работы людей и AI, в которой идеи превращаются в цифровые решения. Здесь проектируют архитектуру, пишут код, проверяют результат и выпускают следующие версии. Краткое определение есть в [глоссарии](../knowledge/glossary.md#uli), подробное описание среды — в [«Почему стандарты U.L.I. важны»](why-uli-standards-matter.md#uli-среда-разработки).
 
 ## Platform DETai — платформа цифровых продуктов
 

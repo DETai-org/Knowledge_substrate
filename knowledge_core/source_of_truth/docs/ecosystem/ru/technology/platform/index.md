@@ -21,7 +21,7 @@ links:
       linked_document_id: "technology-index"
     - schema: "ecosystem"
       link_type: "created-in"
-      linked_document_id: "detai-u-l-i-index"
+      linked_document_id: "detai-u-l-i-1-philosophy-why-uli-standards-matter"
 title: Platform DETai
 ---
 
@@ -58,7 +58,7 @@ Platform DETai должна:
 
 ## Platform DETai и U.L.I.
 
-[U.L.I.](../uli/index.md) — внутренний контур создания: здесь технологическая команда и AI превращают идеи, документы и архитектуру в работающие решения.
+[U.L.I.](../why-uli-standards-matter.md) — внутренний контур создания: здесь технологическая команда и AI превращают идеи, документы и архитектуру в работающие решения.
 
 Platform DETai — контур доставки: здесь созданные решения становятся общими компонентами, продуктами и пользовательскими сервисами.
 

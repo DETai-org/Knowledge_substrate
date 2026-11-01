@@ -7,17 +7,18 @@ classification:
   function: explanation
 descriptive:
   id: human-agent-collaborative-planning-in-work-model-planning
-  version: v1
+  version: v2
   status: active
-  date_ymd: 2026-05-29
+  date_ymd: 2026-11-01
+  date_update: 2026-11-01
 links:
   external_links:
     - type: "MkDocs_ru"
-      url: "https://docs.detai-x.com/ru/technology/uli/collaborative-planning/"
+      url: "https://docs.detai-x.com/ru/technology/collaborative-planning/"
   document_links:
-    - schema: ""
-      link_type: ""
-      linked_document_id: ""
+    - schema: ecosystem
+      link_type: part-of
+      linked_document_id: technology-index
 title: Совместное планирование человека и агента в Work Model Planning
 ---
 
@@ -47,6 +48,12 @@ title: Совместное планирование человека и аге�
 - не смешивать продуктовые решения и low-level реализацию;
 - делать план проверяемым ещё до начала implementation;
 - уменьшать шум и лишние ветвления в коммуникации.
+
+## Участники и ответственность
+
+В планировании участвуют разработчики, технические лидеры, архитектурные и продуктовые участники, AI-агенты. Методологи, эксперты и исследователи могут задавать профессиональные требования к цифровому решению; ответственность за содержание этих требований остаётся у соответствующих специалистов. Человек и AI совместно исследуют и реализуют варианты, а решения и ответственность связываются с людьми и организационными ролями.
+
+Техническое лидерство координирует команду, архитектуру, приоритеты разработки и релизы в делегированных границах. Ecosystem Management Layer удерживает общую стратегию, ресурсы и зависимости между слоями. [Team OS](../management-layer/team-os/index.md) связывает роли, назначения, решения и подтверждённые результаты работы; экономические права и вознаграждение определяются отдельными решениями ответственных людей.
 
 ## Какая роль у человека
 
@@ -214,7 +221,7 @@ Work Packages и Acceptance Tasks формулируются так, чтобы 
 
 ## Связанные документы
 
-- [Производственный цикл проектов и карта ролей вокруг него](../production-cycle/index.md) — показывает место Work Model Planning в полном цикле.
-- [Методология проектного цикла DETai](../production-cycle/project-cycle-methodology.md) — объясняет, как мысль становится проектным намерением.
-- [Work Model](../production-cycle/work-model.md) — описывает этапы Work Model Planning и Implementation.
-- [Функция документов](../../knowledge/documentation-functions.md) — объясняет, почему этот материал относится к типу `explanation`.
+- [Производственный цикл проектов и карта ролей вокруг него](production-cycle/index.md) — показывает место Work Model Planning в полном цикле.
+- [Методология проектного цикла DETai](production-cycle/project-cycle-methodology.md) — объясняет, как мысль становится проектным намерением.
+- [Work Model](production-cycle/work-model.md) — описывает этапы Work Model Planning и Implementation.
+- [Функция документов](../knowledge/documentation-functions.md) — объясняет, почему этот материал относится к типу `explanation`.
