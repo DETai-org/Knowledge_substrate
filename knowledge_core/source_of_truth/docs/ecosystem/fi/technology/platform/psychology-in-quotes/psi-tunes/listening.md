@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — kuuntelu"
-description: "ΨTunes — kirjat ja podcastit — product guide (in development)."
+description: "Kuuntelu, kirjanmerkit, puskurointi ja yhteyskatkoista palautuminen ΨTunesissa."
 lang: fi
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/listening/
 ---

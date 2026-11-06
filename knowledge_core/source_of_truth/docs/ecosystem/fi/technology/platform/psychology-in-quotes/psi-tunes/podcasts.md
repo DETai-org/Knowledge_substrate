@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — podcastit"
-description: "ΨTunes — kirjat ja podcastit — product guide (in development)."
+description: "DETai-podcastit, henkilökohtaiset jaksot, sarjat ja kuunteluoikeudet ΨTunesissa."
 lang: fi
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/podcasts/
 ---

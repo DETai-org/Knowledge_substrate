@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — tuonti"
-description: "ΨTunes — kirjat ja podcastit — product guide (in development)."
+description: "Ohje asiakirjan tuontiin ja ääniversion valmisteluun ΨTunesissa toiminnon avauduttua."
 lang: fi
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 ---

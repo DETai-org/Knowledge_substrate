@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — 收听"
-description: "ΨTunes — 图书与播客 — product guide (in development)."
+description: "了解 ΨTunes 的收听、书签、预加载和网络中断恢复机制。"
 lang: zh
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/listening/
 ---

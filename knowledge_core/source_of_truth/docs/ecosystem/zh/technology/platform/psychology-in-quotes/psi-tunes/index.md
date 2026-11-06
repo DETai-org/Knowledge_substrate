@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — 图书与播客"
-description: "ΨTunes — 图书与播客 — product guide (in development)."
+description: "介绍正在开发的 ΨTunes：图书、播客、书签与可追溯来源的引文。"
 lang: zh
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 ---

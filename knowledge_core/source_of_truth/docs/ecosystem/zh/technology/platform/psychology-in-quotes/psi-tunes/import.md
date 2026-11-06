@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — 导入"
-description: "ΨTunes — 图书与播客 — product guide (in development)."
+description: "了解 ΨTunes 的文档导入、章节检查以及音频制作流程。"
 lang: zh
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 ---

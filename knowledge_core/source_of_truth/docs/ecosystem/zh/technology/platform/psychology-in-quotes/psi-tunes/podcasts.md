@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — 播客"
-description: "ΨTunes — 图书与播客 — product guide (in development)."
+description: "了解 ΨTunes 中的 DETai 播客、个人节目、系列与收听权限。"
 lang: zh
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/podcasts/
 ---

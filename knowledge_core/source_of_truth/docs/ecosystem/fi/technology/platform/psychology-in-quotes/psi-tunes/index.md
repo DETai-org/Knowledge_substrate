@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — kirjat ja podcastit"
-description: "ΨTunes — kirjat ja podcastit — product guide (in development)."
+description: "Esittely ΨTunes-soittimesta, joka yhdistää kirjat, podcastit, kirjanmerkit ja lähteisiin sidotut lainaukset."
 lang: fi
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 ---
