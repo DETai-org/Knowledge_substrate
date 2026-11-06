@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — Import"
-description: "ΨTunes — books and podcasts — product guide (in development)."
+description: "How to import documents and prepare audio in ΨTunes when the feature becomes available."
 lang: en
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 ---

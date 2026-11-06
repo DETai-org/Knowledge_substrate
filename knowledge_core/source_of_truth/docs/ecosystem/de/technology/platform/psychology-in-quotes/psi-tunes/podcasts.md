@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — Podcasts"
-description: "ΨTunes — Bücher und Podcasts — product guide (in development)."
+description: "Redaktionelle und persönliche Podcasts, Folgen, Reihen und Hörrechte in ΨTunes."
 lang: de
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/podcasts/
 ---

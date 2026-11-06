@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — Hören"
-description: "ΨTunes — Bücher und Podcasts — product guide (in development)."
+description: "Hören, Lesezeichen, Zwischenspeicherung und Wiederherstellung nach Verbindungsabbrüchen in ΨTunes."
 lang: de
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/listening/
 ---

@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — books and podcasts"
-description: "ΨTunes — books and podcasts — product guide (in development)."
+description: "An introduction to ΨTunes, an upcoming PiQ player for books, podcasts, bookmarks and source-linked quotations."
 lang: en
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 ---

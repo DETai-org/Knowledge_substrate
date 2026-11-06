@@ -1,6 +1,6 @@
 ---
 title: "ΨTunes — Listening"
-description: "ΨTunes — books and podcasts — product guide (in development)."
+description: "Listening, bookmarks, buffering and recovery from connection interruptions in ΨTunes."
 lang: en
 translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/listening/
 ---
