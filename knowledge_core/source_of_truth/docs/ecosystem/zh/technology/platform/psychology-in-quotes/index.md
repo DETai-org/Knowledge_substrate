@@ -62,3 +62,7 @@ Psychology in Quotes 可通过 Telegram 和 Platform DETai 网站使用。语录
 - [隐私声明](https://detai-x.com/zh/technology/platform/psychology-in-quotes/privacy)
 
 **关于文档导航：**此页面是面向公众的产品介绍，也是用户和 AI 助手的入口。法律义务以网站上的法律文件为准；实际权限由 PiQ 政策/API 决定；操作方法见下列章节。文档不会授予访问他人账户的权限，也不能代替对应用实时状态的核实。
+
+## ΨTunes — 图书与播客
+
+**ΨTunes** 是 PiQ 正在开发的播放器，连接图书、播客、书签和可追溯来源的引文。[ΨTunes 使用指南](psi-tunes/index.md)介绍导入、收听和播客。**2.0 版仍在准备和测试中**，本指南不代表正式公开发布；实际功能请以应用界面为准。
