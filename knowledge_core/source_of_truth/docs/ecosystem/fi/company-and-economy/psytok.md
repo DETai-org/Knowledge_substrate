@@ -40,7 +40,7 @@ Sisäiset korjausyritykset eivät lisää sovittua hintaa. Uudet hinnat koskevat
 
 ## Kirjat ja valmiit aineistot
 
-[ΨTunesissa](../technology/platform/psychology-in-quotes/psi-tunes/index.md) **aineiston valmistelu** ja **valmiin kirjan pysyvän käyttöoikeuden hankkiminen** ovat erillisiä tarjouksia, joiden hinnat voivat erota.
+[ΨTunesissa](../technology/platform/psychology-in-quotes/psi-tunes/index.md) käyttäjä ostaa sovitun lopputuloksen: valmiin äänikirjan ja valitun version kuunteluoikeuden. Hinta määräytyy lopputuloksen ja tarjouksen ehtojen, kuten kielen, käännöksen ja valittujen asetusten, mukaan. Kun versio ja ehdot ovat samat, valmiin version käyttäminen uuden valmistelun sijaan ei itsessään muuta sovittua hintaa.
 
 Tilaus voidaan toteuttaa uudella valmistelulla tai olemassa olevalla yhteensopivalla versiolla, jonka saa toimittaa käyttäjälle. Pelkkä nimi ja tekijä eivät riitä: tekstin, kielen, käännöksen ja ääniasetusten on vastattava tilausta. Olennaisista muutoksista sovitaan käyttäjän kanssa.
 

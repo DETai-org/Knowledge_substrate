@@ -40,7 +40,7 @@ Internal recovery attempts do not create charges beyond the agreed order. New pr
 
 ## Books and prepared materials
 
-In [ΨTunes](../technology/platform/psychology-in-quotes/psi-tunes/index.md), **preparing a material** and **acquiring permanent access to a ready book** are separate offers and may have different prices.
+In [ΨTunes](../technology/platform/psychology-in-quotes/psi-tunes/index.md), the user purchases an agreed result: a prepared audiobook and access to listen to the selected variant. Pricing depends on that result and the offer terms, including the language, translation and selected settings. For the same variant and terms, using an existing version instead of preparing it again does not itself change the agreed price.
 
 Fulfilment may use new preparation or an existing compatible version that may lawfully be supplied to the user. Matching title and author alone is insufficient: the text, language, translation and audio settings must fit. Changes to material order terms require the user's agreement.
 

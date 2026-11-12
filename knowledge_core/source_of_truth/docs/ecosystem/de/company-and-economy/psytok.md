@@ -40,7 +40,7 @@ Interne Wiederholungsversuche erhöhen den vereinbarten Auftragspreis nicht. Pre
 
 ## Bücher und fertige Materialien
 
-In [ΨTunes](../technology/platform/psychology-in-quotes/psi-tunes/index.md) sind **die Vorbereitung eines Materials** und **der dauerhafte Zugang zu einem fertigen Buch** unterschiedliche Angebote mit möglicherweise unterschiedlichen Preisen.
+In [ΨTunes](../technology/platform/psychology-in-quotes/psi-tunes/index.md) erwirbt der Nutzer ein vereinbartes Ergebnis: ein vorbereitetes Hörbuch und das Hörrecht für die gewählte Variante. Der Preis richtet sich nach dem Ergebnis und den Angebotsbedingungen, einschließlich Sprache, Übersetzung und gewählter Einstellungen. Bei gleicher Variante und gleichen Bedingungen verändert die Nutzung einer vorhandenen Fassung anstelle einer erneuten Vorbereitung für sich genommen nicht den vereinbarten Preis.
 
 Ein Auftrag kann durch neue Vorbereitung oder durch eine vorhandene passende Fassung erfüllt werden, die diesem Nutzer bereitgestellt werden darf. Titel und Autor allein reichen für einen Abgleich nicht aus: Text, Sprache, Übersetzung und Audioeinstellungen müssen passen. Wesentliche Änderungen des Auftrags werden mit dem Nutzer vereinbart.
 

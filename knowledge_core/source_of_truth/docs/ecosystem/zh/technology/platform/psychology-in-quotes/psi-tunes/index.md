@@ -21,4 +21,4 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 
 个人功能使用与 Telegram 绑定的 DETai Account。导入文本不会自动创建付费订单，也不会自动公开发布材料。最新套餐和权限请查看 [PiQ 官方页面](https://detai-x.com/zh/technology/platform/psychology-in-quotes)。ΨTunes 不是心理治疗、医疗服务或诊断工具。
 
-付费服务采用 [PsyTok](../../../../company-and-economy/psytok.md) 计价。套餐额度与购买的通用余额分别记录。制作新材料与取得已完成图书的永久访问权可以采用不同方案。永久访问权对应所购语言版本；技术修正不要求重新购买。
+付费服务采用 [PsyTok](../../../../company-and-economy/psytok.md) 计价。套餐额度与购买的通用余额分别记录。用户购买约定结果及所选版本的访问权。价格依据方案条件确定；使用现有兼容版本本身不会改变已约定价格。永久访问权对应所购语言版本；技术修正不要求重新购买。
