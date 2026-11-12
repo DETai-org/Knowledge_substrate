@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, managers, agents]
 descriptive:
   id: company-economy-index
-  version: v5
+  version: v6
   status: draft
   date_ymd: 2026-11-02
-  date_update: 2026-11-02
+  date_update: 2026-11-13
 governance:
   canonicality: working
   visibility: public
@@ -28,6 +28,9 @@ links:
     - schema: ecosystem
       link_type: routes
       linked_document_id: infrastructure-commerce-core
+    - schema: ecosystem
+      link_type: contains
+      linked_document_id: company-economy-psytok
     - schema: ecosystem
       link_type: contains
       linked_document_id: company-economy-slicing-pie
@@ -48,6 +51,7 @@ title: Company & Economy
 
 - [Планируемый оператор DETai Oy](company-operator.md) — будущая юридическая и экономическая роль компании, финская предпринимательская среда и возможные направления её развития.
 - [Commerce Core](commerce-core.md)
+- [PsyTok](psytok.md) — единица расчёта за услуги экосистемы, общий баланс и включённые начисления.
 - [Slicing Pie](slicing-pie.md) — идея динамического распределения долей участия, пока не являющаяся принятой политикой DETai.
 
 ## Связь с другими направлениями

@@ -62,3 +62,7 @@ The [collection and plans guide](collection-and-plans.md) explains entitlements;
 - [Privacy notice](https://detai-x.com/en/technology/platform/psychology-in-quotes/privacy)
 
 **About documentation navigation:** this page is a public product description and an entry point for people and AI assistants. Legal obligations are defined by the website documents; live entitlements by PiQ policy/API; and user instructions by the sections linked above. Documentation neither grants access to another person's account nor replaces checking the application's current state.
+
+## ΨTunes — books and podcasts
+
+**ΨTunes** is a developing PiQ player connecting reading, audiobooks, podcasts, bookmarks and source-linked quotations. The [ΨTunes guide](psi-tunes/index.md) introduces import, listening and podcasts. **Version 2.0 is still being prepared and tested**; the guide does not announce a public release. Actual availability is shown in the application.
