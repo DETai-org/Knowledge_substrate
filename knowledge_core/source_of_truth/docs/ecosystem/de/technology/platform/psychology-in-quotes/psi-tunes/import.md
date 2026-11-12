@@ -30,4 +30,10 @@ Beim **Import** entsteht aus einem rechtmäßig genutzten Dokument eine persönl
 
 Ein privater Import wird nicht automatisch veröffentlicht. Das Hochladen allein löst keinen kostenpflichtigen Auftrag aus. Aktuelle Größen- und Tarifgrenzen zeigt die Anwendung.
 
+## Auftrag und vorhandene Fassungen
+
+Ergebnis und Preis werden vor der Bestätigung angezeigt. Die Erfüllung kann neues Audio vorbereiten oder eine vorhandene passende Fassung bereitstellen, deren Nutzung für diesen Auftrag erlaubt ist. Geprüft werden Text, Sprache, Übersetzung und Audioeinstellungen; Titel und Autor allein reichen nicht aus. Wesentliche Änderungen werden mit dem Nutzer vereinbart.
+
+Der Auftragsstatus zeigt die tatsächliche Arbeit: Prüfung, Vorbereitung oder verfügbaren Zugang. Eine fertige Fassung kann ohne Warten auf eine erneute Spracherzeugung bereitgestellt werden. Preis, Reservierungen und Abbuchung erläutert [PsyTok](../../../../company-and-economy/psytok.md).
+
 [Hören](listening.md) · [Podcasts](podcasts.md)

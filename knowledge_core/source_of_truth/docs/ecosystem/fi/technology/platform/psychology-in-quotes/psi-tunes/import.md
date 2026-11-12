@@ -30,4 +30,10 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 Yksityinen tuonti ei julkaise aineistoa automaattisesti, eikä pelkkä lataus tilaa maksullista äänitystä. Sovellus näyttää voimassa olevat koko- ja tilausrajat.
 
+## Tilaus ja valmiit versiot
+
+Tulos ja hinta näytetään ennen vahvistamista. Tilaus voidaan toteuttaa valmistamalla uutta ääntä tai toimittamalla olemassa oleva yhteensopiva versio, jota saa käyttää tähän tarkoitukseen. Teksti, kieli, käännös ja ääniasetukset tarkistetaan; nimi ja tekijä eivät yksin riitä. Olennaisista muutoksista sovitaan käyttäjän kanssa.
+
+Tilauksen tila kuvaa todellista työtä: tarkistusta, valmistelua tai valmista käyttöoikeutta. Valmis versio voidaan toimittaa odottamatta uutta puhesynteesiä. Hinnoittelu, varaukset ja veloitukset kuvataan [PsyTok-sivulla](../../../../company-and-economy/psytok.md).
+
 [Kuuntelu](listening.md) · [Podcastit](podcasts.md)

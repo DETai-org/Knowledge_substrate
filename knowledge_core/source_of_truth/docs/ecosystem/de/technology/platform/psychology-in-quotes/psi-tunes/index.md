@@ -20,3 +20,5 @@ Ein Buch oder Podcast kann eine Textfassung und eine dazugehörige Audiofassung 
 - [Hören und Lesezeichen](listening.md) — Player, Wiederaufnahme und Unterbrechungen.
 
 Persönliche Funktionen nutzen ein mit Telegram verbundenes DETai Account. Ein Textimport ist weder automatisch ein kostenpflichtiger Auftrag noch eine Veröffentlichung. Aktuelle Tarife stehen auf der [PiQ-Produktseite](https://detai-x.com/de/technology/platform/psychology-in-quotes). ΨTunes ersetzt keine Psychotherapie oder medizinische Versorgung.
+
+Kostenpflichtige Dienste werden in [PsyTok](../../../../company-and-economy/psytok.md) berechnet. Tarifkontingente und gekauftes gemeinsames Guthaben werden getrennt geführt. Die Vorbereitung neuer Materialien und der dauerhafte Zugang zu fertigen Büchern können unterschiedliche Angebote sein. Dauerhafter Zugang gilt für die erworbene Sprachvariante; technische Korrekturen erfordern keinen erneuten Kauf.

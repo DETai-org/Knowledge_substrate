@@ -30,4 +30,10 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 Private imports are not automatically published. Uploading does not by itself authorize a paid narration order. Actual size limits and plan restrictions are shown in the application.
 
+## Orders and existing versions
+
+The result and price are shown before confirmation. Fulfilment may prepare new audio or provide an existing compatible version that may be used for this order. Matching checks include the text, language, translation and audio settings; title and author alone are insufficient. Material changes to the order require the user's agreement.
+
+Order status reflects actual work: checking the material, preparation or access readiness. A ready version can be provided without waiting for another narration run. See [PsyTok](../../../../company-and-economy/psytok.md) for pricing, reservations and charges.
+
 [Listening](listening.md) · [Podcasts](podcasts.md)

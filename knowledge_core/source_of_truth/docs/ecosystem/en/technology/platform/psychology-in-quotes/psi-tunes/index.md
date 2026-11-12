@@ -20,3 +20,5 @@ A book or podcast may have a text edition and an audio version. The player aims 
 - [Listening and bookmarks](listening.md) — player controls, connection interruptions, restoring a position and permissions.
 
 Personal features use your DETai Account connected to Telegram. Importing text does not automatically place an order or make a book public. Current plans and access conditions are shown on the [official PiQ website](https://detai-x.com/en/technology/platform/psychology-in-quotes). ΨTunes is for working with knowledge, not therapy, diagnosis or medical care.
+
+Paid services use [PsyTok](../../../../company-and-economy/psytok.md). Included plan allowances and purchased shared credits are tracked separately. Preparing a new material and acquiring permanent access to a ready book may have different offers. Permanent access covers the purchased language variant; technical corrections do not require a new purchase.

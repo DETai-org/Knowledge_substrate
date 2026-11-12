@@ -20,3 +20,5 @@ Kirjalla tai podcastilla voi olla tekstiversio ja sitä vastaava ääniversio. S
 - [Kuuntelu ja kirjanmerkit](listening.md) — soitin ja yhteyskatkokset.
 
 Henkilökohtaiset ominaisuudet käyttävät Telegramiin yhdistettyä DETai Account -tiliä. Tekstin tuominen ei automaattisesti aloita maksullista tilausta tai julkaise sitä. Ajantasaiset ehdot näkyvät [PiQ:n sivulla](https://detai-x.com/fi/technology/platform/psychology-in-quotes). ΨTunes ei ole psykoterapiaa eikä terveydenhuoltoa.
+
+Maksulliset palvelut hinnoitellaan [PsyTok-yksiköissä](../../../../company-and-economy/psytok.md). Tilaukseen sisältyvät erät ja ostettu yhteinen saldo pidetään erillään. Uuden aineiston valmistelu ja valmiin kirjan pysyvä käyttöoikeus voivat olla eri tarjouksia. Pysyvä oikeus koskee ostettua kieliversiota; tekniset korjaukset eivät edellytä uutta ostoa.
