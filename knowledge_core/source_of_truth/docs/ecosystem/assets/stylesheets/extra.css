@@ -172,6 +172,36 @@
   }
 }
 
+/* Compact brand labels above the two top-level layers in the primary menu. */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a[href$="institutional-layer/"] {
+  --detai-layer-brand: "DET";
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a[href$="technology/"] {
+  --detai-layer-brand: "DETai";
+}
+
+@media screen and (max-width: 76.234375em) {
+  .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container:has(> a:is([href$="institutional-layer/"], [href$="technology/"])) {
+    padding-top: 0.3rem;
+  }
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a:is([href$="institutional-layer/"], [href$="technology/"]) > .md-ellipsis::before {
+  content: var(--detai-layer-brand);
+  display: table;
+  margin-bottom: 0.14rem;
+  padding: 0.02rem 0.24rem;
+  border: 1px solid #d8bd73;
+  border-radius: 0.2rem;
+  background: #fff6dc;
+  color: #806018;
+  font-size: 0.46rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.035em;
+}
+
 /* Compact portfolio badges show the main resource contribution of each project. */
 .md-nav--primary a:is([data-detai-echelon="E1"], [href$="francis-galton/"], [href$="psykhe-ai/"]) {
   --detai-echelon: "E1";
