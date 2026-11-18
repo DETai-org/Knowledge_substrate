@@ -1,5 +1,5 @@
-# Ecosystem (DE)
+# DETai-Ökosystem
 
-Coming soon. Please use the Russian version for now.
+Die deutsche Version wird vorbereitet. Die aktuelle Übersicht steht auf der russischsprachigen Seite.
 
-[Zur russischen Version wechseln](/ru/ecosystem/)
+[Zur russischen Version wechseln](../../ru/ecosystem/index.md)

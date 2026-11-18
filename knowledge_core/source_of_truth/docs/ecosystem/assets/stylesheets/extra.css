@@ -202,7 +202,7 @@
   letter-spacing: 0.035em;
 }
 
-/* Portfolio badges use the same compact shape as the DET / DETai labels. */
+/* Compact portfolio badges show the main resource contribution of each project. */
 .md-nav--primary a:is([data-detai-echelon="E1"], [href$="francis-galton/"], [href$="psykhe-ai/"]) {
   --detai-echelon: "E1";
   --detai-echelon-border: #a5c9f7;

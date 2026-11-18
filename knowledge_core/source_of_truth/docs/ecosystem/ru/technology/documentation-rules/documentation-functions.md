@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, editors, agents]
 descriptive:
   id: management-layer-docs-ecosystem-functions-of-documents
-  version: v6
+  version: v7
   status: draft
   date_ymd: 2026-09-08
-  date_update: 2026-11-01
+  date_update: 2026-11-18
 governance:
   canonicality: working
   visibility: public
@@ -39,7 +39,7 @@ title: Функции документов
 указываться в `classification.function` YAML front matter.
 
 Функция не определяет предмет текста, его место в меню или полномочия владельца.
-Например, объяснение в Institutional Layer и объяснение архитектуры приложения
+Например, объяснение в институциональном кластере и объяснение архитектуры приложения
 могут иметь одну функцию `explanation`, сохраняя разных предметных владельцев.
 Значения ниже описывают документы; схема финансового объекта, продукта или задачи
 определяется соответствующей системой.
