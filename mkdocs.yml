@@ -1144,7 +1144,7 @@ nav:
   - Видение: ru/governance/vision.md
   - Ценности: ru/governance/values.md
   - BHAG: ru/governance/bhag.md
-- Management Layer:
+- Management:
   - Обзор: ru/management-layer/index.md
   - Модель управления DETai: ru/management-layer/management-model.md
   - Team OS:
@@ -1165,24 +1165,27 @@ nav:
   - Обзор: ru/company-and-economy/index.md
   - Планируемый оператор DETai Oy: ru/company-and-economy/company-operator.md
   - Commerce Core: ru/company-and-economy/commerce-core.md
+  - PsyTok: ru/company-and-economy/psytok.md
   - Slicing Pie: ru/company-and-economy/slicing-pie.md
 - Brand & Communications:
-  - Продуктовый цикл Product–Market: ru/brand-and-communications/product-market-cycle.md
-  - DETai как Umbrella Brand: ru/brand-and-communications/umbrella-brand.md
-  - Границы и ответственность домена: ru/brand-and-communications/index.md
-  - Продукты и рынок:
-    - Обзор Product–Market System: ru/brand-and-communications/product-market/index.md
-    - Business Thesis: ru/brand-and-communications/product-market/business-thesis.md
-    - Портфельные решения:
-      - "Приоритет customer discovery: DETai Insight Workspace": ru/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md
+  - Назначение и ответственность: ru/brand-and-communications/index.md
+  - С чего начать работу: ru/brand-and-communications/start-here.md
+  - Общий бренд и названия: ru/brand-and-communications/umbrella-brand.md
+  - Визуальная система и дизайн: ru/brand-and-communications/visual-system.md
+  - Создание и развитие предложений: ru/brand-and-communications/product-market-cycle.md
+  - Продукт, аудитория и маркетинг:
+    - Обзор: ru/brand-and-communications/product-market/index.md
     - Каталог продуктов и предложений: ru/brand-and-communications/product-market/product-catalog.md
-    - Модель документации продукта: ru/brand-and-communications/product-market/product-documentation-model.md
-    - Стандарт ценностного предложения продукта: ru/brand-and-communications/product-market/value-proposition-standard.md
-    - Рыночный и портфельный цикл: ru/brand-and-communications/product-market/market-operations.md
-    - Бизнес-модель и портфель: ru/brand-and-communications/product-market/business-model-and-portfolio.md
-- Institutional Layer:
-  - Метод DET и институциональная жизнь: ru/institutional-layer/index.md
-  - Институциональный слой: ru/institutional-layer/institutional-layer.md
+    - Ценностное предложение: ru/brand-and-communications/product-market/value-proposition-standard.md
+    - Публичная страница продукта: ru/brand-and-communications/product-market/product-documentation-model.md
+    - Обратная связь и маркетинговые проверки: ru/brand-and-communications/product-market/market-operations.md
+  - Развитие и история:
+    - Бизнес-модель и решения о развитии: ru/brand-and-communications/product-market/business-model-and-portfolio.md
+    - Стратегическая гипотеза DETai: ru/brand-and-communications/product-market/business-thesis.md
+    - "История гипотезы: Insight Workspace": ru/brand-and-communications/product-market/portfolio-decisions/insight-workspace-customer-discovery.md
+- Institutional Cluster:
+  - Обзор: ru/institutional-layer/index.md
+  - Устройство кластера: ru/institutional-layer/institutional-layer.md
   - Психотерапия и супервизия: ru/institutional-layer/psychotherapy-and-supervision.md
   - Образование: ru/institutional-layer/education.md
   - Исследование: ru/institutional-layer/research.md
@@ -1196,7 +1199,7 @@ nav:
       - Установка на преодоление: ru/institutional-layer/det/concept/overcoming.md
     - DET как культура: ru/institutional-layer/det/5-characteristics-of-det-as-culture.md
     - На стыке трёх миров: ru/institutional-layer/det/at-the-crossroads-of-three-worlds.md
-- Technology Layer:
+- Technology Cluster:
   - Обзор: ru/technology/index.md
   - Логика эшелонов: ru/technology/logic-of-echelons.md
   - Версионность: ru/technology/versioning.md

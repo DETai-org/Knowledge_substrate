@@ -7,10 +7,10 @@ classification:
   function: standard
 descriptive:
   id: detai-u-l-i-1-philosophy-why-uli-standards-matter
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-11-01
-  date_update: 2026-11-01
+  date_update: 2026-11-18
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -26,7 +26,7 @@ title: Почему стандарты U.L.I. важны
 
 ## U.L.I. — среда разработки
 
-**U.L.I. — Universal Learning Intelligence («Улей»)** — команда и Human–AI Development Environment технологического слоя DETai. Разработчики, технические лидеры, архитектурные и продуктовые участники работают здесь вместе с AI-агентами: исследуют контекст, проектируют решения и создают цифровые компоненты, инструменты и продукты [Platform DETai](platform/index.md).
+**U.L.I. — Universal Learning Intelligence («Улей»)** — команда и Human–AI Development Environment технологического кластера DETai. Разработчики, технические лидеры, архитектурные и продуктовые участники работают здесь вместе с AI-агентами: исследуют контекст, проектируют решения и создают цифровые компоненты, инструменты и продукты [Platform DETai](platform/index.md).
 
 Среда объединяет репозитории, знания, стандарты и [производственные циклы](production-cycle/index.md). Документация служит рабочей памятью: сохраняет замысел, объясняет принятые решения и передаёт контекст между людьми, агентами и следующими версиями. Это практическая основа knowledge-first и context-driven development.
 

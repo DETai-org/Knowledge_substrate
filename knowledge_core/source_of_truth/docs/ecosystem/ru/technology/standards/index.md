@@ -7,10 +7,10 @@ classification:
   function: index
 descriptive:
   id: detai-u-l-i-3-technical-standards-index
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-11-01
-  date_update: 2026-11-01
+  date_update: 2026-11-18
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -24,7 +24,7 @@ title: Стандарты
 
 # Стандарты
 
-Практические правила разработки цифровых решений Technology Layer:
+Практические правила разработки цифровых решений технологического кластера:
 
 1. [Telegram-боты](telegram-bots/index.md) — создание, конфигурация, Policy Layer и передача языка.
 2. [Мозаический подход](mosaic-approach.md) — организация модулей и связей проекта.

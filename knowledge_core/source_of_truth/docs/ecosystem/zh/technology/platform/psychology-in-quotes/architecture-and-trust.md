@@ -10,7 +10,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/architecture-and-tr
 ## PiQ 在 DETai 中的位置
 
 - **DETai：**涵盖心理治疗、研究、教育、技术及社群的生态系统。
-- **Platform DETai：**连接各数字产品的技术与产品层。
+- **Platform DETai：**DETai 生态系统的数字产品平台。
 - **Psychology in Quotes：**以教育和知识传播为主要用户功能、以发布与数字创作为附加功能的数字产品。其 **E2 Brand** 角色是传播心理学知识、建立知名度与信任。
 - **DETai Account：**为网站和已绑定的 Telegram 提供统一用户身份，但注册账户本身不会赋予获取他人语录的权限。
 

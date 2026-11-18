@@ -10,9 +10,10 @@ classification:
   audiences: [team, managers, agents]
 descriptive:
   id: domains-and-decision-rights
-  version: v2
+  version: v3
   status: draft
   date_ymd: 2026-08-05
+  date_update: 2026-11-18
 governance:
   canonicality: working
   visibility: public
@@ -42,7 +43,7 @@ title: Домены и права решений
 | Product–Market внутри Brand & Communications | Находить потребности и устойчивые offers | portfolio, discovery, pricing hypotheses | профессиональные ограничения, бюджет и публичные обещания |
 | Technology / U.L.I. | Создавать безопасную технологию | architecture, standards, technical delivery | product priorities, data и release gates |
 | Operations, Finance & Corporate | Обеспечивать административную устойчивость | budgets, contracts, filings | statutory authority и confidentiality |
-| Brand & Communications | Развивать публичную ценность и связь с аудиторией; связывать Product–Market, цифровые и институциональные предложения | применение бренда, продукты и рынок, доставка сервисов, редакционные решения, каналы и релизы | approved claims, product positioning и профессиональная компетенция |
+| Brand & Communications | Развивать публичную ценность, общий визуальный язык и связь с аудиторией; связывать Product–Market, цифровые и институциональные предложения | применение бренда, визуальная система, дизайн точек взаимодействия и интерфейсные тексты совместно с командой продукта, продукты и рынок, редакционные решения, каналы и коммуникация релизов | approved claims, product positioning и профессиональная компетенция |
 
 Образование не растворяется в Brand & Communications. Research не подчиняется Product только потому, что создаёт evidence. Карта доменов не должна превращать человека в функцию: [принципы участия](participation-principles.md) задают обязательный интерфейс роли с контекстом, обратной связью и влиянием.
 

@@ -10,7 +10,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/architecture-and-tr
 ## PiQ osana DETaita
 
 - **DETai** on psykoterapian, tutkimuksen, koulutuksen, teknologian ja yhteisön yhdistävä ekosysteemi.
-- **Platform DETai** on sen tuote- ja teknologiakerros sekä yhtenäinen digitaalinen ympäristö.
+- **Platform DETai** on DETai-ekosysteemin digitaalisten tuotteiden alusta.
 - **Psychology in Quotes** on digitaalinen oppimisen ja tiedon jakamisen tuote (ensisijainen käyttäjätoiminto), joka tukee myös julkaisemista ja luovaa työtä. Sen **E2 Brand** -rooli on levittää psykologista tietoa sekä vahvistaa tunnettuutta ja luottamusta.
 - **DETai Account** tarjoaa yhteisen käyttäjäidentiteetin sivustolla ja yhdistetyssä Telegramissa. Rekisteröityminen ei kuitenkaan yksin anna oikeuksia muiden sitaatteihin.
 

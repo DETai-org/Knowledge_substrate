@@ -62,3 +62,7 @@ Psychology in Quotes toimii Telegramissa ja Platform DETain verkkosivustolla. Si
 - [Tietosuojailmoitus](https://detai-x.com/fi/technology/platform/psychology-in-quotes/privacy)
 
 **Dokumentaation navigoinnista:** tämä sivu kuvaa tuotetta julkisesti ja toimii lähtökohtana ihmisille ja tekoälyavustajille. Oikeudelliset velvoitteet määritellään sivuston asiakirjoissa, voimassa olevat oikeudet PiQ:n käytännöissä ja rajapinnassa sekä käyttöohjeet seuraavissa osioissa. Dokumentaatio ei anna pääsyä muiden käyttäjien tileille eikä korvaa sovelluksen ajantasaisen tilanteen tarkistamista.
+
+## ΨTunes — kirjat ja podcastit
+
+**ΨTunes** on kehitteillä oleva PiQ-soitin kirjoille, podcasteille, kirjanmerkeille ja lähteisiin sidotuille lainauksille. [ΨTunes-opas](psi-tunes/index.md) esittelee tuonnin, kuuntelun ja podcastit. **Versiota 2.0 valmistellaan ja testataan edelleen**; opas ei ilmoita julkisesta julkaisusta. Käytettävissä olevat toiminnot näkyvät sovelluksessa.

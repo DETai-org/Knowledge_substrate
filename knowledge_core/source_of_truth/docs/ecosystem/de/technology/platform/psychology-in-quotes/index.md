@@ -62,3 +62,7 @@ Die [Erläuterung zu Sammlung und Tarifen](collection-and-plans.md) beschreibt d
 - [Datenschutzhinweise](https://detai-x.com/de/technology/platform/psychology-in-quotes/privacy)
 
 **Zur Dokumentationsnavigation:** Diese Seite beschreibt das Produkt öffentlich und dient Menschen wie KI-Assistenten als Einstieg. Rechtliche Verpflichtungen ergeben sich aus den Dokumenten der Website, aktive Berechtigungen aus PiQ-Policy/API und Anleitungen aus den folgenden Abschnitten. Die Dokumentation gewährt keinen Zugang zu fremden Konten und ersetzt nicht die Prüfung des aktuellen Anwendungszustands.
+
+## ΨTunes — Bücher und Podcasts
+
+**ΨTunes** ist ein in Entwicklung befindlicher PiQ-Player für Bücher, Podcasts, Lesezeichen und Zitate mit Quellenbezug. Die [ΨTunes-Anleitung](psi-tunes/index.md) erklärt Import, Hören und Podcasts. **Version 2.0 wird noch vorbereitet und geprüft**; die Beschreibung kündigt keine öffentliche Freigabe an. Die tatsächliche Verfügbarkeit zeigt die Anwendung.

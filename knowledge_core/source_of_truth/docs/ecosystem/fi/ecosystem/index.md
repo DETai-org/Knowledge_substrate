@@ -1,5 +1,5 @@
-# Ecosystem (FI)
+# DETai-ekosysteemi
 
-Coming soon. Please use the Russian version for now.
+Suomenkielistä versiota valmistellaan. Ajantasainen yleiskuva on venäjänkielisellä sivulla.
 
-[Siirry venäjänkieliseen versioon](/ru/ecosystem/)
+[Siirry venäjänkieliseen versioon](../../ru/ecosystem/index.md)
