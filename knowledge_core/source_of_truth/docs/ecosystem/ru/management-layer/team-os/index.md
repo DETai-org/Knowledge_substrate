@@ -11,10 +11,10 @@ classification:
   audiences: [public, team, managers, agents]
 descriptive:
   id: detai-platform-detai-e3-infra-team-os-index
-  version: v5
+  version: v6
   status: active
   date_ymd: 2026-10-23
-  date_update: 2026-11-02
+  date_update: 2026-11-18
 links:
   external_links:
     - type: MkDocs_ru
@@ -61,7 +61,7 @@ Team OS хранит operational state в PostgreSQL. Сайт обращает�
 
 ## Место в экосистеме
 
-Team OS принадлежит [Management Layer](../index.md): это внутренняя управленческая система для работы обоих слоёв DETai. Её рабочий Scope определяется этой ответственностью, а E3 описывает обеспечивающий вклад в экосистему. Технологическая реализация не делает систему частью Platform DETai или Scope Infrastructure.
+Team OS принадлежит [Management Layer](../index.md): это внутренняя управленческая система для работы обоих кластеров DETai. Её рабочий Scope определяется этой ответственностью, а E3 описывает обеспечивающий вклад в экосистему. Технологическая реализация не делает систему частью Platform DETai или Scope Infrastructure.
 
 Team OS может быть оформлена как внутренний продукт, когда явно определены аудитория, обещанный результат, поддержка, наблюдение и стабильное поставляемое состояние. Перемещение между Scope и уточнение E3 сами по себе не меняют продуктовый статус.
 

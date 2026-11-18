@@ -9,10 +9,10 @@ classification:
   function: index
 descriptive:
   id: management-layer-docs-ecosystem-documentation-architecture
-  version: v5
+  version: v6
   status: draft
   date_ymd: 2026-10-23
-  date_update: 2026-11-01
+  date_update: 2026-11-18
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -55,7 +55,7 @@ governance:
 
 Улей поддерживает прикладную типологию документации разработки и правила её
 использования. Часть этого словаря применяется при публикации самой базы знаний.
-Размещение правил в Technology Layer обозначает ответственность за организацию
+Размещение правил в технологическом кластере обозначает ответственность за организацию
 и техническое описание документов.
 
 Предметное содержание остаётся у соответствующего направления. Например,

@@ -10,10 +10,10 @@ classification:
   audiences: [team, editors, developers, agents]
 descriptive:
   id: management-layer-docs-ecosystem-document-metadata-policy
-  version: v7
+  version: v8
   status: draft
   date_ymd: 2026-10-23
-  date_update: 2026-11-01
+  date_update: 2026-11-18
 governance:
   canonicality: working
   visibility: public
@@ -134,7 +134,7 @@ title: Человекочитаемое название
 Scope Team OS или наличие отдельной команды.
 
 Значение выбирается по содержанию и контракту документа. Размещение правил
-metadata в Technology Layer не делает этот слой владельцем предмета всех страниц.
+metadata в технологическом кластере не делает этот кластер владельцем предмета всех страниц.
 
 ### `classification.domain`
 

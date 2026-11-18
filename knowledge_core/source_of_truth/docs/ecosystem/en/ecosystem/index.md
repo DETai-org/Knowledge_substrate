@@ -1,5 +1,5 @@
-# Ecosystem (EN)
+# DETai Ecosystem
 
-English version is coming soon. For now please use the Russian version.
+The English version is being prepared. The Russian page contains the current overview.
 
-[Перейти к русской версии](index.md)
+[Open the Russian version](../../ru/ecosystem/index.md)

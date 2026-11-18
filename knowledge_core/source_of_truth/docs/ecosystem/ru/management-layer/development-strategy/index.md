@@ -10,9 +10,10 @@ classification:
   audiences: [public, team, managers, agents]
 descriptive:
   id: management-layer-strategic-development-index
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-08-05
+  date_update: 2026-11-18
 governance:
   canonicality: working
   visibility: public
@@ -57,7 +58,7 @@ title: Стратегия развития DETai
 1. датированный контекст и доступное evidence;
 2. стратегические drivers и ограничения;
 3. выбранные ставки и явно отклонённые альтернативы;
-4. связь с институциональным и технологическим слоями;
+4. связь с институциональным и технологическим кластерами;
 5. portfolio decisions и ожидаемые результаты;
 6. распределение capacity и ключевых ресурсов;
 7. метрики, риски и условия пересмотра;

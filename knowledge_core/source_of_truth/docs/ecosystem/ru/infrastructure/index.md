@@ -7,10 +7,10 @@ classification:
   function: index
 descriptive:
   id: infrastructure-index
-  version: v7
+  version: v8
   status: active
   date_ymd: 2026-11-01
-  date_update: 2026-11-01
+  date_update: 2026-11-18
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -24,10 +24,10 @@ title: Infrastructure
 
 # Infrastructure
 
-**Infrastructure — самостоятельный инфраструктурный пласт экосистемы DETai,
+**Infrastructure — сквозной домен экосистемы DETai,
 предоставляющий общие обеспечивающие системы и среды исполнения.** Он объединяет
 исполняемый код, данные, вычислительные среды, связи между ними и границы
-ответственности. Его возможности служат основой работы разных направлений экосистемы.
+ответственности. Его возможности служат основой работы обоих кластеров и общего управления.
 
 ## Основные направления
 
@@ -37,7 +37,7 @@ title: Infrastructure
 
 ```mermaid
 flowchart TB
-    infra["Infrastructure — инфраструктурный пласт"]
+    infra["Infrastructure — общие системы и среды"]
     systems["Инфраструктурные системы"]
     environments["Среды исполнения"]
     ecosystem["ecosystem-runtime"]

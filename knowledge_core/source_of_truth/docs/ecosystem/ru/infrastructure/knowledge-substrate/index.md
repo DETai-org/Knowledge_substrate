@@ -7,9 +7,10 @@ classification:
   function: index
 descriptive:
   id: infrastructure-knowledge-substrate-index
-  version: v2
+  version: v3
   status: active
   date_ymd: 2026-08-20
+  date_update: 2026-11-18
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -51,6 +52,12 @@ title: Knowledge Substrate
 - структура, metadata и связи между документами;
 - ingest и materialization knowledge-данных;
 - retrieval-ready представления и knowledge/query-контур `detai_core`.
+
+Хранение документа и ответственность за его содержание различаются.
+Knowledge Substrate поддерживает структуру, версии и представления знания;
+миссию определяет Governance, профессиональное содержание — специалисты метода,
+правила бренда — Brand & Communications. Размещение документа в этой системе
+не передаёт Infrastructure право определять его смысл.
 
 Knowledge Substrate не владеет живыми заявками, событиями и уведомлениями — это
 область [ecosystem-runtime](../ecosystem-runtime/index.md). Она также не

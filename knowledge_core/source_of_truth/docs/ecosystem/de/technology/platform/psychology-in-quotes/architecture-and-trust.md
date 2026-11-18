@@ -10,7 +10,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/architecture-and-tr
 ## Die Rolle von PiQ innerhalb von DETai
 
 - **DETai** ist ein Ökosystem aus Psychotherapie, Forschung, Bildung, Technologie und Gemeinschaft.
-- **Platform DETai** ist die Produkt- und Technologieschicht sowie die verbundene digitale Umgebung.
+- **Platform DETai** ist die Plattform für digitale Produkte des DETai-Ökosystems.
 - **Psychology in Quotes** ist ein digitales Produkt für Bildung und Wissensvermittlung (primäre Nutzerfunktion), ergänzt um Veröffentlichung und kreative Arbeit. Seine **E2 Brand**-Rolle besteht darin, psychologisches Wissen zu verbreiten und Bekanntheit sowie Vertrauen zu fördern.
 - **DETai Account** bietet eine gemeinsame Identität für Website und verbundenes Telegram. Die Registrierung allein gewährt aber keine Rechte an fremden Zitaten.
 
