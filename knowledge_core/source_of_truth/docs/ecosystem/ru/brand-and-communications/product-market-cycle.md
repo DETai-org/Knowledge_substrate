@@ -10,10 +10,10 @@ classification:
   audiences: [team, product, communications, developers, agents]
 descriptive:
   id: product-market-cycle
-  version: v3
+  version: v4
   status: active
   date_ymd: 2026-11-01
-  date_update: 2026-11-18
+  date_update: 2026-11-19
 governance:
   canonicality: canonical
   visibility: public
@@ -103,7 +103,3 @@ title: Развитие продукта и профессионального �
 - ссылка на актуальные материалы и способ проверить результат.
 
 Для дизайна критерии раскрыты в [визуальной системе](visual-system.md); для страницы — в [модели документации продукта](product-market/product-documentation-model.md). Порядок наблюдения после выпуска описан в [работе с аудиторией и результатами](product-market/market-operations.md).
-
-## Ближайшее применение
-
-Начать стоит с одного законченного сценария PiQ: от знакомства с предложением до первого полезного результата. После внедрения проверить его с пользователями, выбрать следующее затруднение и повторить цикл. Последовательность первых задач собрана в [стартовом маршруте](start-here.md).

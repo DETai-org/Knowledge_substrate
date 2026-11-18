@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, product, agents]
 descriptive:
   id: product-market-index
-  version: v7
+  version: v8
   status: active
   date_ymd: 2026-08-05
-  date_update: 2026-11-18
+  date_update: 2026-11-19
 governance:
   canonicality: canonical
   visibility: public
@@ -75,7 +75,7 @@ title: Продукт, аудитория и маркетинг
 3. [Проверить аудиторию и результат](market-operations.md): разговоры, наблюдения, каналы и показатели.
 4. Передать конкретные улучшения в работу команды и обновить публичное описание после подтверждения изменений.
 
-Для визуальной согласованности используйте [систему дизайна](../visual-system.md); для начала работы нового участника — [практический маршрут](../start-here.md).
+Для визуальной согласованности используйте [систему дизайна](../visual-system.md).
 
 ## Кто подтверждает решения
 

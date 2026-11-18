@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, brand, product, agents]
 descriptive:
   id: brand-and-communications-domain
-  version: v8
+  version: v9
   status: active
   date_ymd: 2026-10-23
-  date_update: 2026-11-18
+  date_update: 2026-11-19
 governance:
   canonicality: canonical
   visibility: public
@@ -59,10 +59,6 @@ title: Бренд и коммуникации
 функций Brand & Communications.
 
 Основание бренда — [миссия](../governance/mission.md), ценности и реальная работа экосистемы. Задача направления — выразить их в понятных предложениях, узнаваемом оформлении и удобных действиях.
-
-## С чего начать
-
-Начни с [рабочего маршрута нового участника](start-here.md): он связывает документы с первыми результатами на примере Psychology in Quotes, сайта, ΨTunes и DETai Account.
 
 Раздел задаёт рабочую рамку направления. Её наличие не означает, что единая дизайн-система, маркетинговая аналитика и все процессы уже внедрены. В существующих проектах есть визуальные решения; их нужно собрать, оценить и согласовать.
 
@@ -134,7 +130,6 @@ title: Бренд и коммуникации
 
 ## Документы по задаче
 
-- [Начать работу в направлении](start-here.md).
 - [Общий бренд и названия](umbrella-brand.md).
 - [Визуальная система и дизайн взаимодействия](visual-system.md).
 - [Продукты и аудитория](product-market/index.md).

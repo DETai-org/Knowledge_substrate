@@ -10,8 +10,8 @@ classification:
   audiences: [public, team, product, communications, agents]
 descriptive:
   id: detai-umbrella-brand
-  version: v4
-  date_update: 2026-11-18
+  version: v5
+  date_update: 2026-11-19
   status: active
   date_ymd: 2026-08-05
 governance:
@@ -110,4 +110,4 @@ Brand & Communications.
 
 Governance сохраняет миссию, ценности и смысл экосистемы. Brand & Communications ведёт брендовые правила, материалы и их применение. Команды продуктов подтверждают обещания и участвуют в проектировании пользовательского опыта; U.L.I. реализует изменения в интерфейсах.
 
-Первый прикладной шаг — собрать уже используемые решения и договориться об общей основе. План работы находится в [маршруте нового участника](start-here.md).
+Правила оформления и взаимодействия раскрыты в [визуальной системе](visual-system.md).
