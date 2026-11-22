@@ -11,10 +11,10 @@ classification:
   audiences: [public, product, developers, support, agents]
 descriptive:
   id: detai-platform-detai-e2-brand-psychology-in-quotes-index
-  version: v3
+  version: v4
   status: active
   date_ymd: 2026-06-12
-  date_update: 2026-10-31
+  date_update: 2026-11-22
 governance:
   canonicality: canonical
   visibility: public
@@ -76,6 +76,12 @@ links:
 Psychology in Quotes работает в Telegram и на сайте Platform DETai. Создание и модерация цитат, каталог, избранное, «Моя коллекция», готовые языковые версии, публикации и Stories доступны в рамках **Free / Plus / Pro** и действующей политики продукта. Подписки Plus и Pro оформляются в Telegram Stars; для покупки нужен завершённый DETai Account, связанный с Telegram. Актуальные гостевые ограничения проверяйте в боте, а [действующие предложения, цены и тарифные лимиты — на сайте](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-plans). Возможность покупки и доступность отдельных функций показываются в работающем продукте.
 
 Подробная логика прав — в [справке о коллекции и планах](collection-and-plans.md), **актуальные численные тарифные лимиты — только в [таблице сайта](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-plans)**. Конкретный действующий доступ пользователя определяется его **DETai Account и серверной политикой PiQ**, а не устаревшей копией таблицы.
+
+## PsyTok в Psychology in Quotes
+
+[PsyTok](../../../company-and-economy/psytok.md) — общая единица расчёта экосистемы. Для **Psychology in Quotes** бот и ΨTunes являются частями одного продукта. Включённые в тариф PsyTok действуют в его пределах; отдельно купленные PsyTok относятся к общему балансу DETai Account. Общие сроки действия, источники начисления и порядок списания описаны в [документации PsyTok](../../../company-and-economy/psytok.md).
+
+В развиваемом ΨTunes PsyTok предусмотрены для платной подготовки материалов и других допустимых действий. Условия приобретения книги и доступ к её версии описаны в [руководстве ΨTunes](psi-tunes/index.md) и в разделе [импорта](psi-tunes/import.md). **Версия 2.0 ещё проходит подготовку:** доступность, результат заказа и цену следует проверять в приложении перед подтверждением.
 
 ## Ссылки и ответственность
 
