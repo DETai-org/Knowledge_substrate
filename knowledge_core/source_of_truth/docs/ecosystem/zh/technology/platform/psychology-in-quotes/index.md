@@ -53,6 +53,12 @@ Psychology in Quotes 可通过 Telegram 和 Platform DETai 网站使用。语录
 
 有关权限的详细说明见[收藏与套餐](collection-and-plans.md)；**最新数值限额仅以[网站上的动态套餐对比表](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)为准**。个人的实际权限取决于 **DETai Account 和 PiQ 服务端政策**，不能依据已经过时的静态表格判断。
 
+## Psychology in Quotes 中的 PsyTok
+
+[PsyTok](../../../company-and-economy/psytok.md) 是生态系统的通用计价单位。**Psychology in Quotes** 的机器人与 ΨTunes 属于同一产品：套餐内的 PsyTok 额度仅适用于 PiQ，单独购买的 PsyTok 则属于 DETai Account 的通用余额。余额来源、有效期及扣减顺序见 [PsyTok 通用说明](../../../company-and-economy/psytok.md)。
+
+正在开发的 ΨTunes 可使用 PsyTok 支付素材制作等符合条件的操作。具体图书的购买条件及对应版本的访问权，请参阅 [ΨTunes 指南](psi-tunes/index.md)和[导入说明](psi-tunes/import.md)。**2.0 版本仍处于准备阶段**；付款前请以实际界面核对可用功能、交付内容和费用。
+
 ## 链接与责任边界
 
 - [官方产品页面和在线目录](https://detai-x.com/zh/technology/platform/psychology-in-quotes)
