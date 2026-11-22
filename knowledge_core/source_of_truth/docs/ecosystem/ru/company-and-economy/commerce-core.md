@@ -9,10 +9,10 @@ classification:
   audiences: [public, team, product, developers, agents]
 descriptive:
   id: infrastructure-commerce-core
-  version: v2
+  version: v3
   status: draft
   date_ymd: 2026-11-02
-  date_update: 2026-11-13
+  date_update: 2026-11-22
 governance:
   canonicality: working
   visibility: public
@@ -63,6 +63,19 @@ title: Commerce Core
 своего тарифа. Коммерческий контур учитывает приобретение, резервирование,
 списание и освобождение средств. Продукт определяет приобретаемый результат
 и правила доступа, включая допустимое использование уже подготовленного материала.
+
+## Как пользоваться этой справкой
+
+Документ описывает **общий технический контур** и его границы. Он не является актуальным прайсом, подтверждением открытия продаж или сведениями о состоянии конкретного заказа.
+
+| Вопрос | Источник |
+| --- | --- |
+| Что такое PsyTok и как устроены балансы | [PsyTok](psytok.md) |
+| Как PsyTok используется в продукте | [Psychology in Quotes](../technology/platform/psychology-in-quotes/index.md) |
+| Как приобретать и использовать книги | [ΨTunes](../technology/platform/psychology-in-quotes/psi-tunes/index.md) |
+| Какие сейчас доступны цены и способы оплаты | [Действующее предложение PiQ](https://detai-x.com/ru/technology/platform/psychology-in-quotes) перед подтверждением заказа |
+
+Для человека или AI-ассистента важно различать **архитектурную модель**, **готовящуюся возможность** и **фактически доступную покупку**. Документация не заменяет проверку актуальных условий в продукте.
 
 ## Финансовый вклад и учёт
 
