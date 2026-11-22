@@ -26,7 +26,7 @@ Saldo kuuluu **DETai Account** -tilille. Ostetut PsyTok-yksiköt on tarkoitettu 
 | Ostetut PsyTok-yksiköt | Niitä tukevat ekosysteemin sovellukset | Eivät vanhene tilauksen päättyessä |
 | Tuotetilaukseen sisältyvät PsyTok-yksiköt | Tilauksen määrittämä tuote ja palvelut | Kyseisen tilauskauden loppuun; eivät siirry seuraavalle kaudelle |
 
-Psychology in Quotesissa sisältyvä erä koskee yhteistä tuotetta: bottia ja ΨTunesia. Kun toiminto hyväksyy molemmat lähteet, soveltuvaa tilaukseen sisältyvää saldoa käytetään ensin ja ostettua saldoa sen jälkeen. Yhteinen yksikkö ei poista eräkohtaisia rajoja.
+Kun toiminto hyväksyy molemmat lähteet, soveltuvaa tilaukseen sisältyvää saldoa käytetään ensin ja ostettua saldoa sen jälkeen. Yhteinen yksikkö ei poista eräkohtaisia rajoja.
 
 Erien määrät, lisäostot ja käytettävissä olevat palvelut määräytyvät voimassa olevan tarjouksen mukaan. PsyTok-saldo ei itsessään korvaa tilausta, aineiston käyttöoikeutta tai toimintoon tarvittavaa lupaa.
 
@@ -38,14 +38,12 @@ Tarvittava määrä voidaan varata toteutuksen ajaksi. Lopullinen veloitus perus
 
 Sisäiset korjausyritykset eivät lisää sovittua hintaa. Uudet hinnat koskevat uusia tarjouksia; vahvistetun tilauksen ehdot säilyvät.
 
-## Kirjat ja valmiit aineistot
+## Tuotteet ja PsyTokin saatavuus
 
-[ΨTunesissa](../technology/platform/psychology-in-quotes/psi-tunes/index.md) käyttäjä ostaa sovitun lopputuloksen: valmiin äänikirjan ja valitun version kuunteluoikeuden. Hinta määräytyy lopputuloksen ja tarjouksen ehtojen, kuten kielen, käännöksen ja valittujen asetusten, mukaan. Kun versio ja ehdot ovat samat, valmiin version käyttäminen uuden valmistelun sijaan ei itsessään muuta sovittua hintaa.
+| Tuote | Suunniteltu käyttö | Tila |
+| --- | --- | --- |
+| [Psychology in Quotes (PiQ)](../technology/platform/psychology-in-quotes/index.md) | Tilaukseen sisältyvät erät, materiaalien valmistelu ja maksulliset toiminnot botissa sekä ΨTunesissa | Integraatiota valmistellaan versioon 2.0; tarkista saatavuus tuotteesta |
 
-Tilaus voidaan toteuttaa uudella valmistelulla tai olemassa olevalla yhteensopivalla versiolla, jonka saa toimittaa käyttäjälle. Pelkkä nimi ja tekijä eivät riitä: tekstin, kielen, käännöksen ja ääniasetusten on vastattava tilausta. Olennaisista muutoksista sovitaan käyttäjän kanssa.
+Tuotekohtaiset säännöt löytyvät tuotteen oppaasta. Tarkista ehdot ja hinta ennen maksamista; taulukko ei ilmoita julkisen myynnin alkamisesta.
 
-Pysyvä käyttöoikeus koskee ostettua kirjaa ilmoitetulla kieliversiolla. Sen tekniset korjaukset eivät edellytä uutta ostoa. Toinen kirja tai kieli määräytyy erillisen tarjouksen ehtojen mukaan.
-
-Omat tuonnit eivät automaattisesti siirry julkiseen katalogiin. Käyttäjien välinen uudelleenkäyttö edellyttää asianmukaista lupaa; yksityinen lähde tai henkilökohtainen ääni ei muutu yhteiseksi kirjan tunnistamisen perusteella.
-
-[Company & Economy](index.md) · [Commerce Core](commerce-core.md) · [Aineiston valmistelu ΨTunesissa](../technology/platform/psychology-in-quotes/psi-tunes/import.md)
+[Company & Economy (venäjäksi)](../../ru/company-and-economy/index.md) · [Commerce Core (venäjäksi)](../../ru/company-and-economy/commerce-core.md) · [Psychology in Quotes](../technology/platform/psychology-in-quotes/index.md)
