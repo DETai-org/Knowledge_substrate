@@ -53,6 +53,12 @@ Psychology in Quotes toimii Telegramissa ja Platform DETain verkkosivustolla. Si
 
 [Kokoelman ja tilaustasojen opas](collection-and-plans.md) kuvaa oikeuksien logiikan; **ajantasaiset numeeriset rajoitukset löytyvät vain [sivuston vertailutaulukosta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans)**. Todelliset käyttöoikeutesi määräytyvät **DETai Account -tilin ja PiQ:n palvelinpuolen käytäntöjen** mukaan, eivät vanhentuneesta taulukkokopiosta.
 
+## PsyTok Psychology in Quotesissa
+
+[PsyTok](../../../company-and-economy/psytok.md) on ekosysteemin yhteinen laskentayksikkö. **Psychology in Quotesissa** botti ja ΨTunes ovat saman tuotteen osia: tilaukseen sisältyvät PsyTok-yksiköt koskevat vain PiQ:ta, erikseen ostetut PsyTok-yksiköt kuuluvat DETai Accountin yhteiseen saldoon. Lähteet, voimassaolon ja käyttöjärjestyksen kertoo [yleinen PsyTok-opas](../../../company-and-economy/psytok.md).
+
+Kehitteillä olevassa ΨTunesissa PsyTokilla on tarkoitus maksaa aineistojen valmistelusta ja muista sallituista toiminnoista. Yksittäisen kirjan ostoehdot ja version käyttöoikeudet kuvataan [ΨTunes-oppaassa](psi-tunes/index.md) sekä [tuontiohjeissa](psi-tunes/import.md). **Versio 2.0 on vielä valmisteilla**; tarkista saatavuus, tilauksen sisältö ja hinta sovelluksesta ennen maksua.
+
 ## Linkit ja vastuut
 
 - [Virallinen tuotesivu ja verkkokokoelma](https://detai-x.com/fi/technology/platform/psychology-in-quotes)
