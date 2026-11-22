@@ -53,6 +53,12 @@ Psychology in Quotes works in Telegram and on the Platform DETai website. Quote 
 
 The [collection and plans guide](collection-and-plans.md) explains entitlements; **current numerical limits are published only in the [website's plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans)**. Your effective access is determined by **DETai Account and PiQ server policy**, not an outdated copied table.
 
+## PsyTok in Psychology in Quotes
+
+[PsyTok](../../../company-and-economy/psytok.md) is the ecosystem-wide pricing unit. The **Psychology in Quotes** bot and ΨTunes are parts of the same product: plan-included PsyTok apply only to PiQ, while separately purchased PsyTok belong to the shared DETai Account balance. For sources, expiry and spending order, see the [general PsyTok guide](../../../company-and-economy/psytok.md).
+
+In the developing ΨTunes, PsyTok can cover preparation of materials and other eligible paid actions. For the terms of an individual book and its edition access, read the [ΨTunes guide](psi-tunes/index.md) and [import instructions](psi-tunes/import.md). **Version 2.0 is still in preparation**; check the live interface for availability, order details and prices before paying.
+
 ## Links and responsibility
 
 - [Official product page and web catalogue](https://detai-x.com/en/technology/platform/psychology-in-quotes)
