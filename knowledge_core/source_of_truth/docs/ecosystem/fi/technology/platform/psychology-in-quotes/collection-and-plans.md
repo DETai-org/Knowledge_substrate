@@ -7,7 +7,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 # PiQ:n kokoelma, kielet ja tilaustasot
 
-**Päivitetty:** 30. lokakuuta 2026. Tällä sivulla selitetään kokoelman rakenne ja käyttöoikeustasot, mutta **ei kopioida tilausten hinta- tai kiintiötaulukkoa**. Free / Plus / Pro -tasojen ajantasaiset ominaisuudet ja kiintiöt määräytyvät PiQ:n käytäntöjen perusteella ja näkyvät [virallisen sivuston päivittyvässä vertailussa](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Tarkista jäljellä olevat kiintiösi, lisäoikeudet ja voimassa oleva tilauksesi ”Oma tilaukseni” -kohdasta.
+**Päivitetty:** 24. marraskuuta 2026. Tällä sivulla selitetään kokoelman rakenne ja käyttöoikeustasot, mutta **ei kopioida tilausten hinta- tai kiintiötaulukkoa**. Free / Plus / Pro -tasojen ajantasaiset ominaisuudet ja kiintiöt määräytyvät PiQ:n käytäntöjen perusteella ja näkyvät [virallisen sivuston päivittyvässä vertailussa](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Tarkista jäljellä olevat kiintiösi, lisäoikeudet ja voimassa oleva tilauksesi ”Oma tilaukseni” -kohdasta.
 
 ## Vieras, osallistuja ja tilaaja ovat eri asioita
 
@@ -37,6 +37,10 @@ Verkkosivun taulukko hakee voimassa olevan tuotekäytännön rajapinnan kautta. 
 
 Henkilökohtaiset oikeudet ja kiintiöt näet [”Oma tilaukseni” -osiosta](https://detai-x.com/fi/account/products/psychology-in-quotes#piq-access). Kiintiötä voidaan varata toimenpiteelle ennen sen lopullista vahvistusta, joten jäljellä olevan määrän kertoo sovellus. Toisen sitaatin hankkiminen, julkaiseminen ja Stories-sisällön luominen ovat eri toimintoja. Oman sitaatin luominen ei ole toisen sitaatin hankkimista.
 
+- Viikkorajat nollautuvat UTC-kalenteriviikon mukaan; julkaisu- ja Stories-kiintiöt ovat yhteisiä yhdistetyille kanaville.
+- Hankinta avaa tilille sallitut vesileimattomat versiot; uusi lataus ei kuluta hankintaa. Sitaattien ja äänikirjojen kielioikeudet ovat erillisiä.
+- Moderointi ja valmistelu voivat viedä aikaa; YouTube vaatii erillisen yhteyden. DETai-reaktiot tukevat julkisia Telegram-kanavia voimassa olevien sääntöjen ja integraation saatavuuden mukaan.
+
 ## Kielet ja tilauksen vaihtaminen
 
 - Valmiita julkaistuja käännöksiä voi katsella kokoelmassa **tutustumista varten** vesileimattuina.
@@ -50,9 +54,9 @@ Henkilökohtaiset oikeudet ja kiintiöt näet [”Oma tilaukseni” -osiosta](ht
 
 ## Saatavuus ja hinta
 
-**Plus- ja Pro-tilaukset** ostetaan Telegram Stars -tähdillä **30 päiväksi automaattisella uusimisella**. Ostaminen edellyttää viimeisteltyä DETai Accountia, joka on yhdistetty Telegramiin. Tarkka tähtimäärä ja tilausjakso näytetään ennen maksun vahvistamista. Sivuston dollarimäärä on suuntaa antava, sillä Stars-tähtien hankintahinta vaihtelee alueen ja lataustavan mukaan. [Voimassa olevat tarjoukset ja hinnat](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans) näkyvät sivustolla ja botissa.
+Plus- ja Pro-tilaukset voi hankkia Telegram Stars -tähdillä tai sivuston kryptomaksulla saatavuuden mukaan. Henkilökohtainen käyttö edellyttää DETai Accountia; Telegram-toiminnot vaativat yhteyden Telegramiin. Lopullinen summa, jakso ja uusimisehdot näkyvät ennen vahvistusta; kaikki maksut eivät uusiudu automaattisesti. [Tilausten vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans).
 
-Automaattisen uusimisen poistaminen käytöstä säilyttää käyttöoikeuden maksetun jakson loppuun. **Launch Offer** -aloitustarjouksen erityisehdot voidaan päättää ennakkoilmoituksella. Jatkaminen uudella hinnalla edellyttää erillistä tilausta ja käyttäjän vahvistamaa maksua. Voimassa olevat säännöt, ilmoitusajat ja hyvitysmenettely määritellään [PiQ:n käyttöehdoissa](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms).
+Jos maksutapa tukee automaattista uusimista, sen poistaminen käytöstä säilyttää käyttöoikeuden maksetun jakson loppuun. **Launch Offer** -aloitustarjouksen erityisehdot voidaan päättää ennakkoilmoituksella. Jatkaminen uudella hinnalla edellyttää erillistä tilausta ja käyttäjän vahvistamaa maksua. Voimassa olevat säännöt, ilmoitusajat ja hyvitysmenettely määritellään [PiQ:n käyttöehdoissa](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms).
 
 [Ajantasainen tuotesivu ja vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans) · [Oma tilaukseni](https://detai-x.com/fi/account/products/psychology-in-quotes#piq-access)
 

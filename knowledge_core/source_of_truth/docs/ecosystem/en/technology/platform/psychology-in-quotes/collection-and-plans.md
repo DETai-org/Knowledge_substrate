@@ -7,7 +7,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 # PiQ collections, languages and plans
 
-**Updated:** 30 October 2026. This page explains collections and access levels, **but does not reproduce the pricing or quota matrix**. Current Free / Plus / Pro features and quotas are defined by PiQ policy and displayed in the [live plan comparison on the official website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Check “My subscription” for your remaining allowances, additional entitlements and active plan.
+**Updated:** 24 November 2026. This page explains collections and access levels, **but does not reproduce the pricing or quota matrix**. Current Free / Plus / Pro features and quotas are defined by PiQ policy and displayed in the [live plan comparison on the official website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Check “My subscription” for your remaining allowances, additional entitlements and active plan.
 
 ## Guest, participant and subscriber are different states
 
@@ -37,6 +37,10 @@ The website obtains the live product policy through its API. This document inten
 
 Check [“My subscription”](https://detai-x.com/en/account/products/psychology-in-quotes#piq-access) for your own entitlements and quotas. Usage operations may be reserved until their outcomes are confirmed, so the application is the source of truth for your remaining balance. Obtaining another person's quote, publishing and creating Stories are distinct operations. Creating your own quote is not the same as obtaining somebody else's.
 
+- Weekly limits reset by the UTC calendar week; publication and Stories limits are shared across connected channels.
+- Acquisition links a quote to the Account and unlocks permitted watermark-free versions; downloading again does not consume a new acquisition. Quote and audiobook language rights are separate.
+- Moderation and preparation may take time; YouTube requires a separate connection. DETai reactions support public Telegram channels subject to current policy and integration availability.
+
 ## Languages and subscription changes
 
 - In the catalogue, prepared and published translations can be viewed **for reference** with watermarks.
@@ -50,9 +54,9 @@ Check [“My subscription”](https://detai-x.com/en/account/products/psychology
 
 ## Availability and price
 
-**Plus and Pro** subscriptions are purchased with Telegram Stars for **30 days, with automatic renewal**. Checkout requires a completed DETai Account linked to Telegram. The exact Stars amount and period are shown before payment confirmation. The USD amount on the website is a reference, since the cost of acquiring Stars varies by region and top-up method. [Current offers and prices](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans) are shown on the website and in the bot.
+Plus and Pro can be purchased with Telegram Stars or crypto checkout on the website, subject to payment availability. Personal access uses a DETai Account; Telegram features require linking it to Telegram. Checkout shows the final amount, period and renewal terms before confirmation; not every method renews automatically. [Plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans).
 
-Turning off automatic renewal preserves access until the end of the paid period. **Launch Offer** terms may be discontinued with advance notice. Continuing at a new price requires a separate subscription and the user’s payment confirmation. The current rules, notice periods and refund process are set out in the [PiQ Terms of Use](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms).
+When automatic renewal is available for the chosen payment method, turning it off preserves access until the end of the paid period. **Launch Offer** terms may be discontinued with advance notice. Continuing at a new price requires a separate subscription and the user’s payment confirmation. The current rules, notice periods and refund process are set out in the [PiQ Terms of Use](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms).
 
 [Current product page and plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans) · [My subscription](https://detai-x.com/en/account/products/psychology-in-quotes#piq-access)
 

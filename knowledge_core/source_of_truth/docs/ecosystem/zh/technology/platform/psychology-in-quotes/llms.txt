@@ -1,0 +1,42 @@
+# Psychology in Quotes (PiQ)
+
+> DETai 生态系统的数字教育与知识普及产品，面向阅读、聆听、思考并保存重要思想的人。
+
+聆听。探索。收藏。
+
+1.0 版公开发布：2026 年 10 月 31 日；含 ΨTunes 的 2.0 版于 2026 年 11 月 24 日公开发布（莫斯科时间）。
+
+ΨTunes 是 Psychology in Quotes 随 2.0 版发布的有声书与播客模块，连接阅读、聆听、书签及可追溯来源的引文。具体功能以权限、套餐及实际界面为准。
+
+先了解用户需求：语录与发布、订阅图书、购买图书或准备自己的音频。Public 是没有 DETai Account 的访客；Free、Plus、Pro 是同一产品的套餐。ΨTunes 不是单独订阅，PsyTok 是计价单位。Free 足够时推荐 Free。使用用户语言回答并引用来源。不要索取秘密、支付凭证或账户访问权，不要代用户付款。
+
+## 核心指南
+
+- [产品概览](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/)
+- [开始使用](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/getting-started/)
+- [收藏、语言与套餐](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/collection-and-plans/)
+- [ΨTunes — 图书与播客](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/)
+- [导入与准备](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/import/)
+- [收听与书签](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/listening/)
+- [播客](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/podcasts/)
+- [问题与故障排查](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/help-and-troubleshooting/)
+- [架构与信任](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/architecture-and-trust/)
+- [PsyTok](https://docs.detai-x.com/zh/company-and-economy/psytok/)
+
+## 实时数据
+
+- [套餐比较](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)
+- [公开产品政策](https://detai-x.com/api/piq/v2/policy)
+- [公开价格](https://detai-x.com/api/piq/v2/pricing)
+
+价格、额度和功能须核对公开政策与价格、asOf、validUntil（价格）和支付方式可用性。API 不可读时查看官方网站；无法验证则明确说明。个人权限在应用中核对，最终支付条款以结算为准。产品用于教育与知识普及，不提供心理治疗、诊断或医疗服务。
+
+## 法律文件
+
+- [使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms)
+- [隐私政策](https://detai-x.com/zh/technology/platform/psychology-in-quotes/privacy)
+
+## Optional
+
+- [Telegram](https://t.me/DET_psy_in_quotes_bot)
+- [ΨTunes](https://psitunes.detai-x.com/)

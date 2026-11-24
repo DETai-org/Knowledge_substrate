@@ -7,9 +7,9 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 
 # ΨTunes — 图书与播客
 
-**ΨTunes** 是 [Psychology in Quotes](../index.md) 正在开发的功能，将阅读、收听、书签以及可追溯来源的引文连接起来。
+ΨTunes 是 Psychology in Quotes 随 2.0 版发布的有声书与播客模块，连接阅读、聆听、书签及可追溯来源的引文。具体功能以权限、套餐及实际界面为准。 [Psychology in Quotes](../index.md).
 
-> **状态：** ΨTunes 2.0 正在开发和设备测试中。本页面**不代表正式公开发布**，也不保证当前机器人已经提供所有功能。请以实际应用界面为准。
+> 1.0 版公开发布：2026 年 10 月 31 日；含 ΨTunes 的 2.0 版于 2026 年 11 月 24 日公开发布（莫斯科时间）。
 
 一本书或一期播客可以拥有文本版本和相应的音频版本。播放器旨在保存准确的位置，让书签和引文能够返回正确的来源。音频已制作完成不等于自动获得完整收听权限。
 
@@ -22,6 +22,10 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 个人功能使用与 Telegram 绑定的 DETai Account。导入文本不会自动创建付费订单，也不会自动公开发布材料。最新套餐和权限请查看 [PiQ 官方页面](https://detai-x.com/zh/technology/platform/psychology-in-quotes)。ΨTunes 不是心理治疗、医疗服务或诊断工具。
 
 付费服务采用 [PsyTok](../../../../company-and-economy/psytok.md) 计价。套餐额度与购买的通用余额分别记录。用户购买约定结果及所选版本的访问权。价格依据方案条件确定；使用现有兼容版本本身不会改变已约定价格。永久访问权对应所购语言版本；技术修正不要求重新购买。
+
+- 套餐内 PsyTok 在发放周期结束时失效；购买的 PsyTok 保留。符合条件的操作先用套餐内适用额度，再用已购额度。
+- 订阅图书在订阅期内可用，续订时原选择保留，新增或替换消耗当前周期选择额度。单独购买和准备完成的个人素材按版本权限保留在书库中。
+- 已注册的 Free 用户可在权限及操作可用时使用 PsyTok 购买或准备素材。额度、图书位置、选择次数和播客大小限制以当前政策为准。
 
 ## 礼物 {#gifts}
 

@@ -7,7 +7,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 # PiQ: Sammlung, Sprachen und Tarife
 
-**Aktualisiert:** 30. Oktober 2026. Diese Seite erläutert die Sammlungsstruktur und die Zugangsstufen, **wiederholt aber nicht die Tarif- und Kontingenttabelle**. Aktuelle Funktionen und Kontingente von Free / Plus / Pro ergeben sich aus der PiQ-Policy und stehen im [dynamischen Tarifvergleich auf der offiziellen Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Persönliche Restkontingente, zusätzliche Rechte und den aktiven Tarif finden Sie unter „Mein Abonnement“.
+**Aktualisiert:** 24. November 2026. Diese Seite erläutert die Sammlungsstruktur und die Zugangsstufen, **wiederholt aber nicht die Tarif- und Kontingenttabelle**. Aktuelle Funktionen und Kontingente von Free / Plus / Pro ergeben sich aus der PiQ-Policy und stehen im [dynamischen Tarifvergleich auf der offiziellen Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Persönliche Restkontingente, zusätzliche Rechte und den aktiven Tarif finden Sie unter „Mein Abonnement“.
 
 ## Gast, Teilnehmende und Abonnierende sind verschiedene Zustände
 
@@ -37,6 +37,10 @@ Die Tabelle auf der Website ruft die tatsächlich geltende Produkt-Policy über 
 
 Persönliche Rechte und Kontingente stehen unter [„Mein Abonnement“](https://detai-x.com/de/account/products/psychology-in-quotes#piq-access). Kontingente können bis zur Bestätigung einer Operation reserviert sein; deshalb ist die Anwendung für den verbleibenden Stand maßgeblich. Der Erhalt eines fremden Zitats, eine Veröffentlichung und das Erstellen von Stories sind unterschiedliche Aktionen. Das Erstellen eines eigenen Zitats ist kein Erhalt eines fremden Zitats.
 
+- Wochenlimits werden nach der UTC-Kalenderwoche zurückgesetzt; Veröffentlichungs- und Stories-Limits gelten gemeinsam für verbundene Kanäle.
+- Der Bezug öffnet erlaubte Fassungen ohne Wasserzeichen im Account; erneutes Herunterladen verbraucht keinen weiteren Bezug. Sprachrechte für Zitate und Hörbücher sind getrennt.
+- Moderation und Vorbereitung können Zeit benötigen; YouTube erfordert eine eigene Verbindung. DETai-Reaktionen unterstützen öffentliche Telegram-Kanäle nach geltenden Regeln bei verfügbarer Integration.
+
 ## Sprachen und Tarifwechsel
 
 - Im Katalog lassen sich fertige, veröffentlichte Übersetzungen **zur Ansicht** mit Wasserzeichen öffnen.
@@ -50,9 +54,9 @@ Persönliche Rechte und Kontingente stehen unter [„Mein Abonnement“](https:/
 
 ## Verfügbarkeit und Preis
 
-**Plus- und Pro-Abonnements** werden mit Telegram Stars für **30 Tage mit automatischer Verlängerung** abgeschlossen. Dafür ist ein vollständig eingerichteter, mit Telegram verknüpfter DETai Account erforderlich. Der genaue Betrag in Stars und die Laufzeit werden vor der Zahlungsbestätigung angezeigt. Der USD-Betrag auf der Website ist ein Richtwert, da die Kosten für den Kauf von Stars je nach Region und Aufladeweg variieren. [Aktuelle Angebote und Preise](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans) stehen auf der Website und im Bot.
+Plus und Pro können je nach verfügbaren Zahlungswegen mit Telegram Stars oder per Kryptozahlung auf der Website erworben werden. Persönlicher Zugang nutzt den DETai Account; Telegram-Funktionen benötigen die Verknüpfung mit Telegram. Endbetrag, Laufzeit und Verlängerungsbedingungen erscheinen vor Bestätigung; nicht jede Zahlung verlängert sich automatisch. [Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans).
 
-Das Abschalten der automatischen Verlängerung erhält den Zugang bis zum Ende des bezahlten Zeitraums. Die besonderen Einführungsbedingungen des **Launch Offer** können nach vorheriger Benachrichtigung beendet werden. Für die Fortsetzung zu einem neuen Preis sind ein gesonderter Abschluss und eine neue Zahlungsbestätigung durch die nutzende Person erforderlich. Die geltenden Regeln, Benachrichtigungsfristen und Erstattungsverfahren stehen in den [PiQ-Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms).
+Wenn automatische Verlängerung verfügbar ist, bleibt der Zugang nach Deaktivierung bis zum Ende des bezahlten Zeitraums bestehen. Die besonderen Einführungsbedingungen des **Launch Offer** können nach vorheriger Benachrichtigung beendet werden. Für die Fortsetzung zu einem neuen Preis sind ein gesonderter Abschluss und eine neue Zahlungsbestätigung durch die nutzende Person erforderlich. Die geltenden Regeln, Benachrichtigungsfristen und Erstattungsverfahren stehen in den [PiQ-Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms).
 
 [Aktuelle Produktseite und Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans) · [Mein Abonnement](https://detai-x.com/de/account/products/psychology-in-quotes#piq-access)
 

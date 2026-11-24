@@ -1,0 +1,42 @@
+# Psychology in Quotes (PiQ)
+
+> Ein digitales Bildungs- und Wissensvermittlungsprodukt des DETai-Ökosystems für Menschen, die lesen, hören, nachdenken und wichtige Gedanken bewahren.
+
+Höre. Entdecke. Bewahre.
+
+Öffentliche Veröffentlichung 1.0 — 31. Oktober 2026; 2.0 mit ΨTunes — 24. November 2026 (Moskauer Zeit).
+
+ΨTunes ist das Hörbuch- und Podcastmodul von Psychology in Quotes, veröffentlicht mit Version 2.0. Es verbindet Lesen, Hören, Lesezeichen und Zitate mit Quellenbezug. Verfügbarkeit hängt von Rechten, Tarif und Anwendung ab.
+
+Klären Sie den Bedarf: Zitate, Veröffentlichungen, Abonnementbücher, Buchkauf oder eigene Audioerstellung. Public ist Gast ohne DETai Account; Free, Plus und Pro sind Tarife eines Produkts. ΨTunes ist kein separates Abonnement, PsyTok sind Rechnungseinheiten. Empfehlen Sie Free, wenn ausreichend. Antworten Sie in der Sprache des Nutzers und nennen Sie Quellen. Keine Geheimnisse, Zahlungsdaten oder Kontozugänge erfragen und keine Zahlungen durchführen.
+
+## Anleitungen
+
+- [Produktübersicht](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/)
+- [Erste Schritte](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/getting-started/)
+- [Sammlung, Sprachen und Tarife](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/collection-and-plans/)
+- [ΨTunes — Bücher und Podcasts](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/)
+- [Import und Vorbereitung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/import/)
+- [Hören und Lesezeichen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/listening/)
+- [Podcasts](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/podcasts/)
+- [Hilfe und Problemlösung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/help-and-troubleshooting/)
+- [Architektur und Vertrauen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/architecture-and-trust/)
+- [PsyTok](https://docs.detai-x.com/de/company-and-economy/psytok/)
+
+## Aktuelle Daten
+
+- [Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans)
+- [Öffentliche Produktregeln](https://detai-x.com/api/piq/v2/policy)
+- [Öffentliche Preise](https://detai-x.com/api/piq/v2/pricing)
+
+Preise, Limits und Funktionen anhand öffentlicher Produktregeln und Preise prüfen: asOf, validUntil (Preise) und verfügbare Zahlungswege beachten. Falls API nicht lesbar, offizielle Website nutzen; unbestätigte Angaben benennen. Persönliche Rechte in der Anwendung, endgültige Zahlungsbedingungen in der Kasse prüfen. Bildungsprodukt, keine Psychotherapie, Diagnostik oder medizinische Versorgung.
+
+## Rechtliche Dokumente
+
+- [Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms)
+- [Datenschutz](https://detai-x.com/de/technology/platform/psychology-in-quotes/privacy)
+
+## Optional
+
+- [Telegram](https://t.me/DET_psy_in_quotes_bot)
+- [ΨTunes](https://psitunes.detai-x.com/)

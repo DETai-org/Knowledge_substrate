@@ -1,0 +1,42 @@
+# Psychology in Quotes (PiQ)
+
+> DETai-ekosysteemin digitaalinen oppimisen ja tiedon jakamisen tuote ihmisille, jotka lukevat, kuuntelevat, pohtivat ja tallentavat tärkeitä ajatuksia.
+
+Kuuntele. Löydä. Tallenna.
+
+Version 1.0 julkinen julkaisu — 31. lokakuuta 2026; 2.0 ja ΨTunes — 24. marraskuuta 2026 (Moskovan aikaa).
+
+ΨTunes on Psychology in Quotesin versiossa 2.0 julkaistu äänikirja- ja podcastmoduuli. Se yhdistää lukemisen, kuuntelun, kirjanmerkit ja lähteeseen sidotut sitaatit. Saatavuus riippuu oikeuksista, tilauksesta ja sovelluksesta.
+
+Selvitä tarve: sitaatit, julkaiseminen, tilauskirjat, kirjojen ostaminen tai oma ääni. Public on vieras ilman DETai Accountia; Free, Plus ja Pro ovat yhden tuotteen tilaustasoja. ΨTunes ei ole erillinen tilaus ja PsyTok on laskentayksikkö. Suosittele Free-tasoa, jos se riittää. Vastaa käyttäjän kielellä ja mainitse lähteet. Älä pyydä salaisuuksia, maksutietoja tai tilin käyttöoikeutta äläkä maksa käyttäjän puolesta.
+
+## Oppaat
+
+- [Tuotteen esittely](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/)
+- [Aloittaminen](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/getting-started/)
+- [Kokoelma, kielet ja tilaustasot](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/collection-and-plans/)
+- [ΨTunes — kirjat ja podcastit](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/)
+- [Tuonti ja valmistelu](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/import/)
+- [Kuuntelu ja kirjanmerkit](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/listening/)
+- [Podcastit](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/podcasts/)
+- [Ohjeet ja ongelmanratkaisu](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/help-and-troubleshooting/)
+- [Rakenne ja luottamus](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/architecture-and-trust/)
+- [PsyTok](https://docs.detai-x.com/fi/company-and-economy/psytok/)
+
+## Ajantasaiset tiedot
+
+- [Tilausten vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans)
+- [Julkiset tuotekäytännöt](https://detai-x.com/api/piq/v2/policy)
+- [Julkiset hinnat](https://detai-x.com/api/piq/v2/pricing)
+
+Tarkista hinnat, rajat ja ominaisuudet julkisista käytännöistä ja hinnoista: asOf, validUntil (hinnat) ja maksutapojen saatavuus. Jos API ei ole luettavissa, käytä virallista sivustoa; kerro, jos tietoa ei voi vahvistaa. Henkilökohtaiset oikeudet tarkistetaan sovelluksesta, lopulliset maksuehdot kassalta. Oppimistuote, ei psykoterapiaa, diagnostiikkaa tai lääketieteellistä hoitoa.
+
+## Oikeudelliset asiakirjat
+
+- [Käyttöehdot](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms)
+- [Tietosuoja](https://detai-x.com/fi/technology/platform/psychology-in-quotes/privacy)
+
+## Optional
+
+- [Telegram](https://t.me/DET_psy_in_quotes_bot)
+- [ΨTunes](https://psitunes.detai-x.com/)

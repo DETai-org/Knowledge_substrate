@@ -7,11 +7,13 @@ translation_of: /ru/technology/platform/psychology-in-quotes/
 
 # Psychology in Quotes — 心理学语录
 
-**每一条语录，都不只是一张图片。**
+**聆听。探索。收藏。**
+
+DETai 生态系统的数字教育与知识普及产品，面向阅读、聆听、思考并保存重要思想的人。
 
 **Psychology in Quotes（PiQ）** 是 [Platform DETai](../../index.md) 旗下的数字化**教育与知识传播产品**，属于 [DETai 生态系统](../../../ecosystem/index.md)。它帮助人们接触心理学思想，连同作者、出处和上下文一起保存书籍中的重要片段，发现他人的观点，并建立自己的知识收藏。
 
-**1.0 版公开发布：2026 年 10 月 31 日。**
+**1.0 版公开发布：2026 年 10 月 31 日；含 ΨTunes 的 2.0 版于 2026 年 11 月 24 日公开发布（莫斯科时间）。**
 
 DETai 生态系统连接心理治疗、研究、教育、技术与社群，致力于推动 21 世纪心理治疗的发展。**Platform DETai** 将数字产品、用户账户和技术能力连接起来。**PiQ 将自主学习、阅读文化与数字创作结合在一起：**用户可以选择、思考、保存和发布有意义的语录。
 
@@ -49,7 +51,7 @@ DETai 生态系统连接心理治疗、研究、教育、技术与社群，致�
 
 ## 功能与使用方式
 
-Psychology in Quotes 可通过 Telegram 和 Platform DETai 网站使用。语录创建与审核、公共目录、收藏夹、“我的合集”、已制作的语言版本、发布和 Stories 功能均按 **Free / Plus / Pro** 套餐及当前产品政策提供。Plus 和 Pro 订阅使用 Telegram Stars 购买；购买前需完成 DETai Account 的设置并关联 Telegram。访客限额请查看机器人界面，[当前报价、价格及套餐限额请查看网站](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。能否购买以及具体功能是否可用，以当前产品界面为准。
+Psychology in Quotes 可通过 Telegram 和 Platform DETai 网站使用。语录创建与审核、公共目录、收藏夹、“我的合集”、已制作的语言版本、发布和 Stories 功能均按 **Free / Plus / Pro** 套餐及当前产品政策提供。Plus 和 Pro 可根据结算提供的支付方式，通过 Telegram Stars 或网站加密货币支付购买。个人访问使用 DETai Account；Telegram 功能需关联 Telegram。确认前显示最终金额、周期及续订条款，并非所有付款均自动续订。 [套餐比较](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans).
 
 有关权限的详细说明见[收藏与套餐](collection-and-plans.md)；**最新数值限额仅以[网站上的动态套餐对比表](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)为准**。个人的实际权限取决于 **DETai Account 和 PiQ 服务端政策**，不能依据已经过时的静态表格判断。
 
@@ -57,7 +59,7 @@ Psychology in Quotes 可通过 Telegram 和 Platform DETai 网站使用。语录
 
 [PsyTok](../../../company-and-economy/psytok.md) 是生态系统的通用计价单位。**Psychology in Quotes** 的机器人与 ΨTunes 属于同一产品：套餐内的 PsyTok 额度仅适用于 PiQ，单独购买的 PsyTok 则属于 DETai Account 的通用余额。余额来源、有效期及扣减顺序见 [PsyTok 通用说明](../../../company-and-economy/psytok.md)。
 
-正在开发的 ΨTunes 可使用 PsyTok 支付素材制作等符合条件的操作。具体图书的购买条件及对应版本的访问权，请参阅 [ΨTunes 指南](psi-tunes/index.md)和[导入说明](psi-tunes/import.md)。**2.0 版本仍处于准备阶段**；付款前请以实际界面核对可用功能、交付内容和费用。
+在 ΨTunes 中，PsyTok 可用于购买、素材准备及其他符合条件的付费操作。参见 [ΨTunes 指南](psi-tunes/index.md) 和[导入说明](psi-tunes/import.md)。确认前核对权限、交付结果及费用。
 
 ## 链接与责任边界
 
@@ -71,4 +73,6 @@ Psychology in Quotes 可通过 Telegram 和 Platform DETai 网站使用。语录
 
 ## ΨTunes — 图书与播客
 
-**ΨTunes** 是 PiQ 正在开发的播放器，连接图书、播客、书签和可追溯来源的引文。[ΨTunes 使用指南](psi-tunes/index.md)介绍导入、收听和播客。**2.0 版仍在准备和测试中**，本指南不代表正式公开发布；实际功能请以应用界面为准。
+ΨTunes 是 Psychology in Quotes 随 2.0 版发布的有声书与播客模块，连接阅读、聆听、书签及可追溯来源的引文。具体功能以权限、套餐及实际界面为准。 [ΨTunes — 图书与播客](psi-tunes/index.md).
+
+[AI 助手文本导航 (llms.txt)](llms.txt)

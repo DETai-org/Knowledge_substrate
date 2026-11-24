@@ -7,9 +7,9 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 
 # ΨTunes — kirjat ja podcastit
 
-**ΨTunes** on kehitteillä oleva osa [Psychology in Quotes](../index.md) -tuotetta. Se yhdistää lukemisen, kuuntelemisen, kirjanmerkit ja alkuperäiseen lähteeseen liitetyt lainaukset.
+ΨTunes on Psychology in Quotesin versiossa 2.0 julkaistu äänikirja- ja podcastmoduuli. Se yhdistää lukemisen, kuuntelun, kirjanmerkit ja lähteeseen sidotut sitaatit. Saatavuus riippuu oikeuksista, tilauksesta ja sovelluksesta. [Psychology in Quotes](../index.md).
 
-> **Tila:** ΨTunes 2.0 on kehitys- ja laitetestausvaiheessa. Tämä opas **ei ilmoita julkaisusta** eikä lupaa kaikkia toimintoja nykyiseen bottiin. Käytettävissä olevat toiminnot näkyvät sovelluksessa.
+> Version 1.0 julkinen julkaisu — 31. lokakuuta 2026; 2.0 ja ΨTunes — 24. marraskuuta 2026 (Moskovan aikaa).
 
 Kirjalla tai podcastilla voi olla tekstiversio ja sitä vastaava ääniversio. Soitin pyrkii säilyttämään tarkan kohdan, jotta kirjanmerkki ja lainaus johtavat oikeaan lähteeseen. Äänitiedoston valmistuminen ei yksin anna kuunteluoikeutta.
 
@@ -22,6 +22,10 @@ Kirjalla tai podcastilla voi olla tekstiversio ja sitä vastaava ääniversio. S
 Henkilökohtaiset ominaisuudet käyttävät Telegramiin yhdistettyä DETai Account -tiliä. Tekstin tuominen ei automaattisesti aloita maksullista tilausta tai julkaise sitä. Ajantasaiset ehdot näkyvät [PiQ:n sivulla](https://detai-x.com/fi/technology/platform/psychology-in-quotes). ΨTunes ei ole psykoterapiaa eikä terveydenhuoltoa.
 
 Maksulliset palvelut hinnoitellaan [PsyTok-yksiköissä](../../../../company-and-economy/psytok.md). Tilaukseen sisältyvät erät ja ostettu yhteinen saldo pidetään erillään. Käyttäjä ostaa sovitun lopputuloksen ja valitun version käyttöoikeuden. Hinta määräytyy tarjouksen ehdoista; valmiin yhteensopivan version käyttäminen ei itsessään muuta sovittua hintaa. Pysyvä oikeus koskee ostettua kieliversiota; tekniset korjaukset eivät edellytä uutta ostoa.
+
+- Tilaukseen sisältyvät PsyTok-yksiköt vanhenevat myöntämisjakson lopussa; ostetut säilyvät. Soveltuvat sisältyvät yksiköt käytetään ensin.
+- Tilauskirjat ovat käytettävissä tilauksen ajan; aiemmat valinnat säilyvät uusittaessa. Lisääminen tai vaihtaminen käyttää valintakiintiötä. Erikseen hankitut ja valmistellut omat aineistot säilyvät kirjastossa version oikeuksien mukaan.
+- Rekisteröitynyt Free-käyttäjä voi hankkia tai valmistella aineistoja PsyTok-yksiköillä, jos oikeudet ja toiminto ovat saatavilla. Tarkista kiintiöt, kirjapaikat, valinnat ja podcastin enimmäiskoko käytännöistä.
 
 ## Lahjat {#gifts}
 

@@ -7,11 +7,13 @@ translation_of: /ru/technology/platform/psychology-in-quotes/
 
 # Psychology in Quotes – Psychologie in Zitaten
 
-**Jedes Zitat ist mehr als ein Bild.**
+**Höre. Entdecke. Bewahre.**
+
+Ein digitales Bildungs- und Wissensvermittlungsprodukt des DETai-Ökosystems für Menschen, die lesen, hören, nachdenken und wichtige Gedanken bewahren.
 
 **Psychology in Quotes (PiQ)** ist ein digitales Produkt für **Bildung und Wissensvermittlung** der [Platform DETai](../../index.md), die zum [DETai-Ökosystem](../../../ecosystem/index.md) gehört. Es ermöglicht, psychologische Gedanken kennenzulernen, wichtige Buchpassagen mitsamt Verfasser, Quelle und Kontext zu bewahren, Ideen anderer Menschen zu entdecken und eine eigene Wissenssammlung aufzubauen.
 
-**Öffentliche Veröffentlichung von Version 1.0 — 31. Oktober 2026.**
+**Öffentliche Veröffentlichung 1.0 — 31. Oktober 2026; 2.0 mit ΨTunes — 24. November 2026 (Moskauer Zeit).**
 
 Das DETai-Ökosystem verbindet Psychotherapie, Forschung, Bildung, Technologie und Gemeinschaft, um die Psychotherapie des 21. Jahrhunderts weiterzuentwickeln. **Platform DETai** verbindet digitale Produkte, Benutzerkonten und technische Möglichkeiten. **PiQ vereint selbstbestimmtes Lernen, Lesekultur und digitale Kreativität:** Menschen können bedeutungsvolle Zitate auswählen, reflektieren, speichern und veröffentlichen.
 
@@ -49,7 +51,7 @@ Derselbe Grundsatz wird schrittweise auf andere DETai-Produkte übertragen: **er
 
 ## Funktionen und Zugang
 
-Psychology in Quotes ist über Telegram und die Website von Platform DETai nutzbar. Das Erstellen und Moderieren von Zitaten, der Katalog, Favoriten, „Meine Sammlung“, vorbereitete Sprachfassungen, Veröffentlichungen und Stories stehen entsprechend **Free / Plus / Pro** und den geltenden Produktregeln zur Verfügung. Plus- und Pro-Abonnements werden mit Telegram Stars bezahlt; der Kauf erfordert einen vollständig eingerichteten, mit Telegram verknüpften DETai Account. Die aktuellen Gastlimits zeigt der Bot, [gültige Angebote, Preise und Tariflimits die Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Ob ein Kauf oder eine bestimmte Funktion verfügbar ist, zeigt die aktuelle Produktoberfläche.
+Psychology in Quotes ist über Telegram und die Website von Platform DETai nutzbar. Das Erstellen und Moderieren von Zitaten, der Katalog, Favoriten, „Meine Sammlung“, vorbereitete Sprachfassungen, Veröffentlichungen und Stories stehen entsprechend **Free / Plus / Pro** und den geltenden Produktregeln zur Verfügung. Plus und Pro können je nach verfügbaren Zahlungswegen mit Telegram Stars oder per Kryptozahlung auf der Website erworben werden. Persönlicher Zugang nutzt den DETai Account; Telegram-Funktionen benötigen die Verknüpfung mit Telegram. Endbetrag, Laufzeit und Verlängerungsbedingungen erscheinen vor Bestätigung; nicht jede Zahlung verlängert sich automatisch. [Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans).
 
 Die [Erläuterung zu Sammlung und Tarifen](collection-and-plans.md) beschreibt die Berechtigungen; **aktuelle Zahlen stehen ausschließlich in der [Vergleichstabelle der Website](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans)**. Der tatsächliche Zugang ergibt sich aus **DETai Account und serverseitiger PiQ-Richtlinie**, nicht aus einer veralteten Kopie der Tabelle.
 
@@ -57,7 +59,7 @@ Die [Erläuterung zu Sammlung und Tarifen](collection-and-plans.md) beschreibt d
 
 [PsyTok](../../../company-and-economy/psytok.md) ist die gemeinsame Rechnungseinheit des Ökosystems. Bot und ΨTunes gehören bei **Psychology in Quotes** zum selben Produkt: Im Tarif enthaltene PsyTok gelten nur für PiQ, separat gekaufte PsyTok gehören zum gemeinsamen Guthaben des DETai Account. Quellen, Gültigkeit und Verbrauchsreihenfolge erklärt die [allgemeine PsyTok-Dokumentation](../../../company-and-economy/psytok.md).
 
-Im entstehenden ΨTunes werden PsyTok für die kostenpflichtige Vorbereitung von Materialien und weitere zulässige Aktionen vorgesehen. Bedingungen für den Erwerb eines Buches und den Zugang zur jeweiligen Fassung stehen im [ΨTunes-Leitfaden](psi-tunes/index.md) und unter [Import](psi-tunes/import.md). **Version 2.0 wird noch vorbereitet**; Verfügbarkeit, Bestelldetails und Preise vor der Zahlung in der Anwendung prüfen.
+In ΨTunes können PsyTok für Erwerb, Vorbereitung und weitere zulässige kostenpflichtige Aktionen verwendet werden. Siehe [ΨTunes-Leitfaden](psi-tunes/index.md) und [Import](psi-tunes/import.md). Rechte, Ergebnis und Preis vor Bestätigung prüfen.
 
 ## Links und Zuständigkeiten
 
@@ -71,4 +73,6 @@ Im entstehenden ΨTunes werden PsyTok für die kostenpflichtige Vorbereitung von
 
 ## ΨTunes — Bücher und Podcasts
 
-**ΨTunes** ist ein in Entwicklung befindlicher PiQ-Player für Bücher, Podcasts, Lesezeichen und Zitate mit Quellenbezug. Die [ΨTunes-Anleitung](psi-tunes/index.md) erklärt Import, Hören und Podcasts. **Version 2.0 wird noch vorbereitet und geprüft**; die Beschreibung kündigt keine öffentliche Freigabe an. Die tatsächliche Verfügbarkeit zeigt die Anwendung.
+ΨTunes ist das Hörbuch- und Podcastmodul von Psychology in Quotes, veröffentlicht mit Version 2.0. Es verbindet Lesen, Hören, Lesezeichen und Zitate mit Quellenbezug. Verfügbarkeit hängt von Rechten, Tarif und Anwendung ab. [ΨTunes — Bücher und Podcasts](psi-tunes/index.md).
+
+[Textnavigation für AI-Assistenten (llms.txt)](llms.txt)
