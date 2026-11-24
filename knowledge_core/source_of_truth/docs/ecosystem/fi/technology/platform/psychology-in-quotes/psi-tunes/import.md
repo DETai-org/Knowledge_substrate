@@ -23,6 +23,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 ## Vaiheet {#add-material}
 
+Oman kirjan tai podcastin tuontiin tarvitaan valmiiksi luotu, Telegramiin yhdistetty DETai-tili. **Free riittää oman kirja- tai podcasttekstin lisäämiseen; tuonti ei edellytä Plus- tai Pro-tilausta.** Tuonti tallentaa tekstin tilaamatta ääntä. Äänen valmistelun voi tilata erikseen; maksutavat ja kokonaissumma näkyvät kassalla.
+
 **Lisää oma teksti:** Avaa **Oma kirjasto → Lisää aineisto**. Valitse kirja tai podcast ja tiedosto. Tarkista teksti, kieli ja nimi ennen vahvistamista. Äänen valmistelu tilataan erikseen. Jos toimintoa ei näy, tarkista kirjasto ja tilin yhteys.
 
 1. Valitse oman kirjaston tarjolla oleva tuontitapa laitteesta tai Telegram-botin kautta.

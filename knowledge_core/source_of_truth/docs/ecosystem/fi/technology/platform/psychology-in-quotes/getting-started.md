@@ -26,9 +26,13 @@ Avaa [Telegram-botti](https://t.me/DET_psy_in_quotes_bot) ja käytä komentoa `/
 
 Ensimmäisellä siirtymällä Hub voi vastaanottaa **PiQ:n käyttöliittymän kielen**. Jos Hubiin on tallennettu oma kielivalinta, se on ensisijainen. Tämä ei muuta sitaatin, sen käännöksen tai Account-profiilin kieltä.
 
-**Public tarkoittaa vierasta, Free pysyvän yhteisen tunnisteen omaavaa osallistujaa ja Plus/Pro laajennettujen tuoteoikeuksien käyttäjiä.** Nämä ovat käyttötasoja, eivät osoitus ammatillisesta asemasta tai suostumus markkinointiviesteihin.
+**Public on vierastila.** Se on käytössä, kun nykyinen näkymä ei tunnista DETai-tiliäsi, esimerkiksi jos et ole kirjautunut sivustolle tai yhdistänyt Telegramia. Tili voi silti olla jo olemassa. **Free on PiQ:n maksuton perustaso.** Se on käytössä kirjautumisen tai Telegramin yhdistämisen jälkeen, jos tunnistetulla tilillä ei ole aktiivista Plus- tai Pro-tilausta.
 
 [Ajantasaiset tasot, ominaisuudet ja rajoitukset →](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans)
+
+### Mitä säilyy Telegramin yhdistämisen jälkeen {#guest-transfer}
+
+Kun yhdistät saman Telegram-tilin DETai-tiliin, PiQ yhdistää vierastilan suosikit tilin suosikkeihin. Valmis vieraskortti voi ilmestyä omiin sitaatteihin, jos sen säilytysaika ei ole päättynyt. Tallentaminen kokoelmaan ei julkaise sitaattia. Vanhentunutta korttia ei voi palauttaa.
 
 ## 2. Luo oma sitaatti
 

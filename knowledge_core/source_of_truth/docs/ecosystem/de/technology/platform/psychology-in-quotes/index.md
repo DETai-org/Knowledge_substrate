@@ -30,9 +30,9 @@ Das DETai-Ökosystem verbindet Psychotherapie, Forschung, Bildung, Technologie u
 
 ## Vom Gast zum Teilnehmenden im Ökosystem
 
-**Public – DETai-Gast:** Alle können offene Wissensangebote und Produkte nutzen, ohne ein gemeinsames Benutzerkonto anzulegen. PiQ verwendet dafür die Telegram-Identität und einen begrenzten temporären Zustand. Gäste sind vollwertige Besuchende und kein Anmeldefehler.
+**Public ist der Gastmodus.** Er gilt, wenn die aktuelle Oberfläche deinen DETai Account nicht erkennt, etwa weil du auf der Website nicht angemeldet bist oder Telegram noch nicht verbunden hast. Ein Konto kann bereits bestehen.
 
-**Free – Teilnehmende mit DETai Account:** Sie erhalten eine dauerhafte Identität und einen persönlichen Arbeitsbereich: eine beständige Sammlung, die Verknüpfung von Website und Telegram, eigene Inhalte, Berechtigungen und Limits des kostenlosen Tarifs. Das ist mehr als eine technische Anmeldung: Sie können Ihre Arbeit fortsetzen und sich an einem wachsenden Ökosystem beteiligen, das Psychologie, Forschung, Bildung und moderne KI-Werkzeuge vereint.
+**Free ist der kostenlose Basistarif von PiQ.** Er gilt nach der Anmeldung oder Telegram-Verknüpfung, wenn für das erkannte Konto kein aktives Plus- oder Pro-Abo besteht. In deinem Konto bleiben deine Sammlung und deine eigenen Inhalte erhalten.
 
 **Plus / Pro – Teilnehmende mit erweitertem Produktzugang:** Dasselbe DETai Account bietet gemäß einem tatsächlich aktiven Abonnement zusätzliche PiQ-Funktionen, Limits und Werkzeuge. Ein Abonnement ist weder eine Administratorrolle noch eine gesonderte Mitgliedschaft in der Organisation.
 

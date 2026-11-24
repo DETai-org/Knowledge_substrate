@@ -11,8 +11,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 ## Guest, participant and subscriber are different states
 
-- **Public:** a visitor without a shared DETai Account. Can browse the catalogue and watermarked translations, keep a small guest favourites collection and try a temporary quote card — where these functions are already available in the particular bot version.
-- **Free:** a participant with a free DETai Account, a permanent personal PiQ workspace and baseline entitlements and limits. The Telegram-to-Account link must be verified separately.
+- **Public is guest mode.** It applies when the current interface does not recognize your DETai Account, for example if you are signed out on the website or have not linked Telegram. You may already have an account elsewhere. In guest mode, you can browse the catalogue and watermarked translations, keep a small guest favourites collection and try a temporary quote card — where these functions are already available in the particular bot version.
+- **Free is the basic PiQ plan at no charge.** It applies after sign-in or Telegram linking if the recognized account has no active Plus or Pro subscription. Your account keeps your collection and personal material so you can return to them.
 - **Plus / Pro:** participants with extended entitlements for this particular product. They are **the same ecosystem participants**, not a separate membership category. You do not need to upgrade from Free to belong to DETai's shared user space.
 
 **Explore first; create an Account when needed.** [Compare Free / Plus / Pro on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). Opening the account area or linking an account does not subscribe you to marketing or publish your private quotes without your intention.

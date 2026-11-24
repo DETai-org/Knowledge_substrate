@@ -11,8 +11,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 ## Gast, Teilnehmende und Abonnierende sind verschiedene Zustände
 
-- **Public:** Gäste ohne gemeinsames DETai Account. Sie können den Katalog und Übersetzungen mit Wasserzeichen ansehen, eine kleine Favoritensammlung nutzen und eine temporäre Karte ausprobieren, soweit diese Funktionen in der verwendeten Bot-Version bereits verfügbar sind.
-- **Free:** Teilnehmende mit kostenlosem DETai Account – mit dauerhaftem persönlichem PiQ-Bereich sowie Basisrechten und -limits. Die Verbindung zwischen Account und Telegram wird gesondert bestätigt.
+- **Public ist der Gastmodus.** Er gilt, wenn die aktuelle Oberfläche deinen DETai Account nicht erkennt, etwa weil du auf der Website nicht angemeldet bist oder Telegram noch nicht verbunden hast. Ein Konto kann bereits bestehen. Im Gastmodus kannst du den Katalog und Übersetzungen mit Wasserzeichen ansehen, eine kleine Favoritensammlung nutzen und eine temporäre Karte ausprobieren, soweit diese Funktionen in der verwendeten Bot-Version bereits verfügbar sind.
+- **Free ist der kostenlose Basistarif von PiQ.** Er gilt nach der Anmeldung oder Telegram-Verknüpfung, wenn für das erkannte Konto kein aktives Plus- oder Pro-Abo besteht. In deinem Konto bleiben deine Sammlung und deine eigenen Inhalte erhalten.
 - **Plus / Pro:** Teilnehmende mit erweiterten Rechten für dieses konkrete Produkt. Sie bleiben **dieselben Teilnehmenden am Ökosystem** und bilden keine neue Mitgliedschaftskategorie. Wer Free nutzt, muss nicht auf einen bezahlten Tarif wechseln, um zum gemeinsamen Nutzerbereich von DETai zu gehören.
 
 **Zuerst kennenlernen, bei Bedarf einen Account erstellen.** [Free / Plus / Pro auf der Website vergleichen](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans). Das Öffnen des Kontobereichs oder Verbinden eines Accounts gilt weder als Zustimmung zu Marketing noch veröffentlicht es private Zitate ohne Willen der betroffenen Person.

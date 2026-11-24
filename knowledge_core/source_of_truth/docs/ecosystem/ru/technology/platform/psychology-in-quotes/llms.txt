@@ -25,6 +25,10 @@
 - [PsyTok](https://docs.detai-x.com/ru/company-and-economy/psytok/): Общие правила баланса DETai
 
 По скриншоту сначала определите экран (PiQ, сайт, ΨTunes или Hub) и цель. Назовите видимую кнопку и дайте ссылку на маршрут. Если экран, аккаунт или доступ неясны, не угадывайте.
+- [Сохранить и найти закладку](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/listening/#bookmark)
+- [Подключить Telegram к существующему аккаунту](https://docs.detai-x.com/ru/technology/platform/detai-account/#connect-telegram)
+- [Изменить фото DETai Account](https://docs.detai-x.com/ru/technology/platform/detai-account/#profile-photo)
+- [Что сохранится после привязки Telegram](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/getting-started/#guest-transfer)
 
 ## Актуальные данные
 

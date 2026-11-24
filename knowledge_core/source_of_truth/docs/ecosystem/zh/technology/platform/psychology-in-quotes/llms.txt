@@ -23,6 +23,10 @@
 - [问题与故障排查](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/help-and-troubleshooting/): 无需账户访问权限的问题排查
 - [架构与信任](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/architecture-and-trust/): 边界、权威来源及责任
 - [PsyTok](https://docs.detai-x.com/zh/company-and-economy/psytok/): DETai 通用余额规则
+- [添加和查找书签](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/listening/#bookmark)
+- [将 Telegram 绑定到现有账号](https://docs.detai-x.com/zh/technology/platform/detai-account/#connect-telegram)
+- [更换 DETai 头像](https://docs.detai-x.com/zh/technology/platform/detai-account/#profile-photo)
+- [绑定 Telegram 后会保留什么](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/getting-started/#guest-transfer)
 
 ## 实时数据
 

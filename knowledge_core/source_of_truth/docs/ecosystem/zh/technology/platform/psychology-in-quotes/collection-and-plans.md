@@ -11,8 +11,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 ## 访客、参与者与订阅者是不同状态
 
-- **Public：**尚未拥有统一 DETai Account 的访客。可以查看公共目录、带水印的译文，保存少量访客收藏，并在相应功能已部署的机器人版本中体验临时语录卡片。
-- **Free：**拥有免费 DETai Account 的参与者，享有持久的个人 PiQ 空间及基础权限、限额。Telegram 与账户的绑定需要单独验证。
+- **Public 是访客模式。** 当前界面未识别你的 DETai Account 时会使用此模式，例如你尚未登录网站或尚未绑定 Telegram。你可能已经拥有账号。访客可查看公共目录、带水印的译文，保存少量访客收藏，并在相应功能已部署的机器人版本中体验临时语录卡片。
+- **Free 是 PiQ 的免费基础套餐。** 登录或绑定 Telegram 后，如果识别到的账号没有有效的 Plus 或 Pro 订阅，就使用 Free。你的合集和个人内容会保存在账号中，方便日后继续使用。
 - **Plus / Pro：**拥有该产品扩展权限的参与者。**仍属于同一生态系统的参与者**，不是另一种会员身份。Free 用户无需升级付费套餐也能参与 DETai 的共同用户空间。
 
 **先体验，再按需创建 Account。**[在网站比较 Free / Plus / Pro](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。打开账户中心或完成绑定，并不表示订阅营销消息，也不会未经用户同意发布私人语录。

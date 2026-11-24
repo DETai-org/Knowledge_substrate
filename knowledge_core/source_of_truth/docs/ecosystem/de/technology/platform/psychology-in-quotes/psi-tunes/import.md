@@ -23,6 +23,8 @@ Beim **Import** entsteht aus einem rechtmäßig genutzten Dokument eine persönl
 
 ## Ablauf {#add-material}
 
+Für den Import eines eigenen Buchs oder Podcasts brauchst du einen vollständig eingerichteten, mit Telegram verbundenen DETai Account. **Free reicht für den Import eigener Buch- und Podcasttexte; Plus oder Pro ist dafür nicht nötig.** Beim Import wird der Text gespeichert, ohne Audio zu bestellen. Audio kannst du getrennt beauftragen; Zahlungsarten und Gesamtbetrag stehen beim Bezahlen.
+
 **Einen eigenen Text hinzufügen:** Öffne **Meine Bibliothek → Material hinzufügen**. Wähle Buch oder Podcast und eine Datei. Prüfe Text, Sprache und Titel vor dem Bestätigen. Audio ist ein eigener Auftrag. Wenn die Aktion fehlt, prüfe Bibliothek und Kontoverbindung.
 
 1. Die verfügbare Importfunktion in der persönlichen Bibliothek wählen: vom Gerät oder über den Telegram-Bot.

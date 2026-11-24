@@ -26,9 +26,13 @@ Open the [Telegram bot](https://t.me/DET_psy_in_quotes_bot) and select `/start`,
 
 On the first handoff, Hub may receive **PiQ's interface language**. If Hub already has a saved language preference, that preference takes precedence. This does not change the language of a quote, its translation or the Account's profile language.
 
-**Public means a guest; Free means a participant with a persistent shared identity; Plus/Pro mean participants with expanded plan capabilities.** These are interaction levels, not proof of professional status or consent to marketing messages.
+**Public is guest mode.** It applies when the current interface does not recognize your DETai Account, for example if you are signed out on the website or have not linked Telegram. You may already have an account elsewhere. **Free is the basic PiQ plan at no charge.** It applies after sign-in or Telegram linking if the recognized account has no active Plus or Pro subscription.
 
 [Current plans, features and limits on the website →](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans)
+
+### What carries over after linking Telegram {#guest-transfer}
+
+When you link the same Telegram account to DETai Account, PiQ merges guest favourites with account favourites. A completed guest card that has not expired can be added to **My collection → My quotes**. Saving a quote to your collection does not publish it. An expired card cannot be recovered.
 
 ## 2. Create your own quote
 

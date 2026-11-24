@@ -23,6 +23,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 ## Intended workflow {#add-material}
 
+Importing a personal book or podcast requires a completed DETai Account linked to Telegram. **Free is enough to add your own book or podcast text; Plus or Pro is not required for import.** Importing saves the text without ordering audio. You can order audio preparation separately; checkout shows the available payment methods and total.
+
 **Add your own text:** Open **My library → Add material**. Choose a book or podcast, select a file and review the extracted text, language and title before confirming. Audio preparation is a separate order. If the action is missing, check that you are in your own library and that the app recognizes your account.
 
 1. Choose the available import option in your personal library, from the device or via the Telegram bot.

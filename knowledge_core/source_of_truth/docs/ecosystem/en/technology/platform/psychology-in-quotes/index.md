@@ -30,9 +30,9 @@ The DETai ecosystem brings together psychotherapy, research, education, technolo
 
 ## From visitor to ecosystem participant
 
-**Public — a DETai guest:** anyone may explore open knowledge and products without creating a shared account. PiQ uses Telegram identity and limited temporary state for this purpose. A guest is a legitimate visitor, not an authentication error.
+**Public is guest mode.** It applies when the current interface does not recognize your DETai Account, for example if you are signed out on the website or have not linked Telegram. You may already have an account elsewhere.
 
-**Free — a participant with a DETai Account:** an enduring identity and personal workspace, including a permanent collection, a link between the website and Telegram, personal materials, entitlements and Free-tier limits. This is more than a technical sign-in: it lets people continue their work and participate in a growing ecosystem linking psychology, research, education and contemporary AI tools.
+**Free is the basic PiQ plan at no charge.** It applies after sign-in or Telegram linking if the recognized account has no active Plus or Pro subscription. Your account keeps your collection and personal material so you can return to them.
 
 **Plus / Pro — a participant with extended product access:** the same DETai Account, with additional PiQ features, limits and tools under an actually active subscription. A subscription is not an administrator role or separate organisational membership.
 

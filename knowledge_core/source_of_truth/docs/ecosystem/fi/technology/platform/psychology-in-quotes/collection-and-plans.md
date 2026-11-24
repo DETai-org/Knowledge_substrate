@@ -11,8 +11,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 ## Vieras, osallistuja ja tilaaja ovat eri asioita
 
-- **Public:** vieras ilman yhteistä DETai Account -tiliä. Hän voi tarkastella kokoelmaa ja vesileimattuja käännöksiä, tallentaa pienen määrän suosikkeja ja kokeilla väliaikaista sitaattikorttia, jos nämä toiminnot ovat jo käytössä kyseisessä bottiversiossa.
-- **Free:** osallistuja, jolla on maksuton DETai Account sekä pysyvä henkilökohtainen PiQ-tila ja perustason käyttöoikeudet ja rajoitukset. Telegramin ja tilin välinen yhteys on vahvistettava erikseen.
+- **Public on vierastila.** Se on käytössä, kun nykyinen näkymä ei tunnista DETai-tiliäsi, esimerkiksi jos et ole kirjautunut sivustolle tai yhdistänyt Telegramia. Tili voi silti olla jo olemassa. Vierastilassa voit tarkastella kokoelmaa ja vesileimattuja käännöksiä, tallentaa pienen määrän suosikkeja ja kokeilla väliaikaista sitaattikorttia, jos nämä toiminnot ovat jo käytössä kyseisessä bottiversiossa.
+- **Free on PiQ:n maksuton perustaso.** Se on käytössä kirjautumisen tai Telegramin yhdistämisen jälkeen, jos tunnistetulla tilillä ei ole aktiivista Plus- tai Pro-tilausta. Kokoelmasi ja oma aineistosi säilyvät tililläsi.
 - **Plus / Pro:** osallistujat, joilla on kyseisen tuotteen laajennetut oikeudet. He ovat **samoja ekosysteemin osallistujia**, eivät erillisiä jäsenluokkia. Free-käyttäjän ei tarvitse päivittää maksulliseen tilaukseen kuuluakseen DETain yhteiseen käyttäjäympäristöön.
 
 **Tutustu ensin ja luo Account tarvittaessa.** [Vertaile Free / Plus / Pro -tasoja verkkosivulla](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Käyttäjätilin avaaminen tai yhdistäminen ei tarkoita markkinointitilausta eikä julkaise yksityisiä sitaatteja ilman käyttäjän tahtoa.

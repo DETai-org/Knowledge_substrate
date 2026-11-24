@@ -23,6 +23,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 ## 操作流程 {#add-material}
 
+导入个人图书或播客需要已完成注册并绑定 Telegram 的 DETai Account。**Free 即可添加自己的图书或播客文本，不需要 Plus 或 Pro。** 导入只保存文本，不会创建配音订单。音频制作可以单独下单；结算页会显示可用支付方式和总金额。
+
 **添加自己的文本:** 在个人资料库中选择 **添加内容**，选择图书或播客及文件。确认前检查提取的文本、语言和标题。音频制作需要另行下单。如果找不到此操作，请确认已进入个人资料库，且应用已识别账号。
 
 1. 在个人资料库中选择可用的导入方式，可从设备或通过 Telegram 机器人提交。

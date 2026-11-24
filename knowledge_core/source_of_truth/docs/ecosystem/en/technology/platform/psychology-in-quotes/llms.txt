@@ -23,6 +23,10 @@ Identify the user's goal: quotes and publishing, subscription books, buying book
 - [Help and troubleshooting](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Troubleshoot by visible state without account access
 - [Architecture and trust](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/architecture-and-trust/): Boundaries, authoritative sources and responsibilities
 - [PsyTok](https://docs.detai-x.com/en/company-and-economy/psytok/): Shared DETai balance rules
+- [Save and find a bookmark](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/listening/#bookmark)
+- [Link Telegram to an existing account](https://docs.detai-x.com/en/technology/platform/detai-account/#connect-telegram)
+- [Change your DETai profile photo](https://docs.detai-x.com/en/technology/platform/detai-account/#profile-photo)
+- [What carries over after linking Telegram](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/getting-started/#guest-transfer)
 
 ## Current data
 

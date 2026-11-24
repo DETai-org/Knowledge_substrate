@@ -23,6 +23,10 @@ Selvitä tarve: sitaatit, julkaiseminen, tilauskirjat, kirjojen ostaminen tai om
 - [Ohjeet ja ongelmanratkaisu](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Ongelmien ratkaisu ilman tilin käyttöoikeutta
 - [Rakenne ja luottamus](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/architecture-and-trust/): Rajat, lähteet ja vastuut
 - [PsyTok](https://docs.detai-x.com/fi/company-and-economy/psytok/): DETai-yhteissaldon säännöt
+- [Tallenna ja löydä kirjanmerkki](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/listening/#bookmark)
+- [Yhdistä Telegram olemassa olevaan tiliin](https://docs.detai-x.com/fi/technology/platform/detai-account/#connect-telegram)
+- [Vaihda DETai-profiilikuva](https://docs.detai-x.com/fi/technology/platform/detai-account/#profile-photo)
+- [Mitä säilyy Telegramin yhdistämisen jälkeen](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/getting-started/#guest-transfer)
 
 ## Ajantasaiset tiedot
 

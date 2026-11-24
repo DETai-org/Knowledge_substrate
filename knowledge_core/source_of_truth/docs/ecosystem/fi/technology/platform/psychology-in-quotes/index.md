@@ -30,9 +30,9 @@ DETai-ekosysteemi yhdistää psykoterapian, tutkimuksen, koulutuksen, teknologia
 
 ## Vierailijasta ekosysteemin osallistujaksi
 
-**Public – DETain vieras:** avoimeen tietoon ja tuotteisiin voi tutustua ilman yhteistä käyttäjätiliä. PiQ käyttää tähän Telegram-tunnistetta ja rajattua väliaikaista tietotilaa. Vieras on täysivaltainen vierailija, ei kirjautumisvirhe.
+**Public on vierastila.** Se on käytössä, kun nykyinen näkymä ei tunnista DETai-tiliäsi, esimerkiksi jos et ole kirjautunut sivustolle tai yhdistänyt Telegramia. Tili voi silti olla jo olemassa.
 
-**Free – osallistuja, jolla on DETai Account:** pysyvä henkilökohtainen tunniste ja työtila, oma pysyvä kokoelma, verkkosivun ja Telegramin välinen yhteys, omat aineistot sekä maksuttoman tason käyttöoikeudet ja rajoitukset. Kyse ei ole pelkästä teknisestä kirjautumisesta: omaa työskentelyä voi jatkaa ja osallistua kasvavaan ekosysteemiin, joka yhdistää psykologian, tutkimuksen, koulutuksen ja nykyaikaiset tekoälytyökalut.
+**Free on PiQ:n maksuton perustaso.** Se on käytössä kirjautumisen tai Telegramin yhdistämisen jälkeen, jos tunnistetulla tilillä ei ole aktiivista Plus- tai Pro-tilausta. Kokoelmasi ja oma aineistosi säilyvät tililläsi.
 
 **Plus / Pro – osallistuja, jolla on laajennetut tuoteoikeudet:** sama DETai Account, mutta voimassa olevan tilauksen mukaiset PiQ:n lisätoiminnot, kiintiöt ja työkalut. Tilaus ei anna ylläpitäjän oikeuksia eikä tarkoita erillistä järjestön jäsenyyttä.
 

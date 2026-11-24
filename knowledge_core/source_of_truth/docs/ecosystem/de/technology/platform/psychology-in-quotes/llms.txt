@@ -23,6 +23,10 @@ Klären Sie den Bedarf: Zitate, Veröffentlichungen, Abonnementbücher, Buchkauf
 - [Hilfe und Problemlösung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Problemlösung ohne Kontozugang
 - [Architektur und Vertrauen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/architecture-and-trust/): Grenzen, Quellen und Zuständigkeiten
 - [PsyTok](https://docs.detai-x.com/de/company-and-economy/psytok/): Gemeinsames DETai-Guthaben
+- [Lesezeichen setzen und wiederfinden](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/listening/#bookmark)
+- [Telegram mit einem bestehenden Konto verbinden](https://docs.detai-x.com/de/technology/platform/detai-account/#connect-telegram)
+- [DETai-Profilfoto ändern](https://docs.detai-x.com/de/technology/platform/detai-account/#profile-photo)
+- [Was nach der Telegram-Verknüpfung erhalten bleibt](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/getting-started/#guest-transfer)
 
 ## Aktuelle Daten
 
