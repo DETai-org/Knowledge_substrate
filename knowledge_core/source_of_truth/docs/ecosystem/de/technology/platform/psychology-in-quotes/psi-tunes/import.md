@@ -11,16 +11,21 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 Beim **Import** entsteht aus einem rechtmäßig genutzten Dokument eine persönliche Textfassung. Prüfe nach dem Auslesen Titel, Autor, Sprache, Kapitelreihenfolge sowie Anfang und Ende des Texts.
 
-> **Verfügbarkeit:** Dieser Ablauf gehört zur vorbereiteten ΨTunes-Version. Die tatsächlich unterstützten Formate und Grenzen zeigt die Anwendung.
+> **Verfügbarkeit:** Import und Audiovorbereitung gehören zu ΨTunes in Psychology in Quotes 2.0. Unterstützte Formate, Grenzen und Rechte zeigt die Anwendung.
 
 ## Formate
 
+- **Markdown (MD):** Überschriften, Absätze und Reihenfolge der Abschnitte prüfen.
 - **TXT:** Kodierung, Absätze und Überschriften prüfen.
 - **FB2 / FB2.ZIP:** Gliederung kontrollieren; das ZIP-Archiv darf nur eine FB2-Datei enthalten.
 - **EPUB:** Lesereihenfolge und Kapitel prüfen.
 - **PDF mit Textebene:** Spalten, Tabellen und Absätze nach dem Auslesen prüfen. Ein Scan ohne Textebene muss zuvor erkannt werden.
 
-## Ablauf
+## Ablauf {#add-material}
+
+Für den Import eines eigenen Buchs oder Podcasts brauchst du einen vollständig eingerichteten, mit Telegram verbundenen DETai Account. **Free reicht für den Import eigener Buch- und Podcasttexte; Plus oder Pro ist dafür nicht nötig.** Beim Import wird der Text gespeichert, ohne Audio zu bestellen. Audio kannst du getrennt beauftragen; Zahlungsarten und Gesamtbetrag stehen beim Bezahlen.
+
+**Einen eigenen Text hinzufügen:** Öffne **Meine Bibliothek → Material hinzufügen**. Wähle Buch oder Podcast und eine Datei. Prüfe Text, Sprache und Titel vor dem Bestätigen. Audio ist ein eigener Auftrag. Wenn die Aktion fehlt, prüfe Bibliothek und Kontoverbindung.
 
 1. Die verfügbare Importfunktion in der persönlichen Bibliothek wählen: vom Gerät oder über den Telegram-Bot.
 2. Textfassung, Metadaten und Kapitel prüfen und gegebenenfalls korrigieren.

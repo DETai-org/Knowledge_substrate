@@ -11,16 +11,21 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 **Tuonnissa** käyttöoikeutesi piiriin kuuluvasta tiedostosta muodostetaan henkilökohtainen tekstiversio. Tarkista poiminnan jälkeen nimi, tekijä, kieli, lukujen järjestys sekä tekstin alku ja loppu.
 
-> **Saatavuus:** toiminto kuuluu kehitteillä olevaan ΨTunes-versioon. Sovellus näyttää käytettävissä olevat tiedostomuodot ja rajat.
+> **Saatavuus:** tuonti ja äänen valmistelu kuuluvat Psychology in Quotes 2.0:n ΨTunes-moduuliin. Sovellus näyttää käytettävissä olevat tiedostomuodot, rajat ja oikeudet.
 
 ## Tiedostomuodot
 
+- **Markdown (MD):** tarkista otsikot, kappaleet ja osioiden järjestys.
 - **TXT:** tarkista merkistö, kappaleet ja otsikot.
 - **FB2 / FB2.ZIP:** tarkista lukurakenne; ZIP-paketissa saa olla yksi FB2-tiedosto.
 - **EPUB:** tarkista lukujärjestys ja lukujen rajat.
 - **Tekstimuotoinen PDF:** tarkista palstat, taulukot ja kappalejärjestys. Skannattu sivu tarvitsee ensin tekstintunnistuksen.
 
-## Vaiheet
+## Vaiheet {#add-material}
+
+Oman kirjan tai podcastin tuontiin tarvitaan valmiiksi luotu, Telegramiin yhdistetty DETai-tili. **Free riittää oman kirja- tai podcasttekstin lisäämiseen; tuonti ei edellytä Plus- tai Pro-tilausta.** Tuonti tallentaa tekstin tilaamatta ääntä. Äänen valmistelun voi tilata erikseen; maksutavat ja kokonaissumma näkyvät kassalla.
+
+**Lisää oma teksti:** Avaa **Oma kirjasto → Lisää aineisto**. Valitse kirja tai podcast ja tiedosto. Tarkista teksti, kieli ja nimi ennen vahvistamista. Äänen valmistelu tilataan erikseen. Jos toimintoa ei näy, tarkista kirjasto ja tilin yhteys.
 
 1. Valitse oman kirjaston tarjolla oleva tuontitapa laitteesta tai Telegram-botin kautta.
 2. Tarkista teksti, kansi, nimi, tekijä, kieli ja luvut.

@@ -26,7 +26,7 @@ PsyTok 不对应固定数量的模型技术 token、文字字符或计算秒数�
 | 购买的 PsyTok | 已接入的生态系统应用 | 不因订阅结束而失效 |
 | 产品套餐包含的 PsyTok | 套餐指定的产品与服务 | 至相应订阅周期结束，不结转 |
 
-在 Psychology in Quotes 中，套餐额度适用于机器人与 ΨTunes 组成的同一产品。若某项操作同时支持两种余额，先使用符合条件的套餐额度，再使用购买的 PsyTok。统一单位不取消各类额度的适用限制。
+若某项操作同时支持两种余额，先使用符合条件的套餐额度，再使用购买的 PsyTok。统一单位不取消各类额度的适用限制。
 
 额度大小、充值方式和适用服务由当前方案确定。拥有 PsyTok 本身不等于获得订阅、材料访问权或执行操作的权限。
 
@@ -38,14 +38,12 @@ PsyTok 不对应固定数量的模型技术 token、文字字符或计算秒数�
 
 内部修复重试不应增加已约定的订单费用。调价适用于新方案；已确认订单保留原有条件。
 
-## 图书与已完成的材料
+## 产品与 PsyTok 使用情况
 
-在 [ΨTunes](../technology/platform/psychology-in-quotes/psi-tunes/index.md) 中，用户购买的是约定结果：准备完成的有声书及所选版本的收听权。价格由结果内容和方案条件决定，包括语言、译本及所选设置。对于相同的版本和条件，使用现有版本代替重新制作，本身不会改变已约定价格。
+| 产品 | PsyTok 的用途 | 状态 |
+| --- | --- | --- |
+| [Psychology in Quotes (PiQ)](../technology/platform/psychology-in-quotes/index.md) | 套餐额度、素材制作以及机器人和 ΨTunes 中的付费操作 | 正随 2.0 版本逐步接入；实际可用性以产品界面为准 |
 
-订单可以通过新制作完成，也可以使用有权向该用户提供的现有兼容版本。仅书名与作者相同还不够：文本、语言、译本和音频参数都需要匹配。若要改变订单的重要条件，应与用户确认。
+具体产品的规则见对应产品文档。付款前请核对当前价格和购买条件；本表不代表已经公开开放销售。
 
-永久访问权对应所购图书的指定语言版本。该版本的技术修正不要求重新购买。其他图书或语言按相应独立方案处理。
-
-个人上传的材料不会自动进入公共目录。跨用户复用必须具备相应许可；不能仅因识别出同一本书，就将私人原文或个人声音变为共享资源。
-
-[公司与经济](index.md) · [Commerce Core](commerce-core.md) · [在 ΨTunes 中准备材料](../technology/platform/psychology-in-quotes/psi-tunes/import.md)
+[Company & Economy（俄语）](../../ru/company-and-economy/index.md) · [Commerce Core（俄语）](../../ru/company-and-economy/commerce-core.md) · [Psychology in Quotes](../technology/platform/psychology-in-quotes/index.md)

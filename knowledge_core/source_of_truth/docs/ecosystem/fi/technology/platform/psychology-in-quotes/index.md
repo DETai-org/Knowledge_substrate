@@ -7,11 +7,13 @@ translation_of: /ru/technology/platform/psychology-in-quotes/
 
 # Psychology in Quotes – Psykologiaa sitaateissa
 
-**Jokainen sitaatti on enemmän kuin kuva.**
+**Kuuntele. Löydä. Tallenna.**
 
-**Psychology in Quotes (PiQ)** on [Platform DETain](../../index.md) digitaalinen **oppimista ja psykologisen tiedon jakamista tukeva tuote** osana [DETai-ekosysteemiä](../../../ecosystem/index.md). Sen avulla voi tutustua psykologisiin ajatuksiin, tallentaa merkityksellisiä kirjakatkelmia tekijä- ja lähdetietoineen, löytää muiden oivalluksia sekä rakentaa oman tietokokoelman.
+DETai-ekosysteemin digitaalinen oppimisen ja tiedon jakamisen tuote niille, jotka lukevat, kuuntelevat, pohtivat ja tallentavat tärkeitä ajatuksia.
 
-**Version 1.0 julkinen julkaisu — 31. lokakuuta 2026.**
+PiQ yhdistää sitaattien luomisen, keräämisen ja julkaisemisen [ΨTunesiin](psi-tunes/index.md): lukemiseen, kuunteluun, kirjanmerkkeihin ja äänen valmisteluun. Tuote kuuluu [Platform DETaihin](../index.md) ja [DETai-ekosysteemiin](../../../ecosystem/index.md).
+
+**Version 1.0 julkinen julkaisu — 31. lokakuuta 2026; 2.0 ja ΨTunes — 24. marraskuuta 2026 (Moskovan aikaa).**
 
 DETai-ekosysteemi yhdistää psykoterapian, tutkimuksen, koulutuksen, teknologian ja yhteisön tavoitteenaan kehittää 2000-luvun psykoterapiaa. **Platform DETai** yhdistää digitaaliset tuotteet, käyttäjätilit ja tekniset mahdollisuudet. **PiQ yhdistää omaehtoisen oppimisen, lukemisen kulttuurin ja digitaalisen luovuuden:** käyttäjä voi valita, pohtia, tallentaa ja julkaista itselleen merkityksellisiä sitaatteja.
 
@@ -28,9 +30,9 @@ DETai-ekosysteemi yhdistää psykoterapian, tutkimuksen, koulutuksen, teknologia
 
 ## Vierailijasta ekosysteemin osallistujaksi
 
-**Public – DETain vieras:** avoimeen tietoon ja tuotteisiin voi tutustua ilman yhteistä käyttäjätiliä. PiQ käyttää tähän Telegram-tunnistetta ja rajattua väliaikaista tietotilaa. Vieras on täysivaltainen vierailija, ei kirjautumisvirhe.
+**Public on vierastila.** Se on käytössä, kun nykyinen näkymä ei tunnista DETai-tiliäsi, esimerkiksi jos et ole kirjautunut sivustolle tai yhdistänyt Telegramia. Tili voi silti olla jo olemassa.
 
-**Free – osallistuja, jolla on DETai Account:** pysyvä henkilökohtainen tunniste ja työtila, oma pysyvä kokoelma, verkkosivun ja Telegramin välinen yhteys, omat aineistot sekä maksuttoman tason käyttöoikeudet ja rajoitukset. Kyse ei ole pelkästä teknisestä kirjautumisesta: omaa työskentelyä voi jatkaa ja osallistua kasvavaan ekosysteemiin, joka yhdistää psykologian, tutkimuksen, koulutuksen ja nykyaikaiset tekoälytyökalut.
+**Free on PiQ:n maksuton perustaso.** Se on käytössä kirjautumisen tai Telegramin yhdistämisen jälkeen, jos tunnistetulla tilillä ei ole aktiivista Plus- tai Pro-tilausta. Kokoelmasi ja oma aineistosi säilyvät tililläsi.
 
 **Plus / Pro – osallistuja, jolla on laajennetut tuoteoikeudet:** sama DETai Account, mutta voimassa olevan tilauksen mukaiset PiQ:n lisätoiminnot, kiintiöt ja työkalut. Tilaus ei anna ylläpitäjän oikeuksia eikä tarkoita erillistä järjestön jäsenyyttä.
 
@@ -49,9 +51,15 @@ Samaa periaatetta sovelletaan vähitellen muihinkin DETai-tuotteisiin: **ensin t
 
 ## Ominaisuudet ja käyttö
 
-Psychology in Quotes toimii Telegramissa ja Platform DETain verkkosivustolla. Sitaattien luonti ja moderointi, julkinen kokoelma, suosikit, ”Oma kokoelma”, valmiit kieliversiot, julkaiseminen ja Stories ovat käytettävissä **Free / Plus / Pro** -tasojen ja voimassa olevien tuotekäytäntöjen mukaisesti. Plus- ja Pro-tilaukset maksetaan Telegram Stars -tähdillä; ostaminen edellyttää viimeisteltyä DETai Accountia, joka on yhdistetty Telegramiin. Ajantasaiset vierasrajoitukset näkyvät botissa ja [voimassa olevat tarjoukset, hinnat ja tilaustasojen rajoitukset sivustolla](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans). Käytössä oleva tuote näyttää, ovatko ostaminen ja yksittäiset toiminnot saatavilla.
+Psychology in Quotes toimii Telegramissa ja Platform DETain verkkosivustolla. Sitaattien luonti ja moderointi, julkinen kokoelma, suosikit, ”Oma kokoelma”, valmiit kieliversiot, julkaiseminen ja Stories ovat käytettävissä **Free / Plus / Pro** -tasojen ja voimassa olevien tuotekäytäntöjen mukaisesti. Plus- ja Pro-tilaukset voi hankkia Telegram Stars -tähdillä tai sivuston kryptomaksulla saatavuuden mukaan. Henkilökohtainen käyttö edellyttää DETai Accountia; Telegram-toiminnot vaativat yhteyden Telegramiin. Lopullinen summa, jakso ja uusimisehdot näkyvät ennen vahvistusta; kaikki maksut eivät uusiudu automaattisesti. [Tilausten vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans).
 
 [Kokoelman ja tilaustasojen opas](collection-and-plans.md) kuvaa oikeuksien logiikan; **ajantasaiset numeeriset rajoitukset löytyvät vain [sivuston vertailutaulukosta](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans)**. Todelliset käyttöoikeutesi määräytyvät **DETai Account -tilin ja PiQ:n palvelinpuolen käytäntöjen** mukaan, eivät vanhentuneesta taulukkokopiosta.
+
+## PsyTok Psychology in Quotesissa
+
+[PsyTok](../../../company-and-economy/psytok.md) on ekosysteemin yhteinen laskentayksikkö. **Psychology in Quotesissa** botti ja ΨTunes ovat saman tuotteen osia: tilaukseen sisältyvät PsyTok-yksiköt koskevat vain PiQ:ta, erikseen ostetut PsyTok-yksiköt kuuluvat DETai Accountin yhteiseen saldoon. Lähteet, voimassaolon ja käyttöjärjestyksen kertoo [yleinen PsyTok-opas](../../../company-and-economy/psytok.md).
+
+ΨTunesissa PsyTok-yksiköillä voi maksaa aineiston hankinnasta, valmistelusta ja muista sallituista toimista. Katso [ΨTunes-opas](psi-tunes/index.md) ja [tuontiohjeet](psi-tunes/import.md). Tarkista oikeudet, lopputulos ja hinta ennen vahvistusta.
 
 ## Linkit ja vastuut
 
@@ -65,4 +73,6 @@ Psychology in Quotes toimii Telegramissa ja Platform DETain verkkosivustolla. Si
 
 ## ΨTunes — kirjat ja podcastit
 
-**ΨTunes** on kehitteillä oleva PiQ-soitin kirjoille, podcasteille, kirjanmerkeille ja lähteisiin sidotuille lainauksille. [ΨTunes-opas](psi-tunes/index.md) esittelee tuonnin, kuuntelun ja podcastit. **Versiota 2.0 valmistellaan ja testataan edelleen**; opas ei ilmoita julkisesta julkaisusta. Käytettävissä olevat toiminnot näkyvät sovelluksessa.
+ΨTunes on Psychology in Quotesin versiossa 2.0 julkaistu äänikirja- ja podcastmoduuli. Se yhdistää lukemisen, kuuntelun, kirjanmerkit ja lähteeseen sidotut sitaatit. Saatavuus riippuu oikeuksista, tilauksesta ja sovelluksesta. [ΨTunes — kirjat ja podcastit](psi-tunes/index.md).
+
+[Tekstimuotoinen opas AI-avustajille (llms.txt)](llms.txt)

@@ -7,12 +7,12 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 # PiQ 收藏、语言与套餐
 
-**更新日期：2026 年 10 月 30 日。**本页解释收藏体系和权限层级，**不复制静态的套餐与额度表**。Free / Plus / Pro 的最新功能和限额由 PiQ 产品政策确定，并显示在[官方网站的动态套餐对比表](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)中。个人剩余额度、额外权限与有效套餐请到“我的订阅”查看。
+**更新日期：2026 年 11 月 24 日。**本页解释收藏体系和权限层级，**不复制静态的套餐与额度表**。Free / Plus / Pro 的最新功能和限额由 PiQ 产品政策确定，并显示在[官方网站的动态套餐对比表](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)中。个人剩余额度、额外权限与有效套餐请到“我的订阅”查看。
 
 ## 访客、参与者与订阅者是不同状态
 
-- **Public：**尚未拥有统一 DETai Account 的访客。可以查看公共目录、带水印的译文，保存少量访客收藏，并在相应功能已部署的机器人版本中体验临时语录卡片。
-- **Free：**拥有免费 DETai Account 的参与者，享有持久的个人 PiQ 空间及基础权限、限额。Telegram 与账户的绑定需要单独验证。
+- **Public 是访客模式。** 当前界面未识别你的 DETai Account 时会使用此模式，例如你尚未登录网站或尚未绑定 Telegram。你可能已经拥有账号。访客可查看公共目录、带水印的译文，保存少量访客收藏，并在相应功能已部署的机器人版本中体验临时语录卡片。
+- **Free 是 PiQ 的免费基础套餐。** 登录或绑定 Telegram 后，如果识别到的账号没有有效的 Plus 或 Pro 订阅，就使用 Free。你的合集和个人内容会保存在账号中，方便日后继续使用。
 - **Plus / Pro：**拥有该产品扩展权限的参与者。**仍属于同一生态系统的参与者**，不是另一种会员身份。Free 用户无需升级付费套餐也能参与 DETai 的共同用户空间。
 
 **先体验，再按需创建 Account。**[在网站比较 Free / Plus / Pro](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)。打开账户中心或完成绑定，并不表示订阅营销消息，也不会未经用户同意发布私人语录。
@@ -37,6 +37,10 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 请在[“我的订阅”](https://detai-x.com/zh/account/products/psychology-in-quotes#piq-access)查看个人权限和剩余额度。消耗型操作的额度可能在结果确认前被预留，因此剩余数量应以应用实际显示为准。获取他人的语录、发布内容和创建 Stories 是三种独立操作；创建自己的语录不等于获取他人的语录。
 
+- 每周限额按 UTC 日历周更新；发布及 Stories 限额由所有已连接频道共享。
+- 获取语录开放账户的获准无水印版本；重复下载不消耗新的获取额度。语录与有声书语言权限分别确定。
+- 审核和准备可能需要时间；YouTube 需单独连接。集成可用时，DETai 点赞按当前政策支持公开 Telegram 频道的发布。
+
 ## 语言与订阅变更
 
 - 目录中已发布的现成译文可以通过**带水印的预览**阅读。
@@ -50,9 +54,9 @@ translation_of: /ru/technology/platform/psychology-in-quotes/collection-and-plan
 
 ## 可用性与价格
 
-**Plus 和 Pro 订阅**使用 Telegram Stars 购买，**每个周期为 30 天，并自动续订**。购买前需完成 DETai Account 的设置并关联 Telegram。确切的 Stars 数量和订阅周期会在确认付款前显示。网站上的美元金额仅供参考，因为购买 Stars 的成本因地区和充值方式而异。[当前报价与价格](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)在网站和机器人中显示。
+Plus 和 Pro 可根据结算提供的支付方式，通过 Telegram Stars 或网站加密货币支付购买。个人访问使用 DETai Account；Telegram 功能需关联 Telegram。确认前显示最终金额、周期及续订条款，并非所有付款均自动续订。 [套餐比较](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans).
 
-关闭自动续订后，使用权限仍保留至已付费周期结束。**Launch Offer** 上线特别优惠可在提前通知后结束。若要按新价格继续订阅，用户需要另行订阅并确认付款。现行规则、通知期限及退款流程以 [PiQ 使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms)为准。
+如果所选支付方式支持自动续订，关闭后可保留访问权直至已付费周期结束。**Launch Offer** 上线特别优惠可在提前通知后结束。若要按新价格继续订阅，用户需要另行订阅并确认付款。现行规则、通知期限及退款流程以 [PiQ 使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms)为准。
 
 [最新产品页面和套餐对比](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans) · [我的权限](https://detai-x.com/zh/account/products/psychology-in-quotes#piq-access)
 

@@ -48,6 +48,15 @@ jobs:
 
       - run: mkdocs build --clean
 
+      - name: Verify PiQ AI entry points in generated site
+        shell: bash
+        run: |
+          set -euo pipefail
+          for locale in ru en de fi zh; do
+            route="$locale/technology/platform/psychology-in-quotes/llms.txt"
+            cmp "knowledge_core/source_of_truth/docs/ecosystem/$route" "site/$route"
+          done
+
       - uses: actions/upload-artifact@v4
         with:
           name: mkdocs-site
@@ -73,6 +82,15 @@ jobs:
         run: python scripts/check_public_docs_refs.py
 
       - run: mkdocs build --clean
+
+      - name: Verify PiQ AI entry points in generated site
+        shell: bash
+        run: |
+          set -euo pipefail
+          for locale in ru en de fi zh; do
+            route="$locale/technology/platform/psychology-in-quotes/llms.txt"
+            cmp "knowledge_core/source_of_truth/docs/ecosystem/$route" "site/$route"
+          done
 
       - uses: actions/upload-pages-artifact@v3
         with:

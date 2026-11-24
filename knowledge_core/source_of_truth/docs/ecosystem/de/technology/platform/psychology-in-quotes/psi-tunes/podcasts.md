@@ -11,9 +11,9 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/podcasts/
 
 Ein **Podcast** ist ein eigenständiger Inhalt mit Titel, Textfassung und gegebenenfalls Audiofassung. Mehrere Folgen können zu einer Reihe gehören, ohne ihre eigene Identität und Hörposition zu verlieren.
 
-> **Status:** Podcast-Katalog und persönliche Audiovorbereitung befinden sich in Entwicklung. Aktuelle Verfügbarkeit und Kontingente legt die Anwendung fest.
+> **Status:** Podcast-Katalog und persönliche Audiovorbereitung gehören zu ΨTunes. Verfügbarkeit, Kontingente und Preise in der Anwendung prüfen.
 
-**DETai-Podcasts** sind redaktionelle Inhalte. Eine Folge wird durch die Zuordnung zu einer Reihe nicht automatisch veröffentlicht. Für einen **persönlichen Podcast** wird ein Text verwendet, den man rechtmäßig nutzen darf. Textimport und Audiovorbereitung sind getrennte Vorgänge. Die Vorbereitung wird mit [PsyTok](../../../../company-and-economy/psytok.md) aus passenden Tarifkontingenten oder gekauftem Guthaben bezahlt. Für eine persönliche Folge sind höchstens 15.000 Zeichen vorgesehen; dies ist eine Textgrenze und keine feste Anzahl kostenloser Folgen im Monat. Berechtigung und Preis werden vor dem Auftrag angezeigt.
+**DETai-Podcasts** sind redaktionelle Inhalte. Eine Folge wird durch die Zuordnung zu einer Reihe nicht automatisch veröffentlicht. Für einen **persönlichen Podcast** wird ein Text verwendet, den man rechtmäßig nutzen darf. Textimport und Audiovorbereitung sind getrennte Vorgänge. Die verfügbaren Zahlungsarten und der Gesamtbetrag werden vor der Bestätigung angezeigt. Bei Zahlung aus dem Guthaben gelten die [PsyTok-Regeln](../../../../company-and-economy/psytok.md). Für eine persönliche Folge sind höchstens 15.000 Zeichen vorgesehen; dies ist eine Textgrenze und keine feste Anzahl kostenloser Folgen im Monat. Berechtigung und Preis werden vor dem Auftrag angezeigt.
 
 Eine Reihe erleichtert das Hören zusammenhängender Themen. Umbenennen und Übersetzen dürfen Lesezeichen nicht auf andere Werke verschieben. Eine Folge in der Sammlung ist nicht zwangsläufig zum Hören freigegeben. Der Austausch privater Materialien ist nur verfügbar, wenn diese Funktion ausdrücklich aktiviert wurde.
 

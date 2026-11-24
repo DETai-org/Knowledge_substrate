@@ -26,9 +26,13 @@ translation_of: /ru/technology/platform/psychology-in-quotes/getting-started/
 
 Beim ersten Übergang kann Hub die **Oberflächensprache von PiQ** übernehmen. Hat Hub bereits eine gespeicherte Spracheinstellung, bleibt diese vorrangig. Weder die Sprache des Zitats oder seiner Übersetzung noch die Profilsprache des Accounts ändert sich dadurch.
 
-**Public = Gast; Free = Teilnahme mit dauerhafter gemeinsamer Identität; Plus/Pro = Teilnahme mit erweiterten Tarifleistungen.** Dies sind Interaktionsstufen, kein Nachweis beruflicher Qualifikation und keine Einwilligung in Werbenachrichten.
+**Public ist der Gastmodus.** Er gilt, wenn die aktuelle Oberfläche deinen DETai Account nicht erkennt, etwa weil du auf der Website nicht angemeldet bist oder Telegram noch nicht verbunden hast. Ein Konto kann bereits bestehen. **Free ist der kostenlose Basistarif von PiQ.** Er gilt nach der Anmeldung oder Telegram-Verknüpfung, wenn für das erkannte Konto kein aktives Plus- oder Pro-Abo besteht.
 
 [Aktuelle Tarife, Funktionen und Limits →](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans)
+
+### Was nach der Telegram-Verknüpfung erhalten bleibt {#guest-transfer}
+
+Wenn du dasselbe Telegram-Konto mit DETai Account verbindest, führt PiQ die Gastfavoriten mit den Kontofavoriten zusammen. Eine fertige Gastkarte kann, solange sie nicht abgelaufen ist, unter **Meine Sammlung → Meine Zitate** erscheinen. Das Speichern in der Sammlung veröffentlicht das Zitat nicht. Eine abgelaufene Karte lässt sich nicht wiederherstellen.
 
 ## 2. Ein eigenes Zitat erstellen
 

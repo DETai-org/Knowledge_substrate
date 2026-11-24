@@ -26,7 +26,7 @@ Das Guthaben gehört zum **DETai Account**. Gekaufte PsyTok sind für unterstüt
 | Gekaufte PsyTok | Unterstützte Anwendungen des Ökosystems | Verfallen nicht mit dem Ende eines Abonnements |
 | Im Produkttarif enthaltene PsyTok | Im angegebenen Produkt und für die vorgesehenen Dienste | Bis zum Ende der jeweiligen Abrechnungsperiode; kein Übertrag |
 
-Bei Psychology in Quotes gilt das enthaltene Kontingent für das gemeinsame Produkt aus Bot und ΨTunes. Akzeptiert eine Aktion beide Quellen, werden zuerst passende enthaltene PsyTok und danach gekaufte PsyTok verwendet. Die gemeinsame Einheit hebt die Grenzen eines Kontingents nicht auf.
+Akzeptiert eine Aktion beide Quellen, werden zuerst passende enthaltene PsyTok und danach gekaufte PsyTok verwendet. Die gemeinsame Einheit hebt die Grenzen eines Kontingents nicht auf.
 
 Umfang, Auflademöglichkeiten und zulässige Dienste ergeben sich aus dem aktuellen Angebot. PsyTok ersetzen für sich genommen weder ein Abonnement noch ein Zugriffsrecht oder eine erforderliche Berechtigung.
 
@@ -38,14 +38,12 @@ Während der Ausführung kann der benötigte Betrag reserviert werden. Die endg�
 
 Interne Wiederholungsversuche erhöhen den vereinbarten Auftragspreis nicht. Preisänderungen gelten für neue Angebote; bestätigte Aufträge behalten ihre Bedingungen.
 
-## Bücher und fertige Materialien
+## Produkte und Verfügbarkeit von PsyTok
 
-In [ΨTunes](../technology/platform/psychology-in-quotes/psi-tunes/index.md) erwirbt der Nutzer ein vereinbartes Ergebnis: ein vorbereitetes Hörbuch und das Hörrecht für die gewählte Variante. Der Preis richtet sich nach dem Ergebnis und den Angebotsbedingungen, einschließlich Sprache, Übersetzung und gewählter Einstellungen. Bei gleicher Variante und gleichen Bedingungen verändert die Nutzung einer vorhandenen Fassung anstelle einer erneuten Vorbereitung für sich genommen nicht den vereinbarten Preis.
+| Produkt | Vorgesehene Verwendung | Status |
+| --- | --- | --- |
+| [Psychology in Quotes (PiQ)](../technology/platform/psychology-in-quotes/index.md) | Tarifkontingente, Materialvorbereitung und kostenpflichtige Aktionen im Bot und in ΨTunes | Integration wird für Version 2.0 vorbereitet; Verfügbarkeit im Produkt prüfen |
 
-Ein Auftrag kann durch neue Vorbereitung oder durch eine vorhandene passende Fassung erfüllt werden, die diesem Nutzer bereitgestellt werden darf. Titel und Autor allein reichen für einen Abgleich nicht aus: Text, Sprache, Übersetzung und Audioeinstellungen müssen passen. Wesentliche Änderungen des Auftrags werden mit dem Nutzer vereinbart.
+Produktspezifische Regeln gehören in die jeweilige Produktdokumentation. Aktuelle Bedingungen und Preise vor dem Bezahlen prüfen; die Tabelle kündigt keinen öffentlichen Verkaufsstart an.
 
-Dauerhafter Zugang gilt für das erworbene Buch in der angegebenen Sprachvariante. Technische Korrekturen daran erfordern keinen erneuten Kauf. Ein anderes Buch oder eine andere Sprache richten sich nach einem gesonderten Angebot.
-
-Persönliche Uploads werden nicht automatisch Teil des öffentlichen Katalogs. Eine nutzerübergreifende Wiederverwendung setzt die entsprechende Erlaubnis voraus; private Quellen oder persönliche Stimmen werden durch einen Buchabgleich nicht allgemein verfügbar.
-
-[Company & Economy](index.md) · [Commerce Core](commerce-core.md) · [Material in ΨTunes vorbereiten](../technology/platform/psychology-in-quotes/psi-tunes/import.md)
+[Company & Economy (Russisch)](../../ru/company-and-economy/index.md) · [Commerce Core (Russisch)](../../ru/company-and-economy/commerce-core.md) · [Psychology in Quotes](../technology/platform/psychology-in-quotes/index.md)

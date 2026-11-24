@@ -7,9 +7,11 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 
 # ΨTunes — books and podcasts
 
-**ΨTunes** is an upcoming part of [Psychology in Quotes](../index.md) bringing reading, listening, bookmarks and source-linked quotations together.
+[Listen to a sample](listening.md#first-listen) · [Save and find a bookmark](listening.md#bookmark) · [Add your own text](import.md#add-material) · [DETai Account](../../detai-account/index.md).
 
-> **Status:** ΨTunes 2.0 is under development and device testing. This guide does **not** announce a public launch or promise that every feature is currently enabled in the bot. The live interface determines available actions and permissions.
+ΨTunes is the audiobook and podcast module of Psychology in Quotes, released in version 2.0. It connects reading, listening, bookmarks and source-linked quotations. Feature availability depends on the current plan, entitlements and live interface. [Psychology in Quotes](../index.md).
+
+> Public release 1.0 — 31 October 2026; 2.0 with ΨTunes — 24 November 2026 (Moscow time).
 
 A book or podcast may have a text edition and an audio version. The player aims to preserve your position, let you revisit a moment and move from a quotation back to its source. A prepared audio file and permission to listen to it are separate conditions.
 
@@ -22,6 +24,10 @@ A book or podcast may have a text edition and an audio version. The player aims 
 Personal features use your DETai Account connected to Telegram. Importing text does not automatically place an order or make a book public. Current plans and access conditions are shown on the [official PiQ website](https://detai-x.com/en/technology/platform/psychology-in-quotes). ΨTunes is for working with knowledge, not therapy, diagnosis or medical care.
 
 Paid services use [PsyTok](../../../../company-and-economy/psytok.md). Included plan allowances and purchased shared credits are tracked separately. The user purchases an agreed result and access to the selected variant. Pricing follows the offer terms; using an existing compatible version does not itself change the agreed price. Permanent access covers the purchased language variant; technical corrections do not require a new purchase.
+
+- Included PsyTok expire at the end of their issuing period; purchased PsyTok remain. Eligible included credits are used first, then purchased credits.
+- Subscription books are available during the subscription; previous selections remain on renewal. Adding or replacing a book consumes a selection allowance. Separately acquired and prepared personal materials remain in the library subject to edition rights.
+- Registered Free users can acquire and prepare materials with PsyTok when entitled and available. Check current policy for quotas, book slots, selections and podcast size.
 
 ## Gifts {#gifts}
 

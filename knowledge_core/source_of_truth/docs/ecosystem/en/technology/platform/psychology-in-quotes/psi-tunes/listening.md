@@ -7,11 +7,19 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/listening
 
 # Listening and saving moments
 
+## Listen to a sample {#first-listen}
+
+In ΨTunes, open **Catalog**, select a book or choose **DETai podcasts**, then open **Preview** when available. Press **Play** if prompted. If the app asks you to sign in or connect Telegram, follow the link in PiQ; the catalog listing does not grant full access.
+
+## Save and find a bookmark {#bookmark}
+
+In an item you can listen to, open **Listen** and select **Save a bookmark** in the full player. Open **Bookmarks** for that same book or episode to return to the saved position. A bookmark does not extend listening access.
+
 [← ΨTunes](index.md)
 
 ΨTunes links playback to a particular text edition and audio version. A chapter and an audio delivery segment can have different boundaries: switching between them should not require pressing Play again.
 
-> **Status:** background audio is subject to Telegram, WebView, device and network limitations. This is a design guide, **not a promise of permanent offline playback**.
+> **Status:** ΨTunes was released with PiQ 2.0. Background audio is subject to Telegram, WebView, device and network limitations; this is **not a promise of permanent offline playback**.
 
 The player is designed for pause, speed control, seeking, chapters and saving your position. A one-tap **bookmark** stores a moment without requiring a comment; from it you can return to the book or create a quotation linked to its source.
 

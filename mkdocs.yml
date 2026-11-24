@@ -1233,12 +1233,18 @@ nav:
     - Francis Galton: ru/technology/platform/francis-galton/index.md
     - Psykhḗ AI: ru/technology/platform/psykhe-ai/index.md
     - Сайт DETai: ru/technology/platform/website/index.md
+    - DETai Account: ru/technology/platform/detai-account/index.md
     - Psychology-in-quotes:
       - Обзор: ru/technology/platform/psychology-in-quotes/index.md
       - Начало работы: ru/technology/platform/psychology-in-quotes/getting-started.md
       - Коллекция и тарифы: ru/technology/platform/psychology-in-quotes/collection-and-plans.md
       - Вопросы и проблемы: ru/technology/platform/psychology-in-quotes/help-and-troubleshooting.md
       - Устройство и доверие: ru/technology/platform/psychology-in-quotes/architecture-and-trust.md
+      - ΨTunes:
+        - Обзор: ru/technology/platform/psychology-in-quotes/psi-tunes/index.md
+        - Прослушивание и закладки: ru/technology/platform/psychology-in-quotes/psi-tunes/listening.md
+        - Добавление материала: ru/technology/platform/psychology-in-quotes/psi-tunes/import.md
+        - Подкасты: ru/technology/platform/psychology-in-quotes/psi-tunes/podcasts.md
     - Storytelling:
       - Обзор Publication Core: ru/technology/platform/storytelling/index.md
       - Связь с инфраструктурой и каналами: ru/technology/platform/storytelling/infrastructure-and-delivery.md

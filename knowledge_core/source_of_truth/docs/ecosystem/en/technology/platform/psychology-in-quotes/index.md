@@ -7,11 +7,13 @@ translation_of: /ru/technology/platform/psychology-in-quotes/
 
 # Psychology in Quotes
 
-**Every quote is more than an image.**
+**Listen. Discover. Save.**
 
-**Psychology in Quotes (PiQ)** is a digital **educational and knowledge-sharing product** of [Platform DETai](../../index.md), part of the [DETai ecosystem](../../../ecosystem/index.md). It helps people explore psychological ideas, preserve meaningful passages from books together with their authors, sources and context, discover other people's insights, and build a personal collection of knowledge.
+A digital education and outreach product from the DETai ecosystem for people who read, listen, reflect, and save ideas that matter.
 
-**Public release of version 1.0 — 31 October 2026.**
+PiQ combines quote creation, collection and publishing with [ΨTunes](psi-tunes/index.md): reading, listening, bookmarks and audio preparation. The product belongs to [Platform DETai](../index.md) and the [DETai ecosystem](../../../ecosystem/index.md).
+
+**Public release 1.0 — 31 October 2026; 2.0 with ΨTunes — 24 November 2026 (Moscow time).**
 
 The DETai ecosystem brings together psychotherapy, research, education, technology and community to advance psychotherapy in the twenty-first century. **Platform DETai** connects digital products, accounts and technological capabilities. **PiQ brings together self-directed learning, reading culture and digital creativity:** people can select, reflect on, save and share meaningful quotations.
 
@@ -28,9 +30,9 @@ The DETai ecosystem brings together psychotherapy, research, education, technolo
 
 ## From visitor to ecosystem participant
 
-**Public — a DETai guest:** anyone may explore open knowledge and products without creating a shared account. PiQ uses Telegram identity and limited temporary state for this purpose. A guest is a legitimate visitor, not an authentication error.
+**Public is guest mode.** It applies when the current interface does not recognize your DETai Account, for example if you are signed out on the website or have not linked Telegram. You may already have an account elsewhere.
 
-**Free — a participant with a DETai Account:** an enduring identity and personal workspace, including a permanent collection, a link between the website and Telegram, personal materials, entitlements and Free-tier limits. This is more than a technical sign-in: it lets people continue their work and participate in a growing ecosystem linking psychology, research, education and contemporary AI tools.
+**Free is the basic PiQ plan at no charge.** It applies after sign-in or Telegram linking if the recognized account has no active Plus or Pro subscription. Your account keeps your collection and personal material so you can return to them.
 
 **Plus / Pro — a participant with extended product access:** the same DETai Account, with additional PiQ features, limits and tools under an actually active subscription. A subscription is not an administrator role or separate organisational membership.
 
@@ -49,9 +51,15 @@ The same approach is gradually being adopted by other DETai products: **first ex
 
 ## Features and access
 
-Psychology in Quotes works in Telegram and on the Platform DETai website. Quote creation and moderation, the catalogue, favourites, “My collection”, prepared language editions, publishing and Stories are available according to **Free / Plus / Pro** entitlements and the current product policy. Plus and Pro subscriptions are purchased with Telegram Stars; checkout requires a completed DETai Account linked to Telegram. Check current guest limits in the bot and [current offers, prices and plan limits on the website](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans). The running product shows whether purchasing and individual features are available.
+Psychology in Quotes works in Telegram and on the Platform DETai website. Quote creation and moderation, the catalogue, favourites, “My collection”, prepared language editions, publishing and Stories are available according to **Free / Plus / Pro** entitlements and the current product policy. Plus and Pro can be purchased with Telegram Stars or crypto checkout on the website, subject to payment availability. Personal access uses a DETai Account; Telegram features require linking it to Telegram. Checkout shows the final amount, period and renewal terms before confirmation; not every method renews automatically. [Plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans).
 
 The [collection and plans guide](collection-and-plans.md) explains entitlements; **current numerical limits are published only in the [website's plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans)**. Your effective access is determined by **DETai Account and PiQ server policy**, not an outdated copied table.
+
+## PsyTok in Psychology in Quotes
+
+[PsyTok](../../../company-and-economy/psytok.md) is the ecosystem-wide pricing unit. The **Psychology in Quotes** bot and ΨTunes are parts of the same product: plan-included PsyTok apply only to PiQ, while separately purchased PsyTok belong to the shared DETai Account balance. For sources, expiry and spending order, see the [general PsyTok guide](../../../company-and-economy/psytok.md).
+
+In ΨTunes, PsyTok can cover acquisition, preparation and other eligible paid actions. See the [ΨTunes guide](psi-tunes/index.md) and [import instructions](psi-tunes/import.md). Verify rights, the agreed result and price before confirmation.
 
 ## Links and responsibility
 
@@ -65,4 +73,6 @@ The [collection and plans guide](collection-and-plans.md) explains entitlements;
 
 ## ΨTunes — books and podcasts
 
-**ΨTunes** is a developing PiQ player connecting reading, audiobooks, podcasts, bookmarks and source-linked quotations. The [ΨTunes guide](psi-tunes/index.md) introduces import, listening and podcasts. **Version 2.0 is still being prepared and tested**; the guide does not announce a public release. Actual availability is shown in the application.
+ΨTunes is the audiobook and podcast module of Psychology in Quotes, released in version 2.0. It connects reading, listening, bookmarks and source-linked quotations. Feature availability depends on the current plan, entitlements and live interface. [ΨTunes — books and podcasts](psi-tunes/index.md).
+
+[AI documentation navigator (llms.txt)](llms.txt)

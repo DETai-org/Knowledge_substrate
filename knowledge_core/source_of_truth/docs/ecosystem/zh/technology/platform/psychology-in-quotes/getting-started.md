@@ -26,9 +26,13 @@ translation_of: /ru/technology/platform/psychology-in-quotes/getting-started/
 
 首次跳转时，Hub 可以接收 **PiQ 的界面语言**。若 Hub 已保存自己的语言偏好，则优先使用已有设置。这不会改变语录的文本语言、译文语言或 Account 的个人资料语言。
 
-**Public 为访客；Free 为拥有持久统一身份的参与者；Plus/Pro 为获得更高套餐权限的参与者。**这些仅是交互层级，不是专业资质证明，也不代表同意接收营销消息。
+**Public 是访客模式。** 当前界面未识别你的 DETai Account 时会使用此模式，例如你尚未登录网站或尚未绑定 Telegram。你可能已经拥有账号。 **Free 是 PiQ 的免费基础套餐。** 登录或绑定 Telegram 后，如果识别到的账号没有有效的 Plus 或 Pro 订阅，就使用 Free。
 
 [查看网站上的最新套餐、功能与限额 →](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)
+
+### 绑定 Telegram 后会保留什么 {#guest-transfer}
+
+将同一个 Telegram 账号绑定到 DETai Account 后，PiQ 会合并访客收藏和账号收藏。如果已生成的访客卡片未过期，可能会出现在自己的语录中。保存到合集不等于公开发布。过期的访客卡片无法恢复。
 
 ## 2. 创建自己的语录
 

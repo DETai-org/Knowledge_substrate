@@ -10,10 +10,10 @@ classification:
   audiences: [public, team, managers, agents]
 descriptive:
   id: company-economy-index
-  version: v7
+  version: v8
   status: draft
   date_ymd: 2026-11-02
-  date_update: 2026-11-18
+  date_update: 2026-11-22
 governance:
   canonicality: working
   visibility: public
@@ -62,7 +62,7 @@ Brand & Communications помогает сформулировать предл�
 ## Состав раздела
 
 - [Планируемый оператор DETai Oy](company-operator.md) — будущая юридическая и экономическая роль компании, финская предпринимательская среда и возможные направления её развития.
-- [Commerce Core](commerce-core.md)
+- [Commerce Core](commerce-core.md) — общая техническая подсистема заказов и платежей; реализуется внутри ecosystem-runtime, но не тождественна всему Runtime.
 - [PsyTok](psytok.md) — единица расчёта за услуги экосистемы, общий баланс и включённые начисления.
 - [Slicing Pie](slicing-pie.md) — идея динамического распределения долей участия, пока не являющаяся принятой политикой DETai.
 

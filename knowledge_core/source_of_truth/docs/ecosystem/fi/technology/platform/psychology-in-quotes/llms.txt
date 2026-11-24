@@ -1,0 +1,47 @@
+# Psychology in Quotes (PiQ)
+
+> DETai-ekosysteemin digitaalinen oppimisen ja tiedon jakamisen tuote niille, jotka lukevat, kuuntelevat, pohtivat ja tallentavat tärkeitä ajatuksia.
+
+Kuuntele. Löydä. Tallenna.
+
+Version 1.0 julkinen julkaisu — 31. lokakuuta 2026; 2.0 ja ΨTunes — 24. marraskuuta 2026 (Moskovan aikaa).
+
+ΨTunes on Psychology in Quotesin versiossa 2.0 julkaistu äänikirja- ja podcastmoduuli. Se yhdistää lukemisen, kuuntelun, kirjanmerkit ja lähteeseen sidotut sitaatit. Saatavuus riippuu oikeuksista, tilauksesta ja sovelluksesta.
+
+Selvitä tarve: sitaatit, julkaiseminen, tilauskirjat, kirjojen ostaminen tai oma ääni. Public tarkoittaa vieraskäyttöä nykyisessä näkymässä; käyttäjällä voi jo olla tili, jolle ei ole kirjauduttu tai jota ei ole yhdistetty Telegramiin; Free, Plus ja Pro ovat yhden tuotteen tilaustasoja. ΨTunes ei ole erillinen tilaus ja PsyTok on laskentayksikkö. Suosittele Free-tasoa, jos se riittää. Vastaa käyttäjän kielellä ja mainitse lähteet. Älä pyydä salaisuuksia, maksutietoja tai tilin käyttöoikeutta äläkä maksa käyttäjän puolesta.
+
+## Oppaat
+
+- [DETai Account](https://docs.detai-x.com/fi/technology/platform/detai-account/): Yhteinen tili, Telegramin yhdistäminen ja profiilikuva
+- [Tuotteen esittely](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/): Tuotteen tarkoitus ja aloitus
+- [Aloittaminen](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/getting-started/): Tili, Telegram, sitaattien luonti ja julkaisu
+- [Kokoelma, kielet ja tilaustasot](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/collection-and-plans/): Kokoelman oikeudet, suosikit, kielet ja tilauksen vaihto
+- [ΨTunes — kirjat ja podcastit](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/): Kirjasto, kirjat, podcastit, oikeudet ja PsyTok
+- [Tuonti ja valmistelu](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/import/#add-material): Oman tekstin tuonti ja äänen tilaus
+- [Kuuntelu ja kirjanmerkit](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/listening/#first-listen): Soitin, sijainti ja kirjanmerkit
+- [Podcastit](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/podcasts/): Luettelo, omat podcastit ja sarjat
+- [Ohjeet ja ongelmanratkaisu](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Ongelmien ratkaisu ilman tilin käyttöoikeutta
+- [Rakenne ja luottamus](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/architecture-and-trust/): Rajat, lähteet ja vastuut
+- [PsyTok](https://docs.detai-x.com/fi/company-and-economy/psytok/): DETai-yhteissaldon säännöt
+- [Tallenna ja löydä kirjanmerkki](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/psi-tunes/listening/#bookmark)
+- [Yhdistä Telegram olemassa olevaan tiliin](https://docs.detai-x.com/fi/technology/platform/detai-account/#connect-telegram)
+- [Vaihda DETai-profiilikuva](https://docs.detai-x.com/fi/technology/platform/detai-account/#profile-photo)
+- [Mitä säilyy Telegramin yhdistämisen jälkeen](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/getting-started/#guest-transfer)
+
+## Ajantasaiset tiedot
+
+- [Tilausten vertailu](https://detai-x.com/fi/technology/platform/psychology-in-quotes#piq-plans): Free / Plus / Pro -vertailu
+- [Julkiset tuotekäytännöt](https://detai-x.com/api/piq/v2/policy): JSON: oikeudet ja kiintiöt
+- [Julkiset hinnat](https://detai-x.com/api/piq/v2/pricing): JSON: tarjoukset, hinnat ja voimassaolo
+
+Tarkista hinnat, rajat ja ominaisuudet julkisista käytännöistä ja hinnoista: asOf, validUntil (hinnat) ja maksutapojen saatavuus. Jos API ei ole luettavissa, käytä virallista sivustoa; kerro, jos tietoa ei voi vahvistaa. Henkilökohtaiset oikeudet tarkistetaan sovelluksesta, lopulliset maksuehdot kassalta. Oppimistuote, ei psykoterapiaa, diagnostiikkaa tai lääketieteellistä hoitoa.
+
+## Oikeudelliset asiakirjat
+
+- [Käyttöehdot](https://detai-x.com/fi/technology/platform/psychology-in-quotes/terms): Osto- ja käyttöehdot
+- [Tietosuoja](https://detai-x.com/fi/technology/platform/psychology-in-quotes/privacy): Tietojen käyttö ja suoja
+
+## Optional
+
+- [Telegram](https://t.me/DET_psy_in_quotes_bot)
+- [ΨTunes](https://psitunes.detai-x.com/)
