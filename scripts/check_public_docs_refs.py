@@ -82,7 +82,7 @@ def main() -> int:
 
     errors = []
     checked = 0
-    for path in sorted(DOCS.rglob("*.md")):
+    for path in sorted([*DOCS.rglob("*.md"), *DOCS.rglob("llms.txt")]):
         checked += 1
         for number, reason in violations(path):
             errors.append(f"{path.relative_to(ROOT)}:{number}: {reason}")
@@ -96,7 +96,7 @@ def main() -> int:
         )
         return 1
 
-    print(f"Public documentation audit OK: {checked} Markdown files checked.")
+    print(f"Public documentation audit OK: {checked} Markdown/llms.txt files checked.")
     return 0
 
 

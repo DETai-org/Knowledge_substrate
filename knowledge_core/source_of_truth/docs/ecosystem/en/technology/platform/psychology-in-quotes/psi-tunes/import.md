@@ -11,7 +11,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 **Importing** creates a personal text edition from a document you are entitled to use. After extraction, check its title, author, language, chapter order and the beginning and end of the text.
 
-> **Availability:** this workflow belongs to the developing ΨTunes player. Supported formats and limits must be confirmed in the version available to you.
+> **Availability:** import and audio preparation are part of ΨTunes in Psychology in Quotes 2.0. Check the live application for supported formats, limits and entitlements.
 
 ## Files and checks
 

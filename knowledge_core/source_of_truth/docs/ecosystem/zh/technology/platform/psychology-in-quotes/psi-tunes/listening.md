@@ -11,7 +11,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/listening
 
 ΨTunes 将播放进度绑定到指定文本和音频版本。章节与传输音频片段的边界可能不同；正常切换时不应需要重新点击 Play。
 
-> **状态：**后台播放受到 Telegram、WebView、设备及网络环境的影响。本说明**不承诺永久离线播放**。
+> **状态：** ΨTunes 已随 PiQ 2.0 发布。后台播放受到 Telegram、WebView、设备及网络环境的影响；本说明**不承诺永久离线播放**。
 
 播放器的设计包括暂停、速度调整、跳转、章节目录和保存播放位置。**书签**可以一键保存时刻，无须填写评论；之后可返回书中位置，或创建附带来源的引文。
 

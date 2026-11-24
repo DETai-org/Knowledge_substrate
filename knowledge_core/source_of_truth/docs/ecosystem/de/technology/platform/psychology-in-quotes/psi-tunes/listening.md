@@ -11,7 +11,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/listening
 
 ΨTunes bindet die Wiedergabe an eine bestimmte Text- und Audiofassung. Kapitelgrenzen können von technischen Audiosegmenten abweichen; beim Übergang soll kein erneutes Play nötig sein.
 
-> **Status:** Wiedergabe im Hintergrund hängt von Telegram, WebView, Gerät und Netzwerk ab. Diese Beschreibung ist **keine Zusage dauerhafter Offline-Nutzung**.
+> **Status:** ΨTunes wurde mit PiQ 2.0 veröffentlicht. Wiedergabe im Hintergrund hängt von Telegram, WebView, Gerät und Netzwerk ab; dies ist **keine Zusage dauerhafter Offline-Nutzung**.
 
 Der Player ist für Pause, Tempo, Vor- und Zurückspringen, Kapitel und eine gespeicherte Hörposition ausgelegt. Ein **Lesezeichen** hält einen Moment ohne Kommentar fest. Daraus kann man zur Stelle zurückkehren oder ein Zitat mit Quellenbezug erstellen.
 

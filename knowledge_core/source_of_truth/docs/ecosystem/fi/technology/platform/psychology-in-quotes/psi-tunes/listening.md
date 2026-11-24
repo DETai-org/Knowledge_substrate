@@ -11,7 +11,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/listening
 
 ΨTunes liittää äänen tiettyyn tekstiversioon. Luvun ja teknisen äänisegmentin rajat voivat poiketa toisistaan; siirtymän ei pitäisi vaatia uutta Play-painallusta.
 
-> **Tila:** taustatoisto riippuu Telegramista, WebView'stä, laitteesta ja verkosta. Tämä **ei lupaa pysyvää offline-kuuntelua**.
+> **Tila:** ΨTunes julkaistiin PiQ 2.0:n mukana. Taustatoisto riippuu Telegramista, WebView'stä, laitteesta ja verkosta; tämä **ei lupaa pysyvää offline-kuuntelua**.
 
 Soittimessa tavoitellaan taukoa, nopeuden säätöä, siirtymistä, sisällysluetteloa ja kuuntelukohdan tallennusta. **Kirjanmerkki** tallentaa hetken yhdellä toimella ilman kommenttia. Sen avulla voi palata tekstiin tai luoda lähteeseen sidotun lainauksen.
 

@@ -11,7 +11,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 **导入**是将您有权使用的文档转成个人文本版本的过程。提取完成后，应检查书名、作者、语言、章节顺序及正文开头和结尾。
 
-> **可用性：** 此流程属于开发中的 ΨTunes。实际支持的格式、大小和权限限制以应用界面为准。
+> **可用性：** 导入及音频准备属于 Psychology in Quotes 2.0 的 ΨTunes 模块。支持的格式、大小和权限限制以应用界面为准。
 
 ## 文件格式
 

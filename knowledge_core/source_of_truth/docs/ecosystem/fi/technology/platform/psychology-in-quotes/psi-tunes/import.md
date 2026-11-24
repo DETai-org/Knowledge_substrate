@@ -11,7 +11,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 **Tuonnissa** käyttöoikeutesi piiriin kuuluvasta tiedostosta muodostetaan henkilökohtainen tekstiversio. Tarkista poiminnan jälkeen nimi, tekijä, kieli, lukujen järjestys sekä tekstin alku ja loppu.
 
-> **Saatavuus:** toiminto kuuluu kehitteillä olevaan ΨTunes-versioon. Sovellus näyttää käytettävissä olevat tiedostomuodot ja rajat.
+> **Saatavuus:** tuonti ja äänen valmistelu kuuluvat Psychology in Quotes 2.0:n ΨTunes-moduuliin. Sovellus näyttää käytettävissä olevat tiedostomuodot, rajat ja oikeudet.
 
 ## Tiedostomuodot
 

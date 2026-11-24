@@ -11,7 +11,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 Beim **Import** entsteht aus einem rechtmäßig genutzten Dokument eine persönliche Textfassung. Prüfe nach dem Auslesen Titel, Autor, Sprache, Kapitelreihenfolge sowie Anfang und Ende des Texts.
 
-> **Verfügbarkeit:** Dieser Ablauf gehört zur vorbereiteten ΨTunes-Version. Die tatsächlich unterstützten Formate und Grenzen zeigt die Anwendung.
+> **Verfügbarkeit:** Import und Audiovorbereitung gehören zu ΨTunes in Psychology in Quotes 2.0. Unterstützte Formate, Grenzen und Rechte zeigt die Anwendung.
 
 ## Formate
 

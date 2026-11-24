@@ -11,7 +11,7 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/podcasts/
 
 **Podcast** on oma aineistonsa, jolla on nimi, tekstiversio ja mahdollinen ääniversio. Jaksoja voidaan koota sarjaksi; jokaisella säilyy silti oma tunniste ja kuuntelukohta.
 
-> **Tila:** podcast-katalogi ja henkilökohtainen valmistelu ovat kehitteillä. Saatavuus, kiintiöt ja hinnat vahvistetaan sovelluksessa.
+> **Tila:** podcast-katalogi ja henkilökohtainen valmistelu kuuluvat ΨTunesiin. Tarkista saatavuus, kiintiöt ja hinnat sovelluksesta.
 
 **DETai-podcastit** ovat toimitettuja jaksoja. Sarjaan lisääminen ei julkaise jaksoa automaattisesti. **Henkilökohtainen podcast** alkaa tekstistä, jonka käyttämiseen käyttäjällä on oikeus. Tuonti ja äänen valmistelu ovat erillisiä toimia. Valmistelu maksetaan [PsyTok-yksiköillä](../../../../company-and-economy/psytok.md) soveltuvasta tilaukseen sisältyvästä erästä tai ostetusta saldosta. Henkilökohtaisen jakson raja on 15 000 merkkiä; kyse on tekstin pituudesta, ei kiinteästä määrästä ilmaisia jaksoja kuukaudessa. Käyttöoikeus ja hinta näytetään ennen tilausta.
 
