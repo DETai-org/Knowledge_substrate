@@ -7,6 +7,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 
 # ΨTunes — books and podcasts
 
+[Listen to a sample](listening.md#first-listen) · [Save and find a bookmark](listening.md#bookmark) · [Add your own text](import.md#add-material) · [DETai Account](../../detai-account/index.md).
+
 ΨTunes is the audiobook and podcast module of Psychology in Quotes, released in version 2.0. It connects reading, listening, bookmarks and source-linked quotations. Feature availability depends on the current plan, entitlements and live interface. [Psychology in Quotes](../index.md).
 
 > Public release 1.0 — 31 October 2026; 2.0 with ΨTunes — 24 November 2026 (Moscow time).

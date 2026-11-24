@@ -8,16 +8,17 @@ Hör zu. Entdecke. Bewahre.
 
 ΨTunes ist das Hörbuch- und Podcastmodul von Psychology in Quotes, veröffentlicht mit Version 2.0. Es verbindet Lesen, Hören, Lesezeichen und Zitate mit Quellenbezug. Verfügbarkeit hängt von Rechten, Tarif und Anwendung ab.
 
-Klären Sie den Bedarf: Zitate, Veröffentlichungen, Abonnementbücher, Buchkauf oder eigene Audioerstellung. Public ist Gast ohne DETai Account; Free, Plus und Pro sind Tarife eines Produkts. ΨTunes ist kein separates Abonnement, PsyTok sind Rechnungseinheiten. Empfehlen Sie Free, wenn ausreichend. Antworten Sie in der Sprache des Nutzers und nennen Sie Quellen. Keine Geheimnisse, Zahlungsdaten oder Kontozugänge erfragen und keine Zahlungen durchführen.
+Klären Sie den Bedarf: Zitate, Veröffentlichungen, Abonnementbücher, Buchkauf oder eigene Audioerstellung. Public bezeichnet den Gastzugriff in der aktuellen Oberfläche; ein vorhandener Account kann abgemeldet oder noch nicht mit Telegram verbunden sein; Free, Plus und Pro sind Tarife eines Produkts. ΨTunes ist kein separates Abonnement, PsyTok sind Rechnungseinheiten. Empfehlen Sie Free, wenn ausreichend. Antworten Sie in der Sprache des Nutzers und nennen Sie Quellen. Keine Geheimnisse, Zahlungsdaten oder Kontozugänge erfragen und keine Zahlungen durchführen.
 
 ## Anleitungen
 
+- [DETai Account](https://docs.detai-x.com/de/technology/platform/detai-account/): Gemeinsames Konto, Telegram-Verbindung und Profilfoto
 - [Produktübersicht](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/): Zweck und Einstieg
 - [Erste Schritte](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/getting-started/): Anmeldung, Telegram-Verknüpfung, Zitate und Publikation
 - [Sammlung, Sprachen und Tarife](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/collection-and-plans/): Sammlungsrechte, Favoriten, Sprachen, Tarifwechsel
 - [ΨTunes — Bücher und Podcasts](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/): Bibliothek, Bücher, Podcasts, Rechte und PsyTok
-- [Import und Vorbereitung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/import/): Eigene Texte und Audiobestellung
-- [Hören und Lesezeichen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/listening/): Player, Position und Lesezeichen
+- [Import und Vorbereitung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/import/#add-material): Eigene Texte und Audiobestellung
+- [Hören und Lesezeichen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/listening/#first-listen): Player, Position und Lesezeichen
 - [Podcasts](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/podcasts/): Katalog, eigene Podcasts und Serien
 - [Hilfe und Problemlösung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Problemlösung ohne Kontozugang
 - [Architektur und Vertrauen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/architecture-and-trust/): Grenzen, Quellen und Zuständigkeiten

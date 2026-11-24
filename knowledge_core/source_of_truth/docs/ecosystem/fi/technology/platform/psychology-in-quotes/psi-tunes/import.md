@@ -15,12 +15,15 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/import/
 
 ## Tiedostomuodot
 
+- **Markdown (MD):** tarkista otsikot, kappaleet ja osioiden järjestys.
 - **TXT:** tarkista merkistö, kappaleet ja otsikot.
 - **FB2 / FB2.ZIP:** tarkista lukurakenne; ZIP-paketissa saa olla yksi FB2-tiedosto.
 - **EPUB:** tarkista lukujärjestys ja lukujen rajat.
 - **Tekstimuotoinen PDF:** tarkista palstat, taulukot ja kappalejärjestys. Skannattu sivu tarvitsee ensin tekstintunnistuksen.
 
-## Vaiheet
+## Vaiheet {#add-material}
+
+**Lisää oma teksti:** Avaa **Oma kirjasto → Lisää aineisto**. Valitse kirja tai podcast ja tiedosto. Tarkista teksti, kieli ja nimi ennen vahvistamista. Äänen valmistelu tilataan erikseen. Jos toimintoa ei näy, tarkista kirjasto ja tilin yhteys.
 
 1. Valitse oman kirjaston tarjolla oleva tuontitapa laitteesta tai Telegram-botin kautta.
 2. Tarkista teksti, kansi, nimi, tekijä, kieli ja luvut.

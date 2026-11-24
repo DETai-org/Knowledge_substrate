@@ -8,16 +8,17 @@ Public release 1.0 — 31 October 2026; 2.0 with ΨTunes — 24 November 2026 (M
 
 ΨTunes is the audiobook and podcast module of Psychology in Quotes, released in version 2.0. It connects reading, listening, bookmarks and source-linked quotations. Feature availability depends on the current plan, entitlements and live interface.
 
-Identify the user's goal: quotes and publishing, subscription books, buying books or preparing personal audio. Public is a guest without a DETai Account; Free, Plus and Pro are plans of one product. ΨTunes is not a separate subscription; PsyTok are credits. Recommend Free when sufficient. Answer in the user's language and cite sources. Never request passwords, tokens, seed phrases, payment credentials or account access; do not pay on behalf of the user.
+Identify the user's goal: quotes and publishing, subscription books, buying books or preparing personal audio. Public is guest access in the current interface; the person may already have an account that is not signed in or linked to Telegram; Free, Plus and Pro are plans of one product. ΨTunes is not a separate subscription; PsyTok are credits. Recommend Free when sufficient. Answer in the user's language and cite sources. Never request passwords, tokens, seed phrases, payment credentials or account access; do not pay on behalf of the user.
 
 ## Guides
 
+- [DETai Account](https://docs.detai-x.com/en/technology/platform/detai-account/): Shared account, Telegram linking and profile photo
 - [Product overview](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/): Purpose, product structure and entry points
 - [Getting started](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/getting-started/): Account linking, creating and publishing quotes
 - [Collection, languages and plans](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/collection-and-plans/): Collection rights, favorites, acquisition, languages and plan changes
 - [ΨTunes — books and podcasts](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/): Library, books, podcasts, entitlements and PsyTok
-- [Import and preparation](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/import/): Uploading personal text and ordering audio
-- [Listening and bookmarks](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/listening/): Player, position, bookmarks and source-linked quotes
+- [Import and preparation](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/import/#add-material): Uploading personal text and ordering audio
+- [Listening and bookmarks](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/listening/#first-listen): Player, position, bookmarks and source-linked quotes
 - [Podcasts](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/podcasts/): Catalogue, personal podcasts and series
 - [Help and troubleshooting](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Troubleshoot by visible state without account access
 - [Architecture and trust](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/architecture-and-trust/): Boundaries, authoritative sources and responsibilities

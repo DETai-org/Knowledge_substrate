@@ -62,6 +62,8 @@ commerce, events, intake, notifications и platform contracts. Благодар�
 Общая идентичность пользователя DETai: учётная запись, профиль и связи
 с внешними аккаунтами и интерфейсами.
 
+Пользовательские настройки и подключение Telegram описаны в [справке DETai Account](../../technology/platform/detai-account/index.md).
+
 ### access — доступ
 
 Роли, разрешения и основания доступа к ресурсам и возможностям экосистемы.

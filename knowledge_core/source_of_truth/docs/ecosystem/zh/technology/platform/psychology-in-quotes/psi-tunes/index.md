@@ -7,6 +7,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 
 # ΨTunes — 图书与播客
 
+[试听图书或播客](listening.md#first-listen) · [添加和查找书签](listening.md#bookmark) · [添加自己的文本](import.md#add-material) · [DETai Account](../../detai-account/index.md).
+
 ΨTunes 是 Psychology in Quotes 随 2.0 版发布的有声书与播客模块，连接阅读、聆听、书签及可追溯来源的引文。具体功能以权限、套餐及实际界面为准。 [Psychology in Quotes](../index.md).
 
 > 1.0 版公开发布：2026 年 10 月 31 日；含 ΨTunes 的 2.0 版于 2026 年 11 月 24 日公开发布（莫斯科时间）。

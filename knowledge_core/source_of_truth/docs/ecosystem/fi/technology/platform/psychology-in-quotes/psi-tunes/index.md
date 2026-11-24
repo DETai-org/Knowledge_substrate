@@ -7,6 +7,8 @@ translation_of: /ru/technology/platform/psychology-in-quotes/psi-tunes/
 
 # ΨTunes — kirjat ja podcastit
 
+[Kuuntele näyte](listening.md#first-listen) · [Tallenna ja löydä kirjanmerkki](listening.md#bookmark) · [Lisää oma teksti](import.md#add-material) · [DETai Account](../../detai-account/index.md).
+
 ΨTunes on Psychology in Quotesin versiossa 2.0 julkaistu äänikirja- ja podcastmoduuli. Se yhdistää lukemisen, kuuntelun, kirjanmerkit ja lähteeseen sidotut sitaatit. Saatavuus riippuu oikeuksista, tilauksesta ja sovelluksesta. [Psychology in Quotes](../index.md).
 
 > Version 1.0 julkinen julkaisu — 31. lokakuuta 2026; 2.0 ja ΨTunes — 24. marraskuuta 2026 (Moskovan aikaa).

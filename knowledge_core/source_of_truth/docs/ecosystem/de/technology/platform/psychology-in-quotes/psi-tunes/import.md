@@ -15,12 +15,15 @@ Beim **Import** entsteht aus einem rechtmäßig genutzten Dokument eine persönl
 
 ## Formate
 
+- **Markdown (MD):** Überschriften, Absätze und Reihenfolge der Abschnitte prüfen.
 - **TXT:** Kodierung, Absätze und Überschriften prüfen.
 - **FB2 / FB2.ZIP:** Gliederung kontrollieren; das ZIP-Archiv darf nur eine FB2-Datei enthalten.
 - **EPUB:** Lesereihenfolge und Kapitel prüfen.
 - **PDF mit Textebene:** Spalten, Tabellen und Absätze nach dem Auslesen prüfen. Ein Scan ohne Textebene muss zuvor erkannt werden.
 
-## Ablauf
+## Ablauf {#add-material}
+
+**Einen eigenen Text hinzufügen:** Öffne **Meine Bibliothek → Material hinzufügen**. Wähle Buch oder Podcast und eine Datei. Prüfe Text, Sprache und Titel vor dem Bestätigen. Audio ist ein eigener Auftrag. Wenn die Aktion fehlt, prüfe Bibliothek und Kontoverbindung.
 
 1. Die verfügbare Importfunktion in der persönlichen Bibliothek wählen: vom Gerät oder über den Telegram-Bot.
 2. Textfassung, Metadaten und Kapitel prüfen und gegebenenfalls korrigieren.
