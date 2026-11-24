@@ -7,11 +7,11 @@ translation_of: /ru/technology/platform/psychology-in-quotes/
 
 # Psychology in Quotes – Psychologie in Zitaten
 
-**Höre. Entdecke. Bewahre.**
+**Hör zu. Entdecke. Bewahre.**
 
-Ein digitales Bildungs- und Wissensvermittlungsprodukt des DETai-Ökosystems für Menschen, die lesen, hören, nachdenken und wichtige Gedanken bewahren.
+Ein digitales Bildungs- und Wissensvermittlungsprodukt des DETai-Ökosystems für Menschen, die lesen, zuhören, nachdenken und wichtige Gedanken festhalten.
 
-**Psychology in Quotes (PiQ)** ist ein digitales Produkt für **Bildung und Wissensvermittlung** der [Platform DETai](../../index.md), die zum [DETai-Ökosystem](../../../ecosystem/index.md) gehört. Es ermöglicht, psychologische Gedanken kennenzulernen, wichtige Buchpassagen mitsamt Verfasser, Quelle und Kontext zu bewahren, Ideen anderer Menschen zu entdecken und eine eigene Wissenssammlung aufzubauen.
+PiQ verbindet Zitate und Veröffentlichungen mit [ΨTunes](psi-tunes/index.md): Lesen, Hören, Lesezeichen und Audiovorbereitung. Das Produkt gehört zu [Platform DETai](../index.md) und zum [DETai-Ökosystem](../../../ecosystem/index.md).
 
 **Öffentliche Veröffentlichung 1.0 — 31. Oktober 2026; 2.0 mit ΨTunes — 24. November 2026 (Moskauer Zeit).**
 

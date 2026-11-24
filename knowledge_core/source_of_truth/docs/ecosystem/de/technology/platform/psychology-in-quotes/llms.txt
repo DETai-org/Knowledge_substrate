@@ -1,8 +1,8 @@
 # Psychology in Quotes (PiQ)
 
-> Ein digitales Bildungs- und Wissensvermittlungsprodukt des DETai-Ökosystems für Menschen, die lesen, hören, nachdenken und wichtige Gedanken bewahren.
+> Ein digitales Bildungs- und Wissensvermittlungsprodukt des DETai-Ökosystems für Menschen, die lesen, zuhören, nachdenken und wichtige Gedanken festhalten.
 
-Höre. Entdecke. Bewahre.
+Hör zu. Entdecke. Bewahre.
 
 Öffentliche Veröffentlichung 1.0 — 31. Oktober 2026; 2.0 mit ΨTunes — 24. November 2026 (Moskauer Zeit).
 
@@ -12,29 +12,29 @@ Klären Sie den Bedarf: Zitate, Veröffentlichungen, Abonnementbücher, Buchkauf
 
 ## Anleitungen
 
-- [Produktübersicht](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/)
-- [Erste Schritte](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/getting-started/)
-- [Sammlung, Sprachen und Tarife](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/collection-and-plans/)
-- [ΨTunes — Bücher und Podcasts](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/)
-- [Import und Vorbereitung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/import/)
-- [Hören und Lesezeichen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/listening/)
-- [Podcasts](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/podcasts/)
-- [Hilfe und Problemlösung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/help-and-troubleshooting/)
-- [Architektur und Vertrauen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/architecture-and-trust/)
-- [PsyTok](https://docs.detai-x.com/de/company-and-economy/psytok/)
+- [Produktübersicht](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/): Zweck und Einstieg
+- [Erste Schritte](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/getting-started/): Anmeldung, Telegram-Verknüpfung, Zitate und Publikation
+- [Sammlung, Sprachen und Tarife](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/collection-and-plans/): Sammlungsrechte, Favoriten, Sprachen, Tarifwechsel
+- [ΨTunes — Bücher und Podcasts](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/): Bibliothek, Bücher, Podcasts, Rechte und PsyTok
+- [Import und Vorbereitung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/import/): Eigene Texte und Audiobestellung
+- [Hören und Lesezeichen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/listening/): Player, Position und Lesezeichen
+- [Podcasts](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/psi-tunes/podcasts/): Katalog, eigene Podcasts und Serien
+- [Hilfe und Problemlösung](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Problemlösung ohne Kontozugang
+- [Architektur und Vertrauen](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/architecture-and-trust/): Grenzen, Quellen und Zuständigkeiten
+- [PsyTok](https://docs.detai-x.com/de/company-and-economy/psytok/): Gemeinsames DETai-Guthaben
 
 ## Aktuelle Daten
 
-- [Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans)
-- [Öffentliche Produktregeln](https://detai-x.com/api/piq/v2/policy)
-- [Öffentliche Preise](https://detai-x.com/api/piq/v2/pricing)
+- [Tarifvergleich](https://detai-x.com/de/technology/platform/psychology-in-quotes#piq-plans): Vergleich Free / Plus / Pro
+- [Öffentliche Produktregeln](https://detai-x.com/api/piq/v2/policy): JSON: Rechte und Limits
+- [Öffentliche Preise](https://detai-x.com/api/piq/v2/pricing): JSON: Angebote, Preise und Gültigkeit
 
 Preise, Limits und Funktionen anhand öffentlicher Produktregeln und Preise prüfen: asOf, validUntil (Preise) und verfügbare Zahlungswege beachten. Falls API nicht lesbar, offizielle Website nutzen; unbestätigte Angaben benennen. Persönliche Rechte in der Anwendung, endgültige Zahlungsbedingungen in der Kasse prüfen. Bildungsprodukt, keine Psychotherapie, Diagnostik oder medizinische Versorgung.
 
 ## Rechtliche Dokumente
 
-- [Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms)
-- [Datenschutz](https://detai-x.com/de/technology/platform/psychology-in-quotes/privacy)
+- [Nutzungsbedingungen](https://detai-x.com/de/technology/platform/psychology-in-quotes/terms): Rechtliche Kaufbedingungen
+- [Datenschutz](https://detai-x.com/de/technology/platform/psychology-in-quotes/privacy): Datennutzung und Schutz
 
 ## Optional
 

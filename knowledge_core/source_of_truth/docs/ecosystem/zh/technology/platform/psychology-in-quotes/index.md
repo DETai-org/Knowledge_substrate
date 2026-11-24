@@ -7,11 +7,11 @@ translation_of: /ru/technology/platform/psychology-in-quotes/
 
 # Psychology in Quotes — 心理学语录
 
-**聆听。探索。收藏。**
+**聆听。发现。收藏。**
 
-DETai 生态系统的数字教育与知识普及产品，面向阅读、聆听、思考并保存重要思想的人。
+DETai 生态系统的数字教育与知识普及产品，面向阅读、聆听、思考和收藏重要思想的人。
 
-**Psychology in Quotes（PiQ）** 是 [Platform DETai](../../index.md) 旗下的数字化**教育与知识传播产品**，属于 [DETai 生态系统](../../../ecosystem/index.md)。它帮助人们接触心理学思想，连同作者、出处和上下文一起保存书籍中的重要片段，发现他人的观点，并建立自己的知识收藏。
+PiQ 将语录创建、收藏和发布与 [ΨTunes](psi-tunes/index.md) 的阅读、收听、书签和音频准备相结合。产品属于 [Platform DETai](../index.md) 和 [DETai 生态系统](../../../ecosystem/index.md)。
 
 **1.0 版公开发布：2026 年 10 月 31 日；含 ΨTunes 的 2.0 版于 2026 年 11 月 24 日公开发布（莫斯科时间）。**
 

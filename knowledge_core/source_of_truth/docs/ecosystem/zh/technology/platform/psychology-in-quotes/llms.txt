@@ -1,8 +1,8 @@
 # Psychology in Quotes (PiQ)
 
-> DETai 生态系统的数字教育与知识普及产品，面向阅读、聆听、思考并保存重要思想的人。
+> DETai 生态系统的数字教育与知识普及产品，面向阅读、聆听、思考和收藏重要思想的人。
 
-聆听。探索。收藏。
+聆听。发现。收藏。
 
 1.0 版公开发布：2026 年 10 月 31 日；含 ΨTunes 的 2.0 版于 2026 年 11 月 24 日公开发布（莫斯科时间）。
 
@@ -12,29 +12,29 @@
 
 ## 核心指南
 
-- [产品概览](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/)
-- [开始使用](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/getting-started/)
-- [收藏、语言与套餐](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/collection-and-plans/)
-- [ΨTunes — 图书与播客](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/)
-- [导入与准备](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/import/)
-- [收听与书签](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/listening/)
-- [播客](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/podcasts/)
-- [问题与故障排查](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/help-and-troubleshooting/)
-- [架构与信任](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/architecture-and-trust/)
-- [PsyTok](https://docs.detai-x.com/zh/company-and-economy/psytok/)
+- [产品概览](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/): 产品定位与使用入口
+- [开始使用](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/getting-started/): 账户关联、创建与发布语录
+- [收藏、语言与套餐](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/collection-and-plans/): 收藏权限、获取、语言和套餐变更
+- [ΨTunes — 图书与播客](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/): 书库、图书、播客、权限和 PsyTok
+- [导入与准备](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/import/): 导入个人文本及音频订单
+- [收听与书签](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/listening/): 播放器、进度、书签与来源
+- [播客](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/psi-tunes/podcasts/): 目录、个人播客及系列
+- [问题与故障排查](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/help-and-troubleshooting/): 无需账户访问权限的问题排查
+- [架构与信任](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/architecture-and-trust/): 边界、权威来源及责任
+- [PsyTok](https://docs.detai-x.com/zh/company-and-economy/psytok/): DETai 通用余额规则
 
 ## 实时数据
 
-- [套餐比较](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans)
-- [公开产品政策](https://detai-x.com/api/piq/v2/policy)
-- [公开价格](https://detai-x.com/api/piq/v2/pricing)
+- [套餐比较](https://detai-x.com/zh/technology/platform/psychology-in-quotes#piq-plans): Free / Plus / Pro 可视化比较
+- [公开产品政策](https://detai-x.com/api/piq/v2/policy): JSON：权限及额度
+- [公开价格](https://detai-x.com/api/piq/v2/pricing): JSON：报价、价格与有效期
 
 价格、额度和功能须核对公开政策与价格、asOf、validUntil（价格）和支付方式可用性。API 不可读时查看官方网站；无法验证则明确说明。个人权限在应用中核对，最终支付条款以结算为准。产品用于教育与知识普及，不提供心理治疗、诊断或医疗服务。
 
 ## 法律文件
 
-- [使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms)
-- [隐私政策](https://detai-x.com/zh/technology/platform/psychology-in-quotes/privacy)
+- [使用条款](https://detai-x.com/zh/technology/platform/psychology-in-quotes/terms): 法律及购买条款
+- [隐私政策](https://detai-x.com/zh/technology/platform/psychology-in-quotes/privacy): 数据使用与保护
 
 ## Optional
 

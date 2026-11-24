@@ -1,6 +1,6 @@
 # Psychology in Quotes (PiQ)
 
-> Цифровой образовательно-просветительский продукт экосистемы DETai для тех, кто читает, слушает, размышляет и сохраняет важные мысли.
+> Цифровой образовательно-просветительский продукт Экосистемы DETai для тех, кто читает, слушает, размышляет и сохраняет важные мысли.
 
 Слушай. Открывай. Сохраняй.
 
@@ -12,29 +12,29 @@
 
 ## Руководства
 
-- [Обзор продукта](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/)
-- [Начало работы](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/getting-started/)
-- [Коллекция, языки и тарифы](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/collection-and-plans/)
-- [ΨTunes — книги и подкасты](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/)
-- [Импорт и подготовка](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/import/)
-- [Прослушивание и закладки](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/listening/)
-- [Подкасты](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/podcasts/)
-- [Вопросы и решение проблем](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/help-and-troubleshooting/)
-- [Устройство и доверие](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/architecture-and-trust/)
-- [PsyTok](https://docs.detai-x.com/ru/company-and-economy/psytok/)
+- [Обзор продукта](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/): Назначение, структура продукта и вход
+- [Начало работы](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/getting-started/): Регистрация, связь с Telegram, создание и публикация цитат
+- [Коллекция, языки и тарифы](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/collection-and-plans/): Права, избранное, получение, языки и смена подписки
+- [ΨTunes — книги и подкасты](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/): Личная библиотека, книги, подкасты, права и PsyTok
+- [Импорт и подготовка](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/import/): Загрузка собственного текста и заказ аудио
+- [Прослушивание и закладки](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/listening/): Плеер, позиция, закладки и цитаты из фрагментов
+- [Подкасты](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/podcasts/): Каталог, личные подкасты и серии
+- [Вопросы и решение проблем](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Диагностика проблем по интерфейсу без доступа к аккаунту
+- [Устройство и доверие](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/architecture-and-trust/): Границы, источники и ответственность
+- [PsyTok](https://docs.detai-x.com/ru/company-and-economy/psytok/): Общие правила баланса DETai
 
 ## Актуальные данные
 
-- [Сравнение тарифов](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-plans)
-- [Публичная политика продукта](https://detai-x.com/api/piq/v2/policy)
-- [Публичные цены](https://detai-x.com/api/piq/v2/pricing)
+- [Сравнение тарифов](https://detai-x.com/ru/technology/platform/psychology-in-quotes#piq-plans): Сравнение Free / Plus / Pro для человека
+- [Публичная политика продукта](https://detai-x.com/api/piq/v2/policy): JSON с правами и квотами
+- [Публичные цены](https://detai-x.com/api/piq/v2/pricing): JSON с предложениями, сроком актуальности и ценами
 
 Для точных цен, квот и возможностей сверяйте публичную политику и цены, проверяя asOf, validUntil (цены) и доступность способа оплаты. Если API не читаются, используйте официальный сайт; если факт не подтверждён, сообщите об этом. Индивидуальные права проверяются в приложении, окончательные условия оплаты — в кассе. Продукт образовательный, не психотерапия, диагностика или медицинская помощь.
 
 ## Правовые документы
 
-- [Условия использования](https://detai-x.com/ru/technology/platform/psychology-in-quotes/terms)
-- [Конфиденциальность](https://detai-x.com/ru/technology/platform/psychology-in-quotes/privacy)
+- [Условия использования](https://detai-x.com/ru/technology/platform/psychology-in-quotes/terms): Юридические условия и правила покупки
+- [Конфиденциальность](https://detai-x.com/ru/technology/platform/psychology-in-quotes/privacy): Использование и защита данных
 
 ## Optional
 

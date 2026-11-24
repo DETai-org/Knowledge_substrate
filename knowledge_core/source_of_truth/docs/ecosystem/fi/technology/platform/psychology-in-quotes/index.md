@@ -9,9 +9,9 @@ translation_of: /ru/technology/platform/psychology-in-quotes/
 
 **Kuuntele. Löydä. Tallenna.**
 
-DETai-ekosysteemin digitaalinen oppimisen ja tiedon jakamisen tuote ihmisille, jotka lukevat, kuuntelevat, pohtivat ja tallentavat tärkeitä ajatuksia.
+DETai-ekosysteemin digitaalinen oppimisen ja tiedon jakamisen tuote niille, jotka lukevat, kuuntelevat, pohtivat ja tallentavat tärkeitä ajatuksia.
 
-**Psychology in Quotes (PiQ)** on [Platform DETain](../../index.md) digitaalinen **oppimista ja psykologisen tiedon jakamista tukeva tuote** osana [DETai-ekosysteemiä](../../../ecosystem/index.md). Sen avulla voi tutustua psykologisiin ajatuksiin, tallentaa merkityksellisiä kirjakatkelmia tekijä- ja lähdetietoineen, löytää muiden oivalluksia sekä rakentaa oman tietokokoelman.
+PiQ yhdistää sitaattien luomisen, keräämisen ja julkaisemisen [ΨTunesiin](psi-tunes/index.md): lukemiseen, kuunteluun, kirjanmerkkeihin ja äänen valmisteluun. Tuote kuuluu [Platform DETaihin](../index.md) ja [DETai-ekosysteemiin](../../../ecosystem/index.md).
 
 **Version 1.0 julkinen julkaisu — 31. lokakuuta 2026; 2.0 ja ΨTunes — 24. marraskuuta 2026 (Moskovan aikaa).**
 

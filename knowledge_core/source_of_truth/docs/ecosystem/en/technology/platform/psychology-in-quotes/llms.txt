@@ -12,29 +12,29 @@ Identify the user's goal: quotes and publishing, subscription books, buying book
 
 ## Guides
 
-- [Product overview](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/)
-- [Getting started](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/getting-started/)
-- [Collection, languages and plans](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/collection-and-plans/)
-- [ΨTunes — books and podcasts](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/)
-- [Import and preparation](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/import/)
-- [Listening and bookmarks](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/listening/)
-- [Podcasts](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/podcasts/)
-- [Help and troubleshooting](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/help-and-troubleshooting/)
-- [Architecture and trust](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/architecture-and-trust/)
-- [PsyTok](https://docs.detai-x.com/en/company-and-economy/psytok/)
+- [Product overview](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/): Purpose, product structure and entry points
+- [Getting started](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/getting-started/): Account linking, creating and publishing quotes
+- [Collection, languages and plans](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/collection-and-plans/): Collection rights, favorites, acquisition, languages and plan changes
+- [ΨTunes — books and podcasts](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/): Library, books, podcasts, entitlements and PsyTok
+- [Import and preparation](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/import/): Uploading personal text and ordering audio
+- [Listening and bookmarks](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/listening/): Player, position, bookmarks and source-linked quotes
+- [Podcasts](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/psi-tunes/podcasts/): Catalogue, personal podcasts and series
+- [Help and troubleshooting](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/help-and-troubleshooting/): Troubleshoot by visible state without account access
+- [Architecture and trust](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/architecture-and-trust/): Boundaries, authoritative sources and responsibilities
+- [PsyTok](https://docs.detai-x.com/en/company-and-economy/psytok/): Shared DETai balance rules
 
 ## Current data
 
-- [Plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans)
-- [Public product policy](https://detai-x.com/api/piq/v2/policy)
-- [Public pricing](https://detai-x.com/api/piq/v2/pricing)
+- [Plan comparison](https://detai-x.com/en/technology/platform/psychology-in-quotes#piq-plans): Human-readable Free / Plus / Pro comparison
+- [Public product policy](https://detai-x.com/api/piq/v2/policy): JSON: entitlements and quotas
+- [Public pricing](https://detai-x.com/api/piq/v2/pricing): JSON: offers, price and validity
 
 Read public policy and pricing for current prices, quotas and features; check asOf, validUntil (pricing) and payment method availability. If APIs are unreadable, use the official site; state when facts cannot be verified. Individual rights are checked in the application, final payment terms in checkout. Educational product, not psychotherapy, diagnosis or medical care.
 
 ## Legal documents
 
-- [Terms of use](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms)
-- [Privacy policy](https://detai-x.com/en/technology/platform/psychology-in-quotes/privacy)
+- [Terms of use](https://detai-x.com/en/technology/platform/psychology-in-quotes/terms): Legal and purchase terms
+- [Privacy policy](https://detai-x.com/en/technology/platform/psychology-in-quotes/privacy): Use and protection of data
 
 ## Optional
 
