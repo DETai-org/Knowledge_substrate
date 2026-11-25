@@ -25,3 +25,25 @@ Die Anmeldung auf der Website und das Öffnen von Hub allein verbinden Telegram 
 ## Profilfoto ändern {#profile-photo}
 
 Öffne dein [DETai-Profil](https://detai-x.com/de/account/profile). Lade im Bereich für das Profilfoto ein Bild hoch oder ersetze es, passe den Ausschnitt an und speichere es. Das Bild gehört zum DETai Account und ist vom Telegram-Profilfoto getrennt. Verbundene Dienste können es als DETai-Avatar anzeigen. Die öffentliche Sichtbarkeit des Fotos wird separat eingestellt.
+
+## Konto selbst löschen {#delete-account}
+
+!!! info "Geplant"
+    Die selbstständige Kontolöschung wird vorbereitet. Dieser Abschnitt
+    beschreibt die geplanten Grenzen, noch keine verfügbare Funktion.
+
+Die Löschung wird eine gesonderte Bestätigung im Kontobereich erfordern.
+Abgeschlossen ist sie erst, wenn die persönlichen Kontodaten bereinigt und
+aktive Zugänge widerrufen sind. Ein Löschantrag allein ist noch kein Abschluss.
+
+Eine gespeicherte Verbindung zu Team OS wird die selbstständige Löschung
+blockieren, auch bei einer früheren Teammitgliedschaft oder einem persönlichen
+Arbeitsbereich. Das Ende der Mitgliedschaft löscht diese Daten nicht.
+Siehe [Team-OS-Regeln (Russisch)](/ru/management-layer/team-os/access/#account-deletion).
+Verbundene Produkte prüfen außerdem offene Vorgänge und aufbewahrte Daten.
+Ist eine erforderliche Prüfung nicht möglich, gilt die Löschung nicht als
+abgeschlossen.
+
+Arbeits- und Zahlungshistorie sowie bereits zugestellte Nachrichten können
+erhalten bleiben. Die Löschung des gemeinsamen Kontos verspricht nicht, die
+gesamte Produkthistorie oder vorhandene Telegram-Kopien zu entfernen.

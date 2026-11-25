@@ -25,3 +25,23 @@ Verkkosivulle kirjautuminen tai Hubin avaaminen ei yksin yhdistä Telegramia. Ta
 ## Vaihda profiilikuva {#profile-photo}
 
 Avaa [DETai-profiilisi](https://detai-x.com/fi/account/profile). Lataa tai vaihda profiilikuva, rajaa se ja tallenna. Kuva kuuluu DETai-tiliin eikä ole Telegramin profiilikuva. Yhdistetyt palvelut voivat näyttää sen DETai-profiilikuvana. Kuvan julkinen näkyvyys määritetään erikseen.
+
+## Tilin poistaminen itse {#delete-account}
+
+!!! info "Suunnitteilla"
+    Tilin omatoimista poistamista valmistellaan. Tämä osio kuvaa suunniteltuja
+    rajoja, ei vielä käytettävissä olevaa toimintoa.
+
+Poistaminen edellyttää erillistä vahvistusta tilisivulla. Poisto on valmis vasta,
+kun yhteisen tilin henkilötiedot on poistettu ja aktiiviset käyttöoikeudet
+peruttu. Pelkkä poistopyyntö ei tarkoita valmistumista.
+
+Säilynyt yhteys Team OS:ään estää omatoimisen poistamisen myös entisen jäsenen
+tai henkilökohtaisen työtilin kohdalla. Tiimijäsenyyden päättyminen ei poista
+näitä tietoja. Katso [Team OS:n säännöt (venäjäksi)](/ru/management-layer/team-os/access/#account-deletion).
+Yhdistetyt tuotteet tarkistavat myös keskeneräiset toiminnot ja säilytettävät
+tiedot. Jos vaadittua tarkistusta ei voida tehdä, poistoa ei ilmoiteta valmiiksi.
+
+Työ- ja maksuhistoria sekä jo toimitetut viestit voivat säilyä. Yhteisen tilin
+poistaminen ei tarkoita koko tuotehistorian tai Telegramiin jo toimitettujen
+kopioiden poistamista.

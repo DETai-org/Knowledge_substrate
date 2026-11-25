@@ -25,3 +25,23 @@ Signing in on the website or opening the Hub does not link Telegram. If the conn
 ## Change your profile photo {#profile-photo}
 
 Open your [DETai profile](https://detai-x.com/en/account/profile), find the profile photo, upload or replace it, adjust the crop, and save. This photo belongs to your DETai Account, not your Telegram profile. Connected interfaces that display a DETai avatar may use it. Check the separate photo visibility setting before making your profile public.
+
+## Delete your account {#delete-account}
+
+!!! info "Planned"
+    Self-service account deletion is being prepared. This section describes
+    its planned boundaries, not an available command.
+
+Deletion will require a separate confirmation in your account area. A completed
+result means that personal account data has been cleared and active access
+revoked; submitting a request is not completion.
+
+Any retained link to Team OS will block self-service deletion, including a
+former team membership or a personal workspace account. Ending team membership
+does not erase these records. See the [Team OS rules (Russian)](/ru/management-layer/team-os/access/#account-deletion).
+Connected products also check their pending operations and retained data.
+Deletion is not reported as complete when a required check is unavailable.
+
+Work and payment history and messages already delivered may remain. Deleting
+the shared account does not promise to erase all connected product history or
+existing Telegram copies.
