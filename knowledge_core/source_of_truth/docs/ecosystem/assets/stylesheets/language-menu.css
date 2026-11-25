@@ -46,7 +46,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 44.9375em) {
+@media (max-width: 47.999em), (max-width: 76.234375em) and (pointer: coarse) {
   .detai-language-menu {
     margin-left: auto;
   }

@@ -9,10 +9,13 @@
     <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
       {% include "partials/logo.html" %}
     </a>
+    {% set menu_icon = ".icons/" ~ (config.theme.icon.menu or "material/menu") ~ ".svg" %}
     <label class="md-header__button md-icon" for="__drawer">
-      {% set icon = config.theme.icon.menu or "material/menu" %}
-      {% include ".icons/" ~ icon ~ ".svg" %}
+      {% include menu_icon %}
     </label>
+    <button type="button" class="md-header__button md-icon detai-nav-toggle" aria-label="{{ lang.t('nav') }}" aria-controls="detai-navigation" aria-expanded="false">
+      {% include menu_icon %}
+    </button>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic"><span class="md-ellipsis">{{ config.site_name }}</span></div>
