@@ -1,7 +1,10 @@
 (function () {
   var storageKey = "detai:knowledge-substrate:sidebar-width:v1";
+  // Keep the dock on desktops, including smaller windows with a mouse or trackpad.
+  var dockedViewport = window.matchMedia("(min-width: 76.25em), (min-width: 48em) and (pointer: fine)");
   var desiredWidth = 260;
   var currentGrid;
+  var rootTitle;
   var split;
   var gutter;
   var resizeFrame;
@@ -62,18 +65,33 @@
     updateAria();
   }
 
+  function undock() {
+    if (!currentGrid) return;
+    if (split) {
+      split.destroy();
+      split = null;
+    }
+    currentGrid.style.removeProperty("grid-template-columns");
+    gutter.remove();
+    if (rootTitle) rootTitle.setAttribute("for", "__drawer");
+    currentGrid = null;
+    document.documentElement.classList.remove("detai-docked-nav", "detai-nav-resizing");
+  }
+
   function bind() {
     var sidebar = document.querySelector(".md-sidebar--primary");
     var grid = sidebar && sidebar.parentElement;
-    if (!sidebar || sidebar.hidden) {
-      document.documentElement.classList.remove("detai-docked-nav");
+    if (!dockedViewport.matches || !sidebar || sidebar.hidden) {
+      undock();
       return;
     }
     if (grid === currentGrid) return;
-    if (split) split.destroy(true);
+    undock();
+    var drawer = document.getElementById("__drawer");
+    if (drawer && drawer.checked) drawer.click();
     currentGrid = grid;
     document.documentElement.classList.add("detai-docked-nav");
-    var rootTitle = sidebar.querySelector(".md-nav--primary > .md-nav__title");
+    rootTitle = sidebar.querySelector('.md-nav--primary > .md-nav__title[for="__drawer"]');
     if (rootTitle) rootTitle.removeAttribute("for");
     gutter = document.createElement("div");
     gutter.className = "detai-nav-gutter";
@@ -103,6 +121,8 @@
     window.cancelAnimationFrame(resizeFrame);
     resizeFrame = window.requestAnimationFrame(layout);
   });
+
+  dockedViewport.addEventListener("change", bind);
 
   if (window.document$ && typeof window.document$.subscribe === "function") {
     window.document$.subscribe(function () { window.requestAnimationFrame(bind); });

@@ -50,4 +50,19 @@
   .detai-language-menu {
     margin-left: auto;
   }
+
+  .detai-language-menu .md-select__inner {
+    left: auto;
+    right: 0;
+    transform: translateY(0.3rem);
+  }
+
+  .detai-language-menu .md-select__inner::after {
+    left: calc(100% - 1.275rem);
+  }
+
+  .detai-language-menu .md-select:focus-within .md-select__inner,
+  .detai-language-menu .md-select:hover .md-select__inner {
+    transform: translateY(0);
+  }
 }
