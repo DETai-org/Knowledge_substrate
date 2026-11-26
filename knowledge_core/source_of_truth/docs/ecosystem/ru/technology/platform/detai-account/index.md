@@ -42,7 +42,7 @@ Account — общий пользовательский сервис [Platform D
 
 ## Разделы Account
 
-Справка сгруппирована по смыслу. Это не обещает отдельных одноимённых экранов в каждом интерфейсе.
+Разделы справки описывают возможности Account; названия и состав экранов зависят от интерфейса.
 
 | Раздел справки | Что здесь объясняется | Где искать на сайте |
 | --- | --- | --- |
@@ -77,6 +77,6 @@ Account — общий пользовательский сервис [Platform D
 
 [Ecosystem Runtime](../../../infrastructure/ecosystem-runtime/index.md) поддерживает общие серверные правила и связи. Профиль, способы входа, разрешения приложениям и привязки кошельков принадлежат Identity. Коммерческие факты и PsyTok — Commerce Core; достижения и подарочный реестр — Gamification. Продукт применяет собственные возможности, права и ограничения. Сайт и Hub отображают эти сведения и передают действия пользователя владельцу данных.
 
-Для разработки: [навигация Runtime](https://github.com/DETai-org/ecosystem-runtime/blob/main/docs/README.md), [карта Account и его интерфейсов](https://github.com/DETai-org/ecosystem-runtime/blob/main/docs/identity/account-projections.md) и [реализация DETai Hub](https://github.com/DETai-org/ecosystem-runtime/blob/main/apps/public-bot/README.md) и [кабинет в Sites](https://github.com/DETai-org/sites/blob/main/detai-site/features/account/README.md). Доступ к техническим репозиториям определяется правами GitHub.
+Техническая карта Account, общие контракты и реализация DETai Hub сопровождаются в Runtime (`repository github: DETai-org/ecosystem-runtime`). Веб-кабинет и его интеграции описаны в Sites (`repository github: DETai-org/sites`).
 
 Для AI-ассистентов: [текстовый навигатор Account](llms.txt). Начните с нужного раздела, уточните интерфейс и цель человека; личное состояние Account проверяется только в его собственном интерфейсе.

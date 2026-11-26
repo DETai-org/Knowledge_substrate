@@ -69,4 +69,4 @@ DETai username и Telegram username принадлежат разным сист
 
 [Безопасность и вход](security.md) · [Подарки и адресный получатель](gifts-and-achievements.md) · [Подключённые приложения](connected-apps.md)
 
-Владелец общих данных профиля — Identity в [Ecosystem Runtime](../../../infrastructure/ecosystem-runtime/index.md#identity-учётные-записи). Техническая модель профиля описана в [документации схемы Identity](https://github.com/DETai-org/ecosystem-runtime/blob/main/docs/identity/README.md).
+Владелец общих данных профиля — Identity в [Ecosystem Runtime](../../../infrastructure/ecosystem-runtime/index.md#identity-учётные-записи). Техническая модель профиля сопровождается в документации этого компонента (`repository github: DETai-org/ecosystem-runtime`).

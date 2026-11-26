@@ -63,4 +63,4 @@ description: "Коммерческие операции Account, PsyTok, сох�
 
 Отправленный перевод, подтверждённый платёж и применённое право продукта могут отображаться в разные моменты. Ориентируйтесь на состояние заказа и результата в продукте. При неясном результате сначала проверьте существующий заказ или обратитесь в поддержку; новый перевод не должен служить способом проверить предыдущий.
 
-Технически привязками кошельков управляет Identity, а платёжными фактами и PsyTok — Commerce. [Устройство Runtime](../../../infrastructure/ecosystem-runtime/index.md) объясняет эту границу; [контракты Commerce](https://github.com/DETai-org/ecosystem-runtime/blob/main/docs/commerce/README.md) предназначены разработчикам.
+Технически привязками кошельков управляет Identity, а платёжными фактами и PsyTok — Commerce. [Устройство Runtime](../../../infrastructure/ecosystem-runtime/index.md) объясняет эту границу. Подробные контракты Commerce сопровождаются в Runtime (`repository github: DETai-org/ecosystem-runtime`).
