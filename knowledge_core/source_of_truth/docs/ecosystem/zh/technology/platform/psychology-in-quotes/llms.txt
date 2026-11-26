@@ -12,7 +12,8 @@
 
 ## 核心指南
 
-- [DETai Account](https://docs.detai-x.com/zh/technology/platform/detai-account/): 统一账号、Telegram 绑定和头像
+- [DETai Account](https://docs.detai-x.com/zh/technology/platform/detai-account/): 个人资料、安全、产品、支付、礼物与已连接应用
+- [Account 统一导航（俄语原版；请使用用户的语言回答）](https://docs.detai-x.com/ru/technology/platform/detai-account/llms.txt)
 - [产品概览](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/): 产品定位与使用入口
 - [开始使用](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/getting-started/): 账户关联、创建与发布语录
 - [收藏、语言与套餐](https://docs.detai-x.com/zh/technology/platform/psychology-in-quotes/collection-and-plans/): 收藏权限、获取、语言和套餐变更

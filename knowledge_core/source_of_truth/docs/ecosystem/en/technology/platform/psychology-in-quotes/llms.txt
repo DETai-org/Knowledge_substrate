@@ -12,7 +12,8 @@ Identify the user's goal: quotes and publishing, subscription books, buying book
 
 ## Guides
 
-- [DETai Account](https://docs.detai-x.com/en/technology/platform/detai-account/): Shared account, Telegram linking and profile photo
+- [DETai Account](https://docs.detai-x.com/en/technology/platform/detai-account/): Profile, security, products, payments, gifts and connected apps
+- [Canonical Account navigation (Russian; answer in the user’s language)](https://docs.detai-x.com/ru/technology/platform/detai-account/llms.txt)
 - [Product overview](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/): Purpose, product structure and entry points
 - [Getting started](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/getting-started/): Account linking, creating and publishing quotes
 - [Collection, languages and plans](https://docs.detai-x.com/en/technology/platform/psychology-in-quotes/collection-and-plans/): Collection rights, favorites, acquisition, languages and plan changes

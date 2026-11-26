@@ -12,7 +12,8 @@
 
 ## Руководства
 
-- [DETai Account](https://docs.detai-x.com/ru/technology/platform/detai-account/): Общая учётная запись, подключение Telegram и фото профиля
+- [DETai Account](https://docs.detai-x.com/ru/technology/platform/detai-account/): Профиль, безопасность, продукты, оплата, подарки и подключённые приложения
+- [Единая навигация DETai Account для AI-ассистентов](https://docs.detai-x.com/ru/technology/platform/detai-account/llms.txt)
 - [Обзор продукта](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/): Назначение, структура продукта и вход
 - [Начало работы](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/getting-started/): Регистрация, связь с Telegram, создание и публикация цитат
 - [Коллекция, языки и тарифы](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/collection-and-plans/): Права, избранное, получение, языки и смена подписки
@@ -26,8 +27,8 @@
 
 По скриншоту сначала определите экран (PiQ, сайт, ΨTunes или Hub) и цель. Назовите видимую кнопку и дайте ссылку на маршрут. Если экран, аккаунт или доступ неясны, не угадывайте.
 - [Сохранить и найти закладку](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/psi-tunes/listening/#bookmark)
-- [Подключить Telegram к существующему аккаунту](https://docs.detai-x.com/ru/technology/platform/detai-account/#connect-telegram)
-- [Изменить фото DETai Account](https://docs.detai-x.com/ru/technology/platform/detai-account/#profile-photo)
+- [Подключить Telegram к существующему аккаунту](https://docs.detai-x.com/ru/technology/platform/detai-account/profile/#connect-telegram)
+- [Изменить фото DETai Account](https://docs.detai-x.com/ru/technology/platform/detai-account/profile/#profile-photo)
 - [Что сохранится после привязки Telegram](https://docs.detai-x.com/ru/technology/platform/psychology-in-quotes/getting-started/#guest-transfer)
 
 ## Актуальные данные

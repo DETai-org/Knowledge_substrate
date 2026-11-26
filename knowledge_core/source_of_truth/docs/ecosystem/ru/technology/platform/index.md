@@ -7,10 +7,10 @@ classification:
   function: index
 descriptive:
   id: detai-platform-detai-index
-  version: v12
+  version: v13
   status: active
   date_ymd: 2026-11-01
-  date_update: 2026-11-18
+  date_update: 2026-11-27
 links:
   external_links:
     - type: "MkDocs_ru"
@@ -44,7 +44,7 @@ Platform DETai должна:
 - удерживать происхождение и версии компонентов;
 - создавать или усиливать один или несколько из пяти [ресурсов экосистемы](../../management-layer/ecosystem-resources.md).
 
-[DETai Account](detai-account/index.md) — общий пользовательский сервис платформы: одна учётная запись для сайта и подключённых продуктов, доступ к ней также есть через DETai Hub.
+[DETai Account](detai-account/index.md) — общий пользовательский сервис платформы: единая учётная запись связывает профиль, способы входа, продукты, коммерческие операции, подарки и достижения. Кабинет на сайте и DETai Hub в Telegram представляют разные части одного Account. Раздел справки объясняет эти связи, а [каталог продуктов](../../brand-and-communications/product-market/product-catalog.md) показывает самостоятельные предложения. Общие серверные правила поддерживает [Ecosystem Runtime](../../infrastructure/ecosystem-runtime/index.md); продукт сохраняет собственные возможности и права.
 
 ## Два технологических контура
 
