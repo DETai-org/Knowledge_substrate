@@ -12,7 +12,8 @@ Klären Sie den Bedarf: Zitate, Veröffentlichungen, Abonnementbücher, Buchkauf
 
 ## Anleitungen
 
-- [DETai Account](https://docs.detai-x.com/de/technology/platform/detai-account/): Gemeinsames Konto, Telegram-Verbindung und Profilfoto
+- [DETai Account](https://docs.detai-x.com/de/technology/platform/detai-account/): Profil, Sicherheit, Produkte, Zahlungen, Geschenke und verbundene Apps
+- [Zentrale Account-Navigation (russische Originalfassung; in der Sprache der Person antworten)](https://docs.detai-x.com/ru/technology/platform/detai-account/llms.txt)
 - [Produktübersicht](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/): Zweck und Einstieg
 - [Erste Schritte](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/getting-started/): Anmeldung, Telegram-Verknüpfung, Zitate und Publikation
 - [Sammlung, Sprachen und Tarife](https://docs.detai-x.com/de/technology/platform/psychology-in-quotes/collection-and-plans/): Sammlungsrechte, Favoriten, Sprachen, Tarifwechsel

@@ -1,12 +1,14 @@
 ---
 title: "DETai Account"
 translation_of: /ru/technology/platform/detai-account/
-description: "DETai Account: sign-in, Telegram and profile photo"
+description: "DETai Account: profile, security, products, payments, gifts and connected apps"
 ---
 
 # DETai Account
 
-DETai Account is one account across the DETai ecosystem. The website account area and DETai Hub on Telegram are two ways to use it. A PiQ subscription changes product access; it does not create a separate ΨTunes account.
+DETai Account is a shared account across the DETai ecosystem. The website account area and DETai Hub on Telegram are two interfaces to the same account. It connects your profile with the products you use, their subscriptions, gifts and achievements; each product keeps its own access rules.
+
+The complete [Account guide (Russian canonical version)](/ru/technology/platform/detai-account/) covers profile, security, products and subscriptions, payments and wallets, gifts and achievements, and connected apps. The [Platform DETai overview](/ru/technology/platform/) and [product catalog](/ru/brand-and-communications/product-market/product-catalog/) explain how these services relate. A new product does not require a separate copy of your shared identity.
 
 [Open your DETai account](https://detai-x.com/en/account) · [Open DETai Hub](https://t.me/detai_hub_bot)
 
@@ -28,20 +30,8 @@ Open your [DETai profile](https://detai-x.com/en/account/profile), find the prof
 
 ## Delete your account {#delete-account}
 
-!!! info "Planned"
-    Self-service account deletion is being prepared. This section describes
-    its planned boundaries, not an available command.
+Open **Security** in your account area and choose account deletion. The system first checks whether deletion is available and shows any blocking obligations. Confirmation requires your exact DETai username, your current password if you have one, and acknowledgement of losing access to purchases, subscriptions and remaining PsyTok. An account without a password may require a recent provider sign-in.
 
-Deletion will require a separate confirmation in your account area. A completed
-result means that personal account data has been cleared and active access
-revoked; submitting a request is not completion.
+A submitted request and a completed deletion are different states. Follow the result shown by the interface. Any retained link to Team OS blocks self-service deletion, including a former team membership or a personal workspace account; [Team OS rules (Russian)](/ru/management-layer/team-os/access/#account-deletion). Connected products also check their pending operations and retained data.
 
-Any retained link to Team OS will block self-service deletion, including a
-former team membership or a personal workspace account. Ending team membership
-does not erase these records. See the [Team OS rules (Russian)](/ru/management-layer/team-os/access/#account-deletion).
-Connected products also check their pending operations and retained data.
-Deletion is not reported as complete when a required check is unavailable.
-
-Work and payment history and messages already delivered may remain. Deleting
-the shared account does not promise to erase all connected product history or
-existing Telegram copies.
+Deletion is not a refund. Financial and work history, product materials and messages already delivered may remain. See the [full deletion guide (Russian)](/ru/technology/platform/detai-account/security/#delete-account).

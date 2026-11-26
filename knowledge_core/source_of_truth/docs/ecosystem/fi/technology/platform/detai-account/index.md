@@ -1,12 +1,14 @@
 ---
 title: "DETai Account"
 translation_of: /ru/technology/platform/detai-account/
-description: "DETai Account: kirjautuminen, Telegram ja profiilikuva"
+description: "DETai Account: profiili, turvallisuus, tuotteet, maksut, lahjat ja yhdistetyt sovellukset"
 ---
 
 # DETai Account
 
-DETai Account on DETai-ekosysteemin yhteinen tili. Verkkosivun tilisivu ja Telegramin DETai Hub avaavat saman tilin. PiQ-tilaus määrittää tuotteen käyttöoikeuksia; ΨTunes ei tarvitse erillistä tiliä.
+DETai Account on DETai-ekosysteemin yhteinen tili. Verkkosivun tilisivu ja Telegramin DETai Hub ovat saman tilin kaksi käyttöliittymää. Tili yhdistää profiilisi käyttämiisi tuotteisiin, niiden tilauksiin, lahjoihin ja saavutuksiin; jokaisella tuotteella on omat käyttöoikeussääntönsä.
+
+Täydellinen [Account-opas (venäjänkielinen alkuperäisversio)](/ru/technology/platform/detai-account/) käsittelee profiilia, turvallisuutta, tuotteita ja tilauksia, maksuja ja lompakoita, lahjoja ja saavutuksia sekä yhdistettyjä sovelluksia. [Platform DETain yleiskuva](/ru/technology/platform/) ja [tuoteluettelo](/ru/brand-and-communications/product-market/product-catalog/) selittävät kokonaisuuden. Uuden tuotteen käyttö ei edellytä toista kopiota yhteisestä henkilöllisyydestäsi.
 
 [Avaa DETai-tilisi](https://detai-x.com/fi/account) · [Avaa DETai Hub](https://t.me/detai_hub_bot)
 
@@ -28,20 +30,8 @@ Avaa [DETai-profiilisi](https://detai-x.com/fi/account/profile). Lataa tai vaihd
 
 ## Tilin poistaminen itse {#delete-account}
 
-!!! info "Suunnitteilla"
-    Tilin omatoimista poistamista valmistellaan. Tämä osio kuvaa suunniteltuja
-    rajoja, ei vielä käytettävissä olevaa toimintoa.
+Avaa tilisivun **Turvallisuus**-osio ja valitse tilin poistaminen. Järjestelmä tarkistaa ensin, onko poisto mahdollinen, ja näyttää sen estävät velvoitteet. Vahvistus edellyttää täsmällistä DETai-käyttäjänimeäsi, nykyistä salasanaasi, jos sellainen on, sekä sen hyväksymistä, että menetät pääsyn ostoksiin, tilauksiin ja jäljellä oleviin PsyTokeihin. Tili ilman salasanaa voi edellyttää uutta kirjautumista tunnistuspalvelun kautta.
 
-Poistaminen edellyttää erillistä vahvistusta tilisivulla. Poisto on valmis vasta,
-kun yhteisen tilin henkilötiedot on poistettu ja aktiiviset käyttöoikeudet
-peruttu. Pelkkä poistopyyntö ei tarkoita valmistumista.
+Hyväksytty pyyntö ja valmis poisto ovat eri tiloja. Seuraa käyttöliittymän näyttämää tulosta. Säilynyt yhteys Team OS:ään estää omatoimisen poistamisen myös entisen jäsenen tai henkilökohtaisen työtilin kohdalla; katso [Team OS:n säännöt (venäjäksi)](/ru/management-layer/team-os/access/#account-deletion). Yhdistetyt tuotteet tarkistavat myös keskeneräiset toiminnot ja säilytettävät tiedot.
 
-Säilynyt yhteys Team OS:ään estää omatoimisen poistamisen myös entisen jäsenen
-tai henkilökohtaisen työtilin kohdalla. Tiimijäsenyyden päättyminen ei poista
-näitä tietoja. Katso [Team OS:n säännöt (venäjäksi)](/ru/management-layer/team-os/access/#account-deletion).
-Yhdistetyt tuotteet tarkistavat myös keskeneräiset toiminnot ja säilytettävät
-tiedot. Jos vaadittua tarkistusta ei voida tehdä, poistoa ei ilmoiteta valmiiksi.
-
-Työ- ja maksuhistoria sekä jo toimitetut viestit voivat säilyä. Yhteisen tilin
-poistaminen ei tarkoita koko tuotehistorian tai Telegramiin jo toimitettujen
-kopioiden poistamista.
+Tilin poisto ei ole maksun palautus. Maksu- ja työhistoria, tuotteiden materiaalit ja jo toimitetut viestit voivat säilyä. Katso [täydellinen poisto-ohje (venäjäksi)](/ru/technology/platform/detai-account/security/#delete-account).

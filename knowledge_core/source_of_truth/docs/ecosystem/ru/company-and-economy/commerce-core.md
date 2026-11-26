@@ -9,10 +9,10 @@ classification:
   audiences: [public, team, product, developers, agents]
 descriptive:
   id: infrastructure-commerce-core
-  version: v3
+  version: v4
   status: draft
   date_ymd: 2026-11-02
-  date_update: 2026-11-22
+  date_update: 2026-11-27
 governance:
   canonicality: working
   visibility: public
@@ -51,10 +51,10 @@ title: Commerce Core
 
 - `identity` определяет пользователя;
 - `commerce` хранит коммерческие факты;
-- `access` хранит основания доступа;
+- `access` задаёт границу общих прав;
 - соответствующий продукт определяет доступные пользователю возможности и ограничения.
 
-Способ оплаты не меняет принадлежность продукта и его правил.
+Способ оплаты не меняет принадлежность продукта и его правил. Пользовательский взгляд на платёжные операции и сохранённые кошельки собран в [разделе DETai Account](../technology/platform/detai-account/payments.md). Привязка публичного адреса хранится в Identity; подтверждённый платёж относится к Commerce.
 
 ## PsyTok и услуги продуктов
 

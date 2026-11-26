@@ -1233,7 +1233,14 @@ nav:
     - Francis Galton: ru/technology/platform/francis-galton/index.md
     - Psykhḗ AI: ru/technology/platform/psykhe-ai/index.md
     - Сайт DETai: ru/technology/platform/website/index.md
-    - DETai Account: ru/technology/platform/detai-account/index.md
+    - DETai Account:
+      - Обзор: ru/technology/platform/detai-account/index.md
+      - Профиль: ru/technology/platform/detai-account/profile.md
+      - Безопасность: ru/technology/platform/detai-account/security.md
+      - Продукты и подписки: ru/technology/platform/detai-account/subscriptions.md
+      - Оплата и кошельки: ru/technology/platform/detai-account/payments.md
+      - Подарки и достижения: ru/technology/platform/detai-account/gifts-and-achievements.md
+      - Подключённые приложения: ru/technology/platform/detai-account/connected-apps.md
     - Psychology-in-quotes:
       - Обзор: ru/technology/platform/psychology-in-quotes/index.md
       - Начало работы: ru/technology/platform/psychology-in-quotes/getting-started.md

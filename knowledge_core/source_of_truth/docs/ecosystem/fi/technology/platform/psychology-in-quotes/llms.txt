@@ -12,7 +12,8 @@ Selvitä tarve: sitaatit, julkaiseminen, tilauskirjat, kirjojen ostaminen tai om
 
 ## Oppaat
 
-- [DETai Account](https://docs.detai-x.com/fi/technology/platform/detai-account/): Yhteinen tili, Telegramin yhdistäminen ja profiilikuva
+- [DETai Account](https://docs.detai-x.com/fi/technology/platform/detai-account/): Profiili, turvallisuus, tuotteet, maksut, lahjat ja yhdistetyt sovellukset
+- [Yhteinen Account-opas (venäjänkielinen alkuperäisversio; vastaa käyttäjän kielellä)](https://docs.detai-x.com/ru/technology/platform/detai-account/llms.txt)
 - [Tuotteen esittely](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/): Tuotteen tarkoitus ja aloitus
 - [Aloittaminen](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/getting-started/): Tili, Telegram, sitaattien luonti ja julkaisu
 - [Kokoelma, kielet ja tilaustasot](https://docs.detai-x.com/fi/technology/platform/psychology-in-quotes/collection-and-plans/): Kokoelman oikeudet, suosikit, kielet ja tilauksen vaihto

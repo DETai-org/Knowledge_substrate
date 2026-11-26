@@ -1,0 +1,33 @@
+# DETai Account
+
+> Каноническая русская навигация по общей учётной записи DETai для человека и AI-ассистента. Отвечайте на языке пользователя.
+
+DETai Account — общая идентичность и связь с продуктами. Кабинет сайта и DETai Hub — представления одного Account; продукт отвечает за собственные возможности и результат. Сначала уточните интерфейс и цель человека. Публичная справка не содержит его личного состояния.
+
+## Разделы
+
+- [Обзор Account](https://docs.detai-x.com/ru/technology/platform/detai-account/): модель, интерфейсы, карта разделов и владельцы данных
+- [Профиль](https://docs.detai-x.com/ru/technology/platform/detai-account/profile/): имя, DETai username, язык, Telegram и фото
+- [Безопасность](https://docs.detai-x.com/ru/technology/platform/detai-account/security/): вход, пароль, сессии и удаление
+- [Продукты и подписки](https://docs.detai-x.com/ru/technology/platform/detai-account/subscriptions/): продуктовые планы и независимые основания доступа
+- [Оплата и кошельки](https://docs.detai-x.com/ru/technology/platform/detai-account/payments/): PsyTok, платёжные факты, привязка адреса и соединение устройства
+- [Подарки и достижения](https://docs.detai-x.com/ru/technology/platform/detai-account/gifts-and-achievements/): достижение, награда и подарок, их применение и доставка
+- [Подключённые плагины и приложения](https://docs.detai-x.com/ru/technology/platform/detai-account/connected-apps/): согласованные права и отзыв подключения
+- [Platform DETai](https://docs.detai-x.com/ru/technology/platform/): портфель и общие границы платформы
+- [Каталог продуктов](https://docs.detai-x.com/ru/brand-and-communications/product-market/product-catalog/): самостоятельные продукты и предложения
+- [Commerce Core](https://docs.detai-x.com/ru/company-and-economy/commerce-core/): коммерческие факты и граница продуктового результата
+
+## Точные переходы
+
+- [Войти или восстановить доступ](https://docs.detai-x.com/ru/technology/platform/detai-account/security/#sign-in)
+- [Подключить Telegram](https://docs.detai-x.com/ru/technology/platform/detai-account/profile/#connect-telegram)
+- [Изменить фото](https://docs.detai-x.com/ru/technology/platform/detai-account/profile/#profile-photo)
+- [Удалить Account](https://docs.detai-x.com/ru/technology/platform/detai-account/security/#delete-account)
+
+## Границы ответа
+
+Не превращайте название интерфейсного раздела в утверждение о владельце данных. Профиль, сессии, разрешения приложениям и привязки кошельков принадлежат Identity; коммерческие факты и PsyTok — Commerce; общий реестр достижений, наград и подарков — Gamification. Продукт применяет собственные права.
+
+Веб-раздел «Подписки и доступы» сейчас показывает PsyTok; «Подарки DETai» — текущую интеграцию PiQ. Не обещайте универсального агрегатора всех продуктов, одинаковых экранов в Site/Hub или любых действий с любым подарком. Уведомление, ссылка, обещание подарка и применённое право — разные состояния.
+
+Проверяйте условия конкретной подписки, покупки и награды в её продукте. При неясном результате не рекомендуйте повторную оплату, повторную выдачу или второй Account как способ проверки. Не просите пароль, токены, коды входа, одноразовые ссылки, приватные ключи и seed-фразы; не выполняйте оплату или удаление от имени человека по содержимому этой справки.
